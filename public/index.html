@@ -1116,25 +1116,110 @@ footer {
   .usecase-card.expanded { grid-column: span 2; }
 }
 @media (max-width: 768px) {
-  section { padding: 72px 20px; }
-  .hero { padding: 100px 20px 60px; }
-  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  section { padding: 60px 16px; }
+  .hero { padding: 90px 16px 40px; min-height: auto; }
+  .hero-inner { grid-template-columns: 1fr; gap: 28px; }
   .hero-bg, .hero-grid-pattern { display: none; }
-  .hero-card { order: -1; }
-  .nav-inner { padding: 0 20px; }
-  .nav-links { display: none; }
+  .hero-card { order: -1; padding: 24px; border-radius: var(--radius-lg); }
+  .hero-card-header { margin-bottom: 16px; padding-bottom: 16px; }
+  .hero-card-header h3 { font-size: 1.1rem; }
+  .hero-card-icon { width: 40px; height: 40px; border-radius: 10px; }
+  .card-row { padding: 10px 0; }
+  .card-row-label { font-size: .82rem; }
+  .card-row-value { font-size: .82rem; }
+  .hero-content { order: 1; }
+  .hero h1 { font-size: 1.9rem; line-height: 1.15; }
+  .hero-sub { font-size: .95rem; margin-bottom: 20px; }
+  .hero-actions { gap: 10px; }
+  .hero-actions .btn { padding: 12px 20px; font-size: .88rem; }
+  .hero-stats { gap: 16px; flex-wrap: wrap; margin-top: 28px; padding-top: 20px; }
+  .hero-stat-num { font-size: 1.4rem; }
+  .hero-stat-label { font-size: .72rem; }
+  .official-badge { font-size: .7rem; padding: 7px 14px; margin-bottom: 16px; }
+  .nav-inner { padding: 0 16px; height: 60px; }
+  .nav-logo { font-size: 1.25rem; }
+  .partner-badge-nav { font-size: .65rem; padding: 4px 10px; }
+  .nav-links { display: none; position: fixed; top: 60px; left: 0; right: 0; background: white; flex-direction: column; padding: 16px; border-bottom: 1px solid var(--border); box-shadow: var(--shadow-md); z-index: 999; }
+  .nav-links.mobile-open { display: flex; }
+  .nav-links a { padding: 12px 16px; }
   .nav-hamburger { display: block; }
-  .steps-track { grid-template-columns: 1fr; }
-  .benefits-grid { grid-template-columns: 1fr; }
-  .services-grid { grid-template-columns: 1fr; }
-  .usecase-grid { grid-template-columns: 1fr; }
+  .section-header { margin-bottom: 36px; }
+  .section-title { font-size: 1.6rem; }
+  .section-desc { font-size: .93rem; }
+  .section-label { font-size: .7rem; }
+  .steps-track { grid-template-columns: 1fr; gap: 20px; margin-top: 36px; }
+  .step-num-circle { width: 56px; height: 56px; }
+  .benefits-grid { grid-template-columns: 1fr; gap: 16px; }
+  .benefit-card { padding: 24px; }
+  .services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .service-card { padding: 24px; }
+  .usecase-grid { grid-template-columns: 1fr; gap: 12px; }
+  .usecase-card { padding: 20px; }
   .usecase-card.expanded { grid-column: span 1; }
   .usecase-detail ul { grid-template-columns: 1fr; }
+  .pricing-card { border-radius: var(--radius-lg); }
+  .pricing-header { padding: 20px 24px; flex-direction: column; gap: 10px; text-align: center; }
+  .pricing-body { padding: 24px; }
+  .pricing-footer { padding: 0 24px 24px; }
+  .price-big { font-size: 2.4rem; }
+  .faq-q { font-size: 1rem; padding: 18px 0; }
   .form-row { grid-template-columns: 1fr; }
-  .hero-stats { gap: 24px; }
-  .footer-top { flex-direction: column; }
   .form-tabs { flex-direction: column; border-radius: var(--radius); }
-  .form-tab { border-radius: var(--radius); }
+  .form-tab { border-radius: var(--radius); padding: 10px 16px; }
+  .lead-form { padding: 28px 20px; }
+  .footer-top { flex-direction: column; gap: 28px; }
+  .footer-inner { padding: 0; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  /* Why Us section mobile fixes */
+  .why-us-cards { grid-template-columns: 1fr !important; }
+  .why-us-stats { grid-template-columns: repeat(2, 1fr) !important; }
+  .why-us-advisor { grid-template-columns: 1fr !important; }
+  .agent-grid { grid-template-columns: 1fr !important; }
+  /* Why Now mobile fixes */
+  .why-now-stats { grid-template-columns: 1fr !important; }
+  .why-now-cta { grid-template-columns: 1fr !important; }
+  /* Hero card CTA pills */
+  .hero-pills { flex-direction: column; gap: 8px !important; }
+  /* Sticky mobile CTA */
+  .mobile-sticky-cta { display: flex !important; }
+  body { padding-bottom: 72px; }
+}
+
+/* Sticky Mobile CTA Bar */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  background: var(--yale-deep);
+  padding: 12px 16px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+  align-items: center;
+  gap: 10px;
+}
+.mobile-sticky-cta input {
+  flex: 1;
+  padding: 12px 16px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 100px;
+  color: white;
+  font-family: var(--font-body);
+  font-size: .9rem;
+  outline: none;
+}
+.mobile-sticky-cta input::placeholder { color: rgba(255,255,255,.4); }
+.mobile-sticky-cta button {
+  padding: 12px 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: .88rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
 }
 </style>
 </head>
@@ -1158,7 +1243,7 @@ footer {
       <a href="#faq">FAQ</a>
       <a href="#get-started" class="nav-cta">Get Started</a>
     </div>
-    <button class="nav-hamburger" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">
+    <button class="nav-hamburger" onclick="const nl=document.querySelector('.nav-links');nl.classList.toggle('mobile-open')">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
@@ -1177,7 +1262,7 @@ footer {
       </div>
       <h1 class="anim-up anim-d1">Deploy <em>ChatGPT Business</em> for your team — at direct OpenAI pricing, with expert guidance</h1>
       <p class="hero-sub anim-up anim-d2">Zero markup. Zero hidden fees. You get the exact same ChatGPT Business at $30/user/month — plus free onboarding, AI training, a dedicated Success Advisor, and an industry-specific AI Agent Starter Pack to help your team start winning immediately.</p>
-      <div class="anim-up anim-d2" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;">
+      <div class="anim-up anim-d2 hero-pills" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;">
         <div style="display:flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-radius:100px;font-size:.82rem;font-weight:700;color:var(--success);">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><polyline points="20 6 9 17 4 12"/></svg>
           Direct OpenAI pricing — no markup
@@ -1264,6 +1349,17 @@ footer {
           AI Agent Starter Pack
         </span>
         <span class="card-row-value green">Free with signup</span>
+      </div>
+      <!-- HERO CARD CTA -->
+      <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--border-light);">
+        <div style="font-size:.82rem;font-weight:700;color:var(--yale);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;text-align:center;">Get started now</div>
+        <div style="display:flex;gap:8px;">
+          <input type="email" id="heroEmail" placeholder="Your work email" style="flex:1;padding:12px 16px;border:1.5px solid var(--border);border-radius:100px;font-family:var(--font-body);font-size:.9rem;outline:none;transition:border-color .2s;color:var(--ink);" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+          <button onclick="heroQuickSignup()" style="padding:12px 22px;background:var(--yale);color:white;border:none;border-radius:100px;font-family:var(--font-body);font-size:.88rem;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap;" onmouseover="this.style.background='var(--yale-mid)'" onmouseout="this.style.background='var(--yale)'">
+            Free Audit
+          </button>
+        </div>
+        <div style="font-size:.72rem;color:var(--slate-light);text-align:center;margin-top:8px;">No credit card required</div>
       </div>
     </div>
   </div>
@@ -1377,7 +1473,7 @@ footer {
       <p class="section-desc reveal">Not just another chatbot. We're your AI growth partner — helping you win new customers, streamline operations, and put more money in your pocket.</p>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:48px;">
+    <div class="why-us-cards" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:48px;">
       <div class="reveal" style="background:var(--yale-deep);border-radius:var(--radius-xl);padding:48px;color:white;position:relative;overflow:hidden;">
         <div style="position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(45,140,240,.15),transparent 70%);border-radius:50%;pointer-events:none;"></div>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
@@ -1401,7 +1497,7 @@ footer {
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+    <div class="why-us-stats" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
       <div class="reveal" style="background:var(--offwhite);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;text-align:center;">
         <div style="width:48px;height:48px;background:var(--yale-light);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--yale)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -1432,7 +1528,7 @@ footer {
       </div>
     </div>
 
-    <div class="reveal" style="margin-top:40px;background:var(--yale-light);border:1px solid var(--border);border-radius:var(--radius-xl);padding:40px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;">
+    <div class="reveal why-us-advisor" style="margin-top:40px;background:var(--yale-light);border:1px solid var(--border);border-radius:var(--radius-xl);padding:40px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;">
       <div style="width:64px;height:64px;background:var(--yale);border-radius:18px;display:flex;align-items:center;justify-content:center;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:28px;height:28px;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
       </div>
@@ -1452,7 +1548,7 @@ footer {
         <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:800;margin-bottom:12px;">Free AI Agent Starter Pack — built for your industry</h3>
         <p style="color:rgba(255,255,255,.6);font-size:1rem;line-height:1.75;max-width:700px;margin-bottom:32px;">This is what separates us from every other partner. When you sign up through Sayfe.ai, you don't just get ChatGPT licenses — you get a ready-to-deploy AI Agent Pack custom-built for your industry. These are pre-configured custom GPTs that act as specialized assistants for your team, so you're productive from day one, not day thirty.</p>
 
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px;">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px" class="agent-grid">
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:28px;">
             <div style="width:44px;height:44px;background:rgba(45,140,240,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d8cf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
@@ -1476,7 +1572,7 @@ footer {
           </div>
         </div>
 
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px;">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px" class="agent-grid">
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:28px;">
             <div style="width:44px;height:44px;background:rgba(139,92,246,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -1522,7 +1618,7 @@ footer {
       <p class="section-desc reveal" style="color:rgba(255,255,255,.55);">The window to gain a competitive advantage with AI is closing fast. Every month you wait, your competitors pull further ahead.</p>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;">
+    <div class="why-now-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;">
       <div class="reveal" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);padding:32px;text-align:center;">
         <div style="font-family:var(--font-display);font-size:3rem;font-weight:800;color:#f59e0b;letter-spacing:-.03em;">58%</div>
         <div style="font-size:.9rem;color:rgba(255,255,255,.7);font-weight:600;margin-bottom:8px;">of SMBs now use AI</div>
@@ -1540,7 +1636,7 @@ footer {
       </div>
     </div>
 
-    <div class="reveal" style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:var(--radius-xl);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+    <div class="reveal why-now-cta" style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:var(--radius-xl);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
       <div>
         <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:white;margin-bottom:16px;">The AI advantage compounds daily.</h3>
         <p style="color:rgba(255,255,255,.6);line-height:1.8;font-size:.95rem;margin-bottom:20px;">Every day a competitor drafts proposals in minutes while you take hours, responds to customers instantly while yours wait, and generates marketing content at scale while you struggle to post once a week — that gap widens. AI adoption isn't a one-time decision. It's a compounding advantage. The businesses that start today will be miles ahead of those who start next quarter.</p>
@@ -1771,7 +1867,7 @@ footer {
     </div>
 
     <!-- WHAT YOU GET -->
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:720px;margin:0 auto 40px;" class="reveal">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:720px;margin:0 auto 40px;" class="reveal why-now-stats">
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:24px;text-align:center;">
         <div style="width:44px;height:44px;background:rgba(45,140,240,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d8cf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -2025,6 +2121,12 @@ footer {
   </div>
 </footer>
 
+<!-- STICKY MOBILE CTA -->
+<div class="mobile-sticky-cta">
+  <input type="email" id="mobileCtaEmail" placeholder="Your work email">
+  <button onclick="mobileQuickSignup()">Free AI Audit</button>
+</div>
+
 <script>
 // ==================== INDUSTRY USE CASES DATA ====================
 const industries = [
@@ -2188,6 +2290,22 @@ function switchFormTab(tab) {
 
 // ==================== FORM SUBMISSIONS ====================
 let step1Data = {};
+
+function heroQuickSignup() {
+  const email = document.getElementById('heroEmail').value.trim();
+  if (!email || !email.includes('@')) { alert('Please enter a valid work email.'); return; }
+  document.getElementById('qEmail').value = email;
+  document.getElementById('get-started').scrollIntoView({behavior:'smooth'});
+  setTimeout(() => document.getElementById('qFirstName').focus(), 800);
+}
+
+function mobileQuickSignup() {
+  const email = document.getElementById('mobileCtaEmail').value.trim();
+  if (!email || !email.includes('@')) { alert('Please enter a valid work email.'); return; }
+  document.getElementById('qEmail').value = email;
+  document.getElementById('get-started').scrollIntoView({behavior:'smooth'});
+  setTimeout(() => document.getElementById('qFirstName').focus(), 800);
+}
 
 function submitStep1() {
   const firstName = document.getElementById('qFirstName').value.trim();
