@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Sayfe.ai, an authorized OpenAI ChatGPT business partner helping SMBs harness AI's power. Free consulting, industry expertise, ongoing support.">
+    <meta name="keywords" content="OpenAI partner, ChatGPT business, AI consulting, SMB AI solutions, authorized reseller">
+    <meta name="author" content="Sayfe.ai - Vandelay Consulting Inc.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sayfe.ai/about">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Sayfe.ai | Authorized OpenAI ChatGPT Business Partner">
+    <meta property="og:description" content="Sayfe.ai helps SMBs harness AI's power with free consulting, industry expertise, and ongoing support as an authorized OpenAI partner.">
+    <meta property="og:url" content="https://sayfe.ai/about">
+    <meta property="og:image" content="https://sayfe.ai/og-image.png">
+    <meta property="og:site_name" content="Sayfe.ai">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Sayfe.ai | Authorized OpenAI ChatGPT Business Partner">
+    <meta name="twitter:description" content="Sayfe.ai helps SMBs harness AI's power with free consulting, industry expertise, and ongoing support as an authorized OpenAI partner.">
+    <meta name="twitter:image" content="https://sayfe.ai/twitter-image.png">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfe.ai",
+      "logo": "https://sayfe.ai/logo.png",
+      "description": "Authorized OpenAI ChatGPT business partner helping SMBs implement AI solutions with free consulting and ongoing support.",
+      "foundingDate": "2024",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Sales",
+        "url": "https://sayfe.ai/#get-started"
+      },
+      "sameAs": [
+        "https://twitter.com/sayfeai",
+        "https://linkedin.com/company/sayfeai"
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Vandelay Consulting Inc."
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Sayfe.ai",
+      "url": "https://sayfe.ai/about",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Sayfe.ai",
+        "description": "We help businesses harness the power of AI. As an authorized OpenAI ChatGPT business partner, we bridge the gap between SMBs and enterprise-grade AI solutions."
+      }
+    }
+    </script>
+
+    <title>About Sayfe.ai | Authorized OpenAI ChatGPT Business Partner</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-yale-blue: #0f3460;
+            --color-deep: #0a2240;
+            --color-mid: #1a4a7a;
+            --color-light: #e8eef6;
+            --color-accent: #2d8cf0;
+            --font-primary: 'Figtree', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: #333;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--color-yale-blue);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-logo:hover {
+            color: var(--color-accent);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .nav-cta {
+            background-color: var(--color-accent);
+            color: white !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+        }
+
+        .nav-cta:hover {
+            background-color: #1e6db8 !important;
+            color: white !important;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .nav-cta {
+                padding: 0.4rem 0.9rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--color-yale-blue) 0%, var(--color-mid) 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                padding: 4rem 1.5rem;
+            }
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-yale-blue);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-yale-blue);
+            margin-bottom: 1rem;
+        }
+
+        /* Mission Section */
+        .mission {
+            background-color: var(--color-light);
+        }
+
+        .mission-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* Why We Exist Section */
+        .why-exist {
+            background-color: #fff;
+        }
+
+        .why-exist-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .why-exist p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        /* How We're Different Section */
+        .different {
+            background-color: var(--color-light);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+            border-top: 4px solid var(--color-accent);
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            color: var(--color-yale-blue);
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Our Approach Section */
+        .approach {
+            background-color: #fff;
+        }
+
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--color-accent);
+            color: white;
+            border-radius: 50%;
+            line-height: 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .step h3 {
+            color: var(--color-yale-blue);
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Industries Section */
+        .industries {
+            background-color: var(--color-light);
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .industry-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.375rem;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            text-decoration: none;
+            color: var(--color-yale-blue);
+            font-weight: 600;
+        }
+
+        .industry-item:hover {
+            background-color: var(--color-yale-blue);
+            color: white;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        /* Corporate Info Section */
+        .corporate {
+            background-color: #f9f9f9;
+            border-top: 2px solid var(--color-light);
+            border-bottom: 2px solid var(--color-light);
+        }
+
+        .corporate-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .corporate h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .corporate p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--color-yale-blue) 0%, var(--color-mid) 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            background-color: var(--color-accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+            font-family: var(--font-primary);
+        }
+
+        .cta-button:hover {
+            background-color: #1e6db8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45, 140, 240, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-deep);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--color-accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            .cards-grid,
+            .approach-steps,
+            .industries-grid {
+                gap: 1.5rem;
+            }
+
+            .card,
+            .step {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        /* Print Styles */
+        @media print {
+            nav,
+            .cta-section {
+                display: none;
+            }
+
+            body {
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">sayfe.ai</a>
+            <ul class="nav-links">
+                <li><a href="/#how-it-works">How It Works</a></li>
+                <li><a href="/#industries">Industries</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/#get-started" class="nav-cta">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>We Help Businesses Harness the Power of AI</h1>
+            <p>Making enterprise-grade AI accessible to every business, regardless of size.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <div class="mission-content">
+                <p>
+                    We believe that artificial intelligence shouldn't be reserved for tech giants. At Sayfe.ai, we're democratizing AI for small and medium-sized businesses, empowering them to compete, innovate, and thrive in an AI-driven world. We make it simple, affordable, and risk-free.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Exist Section -->
+    <section class="why-exist">
+        <div class="container">
+            <h2>Why Sayfe.ai Exists</h2>
+            <div class="why-exist-content">
+                <p>
+                    SMBs want to harness AI—they know it's the future. But they face real barriers: confusion about where to start, fear of implementation complexity, uncertainty about ROI, and lack of technical expertise.
+                </p>
+                <p>
+                    <span class="highlight">We bridge that gap.</span> As an <span class="highlight">authorized OpenAI partner</span>, we're not resellers or consultants who dabble in AI. We're your guide and your advocate, helping you identify high-impact use cases, implement them safely, and measure real business outcomes.
+                </p>
+                <p>
+                    The best part? Our consulting is free. You only pay OpenAI's standard pricing—the same $30/user every business pays. We make our money when you succeed.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We're Different Section -->
+    <section class="different">
+        <div class="container">
+            <h2>How We're Different</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🔐</div>
+                    <h3>Official OpenAI Partner</h3>
+                    <p>We're not a reseller or middleman. We're an authorized channel partner with direct relationships at OpenAI, ensuring you get premium support and the latest features first.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Zero Cost to You</h3>
+                    <p>You pay OpenAI's standard per-user pricing ($30/month). Our consulting, strategy, and onboarding? Completely free. We succeed when you do.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Industry Expertise</h3>
+                    <p>We've worked across 15+ verticals. We bring industry-specific playbooks, custom prompt libraries, and proven use cases—not generic templates.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Ongoing Support</h3>
+                    <p>We don't hand off and disappear. Monthly check-ins, new use case discovery, performance optimization, and scaling guidance—we're with you every step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="approach">
+        <div class="container">
+            <h2>Our Proven Approach</h2>
+            <div class="approach-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery Call</h3>
+                    <p>We sit with your team to understand your workflows, pain points, and goals. No sales pitch—just genuine discovery.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Custom AI Strategy</h3>
+                    <p>We identify your highest-impact use cases, estimate time savings and ROI, and create a prioritized roadmap tailored to your business.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Guided Deployment</h3>
+                    <p>Hands-on onboarding with your team. We set up accounts, customize prompts, integrate with your tools, and train your staff to use AI confidently.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Ongoing Optimization</h3>
+                    <p>Monthly check-ins to measure results, refine workflows, explore new use cases, and ensure you're capturing maximum value from your AI investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="industries">
+        <div class="container">
+            <h2>Industries We Serve</h2>
+            <div class="industries-grid">
+                <a href="/industries/professional-services" class="industry-item">Professional Services</a>
+                <a href="/industries/legal" class="industry-item">Legal</a>
+                <a href="/industries/accounting" class="industry-item">Accounting & Finance</a>
+                <a href="/industries/healthcare" class="industry-item">Healthcare</a>
+                <a href="/industries/real-estate" class="industry-item">Real Estate</a>
+                <a href="/industries/marketing" class="industry-item">Marketing & Advertising</a>
+                <a href="/industries/technology" class="industry-item">Technology</a>
+                <a href="/industries/education" class="industry-item">Education</a>
+                <a href="/industries/ecommerce" class="industry-item">E-commerce</a>
+                <a href="/industries/manufacturing" class="industry-item">Manufacturing</a>
+                <a href="/industries/hospitality" class="industry-item">Hospitality & Tourism</a>
+                <a href="/industries/retail" class="industry-item">Retail</a>
+                <a href="/industries/nonprofit" class="industry-item">Nonprofit</a>
+                <a href="/industries/construction" class="industry-item">Construction</a>
+                <a href="/industries/human-resources" class="industry-item">Human Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Info Section -->
+    <section class="corporate">
+        <div class="container">
+            <div class="corporate-content">
+                <h2>A Service of Vandelay Consulting Inc.</h2>
+                <p>
+                    Sayfe.ai is brought to you by Vandelay Consulting Inc., a boutique business technology consulting firm specializing in AI implementation, digital transformation, and SMB growth strategies.
+                </p>
+                <p>
+                    Since our founding, we've helped dozens of businesses unlock the value of technology. With Sayfe.ai, we're extending that expertise to democratize access to AI for every business that wants it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="get-started">
+        <div class="cta-content">
+            <h2>Ready to Get Started?</h2>
+            <p>Schedule your free AI audit. We'll assess your workflows, identify quick wins, and show you exactly how AI can drive real business impact.</p>
+            <a href="https://calendly.com/sayfe/audit" class="cta-button">Get Free AI Audit</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="/#how-it-works">How It Works</a></li>
+                    <li><a href="/#industries">Industries</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/docs">Documentation</a></li>
+                    <li><a href="/case-studies">Case Studies</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/security">Security</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://twitter.com/sayfeai" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com/company/sayfeai" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/sayfeai" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:hello@sayfe.ai">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sayfe.ai, a service of Vandelay Consulting Inc. All rights reserved. | OpenAI is a registered trademark of OpenAI LP.</p>
+        </div>
+    </footer>
+</body>
+</html>

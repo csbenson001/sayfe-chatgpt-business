@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transparent ChatGPT Business pricing - $30/user/month with zero markup. Same price as OpenAI direct with expert implementation support from Sayfe.ai.">
+    <meta name="keywords" content="ChatGPT Business pricing, enterprise AI, Sayfe.ai pricing, ChatGPT team billing">
+    <meta name="author" content="Sayfe.ai">
+    <meta name="theme-color" content="#0f3460">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sayfe.ai/pricing">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ChatGPT Business Pricing | Sayfe.ai — Official OpenAI Partner">
+    <meta property="og:description" content="Transparent ChatGPT Business pricing - $30/user/month with zero markup. Same price as OpenAI direct with expert implementation support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sayfe.ai/pricing">
+    <meta property="og:image" content="https://sayfe.ai/og-pricing.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ChatGPT Business Pricing | Sayfe.ai">
+    <meta name="twitter:description" content="$30/user/month with zero markup + expert support included.">
+    <meta name="twitter:image" content="https://sayfe.ai/og-pricing.png">
+
+    <title>ChatGPT Business Pricing | Sayfe.ai — Official OpenAI Partner</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        /* Color Variables */
+        :root {
+            --yale-blue: #0f3460;
+            --yale-deep: #0a2240;
+            --yale-mid: #1a4a7a;
+            --yale-light: #e8eef6;
+            --accent: #2d8cf0;
+            --success: #10b981;
+            --warm: #f59e0b;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e5e5e5;
+            --bg-light: #f9f9f9;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--yale-blue);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a.active {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .nav-cta {
+            background: var(--accent);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: #1f6dd9;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: center;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--yale-light) 0%, #f5f7fa 100%);
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--yale-blue);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 4rem 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Pricing Card Section */
+        .pricing-section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border: 2px solid var(--yale-blue);
+            border-radius: 16px;
+            padding: 3rem;
+            max-width: 500px;
+            box-shadow: 0 10px 40px rgba(15, 52, 96, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--success));
+        }
+
+        .price-amount {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--yale-blue);
+            margin: 1.5rem 0;
+        }
+
+        .price-period {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .price-note {
+            font-size: 0.9rem;
+            color: var(--success);
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 2rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .price-features li {
+            padding: 0.75rem 0;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .price-features li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--accent), #1f6dd9);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(45, 140, 240, 0.3);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card {
+                padding: 2rem;
+            }
+            .price-amount {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* What's Included Section */
+        .whats-included {
+            background: var(--yale-light);
+            padding: 4rem 2rem;
+            margin: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--yale-blue);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .included-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .included-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .included-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .included-item h3 {
+            color: var(--yale-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .included-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .whats-included {
+                padding: 3rem 1.5rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        .comparison-table th {
+            background: var(--yale-blue);
+            color: white;
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        .feature-name {
+            font-weight: 600;
+            color: var(--yale-blue);
+        }
+
+        .checkmark {
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .xmark {
+            color: #d1d5db;
+            font-weight: 700;
+        }
+
+        .custom-value {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Cost Calculator */
+        .calculator-section {
+            background: linear-gradient(135deg, var(--yale-deep), var(--yale-blue));
+            color: white;
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+        }
+
+        .calculator-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .calculator-content .section-title {
+            color: white;
+        }
+
+        .slider-container {
+            margin: 2rem 0;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .calculator-result {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .result-label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-subtext {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+
+        .value-line {
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .calculator-section {
+                padding: 3rem 1.5rem;
+            }
+            .result-amount {
+                font-size: 2rem;
+            }
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .faq-item.active {
+            box-shadow: 0 4px 12px rgba(15, 52, 96, 0.1);
+        }
+
+        .faq-question {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--yale-blue);
+            transition: background 0.3s ease;
+            user-select: none;
+        }
+
+        .faq-item.active .faq-question {
+            background: var(--yale-light);
+        }
+
+        .faq-question:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: white;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-content {
+            padding: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 3rem 1.5rem;
+            }
+            .faq-question {
+                padding: 1.25rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, var(--accent), #1f6dd9);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 4rem 0 0 0;
+        }
+
+        .final-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .final-cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--accent);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .final-cta-button:hover {
+            background: transparent;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .final-cta {
+                padding: 3rem 1.5rem;
+            }
+            .final-cta h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--yale-deep);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 2rem 1.5rem;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-4 {
+            margin-top: 2rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="nav-logo">sayfe.ai</a>
+        <ul class="nav-links">
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#industries">Industries</a></li>
+            <li><a href="/pricing" class="active">Pricing</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#get-started" class="nav-cta">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transparent Pricing.<br><span class="hero-highlight">Zero Markup.</span></h1>
+            <p class="hero-subtitle">Same price as buying ChatGPT Business direct from OpenAI — <span class="hero-highlight">plus expert implementation support</span></p>
+        </div>
+    </section>
+
+    <!-- Pricing Card Section -->
+    <section class="pricing-section">
+        <div class="pricing-card-container">
+            <div class="pricing-card">
+                <div class="price-period">ChatGPT Business</div>
+                <div class="price-amount">$30<span style="font-size: 1.2rem; font-weight: 500;">/user</span></div>
+                <div class="price-period">per month</div>
+                <div class="price-note">✓ Same as OpenAI Direct Pricing</div>
+
+                <ul class="price-features">
+                    <li>GPT-4o with latest features</li>
+                    <li>Advanced admin controls</li>
+                    <li>Enhanced data privacy</li>
+                    <li>Team SSO & user management</li>
+                    <li>Shared workspaces & libraries</li>
+                    <li>Higher usage limits</li>
+                    <li>Monthly billing flexibility</li>
+                </ul>
+
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">No annual contracts. Cancel anytime.</p>
+                <a href="/#get-started" class="cta-button">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="whats-included">
+        <h2 class="section-title">What's Included FREE with Sayfe.ai<br><span style="font-size: 1.3rem; font-weight: 500;">(vs buying direct)</span></h2>
+
+        <div class="included-grid">
+            <div class="included-item">
+                <h3>🎯 Dedicated AI Success Advisor</h3>
+                <p>Expert guidance to maximize your team's AI capabilities and ROI from day one.</p>
+            </div>
+
+            <div class="included-item">
+                <h3>📚 Custom Prompt Libraries</h3>
+                <p>Industry-specific, pre-built prompt templates tailored to your business workflows.</p>
+            </div>
+
+            <div class="included-item">
+                <h3>👥 Team Onboarding & Training</h3>
+                <p>Comprehensive onboarding sessions and training materials for your entire team.</p>
+            </div>
+
+            <div class="included-item">
+                <h3>⚙️ Custom GPT Configuration</h3>
+                <p>We configure ChatGPT Business to match your security, compliance, and workflow needs.</p>
+            </div>
+
+            <div class="included-item">
+                <h3>📈 Ongoing Adoption Support</h3>
+                <p>Continuous support to drive team adoption and break down initial resistance.</p>
+            </div>
+
+            <div class="included-item">
+                <h3>✅ Monthly Optimization Check-ins</h3>
+                <p>Regular reviews to identify opportunities for improvement and advanced use cases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <h2 class="section-title">ChatGPT Plans Comparison</h2>
+
+        <div class="table-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>ChatGPT Plus<br>$20/user/month</th>
+                        <th>ChatGPT Business<br>$30/user/month</th>
+                        <th>ChatGPT Enterprise<br>Custom Pricing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">Access to GPT-4o</td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Data Privacy & Admin Controls</td>
+                        <td><span class="xmark">—</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Team Management & SSO</td>
+                        <td><span class="xmark">—</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Shared Workspaces</td>
+                        <td><span class="xmark">—</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                        <td><span class="checkmark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Usage & Token Limits</td>
+                        <td>Basic</td>
+                        <td>Business Standard</td>
+                        <td><span class="custom-value">Custom</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Implementation Support</td>
+                        <td><span class="xmark">—</span></td>
+                        <td>Included with Sayfe.ai</td>
+                        <td><span class="custom-value">Enterprise Support</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Custom Training & Onboarding</td>
+                        <td><span class="xmark">—</span></td>
+                        <td>Included with Sayfe.ai</td>
+                        <td><span class="custom-value">Enterprise Support</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Best For</td>
+                        <td>Individual Users</td>
+                        <td>Teams & Organizations</td>
+                        <td>Large Enterprises</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Cost Calculator -->
+    <section class="calculator-section">
+        <div class="calculator-content">
+            <h2 class="section-title">Calculate Your Cost</h2>
+
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span>Team Size</span>
+                    <span id="team-size-display">10</span> <span>users</span>
+                </div>
+                <input type="range" id="team-size" min="1" max="500" value="10">
+            </div>
+
+            <div class="calculator-result">
+                <div class="result-label">Monthly Cost</div>
+                <div class="result-amount" id="monthly-cost">$300</div>
+                <div class="result-subtext">ChatGPT Business + Sayfe.ai Support</div>
+                <div class="value-line">Value of Sayfe.ai consulting: <strong>$0 added cost</strong></div>
+            </div>
+
+            <p style="text-align: center; margin-top: 2rem; opacity: 0.95; font-size: 0.95rem;">
+                All users get dedicated support, training, and custom configuration at no additional cost. Billing is monthly with no long-term contracts.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item" data-faq="1">
+            <div class="faq-question">
+                <span>How is this different from buying ChatGPT Business directly from OpenAI?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>The ChatGPT Business subscription itself costs exactly the same ($30/user/month) whether you buy from OpenAI directly or through Sayfe.ai. The key difference is that Sayfe.ai, as an official OpenAI partner, includes expert implementation services at no additional cost: dedicated AI success advisors, custom prompt libraries, team training, and ongoing optimization support. You get the same product plus expert guidance to maximize your ROI.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="2">
+            <div class="faq-question">
+                <span>Are there any hidden fees or annual contracts?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>No. Our pricing is completely transparent at $30 per user per month. Billing is monthly, and you can cancel anytime without penalties or long-term commitments. There are no setup fees, implementation fees, or hidden costs. What you see is what you pay.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="3">
+            <div class="faq-question">
+                <span>What's included in the "Dedicated AI Success Advisor" service?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Your dedicated advisor provides quarterly business reviews, identifies new use cases within your organization, helps with team adoption strategies, answers technical questions, and provides ongoing support. They act as your internal champion for AI adoption and ROI maximization.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="4">
+            <div class="faq-question">
+                <span>Can you provide custom prompt libraries for my specific industry?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Yes. We work with your team to develop industry-specific prompt templates and best practices. These are tailored to your workflows, terminology, and compliance requirements. We provide documentation, examples, and training to ensure your team can use them effectively.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="5">
+            <div class="faq-question">
+                <span>What security and compliance features are included?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>ChatGPT Business includes data residency controls, user role management, activity logging, and SOC 2 Type II compliance. We help configure these features for your organization and ensure your admin controls are properly set up. Enterprise customers may require additional compliance configurations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="6">
+            <div class="faq-question">
+                <span>How do I manage team members and permissions?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>ChatGPT Business includes admin controls for managing team members, setting usage policies, and controlling feature access. You can add/remove users, set spending limits, manage shared resources, and configure SSO. Our team helps with the initial setup and provides training on these tools.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="7">
+            <div class="faq-question">
+                <span>What's the typical onboarding timeline?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Most organizations are fully onboarded within 2-4 weeks. This includes account setup, SSO integration (if applicable), initial training session, and configuration. We customize the timeline based on your organization's size and complexity.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="8">
+            <div class="faq-question">
+                <span>Can I switch from ChatGPT Plus or upgrade from a free account?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Absolutely. We help migrate users from individual ChatGPT Plus subscriptions to ChatGPT Business team accounts. Your existing conversations and custom GPTs can be transferred. We handle the technical migration and ensure a smooth transition for your team.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-faq="9">
+            <div class="faq-question">
+                <span>How do you handle data privacy and compliance?</span>
+                <span class="faq-toggle">∨</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>ChatGPT Business offers data privacy controls where conversations are not used to train OpenAI models. We help ensure your team understands the privacy controls and we configure admin settings to enforce your data policies. For additional compliance needs, we can discuss Enterprise options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <h2>Ready to Transform Your Team's Productivity?</h2>
+        <p>Get a free AI audit and see exactly how ChatGPT Business can benefit your organization.</p>
+        <a href="/#get-started" class="final-cta-button">Schedule Your Free Audit</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sayfe.ai</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="/#how-it-works">How It Works</a></li>
+                    <li><a href="/#industries">Industries</a></li>
+                    <li><a href="/#features">Features</a></li>
+                    <li><a href="/security">Security</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/partners">Partners</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/press">Press</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/security">Security</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sayfe.ai. All rights reserved. Official OpenAI Partner.</p>
+        </div>
+    </footer>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "ChatGPT Business - Powered by Sayfe.ai",
+        "description": "ChatGPT Business team plan with expert implementation support from Sayfe.ai, an official OpenAI partner.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Sayfe.ai"
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://sayfe.ai/pricing",
+            "price": "30",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2026-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Sayfe.ai",
+                "url": "https://sayfe.ai"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "150"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How is this different from buying ChatGPT Business directly from OpenAI?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The ChatGPT Business subscription costs the same ($30/user/month). Sayfe.ai adds expert implementation services at no cost: AI success advisors, custom prompt libraries, team training, and ongoing optimization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are there any hidden fees or annual contracts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Pricing is transparent at $30/user/month, billed monthly with no contracts or hidden fees."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's included in the Dedicated AI Success Advisor service?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Quarterly business reviews, use case identification, adoption strategies, technical support, and ongoing ROI maximization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you provide custom prompt libraries for my industry?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We develop industry-specific prompt templates tailored to your workflows, terminology, and compliance requirements."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What security and compliance features are included?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ChatGPT Business includes data residency, role management, activity logging, and SOC 2 Type II compliance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I manage team members and permissions?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ChatGPT Business includes admin controls for user management, usage policies, SSO integration, and shared resources."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the typical onboarding timeline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most organizations onboard in 2-4 weeks, including setup, SSO integration, training, and configuration."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I switch from ChatGPT Plus or upgrade from a free account?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We handle migration from individual subscriptions, including conversation and custom GPT transfers."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Cost Calculator
+        const teamSizeInput = document.getElementById('team-size');
+        const teamSizeDisplay = document.getElementById('team-size-display');
+        const monthlyCostDisplay = document.getElementById('monthly-cost');
+
+        function updateCalculator() {
+            const teamSize = parseInt(teamSizeInput.value);
+            teamSizeDisplay.textContent = teamSize;
+            const monthlyCost = teamSize * 30;
+            monthlyCostDisplay.textContent = `$${monthlyCost.toLocaleString()}`;
+        }
+
+        teamSizeInput.addEventListener('input', updateCalculator);
+
+        // FAQ Toggle Functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

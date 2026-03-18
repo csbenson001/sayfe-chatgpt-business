@@ -16,7 +16,19 @@
     { "source": "/marketing", "destination": "/industries/marketing.html" },
     { "source": "/education", "destination": "/industries/education.html" },
     { "source": "/professional-services", "destination": "/industries/professional-services.html" },
-    { "source": "/nonprofit", "destination": "/industries/nonprofit.html" }
+    { "source": "/nonprofit", "destination": "/industries/nonprofit.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/blog/chatgpt-small-business-guide", "destination": "/blog/chatgpt-small-business-guide.html" },
+    { "source": "/blog/chatgpt-business-vs-plus", "destination": "/blog/chatgpt-business-vs-plus.html" },
+    { "source": "/blog/ai-healthcare-practices", "destination": "/blog/ai-healthcare-practices.html" },
+    { "source": "/blog/chatgpt-for-law-firms", "destination": "/blog/chatgpt-for-law-firms.html" },
+    { "source": "/blog/ai-manufacturing-guide", "destination": "/blog/ai-manufacturing-guide.html" },
+    { "source": "/blog/chatgpt-business-roi", "destination": "/blog/chatgpt-business-roi.html" },
+    { "source": "/blog/chatgpt-real-estate-prompts", "destination": "/blog/chatgpt-real-estate-prompts.html" },
+    { "source": "/blog/ai-financial-advisors-compliance", "destination": "/blog/ai-financial-advisors-compliance.html" }
   ],
   "headers": [
     {
