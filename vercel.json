@@ -28,7 +28,19 @@
     { "source": "/blog/ai-manufacturing-guide", "destination": "/blog/ai-manufacturing-guide.html" },
     { "source": "/blog/chatgpt-business-roi", "destination": "/blog/chatgpt-business-roi.html" },
     { "source": "/blog/chatgpt-real-estate-prompts", "destination": "/blog/chatgpt-real-estate-prompts.html" },
-    { "source": "/blog/ai-financial-advisors-compliance", "destination": "/blog/ai-financial-advisors-compliance.html" }
+    { "source": "/blog/ai-financial-advisors-compliance", "destination": "/blog/ai-financial-advisors-compliance.html" },
+    { "source": "/blog/chatgpt-insurance-agencies", "destination": "/blog/chatgpt-insurance-agencies.html" },
+    { "source": "/blog/chatgpt-education-schools", "destination": "/blog/chatgpt-education-schools.html" },
+    { "source": "/blog/chatgpt-retail-ecommerce", "destination": "/blog/chatgpt-retail-ecommerce.html" },
+    { "source": "/blog/chatgpt-construction-contractors", "destination": "/blog/chatgpt-construction-contractors.html" },
+    { "source": "/blog/chatgpt-consulting-firms", "destination": "/blog/chatgpt-consulting-firms.html" },
+    { "source": "/blog/chatgpt-logistics-supply-chain", "destination": "/blog/chatgpt-logistics-supply-chain.html" },
+    { "source": "/blog/chatgpt-marketing-agencies", "destination": "/blog/chatgpt-marketing-agencies.html" },
+    { "source": "/blog/chatgpt-nonprofit-organizations", "destination": "/blog/chatgpt-nonprofit-organizations.html" },
+    { "source": "/blog/chatgpt-chiropractic-practices", "destination": "/blog/chatgpt-chiropractic-practices.html" },
+    { "source": "/blog/chatgpt-business-prompts-library", "destination": "/blog/chatgpt-business-prompts-library.html" },
+    { "source": "/blog/ai-adoption-checklist-small-business", "destination": "/blog/ai-adoption-checklist-small-business.html" },
+    { "source": "/blog/chatgpt-professional-services", "destination": "/blog/chatgpt-professional-services.html" }
   ],
   "headers": [
     {
