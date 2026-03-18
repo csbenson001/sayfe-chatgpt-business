@@ -1,0 +1,10 @@
+{
+  "name": "sayfe-chatgpt-business",
+  "version": "1.0.0",
+  "description": "Sayfe.ai — Official OpenAI ChatGPT Business Partner Site",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve public",
+    "build": "echo 'Static site — no build needed'"
+  }
+}

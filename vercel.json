@@ -1,0 +1,31 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/healthcare", "destination": "/industries/healthcare.html" },
+    { "source": "/chiropractic", "destination": "/industries/chiropractic.html" },
+    { "source": "/manufacturing", "destination": "/industries/manufacturing.html" },
+    { "source": "/legal", "destination": "/industries/legal.html" },
+    { "source": "/consulting", "destination": "/industries/consulting.html" },
+    { "source": "/construction", "destination": "/industries/construction.html" },
+    { "source": "/real-estate", "destination": "/industries/real-estate.html" },
+    { "source": "/finance", "destination": "/industries/finance.html" },
+    { "source": "/insurance", "destination": "/industries/insurance.html" },
+    { "source": "/logistics", "destination": "/industries/logistics.html" },
+    { "source": "/retail", "destination": "/industries/retail.html" },
+    { "source": "/marketing", "destination": "/industries/marketing.html" },
+    { "source": "/education", "destination": "/industries/education.html" },
+    { "source": "/professional-services", "destination": "/industries/professional-services.html" },
+    { "source": "/nonprofit", "destination": "/industries/nonprofit.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}
