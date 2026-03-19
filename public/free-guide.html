@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free guide with 50 ready-to-use ChatGPT Business prompts for marketing, sales, operations, HR, finance, and customer service. Save your team 10+ hours per week.">
+  <meta name="keywords" content="ChatGPT Business prompts, AI prompts, ChatGPT for business, productivity, AI tools">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="50 Ready-to-Use ChatGPT Business Prompts">
+  <meta property="og:description" content="Copy-paste prompts that save your team 10+ hours per week. Get instant access to our free guide.">
+  <meta property="og:url" content="https://sayfe.ai/free-guide">
+  <meta property="og:image" content="https://sayfe.ai/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="50 Ready-to-Use ChatGPT Business Prompts">
+  <meta name="twitter:description" content="Copy-paste prompts that save your team 10+ hours per week. Get instant access to our free guide.">
+  <meta name="twitter:image" content="https://sayfe.ai/og-image.png">
+  <meta name="theme-color" content="#0f3460">
+  <link rel="canonical" href="https://sayfe.ai/free-guide">
+  <title>50 Ready-to-Use ChatGPT Business Prompts — Sayfe.ai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      color: #222;
+      font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      font-size: inherit;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+      padding: 0 40px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #0f3460;
+      letter-spacing: -0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    nav a {
+      color: #222;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #0f3460;
+    }
+
+    nav .get-started {
+      background: linear-gradient(135deg, #0f3460 0%, #1a4a7a 100%);
+      color: #fff !important;
+      padding: 10px 24px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 0.25s;
+    }
+
+    nav .get-started:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15, 52, 96, 0.25);
+      color: #fff !important;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 0 20px;
+        height: 60px;
+      }
+      nav ul {
+        gap: 20px;
+      }
+      nav a {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      nav ul {
+        display: none;
+      }
+    }
+
+    /* Hero */
+    .hero {
+      padding: 100px 40px;
+      background: linear-gradient(135deg, rgba(15, 52, 96, 0.95) 0%, rgba(26, 74, 122, 0.95) 100%), url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><path d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></g></svg>');
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(45, 140, 240, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 8px 20px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100px;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 20px;
+      }
+      .hero::before {
+        width: 300px;
+        height: 300px;
+        right: -50px;
+      }
+    }
+
+    /* Form Section */
+    .form-section {
+      padding: 60px 40px;
+      background: #fff;
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .form-column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-column h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #0f3460;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .form-column p {
+      color: #666;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #2d8cf0;
+      box-shadow: 0 0 0 3px rgba(45, 140, 240, 0.1);
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #0f3460 0%, #1a4a7a 100%);
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-top: 24px;
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+
+    .form-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15, 52, 96, 0.3);
+    }
+
+    .form-submit:active {
+      transform: translateY(0);
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .success-message {
+      display: none;
+      padding: 20px;
+      background: #f0f8f4;
+      border: 1px solid #d4e8e0;
+      border-radius: 8px;
+      color: #1d6e52;
+      margin-bottom: 20px;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+
+    .download-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #2d8cf0;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    .download-link:hover {
+      background: #1a5fa8;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 40px;
+      background: #f5f7fa;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-box {
+      padding: 40px 30px;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e8ecf1;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #0f3460 0%, #2d8cf0 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    .feature-box h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .feature-box p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .form-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+      }
+      .features {
+        padding: 60px 20px;
+        gap: 30px;
+      }
+    }
+
+    /* Trust Badges */
+    .trust-section {
+      padding: 60px 40px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .trust-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .trust-badge-icon {
+      font-size: 2rem;
+    }
+
+    .trust-badge p {
+      font-size: 0.9rem;
+      color: #666;
+      font-weight: 600;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 80px 40px;
+      background: linear-gradient(135deg, rgba(15, 52, 96, 0.05) 0%, rgba(45, 140, 240, 0.05) 100%);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .testimonials-header h2 {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 800;
+      color: #0f3460;
+      margin-bottom: 12px;
+    }
+
+    .testimonials-header p {
+      color: #666;
+      font-size: 1.05rem;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial-card {
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e8ecf1;
+    }
+
+    .testimonial-stars {
+      color: #ffc107;
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .testimonial-text {
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: #222;
+      font-size: 0.95rem;
+    }
+
+    .testimonial-role {
+      color: #999;
+      font-size: 0.85rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f3460;
+      color: #fff;
+      padding: 60px 40px 40px;
+    }
+
+    footer .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    footer .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      footer {
+        padding: 40px 20px;
+      }
+      footer .footer-content {
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">sayfe.ai</div>
+    <ul>
+      <li><a href="/#how-it-works">How It Works</a></li>
+      <li><a href="/#industries">Industries</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/#get-started" class="get-started">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Free Download</div>
+      <h1>50 Ready-to-Use ChatGPT Business Prompts</h1>
+      <p>Copy-paste prompts for marketing, sales, operations, HR, finance, and customer service. Instantly save your team 10+ hours per week.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <div class="form-column">
+      <h2>What's Inside</h2>
+      <p>Get instant access to 50 battle-tested ChatGPT Business prompts that teams across 15+ industries use to:</p>
+      <ul style="list-style: none; color: #666;">
+        <li style="margin-bottom: 12px;"><strong>✓ Boost productivity</strong> by 10+ hours per week</li>
+        <li style="margin-bottom: 12px;"><strong>✓ Improve content quality</strong> without hiring</li>
+        <li style="margin-bottom: 12px;"><strong>✓ Automate repetitive tasks</strong> instantly</li>
+        <li style="margin-bottom: 12px;"><strong>✓ Train your team</strong> on ChatGPT best practices</li>
+      </ul>
+    </div>
+
+    <div class="form-column">
+      <form id="leadForm">
+        <div class="success-message" id="successMessage">
+          <div style="margin-bottom: 12px;">✓ Thank you! Check your email for the download link.</div>
+          <a href="/downloads/chatgpt-business-quickstart-guide.pdf" class="download-link">Or download directly →</a>
+        </div>
+
+        <div id="formFields">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com">
+          </div>
+
+          <div class="form-group">
+            <label for="industry">Your Industry</label>
+            <select id="industry" name="industry" required>
+              <option value="">Select your industry...</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="chiropractic">Chiropractic</option>
+              <option value="legal">Legal</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="consulting">Consulting</option>
+              <option value="construction">Construction</option>
+              <option value="real-estate">Real Estate</option>
+              <option value="finance">Finance</option>
+              <option value="insurance">Insurance</option>
+              <option value="logistics">Logistics</option>
+              <option value="retail">Retail</option>
+              <option value="marketing">Marketing</option>
+              <option value="education">Education</option>
+              <option value="professional-services">Professional Services</option>
+              <option value="nonprofit">Nonprofit</option>
+            </select>
+          </div>
+
+          <button type="submit" class="form-submit">Get Your Free Guide</button>
+          <p class="form-note">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section style="padding: 80px 40px; background: #fff;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 60px;">
+        <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; color: #0f3460; margin-bottom: 12px;">All 50 Prompts Cover</h2>
+        <p style="color: #666; font-size: 1.05rem;">Ready-to-use for every department</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px;">
+        <div class="feature-box">
+          <div class="feature-icon">📧</div>
+          <h3>Marketing & Sales</h3>
+          <p>Email campaigns, social posts, ad copy, lead follow-ups, and sales scripts.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">⚙️</div>
+          <h3>Operations & HR</h3>
+          <p>Process documentation, meeting agendas, employee guides, and workflow optimization.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">💰</div>
+          <h3>Finance & Service</h3>
+          <p>Financial analysis, customer service templates, compliance docs, and reporting.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">🏢</div>
+          <h3>Industry-Specific</h3>
+          <p>Tailored prompts for healthcare, legal, real estate, manufacturing, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="trust-section">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f3460; margin-bottom: 40px;">Why Trust Sayfe.ai?</h2>
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <div class="trust-badge-icon">✓</div>
+          <p>Official OpenAI Partner</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon">📨</div>
+          <p>No Spam, Ever</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon">⚡</div>
+          <p>Instant Download</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon">🔒</div>
+          <p>Privacy Protected</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="testimonials-header">
+      <h2>Loved by Business Teams</h2>
+      <p>See how teams are using ChatGPT Business to save time and boost productivity</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">"These prompts saved us countless hours on content creation. Our marketing team is now 3x more efficient."</div>
+        <div class="testimonial-author">Sarah Chen</div>
+        <div class="testimonial-role">Marketing Director, Tech Startup</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">"Finally, a resource specifically for business use. Much better than generic AI guides. Highly recommend."</div>
+        <div class="testimonial-author">Michael Rodriguez</div>
+        <div class="testimonial-role">Operations Manager, Manufacturing</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">"We implemented these prompts across the team and saw immediate productivity gains. Worth every minute."</div>
+        <div class="testimonial-author">Jessica Park</div>
+        <div class="testimonial-role">HR Lead, Finance Firm</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="padding: 80px 40px; background: linear-gradient(135deg, #0f3460 0%, #1a4a7a 100%); color: #fff; text-align: center;">
+    <div style="max-width: 700px; margin: 0 auto;">
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; margin-bottom: 16px;">Ready to Transform Your Team?</h2>
+      <p style="font-size: 1.1rem; color: rgba(255,255,255,.85); margin-bottom: 32px; line-height: 1.7;">Download your free guide now and start using ChatGPT Business effectively. Then, explore our full partnership program.</p>
+      <a href="#" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; background: #fff; color: #0f3460; border-radius: 100px; font-weight: 700; font-size: 1rem;">
+        Get Started with ChatGPT Business
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h4>Sayfe.ai</h4>
+        <p style="color: rgba(255,255,255,.7); margin-bottom: 12px;">Official OpenAI SMB Channel Partner</p>
+        <p style="color: rgba(255,255,255,.6); font-size: 0.9rem;">Helping businesses adopt ChatGPT Business across 15+ industries.</p>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="/#industries">Industries</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/free-guide">Free Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved. Authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "50 Ready-to-Use ChatGPT Business Prompts",
+    "description": "Free guide with 50 copy-paste ChatGPT Business prompts for marketing, sales, operations, HR, finance, and customer service.",
+    "url": "https://sayfe.ai/free-guide",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfe.ai",
+      "logo": "https://sayfe.ai/logo.png"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "50 ChatGPT Business Prompts",
+    "description": "Ready-to-use prompts for marketing, sales, operations, HR, finance, and customer service",
+    "url": "https://sayfe.ai/free-guide",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const industry = document.getElementById('industry').value;
+
+      // For now, just show the success message
+      // In production, this would submit to Supabase
+      console.log('Form submitted:', { name, email, industry });
+
+      document.getElementById('formFields').style.display = 'none';
+      document.getElementById('successMessage').classList.add('show');
+
+      // Scroll to success message
+      setTimeout(() => {
+        document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    });
+  </script>
+</body>
+</html>
