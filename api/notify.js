@@ -20,7 +20,7 @@ module.exports = async function handler(req, res) {
   }
 
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
-  const NOTIFY_EMAIL = 'cbenson@sayfe.ai';
+  const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || 'csbenson001@gmail.com';
 
   if (!RESEND_API_KEY) {
     console.error('RESEND_API_KEY not configured');
@@ -89,12 +89,12 @@ module.exports = async function handler(req, res) {
       })
     });
 
+    const responseBody = await response.text();
     if (response.ok) {
       return res.status(200).json({ success: true });
     } else {
-      const error = await response.text();
-      console.error('Resend error:', error);
-      return res.status(500).json({ error: 'Failed to send notification' });
+      console.error('Resend error:', response.status, responseBody);
+      return res.status(500).json({ error: 'Failed to send notification', details: responseBody });
     }
   } catch (err) {
     console.error('Notification error:', err);
