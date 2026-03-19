@@ -23,7 +23,7 @@ Sayfe.ai remains the separate consulting brand for privately hosted AI solutions
 ## Tech Stack
 - **Hosting**: Vercel (static site)
 - **Framework**: Pure HTML/CSS/JS (no build step)
-- **Domain**: elevaiq.ai
+- **Domain**: elevaiq.com
 - **Git**: github.com/csbenson001/sayfe-chatgpt-business
 - **Lead Capture**: Supabase-ready (forms need connection)
 

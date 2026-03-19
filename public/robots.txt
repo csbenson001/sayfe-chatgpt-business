@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elevaiq.ai/sitemap.xml
+Sitemap: https://elevaiq.com/sitemap.xml

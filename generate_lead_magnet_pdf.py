@@ -137,7 +137,7 @@ def build_pdf():
         spaceAfter=4,
         alignment=1,
     )
-    elements.append(Paragraph("elevaiq.ai | Free Onboarding & Consulting", contact_style))
+    elements.append(Paragraph("elevaiq.com | Free Onboarding & Consulting", contact_style))
 
     elements.append(Spacer(1, 0.5*inch))
 
@@ -189,7 +189,7 @@ def build_pdf():
 
     cta_text = """
     <b>Want a personalized prompt library for your industry?</b><br/>
-    Visit <font color="#2d8cf0"><b>elevaiq.ai</b></font> to get free personalized prompt templates,
+    Visit <font color="#2d8cf0"><b>elevaiq.com</b></font> to get free personalized prompt templates,
     training resources, and unlimited onboarding consulting.
     """
     elements.append(Paragraph(cta_text, body_accent))
@@ -619,10 +619,10 @@ def build_pdf():
     elements.append(Spacer(1, 0.15*inch))
 
     final_cta_text = """
-    <b>Visit elevaiq.ai</b> to explore industry-specific prompt templates,
+    <b>Visit elevaiq.com</b> to explore industry-specific prompt templates,
     schedule your free AI audit, and learn how ChatGPT Business can transform your team.<br/>
     <br/>
-    <b>Schedule Your Free Consultation:</b> elevaiq.ai/contact
+    <b>Schedule Your Free Consultation:</b> elevaiq.com/contact
     """
     elements.append(Paragraph(final_cta_text, body_accent))
 
