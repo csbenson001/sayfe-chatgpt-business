@@ -5,8 +5,8 @@
  * SETUP: Replace SUPABASE_URL and SUPABASE_ANON_KEY with your actual values
  */
 
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';  // e.g., https://xxxxx.supabase.co
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';  // e.g., eyJhbGci...
+const SUPABASE_URL = 'https://pivhfcdvimwerxluxjnd.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdmhmY2R2aW13ZXJ4bHV4am5kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5MTU5ODIsImV4cCI6MjA4OTQ5MTk4Mn0.skzOowU4Tshy9PRN62ELaxGUxmmSpr-zQ5sPiiazsmI';
 
 /**
  * Submit a lead to Supabase
