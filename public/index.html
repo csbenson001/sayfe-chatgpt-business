@@ -2147,24 +2147,28 @@ footer {
 const industries = [
   {
     name: "Healthcare & Medical Offices",
+    slug: "healthcare",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>',
     summary: "Streamline patient communications, clinical documentation, and practice operations with AI-powered workflows.",
     useCases: ["Draft patient education materials and after-visit summaries", "Create insurance pre-authorization narratives faster", "Generate staff training documents and procedure guides", "Summarize medical research for clinical reference", "Automate appointment reminder and follow-up communications", "Build FAQ responses for patient portals", "Draft referral letters and coordination notes", "Create compliance documentation and audit preparation materials"]
   },
   {
     name: "Chiropractic & Wellness",
+    slug: "chiropractic",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><path d="M14 12v.01"/></svg>',
     summary: "Enhance patient engagement, streamline documentation, and grow your practice with AI-assisted marketing and operations.",
     useCases: ["Generate personalized treatment plan summaries for patients", "Create educational content about spinal health and wellness", "Draft social media posts and blog content for practice marketing", "Automate insurance verification and claims narratives", "Build intake form analysis and patient history summaries", "Create exercise and rehab instruction sheets", "Draft newsletters and patient retention campaigns", "Generate Google Business review response templates"]
   },
   {
     name: "Manufacturing",
+    slug: "manufacturing",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>',
     summary: "Reduce documentation time by up to 60% and accelerate new operator onboarding with AI-powered SOPs and training.",
     useCases: ["Draft and update standard operating procedures (SOPs)", "Create safety compliance narratives and incident reports", "Generate quality control documentation and audit responses", "Write RFQ responses and supplier communications", "Build maintenance schedules and work order descriptions", "Summarize production data and shift reports", "Create onboarding and training materials for new operators", "Generate change order documentation and engineering change notices"]
   },
   {
     name: "Legal",
+    slug: "legal",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>',
     summary: "Accelerate legal research, contract drafting, and case preparation while maintaining attorney-client privilege protections.",
     useCases: ["Summarize case law and legal research findings", "Draft and review contract language and clauses", "Organize case chronologies and deposition prep materials", "Generate client communication drafts and engagement letters", "Create motion and brief outlines with supporting arguments", "Draft discovery responses and interrogatory answers", "Build matter management documentation and status reports", "Generate compliance checklists and regulatory summaries"],
@@ -2172,66 +2176,77 @@ const industries = [
   },
   {
     name: "Consulting Firms",
+    slug: "consulting",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
     summary: "Deliver higher-quality deliverables faster and scale your team's capacity without adding headcount.",
     useCases: ["Generate client proposals and SOW documents in minutes", "Create presentation frameworks and executive summaries", "Draft market research reports and competitive analyses", "Build project status updates and stakeholder communications", "Summarize interview transcripts and discovery sessions", "Create frameworks, models, and analysis templates", "Draft thought leadership content and whitepapers", "Generate training materials for client workshops"]
   },
   {
     name: "Construction",
+    slug: "construction",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="8" rx="1"/><path d="M17 14v7"/><path d="M7 14v7"/><path d="M17 3v3"/><path d="M7 3v3"/><path d="M10 14 2.3 6.3"/><path d="m14 6 7.7 7.7"/></svg>',
     summary: "Reduce project documentation overhead and improve safety compliance with AI-powered construction workflows.",
     useCases: ["Generate daily logs and progress reports", "Draft RFI responses and submittals", "Create safety toolbox talk topics and materials", "Write change order justifications and documentation", "Build bid proposals and scope-of-work descriptions", "Summarize project specifications and drawing notes", "Draft subcontractor communications and coordination memos", "Generate punch list documentation and closeout packages"]
   },
   {
     name: "Real Estate",
+    slug: "real-estate",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
     summary: "Write better listings, close faster, and automate client communications with AI-powered real estate workflows.",
     useCases: ["Generate compelling property listing descriptions", "Draft buyer and seller communications at every stage", "Create market analysis reports and CMA summaries", "Build social media content calendars for listings", "Write offer letters and negotiation talking points", "Generate neighborhood guides and community profiles", "Draft open house follow-up sequences", "Create investor presentations and property analysis memos"]
   },
   {
     name: "Finance & Accounting",
+    slug: "finance",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="1" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
     summary: "Automate financial reporting narratives, client communications, and compliance documentation.",
     useCases: ["Draft financial analysis narratives and board reports", "Generate client advisory memos and recommendations", "Create audit preparation documentation and responses", "Write tax planning communications to clients", "Build cash flow analysis summaries and projections", "Draft regulatory compliance documentation", "Generate accounts receivable follow-up communications", "Create onboarding documents for new financial clients"]
   },
   {
     name: "Insurance",
+    slug: "insurance",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>',
     summary: "Speed up underwriting documentation, claims processing narratives, and policyholder communications.",
     useCases: ["Draft claims investigation summaries and reports", "Generate policy renewal communications and proposals", "Create underwriting analysis narratives", "Write loss control recommendations and reports", "Build policyholder education materials", "Draft compliance and regulatory filing narratives", "Generate marketing content for agency growth", "Create training materials for new agents"]
   },
   {
     name: "Logistics & Supply Chain",
+    slug: "logistics",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="6" x="4" y="2" rx="2"/><rect width="20" height="6" x="2" y="10" rx="2"/><rect width="16" height="6" x="4" y="18" rx="2"/></svg>',
     summary: "Optimize route planning documentation, vendor communications, and operational reporting with AI.",
     useCases: ["Draft carrier and vendor communications", "Generate shipping documentation and customs narratives", "Create performance reports and KPI summaries", "Write RFP responses for logistics contracts", "Build standard operating procedures for warehouse ops", "Draft claims and dispute resolution documentation", "Generate safety and compliance training materials", "Create customer delivery status communication templates"]
   },
   {
     name: "Retail & E-commerce",
+    slug: "retail",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>',
     summary: "Scale product descriptions, marketing campaigns, and customer service with AI-powered retail workflows.",
     useCases: ["Generate product descriptions at scale across catalogs", "Create email marketing campaigns and promotional copy", "Draft customer service response templates and FAQ content", "Write social media content calendars and ad copy", "Build seasonal campaign strategies and messaging", "Generate inventory analysis summaries and reorder suggestions", "Create employee training materials for sales teams", "Draft press releases and partnership announcements"]
   },
   {
     name: "Marketing & Advertising",
+    slug: "marketing",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/></svg>',
     summary: "Produce more content, faster campaigns, and better copy across every channel with AI creative workflows.",
     useCases: ["Generate blog posts, articles, and thought leadership content", "Create ad copy variations for A/B testing at scale", "Draft social media strategies and content calendars", "Write email sequences and nurture campaigns", "Build SEO content briefs and keyword-optimized articles", "Generate press releases and media pitches", "Create video scripts and podcast outlines", "Draft client reports with campaign performance narratives"]
   },
   {
     name: "Education & Training",
+    slug: "education",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 12 0v-5"/></svg>',
     summary: "Create curriculum, assessments, and training materials faster while personalizing learning experiences.",
     useCases: ["Draft lesson plans and course outlines", "Generate quiz questions and assessment materials", "Create student feedback and progress report narratives", "Build professional development workshop content", "Write grant proposals and program descriptions", "Generate parent communication templates", "Create differentiated instruction materials", "Draft accreditation documentation and self-study reports"]
   },
   {
     name: "Professional Services",
+    slug: "professional-services",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>',
     summary: "Increase billable output and reduce administrative overhead across your professional services firm.",
     useCases: ["Generate client proposals and engagement letters", "Draft project deliverables and report frameworks", "Create internal knowledge base articles and best practices", "Write thought leadership and business development content", "Build project retrospective summaries and lessons learned", "Generate SOW documents and change request templates", "Create recruitment job descriptions and interview guides", "Draft client satisfaction surveys and follow-up communications"]
   },
   {
     name: "Nonprofit & Associations",
+    slug: "nonprofit",
     icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     summary: "Stretch limited staff further with AI-powered grant writing, donor communications, and program documentation.",
     useCases: ["Draft grant proposals and LOI submissions", "Generate donor communications and impact reports", "Create event marketing materials and sponsorship proposals", "Write board reports and meeting minutes summaries", "Build volunteer recruitment and training materials", "Generate program evaluation narratives and outcomes reports", "Create social media advocacy campaigns", "Draft annual reports and organizational updates"]
@@ -2248,6 +2263,10 @@ function renderUseCases() {
         <h3>${ind.name}</h3>
       </div>
       <p class="usecase-summary">${ind.summary}</p>
+      <a href="/${ind.slug}" class="industry-detail-link" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:600;color:var(--accent);text-decoration:none;margin-bottom:12px;transition:all .2s;">
+        View full ${ind.name.split('&')[0].trim().split(' ')[0]} page
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
       <div class="usecase-expand">
         View AI use cases
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -2264,10 +2283,14 @@ function renderUseCases() {
             For large-scale litigation data analytics and legal AI consulting, visit our partner <a href="https://verdictconsultinggroup.com" target="_blank" rel="noopener">Verdict Consulting Group</a>.
           </div>
           ` : ''}
-          <div class="usecase-cta-row">
+          <div class="usecase-cta-row" style="display:flex;gap:12px;flex-wrap:wrap;">
             <a href="#get-started" class="btn btn-primary" onclick="event.stopPropagation()">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               Get Started
+            </a>
+            <a href="/${ind.slug}" class="btn btn-outline" onclick="event.stopPropagation()" style="font-size:.88rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              View Industry Details
             </a>
           </div>
         </div>
