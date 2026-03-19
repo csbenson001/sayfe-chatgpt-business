@@ -1,6 +1,12 @@
 {
   "buildCommand": "",
   "outputDirectory": "public",
+  "functions": {
+    "api/*.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
     { "source": "/healthcare", "destination": "/industries/healthcare.html" },
     { "source": "/chiropractic", "destination": "/industries/chiropractic.html" },

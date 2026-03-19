@@ -56,6 +56,12 @@ async function submitLead(leadData) {
     });
 
     if (response.ok || response.status === 201) {
+      // Send email notification (fire and forget — don't block the UI)
+      fetch('/api/notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(leadData)
+      }).catch(() => {}); // Silently fail if notification fails
       return { success: true };
     } else {
       const errorText = await response.text();
