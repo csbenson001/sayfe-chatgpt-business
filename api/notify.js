@@ -82,7 +82,7 @@ module.exports = async function handler(req, res) {
         'Authorization': `Bearer ${RESEND_API_KEY}`
       },
       body: JSON.stringify({
-        from: 'ElevaIQ Leads <onboarding@resend.dev>',
+        from: 'ElevaIQ Leads <onboarding@onboarding.sayfe.ai>',
         to: [NOTIFY_EMAIL],
         subject: subject,
         html: htmlBody
