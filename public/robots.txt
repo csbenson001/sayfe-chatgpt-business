@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://growthiq.ai/sitemap.xml
+Sitemap: https://elevaiq.ai/sitemap.xml

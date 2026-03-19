@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://growthiq.ai/</loc>
+    <loc>https://elevaiq.ai/</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog</loc>
+    <loc>https://elevaiq.ai/blog</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/pricing</loc>
+    <loc>https://elevaiq.ai/pricing</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/about</loc>
+    <loc>https://elevaiq.ai/about</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/contact</loc>
+    <loc>https://elevaiq.ai/contact</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -34,7 +34,7 @@
 
   <!-- Industries Directory -->
   <url>
-    <loc>https://growthiq.ai/industries</loc>
+    <loc>https://elevaiq.ai/industries</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -42,91 +42,91 @@
 
   <!-- Industry Pages -->
   <url>
-    <loc>https://growthiq.ai/healthcare</loc>
+    <loc>https://elevaiq.ai/healthcare</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/chiropractic</loc>
+    <loc>https://elevaiq.ai/chiropractic</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/legal</loc>
+    <loc>https://elevaiq.ai/legal</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/manufacturing</loc>
+    <loc>https://elevaiq.ai/manufacturing</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/consulting</loc>
+    <loc>https://elevaiq.ai/consulting</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/construction</loc>
+    <loc>https://elevaiq.ai/construction</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/real-estate</loc>
+    <loc>https://elevaiq.ai/real-estate</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/finance</loc>
+    <loc>https://elevaiq.ai/finance</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/insurance</loc>
+    <loc>https://elevaiq.ai/insurance</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/logistics</loc>
+    <loc>https://elevaiq.ai/logistics</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/retail</loc>
+    <loc>https://elevaiq.ai/retail</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/marketing</loc>
+    <loc>https://elevaiq.ai/marketing</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/education</loc>
+    <loc>https://elevaiq.ai/education</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/professional-services</loc>
+    <loc>https://elevaiq.ai/professional-services</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/nonprofit</loc>
+    <loc>https://elevaiq.ai/nonprofit</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -134,121 +134,121 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-small-business-guide</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-small-business-guide</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-business-vs-plus</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-business-vs-plus</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/ai-healthcare-practices</loc>
+    <loc>https://elevaiq.ai/blog/ai-healthcare-practices</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-for-law-firms</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-for-law-firms</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/ai-manufacturing-guide</loc>
+    <loc>https://elevaiq.ai/blog/ai-manufacturing-guide</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-business-roi</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-business-roi</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-real-estate-prompts</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-real-estate-prompts</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/ai-financial-advisors-compliance</loc>
+    <loc>https://elevaiq.ai/blog/ai-financial-advisors-compliance</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-insurance-agencies</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-insurance-agencies</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-education-schools</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-education-schools</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-retail-ecommerce</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-retail-ecommerce</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-construction-contractors</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-construction-contractors</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-consulting-firms</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-consulting-firms</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-logistics-supply-chain</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-logistics-supply-chain</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-marketing-agencies</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-marketing-agencies</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-nonprofit-organizations</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-nonprofit-organizations</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-chiropractic-practices</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-chiropractic-practices</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-business-prompts-library</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-business-prompts-library</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/ai-adoption-checklist-small-business</loc>
+    <loc>https://elevaiq.ai/blog/ai-adoption-checklist-small-business</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-professional-services</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-professional-services</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -256,19 +256,19 @@
 
   <!-- News & Trends -->
   <url>
-    <loc>https://growthiq.ai/blog/openai-ipo-what-it-means-for-business</loc>
+    <loc>https://elevaiq.ai/blog/openai-ipo-what-it-means-for-business</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-healthcare-hipaa-2026</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-healthcare-hipaa-2026</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/1-million-businesses-using-chatgpt</loc>
+    <loc>https://elevaiq.ai/blog/1-million-businesses-using-chatgpt</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -276,19 +276,19 @@
 
   <!-- AI & Business -->
   <url>
-    <loc>https://growthiq.ai/blog/ai-replacing-jobs-myth</loc>
+    <loc>https://elevaiq.ai/blog/ai-replacing-jobs-myth</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/ai-environmental-impact-honest-look</loc>
+    <loc>https://elevaiq.ai/blog/ai-environmental-impact-honest-look</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://growthiq.ai/blog/chatgpt-data-privacy-security-guide</loc>
+    <loc>https://elevaiq.ai/blog/chatgpt-data-privacy-security-guide</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -296,7 +296,7 @@
 
   <!-- Lead Magnet -->
   <url>
-    <loc>https://growthiq.ai/free-guide</loc>
+    <loc>https://elevaiq.ai/free-guide</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
