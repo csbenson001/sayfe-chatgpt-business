@@ -7,6 +7,11 @@
 <meta name="description" content="GrowthIQ.ai is an authorized OpenAI service partner helping small and medium businesses deploy ChatGPT Business. Expert onboarding, AI training, and consulting services for teams of 1–149. Get started today.">
 <meta name="keywords" content="ChatGPT Business, ChatGPT for teams, AI for small business, OpenAI partner, ChatGPT enterprise, AI adoption, business AI tools, AI consulting, SMB AI, ChatGPT deployment">
 <meta name="robots" content="index, follow">
+<!-- Google Analytics - Replace GA_MEASUREMENT_ID with your actual ID -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script> -->
+<!-- Google Search Console verification - Replace with your actual verification code -->
+<!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
 <link rel="canonical" href="https://growthiq.ai">
 
 <!-- Open Graph -->
@@ -2429,6 +2434,36 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // ==================== INIT ====================
 renderUseCases();
 setTimeout(initObserver, 100);
+</script>
+
+<!-- Mobile Sticky CTA Bar -->
+<div id="mobileCTA" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:998;background:var(--yale-deep);padding:12px 16px;box-shadow:0 -4px 20px rgba(0,0,0,.15);border-top:1px solid rgba(255,255,255,.1);">
+  <div style="display:flex;align-items:center;justify-content:space-between;max-width:600px;margin:0 auto;gap:12px;">
+    <div style="color:white;font-family:var(--font-body);flex:1;">
+      <div style="font-size:.82rem;font-weight:700;">ChatGPT Business</div>
+      <div style="font-size:.7rem;color:rgba(255,255,255,.5);">$30/user/mo — free onboarding</div>
+    </div>
+    <a href="#get-started" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;background:var(--accent);color:white;border-radius:100px;font-family:var(--font-body);font-size:.85rem;font-weight:700;text-decoration:none;white-space:nowrap;transition:all .2s;">
+      Get Started
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+<script>
+// Show mobile CTA bar only on small screens after scrolling past hero
+if (window.innerWidth <= 768) {
+  const mobileCTA = document.getElementById('mobileCTA');
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    if (scrollY > 600) {
+      mobileCTA.style.display = 'block';
+    } else {
+      mobileCTA.style.display = 'none';
+    }
+    lastScroll = scrollY;
+  }, { passive: true });
+}
 </script>
 
 </body>

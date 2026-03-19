@@ -20,6 +20,7 @@
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/industries", "destination": "/industries/index.html" },
     { "source": "/free-guide", "destination": "/free-guide.html" },
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog/chatgpt-small-business-guide", "destination": "/blog/chatgpt-small-business-guide.html" },

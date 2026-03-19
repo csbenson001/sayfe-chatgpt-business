@@ -4,7 +4,7 @@
 GrowthIQ.ai is an authorized OpenAI SMB Channel Partner site for Vandelay Consulting Inc (Chris Benson).
 The site drives ChatGPT Business referral sign-ups across 15+ industry verticals.
 Parent brand for the IQ family of industry-specific domains (PracticeIQ.ai, CounselIQ.ai, AgentIQ.ai, etc.).
-GrowthIQ.ai remains the separate consulting brand for privately hosted AI solutions.
+Sayfe.ai remains the separate consulting brand for privately hosted AI solutions.
 
 ## Commission Structure (from OpenAI Partner Guide)
 - **Months 1-12**: 50% of Eligible Revenue
