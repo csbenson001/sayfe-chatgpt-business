@@ -193,6 +193,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+<script src="/js/supabase-leads.js"></script>
 
 <style>
 :root {
@@ -2357,8 +2358,10 @@ function submitStep1() {
     alert('Please provide your name and a valid work email.'); return;
   }
   step1Data = { first_name: firstName, email, source: 'elevaiq-ai-landing', status: 'new', created_at: new Date().toISOString() };
-  // SUPABASE: insert minimal lead here immediately
-  console.log('Step 1 lead:', step1Data);
+  // Submit lead to Supabase immediately (capture email even if they don't finish step 2)
+  if (window.ElevaIQ) {
+    window.ElevaIQ.submitLead({ email, name: firstName, form_type: 'quick_signup', source: '/homepage-step1' });
+  }
   document.getElementById('quickStep1').style.display = 'none';
   document.getElementById('quickStep2').style.display = 'block';
 }
@@ -2372,8 +2375,15 @@ function submitStep2() {
     goals: document.getElementById('qGoals').value.trim(),
     status: 'qualified'
   };
-  // SUPABASE: update lead with additional info
-  console.log('Step 2 qualified lead:', fullData);
+  // Update lead with qualification data
+  if (window.ElevaIQ) {
+    window.ElevaIQ.submitLead({
+      email: step1Data.email, name: step1Data.first_name,
+      company: fullData.company, team_size: fullData.team_size,
+      industry: fullData.industry, message: fullData.goals,
+      form_type: 'quick_signup_qualified', source: '/homepage-step2'
+    });
+  }
   showFinalSuccess();
 }
 
@@ -2403,7 +2413,15 @@ function submitEntForm() {
     source: 'elevaiq-ai-landing-enterprise', status: 'new',
     created_at: new Date().toISOString()
   };
-  console.log('Enterprise lead:', data);
+  // Submit enterprise lead to Supabase
+  if (window.ElevaIQ) {
+    window.ElevaIQ.submitLead({
+      email: data.email, name: data.contact_name, company: data.company,
+      industry: data.industry, team_size: data.target_seats,
+      phone: data.phone, message: `Title: ${data.title} | Employees: ${data.total_employees} | Tools: ${data.current_tools} | Goals: ${data.goals} | Timeline: ${data.timeline}`,
+      form_type: 'enterprise', source: '/homepage-enterprise'
+    });
+  }
   document.getElementById('entFields').style.display = 'none';
   document.getElementById('entSuccess').classList.add('active');
 }

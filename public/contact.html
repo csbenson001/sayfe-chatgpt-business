@@ -883,6 +883,25 @@
       }
 
       if (isValid) {
+        // Submit to Supabase if available
+        const name = formData.get('fullName').trim();
+        const email = formData.get('workEmail').trim();
+        const company = formData.get('companyName').trim();
+        const phone = formData.get('teamSize') ? formData.get('teamSize') : '';
+        const industry = formData.get('industry') ? formData.get('industry') : '';
+        const message = formData.get('message') ? formData.get('message') : '';
+
+        if (window.ElevaIQ) {
+          window.ElevaIQ.submitContactForm({
+            name: name,
+            email: email,
+            company: company,
+            phone: phone,
+            industry: industry,
+            message: message
+          });
+        }
+
         // Hide form and show success message
         formContent.classList.add('hide');
         successMessage.classList.add('show');
@@ -911,5 +930,7 @@
       });
     });
   </script>
+
+  <script src="/js/supabase-leads.js"></script>
 </body>
 </html>

@@ -1288,6 +1288,11 @@
                 return;
             }
 
+            // Submit to Supabase if available
+            if (window.ElevaIQ) {
+                window.ElevaIQ.submitNewsletter(email);
+            }
+
             // Simulate subscription (replace with actual API call)
             alert(`Thank you for subscribing with ${email}! Check your inbox for updates.`);
             e.target.reset();
@@ -1296,5 +1301,7 @@
         // Initialize
         filterCards();
     </script>
+
+    <script src="/js/supabase-leads.js"></script>
 </body>
 </html>

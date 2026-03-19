@@ -790,8 +790,11 @@
       const email = document.getElementById('email').value;
       const industry = document.getElementById('industry').value;
 
-      // For now, just show the success message
-      // In production, this would submit to Supabase
+      // Submit to Supabase if available
+      if (window.ElevaIQ) {
+        window.ElevaIQ.submitFreeGuide(name, email, industry);
+      }
+
       console.log('Form submitted:', { name, email, industry });
 
       document.getElementById('formFields').style.display = 'none';
@@ -803,5 +806,7 @@
       }, 100);
     });
   </script>
+
+  <script src="/js/supabase-leads.js"></script>
 </body>
 </html>

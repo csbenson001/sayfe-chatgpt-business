@@ -163,7 +163,7 @@ footer{padding:48px 40px;background:var(--offwhite);border-top:1px solid var(--b
   <p>Enter your email for a free AI Readiness Audit + a custom Marketing prompt library with 50+ tested prompts.</p>
   <div class="mini-form">
     <input type="email" placeholder="Your work email" id="ctaEmail">
-    <button onclick="document.getElementById('ctaEmail').value?window.location.href='https://elevaiq.com/#get-started':alert('Please enter your email')">Get Free Audit</button>
+    <button onclick="handleIndustryCTA('Marketing')">Get Free Audit</button>
   </div>
   <p style="font-size:.78rem;color:rgba(255,255,255,.3);margin-top:16px;">No credit card. No commitment. We respond same day.</p>
 </section>
@@ -199,5 +199,25 @@ footer{padding:48px 40px;background:var(--offwhite);border-top:1px solid var(--b
   <p class="f-legal">&copy; 2026 ElevaIQ.ai — A service of Vandelay Consulting Inc. Authorized OpenAI Service Partner. <a href="https://elevaiq.com">Home</a> &middot; <a href="https://elevaiq.com/#industries">All Industries</a> &middot; <a href="https://elevaiq.com/#pricing">Pricing</a>
     <a href="/blog">Blog</a> &middot; <a href="https://elevaiq.com/#get-started">Get Started</a></p>
 </footer>
+<script>
+  function handleIndustryCTA(industry) {
+    const email = document.getElementById('ctaEmail').value.trim();
+
+    if (!email) {
+      alert('Please enter your email address');
+      return;
+    }
+
+    // Submit to Supabase if available
+    if (window.ElevaIQ) {
+      window.ElevaIQ.submitIndustryCTA(email, industry);
+    }
+
+    // Redirect to get-started
+    window.location.href = 'https://elevaiq.com/#get-started';
+  }
+</script>
+
+<script src="/js/supabase-leads.js"></script>
 </body>
 </html>
