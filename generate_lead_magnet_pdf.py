@@ -48,6 +48,7 @@ def create_title_style(size, color=DARK_TEXT, bold=False):
         fontSize=size,
         textColor=color,
         spaceAfter=12,
+        leading=size * 1.3,  # Proper line spacing relative to font size
         alignment=1,  # Center
     )
 

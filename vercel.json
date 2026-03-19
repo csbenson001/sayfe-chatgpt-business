@@ -41,7 +41,13 @@
     { "source": "/blog/chatgpt-chiropractic-practices", "destination": "/blog/chatgpt-chiropractic-practices.html" },
     { "source": "/blog/chatgpt-business-prompts-library", "destination": "/blog/chatgpt-business-prompts-library.html" },
     { "source": "/blog/ai-adoption-checklist-small-business", "destination": "/blog/ai-adoption-checklist-small-business.html" },
-    { "source": "/blog/chatgpt-professional-services", "destination": "/blog/chatgpt-professional-services.html" }
+    { "source": "/blog/chatgpt-professional-services", "destination": "/blog/chatgpt-professional-services.html" },
+    { "source": "/blog/openai-ipo-what-it-means-for-business", "destination": "/blog/openai-ipo-what-it-means-for-business.html" },
+    { "source": "/blog/chatgpt-healthcare-hipaa-2026", "destination": "/blog/chatgpt-healthcare-hipaa-2026.html" },
+    { "source": "/blog/1-million-businesses-using-chatgpt", "destination": "/blog/1-million-businesses-using-chatgpt.html" },
+    { "source": "/blog/ai-replacing-jobs-myth", "destination": "/blog/ai-replacing-jobs-myth.html" },
+    { "source": "/blog/ai-environmental-impact-honest-look", "destination": "/blog/ai-environmental-impact-honest-look.html" },
+    { "source": "/blog/chatgpt-data-privacy-security-guide", "destination": "/blog/chatgpt-data-privacy-security-guide.html" }
   ],
   "headers": [
     {
