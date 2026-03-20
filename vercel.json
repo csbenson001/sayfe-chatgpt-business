@@ -48,7 +48,13 @@
     { "source": "/blog/1-million-businesses-using-chatgpt", "destination": "/blog/1-million-businesses-using-chatgpt.html" },
     { "source": "/blog/ai-replacing-jobs-myth", "destination": "/blog/ai-replacing-jobs-myth.html" },
     { "source": "/blog/ai-environmental-impact-honest-look", "destination": "/blog/ai-environmental-impact-honest-look.html" },
-    { "source": "/blog/chatgpt-data-privacy-security-guide", "destination": "/blog/chatgpt-data-privacy-security-guide.html" }
+    { "source": "/blog/chatgpt-data-privacy-security-guide", "destination": "/blog/chatgpt-data-privacy-security-guide.html" },
+    { "source": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning", "destination": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning.html" },
+    { "source": "/blog/best-ai-tools-small-business-2026", "destination": "/blog/best-ai-tools-small-business-2026.html" },
+    { "source": "/blog/chatgpt-business-setup-guide-2026", "destination": "/blog/chatgpt-business-setup-guide-2026.html" },
+    { "source": "/blog/chatgpt-business-vs-enterprise-2026", "destination": "/blog/chatgpt-business-vs-enterprise-2026.html" },
+    { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
+    { "source": "/get-started", "destination": "/get-started.html" }
   ],
   "headers": [
     {
