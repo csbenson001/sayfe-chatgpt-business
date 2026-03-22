@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI insights and guides for growing businesses. Learn how to leverage ChatGPT Business for healthcare, legal, manufacturing, finance, real estate, and more.">
+    <meta name="keywords" content="ChatGPT, AI, Business, Small Business, ChatGPT Business, AI insights">
+    <meta name="author" content="ElevaIQ.ai">
+    <meta name="canonical" href="https://elevaiq.com/blog">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elevaiq.com/blog">
+    <meta property="og:title" content="AI Insights for Growing Businesses | ElevaIQ.ai Blog">
+    <meta property="og:description" content="Discover how ChatGPT Business is transforming industries. Expert guides, case studies, and practical tips for maximizing AI in your business.">
+    <meta property="og:image" content="https://elevaiq.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="ElevaIQ.ai">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elevaiq.com/blog">
+    <meta property="twitter:title" content="AI Insights for Growing Businesses | ElevaIQ.ai Blog">
+    <meta property="twitter:description" content="Discover how ChatGPT Business is transforming industries. Expert guides, case studies, and practical tips for maximizing AI in your business.">
+    <meta property="twitter:image" content="https://elevaiq.com/og-image.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "ElevaIQ.ai Blog",
+        "description": "AI insights and guides for growing businesses",
+        "url": "https://elevaiq.com/blog"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Figtree', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f3460 0%, #2d8cf0 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .blog-section {
+            padding: 60px 20px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card-image {
+            height: 200px;
+            background: linear-gradient(135deg, #0f3460 0%, #2d8cf0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .blog-card-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card h2 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #0f3460;
+            line-height: 1.4;
+        }
+
+        .blog-card p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .blog-card .date {
+            font-size: 0.85em;
+            color: #999;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #2d8cf0;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ElevaIQ.ai Blog</h1>
+        <p>AI Insights for Growing Businesses</p>
+    </header>
+
+    <div class="container">
+        <section class="blog-section">
+            <h2>Latest Articles</h2>
+            <div class="blog-grid">
+                <!-- Blog cards will be rendered here by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ElevaIQ.ai. All rights reserved. | Powered by OpenAI</p>
+    </footer>
+
+    <script>
+        const blogPosts = [
+            {
+                "id": "openclaw-github-agents",
+                "position": 1,
+                "name": "OpenClaw Has 247K GitHub Stars in 3 Months — Here's What Every Business Owner Needs to Know",
+                "description": "Learn how OpenClaw's autonomous agents are disrupting enterprise automation. A case study for SMBs on AI agent implementation.",
+                "date": "March 22, 2026",
+                "emoji": "🤖",
+                "category": "AI Technology",
+                "link": "/blog/openclaw-github-stars"
+            },
+            {
+                "id": "chatgpt-business-vs-plus",
+                "position": 2,
+                "name": "ChatGPT Business vs ChatGPT Plus for Teams",
+                "description": "Compare ChatGPT Business and ChatGPT Plus. Understand which plan fits your business needs and how to maximize ROI with team features.",
+                "date": "March 15, 2026",
+                "emoji": "💼",
+                "category": "ChatGPT",
+                "link": "/blog/chatgpt-business-vs-plus"
+            },
+            {
+                "id": "healthcare-ai-chatgpt",
+                "position": 3,
+                "name": "How Healthcare Providers Are Using ChatGPT to Reduce Admin Burden",
+                "description": "Discover how medical practices, clinics, and hospitals are using ChatGPT Business to streamline patient communications and documentation.",
+                "date": "March 8, 2026",
+                "emoji": "🏥",
+                "category": "Healthcare",
+                "link": "/blog/healthcare-chatgpt"
+            },
+            {
+                "id": "legal-ai-compliance",
+                "position": 4,
+                "name": "AI Compliance and Legal Review: What Law Firms Need to Know",
+                "description": "Navigating AI adoption in legal practice. Learn about compliance, client confidentiality, and how ChatGPT fits into law firm workflows.",
+                "date": "March 1, 2026",
+                "emoji": "⚖️",
+                "category": "Legal",
+                "link": "/blog/legal-ai-compliance"
+            },
+            {
+                "id": "manufacturing-ai-productivity",
+                "position": 5,
+                "name": "Manufacturing Efficiency: How AI is Cutting Costs and Improving Quality",
+                "description": "From supply chain to quality control, learn how manufacturers are using AI to reduce costs, improve efficiency, and compete globally.",
+                "date": "February 22, 2026",
+                "emoji": "🏭",
+                "category": "Manufacturing",
+                "link": "/blog/manufacturing-ai"
+            },
+            {
+                "id": "consulting-ai-proposals",
+                "position": 6,
+                "name": "Consultants: Use AI to Write Better Proposals and Win More Business",
+                "description": "Cut proposal writing time in half. Learn how consultants are using ChatGPT to create compelling, data-driven proposals that win deals.",
+                "date": "February 15, 2026",
+                "emoji": "📊",
+                "category": "Consulting",
+                "link": "/blog/consulting-proposals"
+            },
+            {
+                "id": "real-estate-marketing",
+                "position": 7,
+                "name": "Real Estate Marketing Reimagined: AI-Powered Listing Descriptions",
+                "description": "Generate compelling property descriptions, answer buyer questions 24/7, and automate follow-ups with ChatGPT Business.",
+                "date": "February 8, 2026",
+                "emoji": "🏠",
+                "category": "Real Estate",
+                "link": "/blog/real-estate-marketing"
+            },
+            {
+                "id": "finance-ai-adoption",
+                "position": 8,
+                "name": "Financial Services: Compliance, Security, and AI in Banking",
+                "description": "Understand how fintech and traditional banks are adopting AI responsibly. Learn about compliance frameworks and best practices.",
+                "date": "February 1, 2026",
+                "emoji": "💰",
+                "category": "Finance",
+                "link": "/blog/finance-ai"
+            }
+        ];
+
+        function renderBlogCards() {
+            const grid = document.querySelector('.blog-grid');
+            grid.innerHTML = '';
+
+            blogPosts.forEach(post => {
+                const card = document.createElement('a');
+                card.href = post.link;
+                card.className = 'blog-card';
+
+                card.innerHTML = `
+                    <div class="blog-card-image">${post.emoji}</div>
+                    <div class="blog-card-content">
+                        <h2>${post.name}</h2>
+                        <p>${post.description}</p>
+                        <div class="date">${post.category} • ${post.date}</div>
+                        <span class="read-more">Read Article →</span>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        function filterCards() {
+            renderBlogCards();
+        }
+
+        document.addEventListener('DOMContentLoaded', renderBlogCards);
+        filterCards();
+    </script>
+
+    <script src="/js/supabase-leads.js"></script>
+</body>
+</html>
