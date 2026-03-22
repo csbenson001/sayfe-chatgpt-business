@@ -134,7 +134,7 @@
   - `public/blog/index.html` (updated with new card + JSON-LD)
 - **Live URL:** https://elevaiq.com/blog/openclaw-ai-agents-what-businesses-need-to-know
 - **Why chosen:** OpenClaw is the #1 trending AI topic this week. Jensen Huang's endorsement at GTC creates a massive search spike. The topic has a short shelf life (hype cycle), making urgency the top factor. No existing post covers this topic. Strong ElevaIQ.ai angle: "agents are the future, ChatGPT Business is how you get there safely."
-- **GitHub push:** Completed
+- **GitHub push:** Pending (next step)
 
 ---
 
