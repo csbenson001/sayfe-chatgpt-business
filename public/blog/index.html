@@ -7,294 +7,180 @@
     <meta name="keywords" content="ChatGPT, AI, Business, Small Business, ChatGPT Business, AI insights">
     <meta name="author" content="ElevaIQ.ai">
     <meta name="canonical" href="https://elevaiq.com/blog">
-
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://elevaiq.com/blog">
     <meta property="og:title" content="AI Insights for Growing Businesses | ElevaIQ.ai Blog">
-    <meta property="og:description" content="Discover how ChatGPT Business is transforming industries. Expert guides, case studies, and practical tips for maximizing AI in your business.">
+    <meta property="og:description" content="Discover how ChatGPT Business is transforming industries. Expert guides, case studies, and practical tips.">
     <meta property="og:image" content="https://elevaiq.com/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ElevaIQ.ai">
-
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://elevaiq.com/blog">
     <meta property="twitter:title" content="AI Insights for Growing Businesses | ElevaIQ.ai Blog">
-    <meta property="twitter:description" content="Discover how ChatGPT Business is transforming industries. Expert guides, case studies, and practical tips for maximizing AI in your business.">
+    <meta property="twitter:description" content="Discover how ChatGPT Business is transforming industries. Expert guides, case studies, and practical tips.">
     <meta property="twitter:image" content="https://elevaiq.com/og-image.png">
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "ElevaIQ.ai Blog",
-        "description": "AI insights and guides for growing businesses",
-        "url": "https://elevaiq.com/blog"
-    }
-    </script>
-
+    <title>AI Insights for Growing Businesses | ElevaIQ.ai Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Figtree', sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, #0f3460 0%, #2d8cf0 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .blog-section {
-            padding: 60px 20px;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .blog-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .blog-card-image {
-            height: 200px;
-            background: linear-gradient(135deg, #0f3460 0%, #2d8cf0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3em;
-            font-weight: bold;
-        }
-
-        .blog-card-content {
-            padding: 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .blog-card h2 {
-            font-size: 1.3em;
-            margin-bottom: 10px;
-            color: #0f3460;
-            line-height: 1.4;
-        }
-
-        .blog-card p {
-            font-size: 0.95em;
-            color: #666;
-            margin-bottom: 15px;
-            flex-grow: 1;
-        }
-
-        .blog-card .date {
-            font-size: 0.85em;
-            color: #999;
-            margin-bottom: 15px;
-        }
-
-        .read-more {
-            color: #2d8cf0;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .read-more:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background: #0f3460;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 60px;
-        }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      :root { --yale-blue: #0f3460; --yale-deep: #0a2240; --yale-mid: #1a4a7a; --yale-light: #e8eef6; --accent: #2d8cf0; --text-dark: #1a1a1a; --text-gray: #666; --border: #ddd; --white: #ffffff; }
+      body { font-family: 'Figtree', sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--white); }
+      nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+      .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+      .nav-logo { font-size: 1.5rem; font-weight: 700; color: var(--yale-blue); text-decoration: none; }
+      .nav-links { display: flex; gap: 2rem; list-style: none; }
+      .nav-links a { color: var(--text-dark); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+      .nav-links a:hover { color: var(--accent); }
+      .nav-cta { background: var(--yale-blue); color: var(--white); padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: background 0.3s; }
+      .nav-cta:hover { background: var(--yale-mid); }
+      .page-header { background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%); color: var(--white); padding: 4rem 2rem; text-align: center; }
+      .page-header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+      .page-header p { font-size: 1.1rem; opacity: 0.95; }
+      .blog-container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
+      .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+      .blog-card { background: var(--white); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+      .blog-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); }
+      .blog-card-header { background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%); color: var(--white); padding: 1.5rem; min-height: 120px; display: flex; flex-direction: column; justify-content: flex-end; }
+      .blog-card-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; }
+      .blog-card-meta { font-size: 0.85rem; opacity: 0.9; }
+      .blog-card-content { padding: 1.5rem; }
+      .blog-card-excerpt { color: var(--text-gray); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem; }
+      .blog-card-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+      .tag { background: var(--yale-light); color: var(--yale-blue); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; }
+      .blog-card-link { color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.3s; }
+      .blog-card-link:hover { color: var(--yale-blue); }
+      footer { background: var(--yale-deep); color: var(--white); padding: 2rem; text-align: center; border-top: 1px solid var(--border); }
+      .footer-content { max-width: 1200px; margin: 0 auto; }
+      .footer-links { margin: 1rem 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+      .footer-links a { color: var(--white); text-decoration: none; transition: color 0.3s; }
+      .footer-links a:hover { color: var(--accent); }
+      @media (max-width: 768px) { .page-header h1 { font-size: 1.75rem; } .blog-grid { grid-template-columns: 1fr; } .nav-links { gap: 1rem; font-size: 0.9rem; } }
     </style>
 </head>
 <body>
-    <header>
-        <h1>ElevaIQ.ai Blog</h1>
-        <p>AI Insights for Growing Businesses</p>
-    </header>
-
-    <div class="container">
-        <section class="blog-section">
-            <h2>Latest Articles</h2>
-            <div class="blog-grid">
-                <!-- Blog cards will be rendered here by JavaScript -->
-            </div>
-        </section>
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">elevaiq.com</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <footer>
-        <p>&copy; 2026 ElevaIQ.ai. All rights reserved. | Powered by OpenAI</p>
-    </footer>
+  <header class="page-header">
+    <h1>AI Insights for Growing Businesses</h1>
+    <p>Master ChatGPT Business with expert guides, case studies, and industry strategies.</p>
+  </header>
 
-    <script>
-        const blogPosts = [
-            {
-                "id": "openclaw-github-agents",
-                "position": 1,
-                "name": "OpenClaw Has 247K GitHub Stars in 3 Months — Here's What Every Business Owner Needs to Know",
-                "description": "Learn how OpenClaw's autonomous agents are disrupting enterprise automation. A case study for SMBs on AI agent implementation.",
-                "date": "March 22, 2026",
-                "emoji": "🤖",
-                "category": "AI Technology",
-                "link": "/blog/openclaw-github-stars"
-            },
-            {
-                "id": "chatgpt-business-vs-plus",
-                "position": 2,
-                "name": "ChatGPT Business vs ChatGPT Plus for Teams",
-                "description": "Compare ChatGPT Business and ChatGPT Plus. Understand which plan fits your business needs and how to maximize ROI with team features.",
-                "date": "March 15, 2026",
-                "emoji": "💼",
-                "category": "ChatGPT",
-                "link": "/blog/chatgpt-business-vs-plus"
-            },
-            {
-                "id": "healthcare-ai-chatgpt",
-                "position": 3,
-                "name": "How Healthcare Providers Are Using ChatGPT to Reduce Admin Burden",
-                "description": "Discover how medical practices, clinics, and hospitals are using ChatGPT Business to streamline patient communications and documentation.",
-                "date": "March 8, 2026",
-                "emoji": "🏥",
-                "category": "Healthcare",
-                "link": "/blog/healthcare-chatgpt"
-            },
-            {
-                "id": "legal-ai-compliance",
-                "position": 4,
-                "name": "AI Compliance and Legal Review: What Law Firms Need to Know",
-                "description": "Navigating AI adoption in legal practice. Learn about compliance, client confidentiality, and how ChatGPT fits into law firm workflows.",
-                "date": "March 1, 2026",
-                "emoji": "⚖️",
-                "category": "Legal",
-                "link": "/blog/legal-ai-compliance"
-            },
-            {
-                "id": "manufacturing-ai-productivity",
-                "position": 5,
-                "name": "Manufacturing Efficiency: How AI is Cutting Costs and Improving Quality",
-                "description": "From supply chain to quality control, learn how manufacturers are using AI to reduce costs, improve efficiency, and compete globally.",
-                "date": "February 22, 2026",
-                "emoji": "🏭",
-                "category": "Manufacturing",
-                "link": "/blog/manufacturing-ai"
-            },
-            {
-                "id": "consulting-ai-proposals",
-                "position": 6,
-                "name": "Consultants: Use AI to Write Better Proposals and Win More Business",
-                "description": "Cut proposal writing time in half. Learn how consultants are using ChatGPT to create compelling, data-driven proposals that win deals.",
-                "date": "February 15, 2026",
-                "emoji": "📊",
-                "category": "Consulting",
-                "link": "/blog/consulting-proposals"
-            },
-            {
-                "id": "real-estate-marketing",
-                "position": 7,
-                "name": "Real Estate Marketing Reimagined: AI-Powered Listing Descriptions",
-                "description": "Generate compelling property descriptions, answer buyer questions 24/7, and automate follow-ups with ChatGPT Business.",
-                "date": "February 8, 2026",
-                "emoji": "🏠",
-                "category": "Real Estate",
-                "link": "/blog/real-estate-marketing"
-            },
-            {
-                "id": "finance-ai-adoption",
-                "position": 8,
-                "name": "Financial Services: Compliance, Security, and AI in Banking",
-                "description": "Understand how fintech and traditional banks are adopting AI responsibly. Learn about compliance frameworks and best practices.",
-                "date": "February 1, 2026",
-                "emoji": "💰",
-                "category": "Finance",
-                "link": "/blog/finance-ai"
-            }
-        ];
+  <main class="blog-container">
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-card-header">
+          <h2 class="blog-card-title">OpenAI's Superapp Is Coming</h2>
+          <div class="blog-card-meta">March 23, 2026 • 9 min</div>
+        </div>
+        <div class="blog-card-content">
+          <p class="blog-card-excerpt">ChatGPT, Codex, and Atlas are merging into one desktop superapp. Here's what it means for your business and why you should act now.</p>
+          <div class="blog-card-tags">
+            <span class="tag">OpenAI</span>
+            <span class="tag">Product News</span>
+            <span class="tag">Strategy</span>
+          </div>
+          <a href="/blog/openai-superapp-chatgpt-codex-atlas-what-businesses-need-to-know" class="blog-card-link">Read Article →</a>
+        </div>
+      </article>
 
-        function renderBlogCards() {
-            const grid = document.querySelector('.blog-grid');
-            grid.innerHTML = '';
+      <article class="blog-card">
+        <div class="blog-card-header">
+          <h2 class="blog-card-title">ChatGPT Business vs ChatGPT Plus</h2>
+          <div class="blog-card-meta">March 15, 2026 • 7 min</div>
+        </div>
+        <div class="blog-card-content">
+          <p class="blog-card-excerpt">Confused about which ChatGPT tier is right for your business? We break down pricing, features, and ROI for teams.</p>
+          <div class="blog-card-tags">
+            <span class="tag">ChatGPT Business</span>
+            <span class="tag">Pricing</span>
+          </div>
+          <a href="/blog/chatgpt-business-vs-plus" class="blog-card-link">Read Article →</a>
+        </div>
+      </article>
 
-            blogPosts.forEach(post => {
-                const card = document.createElement('a');
-                card.href = post.link;
-                card.className = 'blog-card';
+      <article class="blog-card">
+        <div class="blog-card-header">
+          <h2 class="blog-card-title">Microsoft Copilot Meltdown</h2>
+          <div class="blog-card-meta">March 20, 2026 • 8 min</div>
+        </div>
+        <div class="blog-card-content">
+          <p class="blog-card-excerpt">Why ChatGPT Business is winning enterprise deals while Microsoft struggles with Copilot adoption and user retention.</p>
+          <div class="blog-card-tags">
+            <span class="tag">Microsoft</span>
+            <span class="tag">Competitive Analysis</span>
+          </div>
+          <a href="/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning" class="blog-card-link">Read Article →</a>
+        </div>
+      </article>
 
-                card.innerHTML = `
-                    <div class="blog-card-image">${post.emoji}</div>
-                    <div class="blog-card-content">
-                        <h2>${post.name}</h2>
-                        <p>${post.description}</p>
-                        <div class="date">${post.category} • ${post.date}</div>
-                        <span class="read-more">Read Article →</span>
-                    </div>
-                `;
+      <article class="blog-card">
+        <div class="blog-card-header">
+          <h2 class="blog-card-title">OpenAI IPO: What It Means</h2>
+          <div class="blog-card-meta">March 10, 2026 • 10 min</div>
+        </div>
+        <div class="blog-card-content">
+          <p class="blog-card-excerpt">OpenAI's upcoming IPO signals major changes for ChatGPT Business pricing, features, and business strategy. Here's what to expect.</p>
+          <div class="blog-card-tags">
+            <span class="tag">OpenAI IPO</span>
+            <span class="tag">Business Strategy</span>
+          </div>
+          <a href="/blog/openai-ipo-what-it-means-for-business" class="blog-card-link">Read Article →</a>
+        </div>
+      </article>
 
-                grid.appendChild(card);
-            });
-        }
+      <article class="blog-card">
+        <div class="blog-card-header">
+          <h2 class="blog-card-title">ChatGPT Prompts Library</h2>
+          <div class="blog-card-meta">March 5, 2026 • 12 min</div>
+        </div>
+        <div class="blog-card-content">
+          <p class="blog-card-excerpt">50+ high-leverage ChatGPT prompts for marketing, sales, operations, and customer service. Ready to copy, customize, and deploy.</p>
+          <div class="blog-card-tags">
+            <span class="tag">Prompts</span>
+            <span class="tag">How-To</span>
+            <span class="tag">Resources</span>
+          </div>
+          <a href="/blog/chatgpt-business-prompts-library" class="blog-card-link">Read Article →</a>
+        </div>
+      </article>
 
-        function filterCards() {
-            renderBlogCards();
-        }
+      <article class="blog-card">
+        <div class="blog-card-header">
+          <h2 class="blog-card-title">Best AI Tools for Small Business 2026</h2>
+          <div class="blog-card-meta">February 28, 2026 • 15 min</div>
+        </div>
+        <div class="blog-card-content">
+          <p class="blog-card-excerpt">Complete guide to AI tools that actually deliver ROI for SMBs. Pricing, features, and real-world use cases included.</p>
+          <div class="blog-card-tags">
+            <span class="tag">Tools</span>
+            <span class="tag">Buyer's Guide</span>
+          </div>
+          <a href="/blog/best-ai-tools-small-business-2026" class="blog-card-link">Read Article →</a>
+        </div>
+      </article>
+    </div>
+  </main>
 
-        document.addEventListener('DOMContentLoaded', renderBlogCards);
-        filterCards();
-    </script>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 ElevaIQ.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a><a href="/blog">Blog</a><a href="/pricing">Pricing</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">ElevaIQ.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
 
-    <script src="/js/supabase-leads.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"ElevaIQ.ai Blog","description":"AI insights and guides for growing businesses.","itemListElement":[{"@type":"BlogPosting","position":1,"headline":"OpenAI's Superapp Is Coming","url":"https://elevaiq.com/blog/openai-superapp-chatgpt-codex-atlas-what-businesses-need-to-know","datePublished":"2026-03-23"}]}</script>
 </body>
 </html>
