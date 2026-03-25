@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get ChatGPT Business for Your Team | ElevaIQ.ai</title>
+  <meta name="description" content="Free expert setup and onboarding for ChatGPT Business. $30/user/month, same price as OpenAI direct. Zero markup. Get your team productive in days, not weeks.">
+  <meta name="keywords" content="ChatGPT Business, team AI, enterprise AI, OpenAI partner, SMB AI solutions">
+  <meta name="canonical" href="https://elevaiq.com/get-started.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Get ChatGPT Business for Your Team — Expert Setup, Zero Markup">
+  <meta property="og:description" content="Free expert setup and onboarding for ChatGPT Business. $30/user/month, same price as OpenAI direct. Zero markup. Get your team productive in days, not weeks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elevaiq.com/get-started.html">
+  <meta property="og:image" content="https://elevaiq.com/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Get ChatGPT Business for Your Team — Expert Setup, Zero Markup">
+  <meta name="twitter:description" content="Free expert setup and onboarding for ChatGPT Business. $30/user/month, same price as OpenAI direct.">
+  <meta name="twitter:image" content="https://elevaiq.com/og-image.jpg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ElevaIQ.ai",
+    "url": "https://elevaiq.com",
+    "logo": "https://elevaiq.com/logo.png",
+    "description": "Official OpenAI SMB Channel Partner providing expert ChatGPT Business setup and training",
+    "sameAs": [
+      "https://openai.com"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "hello@elevaiq.com"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "@id": "faq-markup",
+        "name": "Is there really no markup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "None. OpenAI sets the price at $30/user/month. That's what you pay whether you go direct or through us. We're compensated by OpenAI as an authorized partner."
+        }
+      },
+      {
+        "@type": "Question",
+        "@id": "faq-setup",
+        "name": "How long does setup take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most teams are up and running within 1-2 weeks. We handle SSO integration, user migration from Plus accounts, and initial training."
+        }
+      },
+      {
+        "@type": "Question",
+        "@id": "faq-safety",
+        "name": "Is my business data safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ChatGPT Business guarantees your data is never used to train OpenAI's models. Admin controls, audit logs, and SSO are built in."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --yale: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --accent-hover: #1f6fc9;
+      --border-radius-card: 10px;
+      --border-radius-pill: 100px;
+      --text-dark: #1a1a1a;
+      --text-gray: #666666;
+      --text-light: #999999;
+      --bg-light: #f8f9fa;
+      --bg-white: #ffffff;
+      --border-gray: #e0e0e0;
+      --success: #10b981;
+      --error: #ef4444;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      background-color: var(--bg-white);
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--bg-white);
+      border-bottom: 1px solid var(--border-gray);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale);
+      text-decoration: none;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-hover);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--yale-deep) 0%, var(--yale-mid) 100%);
+      color: var(--bg-white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius-pill);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-badge svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero-subheadline {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 400;
+      opacity: 0.95;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .stat-block {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: var(--border-radius-card);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      opacity: 0.85;
+      font-weight: 500;
+    }
+
+    /* Lead Capture Form Container */
+    .form-container {
+      max-width: 500px;
+      margin: -3rem auto 0;
+      position: relative;
+      z-index: 10;
+      padding: 0 2rem;
+    }
+
+    .form-card {
+      background-color: var(--bg-white);
+      padding: 2rem;
+      border-radius: var(--border-radius-card);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group:last-of-type {
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--border-gray);
+      border-radius: var(--border-radius-card);
+      font-family: 'Figtree', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      background-color: var(--bg-white);
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(45, 140, 240, 0.1);
+    }
+
+    select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%232d8cf0' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-error {
+      color: var(--error);
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+      display: none;
+    }
+
+    .form-error.show {
+      display: block;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.95rem 2rem;
+      background-color: var(--accent);
+      color: var(--bg-white);
+      border: none;
+      border-radius: var(--border-radius-pill);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      font-family: 'Figtree', sans-serif;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .form-subtext {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-top: 1rem;
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
+    .success-icon {
+      width: 60px;
+      height: 60px;
+      background-color: var(--success);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      color: var(--bg-white);
+      font-size: 2rem;
+    }
+
+    .form-success h3 {
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .form-success p {
+      color: var(--text-gray);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Trust Signals Section */
+    .trust-signals {
+      background-color: var(--bg-light);
+      padding: 4rem 2rem;
+      margin-top: 3rem;
+    }
+
+    .trust-signals h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      color: var(--text-dark);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .trust-card {
+      background-color: var(--bg-white);
+      padding: 2rem;
+      border-radius: var(--border-radius-card);
+      border-left: 4px solid var(--accent);
+    }
+
+    .trust-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: var(--text-dark);
+    }
+
+    .trust-card p {
+      color: var(--text-gray);
+      line-height: 1.7;
+    }
+
+    /* Comparison Table */
+    .comparison {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .comparison h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      color: var(--text-dark);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--bg-white);
+      border-radius: var(--border-radius-card);
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    th {
+      background-color: var(--yale-light);
+      color: var(--yale);
+      padding: 1.2rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    td {
+      padding: 1.2rem;
+      border-bottom: 1px solid var(--border-gray);
+      color: var(--text-gray);
+      font-size: 0.95rem;
+    }
+
+    td:first-child {
+      color: var(--text-dark);
+      font-weight: 500;
+      width: 35%;
+    }
+
+    td:nth-child(2),
+    td:nth-child(3) {
+      text-align: center;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .checkmark {
+      color: var(--success);
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    .dash {
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* Social Proof Numbers */
+    .social-proof {
+      background-color: var(--bg-light);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .proof-stat {
+      padding: 1.5rem;
+    }
+
+    .proof-stat .number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .proof-stat .label {
+      color: var(--text-gray);
+      font-size: 0.95rem;
+    }
+
+    /* FAQ Section */
+    .faq {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      color: var(--text-dark);
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border-gray);
+      border-radius: var(--border-radius-card);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background-color: var(--bg-light);
+      padding: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: background-color 0.2s ease;
+    }
+
+    .faq-question:hover {
+      background-color: #f0f1f5;
+    }
+
+    .faq-toggle {
+      display: inline-flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: var(--bg-white);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer p {
+      padding: 1.5rem;
+      color: var(--text-gray);
+      line-height: 1.7;
+    }
+
+    /* Bottom CTA Section */
+    .bottom-cta {
+      background: linear-gradient(135deg, var(--yale-deep) 0%, var(--yale-mid) 100%);
+      color: var(--bg-white);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .bottom-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .bottom-form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .bottom-form input {
+      flex: 1;
+      padding: 0.9rem 1rem;
+      border: none;
+      border-radius: var(--border-radius-pill);
+      font-family: 'Figtree', sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .bottom-form button {
+      padding: 0.9rem 2rem;
+      background-color: var(--accent);
+      color: var(--bg-white);
+      border: none;
+      border-radius: var(--border-radius-pill);
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Figtree', sans-serif;
+      white-space: nowrap;
+      transition: background-color 0.2s ease;
+    }
+
+    .bottom-form button:hover {
+      background-color: var(--accent-hover);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--text-dark);
+      color: var(--bg-white);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hero {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .hero-subheadline {
+        font-size: 1rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .stat-block {
+        padding: 1rem;
+      }
+
+      .stat-value {
+        font-size: 1.4rem;
+      }
+
+      .form-container {
+        margin: -2rem 1.5rem 0;
+      }
+
+      .form-card {
+        padding: 1.5rem;
+      }
+
+      .trust-signals {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .trust-signals h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .comparison {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .comparison h2 {
+        font-size: 1.5rem;
+      }
+
+      .faq {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .faq h2 {
+        font-size: 1.5rem;
+      }
+
+      .bottom-cta {
+        padding: 2rem 1.5rem;
+      }
+
+      .bottom-cta h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .bottom-form {
+        flex-direction: column;
+      }
+
+      .bottom-form input,
+      .bottom-form button {
+        width: 100%;
+      }
+
+      td:first-child {
+        width: 40%;
+      }
+
+      nav {
+        padding: 1rem 1.5rem;
+      }
+
+      nav .logo {
+        font-size: 1.2rem;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .hero-subheadline {
+        font-size: 0.95rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .stat-value {
+        font-size: 1.2rem;
+      }
+
+      .stat-label {
+        font-size: 0.75rem;
+      }
+
+      .form-container {
+        padding: 0 1rem;
+        margin: -1.5rem 0 0;
+      }
+
+      .form-card {
+        padding: 1.2rem;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select {
+        font-size: 16px;
+      }
+
+      .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+      }
+
+      .trust-card {
+        padding: 1.5rem;
+      }
+
+      .trust-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .proof-stat .number {
+        font-size: 1.5rem;
+      }
+
+      .proof-stat .label {
+        font-size: 0.85rem;
+      }
+
+      td {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+      }
+
+      td:first-child {
+        width: 45%;
+      }
+
+      th {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="/" class="logo">ElevaIQ.ai</a>
+    <a href="/"><- Back to Home</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      </svg>
+      Official OpenAI Partner
+    </div>
+
+    <h1>Get ChatGPT Business for Your Team — Expert Setup, Zero Markup</h1>
+
+    <p class="hero-subheadline">$30/user/month. Same price as going direct to OpenAI. We handle the onboarding, SSO, and training — free.</p>
+
+    <div class="stats-grid">
+      <div class="stat-block">
+        <div class="stat-value">$30/user</div>
+        <div class="stat-label">Per Month</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-value">2–149</div>
+        <div class="stat-label">Seats</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-value">$0</div>
+        <div class="stat-label">Markup</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-value">1–2 Wks</div>
+        <div class="stat-label">Setup Time</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture Form -->
+  <div class="form-container">
+    <div class="form-card">
+      <form id="leadForm" class="lead-form">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required aria-label="Your full name">
+          <div class="form-error" id="fullNameError">Please enter your name.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" name="email" required aria-label="Your work email">
+          <div class="form-error" id="emailError">Please enter a valid work email.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" required aria-label="Your company name">
+          <div class="form-error" id="companyError">Please enter your company name.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="teamSize">Team Size</label>
+          <select id="teamSize" name="teamSize" required aria-label="How many people are on your team">
+            <option value="">Select team size</option>
+            <option value="2-10">2–10 people</option>
+            <option value="11-50">11–50 people</option>
+            <option value="51-149">51–149 people</option>
+          </select>
+          <div class="form-error" id="teamSizeError">Please select a team size.</div>
+        </div>
+
+        <button type="submit" class="btn">Get Your Free AI Setup Consultation</button>
+
+        <p class="form-subtext">No credit card. No commitment. We respond same day.</p>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3>We've Got Your Request</h3>
+        <p>Thanks for reaching out! We'll review your team's needs and send you a customized setup plan within 24 hours. Check your email for next steps.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust Signals Section -->
+  <section class="trust-signals">
+    <h2>Why Teams Choose ElevaIQ.ai</h2>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <h3>Free Expert Onboarding</h3>
+        <p>We configure your workspace, SSO, and permissions. Your team is productive from day one.</p>
+      </div>
+
+      <div class="trust-card">
+        <h3>Custom AI Training</h3>
+        <p>Industry-specific prompt libraries and hands-on training sessions tailored to your team's workflows.</p>
+      </div>
+
+      <div class="trust-card">
+        <h3>Ongoing Partner Support</h3>
+        <p>A dedicated AI Success Advisor — not a generic help desk. We optimize your setup as your needs evolve.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="comparison">
+    <h2>Going Direct vs. Going Through ElevaIQ</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Direct from OpenAI</th>
+            <th>Through ElevaIQ.ai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Price per user/month</td>
+            <td class="dash">$30</td>
+            <td class="checkmark">$30 (same)</td>
+          </tr>
+          <tr>
+            <td>SSO Configuration</td>
+            <td class="dash">Self-service</td>
+            <td class="checkmark">✓ Free setup</td>
+          </tr>
+          <tr>
+            <td>Team Onboarding</td>
+            <td class="dash">Documentation</td>
+            <td class="checkmark">✓ Live training</td>
+          </tr>
+          <tr>
+            <td>Custom Prompt Libraries</td>
+            <td class="dash">Build your own</td>
+            <td class="checkmark">✓ Industry-specific</td>
+          </tr>
+          <tr>
+            <td>Ongoing Support</td>
+            <td class="dash">Community forums</td>
+            <td class="checkmark">✓ Dedicated advisor</td>
+          </tr>
+          <tr>
+            <td>Migration from ChatGPT Plus</td>
+            <td class="dash">DIY</td>
+            <td class="checkmark">✓ We handle it</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Social Proof Numbers -->
+  <section class="social-proof">
+    <div class="proof-grid">
+      <div class="proof-stat">
+        <div class="number">440M</div>
+        <div class="label">ChatGPT daily active users</div>
+      </div>
+      <div class="proof-stat">
+        <div class="number">9M+</div>
+        <div class="label">ChatGPT Business paying users</div>
+      </div>
+      <div class="proof-stat">
+        <div class="number">15+</div>
+        <div class="label">Industries served by ElevaIQ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item open">
+      <div class="faq-question">
+        <span>Is there really no markup?</span>
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>None. OpenAI sets the price at $30/user/month. That's what you pay whether you go direct or through us. We're compensated by OpenAI as an authorized partner.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How long does setup take?</span>
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Most teams are up and running within 1–2 weeks. We handle SSO integration, user migration from Plus accounts, and initial training.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Is my business data safe?</span>
+        <span class="faq-toggle">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes. ChatGPT Business guarantees your data is never used to train OpenAI's models. Admin controls, audit logs, and SSO are built in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Section -->
+  <section class="bottom-cta">
+    <h2>Ready to give your team the AI advantage?</h2>
+
+    <form id="bottomForm" class="bottom-form">
+      <input
+        type="email"
+        id="bottomEmail"
+        name="bottomEmail"
+        placeholder="your.email@company.com"
+        required
+        aria-label="Your email address"
+      >
+      <button type="submit">Get Started</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 ElevaIQ.ai — Official OpenAI Channel Partner. All rights reserved. | <a href="/">Home</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/supabase-leads.js"></script>
+  <script src="/js/tracking.js"></script>
+
+  <script>
+    // UTM Parameter Capture
+    function captureUTMParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        utm_content: params.get('utm_content') || ''
+      };
+    }
+
+    const utmParams = captureUTMParams();
+
+    // Primary Lead Form Handler
+    document.getElementById('leadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Clear previous errors
+      document.getElementById('fullNameError').classList.remove('show');
+      document.getElementById('emailError').classList.remove('show');
+      document.getElementById('companyError').classList.remove('show');
+      document.getElementById('teamSizeError').classList.remove('show');
+
+      // Validate
+      const fullName = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const teamSize = document.getElementById('teamSize').value;
+
+      let isValid = true;
+
+      if (!fullName) {
+        document.getElementById('fullNameError').classList.add('show');
+        isValid = false;
+      }
+
+      if (!email || !email.includes('@')) {
+        document.getElementById('emailError').classList.add('show');
+        isValid = false;
+      }
+
+      if (!company) {
+        document.getElementById('companyError').classList.add('show');
+        isValid = false;
+      }
+
+      if (!teamSize) {
+        document.getElementById('teamSizeError').classList.add('show');
+        isValid = false;
+      }
+
+      if (!isValid) return;
+
+      // Disable button
+      const btn = e.target.querySelector('button');
+      btn.disabled = true;
+      btn.textContent = 'Submitting...';
+
+      try {
+        // Call ElevaIQ submitLead function
+        if (window.ElevaIQ && window.ElevaIQ.submitLead) {
+          await window.ElevaIQ.submitLead({
+            name: fullName,
+            email: email,
+            company: company,
+            team_size: teamSize,
+            source: '/get-started',
+            form_type: 'get_started',
+            message: 'UTM: ' + utmParams.utm_source + ' / ' + utmParams.utm_medium + ' / ' + utmParams.utm_campaign + ' / ' + utmParams.utm_content
+          });
+        }
+
+        // Fire conversion events
+        if (window.gtag) {
+          window.gtag('event', 'generate_lead', {
+            currency: 'USD',
+            value: 50
+          });
+        }
+
+        if (window.fbq) {
+          window.fbq('track', 'Lead');
+        }
+
+        if (window.lintrk) {
+          window.lintrk('track', { conversion_id: 0 });
+        }
+
+        // Show success message
+        document.querySelector('.lead-form').style.display = 'none';
+        document.getElementById('formSuccess').classList.add('show');
+
+        // Scroll to success message
+        setTimeout(() => {
+          document.querySelector('.form-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+
+      } catch (error) {
+        console.error('Form submission error:', error);
+        alert('There was an error submitting your form. Please try again.');
+        btn.disabled = false;
+        btn.textContent = 'Get Your Free AI Setup Consultation';
+      }
+    });
+
+    // Bottom CTA Form Handler
+    document.getElementById('bottomForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('bottomEmail').value.trim();
+
+      if (!email || !email.includes('@')) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      const btn = e.target.querySelector('button');
+      btn.disabled = true;
+      btn.textContent = 'Submitting...';
+
+      try {
+        if (window.ElevaIQ && window.ElevaIQ.submitLead) {
+          await window.ElevaIQ.submitLead({
+            email: email,
+            source: '/get-started',
+            form_type: 'quick_signup',
+            message: 'UTM: ' + utmParams.utm_source + ' / ' + utmParams.utm_medium + ' / ' + utmParams.utm_campaign + ' / ' + utmParams.utm_content
+          });
+        }
+
+        if (window.gtag) {
+          window.gtag('event', 'generate_lead', {
+            currency: 'USD',
+            value: 50
+          });
+        }
+
+        if (window.fbq) {
+          window.fbq('track', 'Lead');
+        }
+
+        if (window.lintrk) {
+          window.lintrk('track', { conversion_id: 0 });
+        }
+
+        btn.textContent = '✓ Thanks! Check your email';
+        setTimeout(() => {
+          document.getElementById('bottomEmail').value = '';
+          btn.disabled = false;
+          btn.textContent = 'Get Started';
+        }, 3000);
+
+      } catch (error) {
+        console.error('Bottom form submission error:', error);
+        alert('There was an error. Please try again.');
+        btn.disabled = false;
+        btn.textContent = 'Get Started';
+      }
+    });
+
+    // FAQ Toggle Handler
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const faqItem = question.closest('.faq-item');
+        faqItem.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
