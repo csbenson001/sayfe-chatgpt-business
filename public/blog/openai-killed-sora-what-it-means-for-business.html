@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>OpenAI Killed Sora — What It Means for Your Business</title>
+  <meta name="description" content="OpenAI discontinued Sora to focus on ChatGPT productivity. We break down the shutdown, the Disney fallout, and why this is great news for businesses.">
+  <meta name="keywords" content="OpenAI Sora shutdown, ChatGPT Business, AI strategy, OpenAI news 2026, video AI discontinuation">
+  <meta name="author" content="ElevaIQ.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://elevaiq.com/blog/openai-killed-sora-what-it-means-for-business">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="OpenAI Killed Sora — What It Means for Your Business">
+  <meta property="og:description" content="OpenAI discontinued Sora to focus on ChatGPT productivity. We break down the shutdown, the Disney fallout, and why this is great news for businesses.">
+  <meta property="og:url" content="https://elevaiq.com/blog/openai-killed-sora-what-it-means-for-business">
+  <meta property="og:image" content="https://elevaiq.com/og-image-blog.png">
+  <meta property="og:site_name" content="ElevaIQ.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OpenAI Killed Sora — What It Means for Your Business">
+  <meta name="twitter:description" content="OpenAI discontinued Sora to focus on ChatGPT productivity. We break down the shutdown, the Disney fallout, and why this is great news for businesses.">
+  <meta name="twitter:image" content="https://elevaiq.com/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-03-30T00:00:00Z">
+  <meta property="article:author" content="ElevaIQ.ai">
+  <meta property="article:section" content="News & Trends">
+  <meta property="article:tag" content="OpenAI">
+  <meta property="article:tag" content="Sora">
+  <meta property="article:tag" content="ChatGPT Business">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "OpenAI Killed Sora — What It Means for Your Business",
+    "author": {"@type": "Organization", "name": "ElevaIQ.ai", "url": "https://elevaiq.com"},
+    "publisher": {"@type": "Organization", "name": "ElevaIQ.ai", "url": "https://elevaiq.com"},
+    "datePublished": "2026-03-30",
+    "dateModified": "2026-03-30",
+    "url": "https://elevaiq.com/blog/openai-killed-sora-what-it-means-for-business",
+    "description": "OpenAI discontinued Sora to focus on ChatGPT productivity. We break down the shutdown, the Disney fallout, and why this is great news for businesses.",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://elevaiq.com/blog/openai-killed-sora-what-it-means-for-business"}
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When does Sora shut down completely?",
+        "acceptedAnswer": {"@type": "Answer", "text": "The Sora mobile app shuts down April 26, 2026. The API continues until September 24, 2026, giving developers 6 months to migrate."}
+      },
+      {
+        "@type": "Question",
+        "name": "Why did OpenAI kill Sora?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sora was burning roughly $1 million per day and peaked at only 1 million users before declining to under 500,000. OpenAI is consolidating resources around ChatGPT, which has 900 million weekly active users and 1.5 million business customers."}
+      },
+      {
+        "@type": "Question",
+        "name": "What about Disney's $1 billion Sora deal?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Disney found out about the Sora shutdown less than an hour before the public announcement. The partnership is dead, and Disney lost a $1 billion investment opportunity."}
+      },
+      {
+        "@type": "Question",
+        "name": "Should I worry about ChatGPT Business being discontinued?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No. ChatGPT Business is core to OpenAI's strategy. OpenAI is going public at an $840 billion valuation and projecting $280 billion revenue by 2030, almost entirely from ChatGPT subscriptions and enterprise services. This is their cash cow."}
+      },
+      {
+        "@type": "Question",
+        "name": "What should my business do now?",
+        "acceptedAnswer": {"@type": "Answer", "text": "If you haven't deployed ChatGPT Business yet, now is the time. OpenAI's focus on productivity tools, GPT-5.4 improvements, and new enterprise features (shared projects, connectors) make ChatGPT Business the safest AI productivity bet."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      background-color: var(--white);
+    }
+
+    /* Navigation */
+    nav {
+      background-color: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-gray);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--yale-blue);
+    }
+
+    .nav-cta {
+      background-color: var(--accent) !important;
+      color: var(--white) !important;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-cta:hover {
+      background-color: var(--yale-blue) !important;
+    }
+
+    /* Article Header */
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* Article Container */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background-color: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .reading-time {
+      color: var(--text-gray);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Article Content */
+    .article-content {
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--yale-blue);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .article-content h3 {
+      font-size: 1.5rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .article-content p {
+      margin-bottom: 1.2rem;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin-left: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    /* Comparison Table */
+    .comparison-table-wrapper {
+      overflow-x: auto;
+      margin: 2rem 0;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .comparison-table th {
+      background-color: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid var(--yale-blue);
+    }
+
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .comparison-table tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+    }
+
+    .checkmark {
+      color: var(--success);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .xmark {
+      color: #ef4444;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Highlight Boxes */
+    .highlight-box {
+      background-color: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      color: var(--yale-blue);
+      font-weight: 500;
+    }
+
+    .warning-box {
+      background-color: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .warning-box p {
+      margin: 0;
+      color: #92400e;
+      font-weight: 500;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .cta-section h3 {
+      color: var(--white);
+      margin-top: 0;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--accent);
+      color: var(--white);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s, transform 0.2s;
+      font-size: 1.1rem;
+    }
+
+    .cta-button:hover {
+      background-color: var(--white);
+      color: var(--yale-blue);
+      transform: translateY(-2px);
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .faq-section h2 {
+      margin-top: 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background-color: var(--yale-light);
+      padding: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      transition: background-color 0.3s;
+    }
+
+    .faq-question:hover {
+      background-color: #dce4f0;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--yale-blue);
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-toggle {
+      font-weight: 600;
+      color: var(--yale-blue);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 1.5rem;
+      background-color: var(--white);
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--yale-blue);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .footer-links a:hover {
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1rem;
+      }
+
+      .article-header h1 {
+        font-size: 1.8rem;
+      }
+
+      .article-container {
+        padding: 2rem 1rem;
+      }
+
+      .article-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .article-meta {
+        gap: 1rem;
+      }
+
+      .comparison-table {
+        font-size: 0.9rem;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 0.75rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">elevaiq.com</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <h1>OpenAI Just Killed Sora — And It's the Best News for Your Business Since ChatGPT Launched</h1>
+    <div class="article-meta">
+      <div class="meta-item"><span>March 30, 2026</span></div>
+      <div class="meta-item"><span>8 min read</span></div>
+      <div class="meta-item"><span>ElevaIQ.ai</span></div>
+    </div>
+  </header>
+
+  <!-- Main Article -->
+  <article class="article-container">
+    <div class="category-badge">News & Trends</div>
+    <div class="reading-time">8 min read</div>
+
+    <div class="article-content">
+      <p>On March 24, 2026, OpenAI quietly announced that it was killing Sora — its much-hyped AI video generation tool. The app shuts down April 26. The API lives until September 24. It was supposed to be the future of creative AI. Instead, it became a $1-million-per-day money furnace.</p>
+
+      <p>And frankly? This is the best strategic signal OpenAI has sent in years.</p>
+
+      <p>While everyone else is chasing shiny toys and hype cycles, OpenAI is making a ruthless, business-focused decision: double down on what actually works. For your business, that means one thing — ChatGPT Business is now the safest, most strategically sound AI productivity investment you can make.</p>
+
+      <h2>What Happened: OpenAI Pulls the Plug on Sora</h2>
+
+      <p>When Sora launched in early 2024, it was supposed to be the AI revolution. Create photorealistic videos from text prompts. Compete with Hollywood. OpenAI even secured a <strong>$1 billion partnership with Disney</strong> to build Sora into their creative pipeline.</p>
+
+      <p>That deal is dead.</p>
+
+      <p>Here's what happened: Sora peaked at roughly 1 million users, then the user base collapsed to under 500,000. The product was bleeding cash at approximately <strong>$1 million per day</strong>. Users found the tool expensive, slow, and not particularly better at generating coherent video than competitors. Quality was inconsistent. The workflow was clunky. Enterprise adoption never materialized.</p>
+
+      <p>Disney found out about the shutdown <strong>less than an hour before the public announcement</strong>. A $1 billion strategic partnership, obsolete. That's not a notification — that's a middle finger.</p>
+
+      <p>The decision was clean: kill it. Redeploy resources. Focus on what's working.</p>
+
+      <h2>The Numbers Behind the Shutdown</h2>
+
+      <p>Sora's failure wasn't subtle. Here's how it compares to ChatGPT:</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Sora</th>
+              <th>ChatGPT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">Peak Users</td>
+              <td>~1 million</td>
+              <td>900 million weekly active</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Current Users</td>
+              <td>~500,000 (declining)</td>
+              <td>Continuing to grow</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Business Customers</td>
+              <td>Negligible</td>
+              <td>1.5 million enterprise customers</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Daily Cash Burn</td>
+              <td>~$1 million</td>
+              <td>Profitable</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Enterprise Commitment</td>
+              <td class="xmark">Dead (Disney)</td>
+              <td class="checkmark">Active & Growing</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Strategic Viability</td>
+              <td class="xmark">Discontinued</td>
+              <td class="checkmark">Core Business</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The contrast is devastating. Sora burned through cash while failing to achieve meaningful adoption. ChatGPT, by contrast, has become the fastest-adopted software tool in history. It's now embedded in enterprise workflows across dozens of industries, integrated with productivity suites, and generating recurring revenue at scale.</p>
+
+      <p>This wasn't a hard choice for OpenAI's leadership. It was inevitable.</p>
+
+      <h2>Why This Is Actually Great News for Businesses</h2>
+
+      <div class="highlight-box">
+        <p><strong>OpenAI just told you exactly what it believes in.</strong> They're betting the company on productivity tools, not moonshots. That's your signal to do the same.</p>
+      </div>
+
+      <p>Startups and enterprises often make the mistake of chasing cutting-edge tools that feel innovative but don't move the needle on core business outcomes. Video generation, image synthesis, voice models — they're cool. But they don't move revenue. They don't reduce operational friction. They don't unlock competitive advantage.</p>
+
+      <p>ChatGPT Business does all three.</p>
+
+      <p>OpenAI's decision to kill Sora and consolidate resources around ChatGPT is a masterclass in strategic clarity. It says: <strong>We're building for business problems, not technological theater.</strong></p>
+
+      <p>That matters because it tells you something critical: ChatGPT Business isn't going anywhere. OpenAI is preparing for an IPO at an $840 billion valuation, projecting $280 billion in revenue by 2030. That revenue isn't coming from video generation. It's coming from ChatGPT subscriptions, ChatGPT Business, and enterprise AI services.</p>
+
+      <p>In other words, OpenAI is betting the company's financial future on the same tool you're considering deploying right now. That's not a coincidence. That's alignment.</p>
+
+      <h2>What OpenAI Is Building Instead</h2>
+
+      <p>While Sora is dying, ChatGPT is getting relentlessly better:</p>
+
+      <ul>
+        <li><strong>GPT-5.4 launched</strong> with massive improvements in reasoning, code generation, and multi-step problem solving. This is the model that powers your ChatGPT Business subscriptions.</li>
+        <li><strong>Shared Projects</strong> just rolled out for Business and Enterprise users — enabling teams to collaborate on workspace-level AI projects with shared context and memory.</li>
+        <li><strong>New connectors</strong> (Atlassian Rovo for Jira, Confluence integration) are shipping monthly, embedding ChatGPT directly into the tools your teams already use.</li>
+        <li><strong>Expanded model access</strong> through the API, giving enterprises fine-grained control over deployments, safety, and cost optimization.</li>
+      </ul>
+
+      <p>This is the trajectory of a product that's winning. Not a product chasing hype. The roadmap is clear: <strong>make ChatGPT the operating system for business productivity.</strong></p>
+
+      <h2>The Lesson for Your Business: Bet on Productivity, Not Hype</h2>
+
+      <p>Sora's failure teaches a crucial lesson that applies to your own AI strategy:</p>
+
+      <p><strong>Tools that don't solve immediate business problems don't scale.</strong></p>
+
+      <p>Video generation is objectively cool. But unless you're a media company, it doesn't touch your actual bottlenecks. Your bottlenecks are:</p>
+
+      <ul>
+        <li>Drafting emails, proposals, and reports (ChatGPT can do this in seconds)</li>
+        <li>Analyzing documents and data (ChatGPT can read 100+ page documents and extract insights instantly)</li>
+        <li>Standardizing processes and writing SOPs (ChatGPT can codify tacit knowledge and scale expertise)</li>
+        <li>Customer communication and support (ChatGPT Business integrates with your CRM and support tools)</li>
+        <li>Code generation and debugging (Engineers save 2-3 hours per day with ChatGPT)</li>
+      </ul>
+
+      <p>These problems have immediate ROI. ChatGPT Business addresses all of them.</p>
+
+      <div class="warning-box">
+        <p><strong>Don't be the business that bet on Sora.</strong> Choose tools that solve your actual workflow problems. ChatGPT Business does that today. GPT-5.4 makes it even better.</p>
+      </div>
+
+      <p>The businesses winning with AI right now aren't the ones experimenting with the flashiest tools. They're the ones systematically deploying ChatGPT across every team — sales, legal, engineering, finance, operations — and measuring ROI per deployment.</p>
+
+      <h2>Three Things to Do This Week</h2>
+
+      <p><strong>1. Map your workflow bottlenecks.</strong> Where do your teams lose the most time to knowledge work? Drafting? Analysis? Documentation? These are ChatGPT Business use cases.</p>
+
+      <p><strong>2. Run a pilot with 10 users.</strong> Get 10 power users ChatGPT Business access ($30/user/month). Measure time saved per day. Measure quality improvement. Measure customer satisfaction lift. You'll have hard data in 30 days.</p>
+
+      <p><strong>3. Plan your rollout.</strong> If the pilot works (it will), plan your business-wide deployment. Start with sales and customer-facing teams. Move to operations and finance. ChatGPT Business has 149 maximum team seats, so you can scale incrementally.</p>
+
+      <p><strong>Pro tip:</strong> We handle all the setup, training, and ongoing optimization as part of our OpenAI partner program. Same price as going direct ($30/user/month), zero friction, and you get onboarding support included.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>OpenAI killing Sora is the clearest possible signal: <strong>the age of AI hype is over. The age of AI productivity is here.</strong></p>
+
+      <p>The company just killed a product that had Disney behind it to focus on a subscription service that costs $30/month. That's not desperation — that's confidence. OpenAI believes ChatGPT Business is so valuable to businesses that it's worth betting the company on.</p>
+
+      <p>If you haven't deployed it yet, you're behind. If you have, you're positioned to pull ahead of competitors who are still chasing shiny toys instead of solving real problems.</p>
+
+      <p>Sora is dead. ChatGPT Business is just getting started.</p>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-toggle">When does Sora shut down completely?</span>
+        </div>
+        <div class="faq-answer">
+          <p>The Sora mobile app shuts down April 26, 2026. The Sora API continues operating until September 24, 2026, giving developers and enterprises 6 months to migrate away from the platform. After September 24, all Sora functionality will be permanently unavailable.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-toggle">Why did OpenAI kill Sora if it was supposed to be the future?</span>
+        </div>
+        <div class="faq-answer">
+          <p>Sora failed to gain meaningful traction. It peaked at approximately 1 million users and declined to under 500,000 active users. More critically, the product was burning roughly $1 million per day in operational costs with negligible enterprise adoption. Meanwhile, ChatGPT has 900 million weekly active users and 1.5 million business customers. OpenAI made the strategic choice to consolidate resources around products that actually drive revenue and user value.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-toggle">What happened to Disney's $1 billion Sora partnership?</span>
+        </div>
+        <div class="faq-answer">
+          <p>The partnership is defunct. Disney discovered the Sora shutdown less than an hour before OpenAI's public announcement — meaning they learned about it through the news, not through direct communication. The deal represented a $1 billion strategic commitment to integrating Sora into Disney's creative pipeline. That investment is now a total loss. It's a stark example of why depending on early-stage AI tools without diversification is risky.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-toggle">Should I worry that ChatGPT Business might get discontinued too?</span>
+        </div>
+        <div class="faq-answer">
+          <p>No. ChatGPT Business is the opposite of Sora — it's the core of OpenAI's business strategy. OpenAI is preparing for an IPO at an $840 billion valuation and projects $280 billion in annual revenue by 2030. Almost all of that revenue comes from ChatGPT subscriptions and enterprise services. OpenAI is betting the company's financial future on ChatGPT. That means it's here to stay and will continue improving for years to come.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-toggle">What should my business do in response to Sora being killed?</span>
+        </div>
+        <div class="faq-answer">
+          <p>If you haven't already, deploy ChatGPT Business across your organization. Focus on productivity workflows where ChatGPT delivers immediate ROI: email drafting, document analysis, code generation, customer communication, and process documentation. Start with a pilot of 10 users, measure time saved, then scale. The tools that solve immediate business problems (like ChatGPT does) are the ones that survive and thrive. The tools that chase hype (like Sora did) disappear.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+      <h3>Ready to Get Started with ChatGPT Business?</h3>
+      <p>Same price as going direct ($30/user/month). Free onboarding, training, and setup support from our team.</p>
+      <a href="/get-started" class="cta-button">Get Started — $30/user/month</a>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 ElevaIQ.ai — Official OpenAI Partner</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAQ Toggle Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
