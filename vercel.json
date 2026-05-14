@@ -1,6 +1,23 @@
 {
   "buildCommand": "",
   "outputDirectory": "public",
+  "redirects": [
+    { "source": "/industries/healthcare", "destination": "/healthcare", "permanent": true },
+    { "source": "/industries/chiropractic", "destination": "/chiropractic", "permanent": true },
+    { "source": "/industries/manufacturing", "destination": "/manufacturing", "permanent": true },
+    { "source": "/industries/legal", "destination": "/legal", "permanent": true },
+    { "source": "/industries/consulting", "destination": "/consulting", "permanent": true },
+    { "source": "/industries/construction", "destination": "/construction", "permanent": true },
+    { "source": "/industries/real-estate", "destination": "/real-estate", "permanent": true },
+    { "source": "/industries/finance", "destination": "/finance", "permanent": true },
+    { "source": "/industries/insurance", "destination": "/insurance", "permanent": true },
+    { "source": "/industries/logistics", "destination": "/logistics", "permanent": true },
+    { "source": "/industries/retail", "destination": "/retail", "permanent": true },
+    { "source": "/industries/marketing", "destination": "/marketing", "permanent": true },
+    { "source": "/industries/education", "destination": "/education", "permanent": true },
+    { "source": "/industries/professional-services", "destination": "/professional-services", "permanent": true },
+    { "source": "/industries/nonprofit", "destination": "/nonprofit", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/healthcare", "destination": "/industries/healthcare.html" },
     { "source": "/chiropractic", "destination": "/industries/chiropractic.html" },
