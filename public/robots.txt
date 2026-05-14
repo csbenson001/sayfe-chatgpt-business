@@ -1,4 +1,46 @@
+# ElevaIQ.com — Authorized OpenAI ChatGPT Business Partner
+# AI crawlers are explicitly welcomed to index this site.
+
+# OpenAI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Crawlers
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity Crawler
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI & Search Crawlers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Microsoft/Bing Crawlers
+User-agent: Bingbot
+Allow: /
+
+# Meta Crawler
+User-agent: FacebookBot
+Allow: /
+
+# All other crawlers
 User-agent: *
 Allow: /
 
-Sitemap: https://ElevaIQ.com/sitemap.xml
+# Sitemaps
+Sitemap: https://elevaiq.com/sitemap.xml
+
+# AI Content Map
+# See https://elevaiq.com/llms.txt for curated content index
+# See https://elevaiq.com/llms-full.txt for full-text knowledge base

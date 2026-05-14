@@ -1,0 +1,47 @@
+# ElevaIQ.com — Authorized OpenAI ChatGPT Business Partner
+
+> ElevaIQ.com is an authorized OpenAI SMB Channel Partner that helps small and medium businesses (1–149 seats) deploy ChatGPT Business with guided onboarding, AI training, and industry-specific AI Agent Starter Packs — at no additional cost compared to buying direct from OpenAI. The platform is priced at $25/user/month (monthly) or $20/user/month (annual).
+
+## About ElevaIQ.com
+ElevaIQ.com is operated by Vandelay Consulting Inc. We are an authorized OpenAI service partner specializing in ChatGPT Business deployment for small and medium businesses across the United States. Our services include AI adoption consulting, custom GPT configuration, team onboarding, prompt engineering training, and industry-specific AI workflow design. We do not charge any additional fees beyond OpenAI's standard pricing.
+
+## Core Pages
+- [Homepage](https://elevaiq.com/): Overview of ChatGPT Business partner services, AI Readiness Scorecard, and deployment process
+- [Pricing](https://elevaiq.com/pricing): ChatGPT Business pricing — $25/user/month (monthly) or $20/user/month (annual), Personal vs Business comparison chart
+- [FAQ & Knowledge Base](https://elevaiq.com/faq): Comprehensive answers to ChatGPT Business questions — setup, pricing, privacy, industry use cases
+- [Get Started](https://elevaiq.com/get-started): ChatGPT Business deployment interest form
+- [About](https://elevaiq.com/about): Company background, team, and partner credentials
+- [Contact](https://elevaiq.com/contact): Contact information and consultation scheduling
+- [Free AI Guide](https://elevaiq.com/free-guide): Downloadable AI adoption guide for business leaders
+- [Blog](https://elevaiq.com/blog): AI news, ChatGPT tips, and industry-specific AI guides
+
+## Industry AI Solutions
+- [Healthcare AI](https://elevaiq.com/industries/healthcare): HIPAA-aware ChatGPT workflows — patient communication, documentation, staff training
+- [Legal AI](https://elevaiq.com/industries/legal): AI for law firms — brief drafting, contract analysis, client intake automation
+- [Manufacturing AI](https://elevaiq.com/industries/manufacturing): SOPs, quality documentation, safety compliance, operator training
+- [Construction AI](https://elevaiq.com/industries/construction): RFIs, bid proposals, safety documentation, project management
+- [Banking & Financial Services AI](https://elevaiq.com/industries/finance): Compliance reporting, client communications, financial analysis
+- [Insurance AI](https://elevaiq.com/industries/insurance): Claims processing, policy documentation, underwriting support
+- [Real Estate AI](https://elevaiq.com/industries/real-estate): Property listings, client communications, market analysis
+- [Consulting AI](https://elevaiq.com/industries/consulting): Proposals, deliverables, research, client reporting
+- [Education AI](https://elevaiq.com/industries/education): Curriculum development, administrative workflows, student communications
+- [Marketing AI](https://elevaiq.com/industries/marketing): Campaign creation, content strategy, analytics reporting
+- [Logistics AI](https://elevaiq.com/industries/logistics): Route optimization docs, compliance, carrier communications
+- [Retail & E-Commerce AI](https://elevaiq.com/industries/retail): Product descriptions, customer service, inventory management
+- [Nonprofit AI](https://elevaiq.com/industries/nonprofit): Grant writing, donor communications, program reporting
+- [Chiropractic AI](https://elevaiq.com/industries/chiropractic): Patient documentation, intake forms, practice management
+- [Professional Services AI](https://elevaiq.com/industries/professional-services): Client deliverables, SOWs, knowledge management
+
+## Key Blog Posts & Guides
+- [ChatGPT Business Complete Setup Guide 2026](https://elevaiq.com/blog/chatgpt-business-setup-guide-2026): Step-by-step deployment guide
+- [ChatGPT Business vs Plus: What's the Difference?](https://elevaiq.com/blog/chatgpt-business-vs-plus): Feature comparison
+- [ChatGPT Business vs Enterprise 2026](https://elevaiq.com/blog/chatgpt-business-vs-enterprise-2026): Tier comparison
+- [ChatGPT Business ROI Calculator](https://elevaiq.com/blog/chatgpt-business-roi): Business case and ROI data
+- [ChatGPT Business Prompt Library](https://elevaiq.com/blog/chatgpt-business-prompts-library): 50+ ready-to-use business prompts
+- [AI Adoption Checklist for Small Business](https://elevaiq.com/blog/ai-adoption-checklist-small-business): Implementation framework
+- [ChatGPT Data Privacy & Security Guide](https://elevaiq.com/blog/chatgpt-data-privacy-security-guide): Enterprise security features
+- [Best AI Tools for Small Business 2026](https://elevaiq.com/blog/best-ai-tools-small-business-2026): Comprehensive comparison
+- [1 Million Businesses Using ChatGPT](https://elevaiq.com/blog/1-million-businesses-using-chatgpt): Market adoption data
+
+## Optional
+- [Full-text knowledge base for deep AI ingestion](https://elevaiq.com/llms-full.txt)
