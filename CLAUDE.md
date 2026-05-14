@@ -2,7 +2,7 @@
 
 ## Project Overview
 ElevaIQ.ai is an authorized OpenAI SMB Channel Partner site for Vandelay Consulting Inc (Chris Benson).
-The site drives ChatGPT Business referral sign-ups across 15+ industry verticals.
+The site drives ChatGPT Business referral sign-ups across 16+ industry verticals.
 Parent brand for the IQ family of industry-specific domains (PracticeIQ.ai, CounselIQ.ai, AgentIQ.ai, etc.).
 Sayfe.ai remains the separate consulting brand for privately hosted AI solutions.
 
@@ -10,15 +10,16 @@ Sayfe.ai remains the separate consulting brand for privately hosted AI solutions
 - **Months 1-12**: 50% of Eligible Revenue
 - **Months 13-24**: 20% of Eligible Revenue
 - **After 24 months**: No commission
-- **Eligible Product**: ChatGPT Business only ($30/user/month)
+- **Eligible Product**: ChatGPT Business only ($25/user/month monthly, $20/user/month annual)
 - **Commission Eligibility**: After 2nd consecutive monthly payment via referral link
 - **Payment**: Quarterly, within 45 days of quarter end
 - **Referral Period**: 12 months, auto-renews
 
 ## Revenue Math
-- 1 customer × 10 seats × $30/mo = $300/mo revenue → $150/mo commission (year 1)
-- 100 customers × avg 5 seats × $30/mo = $15,000/mo → $7,500/mo commission (year 1)
+- 1 customer × 10 seats × $25/mo = $250/mo revenue → $125/mo commission (year 1)
+- 100 customers × avg 5 seats × $25/mo = $12,500/mo → $6,250/mo commission (year 1)
 - Target: Drive millions in volume = thousands of referral customers
+- **Multi-location targeting**: Companies with 3+ locations for volume deals
 
 ## Tech Stack
 - **Hosting**: Vercel (static site)
@@ -74,7 +75,7 @@ public/
 
 ## Key Messaging
 - "Official OpenAI Partner" trust badge
-- "$30/user/month — same price as direct"
+- "From $20/user/month — same price as direct"
 - "Free onboarding, training, and consulting"
 - "No annual commitment"
 - "149 max team seats"
@@ -94,6 +95,22 @@ Target keywords that AI assistants (ChatGPT, Perplexity, etc.) would cite:
 cd sayfe-chatgpt-business
 git add -A && git commit -m "message" && git push origin main
 # Vercel auto-deploys from main branch
+```
+
+## Attribution URL & Referral Security
+- **Attribution URL**: Stored in Vercel env var `CHATGPT_ATTRIBUTION_URL`
+- **Current value**: `https://chatgpt.com/p/SAYFEAIUS`
+- **Server-side redirect**: `/api/referral.js` reads the env var and issues a 302 redirect
+- **NEVER expose the attribution code in client-side HTML, JS, blog posts, or marketing materials**
+- **To swap codes**: Change the Vercel env var — no code deploy needed
+- **To disable immediately** (fraud response): Set env var to `disabled`
+- **OpenAI Fraud Advisory (May 2026)**: Bad actors gained access to partner codes and attempted high-volume small redemptions. Attribution codes must be kept private and only delivered to qualified leads.
+
+## API Endpoints
+```
+api/
+  notify.js     # Lead notification emails via Resend
+  referral.js   # Server-side redirect to ChatGPT attribution URL (GET → 302)
 ```
 
 ## Next Steps
