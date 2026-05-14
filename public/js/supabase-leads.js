@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.ai Lead Capture Module
+ * ElevaIQ.com Lead Capture Module
  * Connects all site forms to Supabase
  *
  * SETUP: Replace SUPABASE_URL and SUPABASE_ANON_KEY with your actual values

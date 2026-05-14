@@ -1,15 +1,19 @@
-# ElevaIQ.ai Website Enhancement Spec for Claude Code
+# ElevaIQ.com Website Enhancement Spec for Claude Code
 
 ## Spec ID
+
 ELEVAIQ-WEB-REFERRAL-002
 
 ## Owner
+
 Chris Benson
 
 ## Primary Objective
-Update the existing ElevaIQ.ai landing page into a higher-converting referral destination for ChatGPT Business leads while also building Sayfe.ai as the premium AI transformation brand.
+
+Update the existing ElevaIQ.com landing page into a higher-converting referral destination for ChatGPT Business leads while also building Sayfe.ai as the premium AI transformation brand.
 
 ## Implementation Target
+
 Existing project/site:
 
 ```text
@@ -19,6 +23,7 @@ sayfe-chatgpt-business/public/index.html
 Assume the current page is already visually strong and should be enhanced, not rebuilt from scratch.
 
 ## Critical Instruction
+
 Do not change the existing OpenAI partner wording, badges, or disclosure language unless explicitly requested by Chris later.
 
 Keep existing partner language such as:
@@ -26,7 +31,7 @@ Keep existing partner language such as:
 ```text
 OFFICIAL OPENAI PARTNER
 AUTHORIZED OPENAI SERVICE PARTNER
-via ElevaIQ.ai Partner Program
+via ElevaIQ.com Partner Program
 ```
 
 Also keep the current footer OpenAI disclosure language unless only correcting the Vandelay typo.
@@ -35,11 +40,11 @@ Also keep the current footer OpenAI disclosure language unless only correcting t
 
 # 1. Strategic Direction
 
-## 1.1 Keep ElevaIQ.ai as the primary conversion brand
+## 1.1 Keep ElevaIQ.com as the primary conversion brand
 
-ElevaIQ.ai remains the front-door brand for ChatGPT Business referral, onboarding, starter packs, and adoption support.
+ElevaIQ.com remains the front-door brand for ChatGPT Business referral, onboarding, starter packs, and adoption support.
 
-Position ElevaIQ.ai as:
+Position ElevaIQ.com as:
 
 ```text
 The practical way for SMB and mid-market teams to deploy ChatGPT Business with onboarding, training, and industry-ready AI workflows.
@@ -52,7 +57,7 @@ Sayfe.ai should be introduced as the premium path for larger companies or more c
 Brand ladder:
 
 ```text
-ElevaIQ.ai
+ElevaIQ.com
 - ChatGPT Business referral and onboarding
 - AI Agent Starter Packs
 - Prompt libraries
@@ -71,7 +76,7 @@ Sayfe.ai
 Use this relationship language on the site:
 
 ```text
-ElevaIQ.ai helps teams get started with ChatGPT Business quickly and practically.
+ElevaIQ.com helps teams get started with ChatGPT Business quickly and practically.
 
 For larger teams or companies that need deeper AI transformation — including process automation, custom AI agents, ERP/SAP integration, document workflows, or enterprise AI strategy — our premium consulting path is delivered through Sayfe.ai.
 ```
@@ -115,7 +120,7 @@ Deploy AI workflows your team will actually use.
 Use:
 
 ```text
-ElevaIQ.ai helps businesses move beyond AI experiments and put ChatGPT Business to work in sales, operations, customer service, documentation, and internal training — with onboarding, AI training, and industry-ready AI Agent Starter Packs included.
+ElevaIQ.com helps businesses move beyond AI experiments and put ChatGPT Business to work in sales, operations, customer service, documentation, and internal training — with onboarding, AI training, and industry-ready AI Agent Starter Packs included.
 ```
 
 ## 2.4 Keep hero proof chips
@@ -155,7 +160,7 @@ Keep the current right-side card and visual style.
 
 ```text
 ChatGPT Business
-via ElevaIQ.ai Partner Program
+via ElevaIQ.com Partner Program
 ```
 
 ## 3.2 Add a new row
@@ -251,24 +256,14 @@ It should scroll to:
 Do not break existing anchors. Preserve or map:
 
 ```html
-#how-it-works
-#why-us
-#industries
-#pricing
-#partners
-#faq
-#get-started
+#how-it-works #why-us #industries #pricing #partners #faq #get-started
 ```
 
 Add new anchors:
 
 ```html
-#starter-packs
-#readiness-scorecard
-#referral-partners
-#sayfe-ai
-#transformation-outcomes
-#why-not-direct
+#starter-packs #readiness-scorecard #referral-partners #sayfe-ai
+#transformation-outcomes #why-not-direct
 ```
 
 ---
@@ -431,7 +426,7 @@ Place after How It Works or after Transformation Outcomes.
 ## 7.3 Section title
 
 ```text
-Why teams choose ElevaIQ.ai instead of going direct
+Why teams choose ElevaIQ.com instead of going direct
 ```
 
 ## 7.4 Section subtitle
@@ -463,7 +458,7 @@ Training and use-case development are on you
 Column 2 title:
 
 ```text
-With ElevaIQ.ai
+With ElevaIQ.com
 ```
 
 Bullets:
@@ -511,7 +506,7 @@ Free AI Agent Starter Pack built for your industry
 ## 8.3 Section subtitle
 
 ```text
-Your team should not have to start from a blank screen. ElevaIQ.ai gives you ready-to-use AI assistants, prompt workflows, and onboarding guidance tailored to how your business works.
+Your team should not have to start from a blank screen. ElevaIQ.com gives you ready-to-use AI assistants, prompt workflows, and onboarding guidance tailored to how your business works.
 ```
 
 ## 8.4 Cards
@@ -644,10 +639,10 @@ Just exploring
 Add hidden fields:
 
 ```html
-<input type="hidden" name="lead_category" id="leadCategory">
-<input type="hidden" name="readiness_score" id="readinessScore">
-<input type="hidden" name="readiness_segment" id="readinessSegment">
-<input type="hidden" name="process_pain_signal" id="processPainSignal">
+<input type="hidden" name="lead_category" id="leadCategory" />
+<input type="hidden" name="readiness_score" id="readinessScore" />
+<input type="hidden" name="readiness_segment" id="readinessSegment" />
+<input type="hidden" name="process_pain_signal" id="processPainSignal" />
 ```
 
 ## 9.8 Front-end routing logic
@@ -656,26 +651,26 @@ Add JavaScript logic:
 
 ```javascript
 function calculateLeadCategory(teamSize, biggestWorkflowPain) {
-  let leadCategory = 'self_serve';
+  let leadCategory = "self_serve";
   let processPainSignal = false;
 
-  if (teamSize === '1-10' || teamSize === '11-24') {
-    leadCategory = 'self_serve';
+  if (teamSize === "1-10" || teamSize === "11-24") {
+    leadCategory = "self_serve";
   }
 
-  if (teamSize === '25-74') {
-    leadCategory = 'deployment_sprint';
+  if (teamSize === "25-74") {
+    leadCategory = "deployment_sprint";
   }
 
-  if (teamSize === '75-149' || teamSize === '150+') {
-    leadCategory = 'strategy_call';
+  if (teamSize === "75-149" || teamSize === "150+") {
+    leadCategory = "strategy_call";
   }
 
   const painSignals = [
-    'Operations documentation',
-    'Data analysis and reporting',
-    'Customer service emails',
-    'Other'
+    "Operations documentation",
+    "Data analysis and reporting",
+    "Customer service emails",
+    "Other",
   ];
 
   if (painSignals.includes(biggestWorkflowPain)) {
@@ -826,28 +821,33 @@ Pseudo-code:
 
 ```javascript
 function calculateReadinessScore() {
-  const selectedAnswers = document.querySelectorAll('[data-readiness-question]:checked');
+  const selectedAnswers = document.querySelectorAll(
+    "[data-readiness-question]:checked",
+  );
   let score = 0;
 
   selectedAnswers.forEach((answer) => {
     score += Number(answer.value || 0);
   });
 
-  let segment = 'Foundational';
-  let message = 'Your team is early. Start with a simple pilot and 2-3 practical workflows.';
+  let segment = "Foundational";
+  let message =
+    "Your team is early. Start with a simple pilot and 2-3 practical workflows.";
 
   if (score >= 4 && score <= 7) {
-    segment = 'AI-Curious';
-    message = 'Your team has momentum. The next step is structure, training, and repeatable workflows.';
+    segment = "AI-Curious";
+    message =
+      "Your team has momentum. The next step is structure, training, and repeatable workflows.";
   }
 
   if (score >= 8) {
-    segment = 'AI-Ready';
-    message = 'Your team is ready for a formal rollout with ChatGPT Business, onboarding, and department-specific AI assistants.';
+    segment = "AI-Ready";
+    message =
+      "Your team is ready for a formal rollout with ChatGPT Business, onboarding, and department-specific AI assistants.";
   }
 
-  document.getElementById('readinessScore').value = score;
-  document.getElementById('readinessSegment').value = segment;
+  document.getElementById("readinessScore").value = score;
+  document.getElementById("readinessSegment").value = segment;
 
   return { score, segment, message };
 }
@@ -936,7 +936,7 @@ Keep the current pricing structure and visual card.
 Add a block under or beside pricing:
 
 ```text
-Included with ElevaIQ.ai signup:
+Included with ElevaIQ.com signup:
 - Guided onboarding
 - AI Agent Starter Pack
 - Industry prompt library
@@ -1064,7 +1064,7 @@ Need more than ChatGPT Business? Step up to Sayfe.ai.
 ## 14.4 Body copy
 
 ```text
-ElevaIQ.ai is the fast path to ChatGPT Business adoption. Sayfe.ai is the premium consulting and AI transformation path for companies that need deeper workflow automation, custom AI agents, document intelligence, ERP/SAP integration, Salesforce enablement, governance, and enterprise-grade AI strategy.
+ElevaIQ.com is the fast path to ChatGPT Business adoption. Sayfe.ai is the premium consulting and AI transformation path for companies that need deeper workflow automation, custom AI agents, document intelligence, ERP/SAP integration, Salesforce enablement, governance, and enterprise-grade AI strategy.
 ```
 
 ## 14.5 Use-case cards
@@ -1116,7 +1116,7 @@ Explore Sayfe.ai Transformation
 Secondary:
 
 ```text
-Start with ElevaIQ.ai
+Start with ElevaIQ.com
 ```
 
 ## 14.7 CTA behavior
@@ -1150,7 +1150,7 @@ Keep existing FAQs but add these if not present.
 Question:
 
 ```text
-Why sign up through ElevaIQ.ai instead of going directly to OpenAI?
+Why sign up through ElevaIQ.com instead of going directly to OpenAI?
 ```
 
 Answer:
@@ -1164,13 +1164,13 @@ You get the same ChatGPT Business foundation plus practical deployment help: onb
 Question:
 
 ```text
-Is ElevaIQ.ai only for small businesses?
+Is ElevaIQ.com only for small businesses?
 ```
 
 Answer:
 
 ```text
-ElevaIQ.ai is built for SMB and mid-market teams adopting ChatGPT Business. Larger organizations or companies with complex automation, integration, governance, or custom AI needs can be routed to Sayfe.ai for a deeper transformation engagement.
+ElevaIQ.com is built for SMB and mid-market teams adopting ChatGPT Business. Larger organizations or companies with complex automation, integration, governance, or custom AI needs can be routed to Sayfe.ai for a deeper transformation engagement.
 ```
 
 ## FAQ 3
@@ -1184,7 +1184,7 @@ Can you help us build custom GPTs or AI agents?
 Answer:
 
 ```text
-Yes. ElevaIQ.ai includes industry-ready AI Agent Starter Packs. For deeper custom AI agents, integrations, document automation, or enterprise workflows, we can route the opportunity to Sayfe.ai.
+Yes. ElevaIQ.com includes industry-ready AI Agent Starter Packs. For deeper custom AI agents, integrations, document automation, or enterprise workflows, we can route the opportunity to Sayfe.ai.
 ```
 
 ## FAQ 4
@@ -1198,7 +1198,7 @@ Can medical practices use this for PHI?
 Answer:
 
 ```text
-ElevaIQ.ai supports administrative and operational AI use cases. We do not recommend using ChatGPT Business for Protected Health Information unless appropriate HIPAA-compliant configurations and agreements are in place.
+ElevaIQ.com supports administrative and operational AI use cases. We do not recommend using ChatGPT Business for Protected Health Information unless appropriate HIPAA-compliant configurations and agreements are in place.
 ```
 
 ---
@@ -1382,7 +1382,7 @@ practical AI adoption
 For medical/practice content, include:
 
 ```text
-ElevaIQ.ai supports administrative and operational AI use cases. We do not recommend using ChatGPT Business for Protected Health Information unless appropriate HIPAA-compliant configurations and agreements are in place.
+ElevaIQ.com supports administrative and operational AI use cases. We do not recommend using ChatGPT Business for Protected Health Information unless appropriate HIPAA-compliant configurations and agreements are in place.
 ```
 
 ---
@@ -1400,7 +1400,7 @@ Deploy AI workflows your team will actually use.
 ## Subheadline
 
 ```text
-ElevaIQ.ai helps businesses move beyond AI experiments and put ChatGPT Business to work in sales, operations, customer service, documentation, and internal training — with onboarding, AI training, and industry-ready AI Agent Starter Packs included.
+ElevaIQ.com helps businesses move beyond AI experiments and put ChatGPT Business to work in sales, operations, customer service, documentation, and internal training — with onboarding, AI training, and industry-ready AI Agent Starter Packs included.
 ```
 
 ## Proof chips
@@ -1428,7 +1428,7 @@ Keep:
 
 ```text
 ChatGPT Business
-via ElevaIQ.ai Partner Program
+via ElevaIQ.com Partner Program
 ```
 
 Add row:
@@ -1468,5 +1468,5 @@ Navigation anchors work.
 # 23. Final One-Paragraph Claude Code Task Summary
 
 ```text
-Update the ElevaIQ.ai landing page to shift the messaging from product resale to business transformation while keeping ChatGPT Business as the product foundation. Preserve existing OpenAI partner wording and badges. Add conversion sections for “What AI adoption can unlock,” “Why choose ElevaIQ instead of going direct,” “AI Agent Starter Packs,” “AI Readiness Scorecard,” “Referral Partners,” and “Sayfe.ai Premium Transformation.” Improve the lead form to capture team size, industry, AI usage, workflow pain, and timeline. Add simple front-end routing and scorecard logic. Correct the footer typo from Vancelay to Vandelay. Preserve the existing SaaS visual style and make all additions mobile responsive.
+Update the ElevaIQ.com landing page to shift the messaging from product resale to business transformation while keeping ChatGPT Business as the product foundation. Preserve existing OpenAI partner wording and badges. Add conversion sections for “What AI adoption can unlock,” “Why choose ElevaIQ instead of going direct,” “AI Agent Starter Packs,” “AI Readiness Scorecard,” “Referral Partners,” and “Sayfe.ai Premium Transformation.” Improve the lead form to capture team size, industry, AI usage, workflow pain, and timeline. Add simple front-end routing and scorecard logic. Correct the footer typo from Vancelay to Vandelay. Preserve the existing SaaS visual style and make all additions mobile responsive.
 ```

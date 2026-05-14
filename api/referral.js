@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.ai — ChatGPT Business Referral Redirect
+ * ElevaIQ.com — ChatGPT Business Referral Redirect
  * Vercel Serverless Function
  *
  * Server-side redirect to the OpenAI attribution URL.
@@ -38,7 +38,7 @@ module.exports = async function handler(req, res) {
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ChatGPT Business — ElevaIQ.ai</title>
+        <title>ChatGPT Business — ElevaIQ.com</title>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
         <style>
           * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -79,7 +79,7 @@ module.exports = async function handler(req, res) {
         <div class="card">
           <h1>Your setup link is on the way</h1>
           <p>Our team will send you a personalized ChatGPT Business setup link within 1 business day. If you've already submitted your interest form, sit tight — we're preparing your link now.</p>
-          <a href="https://elevaiq.com/#get-started">Submit Interest Form</a>
+          <a href="https://ElevaIQ.com/#get-started">Submit Interest Form</a>
         </div>
       </body>
       </html>

@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.ai — Analytics Collection Endpoint
+ * ElevaIQ.com — Analytics Collection Endpoint
  * Vercel Serverless Function
  * 
  * Receives behavioral analytics events from the client-side analytics.js module.

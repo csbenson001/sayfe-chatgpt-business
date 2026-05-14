@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.ai — Behavioral Analytics Module
+ * ElevaIQ.com — Behavioral Analytics Module
  * 
  * Tracks user behavior to understand engagement, optimize conversions,
  * and enable follow-up intelligence. Privacy-safe: no PII collected.

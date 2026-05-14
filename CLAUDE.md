@@ -1,12 +1,14 @@
-# ElevaIQ.ai — ChatGPT Business Partner Site
+# ElevaIQ.com — ChatGPT Business Partner Site
 
 ## Project Overview
-ElevaIQ.ai is an authorized OpenAI SMB Channel Partner site for Vandelay Consulting Inc (Chris Benson).
+
+ElevaIQ.com is an authorized OpenAI SMB Channel Partner site for Vandelay Consulting Inc (Chris Benson).
 The site drives ChatGPT Business referral sign-ups across 16+ industry verticals.
 Parent brand for the IQ family of industry-specific domains (PracticeIQ.ai, CounselIQ.ai, AgentIQ.ai, etc.).
 Sayfe.ai remains the separate consulting brand for privately hosted AI solutions.
 
 ## Commission Structure (from OpenAI Partner Guide)
+
 - **Months 1-12**: 50% of Eligible Revenue
 - **Months 13-24**: 20% of Eligible Revenue
 - **After 24 months**: No commission
@@ -16,19 +18,22 @@ Sayfe.ai remains the separate consulting brand for privately hosted AI solutions
 - **Referral Period**: 12 months, auto-renews
 
 ## Revenue Math
+
 - 1 customer × 10 seats × $25/mo = $250/mo revenue → $125/mo commission (year 1)
 - 100 customers × avg 5 seats × $25/mo = $12,500/mo → $6,250/mo commission (year 1)
 - Target: Drive millions in volume = thousands of referral customers
 - **Multi-location targeting**: Companies with 3+ locations for volume deals
 
 ## Tech Stack
+
 - **Hosting**: Vercel (static site)
 - **Framework**: Pure HTML/CSS/JS (no build step)
-- **Domain**: elevaiq.com
+- **Domain**: ElevaIQ.com
 - **Git**: github.com/csbenson001/sayfe-chatgpt-business
 - **Lead Capture**: Supabase-ready (forms need connection)
 
 ## Site Architecture
+
 ```
 public/
   index.html                    # Main landing page (comprehensive AEO/SEO)
@@ -59,6 +64,7 @@ public/
 ```
 
 ## Design System
+
 - **Primary Color**: Yale Blue (#0f3460)
 - **Accent**: #2d8cf0
 - **Font**: Figtree (Google Fonts)
@@ -66,6 +72,7 @@ public/
 - **CTAs**: Rounded pill buttons, blue/white scheme
 
 ## SEO/AEO Strategy
+
 - JSON-LD structured data on every page (FAQPage, Article, HowTo, Organization)
 - Industry-specific long-tail keywords
 - Blog posts targeting "How can [industry] use ChatGPT" queries
@@ -74,6 +81,7 @@ public/
 - Internal linking between industry pages and blog posts
 
 ## Key Messaging
+
 - "Official OpenAI Partner" trust badge
 - "From $20/user/month — same price as direct"
 - "Free onboarding, training, and consulting"
@@ -82,7 +90,9 @@ public/
 - Industry-specific pain points → AI solutions
 
 ## Blog Content Strategy
+
 Target keywords that AI assistants (ChatGPT, Perplexity, etc.) would cite:
+
 1. "How to use ChatGPT for [industry]"
 2. "Best AI tools for [industry] in 2026"
 3. "ChatGPT Business vs ChatGPT Plus for teams"
@@ -91,6 +101,7 @@ Target keywords that AI assistants (ChatGPT, Perplexity, etc.) would cite:
 6. Industry-specific use case deep dives
 
 ## Deployment
+
 ```bash
 cd sayfe-chatgpt-business
 git add -A && git commit -m "message" && git push origin main
@@ -98,6 +109,7 @@ git add -A && git commit -m "message" && git push origin main
 ```
 
 ## Attribution URL & Referral Security
+
 - **Attribution URL**: Stored in Vercel env var `CHATGPT_ATTRIBUTION_URL`
 - **Current value**: `https://chatgpt.com/p/SAYFEAIUS`
 - **Server-side redirect**: `/api/referral.js` reads the env var and issues a 302 redirect
@@ -107,6 +119,7 @@ git add -A && git commit -m "message" && git push origin main
 - **OpenAI Fraud Advisory (May 2026)**: Bad actors gained access to partner codes and attempted high-volume small redemptions. Attribution codes must be kept private and only delivered to qualified leads.
 
 ## API Endpoints
+
 ```
 api/
   notify.js     # Lead notification emails via Resend
@@ -114,6 +127,7 @@ api/
 ```
 
 ## Next Steps
+
 - [ ] Build blog infrastructure and write 5+ posts
 - [ ] Add about/pricing/contact pages
 - [ ] sitemap.xml + robots.txt

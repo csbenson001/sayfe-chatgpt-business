@@ -1,4 +1,4 @@
--- ElevaIQ.ai Lead Capture Schema
+-- ElevaIQ.com Lead Capture Schema
 -- Run this in Supabase SQL Editor (Database > SQL Editor)
 
 -- Create the leads table

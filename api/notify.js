@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.ai — Lead Notification API
+ * ElevaIQ.com — Lead Notification API
  * Vercel Serverless Function
  * Sends email notification via Resend when a new lead is captured
  */
@@ -61,7 +61,7 @@ module.exports = async function handler(req, res) {
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
         <div style="background:#0f3460;padding:20px 24px;border-radius:12px 12px 0 0;">
           <h1 style="color:white;font-size:18px;margin:0;">New Lead Captured</h1>
-          <p style="color:rgba(255,255,255,0.7);font-size:13px;margin:4px 0 0;">ElevaIQ.ai — ${formTypeLabel}</p>
+          <p style="color:rgba(255,255,255,0.7);font-size:13px;margin:4px 0 0;">ElevaIQ.com — ${formTypeLabel}</p>
         </div>
         <div style="border:1px solid #e8eef6;border-top:none;border-radius:0 0 12px 12px;overflow:hidden;">
           <table style="width:100%;border-collapse:collapse;font-size:14px;">

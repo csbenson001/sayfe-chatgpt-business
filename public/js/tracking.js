@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.ai - Unified Tracking Module
+ * ElevaIQ.com - Unified Tracking Module
  *
  * This module loads and initializes:
  * - Google Analytics 4 (GA4)

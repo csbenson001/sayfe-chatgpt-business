@@ -1,10 +1,11 @@
-# ElevaIQ.ai Claude Code Addendum
+# ElevaIQ.com Claude Code Addendum
+
 ## Add Personal ChatGPT vs ChatGPT Business Comparison Section
 
 **Spec ID:** ELEVAIQ-WEB-ADDENDUM-003  
 **Owner:** Chris Benson  
 **Target Site:** `public/index.html`  
-**Purpose:** Add a high-impact education and conversion section that explains why businesses should move from scattered personal ChatGPT usage to a structured ChatGPT Business rollout through ElevaIQ.ai.
+**Purpose:** Add a high-impact education and conversion section that explains why businesses should move from scattered personal ChatGPT usage to a structured ChatGPT Business rollout through ElevaIQ.com.
 
 ---
 
@@ -18,7 +19,7 @@ The section should not attack personal ChatGPT. The message is:
 
 > Personal ChatGPT is great for individuals. ChatGPT Business is built for company-wide AI adoption.
 
-ElevaIQ.ai should be positioned as the partner that helps companies move from scattered individual AI usage to structured, secure, repeatable business AI workflows.
+ElevaIQ.com should be positioned as the partner that helps companies move from scattered individual AI usage to structured, secure, repeatable business AI workflows.
 
 ---
 
@@ -27,7 +28,7 @@ ElevaIQ.ai should be positioned as the partner that helps companies move from sc
 Insert this new section after the existing or planned section:
 
 ```text
-Why teams choose ElevaIQ.ai instead of going direct
+Why teams choose ElevaIQ.com instead of going direct
 ```
 
 And before:
@@ -63,7 +64,7 @@ Recommended page order after this change:
 Add section id:
 
 ```html
-<section id="personal-vs-business">
+<section id="personal-vs-business"></section>
 ```
 
 Optional nav label if there is room:
@@ -110,25 +111,25 @@ ChatGPT Business
 
 ### 5.1 Chart Content
 
-| Feature / Concern | Personal ChatGPT | ChatGPT Business |
-|---|---|---|
-| Ownership | Belongs to the individual employee | Belongs to the business workspace |
-| Admin controls | Limited or none for the company | Centralized workspace and user administration |
-| User management | Employees manage their own accounts | Company can invite, manage, and remove users |
-| Data controls | Controlled by each individual account | Business workspace controls and business data protections |
-| Team visibility | No shared company-level view | Admin console and team-level management |
-| Shared GPTs | Individual-created GPTs may be isolated | Custom GPTs can be shared across the workspace |
-| Prompt libraries | Stored individually or scattered across docs | Can be standardized for teams and departments |
-| Onboarding | Each employee figures it out alone | Team rollout, training, and adoption plan |
-| Security posture | Harder to govern across employees | Better fit for company-approved AI usage |
-| Continuity | Knowledge may leave when an employee leaves | Workflows and GPTs stay with the business |
-| Best fit | Individual productivity | Company-wide AI adoption |
+| Feature / Concern | Personal ChatGPT                             | ChatGPT Business                                          |
+| ----------------- | -------------------------------------------- | --------------------------------------------------------- |
+| Ownership         | Belongs to the individual employee           | Belongs to the business workspace                         |
+| Admin controls    | Limited or none for the company              | Centralized workspace and user administration             |
+| User management   | Employees manage their own accounts          | Company can invite, manage, and remove users              |
+| Data controls     | Controlled by each individual account        | Business workspace controls and business data protections |
+| Team visibility   | No shared company-level view                 | Admin console and team-level management                   |
+| Shared GPTs       | Individual-created GPTs may be isolated      | Custom GPTs can be shared across the workspace            |
+| Prompt libraries  | Stored individually or scattered across docs | Can be standardized for teams and departments             |
+| Onboarding        | Each employee figures it out alone           | Team rollout, training, and adoption plan                 |
+| Security posture  | Harder to govern across employees            | Better fit for company-approved AI usage                  |
+| Continuity        | Knowledge may leave when an employee leaves  | Workflows and GPTs stay with the business                 |
+| Best fit          | Individual productivity                      | Company-wide AI adoption                                  |
 
 ---
 
 ## 6. Design Requirements
 
-Match the existing ElevaIQ.ai SaaS design language.
+Match the existing ElevaIQ.com SaaS design language.
 
 Use:
 
@@ -187,7 +188,7 @@ The risk is not AI adoption. The risk is unmanaged AI adoption.
 ### 7.2 Callout Body
 
 ```text
-The real risk is that every employee uses AI differently — with no shared standards, no rollout plan, and no repeatable workflows. ElevaIQ.ai helps you move from scattered individual AI use to a structured business rollout.
+The real risk is that every employee uses AI differently — with no shared standards, no rollout plan, and no repeatable workflows. ElevaIQ.com helps you move from scattered individual AI use to a structured business rollout.
 ```
 
 ### 7.3 CTA Buttons
@@ -246,9 +247,9 @@ Use this as a starting point and adapt to the existing file structure and CSS cl
     <p class="eyebrow">PERSONAL AI VS BUSINESS AI</p>
     <h2>Why businesses should not rely on personal ChatGPT accounts</h2>
     <p>
-      Personal ChatGPT is great for individuals. ChatGPT Business gives your company
-      a shared, managed workspace with admin controls, team adoption tools, and
-      business-focused security features.
+      Personal ChatGPT is great for individuals. ChatGPT Business gives your
+      company a shared, managed workspace with admin controls, team adoption
+      tools, and business-focused security features.
     </p>
   </div>
 
@@ -268,55 +269,73 @@ Use this as a starting point and adapt to the existing file structure and CSS cl
     <div class="comparison-row">
       <div class="comparison-feature">Admin controls</div>
       <div>Limited or none for the company</div>
-      <div class="business-benefit">Centralized workspace and user administration</div>
+      <div class="business-benefit">
+        Centralized workspace and user administration
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">User management</div>
       <div>Employees manage their own accounts</div>
-      <div class="business-benefit">Company can invite, manage, and remove users</div>
+      <div class="business-benefit">
+        Company can invite, manage, and remove users
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">Data controls</div>
       <div>Controlled by each individual account</div>
-      <div class="business-benefit">Business workspace controls and business data protections</div>
+      <div class="business-benefit">
+        Business workspace controls and business data protections
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">Team visibility</div>
       <div>No shared company-level view</div>
-      <div class="business-benefit">Admin console and team-level management</div>
+      <div class="business-benefit">
+        Admin console and team-level management
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">Shared GPTs</div>
       <div>Individual-created GPTs may be isolated</div>
-      <div class="business-benefit">Custom GPTs can be shared across the workspace</div>
+      <div class="business-benefit">
+        Custom GPTs can be shared across the workspace
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">Prompt libraries</div>
       <div>Stored individually or scattered across docs</div>
-      <div class="business-benefit">Can be standardized for teams and departments</div>
+      <div class="business-benefit">
+        Can be standardized for teams and departments
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">Onboarding</div>
       <div>Each employee figures it out alone</div>
-      <div class="business-benefit">Team rollout, training, and adoption plan</div>
+      <div class="business-benefit">
+        Team rollout, training, and adoption plan
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">Security posture</div>
       <div>Harder to govern across employees</div>
-      <div class="business-benefit">Better fit for company-approved AI usage</div>
+      <div class="business-benefit">
+        Better fit for company-approved AI usage
+      </div>
     </div>
 
     <div class="comparison-row">
       <div class="comparison-feature">Continuity</div>
       <div>Knowledge may leave when an employee leaves</div>
-      <div class="business-benefit">Workflows and GPTs stay with the business</div>
+      <div class="business-benefit">
+        Workflows and GPTs stay with the business
+      </div>
     </div>
 
     <div class="comparison-row">
@@ -329,13 +348,18 @@ Use this as a starting point and adapt to the existing file structure and CSS cl
   <div class="comparison-callout">
     <h3>The risk is not AI adoption. The risk is unmanaged AI adoption.</h3>
     <p>
-      The real risk is that every employee uses AI differently — with no shared standards,
-      no rollout plan, and no repeatable workflows. ElevaIQ.ai helps you move from
-      scattered individual AI use to a structured business rollout.
+      The real risk is that every employee uses AI differently — with no shared
+      standards, no rollout plan, and no repeatable workflows. ElevaIQ.com helps
+      you move from scattered individual AI use to a structured business
+      rollout.
     </p>
     <div class="button-group">
-      <a href="#get-started" class="btn btn-primary">Get My Free AI Readiness Audit</a>
-      <a href="#starter-packs" class="btn btn-secondary">See AI Agent Starter Packs</a>
+      <a href="#get-started" class="btn btn-primary"
+        >Get My Free AI Readiness Audit</a
+      >
+      <a href="#starter-packs" class="btn btn-secondary"
+        >See AI Agent Starter Packs</a
+      >
     </div>
   </div>
 </section>
@@ -484,7 +508,7 @@ Adapt class names to match the existing site if needed.
 ## 11. Implementation Instructions for Claude Code
 
 1. Open the current site files.
-2. Locate the section after “Why teams choose ElevaIQ.ai instead of going direct” or the closest equivalent.
+2. Locate the section after “Why teams choose ElevaIQ.com instead of going direct” or the closest equivalent.
 3. Insert the new `#personal-vs-business` section before `#starter-packs`.
 4. Add the hero cross-link near the existing hero CTA buttons.
 5. Add or adapt CSS for the comparison section.
@@ -519,5 +543,5 @@ Existing visual design language is preserved.
 ## 13. One-Line Summary
 
 ```text
-Add a polished, responsive “Personal ChatGPT vs ChatGPT Business” comparison section to educate buyers that business AI needs shared ownership, administration, security, repeatable workflows, and adoption support — and position ElevaIQ.ai as the partner that helps them make that transition.
+Add a polished, responsive “Personal ChatGPT vs ChatGPT Business” comparison section to educate buyers that business AI needs shared ownership, administration, security, repeatable workflows, and adoption support — and position ElevaIQ.com as the partner that helps them make that transition.
 ```

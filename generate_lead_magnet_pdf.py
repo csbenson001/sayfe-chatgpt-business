@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate the ChatGPT Business Quick-Start Guide PDF lead magnet for ElevaIQ.ai
+Generate the ChatGPT Business Quick-Start Guide PDF lead magnet for ElevaIQ.com
 Uses reportlab for professional layout and design
 """
 
@@ -125,7 +125,7 @@ def build_pdf():
         spaceAfter=6,
         alignment=1,
     )
-    elements.append(Paragraph("✓ By ElevaIQ.ai — Official OpenAI Partner", partner_style))
+    elements.append(Paragraph("✓ By ElevaIQ.com — Official OpenAI Partner", partner_style))
 
     elements.append(Spacer(1, 0.2*inch))
 
@@ -137,7 +137,7 @@ def build_pdf():
         spaceAfter=4,
         alignment=1,
     )
-    elements.append(Paragraph("elevaiq.com | Free Onboarding & Consulting", contact_style))
+    elements.append(Paragraph("ElevaIQ.com | Free Onboarding & Consulting", contact_style))
 
     elements.append(Spacer(1, 0.5*inch))
 
@@ -189,7 +189,7 @@ def build_pdf():
 
     cta_text = """
     <b>Want a personalized prompt library for your industry?</b><br/>
-    Visit <font color="#2d8cf0"><b>elevaiq.com</b></font> to get free personalized prompt templates,
+    Visit <font color="#2d8cf0"><b>ElevaIQ.com</b></font> to get free personalized prompt templates,
     training resources, and unlimited onboarding consulting.
     """
     elements.append(Paragraph(cta_text, body_accent))
@@ -582,11 +582,11 @@ def build_pdf():
     # ============================================================================
     elements.append(Spacer(1, 0.5*inch))
 
-    elements.append(Paragraph("About ElevaIQ.ai", section_title))
+    elements.append(Paragraph("About ElevaIQ.com", section_title))
     elements.append(Spacer(1, 0.2*inch))
 
     about_text = """
-    ElevaIQ.ai is an Official OpenAI Channel Partner dedicated to helping small and mid-size
+    ElevaIQ.com is an Official OpenAI Channel Partner dedicated to helping small and mid-size
     businesses adopt ChatGPT Business. We've worked with hundreds of companies across healthcare,
     legal, manufacturing, real estate, and more to implement AI workflows that save time and
     increase revenue.<br/>
@@ -619,10 +619,10 @@ def build_pdf():
     elements.append(Spacer(1, 0.15*inch))
 
     final_cta_text = """
-    <b>Visit elevaiq.com</b> to explore industry-specific prompt templates,
+    <b>Visit ElevaIQ.com</b> to explore industry-specific prompt templates,
     schedule your free AI audit, and learn how ChatGPT Business can transform your team.<br/>
     <br/>
-    <b>Schedule Your Free Consultation:</b> elevaiq.com/contact
+    <b>Schedule Your Free Consultation:</b> ElevaIQ.com/contact
     """
     elements.append(Paragraph(final_cta_text, body_accent))
 
