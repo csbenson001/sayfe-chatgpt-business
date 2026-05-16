@@ -34,12 +34,34 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "ElevaIQ.com",
-  "alternateName": "Vandelay Consulting Inc",
-  "description": "Authorized OpenAI service partner providing ChatGPT Business deployment, AI consulting, training, and adoption services for small and medium businesses.",
-  "url": "https://ElevaIQ.com",
-  "areaServed": "United States",
-  "serviceType": ["AI Consulting", "ChatGPT Business Deployment", "AI Training", "Change Management", "AI Adoption Services"],
-  "knowsAbout": ["Artificial Intelligence", "ChatGPT", "OpenAI", "Business Process Automation", "AI Training"],
+  "legalName": "Vandelay Consulting Inc.",
+  "alternateName": ["ElevaIQ", "ElevaIQ ChatGPT Business Partner"],
+  "description": "Authorized OpenAI SMB Channel Partner providing ChatGPT Business deployment, AI consulting, training, and adoption services for small and medium businesses (1–149 seats). ChatGPT Business pricing is $25/user/month (monthly) or $20/user/month (annual) — identical to OpenAI direct, with free onboarding and industry-specific AI Agent Starter Packs included.",
+  "url": "https://elevaiq.com",
+  "logo": "https://elevaiq.com/logo.png",
+  "image": "https://elevaiq.com/logo.png",
+  "priceRange": "$20-$25 per user per month",
+  "areaServed": [
+    {"@type": "Country", "name": "United States"},
+    {"@type": "AdministrativeArea", "name": "North America"}
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Chris Benson",
+    "url": "https://elevaiq.com/about",
+    "sameAs": "https://www.linkedin.com/in/chris-benson-308083313/"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Sayfe.ai",
+    "url": "https://sayfe.ai"
+  },
+  "sameAs": [
+    "https://sayfe.ai",
+    "https://www.linkedin.com/in/chris-benson-308083313/"
+  ],
+  "serviceType": ["AI Consulting", "ChatGPT Business Deployment", "AI Training", "Change Management", "AI Adoption Services", "Custom GPT Development", "Prompt Engineering Training"],
+  "knowsAbout": ["ChatGPT Business", "ChatGPT Enterprise", "OpenAI", "GPT-5.5", "Custom GPTs", "AI Adoption", "Prompt Engineering", "AI for Healthcare", "AI for Legal", "AI for Manufacturing", "AI for Construction", "AI for Financial Services", "AI for Insurance", "AI for Real Estate", "AI for Consulting", "AI for Education", "AI for Marketing", "AI for Logistics", "AI for Retail", "AI for Nonprofit"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "AI Services for SMBs",
@@ -197,15 +219,19 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "ElevaIQ.com",
-  "alternateName": ["ElevaIQ", "Eleva IQ"],
+  "alternateName": ["ElevaIQ", "Eleva IQ", "ElevaIQ ChatGPT Business Partner"],
   "url": "https://elevaiq.com",
-  "description": "Authorized OpenAI ChatGPT Business partner helping small and medium businesses deploy AI with guided onboarding, training, and industry-specific AI Agent Starter Packs.",
+  "description": "ElevaIQ.com (the canonical domain) is an authorized OpenAI ChatGPT Business SMB Channel Partner helping small and medium businesses deploy AI with guided onboarding, training, and industry-specific AI Agent Starter Packs. ChatGPT Business pricing through ElevaIQ.com is $25/user/month (monthly) or $20/user/month (annual) — identical to OpenAI direct pricing.",
+  "inLanguage": "en-US",
   "publisher": {
     "@type": "Organization",
     "name": "ElevaIQ.com",
     "url": "https://elevaiq.com",
+    "logo": "https://elevaiq.com/logo.png",
     "sameAs": [
-      "https://www.linkedin.com/in/chris-benson-308083313/"
+      "https://sayfe.ai",
+      "https://www.linkedin.com/in/chris-benson-308083313/",
+      "https://github.com/csbenson001/sayfe-chatgpt-business"
     ]
   },
   "potentialAction": {
@@ -216,16 +242,63 @@
 }
 </script>
 
+<!-- JSON-LD: Person (Founder) for E-E-A-T authority -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chris Benson",
+  "jobTitle": "Founder & Principal AI Consultant",
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "ElevaIQ.com",
+      "url": "https://elevaiq.com"
+    },
+    {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfe.ai"
+    },
+    {
+      "@type": "Organization",
+      "name": "Vandelay Consulting Inc."
+    }
+  ],
+  "knowsAbout": [
+    "ChatGPT Business",
+    "OpenAI",
+    "AI Adoption Strategy",
+    "Custom GPT Development",
+    "Prompt Engineering",
+    "Enterprise AI Consulting",
+    "SAP",
+    "Salesforce",
+    "AI Sales Automation"
+  ],
+  "url": "https://elevaiq.com/about",
+  "sameAs": [
+    "https://www.linkedin.com/in/chris-benson-308083313/",
+    "https://sayfe.ai"
+  ]
+}
+</script>
+
 <!-- JSON-LD: Product for ChatGPT Business Pricing -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "ChatGPT Business via ElevaIQ.com",
-  "description": "OpenAI ChatGPT Business deployment for teams of 1-149 seats. Includes GPT-5.5 access, admin controls, data privacy (data never used for training), SSO, shared custom GPTs, and expert onboarding through ElevaIQ.com.",
+  "name": "ChatGPT Business",
+  "description": "OpenAI ChatGPT Business deployment for teams of 1-149 seats. Includes GPT-5.5 access, admin controls, data privacy (data never used for training), SSO, shared custom GPTs, and expert onboarding via ElevaIQ.com — an authorized OpenAI SMB Channel Partner.",
   "brand": {
     "@type": "Brand",
     "name": "OpenAI"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "OpenAI",
+    "url": "https://openai.com"
   },
   "offers": [
     {
@@ -236,7 +309,12 @@
       "priceValidUntil": "2026-12-31",
       "availability": "https://schema.org/InStock",
       "url": "https://elevaiq.com/pricing",
-      "description": "Monthly billing, no annual commitment. $25 per user per month."
+      "description": "Monthly billing, no annual commitment. $25 per user per month. Same price as buying direct from OpenAI; ElevaIQ.com adds free onboarding, training, and consulting at no extra cost.",
+      "seller": {
+        "@type": "Organization",
+        "name": "ElevaIQ.com",
+        "url": "https://elevaiq.com"
+      }
     },
     {
       "@type": "Offer",
@@ -246,15 +324,14 @@
       "priceValidUntil": "2026-12-31",
       "availability": "https://schema.org/InStock",
       "url": "https://elevaiq.com/pricing",
-      "description": "Annual billing. $20 per user per month, billed annually."
+      "description": "Annual billing. $20 per user per month, billed annually. Same price as buying direct from OpenAI; ElevaIQ.com adds free onboarding, training, and consulting at no extra cost.",
+      "seller": {
+        "@type": "Organization",
+        "name": "ElevaIQ.com",
+        "url": "https://elevaiq.com"
+      }
     }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "1000000",
-    "bestRating": "5"
-  }
+  ]
 }
 </script>
 
