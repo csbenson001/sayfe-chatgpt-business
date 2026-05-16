@@ -65,11 +65,40 @@ public/
 
 ## Design System
 
-- **Primary Color**: Yale Blue (#0f3460)
-- **Accent**: #2d8cf0
+- **Primary Color**: Yale Blue (#0f3460) — CSS var `--yale`
+- **Accent**: #2d8cf0 — CSS var `--accent`
 - **Font**: Figtree (Google Fonts)
 - **Style**: Clean, professional, trust-building
 - **CTAs**: Rounded pill buttons, blue/white scheme
+
+### Nav Consistency Rules (ALL pages must follow)
+
+The nav is the single source of truth for site identity. Every page — main, blog, industry, and individual blog posts — must use **identical nav HTML and CSS**. Any deviation breaks brand consistency.
+
+**Standard nav links and their hrefs:**
+```
+How It Works  → /#how-it-works
+Starter Packs → /#starter-packs
+Industries    → /#industries
+Pricing       → /#pricing
+Blog          → /blog          (add class="active" on blog pages)
+Get Started   → /api/referral  (class="nav-cta")
+```
+
+**Nav HTML template** (copy verbatim — do not invent nav variations):
+The canonical nav is in `public/blog/index.html` (nav id="mainNav").
+- Logo: `eleva<span>IQ.ai</span>` with the OpenAI SVG partner badge
+- Fixed position with backdrop blur, `scrolled` class added on scroll via JS
+- Mobile hamburger at ≤768px breakpoint
+
+**CSS variables required for the nav** (define in each page's `:root`):
+`--yale`, `--yale-deep`, `--yale-mid`, `--yale-light`, `--white`, `--slate`, `--accent`, `--border`, `--border-light`, `--shadow-sm`, `--shadow-md`
+
+**When creating a new blog post or page:**
+1. Copy the nav block from `public/blog/index.html` exactly
+2. Add `class="active"` to the current page's nav link
+3. Include the nav scroll JS: `window.addEventListener('scroll', () => { mainNav.classList.toggle('scrolled', window.scrollY > 10); });`
+4. Add `padding-top: 7rem` to the first content section to account for the 64px fixed nav
 
 ## SEO/AEO Strategy
 
