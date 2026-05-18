@@ -1565,6 +1565,25 @@ footer {
 </head>
 <body>
 
+<!-- COMPLIANCE URGENCY BANNER -->
+<div id="compliance-banner" role="region" aria-label="AI compliance deadlines" style="position:fixed;top:0;left:0;right:0;z-index:1100;background:linear-gradient(90deg,#ff9800 0%,#ef4444 100%);color:white;padding:8px 16px;text-align:center;font-size:.85rem;font-weight:600;font-family:var(--font-body);line-height:1.4;">
+  <span style="margin-right:8px;">⚠️</span>
+  <span>Colorado AI Act in <span id="days-co" style="font-weight:800;">43</span> days · EU AI Act in <span id="days-eu" style="font-weight:800;">76</span> days</span>
+  <span style="margin:0 8px;opacity:.6;">·</span>
+  <a href="/compliance-assessment" style="color:white;text-decoration:underline;font-weight:700;white-space:nowrap;">Take the free 5-min compliance assessment →</a>
+</div>
+<script>
+  (function(){
+    var co=new Date('2026-06-30T00:00:00Z'),eu=new Date('2026-08-02T00:00:00Z'),now=new Date();
+    var dco=Math.max(0,Math.ceil((co-now)/86400000)),deu=Math.max(0,Math.ceil((eu-now)/86400000));
+    var elco=document.getElementById('days-co'),eleu=document.getElementById('days-eu');
+    if(elco)elco.textContent=dco;if(eleu)eleu.textContent=deu;
+    function adjustNav(){var b=document.getElementById('compliance-banner'),n=document.getElementById('mainNav');if(b&&n){n.style.top=b.offsetHeight+'px';}}
+    adjustNav();
+    window.addEventListener('resize',adjustNav);
+  })();
+</script>
+
 <!-- NAV -->
 <nav id="mainNav">
   <div class="nav-inner">
@@ -2700,7 +2719,13 @@ footer {
         <div style="font-size:3rem;font-weight:800;font-family:var(--font-display);" id="scorecardScore">0</div>
         <div style="font-size:1.1rem;font-weight:700;margin:8px 0;" id="scorecardSegment">Foundational</div>
         <p style="color:rgba(255,255,255,.7);font-size:.92rem;line-height:1.6;max-width:500px;margin:0 auto 24px;" id="scorecardMessage"></p>
-        <a href="#get-started" class="btn btn-accent" style="display:inline-flex;">Send Me My AI Readiness Results</a>
+        <div style="background:rgba(255,152,0,.15);border:1px solid rgba(255,152,0,.4);border-radius:12px;padding:14px 18px;margin:0 auto 20px;max-width:540px;color:#ffdca8;font-size:.88rem;line-height:1.5;">
+          <strong style="color:#ffb74d;">⚠️ Want a real compliance plan?</strong> Take our deeper <strong>AI Compliance Assessment</strong> — 7 questions, 5 minutes, personalized risk tier + action plan for the Colorado AI Act (June 30) and EU AI Act (August 2) deadlines.
+        </div>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="/compliance-assessment" class="btn btn-accent" style="display:inline-flex;">Take the Free Compliance Assessment →</a>
+          <a href="#get-started" class="btn" style="display:inline-flex;background:transparent;color:white;border:1.5px solid rgba(255,255,255,.3);">Email me my readiness results</a>
+        </div>
       </div>
 
       <div style="text-align:center;margin-top:24px;" id="scorecardCTA">
@@ -3046,7 +3071,7 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-legal">&copy; 2026 Sayfe.ai — A service of Vandelay Consulting Inc. Authorized OpenAI Service Partner. ChatGPT is a trademark of OpenAI, Inc. Sayfe.ai is an independent service partner participating in the OpenAI SMB Channel Partner Program and is not affiliated with, endorsed by, or sponsored by OpenAI except through the official partnership program. <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></p>
+      <p class="footer-legal">&copy; 2026 Sayfe.ai. Authorized OpenAI Service Partner. ChatGPT is a trademark of OpenAI, Inc. Sayfe.ai is an independent service partner participating in the OpenAI SMB Channel Partner Program and is not affiliated with, endorsed by, or sponsored by OpenAI except through the official partnership program. <a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms of Service</a></p>
     </div>
   </div>
 </footer>
