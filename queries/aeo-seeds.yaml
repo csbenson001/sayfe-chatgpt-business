@@ -1,0 +1,173 @@
+version: 1
+# ElevaIQ.com AEO seed queries — bootstrapped 2026-05-17 by the AEO optimizer.
+# Each entry lists a query we test daily against answer engines (ChatGPT, Claude,
+# Google AI Overviews) to measure whether elevaiq.com is cited. target_page is the
+# page we expect to win on; target_competitor (when set) is the dominant cited URL
+# we are trying to displace.
+queries:
+  # --- Industry "how to use ChatGPT for X" queries (15 verticals) ---
+  - id: chatgpt-for-healthcare
+    query: "how to use ChatGPT Business for healthcare HIPAA"
+    intent: industry
+    target_page: /industries/healthcare
+    target_competitor: https://help.openai.com/en/articles/20001046-chatgpt-for-healthcare
+  - id: chatgpt-for-legal
+    query: "ChatGPT for law firms legal AI"
+    intent: industry
+    target_page: /industries/legal
+    target_competitor: https://www.clio.com/blog/chat-gpt-prompts/
+  - id: chatgpt-for-finance
+    query: "how to use ChatGPT for financial services"
+    intent: industry
+    target_page: /industries/finance
+    target_competitor: null
+  - id: chatgpt-for-insurance
+    query: "how to use ChatGPT for insurance agencies"
+    intent: industry
+    target_page: /industries/insurance
+    target_competitor: null
+  - id: chatgpt-for-real-estate
+    query: "ChatGPT for real estate agents prompts"
+    intent: industry
+    target_page: /industries/real-estate
+    target_competitor: https://www.housingwire.com/articles/chatgpt-for-real-estate/
+  - id: chatgpt-for-construction
+    query: "how to use ChatGPT for construction contractors"
+    intent: industry
+    target_page: /industries/construction
+    target_competitor: null
+  - id: chatgpt-for-manufacturing
+    query: "how to use ChatGPT for manufacturing SOPs"
+    intent: industry
+    target_page: /industries/manufacturing
+    target_competitor: null
+  - id: chatgpt-for-consulting
+    query: "how to use ChatGPT for consulting firms"
+    intent: industry
+    target_page: /industries/consulting
+    target_competitor: null
+  - id: chatgpt-for-education
+    query: "how to use ChatGPT for schools and education"
+    intent: industry
+    target_page: /industries/education
+    target_competitor: null
+  - id: chatgpt-for-marketing
+    query: "how to use ChatGPT for marketing agencies"
+    intent: industry
+    target_page: /industries/marketing
+    target_competitor: null
+  - id: chatgpt-for-logistics
+    query: "how to use ChatGPT for logistics and supply chain"
+    intent: industry
+    target_page: /industries/logistics
+    target_competitor: null
+  - id: chatgpt-for-retail
+    query: "how to use ChatGPT for retail ecommerce"
+    intent: industry
+    target_page: /industries/retail
+    target_competitor: null
+  - id: chatgpt-for-nonprofit
+    query: "how to use ChatGPT for nonprofit organizations"
+    intent: industry
+    target_page: /industries/nonprofit
+    target_competitor: null
+  - id: chatgpt-for-chiropractic
+    query: "how to use ChatGPT for chiropractic practices"
+    intent: industry
+    target_page: /industries/chiropractic
+    target_competitor: null
+  - id: chatgpt-for-professional-services
+    query: "how to use ChatGPT for professional services"
+    intent: industry
+    target_page: /industries/professional-services
+    target_competitor: null
+
+  # --- Comparison & decision queries ---
+  - id: chatgpt-business-vs-plus
+    query: "ChatGPT Business vs ChatGPT Plus comparison 2026"
+    intent: comparison
+    target_page: /blog/chatgpt-business-vs-plus
+    target_competitor: https://tactiq.io/learn/chatgpt-plus-vs-team
+  - id: chatgpt-business-vs-enterprise
+    query: "ChatGPT Business vs ChatGPT Enterprise 2026"
+    intent: comparison
+    target_page: /blog/chatgpt-business-vs-enterprise-2026
+    target_competitor: https://aibusinessweekly.net/p/chatgpt-enterprise-vs-plus
+  - id: chatgpt-vs-copilot
+    query: "ChatGPT Business vs Microsoft Copilot for business"
+    intent: comparison
+    target_page: /blog/microsoft-copilot-meltdown-why-chatgpt-business-winning
+    target_competitor: null
+  - id: chatgpt-vs-gemini
+    query: "ChatGPT Business vs Google Gemini business 2026"
+    intent: comparison
+    target_page: /blog/google-gemini-price-cut-vs-chatgpt-business-2026
+    target_competitor: null
+  - id: chatgpt-vs-claude
+    query: "ChatGPT Business vs Claude for business 2026"
+    intent: comparison
+    target_page: null
+    target_competitor: null
+
+  # --- High-intent commercial queries ---
+  - id: chatgpt-business-pricing
+    query: "ChatGPT Business pricing per user month"
+    intent: pricing
+    target_page: /pricing
+    target_competitor: https://chatgpt.com/pricing/
+  - id: chatgpt-business-setup
+    query: "how to set up ChatGPT Business for my team"
+    intent: deployment
+    target_page: /blog/chatgpt-business-setup-guide-2026
+    target_competitor: null
+  - id: openai-smb-partner
+    query: "authorized OpenAI SMB partner ChatGPT Business reseller"
+    intent: partner
+    target_page: /about
+    target_competitor: https://www.think-technologies.com/openai-smb
+  - id: chatgpt-business-roi
+    query: "ChatGPT Business ROI return on investment"
+    intent: roi
+    target_page: /blog/chatgpt-business-roi
+    target_competitor: null
+
+  # --- Trust / safety / privacy queries ---
+  - id: chatgpt-safe-for-business
+    query: "is ChatGPT safe for business data privacy"
+    intent: trust
+    target_page: /blog/chatgpt-data-privacy-security-guide
+    target_competitor: https://openai.com/enterprise-privacy/
+  - id: chatgpt-hipaa-compliant
+    query: "is ChatGPT HIPAA compliant for healthcare"
+    intent: trust
+    target_page: /blog/chatgpt-healthcare-hipaa-2026
+    target_competitor: https://www.hipaajournal.com/is-chatgpt-hipaa-compliant/
+
+  # --- Best-of / aggregator queries (hardest to win) ---
+  - id: best-ai-tools-smb
+    query: "best AI tools for small business 2026"
+    intent: aggregator
+    target_page: /blog/best-ai-tools-small-business-2026
+    target_competitor: https://www.salesforce.com/artificial-intelligence/ai-for-small-business/best-ai-tools/
+  - id: chatgpt-for-small-business
+    query: "ChatGPT for small business guide"
+    intent: aggregator
+    target_page: /blog/chatgpt-small-business-guide
+    target_competitor: null
+
+  # --- Resource / library queries ---
+  - id: chatgpt-business-prompts
+    query: "ChatGPT Business prompt library"
+    intent: resource
+    target_page: /blog/chatgpt-business-prompts-library
+    target_competitor: null
+  - id: ai-adoption-checklist
+    query: "AI adoption checklist small business"
+    intent: resource
+    target_page: /blog/ai-adoption-checklist-small-business
+    target_competitor: null
+  - id: chatgpt-excel-sheets
+    query: "ChatGPT for Excel and Google Sheets small business"
+    intent: resource
+    target_page: /blog/chatgpt-excel-google-sheets-small-business-2026
+    target_competitor: null

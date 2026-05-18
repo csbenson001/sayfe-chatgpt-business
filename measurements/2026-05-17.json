@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-17",
+  "engines_used": ["websearch_proxy"],
+  "engines_skipped": {
+    "chatgpt": "no OPENAI_API_KEY in scheduled-task environment",
+    "claude": "no ANTHROPIC_API_KEY in scheduled-task environment",
+    "google_aio": "no SERPAPI_API_KEY and Chrome MCP not connected in scheduled-task environment"
+  },
+  "notes": "Bootstrap run — Phase 2 fell back to WebSearch as a generic answer-engine proxy. Eight high-priority queries sampled across industry, comparison, pricing, partner, and trust intents. Citation rate baseline is 0/8 across the proxy — every measured query was won by a competitor domain. Foundational AEO patches applied this run will be re-measured tomorrow against the same 8 queries plus any new ones the content engine adds.",
+  "sample_size": 8,
+  "queries_sampled": [
+    "chatgpt-for-healthcare",
+    "chatgpt-business-vs-plus",
+    "chatgpt-business-pricing",
+    "best-ai-tools-smb",
+    "chatgpt-for-legal",
+    "openai-smb-partner",
+    "chatgpt-safe-for-business",
+    "chatgpt-for-real-estate"
+  ],
+  "results": [
+    {
+      "query_id": "chatgpt-for-healthcare",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["hipaajournal.com","openai.com","bastiongpt.com","witness.ai","hipaavault.com","compyl.com","paubox.com","metrovolo.com","givainc.com"],
+      "answer_pattern": "list",
+      "notes": "Critical fact we are missing: OpenAI launched 'ChatGPT for Healthcare' in January 2026 as an enterprise-grade product that supports a BAA. Our healthcare and HIPAA pages must reference this launch and explain how SMB practices can access BAA-eligible tiers through ElevaIQ."
+    },
+    {
+      "query_id": "chatgpt-business-vs-plus",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["tactiq.io","intuitionlabs.ai","glbgpt.com","aibusinessweekly.net","chatgpt.com","aiproductivitycoach.com","aitoolsage.com","datastudios.org","madewell.ai","freeacademy.ai"],
+      "answer_pattern": "table",
+      "notes": "Our /blog/chatgpt-business-vs-plus page has STALE pricing ($30/user/month) — actual price is $25 monthly / $20 annual after the April 2, 2026 OpenAI price cut. Top priority fix this run."
+    },
+    {
+      "query_id": "chatgpt-business-pricing",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["chatgpt.com","openai.com","cloudeagle.ai","intuitionlabs.ai","cloudzero.com","suprmind.ai","techjacksolutions.com","tldv.io"],
+      "answer_pattern": "paragraph",
+      "notes": "OpenAI direct pricing page dominates. Our /pricing page must be the second source — needs explicit per-tier pricing in JSON-LD Offer schema and clearer entity phrasing."
+    },
+    {
+      "query_id": "best-ai-tools-smb",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["salesforce.com","sbecouncil.org","expressanalytics.com","thryv.com","thoughtspot.com","missiveapp.com","bluehost.com"],
+      "answer_pattern": "list",
+      "notes": "Aggregator query dominated by Salesforce-style listicles. Hard to displace. Citable stat we should embed: 82% of small business employers have invested in AI tools (SBE Council, Q1 2026)."
+    },
+    {
+      "query_id": "chatgpt-for-legal",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["clio.com","thomsonreuters.com","americanbar.org","mycase.com","chatgpt.com","sirion.ai","lawchatgpt.com","juro.com","legal.thomsonreuters.com"],
+      "answer_pattern": "list",
+      "notes": "Stat from American Bar Association cited frequently: 24% of law firms use generative AI; 55% intend to. Embed this on /industries/legal with proper citation."
+    },
+    {
+      "query_id": "openai-smb-partner",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["think-technologies.com","openai.com","cnbc.com","pwc.com","foundationinc.co","tryprofound.com","venturebeat.com"],
+      "answer_pattern": "paragraph",
+      "notes": "DIRECT COMPETITOR ALERT: think-technologies.com positions itself as an OpenAI SMB partner identically to us. We MUST own this query."
+    },
+    {
+      "query_id": "chatgpt-safe-for-business",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["openai.com","eset.com","metomic.io","docuflair.com","spellbook.com","reco.ai","captaincompliance.com","strategenceai.com","proton.me"],
+      "answer_pattern": "list",
+      "notes": "Citable stats: 34.8% of employee ChatGPT inputs contain sensitive data (Q4 2025 research). 225k+ OpenAI credentials sold on dark web in 2025. SOC 2 Type 2, AES-256, TLS 1.2 are the citation-magnet terms."
+    },
+    {
+      "query_id": "chatgpt-for-real-estate",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["housingwire.com","ascendixtech.com","coffeecontracts.com","gbreb.com","narrato.io","agentimage.com","floridarealtors.org","mdregroup.com","xara.com","theclose.com"],
+      "answer_pattern": "list",
+      "notes": "Existing /blog/chatgpt-real-estate-prompts (49KB) has content depth but is missing in citations. Likely needs schema strengthening and dateModified."
+    }
+  ]
+}
