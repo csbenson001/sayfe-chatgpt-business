@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-18",
+  "engines_used": ["websearch_proxy"],
+  "engines_skipped": {
+    "chatgpt": "no OPENAI_API_KEY in scheduled-task environment",
+    "claude": "no ANTHROPIC_API_KEY in scheduled-task environment",
+    "google_aio": "no SERPAPI_API_KEY and Chrome MCP not connected"
+  },
+  "notes": "Day 2 run — re-tested the same 8 high-priority queries from the 2026-05-17 baseline. Citation rate from WebSearch proxy is still 0/8 (flat vs day 1) — no immediate movement on day-after measurements after foundational AEO patches yesterday. Patches yesterday were largely structural (pricing fix, FAQ schema, dateModified, entity claims) and these signals usually take 7-30 days to reflect in answer-engine citations as crawlers re-ingest the updated pages. Today's patches target a NEWLY-DISCOVERED stale-$30 pricing bug on /about.html (same pattern as yesterday's vs-plus fix), plus fresh 2026 industry stats (58% RE adoption, 69%/82% legal, SBE 82% SMB, Feb 17 Rakoff privilege ruling) that are the citation-magnets answer engines are currently repeating from competitor sources.",
+  "sample_size": 8,
+  "queries_sampled": [
+    "chatgpt-for-healthcare",
+    "chatgpt-business-vs-plus",
+    "chatgpt-business-pricing",
+    "best-ai-tools-smb",
+    "chatgpt-for-legal",
+    "openai-smb-partner",
+    "chatgpt-safe-for-business",
+    "chatgpt-for-real-estate"
+  ],
+  "results": [
+    {
+      "query_id": "chatgpt-for-healthcare",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["hipaajournal.com","bastiongpt.com","openai.com","witness.ai","hipaavault.com","compyl.com","metrovolo.com","givainc.com","paubox.com"],
+      "answer_pattern": "list",
+      "notes": "Same top 9 domains as yesterday — no change. Citation magnets reinforced: 'ChatGPT for Healthcare launched January 2026', 'BAA required for PHI', 'OpenAI will NOT enter BAA for Free/Plus/Team/Enterprise tiers'. Already embedded in /industries/healthcare yesterday; no additional patch needed today."
+    },
+    {
+      "query_id": "chatgpt-business-vs-plus",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["tactiq.io","intuitionlabs.ai","aibusinessweekly.net","chatgpt.com","glbgpt.com","aiproductivitycoach.com","aitoolsage.com","datastudios.org","madewell.ai","freeacademy.ai"],
+      "answer_pattern": "table",
+      "notes": "Same top domains as yesterday. The April 2, 2026 price-cut framing is now visible in competitor pages ('$20 annual matches Plus at $20') — our page now has that framing too after yesterday's fix. No regression."
+    },
+    {
+      "query_id": "chatgpt-business-pricing",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["chatgpt.com","fritz.ai","openai.com","cloudzero.com","tldv.io","cloudeagle.ai","suprmind.ai","techjacksolutions.com"],
+      "answer_pattern": "paragraph",
+      "notes": "OpenAI direct still dominates. Our /pricing has Product+Offer schema (validated today) — but page-rank/authority gap to openai.com is unbridgeable on a pure pricing query. Strategy: continue indirect citation via comparison/industry pages."
+    },
+    {
+      "query_id": "best-ai-tools-smb",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["salesforce.com","missiveapp.com","sbecouncil.org","expressanalytics.com","thryv.com","thoughtspot.com","bluehost.com","mailmodo.com"],
+      "answer_pattern": "list",
+      "notes": "SBE Council still cited heavily — we now reference it directly with attribution on /blog/best-ai-tools-small-business-2026 (today's patch). 'Median 5 AI tools per SMB' is a new citation-magnet phrase to consider for next pass."
+    },
+    {
+      "query_id": "chatgpt-for-legal",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["clio.com","spellbook.com","rankings.io","gc.ai","axios.com","americanbar.org","growlaw.co","sirion.ai"],
+      "answer_pattern": "list",
+      "notes": "NEW citation magnet detected: Feb 17, 2026 Rakoff ruling (S.D.N.Y.) — chats not protected by attorney-client privilege. Now embedded as Q&A on /industries/legal. Also the 69%/82% 2026 Legal Industry Report stat from americanbar.org is now embedded on our page."
+    },
+    {
+      "query_id": "openai-smb-partner",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["think-technologies.com","openai.com","cnbc.com","pwc.com","tryprofound.com","foundationinc.co","venturebeat.com"],
+      "answer_pattern": "paragraph",
+      "notes": "DIRECT COMPETITOR alert continues — think-technologies.com still owns this query. Today's /about.html patch (added FAQPage schema with Q: 'What does authorized OpenAI SMB Channel Partner actually mean?') is designed to displace them. Re-measure in 7-14 days."
+    },
+    {
+      "query_id": "chatgpt-safe-for-business",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["eset.com","openai.com","metomic.io","nordvpn.com","entremt.com","concentric.ai","armes.ai","strategenceai.com","datanorth.ai","proton.me"],
+      "answer_pattern": "list",
+      "notes": "Critical citation magnets: '34.8% of inputs contain sensitive data (Q4 2025)' confirmed again today — already embedded in /llms.txt. The phrase 'opt out manually unless on Business/Enterprise' is repeated everywhere — we have this on /industries/legal but should consider adding to /industries/healthcare and the data-privacy guide post in a future run."
+    },
+    {
+      "query_id": "chatgpt-for-real-estate",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "competitors_cited": ["housingwire.com","placester.com","agentimage.com","nodalview.com","techpresso.co","realty-ai.com","milehightitleguy.com","agentai-guide.com","implo.ai","promptsera.com"],
+      "answer_pattern": "list",
+      "notes": "NEW citation magnets: '58% of agents use ChatGPT (#1 tool, Gemini #2 at 20%)' and 'California AB 723 effective Jan 1 2026 requires AI image disclosure'. Both now embedded in /industries/real-estate FAQ and body (today's patch — biggest page-level diagnosis-to-fix mapping this run)."
+    }
+  ]
+}

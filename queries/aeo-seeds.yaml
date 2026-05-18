@@ -171,3 +171,19 @@ queries:
     intent: resource
     target_page: /blog/chatgpt-excel-google-sheets-small-business-2026
     target_competitor: null
+  # --- Added 2026-05-18 — content-engine handoff seeds ---
+  - id: chatgpt-personal-finance-business
+    query: "ChatGPT Personal Finance for small business owners 2026"
+    intent: news
+    target_page: /blog/chatgpt-personal-finance-bank-accounts-business-owners-2026
+    target_competitor: https://openai.com/index/personal-finance-chatgpt/
+  - id: chatgpt-vs-claude-enterprise-share
+    query: "Anthropic Claude vs OpenAI ChatGPT enterprise market share 2026"
+    intent: comparison
+    target_page: null
+    target_competitor: https://finance.yahoo.com/sectors/technology/articles/chatgpt-losing-ground-rivals-numbers-184458382.html
+  - id: chatgpt-pipeda-canada
+    query: "PIPEDA AI compliance ChatGPT U.S. small business Canadian data"
+    intent: trust
+    target_page: /blog/chatgpt-data-privacy-security-guide
+    target_competitor: https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/
