@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenAI Workspace Agents Setup & Configuration for ChatGPT Business Teams (2026 Guide) | ElevaIQ.com</title>
+<meta name="description" content="What OpenAI Workspace Agents are, how they work in ChatGPT Business, and how to deploy them for sales, marketing, ops, finance, HR, and customer support. Setup, configuration, governance, security, BAA/HIPAA, and 10 example agents to build first. From ElevaIQ.com, an authorized OpenAI SMB Channel Partner.">
+<meta name="keywords" content="OpenAI workspace agents, ChatGPT workspace agents, ChatGPT Business agents, workspace agent setup, AI workflow agents, OpenAI agent governance">
+<link rel="canonical" href="https://ElevaIQ.com/openai-workspace-agents">
+<meta property="og:title" content="OpenAI Workspace Agents — 2026 Setup & Configuration Guide | ElevaIQ.com">
+<meta property="og:description" content="Comprehensive guide to OpenAI Workspace Agents in ChatGPT Business: what they are, how to set them up, governance, security, and 10 agents to build first.">
+<meta property="og:url" content="https://ElevaIQ.com/openai-workspace-agents">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-05-17T00:00:00Z">
+<meta property="article:author" content="ElevaIQ.com">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Article",
+  "headline":"OpenAI Workspace Agents Setup & Configuration for ChatGPT Business Teams — 2026 Guide",
+  "description":"Comprehensive guide to OpenAI Workspace Agents in ChatGPT Business: definition, tier requirements, setup walkthrough, governance, security, BAA / HIPAA, and 10 example agents to build first.",
+  "author":{"@type":"Organization","name":"ElevaIQ.com","url":"https://ElevaIQ.com"},
+  "publisher":{"@type":"Organization","name":"ElevaIQ.com","url":"https://ElevaIQ.com","logo":{"@type":"ImageObject","url":"https://ElevaIQ.com/logo.png"}},
+  "datePublished":"2026-05-17","dateModified":"2026-05-17",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://ElevaIQ.com/openai-workspace-agents"},
+  "articleSection":"Product Guide",
+  "keywords":"OpenAI workspace agents, ChatGPT Business, AI agents, workflow automation"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What are OpenAI Workspace Agents?","acceptedAnswer":{"@type":"Answer","text":"OpenAI Workspace Agents are shared AI agents inside ChatGPT for teams that can be configured to follow a multi-step process, use connected tools (search, files, Slack, calendar), remember context, and ask for human approval before taking sensitive actions. Unlike a one-off prompt or a basic Custom GPT, a workspace agent is built around a repeatable business workflow and can be deployed to the entire team. They are positioned by OpenAI as the evolution of GPTs for structured, shared, business-ready workflows."}},
+    {"@type":"Question","name":"Which ChatGPT tier do I need to use OpenAI Workspace Agents?","acceptedAnswer":{"@type":"Answer","text":"Workspace Agents require ChatGPT Business ($25 per user per month monthly or $20 per user per month annual, 2-seat minimum) or ChatGPT Enterprise. They are not available on ChatGPT Free or ChatGPT Plus. ElevaIQ.com configures Workspace Agents during ChatGPT Business onboarding at no additional cost."}},
+    {"@type":"Question","name":"How are Workspace Agents different from Custom GPTs?","acceptedAnswer":{"@type":"Answer","text":"Custom GPTs are single-turn or short-conversation AI assistants configured with instructions, files, and tools. Workspace Agents are multi-step, process-aware agents that can sequence actions across tools, remember context across sessions, and route work to humans for approval. Custom GPTs are great for repeatable AI assistance (e.g., a Brand Voice GPT). Workspace Agents are designed for end-to-end workflows (e.g., qualify a lead, research the company, draft outreach, schedule a meeting, log to CRM). Both can coexist in the same ChatGPT Business workspace."}},
+    {"@type":"Question","name":"How long does it take to build the first Workspace Agent?","acceptedAnswer":{"@type":"Answer","text":"With a partner like ElevaIQ.com, a working first agent is typically configured within one week of ChatGPT Business onboarding. The fastest agents (single-purpose workflows like Weekly Reporting or Lead Qualification) can be live in 1–2 days. Multi-system agents (Sales workflow with CRM integration) typically take 2–3 weeks of design and iteration."}},
+    {"@type":"Question","name":"What governance controls do Workspace Agents support?","acceptedAnswer":{"@type":"Answer","text":"Workspace Agents inherit ChatGPT Business governance: admin controls for who can create and use agents, audit logs for every agent action, data-handling configuration (no model training on customer data by default), SAML SSO, and approval steps for sensitive actions (the agent pauses and asks a human before sending external emails, updating systems of record, or moving money). ElevaIQ.com configures approval steps during onboarding based on your organization's risk tolerance."}},
+    {"@type":"Question","name":"Is data sent to a Workspace Agent secure and private?","acceptedAnswer":{"@type":"Answer","text":"Yes. Workspace Agents run inside ChatGPT Business, which is SOC 2 Type 2 audited and CSA STAR certified, encrypts data at rest (AES-256) and in transit (TLS 1.2+), and does not use customer conversations to train OpenAI models by default. Connected tools (Slack, Google Workspace, etc.) operate under their own permissions — the agent can only access what the user who triggered it has access to. ElevaIQ.com reviews permission scopes during configuration."}},
+    {"@type":"Question","name":"Can I use Workspace Agents for HIPAA-regulated workflows?","acceptedAnswer":{"@type":"Answer","text":"No. ChatGPT Business — including Workspace Agents — is not Business Associate Agreement (BAA) eligible. For HIPAA-regulated PHI workflows, OpenAI offers ChatGPT for Healthcare (launched January 2026) and the OpenAI API Platform, both of which support BAAs. ElevaIQ.com sets up parallel deployments for healthcare clients: ChatGPT Business and its Workspace Agents for non-PHI workflows (training content, marketing, internal SOPs, scheduling templates), and ChatGPT for Healthcare or the API for PHI workflows."}},
+    {"@type":"Question","name":"Can Workspace Agents integrate with Slack, Google Workspace, Salesforce, or HubSpot?","acceptedAnswer":{"@type":"Answer","text":"OpenAI ships built-in connectors for an expanding set of tools (Slack, Gmail, Google Drive, Google Calendar, and others — the list grows monthly). For other systems, Workspace Agents can connect via the OpenAI API and Model Context Protocol (MCP) connectors. ElevaIQ.com builds custom MCP connectors when you need an agent to talk to a system that does not yet have a native ChatGPT integration."}},
+    {"@type":"Question","name":"What happens when a Workspace Agent makes a mistake?","acceptedAnswer":{"@type":"Answer","text":"Agents are not perfect. Three controls mitigate this: (1) approval steps — sensitive actions pause for human approval; (2) audit logs — every agent action is logged and reviewable; (3) confidence scoring — well-designed agents flag low-confidence outputs for human review rather than acting. ElevaIQ.com designs agents with these controls baked in, and trains your team on a verification-first workflow."}},
+    {"@type":"Question","name":"Can I use Workspace Agents without an OpenAI partner?","acceptedAnswer":{"@type":"Answer","text":"Yes — Workspace Agents are accessible to any ChatGPT Business or Enterprise customer. Working with an authorized OpenAI SMB Channel Partner like ElevaIQ.com adds value in three areas: (1) workflow discovery (identifying which agents to build first for maximum ROI); (2) configuration and governance (approval steps, connectors, RBAC); (3) training (teaching your team how to design, deploy, and improve agents). All included with the standard ChatGPT Business subscription through ElevaIQ.com at no markup."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--yale:#0f3460;--yale-deep:#0a2240;--yale-mid:#1a4a7a;--yale-light:#e8eef6;--white:#fff;--offwhite:#fafbfd;--smoke:#f0f2f5;--slate:#5a6a7a;--ink:#0d1b2e;--accent:#2d8cf0;--success:#10b981;--warm:#f59e0b;--danger:#ef4444;--border:#dde3eb;--radius:10px;--radius-lg:16px;--font:'Figtree',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 40px}
+.nav-i{max-width:1200px;margin:0 auto;height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.4rem;font-weight:800;color:var(--yale-deep);text-decoration:none;letter-spacing:-.04em}.logo span{color:var(--accent)}
+.nav-r{display:flex;align-items:center;gap:8px}
+.nav-r a{text-decoration:none;color:var(--slate);font-size:.88rem;font-weight:500;padding:8px 16px;border-radius:8px;transition:all .2s}
+.nav-r a:hover{color:var(--yale);background:var(--yale-light)}
+.nav-cta{background:var(--yale)!important;color:var(--white)!important;border-radius:100px!important;font-weight:600!important}
+.hero{padding:130px 40px 70px;background:linear-gradient(135deg,var(--yale-deep) 0%,var(--yale-mid) 100%);color:white}
+.hero-i{max-width:880px;margin:0 auto}
+.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700;margin-bottom:14px}
+h1{font-size:clamp(2rem,3.6vw,3rem);font-weight:800;line-height:1.15;letter-spacing:-.03em;margin-bottom:20px}
+.sub{font-size:1.1rem;color:rgba(255,255,255,.72);max-width:760px;line-height:1.7;margin-bottom:28px}
+.meta-row{display:flex;gap:24px;flex-wrap:wrap;color:rgba(255,255,255,.55);font-size:.88rem;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)}
+article{max-width:780px;margin:0 auto;padding:60px 40px}
+article h2{font-size:1.7rem;color:var(--yale-deep);font-weight:800;letter-spacing:-.02em;margin:48px 0 16px;line-height:1.25}
+article h3{font-size:1.2rem;color:var(--yale-mid);font-weight:700;margin:28px 0 12px;line-height:1.3}
+article p{margin-bottom:14px;color:var(--ink);font-size:1rem}
+article ul,article ol{margin:14px 0 14px 24px;color:var(--ink)}
+article li{margin-bottom:6px;line-height:1.7}
+article strong{color:var(--yale-deep);font-weight:700}
+article a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+article a:hover{color:var(--yale)}
+.compare-table{width:100%;border-collapse:collapse;margin:20px 0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;font-size:.92rem}
+.compare-table th{background:linear-gradient(135deg,var(--yale) 0%,var(--yale-mid) 100%);color:white;padding:14px 16px;text-align:left;font-weight:700;font-size:.86rem}
+.compare-table td{padding:12px 16px;border-bottom:1px solid var(--border);vertical-align:top}
+.compare-table tbody tr:nth-child(odd){background:var(--smoke)}
+.compare-table tbody tr:last-child td{border-bottom:none}
+.highlight{background:var(--yale-light);border-left:4px solid var(--accent);padding:18px 22px;margin:24px 0;border-radius:0 var(--radius) var(--radius) 0}
+.highlight strong{color:var(--yale-deep)}
+.callout-warn{background:#fff7ed;border-left:4px solid var(--warm);padding:18px 22px;margin:24px 0;border-radius:0 var(--radius) var(--radius) 0}
+.callout-warn strong{color:#9a3412}
+.agent-block{background:var(--smoke);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;margin:18px 0}
+.agent-block h3{margin-top:0;color:var(--yale-deep)}
+.agent-block .who{font-size:.85rem;color:var(--slate);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.step-list{counter-reset:s;list-style:none;margin-left:0!important;padding-left:0}
+.step-list li{counter-increment:s;padding-left:48px;position:relative;margin-bottom:14px}
+.step-list li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;background:var(--yale);color:white;border-radius:100px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem}
+.cluster-strip{background:var(--yale-light);padding:36px 20px;margin-top:48px;text-align:center;border-radius:var(--radius-lg)}
+.cluster-strip p{margin-bottom:14px;color:var(--yale-deep);font-weight:600}
+.cluster-strip a{display:inline-block;margin:6px 8px;padding:10px 20px;background:white;color:var(--yale);border:1px solid var(--border);border-radius:100px;text-decoration:none;font-weight:600;font-size:.9rem}
+.cluster-strip a:hover{background:var(--yale);color:white;border-color:var(--yale)}
+.faq-h2{margin-top:60px!important}
+.faq-q{background:var(--smoke);padding:16px 20px;border-radius:var(--radius);font-weight:700;color:var(--yale-deep);margin-top:14px;font-size:.98rem}
+.faq-a{padding:14px 20px;color:var(--ink);font-size:.94rem;line-height:1.75}
+.cta-box{background:var(--yale-deep);color:white;text-align:center;padding:48px 32px;border-radius:var(--radius-lg);margin:48px 0 0}
+.cta-box h3{color:white;font-size:1.4rem;margin-bottom:12px;font-weight:800}
+.cta-box p{color:rgba(255,255,255,.7);margin-bottom:22px}
+.btn{display:inline-block;padding:13px 28px;border-radius:100px;font-weight:700;text-decoration:none;background:white;color:var(--yale);transition:all .2s;font-size:.95rem}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+footer{padding:40px 40px;background:var(--offwhite);border-top:1px solid var(--border);text-align:center}
+.f-legal{font-size:.78rem;color:var(--slate);max-width:760px;margin:0 auto;line-height:1.7}
+.f-legal a{color:var(--slate)}
+@media(max-width:768px){nav .nav-r{display:none}.hero{padding:110px 20px 50px}article{padding:40px 20px}}
+</style>
+</head>
+<body>
+<nav><div class="nav-i">
+  <a href="https://ElevaIQ.com" class="logo">eleva<span>IQ.ai</span></a>
+  <div class="nav-r">
+    <a href="/openai-smb-partner">OpenAI Partner</a>
+    <a href="/openai-workspace-agents">Workspace Agents</a>
+    <a href="/ai-agent-library">Agent Library</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/blog">Blog</a>
+    <a href="/get-started" class="nav-cta">Get Started</a>
+  </div>
+</div></nav>
+
+<div class="hero">
+  <div class="hero-i">
+    <div class="kicker">2026 Guide · Updated May 17, 2026</div>
+    <h1>OpenAI Workspace Agents: Setup, Configuration & the 10 Agents to Build First</h1>
+    <p class="sub">A complete guide to OpenAI Workspace Agents for ChatGPT Business teams — what they are, how they differ from Custom GPTs, which ChatGPT tier you need, how to configure governance, and the 10 highest-ROI agents to build in your first 90 days. Written by <a href="/about" style="color:white">ElevaIQ.com</a>, an authorized OpenAI SMB Channel Partner.</p>
+    <div class="meta-row">
+      <div>📖 ~12 min read</div>
+      <div>✓ Updated for ChatGPT Business 2026 pricing ($25 monthly / $20 annual)</div>
+    </div>
+  </div>
+</div>
+
+<article>
+<h2 id="definition">What Is an OpenAI Workspace Agent?</h2>
+<p>An <strong>OpenAI Workspace Agent</strong> is a shared AI agent built inside ChatGPT for teams that can be configured to follow a multi-step process, use connected tools, remember context, and ask for human approval before taking sensitive actions. Unlike a one-off prompt or a basic Custom GPT, a workspace agent is built around a repeatable business workflow and can be deployed to your entire team with consistent governance.</p>
+<p>OpenAI positions Workspace Agents as <strong>the evolution of Custom GPTs</strong> for structured, shared, business-ready workflows. Custom GPTs answer questions. Workspace Agents do work.</p>
+<p>Concrete examples of what a Workspace Agent can do that a Custom GPT typically cannot:</p>
+<ul>
+  <li>Pull a list of last week's deals from your CRM, summarize them, draft a leadership update, and post it to a Slack channel — pausing for your approval before posting.</li>
+  <li>Watch an inbox for vendor RFPs, extract the requirements, check against your firm's playbook, draft a response, and route it to the assigned partner.</li>
+  <li>Take a meeting transcript, identify action items, create tasks in your project tracker, and email participants their commitments.</li>
+</ul>
+
+<h2 id="vs-gpts">Workspace Agents vs Custom GPTs vs the Agents API</h2>
+<p>Three OpenAI concepts often get conflated. Here is the cleanest mental model:</p>
+<div style="overflow-x:auto">
+<table class="compare-table">
+  <thead><tr><th style="width:24%">Feature</th><th style="width:26%">Custom GPTs</th><th style="width:26%">Workspace Agents</th><th style="width:24%">Agents API</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Best for</strong></td><td>Repeatable AI assistance with shared instructions and files</td><td>Multi-step business workflows shared across a team</td><td>Custom-built agentic applications in your own product</td></tr>
+    <tr><td><strong>Where it lives</strong></td><td>Inside ChatGPT app</td><td>Inside ChatGPT Business / Enterprise workspace</td><td>Your own application via API</td></tr>
+    <tr><td><strong>Multi-step workflows</strong></td><td>Limited</td><td>Yes — designed for it</td><td>Yes</td></tr>
+    <tr><td><strong>Memory across sessions</strong></td><td>No (limited)</td><td>Yes</td><td>Yes (you control storage)</td></tr>
+    <tr><td><strong>Connected tools</strong></td><td>Limited (file search, web)</td><td>Slack, Gmail, Drive, calendar, MCP connectors</td><td>Whatever you build</td></tr>
+    <tr><td><strong>Approval / human-in-the-loop</strong></td><td>No</td><td>Yes — built in</td><td>You build it</td></tr>
+    <tr><td><strong>Audit logs</strong></td><td>Workspace level</td><td>Per-agent and per-action</td><td>You build it</td></tr>
+    <tr><td><strong>Cost model</strong></td><td>Included with ChatGPT Plus / Business / Enterprise</td><td>Included with ChatGPT Business / Enterprise</td><td>Pay per token through OpenAI API</td></tr>
+    <tr><td><strong>Best users</strong></td><td>Individuals and small teams</td><td>Business teams running shared workflows</td><td>Developers building agentic products</td></tr>
+  </tbody>
+</table>
+</div>
+<p>In practice, most SMBs should start with Workspace Agents in ChatGPT Business. Custom GPTs make sense alongside them as lightweight assistants. The Agents API only makes sense if you're building an agent into your own software product.</p>
+
+<h2 id="tier">Which ChatGPT Tier Do You Need?</h2>
+<p>Workspace Agents are not available on ChatGPT Free or ChatGPT Plus. You need:</p>
+<ul>
+  <li><strong>ChatGPT Business</strong> — $25 per user per month billed monthly, or $20 per user per month billed annually (2-seat minimum). OpenAI cut Business standard-seat pricing by $5/month on April 2, 2026. This is the right tier for teams of 2 to 149 users. See our <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business vs Plus comparison</a>.</li>
+  <li><strong>ChatGPT Enterprise</strong> — custom pricing, designed for 150+ user organizations, includes unlimited usage and dedicated support. Workspace Agents have the same capabilities but with additional security configurations available.</li>
+</ul>
+<div class="highlight"><strong>Through ElevaIQ.com:</strong> Workspace Agent design, configuration, and team training are included with every ChatGPT Business subscription at no markup. Same $25 / $20 price as buying direct from OpenAI. <a href="/openai-smb-partner">Learn more about our partnership →</a></div>
+
+<h2 id="agents">10 High-ROI Workspace Agents to Build First</h2>
+<p>These are the agents we recommend SMBs configure in the first 90 days of ChatGPT Business deployment. They are ordered by typical time-to-first-value (fastest to slowest).</p>
+
+<div class="agent-block">
+  <div class="who">For: Every Team Lead</div>
+  <h3>1. Weekly Reporting Agent</h3>
+  <p><strong>Time-to-value:</strong> 1–2 days. <strong>Inputs:</strong> Connected tools (CRM, project tracker, Slack) plus a "what counts as a win" prompt. <strong>Output:</strong> Friday afternoon Slack-formatted leadership update with metrics, wins, blockers, and asks. <strong>Why first:</strong> universal, easy to scope, replaces ~3 hours/week per leader.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Sales & Business Development</div>
+  <h3>2. Sales Lead Qualifier Agent</h3>
+  <p><strong>Time-to-value:</strong> 3–5 days. <strong>Inputs:</strong> A new lead from your form or CRM. <strong>Output:</strong> Company research summary, ICP fit score, suggested talking points, and a 3-email outreach sequence draft — pending your approval before sending. <strong>Why early:</strong> direct top-of-funnel impact, easy to measure ROI.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Sales, Account Management, Customer Success</div>
+  <h3>3. Customer Research & Account Summary Agent</h3>
+  <p><strong>Time-to-value:</strong> 1 week. <strong>Inputs:</strong> An account name plus your CRM history. <strong>Output:</strong> Pre-meeting brief covering company news, financials, contact history, open opportunities, and a suggested agenda. Saves 20–40 minutes of prep per meeting.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Procurement, Legal, Risk</div>
+  <h3>4. Vendor & Risk Review Agent</h3>
+  <p><strong>Time-to-value:</strong> 1 week. <strong>Inputs:</strong> A vendor name or proposed contract. <strong>Output:</strong> Vendor background, financial signals, security posture summary, contract redline suggestions, and a risk rating. Routes high-risk vendors to your legal team automatically.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Marketing, Content, Communications</div>
+  <h3>5. Marketing Content Repurposing Agent</h3>
+  <p><strong>Time-to-value:</strong> 1 week. <strong>Inputs:</strong> A long-form asset (blog, whitepaper, podcast transcript). <strong>Output:</strong> 5 LinkedIn posts, 3 email subject lines + body variants, a Twitter/X thread, and 2 shorts-style video scripts — all in your brand voice. Compresses 2–3 days of content work into an afternoon of review.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Customer Support, Internal Helpdesk</div>
+  <h3>6. Internal Knowledge Q&A Agent</h3>
+  <p><strong>Time-to-value:</strong> 1–2 weeks (depending on knowledge base prep). <strong>Inputs:</strong> Your internal documentation, runbooks, policies. <strong>Output:</strong> Conversational answers to employee questions, with citations to the source docs. Cuts internal helpdesk volume 30–60% in most deployments.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Executives, Senior Leaders</div>
+  <h3>7. Meeting Prep & Follow-up Agent</h3>
+  <p><strong>Time-to-value:</strong> 1 week. <strong>Inputs:</strong> Calendar invite + attendees. <strong>Output:</strong> Pre-meeting brief on attendees and topics, post-meeting summary with extracted action items, follow-up email drafts, and tasks created in your project tracker. Reclaims 4–6 hours/week per executive.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: HR, People Operations</div>
+  <h3>8. Onboarding Buddy Agent</h3>
+  <p><strong>Time-to-value:</strong> 2 weeks. <strong>Inputs:</strong> Onboarding plan, HR policies, role-specific docs. <strong>Output:</strong> Personalized onboarding chatbot for each new hire that answers HR questions, walks through systems setup, and escalates only when needed. Cuts ramp-time by 1–2 weeks typically.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Compliance, Legal, Risk</div>
+  <h3>9. Compliance Triage Agent</h3>
+  <p><strong>Time-to-value:</strong> 2–3 weeks. <strong>Inputs:</strong> Inbound documents, transactions, or communications flagged for review. <strong>Output:</strong> Initial classification (low / medium / high risk), summary of the relevant regulation, and routing to the right reviewer. Frees compliance officers from triage to focus on judgment calls.</p>
+</div>
+
+<div class="agent-block">
+  <div class="who">For: Operations, Service Delivery</div>
+  <h3>10. Operations Status Agent</h3>
+  <p><strong>Time-to-value:</strong> 2–3 weeks. <strong>Inputs:</strong> Project management tool, support ticket system, escalation channels. <strong>Output:</strong> Daily status digest covering active projects, at-risk items, customer escalations, and SLA breaches. Replaces standups with an always-on summary.</p>
+</div>
+
+<h2 id="setup">How to Configure Your First Workspace Agent</h2>
+<p>Here is the path we walk customers through during ElevaIQ.com onboarding. Even if you build it yourself, this sequence keeps you from wasting cycles.</p>
+
+<ol class="step-list">
+  <li><strong>Pick one workflow.</strong> Not "AI for sales" — something narrow like "draft the Friday leadership update." If you can describe the inputs, the steps, and the desired output in three sentences, you've scoped it right.</li>
+  <li><strong>Document the current process.</strong> Write down the exact steps a human takes today. What systems do they pull from? What do they paste where? What decision rules do they apply? Workspace Agents are configured by describing this process to ChatGPT.</li>
+  <li><strong>Choose your tools.</strong> Connect only what the agent actually needs (least-privilege). Common first connections: Slack, Gmail or Outlook, Google Drive or OneDrive, calendar. Custom systems connect via MCP.</li>
+  <li><strong>Configure approval steps.</strong> Decide which actions the agent can take autonomously vs which pause for a human. Default rule: anything that touches external parties, money, or systems of record gets human approval until the agent earns trust.</li>
+  <li><strong>Test with three real examples.</strong> Run the agent against actual inputs from the last month. Compare the output to what your team actually produced. Note where it's wrong or weak.</li>
+  <li><strong>Iterate the instructions.</strong> Most "the agent is bad" problems are actually "the instructions are vague" problems. Add the rules and examples that close the gap.</li>
+  <li><strong>Roll out to a pilot team.</strong> 2–5 users for two weeks. Collect feedback weekly. Improve.</li>
+  <li><strong>Promote to the whole team.</strong> Add the agent to your team workspace, announce it, train people on how to use and improve it. Set up a feedback loop.</li>
+</ol>
+
+<h2 id="governance">Governance, Permissions, and Security</h2>
+<p>This is where most "AI rollout fails" stories come from — not the AI being bad, but governance not being designed. Three things to get right before broad deployment.</p>
+
+<h3>1. Permissions inheritance</h3>
+<p>A Workspace Agent has the data access of <em>the user who invokes it</em>, not the access of whoever built it. If your CRM is over-permissive — every employee can see every deal — your agent will surface every deal. Audit your underlying systems' permissions before connecting them to a shared agent.</p>
+
+<h3>2. Approval steps for sensitive actions</h3>
+<p>Default to human-in-the-loop for: sending external emails, posting to external channels, updating systems of record (CRM, billing, HR), and anything financial. The agent should propose, the human should approve. After 4–8 weeks of clean behavior, you can selectively reduce approval friction.</p>
+
+<h3>3. Audit log review cadence</h3>
+<p>ChatGPT Business logs every agent action. Set a weekly cadence for someone (ideally the agent's "owner") to review the log: what did the agent do, what was approved, what was rejected, what was wrong. This is where you find improvement opportunities.</p>
+
+<div class="callout-warn"><strong>What is NOT safe to do without a BAA:</strong> Workspace Agents on ChatGPT Business are <strong>not BAA-eligible</strong> and should not process Protected Health Information (PHI). For healthcare workflows involving PHI, use ChatGPT for Healthcare (launched January 2026) or the OpenAI API with a signed BAA. ElevaIQ.com configures parallel deployments for healthcare clients — ChatGPT Business for non-PHI workflows, ChatGPT for Healthcare for PHI. <a href="/industries/healthcare">See our healthcare guide →</a></div>
+
+<h2 id="how-we-help">How ElevaIQ.com Helps With OpenAI Workspace Agents</h2>
+<p>You can build Workspace Agents yourself. Most teams who try without a partner spend 3–6 weeks on what should take 1–2, because the failure modes (scope too broad, governance too permissive, no feedback loop, integration debugging) are not obvious from the outside.</p>
+<p>Through your ChatGPT Business deployment with ElevaIQ.com, an authorized OpenAI SMB Channel Partner, you get:</p>
+<ul>
+  <li><strong>Workflow discovery.</strong> We map your team's highest-leverage workflows and recommend which 2–3 agents to build first for fastest ROI.</li>
+  <li><strong>Configuration.</strong> We configure the agents in your ChatGPT Business workspace, including connected tools, instructions, files, approval steps, and decision rules.</li>
+  <li><strong>Governance design.</strong> Permissions audit, approval-step design, audit-log review cadence, RBAC for who can create vs use agents.</li>
+  <li><strong>Custom MCP connectors.</strong> When you need an agent to talk to a system that does not yet have a native ChatGPT integration, we build the connector.</li>
+  <li><strong>Training.</strong> Workshops for both the team members who use agents and the power users who will build new ones.</li>
+  <li><strong>Quarterly review.</strong> What's working, what's drifting, which agents to retire, which to expand, and which new OpenAI features (we track them) are worth adopting.</li>
+</ul>
+<p>All included with the standard ChatGPT Business subscription at <strong>$25 monthly or $20 annual per user</strong>. No markup. No service-hour invoicing. <a href="/openai-smb-partner">More about our partnership →</a></p>
+
+<div class="cluster-strip">
+  <p>Build on the OpenAI Partner Hub:</p>
+  <a href="/openai-smb-partner">What is an authorized OpenAI SMB partner?</a>
+  <a href="/ai-agent-library">Browse our AI Agent Library →</a>
+  <a href="/pricing">ChatGPT Business pricing</a>
+  <a href="/blog/chatgpt-business-vs-plus">Business vs Plus comparison</a>
+</div>
+
+<h2 class="faq-h2" id="faq">Frequently Asked Questions</h2>
+
+<div class="faq-q">What are OpenAI Workspace Agents?</div>
+<div class="faq-a">Shared AI agents inside ChatGPT for teams that can be configured to follow a multi-step process, use connected tools (Slack, Gmail, Drive, calendar, MCP), remember context, and ask for human approval before taking sensitive actions. They are the evolution of Custom GPTs for structured, shared, business-ready workflows.</div>
+
+<div class="faq-q">Which ChatGPT tier do I need?</div>
+<div class="faq-a">ChatGPT Business ($25 monthly / $20 annual per user, 2-seat minimum) or ChatGPT Enterprise (custom pricing). Not available on Free or Plus.</div>
+
+<div class="faq-q">How are Workspace Agents different from Custom GPTs?</div>
+<div class="faq-a">Custom GPTs are AI assistants — they answer questions and help with tasks. Workspace Agents are multi-step workflow agents — they sequence actions across tools, remember context across sessions, and route work to humans for approval.</div>
+
+<div class="faq-q">How long does it take to build the first Workspace Agent?</div>
+<div class="faq-a">With a partner like ElevaIQ.com, a working first agent is typically live within one week. The fastest agents (Weekly Reporting, Lead Qualification) deploy in 1–2 days. Multi-system agents take 2–3 weeks.</div>
+
+<div class="faq-q">What governance controls do Workspace Agents support?</div>
+<div class="faq-a">Admin controls, audit logs for every agent action, data-handling configuration (no model training on customer data by default), SAML SSO, approval steps for sensitive actions, and RBAC. Configured during ElevaIQ.com onboarding.</div>
+
+<div class="faq-q">Is data sent to a Workspace Agent secure?</div>
+<div class="faq-a">Yes. Workspace Agents run inside ChatGPT Business — SOC 2 Type 2 audited, CSA STAR certified, AES-256 at rest, TLS 1.2+ in transit, no model training on customer data by default. Connected tools operate under their own permissions (least-privilege).</div>
+
+<div class="faq-q">Can I use Workspace Agents for HIPAA-regulated workflows?</div>
+<div class="faq-a">No. ChatGPT Business is not BAA-eligible. For HIPAA PHI workflows, use ChatGPT for Healthcare (launched January 2026) or the OpenAI API with a signed BAA. ElevaIQ.com sets up parallel deployments — Business for non-PHI, ChatGPT for Healthcare for PHI.</div>
+
+<div class="faq-q">Can Workspace Agents integrate with Slack, Google Workspace, Salesforce, or HubSpot?</div>
+<div class="faq-a">OpenAI ships built-in connectors for Slack, Gmail, Drive, Calendar, and an expanding list. Other systems connect via the OpenAI API or MCP connectors. ElevaIQ.com builds custom MCP connectors when needed.</div>
+
+<div class="faq-q">What happens when a Workspace Agent makes a mistake?</div>
+<div class="faq-a">Three controls mitigate this: approval steps (sensitive actions pause for human approval), audit logs (every agent action is logged and reviewable), and confidence scoring (well-designed agents flag low-confidence outputs). ElevaIQ.com designs agents with these baked in.</div>
+
+<div class="faq-q">Can I use Workspace Agents without an OpenAI partner?</div>
+<div class="faq-a">Yes. Working with an authorized partner like ElevaIQ.com adds value in workflow discovery, configuration, governance, custom MCP connectors, training, and ongoing review. All included with the standard ChatGPT Business subscription through ElevaIQ.com at no markup.</div>
+
+<div class="cta-box">
+  <h3>Ready to build your first OpenAI Workspace Agent?</h3>
+  <p>Get ChatGPT Business through ElevaIQ.com — same price as direct, free workflow discovery, configuration, and team training included.</p>
+  <a href="/get-started" class="btn">Get Started →</a>
+</div>
+
+</article>
+
+<footer>
+  <p class="f-legal">&copy; 2026 ElevaIQ.com — A service of Vandelay Consulting Inc. Authorized OpenAI SMB Channel Partner. <a href="/openai-smb-partner">Partner Hub</a> &middot; <a href="/ai-agent-library">Agent Library</a> &middot; <a href="/pricing">Pricing</a> &middot; <a href="/blog">Blog</a> &middot; <a href="/about">About</a> &middot; <a href="/get-started">Get Started</a></p>
+</footer>
+
+</body>
+</html>
