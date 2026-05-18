@@ -16,7 +16,8 @@
     { "source": "/industries/marketing", "destination": "/marketing", "permanent": true },
     { "source": "/industries/education", "destination": "/education", "permanent": true },
     { "source": "/industries/professional-services", "destination": "/professional-services", "permanent": true },
-    { "source": "/industries/nonprofit", "destination": "/nonprofit", "permanent": true }
+    { "source": "/industries/nonprofit", "destination": "/nonprofit", "permanent": true },
+    { "source": "/industries/energy", "destination": "/energy", "permanent": true }
   ],
   "rewrites": [
     { "source": "/healthcare", "destination": "/industries/healthcare.html" },
@@ -34,6 +35,11 @@
     { "source": "/education", "destination": "/industries/education.html" },
     { "source": "/professional-services", "destination": "/industries/professional-services.html" },
     { "source": "/nonprofit", "destination": "/industries/nonprofit.html" },
+    { "source": "/energy", "destination": "/industries/energy.html" },
+    { "source": "/openai-smb", "destination": "/openai-smb.html" },
+    { "source": "/openai-smb-partner", "destination": "/openai-smb-partner.html" },
+    { "source": "/openai-workspace-agents", "destination": "/openai-workspace-agents.html" },
+    { "source": "/ai-agent-library", "destination": "/ai-agent-library.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
