@@ -1,0 +1,188 @@
+# ElevaIQ.com AI Agent Library Registry
+# Source of truth for /ai-agent-library page (rendered at build time)
+# Bootstrapped 2026-05-17 — content engine can extend without HTML edits
+version: 1
+last_updated: 2026-05-17
+agents:
+  # ----- Healthcare -----
+  - slug: healthcare-after-visit-summarizer
+    name: After-Visit Summary Generator
+    industry: healthcare
+    one_line: Drafts patient-friendly after-visit summaries from clinician notes (non-PHI workflows).
+    sample_input: "Clinician note describing follow-up plan and patient education needs."
+    sample_output: "Patient-readable summary with next steps, medications, warning signs, and call-back triggers."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Legal -----
+  - slug: legal-contract-clause-reviewer
+    name: Contract Clause Reviewer
+    industry: legal
+    one_line: First-pass review of vendor and customer contracts against your firm's playbook.
+    sample_input: "Paste any contract; agent flags missing limitation-of-liability, IP, confidentiality, and assignment clauses."
+    sample_output: "Section-by-section risk score with recommended redlines and rationale."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Finance / Banking -----
+  - slug: finance-disclosure-language-generator
+    name: Disclosure Language Generator
+    industry: finance
+    one_line: Drafts compliant disclosure language for client communications, marketing, and statements.
+    sample_input: "Describe the product or communication; agent returns compliant disclosure copy."
+    sample_output: "Disclosure paragraph in your firm's voice with regulator citations referenced."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Insurance -----
+  - slug: insurance-claim-summary-agent
+    name: Claim Summary Agent
+    industry: insurance
+    one_line: Summarizes claim files into a one-page narrative for adjuster review.
+    sample_input: "Upload the claim file (PDFs, photos, statements)."
+    sample_output: "Adjuster brief with timeline, parties, coverage analysis flags, and next-action recommendations."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Real Estate -----
+  - slug: real-estate-listing-copy-agent
+    name: Listing Copy Agent
+    industry: real-estate
+    one_line: Generates MLS-ready listing copy, neighborhood narratives, and social posts from property data.
+    sample_input: "Property specs + agent notes + 3 photos."
+    sample_output: "MLS description, 3 social post variants, neighborhood paragraph, and an email blast draft."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Construction -----
+  - slug: construction-rfi-generator
+    name: RFI Generator
+    industry: construction
+    one_line: Drafts Request-for-Information letters from blueprints and project specs.
+    sample_input: "Paste the spec or describe the question; agent produces formal RFI."
+    sample_output: "Numbered RFI ready to send, with response-needed-by date and impact note."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Manufacturing -----
+  - slug: manufacturing-sop-writer
+    name: SOP Writer
+    industry: manufacturing
+    one_line: Turns subject-matter-expert interviews into shop-floor-ready Standard Operating Procedures.
+    sample_input: "Transcript or notes from the SME plus the process name."
+    sample_output: "Step-by-step SOP with safety callouts, equipment list, acceptance criteria, and revision history."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Consulting -----
+  - slug: consulting-proposal-draft-agent
+    name: Proposal Draft Agent
+    industry: consulting
+    one_line: Drafts client proposals from a discovery-call transcript and your firm's positioning.
+    sample_input: "Discovery call transcript + client industry + scope notes."
+    sample_output: "Proposal with executive summary, scope, deliverables, timeline, pricing options, and assumptions."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Marketing -----
+  - slug: marketing-campaign-brief-agent
+    name: Campaign Brief Agent
+    industry: marketing
+    one_line: Converts client briefings into structured campaign briefs (audience, message, channels, KPIs).
+    sample_input: "Client kickoff transcript + brand guidelines."
+    sample_output: "Campaign brief with creative direction, channel plan, success metrics, and a 4-week roadmap."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Logistics -----
+  - slug: logistics-carrier-comms-agent
+    name: Carrier Communications Agent
+    industry: logistics
+    one_line: Drafts carrier-facing communications, exception reports, and tender responses.
+    sample_input: "Exception details + customer SLA + carrier history."
+    sample_output: "Carrier email + internal exception report + recommended remediation."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Retail -----
+  - slug: retail-product-description-agent
+    name: Product Description Agent
+    industry: retail
+    one_line: Generates consistent product descriptions for catalog, web, and email at scale.
+    sample_input: "Product spec sheet + brand voice guide."
+    sample_output: "Short description, long description, bullet specs, SEO meta, and 3 ad copy variants."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Professional Services -----
+  - slug: professional-services-sow-agent
+    name: Statement of Work Agent
+    industry: professional-services
+    one_line: Drafts SOWs from a scoping call and your firm's pricing model.
+    sample_input: "Scoping call transcript + standard rate card + client industry."
+    sample_output: "SOW with scope, deliverables, fee structure, assumptions, change-control terms."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  # ----- Coming soon (signal pipeline depth without overpromising) -----
+  - slug: energy-hse-report-generator
+    name: HSE Incident Report Generator
+    industry: energy
+    one_line: Drafts HSE incident reports, JSAs, and near-miss narratives for energy SMBs.
+    sample_input: "Incident details + crew + equipment + outcome."
+    sample_output: "Full incident report with timeline, root-cause analysis, recommended corrective actions, and regulatory filing readiness check."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  - slug: energy-afe-narrative-generator
+    name: AFE Narrative Generator
+    industry: energy
+    one_line: Drafts AFE (Authorization for Expenditure) narratives and justifications for upstream and midstream operators.
+    sample_input: "Project name + capex amount + scope + economic assumptions."
+    sample_output: "AFE narrative with executive summary, scope of work, economic justification, risks, and approval rationale."
+    included_in: chatgpt-business
+    requires_baa: false
+    status: production
+
+  - slug: education-curriculum-aligner
+    name: Curriculum Standards Aligner
+    industry: education
+    one_line: Maps lesson plans to state standards and identifies gaps.
+    sample_input: ""
+    sample_output: ""
+    included_in: chatgpt-business
+    requires_baa: false
+    status: coming-soon
+
+  - slug: nonprofit-grant-application-agent
+    name: Grant Application Agent
+    industry: nonprofit
+    one_line: Surfaces relevant grants, drafts applications, tracks deadlines.
+    sample_input: ""
+    sample_output: ""
+    included_in: chatgpt-business
+    requires_baa: false
+    status: coming-soon
+
+  - slug: chiropractic-intake-agent
+    name: Chiropractic Intake Agent
+    industry: chiropractic
+    one_line: Patient intake form generation and pre-visit education content.
+    sample_input: ""
+    sample_output: ""
+    included_in: chatgpt-business
+    requires_baa: false
+    status: coming-soon
