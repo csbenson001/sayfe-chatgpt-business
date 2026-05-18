@@ -1,9 +1,21 @@
-version: 1
-# ElevaIQ.com AEO seed queries — bootstrapped 2026-05-17 by the AEO optimizer.
+version: 2
+# Sayfeai AEO seed queries — bootstrapped 2026-05-17, rebranded 2026-05-18 to sayfeai.com.
 # Each entry lists a query we test daily against answer engines (ChatGPT, Claude,
-# Google AI Overviews) to measure whether elevaiq.com is cited. target_page is the
+# Google AI Overviews) to measure whether sayfeai.com is cited. target_page is the
 # page we expect to win on; target_competitor (when set) is the dominant cited URL
 # we are trying to displace.
+#
+# v2 changes (2026-05-18):
+# - Canonical domain switched from elevaiq.com → sayfeai.com
+# - Added compliance pillar queries (Engine 1 alignment with /compliance-assessment)
+# - Added partner channel queries (Engine 2 alignment)
+# - Added local / Houston / Texas signal queries
+# - Added bucket aggregation for daily reporting by category
+# - During the 30-day transition window (through 2026-06-18), the optimizer should
+#   ALSO count elevaiq.com citations toward sayfeai.com (until elevaiq.com 301s fully propagate).
+canonical_domain: sayfeai.com
+transition_domains:
+  - elevaiq.com  # count as legacy citations until 2026-06-18
 queries:
   # --- Industry "how to use ChatGPT for X" queries (15 verticals) ---
   - id: chatgpt-for-healthcare
@@ -187,3 +199,128 @@ queries:
     intent: trust
     target_page: /blog/chatgpt-data-privacy-security-guide
     target_competitor: https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260506/
+
+  # --- Added 2026-05-18 — Engine 1 (compliance lead magnet) alignment ---
+  - id: colorado-ai-act-small-business
+    query: "colorado ai act small business compliance"
+    intent: compliance
+    target_page: /compliance/colorado-ai-act
+    target_competitor: https://leg.colorado.gov/bills/sb24-205
+  - id: colorado-ai-act-deadline
+    query: "colorado ai act june 30 2026 deadline"
+    intent: compliance
+    target_page: /blog/ai-compliance-colorado-eu-small-business-2026
+    target_competitor: https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/colorado-postpones-implementation-of-colorado-ai-act-sb-24-205
+  - id: eu-ai-act-small-business
+    query: "eu ai act small business august 2 2026"
+    intent: compliance
+    target_page: /compliance/eu-ai-act
+    target_competitor: null
+  - id: ai-policy-template-smb
+    query: "ai policy template small business free"
+    intent: compliance
+    target_page: /compliance/ai-policy-template
+    target_competitor: null
+  - id: ai-compliance-assessment
+    query: "free ai compliance assessment small business"
+    intent: assessment
+    target_page: /compliance-assessment
+    target_competitor: null
+  - id: ai-risk-assessment-tool
+    query: "ai risk assessment tool 5 minute small business"
+    intent: assessment
+    target_page: /compliance-assessment
+    target_competitor: null
+  - id: ai-compliance-checklist
+    query: "ai compliance checklist small business 2026"
+    intent: compliance
+    target_page: /blog/ai-compliance-colorado-eu-small-business-2026
+    target_competitor: null
+
+  # --- Added 2026-05-18 — Engine 2 (partner channel) alignment ---
+  - id: msp-ai-compliance-resell
+    query: "MSP AI compliance services small business clients"
+    intent: partner-channel
+    target_page: /blog/best-chatgpt-business-partner-smb-2026
+    target_competitor: null
+  - id: openai-partner-for-consultants
+    query: "OpenAI SMB partner program for IT consultants"
+    intent: partner-channel
+    target_page: /openai-smb-partner
+    target_competitor: null
+  - id: chatgpt-business-cle-webinar
+    query: "ChatGPT compliance CLE webinar law firms"
+    intent: partner-channel
+    target_page: /industries/legal
+    target_competitor: null
+
+  # --- Added 2026-05-18 — Local / HQ signal ---
+  - id: ai-consultant-houston
+    query: "AI consultant Houston Texas small business"
+    intent: local
+    target_page: /about
+    target_competitor: null
+  - id: ai-consultant-texas-smb
+    query: "Texas small business AI consultant authorized OpenAI partner"
+    intent: local
+    target_page: /about
+    target_competitor: null
+
+# --- Bucket aggregation rules for daily reporting ---
+buckets:
+  compliance:
+    - colorado-ai-act-small-business
+    - colorado-ai-act-deadline
+    - eu-ai-act-small-business
+    - ai-policy-template-smb
+    - ai-compliance-checklist
+  assessment:
+    - ai-compliance-assessment
+    - ai-risk-assessment-tool
+  partner_channel:
+    - msp-ai-compliance-resell
+    - openai-partner-for-consultants
+    - chatgpt-business-cle-webinar
+  industry:
+    - chatgpt-for-healthcare
+    - chatgpt-for-legal
+    - chatgpt-for-finance
+    - chatgpt-for-insurance
+    - chatgpt-for-real-estate
+    - chatgpt-for-construction
+    - chatgpt-for-manufacturing
+    - chatgpt-for-consulting
+    - chatgpt-for-education
+    - chatgpt-for-marketing
+    - chatgpt-for-logistics
+    - chatgpt-for-retail
+    - chatgpt-for-nonprofit
+    - chatgpt-for-chiropractic
+    - chatgpt-for-professional-services
+  comparison:
+    - chatgpt-business-vs-plus
+    - chatgpt-business-vs-enterprise
+    - chatgpt-vs-copilot
+    - chatgpt-vs-gemini
+    - chatgpt-vs-claude
+    - chatgpt-vs-claude-enterprise-share
+  trust:
+    - chatgpt-safe-for-business
+    - chatgpt-hipaa-compliant
+    - chatgpt-pipeda-canada
+  commercial:
+    - chatgpt-business-pricing
+    - chatgpt-business-setup
+    - openai-smb-partner
+    - chatgpt-business-roi
+  aggregator:
+    - best-ai-tools-smb
+    - chatgpt-for-small-business
+  resource:
+    - chatgpt-business-prompts
+    - ai-adoption-checklist
+    - chatgpt-excel-sheets
+    - chatgpt-personal-finance-business
+  local:
+    - ai-consultant-houston
+    - ai-consultant-texas-smb
