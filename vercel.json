@@ -80,7 +80,10 @@
     { "source": "/compare/:slug", "destination": "/compare/:slug.html" },
     { "source": "/case-studies", "destination": "/case-studies.html" },
     { "source": "/get-started", "destination": "/get-started.html" },
-    { "source": "/faq", "destination": "/faq.html" }
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/compliance-assessment", "destination": "/compliance-assessment.html" }
   ],
   "headers": [
     {
