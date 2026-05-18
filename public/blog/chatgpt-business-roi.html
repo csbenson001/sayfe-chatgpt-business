@@ -71,7 +71,7 @@
                 "name": "How long does it take to break even with ChatGPT Business?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Most SMBs break even within the first week. With $30/month per user and typical time savings of 5-10 hours per week per team member, the ROI becomes positive almost immediately."
+                    "text": "Most SMBs break even within the first week. With $25/month per user on monthly billing (or $20/month per user on annual billing) and typical time savings of 5-10 hours per week per team member, the ROI becomes positive almost immediately."
                 }
             },
             {
@@ -95,7 +95,7 @@
                 "name": "Is ChatGPT Business cheaper than hiring additional staff?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. One ChatGPT Business user costs $30/month vs $3,000-5,000+ for a full-time hire. Even accounting for training and optimization, AI delivers dramatic cost savings."
+                    "text": "Yes. One ChatGPT Business user costs $25/month (monthly billing) or $20/month (annual billing) vs $3,000-5,000+ for a full-time hire. Even accounting for training and optimization, AI delivers dramatic cost savings."
                 }
             },
             {
@@ -645,9 +645,9 @@
         <p style="font-size: 1.1rem; color: var(--text-light); margin: 2rem 0;">The decision to adopt ChatGPT Business often comes down to one question: <strong>Will it actually save us money?</strong> We've analyzed real SMB implementations and the answer is a resounding yes. Here's what the data shows.</p>
 
         <!-- Section: The Simple Math -->
-        <h2>The Simple Math: $30/User/Month vs. Hours Saved</h2>
+        <h2>The Simple Math: $25/User/Month (or $20 Annual) vs. Hours Saved</h2>
 
-        <p>Let's start with the baseline cost. ChatGPT Business costs <strong>$30 per user per month</strong>. For a team of 10, that's just $300/month or $3,600 annually.</p>
+        <p>Let's start with the baseline cost. ChatGPT Business costs <strong>$25 per user per month on monthly billing, or $20 per user per month on annual billing</strong>. For a team of 10, that's just $250/month ($3,000/year) on monthly, or $200/month ($2,400/year) on annual billing.</p>
 
         <p>Now compare that to the time your team saves. Based on implementations we've tracked, here's what typical users report:</p>
 
@@ -661,8 +661,8 @@
         <div class="stat-box">
             <h4>Quick Calculation</h4>
             <p>If your team member earns $50/hour (loaded cost) and saves 5 hours per week with ChatGPT Business:</p>
-            <p style="margin-bottom: 0;"><strong>$30/month</strong> (ChatGPT) vs <strong>$1,000/month</strong> (hours saved)</p>
-            <p style="margin: 0.5rem 0 0; font-size: 1.1rem;"><span class="stat-number">97%</span> monthly ROI</p>
+            <p style="margin-bottom: 0;"><strong>$20-$25/month</strong> (ChatGPT) vs <strong>$1,000/month</strong> (hours saved)</p>
+            <p style="margin: 0.5rem 0 0; font-size: 1.1rem;"><span class="stat-number">98%+</span> monthly ROI</p>
         </div>
 
         <!-- Interactive ROI Calculator -->
@@ -770,9 +770,9 @@
         <p>Look at the numbers for a 10-person team with average $50/hour cost and 5 hours/week saved:</p>
 
         <ul>
-            <li><strong>Week 1:</strong> Save $2,500 in value, invest $69 in ChatGPT Business. <strong>ROI: 3,525%</strong></li>
-            <li><strong>Month 1:</strong> Save $10,000 in value, invest $300 in ChatGPT Business. <strong>ROI: 3,233%</strong></li>
-            <li><strong>Year 1:</strong> Save $120,000 in value, invest $3,600 in ChatGPT Business. <strong>ROI: 3,233%</strong></li>
+            <li><strong>Week 1:</strong> Save $2,500 in value, invest ~$58 in ChatGPT Business (monthly billing for a 10-person team). <strong>ROI: 4,200%+</strong></li>
+            <li><strong>Month 1:</strong> Save $10,000 in value, invest $250 (monthly) or $200 (annual) in ChatGPT Business. <strong>ROI: 3,900-4,900%</strong></li>
+            <li><strong>Year 1:</strong> Save $120,000 in value, invest $3,000 (monthly billing) or $2,400 (annual billing). <strong>ROI: 3,900-4,900%</strong></li>
         </ul>
 
         <div class="stat-box">
@@ -904,10 +904,10 @@
         <p>Adoption is the real risk, not the tool. But ChatGPT Business is intuitive, and once one person finds value, others follow. Most teams see adoption curves like: 30% active in week 1, 60% in week 3, 85%+ by month 2.</p>
 
         <h3>Is ChatGPT Business cheaper than hiring?</h3>
-        <p>Yes, dramatically. A junior hire costs $50k-$70k/year all-in. ChatGPT Business costs $360/year per user and requires zero management overhead. Even a fully optimized ChatGPT implementation for 10 people ($3,600/year) is a rounding error compared to hiring.</p>
+        <p>Yes, dramatically. A junior hire costs $50k-$70k/year all-in. ChatGPT Business costs $240-$300/year per user and requires zero management overhead. Even a fully optimized ChatGPT implementation for 10 people ($2,400-$3,000/year) is a rounding error compared to hiring.</p>
 
         <h3>What about ChatGPT Pro vs. Business?</h3>
-        <p>ChatGPT Pro ($20/month) is great for individual power users. But ChatGPT Business ($30/month) adds crucial team features:</p>
+        <p>ChatGPT Pro ($20/month) is great for individual power users. But ChatGPT Business ($25/month monthly billing, or $20/month annual billing) adds crucial team features:</p>
         <ul>
             <li>Admin controls and team management</li>
             <li>30-day rolling window data retention (important for compliance)</li>
@@ -973,7 +973,7 @@
         const annualRoi = document.getElementById('annualRoi');
         const breakEvenDays = document.getElementById('breakEvenDays');
 
-        const CHATGPT_BUSINESS_MONTHLY = 30; // $30 per user per month
+        const CHATGPT_BUSINESS_MONTHLY = 25; // $25 per user per month (monthly billing; $20 on annual)
         const HOURS_PER_WEEK = 52 / 12; // Average work weeks per month
 
         function updateCalculator() {

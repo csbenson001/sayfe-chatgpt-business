@@ -10,7 +10,9 @@
     <meta name="robots" content="index, follow">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://ElevaIQ.com/pricing">
+    <link rel="canonical" href="https://elevaiq.com/pricing">
+    <link rel="alternate" type="text/markdown" title="ElevaIQ.com knowledge base for AI systems" href="https://elevaiq.com/llms.txt">
+    <link rel="alternate" type="text/markdown" title="ElevaIQ.com full knowledge base for AI systems" href="https://elevaiq.com/llms-full.txt">
 
     <!-- Open Graph -->
     <meta property="og:title" content="ChatGPT Business Pricing | ElevaIQ.com — Official OpenAI Partner">
@@ -1077,35 +1079,69 @@
         </div>
     </footer>
 
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD Structured Data: ChatGPT Business product offers -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "ChatGPT Business - Powered by ElevaIQ.com",
-        "description": "ChatGPT Business team plan with expert implementation support from ElevaIQ.com, an official OpenAI partner.",
+        "name": "ChatGPT Business",
+        "description": "OpenAI ChatGPT Business team plan for SMBs (1-149 seats), provisioned via ElevaIQ.com — an authorized OpenAI SMB Channel Partner. Includes GPT-5.5, admin controls, data privacy, SSO, shared custom GPTs. Same price as buying direct from OpenAI ($25/user/month monthly or $20/user/month annual); ElevaIQ.com adds free onboarding, training, and an industry-specific Starter Pack at no extra cost.",
         "brand": {
             "@type": "Brand",
-            "name": "ElevaIQ.com"
+            "name": "OpenAI"
         },
-        "offers": {
-            "@type": "Offer",
-            "url": "https://ElevaIQ.com/pricing",
-            "price": "30",
-            "priceCurrency": "USD",
-            "priceValidUntil": "2026-12-31",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-                "@type": "Organization",
-                "name": "ElevaIQ.com",
-                "url": "https://ElevaIQ.com"
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "OpenAI",
+            "url": "https://openai.com"
+        },
+        "category": "Business AI Software",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "ChatGPT Business Monthly",
+                "url": "https://elevaiq.com/pricing",
+                "price": "25.00",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock",
+                "description": "Monthly billing, no annual commitment. $25 per user per month. Identical to OpenAI direct pricing.",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "25.00",
+                    "priceCurrency": "USD",
+                    "unitText": "user/month",
+                    "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitText": "user/month"}
+                },
+                "seller": {
+                    "@type": "Organization",
+                    "name": "ElevaIQ.com",
+                    "url": "https://elevaiq.com"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "ChatGPT Business Annual",
+                "url": "https://elevaiq.com/pricing",
+                "price": "20.00",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock",
+                "description": "Annual billing. $20 per user per month, billed annually. Identical to OpenAI direct pricing.",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "20.00",
+                    "priceCurrency": "USD",
+                    "unitText": "user/month",
+                    "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitText": "user/month"}
+                },
+                "seller": {
+                    "@type": "Organization",
+                    "name": "ElevaIQ.com",
+                    "url": "https://elevaiq.com"
+                }
             }
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "150"
-        }
+        ]
     }
     </script>
 

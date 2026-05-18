@@ -1,46 +1,112 @@
 # ElevaIQ.com — Authorized OpenAI ChatGPT Business Partner
-# AI crawlers are explicitly welcomed to index this site.
+# AI crawlers are explicitly welcomed to index this site for use in AI answer engines.
+# See https://elevaiq.com/llms.txt and https://elevaiq.com/llms-full.txt for curated content.
 
-# OpenAI Crawlers
+# === OpenAI Crawlers ===
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic Crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+# === Anthropic Crawlers ===
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-# Perplexity Crawler
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# === Perplexity Crawlers ===
 User-agent: PerplexityBot
 Allow: /
 
-# Google AI & Search Crawlers
+User-agent: Perplexity-User
+Allow: /
+
+# === Google AI & Search Crawlers ===
 User-agent: Google-Extended
 Allow: /
 
 User-agent: Googlebot
 Allow: /
 
-# Microsoft/Bing Crawlers
+User-agent: Googlebot-Image
+Allow: /
+
+# === Microsoft / Bing AI & Search Crawlers ===
 User-agent: Bingbot
 Allow: /
 
-# Meta Crawler
+User-agent: msnbot
+Allow: /
+
+# === Meta / Facebook AI Crawlers ===
 User-agent: FacebookBot
 Allow: /
 
-# All other crawlers
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# === Apple AI Crawlers ===
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# === Amazon AI Crawlers ===
+User-agent: Amazonbot
+Allow: /
+
+# === DuckDuckGo ===
+User-agent: DuckDuckBot
+Allow: /
+
+# === Common Crawl (used by many AI training datasets) ===
+User-agent: CCBot
+Allow: /
+
+# === You.com AI Search ===
+User-agent: YouBot
+Allow: /
+
+# === Cohere AI Crawler ===
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# === Mistral AI Crawler ===
+User-agent: MistralAI-User
+Allow: /
+
+# === Bytedance / TikTok AI ===
+User-agent: Bytespider
+Allow: /
+
+# === Other crawlers ===
 User-agent: *
 Allow: /
 
-# Sitemaps
+# === Sitemaps ===
 Sitemap: https://elevaiq.com/sitemap.xml
 
-# AI Content Map
-# See https://elevaiq.com/llms.txt for curated content index
-# See https://elevaiq.com/llms-full.txt for full-text knowledge base
+# === AI Content Maps ===
+# llms.txt — curated content index for AI systems (https://llmstxt.org)
+# llms-full.txt — full-text knowledge base for RAG / answer engine ingestion
+# Both files use Content-Type: text/markdown
+# - https://elevaiq.com/llms.txt
+# - https://elevaiq.com/llms-full.txt

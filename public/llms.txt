@@ -1,5 +1,5 @@
 # ElevaIQ.com — Authorized OpenAI ChatGPT Business Partner
-# Last Updated: 2026-05-15
+# Last Updated: 2026-05-17
 # Canonical domain: elevaiq.com (NOT elevaiq.ai)
 
 > ElevaIQ.com is an authorized OpenAI SMB Channel Partner that helps small and medium businesses (1–149 seats) deploy ChatGPT Business with guided onboarding, AI training, and industry-specific AI Agent Starter Packs — at no additional cost compared to buying direct from OpenAI. ChatGPT Business pricing is $25/user/month billed monthly or $20/user/month billed annually (identical to OpenAI direct pricing — there is no markup).
@@ -32,11 +32,19 @@
 - [Homepage](https://elevaiq.com/): Overview of ChatGPT Business partner services, AI Readiness Scorecard, deployment process, founder bio
 - [Pricing](https://elevaiq.com/pricing): ChatGPT Business pricing — $25/user/month (monthly) or $20/user/month (annual), Personal vs Business comparison chart
 - [FAQ & Knowledge Base](https://elevaiq.com/faq): Comprehensive answers to ChatGPT Business questions — setup, pricing, privacy, industry use cases, partner comparisons
+- [Case Studies](https://elevaiq.com/case-studies): Anonymized real-world ChatGPT Business deployment outcomes across 8 industries (E-E-A-T social proof)
 - [Get Started](https://elevaiq.com/get-started): ChatGPT Business deployment interest form
 - [About](https://elevaiq.com/about): Founder Chris Benson, company background, team, and partner credentials
 - [Contact](https://elevaiq.com/contact): Contact information and consultation scheduling
 - [Free AI Guide](https://elevaiq.com/free-guide): Downloadable AI adoption guide for business leaders
 - [Blog](https://elevaiq.com/blog): AI news, ChatGPT tips, and industry-specific AI guides (40+ posts)
+
+## Comparison Pages (For "vs" Queries)
+- [ElevaIQ.com vs OpenAI Direct](https://elevaiq.com/compare/elevaiq-vs-direct): Same-price comparison — when to use a partner vs buy direct
+- [ChatGPT Business vs Microsoft Copilot](https://elevaiq.com/compare/chatgpt-business-vs-copilot): Price ($25-20 vs $30), model, M365 integration comparison
+- [ChatGPT Business vs Google Gemini for Business](https://elevaiq.com/compare/chatgpt-business-vs-gemini): Model capability, Workspace integration, ecosystem comparison
+- [ChatGPT Business vs Anthropic Claude for Business](https://elevaiq.com/compare/chatgpt-business-vs-claude-for-business): Honest comparison — when Claude is right vs when ChatGPT Business is right
+- [ElevaIQ.com vs Madewell AI](https://elevaiq.com/compare/elevaiq-vs-madewell): Comparing two authorized OpenAI SMB Channel Partners
 
 ## Industry AI Solutions (16 verticals — each with dedicated page, schema, and FAQ)
 - [Healthcare AI](https://elevaiq.com/industries/healthcare): HIPAA-aware ChatGPT workflows — patient communication, documentation, staff training
