@@ -71,6 +71,7 @@
     { "source": "/blog/chatgpt-business-setup-guide-2026", "destination": "/blog/chatgpt-business-setup-guide-2026.html" },
     { "source": "/blog/chatgpt-business-vs-enterprise-2026", "destination": "/blog/chatgpt-business-vs-enterprise-2026.html" },
     { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
+    { "source": "/compare/:slug", "destination": "/compare/:slug.html" },
     { "source": "/get-started", "destination": "/get-started.html" },
     { "source": "/faq", "destination": "/faq.html" }
   ],
