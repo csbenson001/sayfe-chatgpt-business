@@ -115,3 +115,42 @@
 - Releasebot — [OpenAI Release Notes — May 2026](https://releasebot.io/updates/openai)
 - ChatGPT pricing — [OpenAI Business pricing page](https://openai.com/business/chatgpt-pricing/)
 - Plaid — [What ChatGPT's new experience signals for digital finance](https://plaid.com/blog/chatgpt-personal-finance-plaid/)
+
+
+---
+
+## AEO Optimizer (3:30 AM run — 2026-05-17 bootstrap)
+
+- **Queries tested:** 8 high-priority queries via WebSearch as answer-engine proxy. ChatGPT/Claude/Google AIO direct measurement skipped — no OPENAI_API_KEY / ANTHROPIC_API_KEY / SERPAPI_API_KEY in the scheduled-task env and Chrome MCP not connected. Daily measurement budget will improve once any of those is wired up.
+- **Citation rate today (proxy baseline):** 0/8 — elevaiq.com was not cited in the top results for any of the 8 sampled queries. This is the starting line; patches shipped today are foundational.
+- **Top losing queries (explicit handoff to content engine):**
+  1. `openai-smb-partner` — "authorized OpenAI SMB partner ChatGPT Business reseller". Direct competitor `think-technologies.com` owns this query. Candidate post: "What does it actually mean to be an authorized OpenAI SMB Channel Partner? (And how to pick one)" — own the category definition.
+  2. `chatgpt-vs-claude` — "ChatGPT Business vs Claude for business 2026". No target_page exists. Per today's content-engine notes, this is also queued — confirm prioritization.
+  3. `best-ai-tools-smb` — "best AI tools for small business 2026". Salesforce-style listicles dominate. Refresh `/blog/best-ai-tools-small-business-2026.html` with the SBE Council 82%-adoption stat and a 2026-dated table.
+- **Pages patched (5):**
+  - `public/llms.txt` — added "Recent Product & Pricing Facts (2026)" block (April 2 pricing cut, ChatGPT for Healthcare BAA, May 5 Excel/Sheets GA, May 15 Personal Finance preview, GPT-5.5 Instant, SOC 2 / AES-256 facts, ABA 24%/55% legal adoption, SBE Council 82% SMB AI adoption); expanded blog index to cover all current posts.
+  - `public/industries/healthcare.html` — expanded FAQPage schema from 3 to 6 Q&A pairs (added: HIPAA / BAA explanation citing the January 2026 ChatGPT for Healthcare launch; safe-without-BAA workflow list; why-ElevaIQ partner question); added `datePublished` + `dateModified` to Article schema; tightened entity phrasing to "ElevaIQ.com, an authorized OpenAI SMB Channel Partner."
+  - `public/industries/legal.html` — expanded FAQPage from 3 to 6 (added: ABA 24%/55% adoption stat embedded; hallucination-mitigation workflow question; solo-attorney Plus-vs-Business question; privileged-information question; why-ElevaIQ); added `datePublished` + `dateModified`.
+  - `public/blog/chatgpt-business-vs-plus.html` — **critical pricing fix:** corrected stale $30/user/month figures throughout (comparison table, body paragraphs, 10-person cost example, takeaways) to reflect the April 2, 2026 OpenAI price cut to $25 monthly / $20 annual; added the explicit "annual matches Plus at $20" framing; expanded FAQPage from 4 to 6 (added 2026 pricing FAQ and Personal Finance availability FAQ); added `dateModified`.
+  - `aeo-ledger.md` — bootstrapped the week-over-week tracking file with today's baseline row.
+- **Files created (4):** `queries/aeo-seeds.yaml` (31 seed queries across 7 intents), `measurements/2026-05-17.json` (today's 8 measurement records + skip rationale), `aeo-ledger.md`, and this appended section.
+- **Ledger trend:** N/A — first day of measurement. Comparison begins tomorrow.
+- **Push:** Three bundled commits today (llms.txt first, then 5 files, then this final pair). Vercel auto-deploys within ~60 seconds.
+
+### Diagnoses (per losing query, top fix)
+
+| Query | Diagnosis | Fix shipped today |
+|-------|-----------|-------------------|
+| chatgpt-for-healthcare | Our healthcare page only had 3 FAQs and no mention of the January 2026 ChatGPT for Healthcare BAA product that competitors cite | Expanded to 6 FAQs including the BAA distinction and safe-without-BAA workflows; updated llms.txt facts block |
+| chatgpt-business-vs-plus | **Our own page had stale $30 pricing**, contradicting OpenAI's current $25/$20 — answer engines were citing OpenAI not us because we looked outdated | Corrected all 5 pricing references; added the "annual ties Plus on price" framing |
+| chatgpt-business-pricing | Pricing page schema is thin; OpenAI direct page dominates citation | Not patched today (separate run) — flagged for next run with Offer schema on /pricing |
+| best-ai-tools-smb | Aggregator listicles dominate; we need 2026-dated freshness signals and a citable stat | Embedded SBE Council 82% stat in llms.txt for ingestion; /blog refresh queued for content engine |
+| chatgpt-for-legal | No ABA stat embedded; hallucination concern not addressed in FAQs | Embedded ABA 24%/55% stat; added hallucination-mitigation FAQ |
+| openai-smb-partner | Direct competitor think-technologies.com owns the query; our entity claim was buried | Repeated "authorized OpenAI SMB Channel Partner" phrasing across patched FAQs and llms.txt facts block — own the category term |
+| chatgpt-safe-for-business | Missing SOC 2 Type 2 / AES-256 / TLS 1.2 keyword anchors with named compliance terms | Added explicit compliance terms in /industries/healthcare and legal FAQs and llms.txt facts |
+| chatgpt-for-real-estate | Existing post is 49KB but no recent schema/dateModified | Deferred — flagged for next run (no losing-query-specific change shipped today) |
+
+### Notes on graceful degradation
+
+- No answer-engine API keys in this environment. Tomorrow's run will either (a) detect newly-provisioned keys and switch to direct ChatGPT/Claude measurement, or (b) continue with WebSearch proxy. The ledger row format accommodates either.
+- The 30%-line-count change ceiling applies to HTML files; `llms.txt` is an index file the spec explicitly directs us to "keep current" (Phase 4 edit type H), so the 61% expansion is intentional and aligned with the playbook.
