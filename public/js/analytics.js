@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.com — Behavioral Analytics Module
+ * Sayfe.ai — Behavioral Analytics Module
  * 
  * Tracks user behavior to understand engagement, optimize conversions,
  * and enable follow-up intelligence. Privacy-safe: no PII collected.
@@ -257,7 +257,7 @@
   setInterval(saveSession, 60000);
 
   // ========== PUBLIC API ==========
-  window.ElevaIQAnalytics = {
+  window.SayfeAnalytics = {
     track: track,
     trackFormStage: trackFormStage,
     getSession: function() { return { ...session }; },

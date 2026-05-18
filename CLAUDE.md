@@ -1,11 +1,14 @@
-# ElevaIQ.com — ChatGPT Business Partner Site
+# Sayfe.ai — ChatGPT Business Partner Site
 
 ## Project Overview
 
-ElevaIQ.com is an authorized OpenAI SMB Channel Partner site for Vandelay Consulting Inc (Chris Benson).
-The site drives ChatGPT Business referral sign-ups across 16+ industry verticals.
-Parent brand for the IQ family of industry-specific domains (PracticeIQ.ai, CounselIQ.ai, AgentIQ.ai, etc.).
-Sayfe.ai remains the separate consulting brand for privately hosted AI solutions.
+Sayfe.ai (sayfeai.com) is an authorized OpenAI SMB Channel Partner site operated by Vandelay Consulting Inc (Chris Benson), headquartered in Houston, Texas.
+The site drives ChatGPT Business referral sign-ups across 16 industry verticals with deep specialty in the energy industry.
+Beyond ChatGPT Business deployment for SMBs, Sayfe.ai also builds tailored AI agents for SAP and Salesforce enterprise customers — same brand, deeper engagement when customers need more than ChatGPT Business.
+
+## Rebrand History
+
+This project was previously branded "ElevaIQ.com" and rebranded to Sayfe.ai in May 2026 due to trademark proximity with another business ("elevatiq.ai"). The site now lives at sayfeai.com (the .com TLD, no dot between "sayfe" and "ai"). All ElevaIQ references in `public/` and `api/` have been replaced; historical drafts and dated reports keep the old name for record-keeping only.
 
 ## Commission Structure (from OpenAI Partner Guide)
 
@@ -28,7 +31,7 @@ Sayfe.ai remains the separate consulting brand for privately hosted AI solutions
 
 - **Hosting**: Vercel (static site)
 - **Framework**: Pure HTML/CSS/JS (no build step)
-- **Domain**: ElevaIQ.com
+- **Domain**: sayfeai.com (canonical) — registered on GoDaddy, DNS pointed at Vercel
 - **Git**: github.com/csbenson001/sayfe-chatgpt-business
 - **Lead Capture**: Supabase-ready (forms need connection)
 
@@ -53,14 +56,20 @@ public/
     education.html              # /education
     professional-services.html  # /professional-services
     nonprofit.html              # /nonprofit
+    energy.html                 # /energy (industry specialty)
   blog/
     index.html                  # Blog listing page
     [individual posts]          # SEO/AEO blog articles
+  compare/
+    sayfeai-vs-direct.html      # /compare/sayfeai-vs-direct
+    sayfeai-vs-madewell.html    # /compare/sayfeai-vs-madewell
+    chatgpt-business-vs-*       # competitor comparisons
   about.html                    # /about
   pricing.html                  # /pricing
   contact.html                  # /contact
   sitemap.xml
   robots.txt
+  llms.txt, llms-full.txt       # AI/LLM citation reference
 ```
 
 ## Design System
@@ -87,7 +96,7 @@ Get Started   → /api/referral  (class="nav-cta")
 
 **Nav HTML template** (copy verbatim — do not invent nav variations):
 The canonical nav is in `public/blog/index.html` (nav id="mainNav").
-- Logo: `eleva<span>IQ.ai</span>` with the OpenAI SVG partner badge
+- Logo: `Sayfe<span>.ai</span>` with the OpenAI SVG partner badge
 - Fixed position with backdrop blur, `scrolled` class added on scroll via JS
 - Mobile hamburger at ≤768px breakpoint
 
@@ -105,9 +114,10 @@ The canonical nav is in `public/blog/index.html` (nav id="mainNav").
 - JSON-LD structured data on every page (FAQPage, Article, HowTo, Organization)
 - Industry-specific long-tail keywords
 - Blog posts targeting "How can [industry] use ChatGPT" queries
-- Canonical URLs on all pages
+- Canonical URLs on all pages (https://sayfeai.com/...)
 - Open Graph + Twitter Cards
 - Internal linking between industry pages and blog posts
+- `llms.txt` and `llms-full.txt` for AI citation accuracy — canonical domain reinforcement (sayfeai.com)
 
 ## Key Messaging
 
@@ -117,6 +127,8 @@ The canonical nav is in `public/blog/index.html` (nav id="mainNav").
 - "No annual commitment"
 - "149 max team seats"
 - Industry-specific pain points → AI solutions
+- Houston-headquartered with energy industry specialty
+- Enterprise AI agent capability for customers who outgrow ChatGPT Business
 
 ## Blog Content Strategy
 
@@ -151,15 +163,17 @@ git add -A && git commit -m "message" && git push origin main
 
 ```
 api/
-  notify.js     # Lead notification emails via Resend
+  notify.js     # Lead notification emails via Resend (from: 'Sayfe.ai Leads <onboarding@onboarding.sayfe.ai>')
   referral.js   # Server-side redirect to ChatGPT attribution URL (GET → 302)
+  analytics.js  # Analytics collection endpoint
 ```
 
-## Next Steps
+## External Properties That Still Need Updating (Post-Rebrand)
 
-- [ ] Build blog infrastructure and write 5+ posts
-- [ ] Add about/pricing/contact pages
-- [ ] sitemap.xml + robots.txt
-- [ ] Enhanced AEO schema across all pages
-- [ ] Internal linking strategy
-- [ ] Deploy and verify
+These references were updated in code but the actual external services need to be reconfigured under the new name:
+
+- **Calendly**: `calendly.com/sayfeai/audit` — create or rename booking page on Calendly
+- **GitHub social**: `github.com/sayfeai` — create org/user or update link
+- **Email sender**: still uses `@onboarding.sayfe.ai` — confirm Resend domain is correct or change to `@onboarding.sayfeai.com`
+- **OG/Twitter images**: confirm any branded images don't still say "ElevaIQ"
+- **Favicon**: confirm not branded ElevaIQ

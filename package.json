@@ -1,7 +1,7 @@
 {
-  "name": "sayfe-chatgpt-business",
+  "name": "sayfeai-chatgpt-business",
   "version": "1.0.0",
-  "description": "Sayfe.ai — Official OpenAI ChatGPT Business Partner Site",
+  "description": "Sayfe.ai (sayfeai.com) — Official OpenAI ChatGPT Business Partner Site",
   "private": true,
   "scripts": {
     "dev": "npx serve public",

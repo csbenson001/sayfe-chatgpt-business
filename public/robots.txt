@@ -1,6 +1,6 @@
-# ElevaIQ.com — Authorized OpenAI ChatGPT Business Partner
+# Sayfe.ai — Authorized OpenAI ChatGPT Business Partner
 # AI crawlers are explicitly welcomed to index this site for use in AI answer engines.
-# See https://elevaiq.com/llms.txt and https://elevaiq.com/llms-full.txt for curated content.
+# See https://sayfeai.com/llms.txt and https://sayfeai.com/llms-full.txt for curated content.
 
 # === OpenAI Crawlers ===
 User-agent: GPTBot
@@ -102,11 +102,11 @@ User-agent: *
 Allow: /
 
 # === Sitemaps ===
-Sitemap: https://elevaiq.com/sitemap.xml
+Sitemap: https://sayfeai.com/sitemap.xml
 
 # === AI Content Maps ===
 # llms.txt — curated content index for AI systems (https://llmstxt.org)
 # llms-full.txt — full-text knowledge base for RAG / answer engine ingestion
 # Both files use Content-Type: text/markdown
-# - https://elevaiq.com/llms.txt
-# - https://elevaiq.com/llms-full.txt
+# - https://sayfeai.com/llms.txt
+# - https://sayfeai.com/llms-full.txt

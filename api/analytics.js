@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.com — Analytics Collection Endpoint
+ * Sayfe.ai — Analytics Collection Endpoint
  * Vercel Serverless Function
  * 
  * Receives behavioral analytics events from the client-side analytics.js module.

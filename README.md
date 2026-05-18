@@ -2,6 +2,8 @@
 
 Official OpenAI ChatGPT Business partner landing site for Sayfe.ai (Vandelay Consulting Inc).
 
+Live at **https://sayfeai.com** (canonical domain).
+
 ## Structure
 
 ```
@@ -11,7 +13,7 @@ public/
     healthcare.html   # /healthcare
     legal.html        # /legal
     manufacturing.html # /manufacturing
-    ... (15 industry pages)
+    ... (16 industry pages)
 vercel.json           # Rewrites for clean URLs
 ```
 
@@ -21,11 +23,11 @@ Deployed on Vercel as a static site. The `vercel.json` handles URL rewrites so `
 
 ## URLs
 
-- `sayfe.ai/` — Main site
-- `sayfe.ai/healthcare` — Healthcare landing page
-- `sayfe.ai/legal` — Legal landing page
-- `sayfe.ai/manufacturing` — Manufacturing landing page
-- ... (15 total industry pages)
+- `sayfeai.com/` — Main site
+- `sayfeai.com/healthcare` — Healthcare landing page
+- `sayfeai.com/legal` — Legal landing page
+- `sayfeai.com/manufacturing` — Manufacturing landing page
+- ... (16 total industry pages)
 
 ## Lead Capture
 

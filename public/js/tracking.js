@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.com - Unified Tracking Module
+ * Sayfe.ai - Unified Tracking Module
  *
  * This module loads and initializes:
  * - Google Analytics 4 (GA4)
@@ -11,14 +11,14 @@
  * Usage:
  * <script src="/js/tracking.js"></script>
  *
- * Then use the global ElevaIQTracking namespace:
- * - window.ElevaIQTracking.trackLead(value)
- * - window.ElevaIQTracking.trackReferralClick()
- * - window.ElevaIQTracking.trackFormStart(formName)
- * - window.ElevaIQTracking.trackBlogRead(slug)
- * - window.ElevaIQTracking.trackMetaEvent(eventName, params)
- * - window.ElevaIQTracking.trackGoogleAdsConversion(conversionLabel, value)
- * - window.ElevaIQTracking.getUTMParams()
+ * Then use the global SayfeTracking namespace:
+ * - window.SayfeTracking.trackLead(value)
+ * - window.SayfeTracking.trackReferralClick()
+ * - window.SayfeTracking.trackFormStart(formName)
+ * - window.SayfeTracking.trackBlogRead(slug)
+ * - window.SayfeTracking.trackMetaEvent(eventName, params)
+ * - window.SayfeTracking.trackGoogleAdsConversion(conversionLabel, value)
+ * - window.SayfeTracking.getUTMParams()
  */
 
 (function() {
@@ -59,11 +59,11 @@
     if (Object.keys(filteredParams).length > 0) {
       try {
         sessionStorage.setItem(
-          'elevaiq_utm_params',
+          'sayfeai_utm_params',
           JSON.stringify(filteredParams)
         );
       } catch (e) {
-        console.warn('ElevaIQ Tracking: Unable to store UTM params in sessionStorage', e);
+        console.warn('Sayfe.ai Tracking: Unable to store UTM params in sessionStorage', e);
       }
     }
   }
@@ -81,10 +81,10 @@
    */
   function getStoredUTMParams() {
     try {
-      const stored = sessionStorage.getItem('elevaiq_utm_params');
+      const stored = sessionStorage.getItem('sayfeai_utm_params');
       return stored ? JSON.parse(stored) : {};
     } catch (e) {
-      console.warn('ElevaIQ Tracking: Unable to retrieve UTM params from sessionStorage', e);
+      console.warn('Sayfe.ai Tracking: Unable to retrieve UTM params from sessionStorage', e);
       return {};
     }
   }
@@ -116,7 +116,7 @@
       script.src = `https://www.googletagmanager.com/gtag/js?id=${CONFIG.GA4_MEASUREMENT_ID}`;
 
       script.onerror = function() {
-        console.error('ElevaIQ Tracking: Failed to load GA4 script');
+        console.error('Sayfe.ai Tracking: Failed to load GA4 script');
       };
 
       document.head.appendChild(script);
@@ -136,7 +136,7 @@
       window.gtag = gtag2;
 
     } catch (e) {
-      console.error('ElevaIQ Tracking: Error initializing GA4', e);
+      console.error('Sayfe.ai Tracking: Error initializing GA4', e);
     }
   }
 
@@ -164,7 +164,7 @@
       }
 
     } catch (e) {
-      console.error('ElevaIQ Tracking: Error initializing Meta Pixel', e);
+      console.error('Sayfe.ai Tracking: Error initializing Meta Pixel', e);
     }
   }
 
@@ -187,13 +187,13 @@
       script.src = 'https://snap.licdn.com/li.lms-analytics/insight.min.js';
 
       script.onerror = function() {
-        console.error('ElevaIQ Tracking: Failed to load LinkedIn Insight Tag');
+        console.error('Sayfe.ai Tracking: Failed to load LinkedIn Insight Tag');
       };
 
       document.head.appendChild(script);
 
     } catch (e) {
-      console.error('ElevaIQ Tracking: Error initializing LinkedIn Insight Tag', e);
+      console.error('Sayfe.ai Tracking: Error initializing LinkedIn Insight Tag', e);
     }
   }
 
@@ -211,7 +211,7 @@
       script.src = `https://www.googletagmanager.com/gtag/js?id=${CONFIG.GOOGLE_ADS_CONVERSION_ID}`;
 
       script.onerror = function() {
-        console.error('ElevaIQ Tracking: Failed to load Google Ads conversion script');
+        console.error('Sayfe.ai Tracking: Failed to load Google Ads conversion script');
       };
 
       document.head.appendChild(script);
@@ -225,18 +225,18 @@
       gtag('config', CONFIG.GOOGLE_ADS_CONVERSION_ID);
 
     } catch (e) {
-      console.error('ElevaIQ Tracking: Error initializing Google Ads conversion tracking', e);
+      console.error('Sayfe.ai Tracking: Error initializing Google Ads conversion tracking', e);
     }
   }
 
   // ============================================================================
-  // PUBLIC API - ElevaIQTracking Namespace
+  // PUBLIC API - SayfeTracking Namespace
   // ============================================================================
 
   /**
-   * Public tracking API exposed on window.ElevaIQTracking
+   * Public tracking API exposed on window.SayfeTracking
    */
-  const ElevaIQTracking = {
+  const SayfeTracking = {
 
     /**
      * Track a lead conversion on all platforms
@@ -268,10 +268,10 @@
           window.lintrk('track', { conversion_id: 'lead_generated' });
         }
 
-        console.log('ElevaIQ Tracking: Lead tracked', eventData);
+        console.log('Sayfe.ai Tracking: Lead tracked', eventData);
 
       } catch (e) {
-        console.error('ElevaIQ Tracking: Error tracking lead', e);
+        console.error('Sayfe.ai Tracking: Error tracking lead', e);
       }
     },
 
@@ -303,10 +303,10 @@
           window.lintrk('track', { conversion_id: 'referral_click' });
         }
 
-        console.log('ElevaIQ Tracking: Referral click tracked');
+        console.log('Sayfe.ai Tracking: Referral click tracked');
 
       } catch (e) {
-        console.error('ElevaIQ Tracking: Error tracking referral click', e);
+        console.error('Sayfe.ai Tracking: Error tracking referral click', e);
       }
     },
 
@@ -338,10 +338,10 @@
           window.lintrk('track', { conversion_id: 'form_start' });
         }
 
-        console.log('ElevaIQ Tracking: Form start tracked', formName);
+        console.log('Sayfe.ai Tracking: Form start tracked', formName);
 
       } catch (e) {
-        console.error('ElevaIQ Tracking: Error tracking form start', e);
+        console.error('Sayfe.ai Tracking: Error tracking form start', e);
       }
     },
 
@@ -380,10 +380,10 @@
           window.lintrk('track', { conversion_id: 'blog_read' });
         }
 
-        console.log('ElevaIQ Tracking: Blog read tracked', slug);
+        console.log('Sayfe.ai Tracking: Blog read tracked', slug);
 
       } catch (e) {
-        console.error('ElevaIQ Tracking: Error tracking blog read', e);
+        console.error('Sayfe.ai Tracking: Error tracking blog read', e);
       }
     },
 
@@ -396,12 +396,12 @@
       try {
         if (window.fbq) {
           window.fbq('track', eventName, params || {});
-          console.log('ElevaIQ Tracking: Meta event tracked', eventName, params);
+          console.log('Sayfe.ai Tracking: Meta event tracked', eventName, params);
         } else {
-          console.warn('ElevaIQ Tracking: Meta Pixel not loaded, cannot track event', eventName);
+          console.warn('Sayfe.ai Tracking: Meta Pixel not loaded, cannot track event', eventName);
         }
       } catch (e) {
-        console.error('ElevaIQ Tracking: Error tracking Meta event', e);
+        console.error('Sayfe.ai Tracking: Error tracking Meta event', e);
       }
     },
 
@@ -428,12 +428,12 @@
           }
 
           window.gtag('event', 'conversion', eventData);
-          console.log('ElevaIQ Tracking: Google Ads conversion tracked', conversionLabel);
+          console.log('Sayfe.ai Tracking: Google Ads conversion tracked', conversionLabel);
         } else {
-          console.warn('ElevaIQ Tracking: gtag not loaded, cannot track Google Ads conversion');
+          console.warn('Sayfe.ai Tracking: gtag not loaded, cannot track Google Ads conversion');
         }
       } catch (e) {
-        console.error('ElevaIQ Tracking: Error tracking Google Ads conversion', e);
+        console.error('Sayfe.ai Tracking: Error tracking Google Ads conversion', e);
       }
     },
 
@@ -457,13 +457,13 @@
             'analytics_storage': analyticsConsent || 'denied',
             'ad_storage': adConsent || 'denied',
           });
-          console.log('ElevaIQ Tracking: Consent updated', {
+          console.log('Sayfe.ai Tracking: Consent updated', {
             analytics: analyticsConsent,
             ads: adConsent,
           });
         }
       } catch (e) {
-        console.error('ElevaIQ Tracking: Error updating consent', e);
+        console.error('Sayfe.ai Tracking: Error updating consent', e);
       }
     },
 
@@ -495,13 +495,13 @@
       initGoogleAdsConversion();
 
       // Expose public API
-      window.ElevaIQTracking = ElevaIQTracking;
+      window.SayfeTracking = SayfeTracking;
 
-      console.log('ElevaIQ Tracking: All tracking services initialized');
-      console.log('Available methods:', Object.keys(ElevaIQTracking));
+      console.log('Sayfe.ai Tracking: All tracking services initialized');
+      console.log('Available methods:', Object.keys(SayfeTracking));
 
     } catch (e) {
-      console.error('ElevaIQ Tracking: Fatal error during initialization', e);
+      console.error('Sayfe.ai Tracking: Fatal error during initialization', e);
     }
   }
 

@@ -1,5 +1,5 @@
 /**
- * ElevaIQ.com Lead Capture Module
+ * Sayfe.ai Lead Capture Module
  * Connects all site forms to Supabase
  *
  * SETUP: Replace SUPABASE_URL and SUPABASE_ANON_KEY with your actual values
@@ -25,7 +25,7 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 async function submitLead(leadData) {
   // Don't submit if Supabase isn't configured yet
   if (SUPABASE_URL === 'YOUR_SUPABASE_URL') {
-    console.log('[ElevaIQ] Supabase not configured yet. Lead data:', leadData);
+    console.log('[Sayfe.ai] Supabase not configured yet. Lead data:', leadData);
     return { success: true, message: 'Demo mode - Supabase not configured' };
   }
 
@@ -65,11 +65,11 @@ async function submitLead(leadData) {
       return { success: true };
     } else {
       const errorText = await response.text();
-      console.error('[ElevaIQ] Supabase error:', response.status, errorText);
+      console.error('[Sayfe.ai] Supabase error:', response.status, errorText);
       return { success: false, error: `Server error: ${response.status}` };
     }
   } catch (err) {
-    console.error('[ElevaIQ] Network error:', err);
+    console.error('[Sayfe.ai] Network error:', err);
     return { success: false, error: 'Network error. Please try again.' };
   }
 }
@@ -134,7 +134,7 @@ async function submitIndustryCTA(email, industry) {
 }
 
 // Make functions available globally
-window.ElevaIQ = {
+window.Sayfe = {
   submitLead,
   submitNewsletter,
   submitQuickSignup,

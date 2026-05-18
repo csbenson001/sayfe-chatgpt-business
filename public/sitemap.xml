@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://elevaiq.com/</loc>
+    <loc>https://sayfeai.com/</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/pricing</loc>
+    <loc>https://sayfeai.com/pricing</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/faq</loc>
+    <loc>https://sayfeai.com/faq</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog</loc>
+    <loc>https://sayfeai.com/blog</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/about</loc>
+    <loc>https://sayfeai.com/about</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/contact</loc>
+    <loc>https://sayfeai.com/contact</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/get-started</loc>
+    <loc>https://sayfeai.com/get-started</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/free-guide</loc>
+    <loc>https://sayfeai.com/free-guide</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -52,13 +52,13 @@
 
   <!-- AI Content Maps -->
   <url>
-    <loc>https://elevaiq.com/llms.txt</loc>
+    <loc>https://sayfeai.com/llms.txt</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/llms-full.txt</loc>
+    <loc>https://sayfeai.com/llms-full.txt</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -66,25 +66,25 @@
 
   <!-- OpenAI Partner Hub (Topic Cluster — citation-worthy first-mover pages) -->
   <url>
-    <loc>https://elevaiq.com/openai-smb</loc>
+    <loc>https://sayfeai.com/openai-smb</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/openai-smb-partner</loc>
+    <loc>https://sayfeai.com/openai-smb-partner</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/openai-workspace-agents</loc>
+    <loc>https://sayfeai.com/openai-workspace-agents</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/ai-agent-library</loc>
+    <loc>https://sayfeai.com/ai-agent-library</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -92,7 +92,7 @@
 
   <!-- Industries Directory -->
   <url>
-    <loc>https://elevaiq.com/industries</loc>
+    <loc>https://sayfeai.com/industries</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -100,97 +100,97 @@
 
   <!-- Industry Pages (FIXED: correct /industries/ path) -->
   <url>
-    <loc>https://elevaiq.com/industries/energy</loc>
+    <loc>https://sayfeai.com/industries/energy</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/healthcare</loc>
+    <loc>https://sayfeai.com/industries/healthcare</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/legal</loc>
+    <loc>https://sayfeai.com/industries/legal</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/manufacturing</loc>
+    <loc>https://sayfeai.com/industries/manufacturing</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/construction</loc>
+    <loc>https://sayfeai.com/industries/construction</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/finance</loc>
+    <loc>https://sayfeai.com/industries/finance</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/insurance</loc>
+    <loc>https://sayfeai.com/industries/insurance</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/real-estate</loc>
+    <loc>https://sayfeai.com/industries/real-estate</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/consulting</loc>
+    <loc>https://sayfeai.com/industries/consulting</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/education</loc>
+    <loc>https://sayfeai.com/industries/education</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/marketing</loc>
+    <loc>https://sayfeai.com/industries/marketing</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/logistics</loc>
+    <loc>https://sayfeai.com/industries/logistics</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/retail</loc>
+    <loc>https://sayfeai.com/industries/retail</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/nonprofit</loc>
+    <loc>https://sayfeai.com/industries/nonprofit</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/chiropractic</loc>
+    <loc>https://sayfeai.com/industries/chiropractic</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/industries/professional-services</loc>
+    <loc>https://sayfeai.com/industries/professional-services</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -198,151 +198,151 @@
 
   <!-- Blog Posts — Industry Guides -->
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-small-business-guide</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-small-business-guide</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-business-vs-plus</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-business-vs-plus</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-business-setup-guide-2026</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-business-setup-guide-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-business-vs-enterprise-2026</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-business-vs-enterprise-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-business-roi</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-business-roi</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-business-prompts-library</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-business-prompts-library</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-data-privacy-security-guide</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-data-privacy-security-guide</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/ai-adoption-checklist-small-business</loc>
+    <loc>https://sayfeai.com/blog/ai-adoption-checklist-small-business</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/best-ai-tools-small-business-2026</loc>
+    <loc>https://sayfeai.com/blog/best-ai-tools-small-business-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/ai-healthcare-practices</loc>
+    <loc>https://sayfeai.com/blog/ai-healthcare-practices</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-for-law-firms</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-for-law-firms</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/ai-manufacturing-guide</loc>
+    <loc>https://sayfeai.com/blog/ai-manufacturing-guide</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-real-estate-prompts</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-real-estate-prompts</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/ai-financial-advisors-compliance</loc>
+    <loc>https://sayfeai.com/blog/ai-financial-advisors-compliance</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-insurance-agencies</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-insurance-agencies</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-education-schools</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-education-schools</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-construction-contractors</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-construction-contractors</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-consulting-firms</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-consulting-firms</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-logistics-supply-chain</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-logistics-supply-chain</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-marketing-agencies</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-marketing-agencies</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-nonprofit-organizations</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-nonprofit-organizations</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-retail-ecommerce</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-retail-ecommerce</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-chiropractic-practices</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-chiropractic-practices</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-professional-services</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-professional-services</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-healthcare-hipaa-2026</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-healthcare-hipaa-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -350,79 +350,79 @@
 
   <!-- Blog Posts — News & Trends -->
   <url>
-    <loc>https://elevaiq.com/blog/1-million-businesses-using-chatgpt</loc>
+    <loc>https://sayfeai.com/blog/1-million-businesses-using-chatgpt</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/openai-ipo-what-it-means-for-business</loc>
+    <loc>https://sayfeai.com/blog/openai-ipo-what-it-means-for-business</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/openai-superapp-chatgpt-codex-atlas-what-businesses-need-to-know</loc>
+    <loc>https://sayfeai.com/blog/openai-superapp-chatgpt-codex-atlas-what-businesses-need-to-know</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-ads-100-million-what-businesses-should-know</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-ads-100-million-what-businesses-should-know</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning</loc>
+    <loc>https://sayfeai.com/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/google-gemini-price-cut-vs-chatgpt-business-2026</loc>
+    <loc>https://sayfeai.com/blog/google-gemini-price-cut-vs-chatgpt-business-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-shopping-walmart-agentic-commerce-what-businesses-should-know</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-shopping-walmart-agentic-commerce-what-businesses-should-know</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/white-house-ai-framework-small-business-2026</loc>
+    <loc>https://sayfeai.com/blog/white-house-ai-framework-small-business-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/openai-killed-sora-what-it-means-for-business</loc>
+    <loc>https://sayfeai.com/blog/openai-killed-sora-what-it-means-for-business</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/openclaw-ai-agents-what-businesses-need-to-know</loc>
+    <loc>https://sayfeai.com/blog/openclaw-ai-agents-what-businesses-need-to-know</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/ai-training-tax-breaks-section-127-2026</loc>
+    <loc>https://sayfeai.com/blog/ai-training-tax-breaks-section-127-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/ai-skills-gap-power-users-pulling-ahead-2026</loc>
+    <loc>https://sayfeai.com/blog/ai-skills-gap-power-users-pulling-ahead-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/86-percent-small-businesses-failing-at-ai-integration-gap</loc>
+    <loc>https://sayfeai.com/blog/86-percent-small-businesses-failing-at-ai-integration-gap</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -430,13 +430,13 @@
 
   <!-- Blog Posts — Thought Leadership -->
   <url>
-    <loc>https://elevaiq.com/blog/ai-replacing-jobs-myth</loc>
+    <loc>https://sayfeai.com/blog/ai-replacing-jobs-myth</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/ai-environmental-impact-honest-look</loc>
+    <loc>https://sayfeai.com/blog/ai-environmental-impact-honest-look</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -444,31 +444,31 @@
 
   <!-- Comparison Pages — AEO citation bait for "vs" queries -->
   <url>
-    <loc>https://elevaiq.com/compare/elevaiq-vs-direct</loc>
+    <loc>https://sayfeai.com/compare/sayfeai-vs-direct</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/compare/chatgpt-business-vs-copilot</loc>
+    <loc>https://sayfeai.com/compare/chatgpt-business-vs-copilot</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/compare/chatgpt-business-vs-gemini</loc>
+    <loc>https://sayfeai.com/compare/chatgpt-business-vs-gemini</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/compare/chatgpt-business-vs-claude-for-business</loc>
+    <loc>https://sayfeai.com/compare/chatgpt-business-vs-claude-for-business</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/compare/elevaiq-vs-madewell</loc>
+    <loc>https://sayfeai.com/compare/sayfeai-vs-madewell</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -476,7 +476,7 @@
 
   <!-- E-E-A-T / Authority Pages -->
   <url>
-    <loc>https://elevaiq.com/case-studies</loc>
+    <loc>https://sayfeai.com/case-studies</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -484,19 +484,19 @@
 
   <!-- Blog Posts — May 2026 -->
   <url>
-    <loc>https://elevaiq.com/blog/best-chatgpt-business-partner-smb-2026</loc>
+    <loc>https://sayfeai.com/blog/best-chatgpt-business-partner-smb-2026</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-excel-google-sheets-small-business-2026</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-excel-google-sheets-small-business-2026</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://elevaiq.com/blog/chatgpt-personal-finance-bank-accounts-business-owners-2026</loc>
+    <loc>https://sayfeai.com/blog/chatgpt-personal-finance-bank-accounts-business-owners-2026</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
