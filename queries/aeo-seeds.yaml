@@ -6,13 +6,16 @@ version: 2
 # we are trying to displace.
 #
 # v2 changes (2026-05-18):
-# - Canonical domain switched from elevaiq.com → sayfeai.com
+# - Canonical domain switched from elevaiq.com -> sayfeai.com
 # - Added compliance pillar queries (Engine 1 alignment with /compliance-assessment)
 # - Added partner channel queries (Engine 2 alignment)
 # - Added local / Houston / Texas signal queries
 # - Added bucket aggregation for daily reporting by category
 # - During the 30-day transition window (through 2026-06-18), the optimizer should
 #   ALSO count elevaiq.com citations toward sayfeai.com (until elevaiq.com 301s fully propagate).
+# 2026-05-19 maintenance:
+# - openai-partner-for-consultants: auto-detected target_competitor as openai.com partner intake (in 3+ result sets across two runs)
+# - colorado-ai-act-* notes: SB 24-205 effectively replaced by SB 189 signed by Gov Polis 2026-05-14, effective 2027-01-01
 canonical_domain: sayfeai.com
 transition_domains:
   - elevaiq.com  # count as legacy citations until 2026-06-18
@@ -206,11 +209,13 @@ queries:
     intent: compliance
     target_page: /compliance/colorado-ai-act
     target_competitor: https://leg.colorado.gov/bills/sb24-205
+    # 2026-05-19 note: SB 24-205 replaced by SB 189 signed by Gov Polis 2026-05-14, effective 2027-01-01. Update pillar accordingly when Claude Code builds it.
   - id: colorado-ai-act-deadline
     query: "colorado ai act june 30 2026 deadline"
     intent: compliance
     target_page: /blog/ai-compliance-colorado-eu-small-business-2026
     target_competitor: https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/colorado-postpones-implementation-of-colorado-ai-act-sb-24-205
+    # 2026-05-19 note: June 30 deadline OBSOLETE per SB 189 — the query phrasing itself is now stale. Consider replacing with "colorado SB 189 small business" in a future seed-file refresh.
   - id: eu-ai-act-small-business
     query: "eu ai act small business august 2 2026"
     intent: compliance
@@ -220,46 +225,47 @@ queries:
     query: "ai policy template small business free"
     intent: compliance
     target_page: /compliance/ai-policy-template
-    target_competitor: null
+    target_competitor: https://www.sylobeyondhr.com/free-ai-usage-policy-download/
   - id: ai-compliance-assessment
     query: "free ai compliance assessment small business"
     intent: assessment
     target_page: /compliance-assessment
-    target_competitor: null
+    target_competitor: https://trycomplianceiq.com/
   - id: ai-risk-assessment-tool
     query: "ai risk assessment tool 5 minute small business"
     intent: assessment
     target_page: /compliance-assessment
-    target_competitor: null
+    target_competitor: https://www.trustlayer.io/pages/trustlayer-risk-matrix
   - id: ai-compliance-checklist
     query: "ai compliance checklist small business 2026"
     intent: compliance
     target_page: /blog/ai-compliance-colorado-eu-small-business-2026
-    target_competitor: null
+    target_competitor: https://www.pathopt.com/blog/ai-compliance-2025-regulations-small-business-guide
 
   # --- Added 2026-05-18 — Engine 2 (partner channel) alignment ---
   - id: msp-ai-compliance-resell
     query: "MSP AI compliance services small business clients"
     intent: partner-channel
     target_page: /blog/best-chatgpt-business-partner-smb-2026
-    target_competitor: null
+    target_competitor: https://integrisit.com/blog/the-10-msp-trends-to-watch-in-2026-and-beyond/
   - id: openai-partner-for-consultants
     query: "OpenAI SMB partner program for IT consultants"
     intent: partner-channel
     target_page: /openai-smb-partner
-    target_competitor: null
+    target_competitor: https://openai.com/form/partnerintake/
+    # 2026-05-19: auto-detected target_competitor (top result across 2 runs)
   - id: chatgpt-business-cle-webinar
     query: "ChatGPT compliance CLE webinar law firms"
     intent: partner-channel
     target_page: /industries/legal
-    target_competitor: null
+    target_competitor: https://knowlearninghub.com/courses/ethical-frontier-ai-in-legal-practice-cle/
 
   # --- Added 2026-05-18 — Local / HQ signal ---
   - id: ai-consultant-houston
     query: "AI consultant Houston Texas small business"
     intent: local
     target_page: /about
-    target_competitor: null
+    target_competitor: https://www.goodfirms.co/artificial-intelligence/houston
   - id: ai-consultant-texas-smb
     query: "Texas small business AI consultant authorized OpenAI partner"
     intent: local
