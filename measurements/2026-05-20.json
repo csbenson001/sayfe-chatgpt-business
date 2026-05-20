@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-20",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "engines_unavailable": ["chatgpt_openai_api", "claude_anthropic_api", "google_aio_serpapi", "perplexity_api"],
+  "engines_unavailable_reason": "OPENAI_API_KEY, ANTHROPIC_API_KEY, SERPAPI_API_KEY, PERPLEXITY_API_KEY not configured in scheduled-task env",
+  "sampling": "weighted: compliance(3) + assessment(2) + partner(2) + industry(2) + comparison(1) + commercial(2) + trust(1) + local(1) = 14",
+  "results": [
+    {"query_id": "colorado-ai-act-small-business", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["stackcyber.com", "consumerfinancemonitor.com", "dglaw.com", "iapp.org", "schellman.com", "almcorp.com", "bclplaw.com"], "answer_pattern": "list", "notes": "SB 26-189 / SB 189 framing confirmed across competitor results. No SMB-tier authority pages."},
+    {"query_id": "ai-compliance-assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["trycomplianceiq.com", "prompts.ai", "fitgap.com", "pathopt.com", "peoplemanagingpeople.com", "sprinto.com", "centraleyes.com"], "answer_pattern": "list", "notes": "ComplianceIQ dominates this query — Engine 1 direct competitor. /compliance-assessment pillar still doesn't exist on sayfeai.com."},
+    {"query_id": "ai-risk-assessment-tool", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["trustlayer.io", "peoplemanagingpeople.com", "flowforma.com", "naitive.cloud", "ised-isde.canada.ca", "riskgenerator.com"], "answer_pattern": "list", "notes": "TrustLayer Risk Matrix is the 5-minute-promise leader; needs same H1 + FAQ on /compliance-assessment when built."},
+    {"query_id": "ai-policy-template-smb", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["aihr.com", "mescomputing.com", "thoropass.com", "hibob.com", "hdtech.com", "polygraf.ai", "lattice.com", "certified-nets.com"], "answer_pattern": "list", "notes": "All top results lead with downloadable template — /compliance/ai-policy-template pillar needs a one-click free download."},
+    {"query_id": "eu-ai-act-small-business", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["artificialintelligenceact.eu", "hklaw.com", "colombani.ai", "digital-strategy.ec.europa.eu", "aicomplibot.eu", "mondaq.com", "bakermckenzie.com", "digitalapplied.com", "dastra.eu", "isms.online"], "answer_pattern": "paragraph", "notes": "NEW DEVELOPMENT — Mondaq + ISMS articles surface the EU Digital Omnibus provisional deal pushing high-risk Annex III obligations from Aug 2 2026 to Dec 2 2027 (transparency obligations unchanged). Patched today across llms.txt + llms-full.txt + blog/ai-compliance-colorado-eu-small-business-2026.html."},
+    {"query_id": "msp-ai-compliance-resell", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["worksent.com", "integrisit.com", "connectwise.com", "lumenova.ai", "managedservicesjournal.com", "acs.com", "channelpronetwork.com", "guardz.com", "tacticsmarketing.com"], "answer_pattern": "list", "notes": "ConnectWise + ManagedServicesJournal + ChannelPro dominate. Sayfeai has zero MSP-channel content. Pillar gap — Engine 2 alignment requires dedicated MSP page (consider /partners/msp)."},
+    {"query_id": "openai-partner-for-consultants", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["think-technologies.com", "openai.com", "codestone.com", "directory.partnerprograms.io", "deepsense.ai", "cloudwerx", "arnnet.com.au"], "answer_pattern": "paragraph", "notes": "Think Technologies and Codestone repeat from 5/19. Cloudwerx newly surfaces via ARN. Patched openai-smb-partner.html with competitor-displacement FAQ explicitly naming Think Technologies / Codestone / Cloudwerx / Madewell."},
+    {"query_id": "chatgpt-for-healthcare", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["hipaajournal.com", "openai.com", "bastiongpt.com", "witness.ai", "hipaavault.com", "paubox.com", "givainc.com", "metrovolo.com"], "answer_pattern": "list", "notes": "HIPAAJournal + OpenAI direct dominate. Existing /blog/chatgpt-healthcare-hipaa-2026 not surfacing — needs dedicated entity-clarity strengthening + ChatGPT-for-Healthcare-vs-Business comparison table (defer to next run; not patched today)."},
+    {"query_id": "chatgpt-for-legal", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["clio.com", "spellbook.com", "rankings.io", "gc.ai", "axios.com", "growlaw.co", "lawrank.com", "decrypt.co"], "answer_pattern": "list", "notes": "GC AI page uses 'Heppner' case-name vs. our 'Rakoff' framing — patched /industries/legal.html to include 'Heppner / Rakoff' alias in body + FAQPage JSON-LD."},
+    {"query_id": "chatgpt-business-vs-plus", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["tactiq.io", "intuitionlabs.ai", "glbgpt.com", "aibusinessweekly.net", "chatgpt.com", "datastudios.org", "aiproductivitycoach.com"], "answer_pattern": "list", "notes": "tactiq remains the top citation. Yesterday's content engine flagged adding Workspace Agents differentiator FAQ to this page — deferred to next run (not in scope of today's diagnoses)."},
+    {"query_id": "chatgpt-business-pricing", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["chatgpt.com", "openai.com", "fritz.ai", "cloudzero.com", "suprmind.ai", "cloudeagle.ai", "tldv.io", "techjacksolutions.com", "gradually.ai"], "answer_pattern": "list", "notes": "OpenAI direct + ChatGPT.com dominate. SMB-partner-priced angle not surfacing — /pricing competing on volume of facts, not entity authority."},
+    {"query_id": "openai-smb-partner", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["think-technologies.com", "openai.com", "cnbc.com", "foundationinc.co", "venturebeat.com", "technologychecker.io"], "answer_pattern": "paragraph", "notes": "Think Technologies wins again. PwC (CNBC / VentureBeat) crowds the reseller term. Patch today: competitor-displacement FAQ on /openai-smb-partner.html naming Think Technologies / Codestone / Cloudwerx / Madewell — first time we have explicit comparative authority on this page."},
+    {"query_id": "ai-consultant-houston", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["penncomp.com", "ademero.com", "opinosis-analytics.com", "aiguyjosh.com", "chrisnwest.com", "iaaic.org", "elevatetechnology.com", "designrush.com", "appmaisters.com"], "answer_pattern": "list", "notes": "Strong local competitive set — Josh The AI Guy, Chris N. Cheetham-West, PennComp, Ademero. /about LocalBusiness JSON-LD shipped 5/19 but takes time to be picked up. No new patches today — wait one cycle to measure post-LocalBusiness lift before further /about edits."},
+    {"query_id": "chatgpt-hipaa-compliant", "engine": "websearch_proxy", "cited_us": false, "citation_type": "none", "competitors_cited": ["hipaajournal.com", "bastiongpt.com", "openai.com", "hipaavault.com", "supportgpt.app", "neowin.net", "compliantchatgpt.com", "pymnts.com"], "answer_pattern": "paragraph", "notes": "HIPAAJournal dominates trust queries. Our /blog/chatgpt-healthcare-hipaa-2026 needs entity-clarity + comparison table in a future run."}
+  ],
+  "summary": {
+    "total_queries": 14,
+    "cited_us_count": 0,
+    "cited_us_percent": 0.0,
+    "buckets_sampled": {
+      "compliance": {"count": 3, "cited": 0},
+      "assessment": {"count": 2, "cited": 0},
+      "partner_channel": {"count": 2, "cited": 0},
+      "industry": {"count": 2, "cited": 0},
+      "comparison": {"count": 1, "cited": 0},
+      "commercial": {"count": 2, "cited": 0},
+      "trust": {"count": 1, "cited": 0},
+      "local": {"count": 1, "cited": 0}
+    }
+  },
+  "new_competitors_auto_detected": [],
+  "new_competitors_auto_detected_note": "Cloudwerx + Codestone + Think Technologies appeared in 2 queries each in this run; none crossed the 3+ threshold. Seed file target_competitor fields for openai-partner-for-consultants and openai-smb-partner already set to Think Technologies / openai-smb / openai partnerintake from prior runs.",
+  "pillar_handoffs_open_queue": [
+    "colorado-ai-act-small-business -> /compliance/colorado-ai-act (SB 189 framing)",
+    "eu-ai-act-small-business -> /compliance/eu-ai-act (with Digital Omnibus provisional deal)",
+    "ai-policy-template-smb -> /compliance/ai-policy-template",
+    "ai-compliance-assessment -> /compliance-assessment (highest priority — direct competitor trycomplianceiq.com wins)",
+    "ai-risk-assessment-tool -> /compliance-assessment"
+  ],
+  "pillar_handoffs_new_today": [],
+  "patches_applied_today": [
+    {"file": "public/llms.txt", "type": "fact_refresh", "diagnosis": "EU AI Act content lacked Digital Omnibus deal; Rakoff ruling missed Heppner case-name alias", "rationale": "Surfaced via Mondaq/ISMS competitor pages (Digital Omnibus) and GC AI page (Heppner naming)"},
+    {"file": "public/llms-full.txt", "type": "fact_refresh", "diagnosis": "llms-full was 3 days stale vs llms.txt — missing all May 2026 regulatory facts and the Houston/Brazoria HQ block", "rationale": "Added Recent Legal/Regulatory Facts section, fixed stale HIPAA Q&A (ChatGPT for Healthcare is BAA-eligible since Jan 2026), added 4 new Q&As covering SB 189, Digital Omnibus, Heppner, Houston HQ. Also added competitor-displacement Q&A explicitly naming Think Technologies / Codestone / Cloudwerx / Madewell."},
+    {"file": "public/blog/ai-compliance-colorado-eu-small-business-2026.html", "type": "schema_+_faq_+_dateModified", "diagnosis": "EU AI Act section needed Digital Omnibus update; FAQ lacked the deal explicitly", "rationale": "Expanded update banner with 3rd paragraph on Digital Omnibus; updated comparison table EU column to show Aug 2 2026 transparency + Dec 2 2027 high-risk delay; added new FAQ entry in HTML body + FAQPage JSON-LD; bumped dateModified to 2026-05-20"},
+    {"file": "public/industries/legal.html", "type": "entity_alias_+_dateModified", "diagnosis": "GC AI competitor page uses 'Heppner ruling' case-name while we only used 'Rakoff' — query miss on case-name searches", "rationale": "Added 'Heppner / Rakoff' alias to FAQ question header, Q&A text in both HTML body and FAQPage JSON-LD, and to Article/Service schemas. Bumped dateModified to 2026-05-20."},
+    {"file": "public/openai-smb-partner.html", "type": "faq_+_entity_clarity_+_dateModified", "diagnosis": "WebSearch surfaced Think Technologies / Codestone / Cloudwerx / Madewell repeatedly for partner queries; our page had no comparative content", "rationale": "Added explicit competitor-displacement FAQ entry to FAQPage JSON-LD naming all 4 competitors. Cleaned up 2 pre-existing 'Vandelay Consulting Inc.' body-prose references (per v2 rule, Vandelay belongs in JSON-LD + /privacy /terms only). Bumped industry coverage from 15 to 16 (energy specialty). Bumped dateModified to 2026-05-20."}
+  ]
+}
