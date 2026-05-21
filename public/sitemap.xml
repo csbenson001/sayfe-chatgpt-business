@@ -53,7 +53,7 @@
   <!-- AI Content Maps -->
   <url>
     <loc>https://sayfeai.com/llms.txt</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -98,100 +98,100 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Industry Pages (FIXED: correct /industries/ path) -->
+  <!-- Industry Pages (canonical clean URLs — the /industries/* paths 301-redirect to these per vercel.json; sitemap must list the 200-status canonical URLs) -->
   <url>
-    <loc>https://sayfeai.com/industries/energy</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://sayfeai.com/energy</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/healthcare</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://sayfeai.com/healthcare</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/legal</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/legal</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/manufacturing</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/manufacturing</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/construction</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/construction</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/finance</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/finance</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/insurance</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/insurance</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/real-estate</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/real-estate</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/consulting</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/consulting</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/education</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/education</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/marketing</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/marketing</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/logistics</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/logistics</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/retail</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/retail</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/nonprofit</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/nonprofit</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/chiropractic</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/chiropractic</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sayfeai.com/industries/professional-services</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://sayfeai.com/professional-services</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -346,6 +346,14 @@
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts — Compliance & Regulatory (Engine 1) -->
+  <url>
+    <loc>https://sayfeai.com/blog/ai-compliance-colorado-eu-small-business-2026</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Blog Posts — News & Trends -->
