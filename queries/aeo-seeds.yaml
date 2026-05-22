@@ -220,7 +220,8 @@ queries:
     query: "eu ai act small business august 2 2026"
     intent: compliance
     target_page: /compliance/eu-ai-act
-    target_competitor: null
+    target_competitor: https://www.digitalapplied.com/blog/eu-ai-act-2026-compliance-european-business-guide
+    # 2026-05-22: auto-detected target_competitor (digitalapplied.com appeared in 3+ citations across compliance queries this run)
   - id: ai-policy-template-smb
     query: "ai policy template small business free"
     intent: compliance
@@ -241,6 +242,13 @@ queries:
     intent: compliance
     target_page: /blog/ai-compliance-colorado-eu-small-business-2026
     target_competitor: https://www.pathopt.com/blog/ai-compliance-2025-regulations-small-business-guide
+
+  # --- Added 2026-05-22 — official Colorado bill-number / ADMT terminology tracking ---
+  - id: colorado-sb-26-189-admt
+    query: "colorado SB 26-189 ADMT small business compliance"
+    intent: compliance
+    target_page: /blog/ai-compliance-colorado-eu-small-business-2026
+    target_competitor: https://www.consumerfinancemonitor.com/2026/05/12/colorado-rewrites-its-landmark-ai-law-unpacking-sb-26-189-and-what-it-means-for-businesses/
 
   # --- Added 2026-05-18 — Engine 2 (partner channel) alignment ---
   - id: msp-ai-compliance-resell
@@ -280,6 +288,7 @@ buckets:
     - eu-ai-act-small-business
     - ai-policy-template-smb
     - ai-compliance-checklist
+    - colorado-sb-26-189-admt
   assessment:
     - ai-compliance-assessment
     - ai-risk-assessment-tool
