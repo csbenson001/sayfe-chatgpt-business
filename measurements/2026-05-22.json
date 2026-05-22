@@ -1,0 +1,247 @@
+{
+  "date": "2026-05-22",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [
+    "elevaiq.com"
+  ],
+  "transition_cutoff": "2026-06-18",
+  "engines_used": [
+    "websearch_proxy"
+  ],
+  "engines_unavailable": {
+    "chatgpt": "OPENAI_API_KEY missing",
+    "claude": "ANTHROPIC_API_KEY missing",
+    "google_aio": "SERPAPI_API_KEY missing; Claude-in-Chrome MCP not available in unattended 3:30 AM run",
+    "perplexity": "PERPLEXITY_API_KEY missing"
+  },
+  "measurement_caveat": "No answer-engine API keys present in scheduled-task env. WebSearch tool used as the sanctioned Google-AIO fallback (proxy). Directional only - reflects organic web index, not generative-engine citation. Domain is 4 days post-rebrand to sayfeai.com (legacy elevaiq.com), so near-zero indexation is expected.",
+  "sample_size": 14,
+  "sampling": "Weighted toward compliance+assessment+partner buckets (Engine 1+2 priority) per v2 rule, plus local/comparison/commercial coverage.",
+  "cited_us_total": 0,
+  "results": [
+    {
+      "query_id": "colorado-ai-act-small-business",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "skadden.com",
+        "consumerfinancemonitor.com",
+        "kpmg.com",
+        "iapp.org",
+        "leg.colorado.gov"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "Answer engine itself used 'SB 26-189' + 'ADMT' framing; consumerfinancemonitor.com ranks specifically on the official bill number."
+    },
+    {
+      "query_id": "colorado-ai-act-deadline",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "hunton.com",
+        "alstonprivacy.com",
+        "clarkhill.com",
+        "bakermckenzie.com",
+        "ailawsbystate.com"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "QUERY STALE: 'June 30' deadline obsolete under SB 26-189. Recommend retiring/replacing phrasing - superseded by new colorado-sb-26-189-admt seed."
+    },
+    {
+      "query_id": "eu-ai-act-small-business",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "hklaw.com",
+        "artificialintelligenceact.eu",
+        "colombani.ai",
+        "fisherphillips.com",
+        "digitalapplied.com"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "Digital Omnibus: high-risk Annex III -> Dec 2 2027 (some -> Aug 2 2028); transparency Art.50 stays Aug 2 2026. Our content consistent. target_competitor set to digitalapplied (was null)."
+    },
+    {
+      "query_id": "ai-policy-template-smb",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "aihr.com",
+        "thoropass.com",
+        "hibob.com",
+        "wordstream.com",
+        "polygraf.ai"
+      ],
+      "answer_pattern": "list",
+      "notes": "All winners offer a one-click downloadable template. Pillar /compliance/ai-policy-template MUST have frictionless download (handoff)."
+    },
+    {
+      "query_id": "ai-compliance-checklist",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "pathopt.com",
+        "digitalapplied.com",
+        "myaifrontdesk.com",
+        "wipfli.com",
+        "korixinc.com"
+      ],
+      "answer_pattern": "list",
+      "notes": "pathopt.com still #1 (seed competitor). digitalapplied.com appeared again (recurring compliance competitor)."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "prompts.ai",
+        "pathopt.com",
+        "fitgap.com",
+        "sprinto.com",
+        "centraleyes.com"
+      ],
+      "answer_pattern": "list",
+      "notes": "trycomplianceiq.com NOT in top 10 today - tools-roundup pattern dominates. Engine 1 conversion page /compliance-assessment still does not exist (handoff)."
+    },
+    {
+      "query_id": "ai-risk-assessment-tool",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "trustlayer.io",
+        "peoplemanagingpeople.com",
+        "flowforma.com",
+        "riskgenerator.com",
+        "qualysec.com"
+      ],
+      "answer_pattern": "list",
+      "notes": "TrustLayer Risk Matrix owns 'discover risks in minutes, no sign-up'. Build that exact promise into /compliance-assessment H1+FAQ (handoff)."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "worksent.com",
+        "connectwise.com",
+        "meetgradient.com",
+        "managedservicesjournal.com",
+        "channelpronetwork.com"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "ConnectWise/Worksent/ManagedServicesJournal/ChannelPro own MSP-compliance. Zero MSP content on sayfeai.com - Engine 2 gap; propose /partners/msp pillar."
+    },
+    {
+      "query_id": "openai-partner-for-consultants",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "think-technologies.com",
+        "openai.com",
+        "codestone.com",
+        "deepsense.ai",
+        "tribe.ai"
+      ],
+      "answer_pattern": "list",
+      "notes": "think-technologies.com + openai.com/form/partnerintake dominate (both confirmed competitors)."
+    },
+    {
+      "query_id": "chatgpt-business-cle-webinar",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "mylawcle.com",
+        "knowlearninghub.com",
+        "clio.com",
+        "justice.org",
+        "smokeball.com"
+      ],
+      "answer_pattern": "list",
+      "notes": "myLawCLE/Knowledge Group/Clio own legal-AI CLE. No sayfeai CLE/webinar asset exists - Engine 2 gap."
+    },
+    {
+      "query_id": "ai-consultant-houston",
+      "bucket": "local",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "penncomp.com",
+        "ademero.com",
+        "opinosis-analytics.com",
+        "goodfirms.co",
+        "trenegy.com"
+      ],
+      "answer_pattern": "list",
+      "notes": "Houston local market saturated; goodfirms aggregator + multiple local firms. /about + /openai-smb carry Houston LocalBusiness schema but not yet indexed (4 days post-rebrand)."
+    },
+    {
+      "query_id": "ai-consultant-texas-smb",
+      "bucket": "local",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "arcitech.ai",
+        "txbiz.org",
+        "texasaiconsulting.com",
+        "kategos.ai",
+        "clutch.co"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "Answer engine explicitly noted NO Texas consultant claims 'authorized OpenAI partner' certification - open positioning gap sayfeai can own once indexed."
+    },
+    {
+      "query_id": "openai-smb-partner",
+      "bucket": "commercial",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "think-technologies.com",
+        "openai.com",
+        "technologychecker.io",
+        "cnbc.com",
+        "venturebeat.com"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "think-technologies #1; PwC=enterprise reseller only. sayfeai absent. /openai-smb-partner is well-built but not indexed yet."
+    },
+    {
+      "query_id": "chatgpt-business-vs-plus",
+      "bucket": "comparison",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "tactiq.io",
+        "intuitionlabs.ai",
+        "aibusinessweekly.net",
+        "chatgpt.com",
+        "madewell.ai"
+      ],
+      "answer_pattern": "list",
+      "notes": "tactiq.io #1 (seed competitor). madewell.ai (competing OpenAI SMB partner) ranks - we have /compare/sayfeai-vs-madewell. Pricing in results matches our $25/$20 facts."
+    }
+  ]
+}
