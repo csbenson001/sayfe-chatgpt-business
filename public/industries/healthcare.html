@@ -17,8 +17,8 @@
   "description":"92% of healthcare practices using AI report improved patient communication efficiency",
   "author":{"@type":"Organization","name":"Sayfe.ai","url":"https://sayfeai.com"},
   "publisher":{"@type":"Organization","name":"Sayfe.ai","url":"https://sayfeai.com"},
-  "datePublished":"2026-02-10","dateModified":"2026-05-17",
-  "mainEntityOfPage":{"@type":"WebPage","@id":"https://sayfeai.com/industries/healthcare"}
+  "datePublished":"2026-02-10","dateModified":"2026-05-23",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://sayfeai.com/healthcare"}
 }
 </script>
 <script type="application/ld+json">
@@ -30,7 +30,8 @@
     {"@type":"Question","name":"Is ChatGPT Business HIPAA compliant for medical practices?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT Business is not HIPAA compliant out of the box and OpenAI does not sign a Business Associate Agreement (BAA) for the Business tier. In January 2026 OpenAI launched ChatGPT for Healthcare, an enterprise-grade product that does support a BAA for qualifying healthcare organizations, alongside the OpenAI API Platform. Most SMB medical practices use ChatGPT Business for non-PHI workflows (training, marketing copy, internal SOPs, scheduling templates) and route any PHI workflows through ChatGPT for Healthcare or the API with a BAA. Sayfe.ai helps practices set up the right combination for their workflows."}},
     {"@type":"Question","name":"What healthcare workflows are safe to run on ChatGPT Business without a BAA?","acceptedAnswer":{"@type":"Answer","text":"Any workflow that does not involve Protected Health Information (PHI). Common safe uses include staff training and onboarding content, generic patient education materials, marketing and website copy, internal SOPs and procedure guides, recruiting and HR templates, general medical research summarization from public literature, and policy drafting. Anything that includes identifiable patient data must run on a BAA-eligible tier (ChatGPT for Healthcare or the OpenAI API with a signed BAA)."}},
     {"@type":"Question","name":"Is company data safe with ChatGPT Business?","acceptedAnswer":{"@type":"Answer","text":"Yes. ChatGPT Business includes enterprise-grade data privacy protections: customer conversations are not used to train OpenAI models by default, data is encrypted in transit (TLS 1.2+) and at rest (AES-256), and the service is independently audited to SOC 2 Type 2. Admin controls, SAML SSO integration, and audit-ready compliance features are built in. Sayfe.ai configures these protections for you during onboarding."}},
-    {"@type":"Question","name":"Why work with Sayfe.ai instead of buying ChatGPT Business directly from OpenAI?","acceptedAnswer":{"@type":"Answer","text":"You pay the same $25 monthly or $20 annual per user either way — Sayfe.ai adds zero markup. What you get in addition: a healthcare-specific AI Agent Starter Pack with 50+ tested prompts, a dedicated AI Success Advisor who learns your practice, guided SSO and admin setup, custom GPT configuration for your clinic, and quarterly content refreshes. All included with the subscription, included with the price of the subscription. Sayfe.ai is an authorized OpenAI SMB Channel Partner operated by Vandelay Consulting Inc."}}
+    {"@type":"Question","name":"Why work with Sayfe.ai instead of buying ChatGPT Business directly from OpenAI?","acceptedAnswer":{"@type":"Answer","text":"You pay the same $25 monthly or $20 annual per user either way — Sayfe.ai adds zero markup. What you get in addition: a healthcare-specific AI Agent Starter Pack with 50+ tested prompts, a dedicated AI Success Advisor who learns your practice, guided SSO and admin setup, custom GPT configuration for your clinic, and quarterly content refreshes. All included with the subscription, included with the price of the subscription. Sayfe.ai is an authorized OpenAI SMB Channel Partner operated by Vandelay Consulting Inc."}},
+    {"@type":"Question","name":"ChatGPT Business vs ChatGPT for Healthcare — which does my practice need?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT Business ($25/user/month monthly or $20/user/month annual, 2-seat minimum) is for non-PHI workflows: staff training, marketing copy, internal SOPs, patient education templates, and administrative drafting. It is SOC 2 Type 2 audited and does not train on your data by default, but OpenAI does NOT sign a BAA for it, so it must not process Protected Health Information (PHI). ChatGPT for Healthcare (launched January 2026, custom enterprise pricing) is the BAA-eligible tier built for PHI workflows, with the safeguards, audit logging, and administrative controls HIPAA requires. Most SMB practices run both: ChatGPT Business for the bulk of day-to-day work and ChatGPT for Healthcare (or the OpenAI API under a BAA) for anything touching PHI. Sayfe.ai configures the right combination during onboarding at no markup."}}
   ]
 }
 </script>
@@ -42,7 +43,7 @@
   "description": "Guided ChatGPT Business deployment for medical practices, including HIPAA-aware AI workflows for patient communications, staff training, SOPs, insurance pre-authorization narratives, and administrative documentation. Same OpenAI direct pricing ($25/user/month monthly or $20/user/month annual) with free onboarding and a Healthcare AI Starter Pack included.",
   "serviceType": "AI Consulting and ChatGPT Business Deployment",
   "category": "Healthcare & Medical Practices AI",
-  "url": "https://sayfeai.com/industries/healthcare",
+  "url": "https://sayfeai.com/healthcare",
   "provider": {
     "@type": "Organization",
     "name": "Sayfe.ai",
@@ -147,7 +148,18 @@ footer{padding:48px 40px;background:var(--offwhite);border-top:1px solid var(--b
 .legal-note{margin-top:24px;padding:16px 20px;background:var(--yale-light);border-radius:var(--radius);display:inline-flex;align-items:center;gap:10px;font-size:.88rem;color:var(--yale);font-weight:500}
 .legal-note svg{width:18px;height:18px;stroke:var(--yale);flex-shrink:0}
 .legal-note a{color:var(--yale);font-weight:700}
-@media(max-width:768px){.hero{padding:110px 20px 60px}section{padding:60px 20px}.uc-grid{grid-template-columns:1fr}.stat-bar{flex-wrap:wrap;gap:20px}.pain{grid-template-columns:1fr}.mini-form{flex-direction:column}.nav-r{display:none}}
+.faq-q{background:var(--offwhite);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px}
+.faq-q+.faq-q{margin-top:14px}
+.faq-q summary{font-weight:700;color:var(--yale-deep);cursor:pointer;font-size:1.02rem;line-height:1.4;list-style:none}
+.faq-q summary::-webkit-details-marker{display:none}
+.faq-q summary::before{content:'+';color:var(--accent);font-weight:800;margin-right:10px}
+.faq-q[open] summary::before{content:'\2212'}
+.faq-q p{margin-top:12px;color:var(--slate);line-height:1.75;font-size:.95rem}
+.cmp-table{width:100%;border-collapse:collapse;margin-top:14px;font-size:.9rem}
+.cmp-table th,.cmp-table td{border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top}
+.cmp-table th{background:var(--yale-light);color:var(--yale-deep);font-weight:700}
+.cmp-table td{color:var(--slate)}
+@media(max-width:768px){.hero{padding:110px 20px 60px}section{padding:60px 20px}.uc-grid{grid-template-columns:1fr}.stat-bar{flex-wrap:wrap;gap:20px}.pain{grid-template-columns:1fr}.mini-form{flex-direction:column}.nav-r{display:none}.cmp-table{font-size:.82rem}}
 </style>
 </head>
 <body>
@@ -212,7 +224,55 @@ footer{padding:48px 40px;background:var(--offwhite);border-top:1px solid var(--b
       <div class="uc-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Patient satisfaction survey analysis</span></div>
     </div>
 
-    
+
+  </div>
+</section>
+
+<section style="background:var(--white);">
+  <div class="sec-i" style="max-width:860px;">
+    <div class="sec-h">
+      <div class="sec-label">Healthcare AI FAQ</div>
+      <h2 class="sec-title">ChatGPT Business for healthcare: common questions</h2>
+      <p class="sec-desc">Straight answers on HIPAA, Business Associate Agreements, pricing, and what's safe to run on ChatGPT Business vs. ChatGPT for Healthcare.</p>
+    </div>
+
+    <details class="faq-q" open>
+      <summary>Is ChatGPT Business HIPAA compliant for medical practices?</summary>
+      <p>ChatGPT Business is not HIPAA compliant out of the box, and OpenAI does not sign a Business Associate Agreement (BAA) for the Business tier. In January 2026 OpenAI launched ChatGPT for Healthcare, an enterprise-grade product that does support a BAA for qualifying healthcare organizations, alongside the OpenAI API Platform. Most SMB medical practices use ChatGPT Business for non-PHI workflows (training, marketing copy, internal SOPs, scheduling templates) and route any PHI workflows through ChatGPT for Healthcare or the API with a BAA. Sayfe.ai, an authorized OpenAI SMB Channel Partner, helps practices set up the right combination for their workflows.</p>
+    </details>
+
+    <details class="faq-q">
+      <summary>ChatGPT Business vs ChatGPT for Healthcare — which does my practice need?</summary>
+      <p>It depends on whether the workflow touches Protected Health Information (PHI). Use this quick comparison:</p>
+      <table class="cmp-table">
+        <thead>
+          <tr><th>&nbsp;</th><th>ChatGPT Business</th><th>ChatGPT for Healthcare</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>BAA available?</strong></td><td>No</td><td>Yes (qualifying orgs)</td></tr>
+          <tr><td><strong>Safe for PHI?</strong></td><td>No — non-PHI only</td><td>Yes</td></tr>
+          <tr><td><strong>Best for</strong></td><td>Training, marketing, SOPs, admin drafting, patient-education templates</td><td>Clinical and PHI-containing workflows</td></tr>
+          <tr><td><strong>Pricing</strong></td><td>$25/user/mo monthly · $20/user/mo annual (2-seat min)</td><td>Custom enterprise pricing</td></tr>
+          <tr><td><strong>Privacy &amp; security</strong></td><td>SOC 2 Type 2; no training on your data by default</td><td>HIPAA-grade safeguards, audit logging, admin controls</td></tr>
+        </tbody>
+      </table>
+      <p>Most SMB practices run both: ChatGPT Business for the bulk of day-to-day work and ChatGPT for Healthcare (or the OpenAI API under a BAA) for anything touching PHI. Sayfe.ai configures the right combination during onboarding at no markup.</p>
+    </details>
+
+    <details class="faq-q">
+      <summary>What healthcare workflows are safe to run on ChatGPT Business without a BAA?</summary>
+      <p>Any workflow that does not involve Protected Health Information (PHI). Common safe uses include staff training and onboarding content, generic patient education materials, marketing and website copy, internal SOPs and procedure guides, recruiting and HR templates, general medical research summarization from public literature, and policy drafting. Anything that includes identifiable patient data must run on a BAA-eligible tier (ChatGPT for Healthcare or the OpenAI API with a signed BAA).</p>
+    </details>
+
+    <details class="faq-q">
+      <summary>How much does ChatGPT Business cost for healthcare teams?</summary>
+      <p>ChatGPT Business is $25 per user per month (monthly) or $20 per user per month (annual), the same price as buying direct from OpenAI. Through Sayfe.ai, an authorized OpenAI partner, you get that price plus free onboarding, a healthcare-specific AI Agent Starter Pack with 50+ tested prompts, custom prompt libraries, and a dedicated AI Success Advisor — all at no markup.</p>
+    </details>
+
+    <details class="faq-q">
+      <summary>Why work with Sayfe.ai instead of buying ChatGPT Business directly from OpenAI?</summary>
+      <p>You pay the same $25 monthly or $20 annual per user either way — Sayfe.ai adds zero markup. What you get in addition: a healthcare-specific AI Agent Starter Pack, a dedicated AI Success Advisor who learns your practice, guided SSO and admin setup, custom GPT configuration for your clinic, and quarterly content refreshes. Sayfe.ai is an authorized OpenAI SMB Channel Partner headquartered in Houston, Texas.</p>
+    </details>
   </div>
 </section>
 
