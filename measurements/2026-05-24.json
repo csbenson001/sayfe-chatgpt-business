@@ -1,0 +1,201 @@
+{
+  "date": "2026-05-24",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [
+    "elevaiq.com"
+  ],
+  "engines_used": [
+    "google_aio_websearch_proxy"
+  ],
+  "engines_unavailable": [
+    "chatgpt_openai_api (no OPENAI_API_KEY)",
+    "claude_anthropic_api (no ANTHROPIC_API_KEY)",
+    "perplexity (no PERPLEXITY_API_KEY)",
+    "serpapi (no SERPAPI_API_KEY)"
+  ],
+  "measurement_caveat": "WebSearch proxy is DIRECTIONAL ONLY; it cannot observe true ChatGPT/Claude/Perplexity citations. Domain is 6 days post-rebrand (sayfeai.com). 0/N is expected and not a regression signal.",
+  "searches_run": 14,
+  "query_ids_recorded": 15,
+  "sample_note": "14 WebSearch/Google-AIO-proxy searches run; the single Colorado search covers two seed IDs (colorado-ai-act-small-business + colorado-sb-26-189-admt), so 15 query_id result records.",
+  "sample_size": 15,
+  "cited_us_canonical": 0,
+  "cited_us_legacy": 0,
+  "buckets_sampled": {
+    "compliance": [
+      "colorado-ai-act-small-business",
+      "colorado-sb-26-189-admt",
+      "eu-ai-act-small-business",
+      "ai-policy-template-smb",
+      "ai-compliance-checklist"
+    ],
+    "assessment": [
+      "ai-compliance-assessment",
+      "ai-risk-assessment-tool"
+    ],
+    "partner_channel": [
+      "msp-ai-compliance-resell",
+      "openai-partner-for-consultants",
+      "chatgpt-business-cle-webinar"
+    ],
+    "comparison": [
+      "chatgpt-business-vs-plus",
+      "chatgpt-business-vs-enterprise"
+    ],
+    "commercial": [
+      "openai-smb-partner"
+    ],
+    "trust": [
+      "chatgpt-hipaa-compliant"
+    ],
+    "local": [
+      "ai-consultant-houston"
+    ]
+  },
+  "pages_patched": [
+    "public/blog/chatgpt-healthcare-hipaa-2026.html"
+  ],
+  "pillar_handoffs_reconfirmed": [
+    "/compliance-assessment",
+    "/compliance/colorado-ai-act",
+    "/compliance/eu-ai-act",
+    "/compliance/ai-policy-template"
+  ],
+  "new_competitors_auto_detected": [],
+  "results": [
+    {
+      "query_id": "colorado-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["consumerfinancemonitor.com", "buchalter.com", "nixonpeabody.com", "afslaw.com", "cmitsolutions.com"],
+      "answer_pattern": "paragraph",
+      "notes": "SB 26-189/ADMT dominates; law-firm + MSP advisories own it. 40-or-fewer-employee deployer carve-out; AG won't enforce until rulemaking concludes."
+    },
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["consumerfinancemonitor.com", "cyberadviserblog.com", "buchalter.com", "ecreekit.com", "lexology.com"],
+      "answer_pattern": "paragraph",
+      "notes": "Official bill-number query; same legal-advisory set. Our Colorado blog already carries SB 26-189/ADMT aliases (shipped 2026-05-22) but isn't indexed/cited yet."
+    },
+    {
+      "query_id": "eu-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["hklaw.com", "lw.com", "digitalapplied.com", "fisherphillips.com", "artificialintelligenceact.eu"],
+      "answer_pattern": "paragraph",
+      "notes": "Aug 2 2026 transparency deadline; high-risk Annex III pushed to Dec 2 2027 via Digital Omnibus political agreement (May 7 2026). SME simplified framework extended to <=750 employees / EUR150M."
+    },
+    {
+      "query_id": "ai-policy-template-smb",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["polygraf.ai", "thoropass.com", "aihr.com", "hibob.com", "lattice.com", "certified-nets.com", "purplesec.us"],
+      "answer_pattern": "list",
+      "notes": "Every winner ranks on a ONE-CLICK downloadable template. Pillar handoff: /compliance/ai-policy-template MUST ship a frictionless download."
+    },
+    {
+      "query_id": "ai-compliance-checklist",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["pathopt.com", "digitalapplied.com", "wipfli.com", "omm.com", "cyberunit.com", "ost.agency"],
+      "answer_pattern": "list",
+      "notes": "Plain-English state-by-state checklist format wins; bias-audit cost ($5k-$50k) + NYC LL144 + Colorado + FCC consent are the cited facts."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["prompts.ai", "pathopt.com", "centraleyes.com", "sprinto.com", "fitgap.com", "peoplemanagingpeople.com"],
+      "answer_pattern": "list",
+      "notes": "No single branded 'free assessment' tool owns it; trycomplianceiq.com NOT surfaced this run. Open lane for /compliance-assessment once built."
+    },
+    {
+      "query_id": "ai-risk-assessment-tool",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["trustlayer.io", "mymap.ai", "logicballs.com", "chatdiagram.com"],
+      "answer_pattern": "list",
+      "notes": "'Free, no signup, results in seconds/minutes' promise owned by TrustLayer Risk Matrix + Logicballs. Build that exact promise into /compliance-assessment H1+FAQ."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["integrisit.com", "channelinsider.com", "meetgradient.com", "managedservicesjournal.com", "worksent.com"],
+      "answer_pattern": "paragraph",
+      "notes": "Engine 2. 'Compliance/AI-governance as high-margin MSP service' framing. Sayfeai has zero MSP-reseller content - strategy proposal, not a fabricable page edit."
+    },
+    {
+      "query_id": "openai-partner-for-consultants",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["think-technologies.com", "openai.com/form/partnerintake", "prnewswire.com (SearchKings)"],
+      "answer_pattern": "paragraph",
+      "notes": "OpenAI partner intake + Think Technologies + SearchKings own it. target_competitor already set to openai.com/form/partnerintake."
+    },
+    {
+      "query_id": "openai-smb-partner",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["think-technologies.com", "openai.com/business", "prnewswire.com (SearchKings)", "cnbc.com (PwC)"],
+      "answer_pattern": "paragraph",
+      "notes": "Commercial bucket. Think Technologies ('Official OpenAI Partner for SMB') is the entity to displace on /about + /openai-smb-partner."
+    },
+    {
+      "query_id": "chatgpt-business-vs-plus",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["tactiq.io", "intuitionlabs.ai", "aibusinessweekly.net", "madewell.ai", "datastudios.org"],
+      "answer_pattern": "table",
+      "notes": "Comparison-table pages win. Data-privacy (Plus trains by default, no admin enforcement) is THE cited differentiator. Pricing consensus $25 monthly / $20 annual."
+    },
+    {
+      "query_id": "chatgpt-business-vs-enterprise",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["intuitionlabs.ai", "aibusinessweekly.net", "hungyichen.com", "aitoolsage.com", "help.openai.com"],
+      "answer_pattern": "table",
+      "notes": "Business 2-150 seats, SOC 2 Type II, 32K context, 100-msg limit vs Enterprise 150+, unlimited, 128K, API credits. Table format."
+    },
+    {
+      "query_id": "chatgpt-hipaa-compliant",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["hipaajournal.com", "openai.com (openai-for-healthcare)", "bastiongpt.com", "supportgpt.app", "compliantchatgpt.com", "hipaavault.com", "neowin.net"],
+      "answer_pattern": "paragraph/FAQ",
+      "notes": "PATCHED THIS RUN. Consensus: standard ChatGPT NOT HIPAA-compliant; ChatGPT for Healthcare NOT compliant out-of-the-box, enables compliant use only with BAA+config+training. Our page over-claimed 'fully HIPAA-compliant' -> corrected."
+    },
+    {
+      "query_id": "chatgpt-business-cle-webinar",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["knowlearninghub.com", "clio.com", "mylawcle.com", "jdsupra.com", "gc.ai"],
+      "answer_pattern": "list",
+      "notes": "Engine 2. Accredited CLE providers own it. Sayfeai has no accredited CLE offering - strategy proposal, not a fabricable page edit."
+    },
+    {
+      "query_id": "ai-consultant-houston",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["zfort.com", "designrush.com", "goodfirms.co", "opinosis-analytics.com", "goddigitalmarketing.com"],
+      "answer_pattern": "list",
+      "notes": "Local. Directory/agency listings + Houston AI consultancies dominate. /about LocalBusiness JSON-LD (added 2026-05-19) not yet indexed/cited."
+    }
+  ]
+}
