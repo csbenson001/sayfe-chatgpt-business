@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Microsoft Pulled Free AI From Office — ChatGPT Just Walked In Through PowerPoint | Sayfe.ai</title>
+  <meta name="description" content="On April 15, 2026, Microsoft removed free Copilot Chat from Word, Excel, and PowerPoint. Weeks later ChatGPT landed inside PowerPoint, Excel, and Google Sheets — on every paid tier and free for ChatGPT Business through June 2. Here's the honest read for small businesses.">
+  <meta name="keywords" content="ChatGPT in Office, ChatGPT vs Microsoft Copilot, ChatGPT PowerPoint, ChatGPT Excel, Microsoft Copilot paywall 2026, Copilot alternative, ChatGPT for small business, AI in Office apps">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.com/blog/chatgpt-office-apps-vs-microsoft-copilot-2026">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Microsoft Pulled Free AI From Office — ChatGPT Just Walked In Through PowerPoint">
+  <meta property="og:description" content="Microsoft is fencing AI off inside its own Office apps. OpenAI is putting ChatGPT inside those same apps — Excel, Sheets, and now PowerPoint. Here's what the 2026 Office AI fork means for your small business.">
+  <meta property="og:url" content="https://sayfeai.com/blog/chatgpt-office-apps-vs-microsoft-copilot-2026">
+  <meta property="og:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Microsoft Pulled Free AI From Office — ChatGPT Just Walked In">
+  <meta name="twitter:description" content="ChatGPT now lives inside PowerPoint, Excel, and Sheets — right as Microsoft paywalled Copilot. The honest small-business read.">
+  <meta name="twitter:image" content="https://sayfeai.com/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-05-24T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="News & Trends">
+  <meta property="article:tag" content="ChatGPT in Office">
+  <meta property="article:tag" content="Microsoft Copilot">
+  <meta property="article:tag" content="AI for Small Business">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    /* Navigation */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      background: var(--yale-blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--yale-mid);
+    }
+
+    /* Article Header */
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Article Content */
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.8rem;
+      color: var(--yale-blue);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.3rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.8;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    /* Comparison Table */
+    .comparison-table-wrapper {
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 1.25rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .comparison-table th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child {
+      border-right: none;
+    }
+
+    .comparison-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-table tbody tr:nth-child(odd) {
+      background-color: var(--yale-light);
+    }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+      width: 200px;
+    }
+
+    .checkmark {
+      color: var(--success);
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    .xmark {
+      color: #ef4444;
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+      background: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box strong {
+      color: var(--yale-blue);
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .cta-section h3 {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: var(--white);
+      color: var(--yale-blue);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* FAQs */
+    .faq-section {
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--yale-light);
+      padding: 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--yale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover {
+      background: #d5dff0;
+    }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 1.25rem;
+      display: none;
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--yale-deep);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Reading Time Badge */
+    .reading-time {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Category Badge */
+    .category-badge {
+      display: inline-block;
+      background: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 {
+        font-size: 1.75rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .comparison-table {
+        font-size: 0.85rem;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 0.75rem;
+      }
+
+      .feature-label {
+        width: auto;
+      }
+
+      .article-meta {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <h1>Microsoft Pulled Free AI From Office. ChatGPT Just Walked In Through PowerPoint.</h1>
+    <div class="article-meta">
+      <div class="meta-item">
+        <span>May 24, 2026</span>
+      </div>
+      <div class="meta-item">
+        <span>9 min read</span>
+      </div>
+      <div class="meta-item">
+        <span>Sayfe.ai</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <article class="article-container">
+    <div class="category-badge">News &amp; Trends</div>
+    <div class="reading-time">9 min read</div>
+
+    <div class="article-content">
+      <p>Two things happened inside the world's most-used productivity apps over the past five weeks, and they point in exactly opposite directions. On <strong>April 15, 2026</strong>, Microsoft switched off free Copilot Chat inside Word, Excel, PowerPoint, and OneNote — the AI side panel it had handed out to millions of Microsoft 365 business users only months earlier. Then on <strong>May 22, 2026</strong>, OpenAI dropped ChatGPT directly inside Microsoft PowerPoint, the last corner of the Office suite it hadn't yet reached, after ChatGPT for Excel and Google Sheets went generally available on May 5.</p>
+
+      <p>Read those two moves back to back and the picture is hard to miss. Microsoft is fencing AI off inside its own apps unless you pay for a full Copilot license. OpenAI is doing the opposite — putting ChatGPT inside those same apps on every paid tier, and free for ChatGPT Business customers through <strong>June 2, 2026</strong>. For the first time, the AI assistant living in your spreadsheet or your slide deck doesn't have to be Microsoft's.</p>
+
+      <p>For a small business, this isn't a tech-press curiosity. It's a real fork in the road on who you pay, how much, and what you actually get for it. Here's the honest read on what changed, how ChatGPT-in-Office actually stacks up against Copilot, and what to do before that free window closes.</p>
+
+      <!-- Section 1 -->
+      <h2>What Actually Changed: Two Moves, Opposite Directions</h2>
+
+      <p>Strip away the announcements and you're left with two concrete shifts that landed within weeks of each other.</p>
+
+      <h3>Microsoft pulled the free AI panel out of its desktop apps</h3>
+
+      <p>In September 2025, Microsoft added Copilot Chat as a free side panel inside the Office desktop apps. On April 15, 2026 — about six months later — it took most of that away. For larger organizations (roughly 2,000+ seats), the in-app Copilot Chat panel disappears entirely unless they buy full Microsoft 365 Copilot. For smaller businesses, Microsoft didn't remove it outright but downgraded it to "standard access" — reduced quality and throttled performance during busy times. Copilot Chat survives in Outlook, and a separate web version remains free, but the always-on AI helper inside Word, Excel, and PowerPoint is now effectively a paid feature. Full Microsoft 365 Copilot runs <strong>$21/user/month</strong> for businesses with 300 or fewer seats and <strong>$30/user/month</strong> at the enterprise level — on top of an existing paid Microsoft 365 license.</p>
+
+      <h3>OpenAI moved ChatGPT into the same three apps</h3>
+
+      <p>While Microsoft was narrowing access, OpenAI was widening it. ChatGPT for Excel and Google Sheets — a sidebar that builds, cleans, updates, and explains spreadsheets — reached general availability on May 5, 2026, powered by GPT-5.5 (we broke down seven concrete spreadsheet workflows in <a href="/blog/chatgpt-excel-google-sheets-small-business-2026">our ChatGPT in Excel and Sheets guide</a>). Then on May 22, OpenAI added a ChatGPT add-in inside PowerPoint, in beta, that builds entire decks from a prompt, notes, or a spreadsheet and edits existing slides without leaving the file. Crucially, the rollout reaches every major paid tier — and ChatGPT Business, Enterprise, Edu, and K-12 customers get a free preview of the spreadsheet tools through June 2, 2026 before usage starts drawing on plan credits.</p>
+
+      <div class="highlight-box">
+        <strong>The five-week timeline at a glance:</strong> April 15 — Microsoft removes or throttles free Copilot Chat in Word, Excel, PowerPoint, and OneNote. May 5 — ChatGPT for Excel and Google Sheets goes generally available on GPT-5.5. May 22 — ChatGPT lands inside PowerPoint in beta across all paid tiers. June 2 — the free ChatGPT preview ends for Business and Enterprise plans. The AI helper in your Office apps went from "free and Microsoft's" to "a choice you now have to make on purpose."
+      </div>
+
+      <!-- Section 2 -->
+      <h2>ChatGPT vs Microsoft Copilot, Inside Your Office Apps</h2>
+
+      <p>If you're going to pay for an AI assistant that lives in your documents, it helps to see exactly what each one is and isn't. Here's how ChatGPT-in-Office and Microsoft 365 Copilot compare for a small business as of May 2026.</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 26%;">Feature</th>
+              <th style="width: 37%;">ChatGPT (in Office apps)</th>
+              <th style="width: 37%;">Microsoft 365 Copilot</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">Lives inside</td>
+              <td>Excel, PowerPoint, and Google Sheets (sidebar add-in)</td>
+              <td>Word, Excel, PowerPoint, Outlook, Teams (native)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Underlying model</td>
+              <td>GPT-5.5</td>
+              <td>OpenAI models, plus Anthropic's Claude for some document agents</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Business price</td>
+              <td>$20/user/mo annual ($25 monthly), standalone</td>
+              <td>$21/user/mo (≤300 seats) or $30 enterprise — on top of a paid M365 license</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Needs a Microsoft 365 license?</td>
+              <td><span class="xmark">&#10007;</span> No</td>
+              <td><span class="checkmark">&#10003;</span> Yes</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Works in Google Workspace?</td>
+              <td><span class="checkmark">&#10003;</span> Yes (Google Sheets)</td>
+              <td><span class="xmark">&#10007;</span> No</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Free in-app option</td>
+              <td>Free ChatGPT add-in available; Business preview free through June 2</td>
+              <td>Free Copilot Chat removed or throttled in desktop apps April 15</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Grounded in all your company data</td>
+              <td>Partial — connects to Gmail, Outlook, SharePoint accounts</td>
+              <td>Deeper — native Microsoft Graph across email, files, Teams, calendar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Two patterns stand out. First, Copilot is a feature that protects a suite — you can only buy it as a layer on top of a paid Microsoft 365 seat, which is why its real cost is "M365 license plus $21 to $30." ChatGPT-in-Office is a standalone product at $20 a seat that happens to work inside Microsoft's apps and Google's. Second, the two tools are actually good at different things — and that distinction matters more than the price tag, which we'll get to.</p>
+
+      <!-- Section 3 -->
+      <h2>What ChatGPT Can Actually Do in PowerPoint, Excel, and Sheets</h2>
+
+      <p>The marketing makes both tools sound identical. They're not. Here's what ChatGPT's Office integration actually does day to day.</p>
+
+      <p><strong>In PowerPoint,</strong> you can ask ChatGPT to build a full presentation from a plain-language prompt, a page of notes, or a spreadsheet of numbers — then have it restructure the story, rewrite slides, or insert new ones without starting over. Its more interesting trick is critique: it can read a finished deck, flag where the narrative goes weak, and predict the objections a client or investor is likely to raise. For a two-person <a href="/blog/chatgpt-consulting-firms">consulting firm</a> or <a href="/blog/chatgpt-professional-services">professional services</a> team that lives in client decks, that's a junior strategist who works in seconds.</p>
+
+      <p><strong>In Excel and Google Sheets,</strong> the sidebar builds and updates workbooks, writes and explains formulas across multiple tabs, cleans messy data, and turns a repeated manual chore into a documented, repeatable workflow. Ask it why a number looks wrong and it traces the calculation instead of just regenerating it.</p>
+
+      <p><strong>The cross-platform part is the quiet advantage.</strong> Copilot only works inside Microsoft's world. ChatGPT works in Excel <em>and</em> Google Sheets — so the bakery on Google Workspace and the contractor on Microsoft 365 can standardize on the same AI assistant and the same prompts. Think of it like a universal power adapter versus a proprietary charger: one travels with you across every device you own, the other only works with one brand's outlet. For a small business that uses a mix of tools — which is nearly all of them — that flexibility is worth real money.</p>
+
+      <!-- Section 4 -->
+      <h2>The Honest Caveats (Read These Before You Switch Anything)</h2>
+
+      <p>This is the part the headlines skip, and it's where small businesses either save money or waste it.</p>
+
+      <div class="warning-box">
+        <strong>"ChatGPT is in Office" does not mean "ChatGPT replaces Copilot for everyone."</strong> The two tools win at different jobs. ChatGPT-in-Office is excellent at <em>creating and editing</em> the thing in front of you — this deck, this spreadsheet. Microsoft 365 Copilot is built to <em>answer questions across all your company's data</em> at once, because it's natively grounded in Microsoft Graph — your email, SharePoint files, Teams chats, and calendar. If your highest-value use case is "summarize everything that happened on the Henderson account across email, Teams, and our files," Copilot's grounding is genuinely deeper. If it's "build me this proposal deck and clean up this budget," ChatGPT does more for less. Match the tool to the job, not the hype.
+      </div>
+
+      <p>A few more things to keep straight before you change your stack:</p>
+
+      <ul>
+        <li><strong>PowerPoint is still in beta.</strong> The integration is new and rough edges are expected. Pilot it on internal decks before you put it in front of a client.</li>
+        <li><strong>The free preview has a clock on it.</strong> ChatGPT's spreadsheet tools are free for Business, Enterprise, and Edu plans only through June 2, 2026. After that, usage follows your plan's credits and terms — so test now while the window is open and you can judge the value before you pay for it.</li>
+        <li><strong>Data governance isn't automatic.</strong> ChatGPT Business doesn't train on your business data by default, which is the right starting point — but connectors to Gmail, Outlook, and SharePoint still need to be configured deliberately. We cover the settings that matter in the <a href="/blog/chatgpt-data-privacy-security-guide">ChatGPT data privacy and security guide</a>.</li>
+        <li><strong>"Microsoft AI" isn't purely Microsoft anymore.</strong> Here's the irony inside the irony: Microsoft now uses Anthropic's Claude to power some of Copilot's document-generation agents. So the choice isn't really "OpenAI vs Microsoft" — it's "ChatGPT, the standalone product" vs "a Microsoft bundle that runs on a mix of models," a distinction we unpack in our <a href="/blog/chatgpt-vs-claude-small-business-2026">ChatGPT vs Claude breakdown</a>.</li>
+      </ul>
+
+      <p>This also defuses the fear sitting under every "AI in your apps" headline — that the software is here to do your team's work for them. In a small business, the realistic outcome is the opposite: the spreadsheet still needs someone who knows the business to sanity-check it, and the deck still needs a human to own the pitch. The AI compresses the grunt work so a five-person team performs like eight. The risk isn't that ChatGPT in PowerPoint replaces your people — it's that the competitor down the street uses it to ship twice the proposals while you're still formatting slides by hand.</p>
+
+      <!-- Section 5 -->
+      <h2>What Small Businesses Should Do Before June 2</h2>
+
+      <p>You don't need to rip anything out this week. You do need to make a deliberate choice instead of defaulting to whatever Microsoft bills you for. A focused plan:</p>
+
+      <ol>
+        <li><strong>Find out what you actually pay for AI in Office today.</strong> If you've been leaning on free Copilot Chat, that's now gone or throttled — so you're either about to lose a tool or about to be upsold to $21–$30 a seat. Know which before your renewal. Our <a href="/blog/microsoft-365-price-increase-2026-chatgpt-business-alternative">Microsoft 365 cost breakdown</a> runs the full math.</li>
+        <li><strong>Install the ChatGPT add-in and test it on one real, recurring task this week.</strong> The free preview window is the cheapest A/B test you'll ever run. Point it at the spreadsheet you rebuild every month or the deck format you keep recreating — not a toy demo.</li>
+        <li><strong>Decide what you're actually buying AI to do.</strong> Creating and editing documents, decks, and spreadsheets? ChatGPT-in-Office covers it for $20 a seat with no suite license required. Answering questions across all your company's email and files at once? That's where Copilot's Graph grounding earns its premium. Be honest about which one you'd use daily.</li>
+        <li><strong>Standardize on one — don't pay for both.</strong> The median small business already juggles five AI tools and gets compounding value from almost none. Pick the assistant your team will actually open every morning and commit. The <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business vs Plus comparison</a> helps if you're choosing a ChatGPT tier.</li>
+        <li><strong>Get the setup right, because that's where the return lives.</strong> Installing an add-in is not a strategy. The businesses that see real return — see the numbers in our <a href="/blog/chatgpt-business-roi">ChatGPT Business ROI guide</a> — are the ones that connect their real tools, write prompts the team reuses, set governance, and train people until the new way is the default. That's the part no product launch does for you.</li>
+      </ol>
+
+      <p>The takeaway from this five-week stretch isn't "AI is in your Office apps now." It's that the AI in your Office apps is no longer a default handed to you by whoever sells your spreadsheet software — it's a decision. Microsoft just made you choose by taking the free option away. OpenAI just gave you a cheaper, cross-platform alternative to choose instead. The businesses that win this round won't be the ones with the most AI subscriptions. They'll be the ones who picked the right one on purpose and actually put it to work.</p>
+
+      <!-- FAQ Section -->
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is ChatGPT now inside Microsoft Office?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. ChatGPT for Excel went generally available on May 5, 2026, and a ChatGPT add-in for PowerPoint launched in beta on May 22, 2026 — both as sidebars that live inside the apps. ChatGPT also works inside Google Sheets, which Microsoft's Copilot does not. The integrations are powered by GPT-5.5 and reach every major paid ChatGPT tier, with a free preview for ChatGPT Business, Enterprise, and Edu plans through June 2, 2026.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Did Microsoft remove free Copilot from Word, Excel, and PowerPoint?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Largely, yes. On April 15, 2026, Microsoft pulled the free Copilot Chat side panel from the Word, Excel, PowerPoint, and OneNote desktop apps. Organizations with roughly 2,000+ seats lose in-app access entirely unless they buy full Microsoft 365 Copilot; smaller businesses keep a downgraded "standard access" that is throttled at busy times. Copilot Chat remains in Outlook, and a separate free web version is unaffected, but the always-on AI helper inside the core Office apps is now effectively a paid feature at $21–$30 per user per month.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>ChatGPT vs Microsoft Copilot — which is better for a small business?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>It depends on the job. ChatGPT-in-Office is stronger and cheaper for creating and editing documents, decks, and spreadsheets — $20 per user per month standalone, no Microsoft 365 license required, and it works in both Excel and Google Sheets. Microsoft 365 Copilot ($21–$30 per user per month on top of a paid M365 seat) is better when your main need is answering questions across all your company's data at once, because it's natively grounded in Microsoft Graph (email, files, Teams, calendar). Most small businesses should pick one based on their highest-value use case rather than paying for both.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>When does the free ChatGPT preview in Excel and Sheets end?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>June 2, 2026, for ChatGPT Business, Enterprise, Edu, and K-12 plans. During the preview, the spreadsheet tools are free to use; after June 2, usage follows each plan's credit allowance and standard terms. The window makes the next two weeks a low-risk time to test ChatGPT against a real recurring workflow before committing budget.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can ChatGPT replace Microsoft Copilot entirely?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>For many small businesses, yes — especially those whose AI use is mostly building and editing spreadsheets, slide decks, and documents, and those who don't want to pay for a full Microsoft 365 Copilot license. ChatGPT-in-Office covers that at a lower standalone price and works across Microsoft and Google apps. Copilot still has an edge for organizations that need AI grounded across all their internal data via Microsoft Graph. The honest move is to test ChatGPT during the free preview against your actual workflows and decide from evidence, not marketing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="cta-section">
+        <h3>Don't Just Add Another AI Subscription. Pick the Right One and Make It Pay Off.</h3>
+        <p>Microsoft made the AI in your Office apps a paid decision. Sayfe.ai helps you make the smart one — we set up and optimize ChatGPT Business as an authorized OpenAI SMB Channel Partner, with hands-on onboarding, real workflow training, and zero markup on OpenAI's $20/user/month pricing.</p>
+        <a href="/get-started" class="cta-button">Get Started Today</a>
+      </div>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and medium-sized businesses implement and optimize ChatGPT Business, ChatGPT Enterprise, and the OpenAI API. We're here to make enterprise AI accessible to teams of any size.
+      </p>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Microsoft Pulled Free AI From Office. ChatGPT Just Walked In Through PowerPoint.",
+    "description": "On April 15, 2026, Microsoft removed free Copilot Chat from Word, Excel, and PowerPoint. Weeks later, ChatGPT landed inside PowerPoint, Excel, and Google Sheets — on every paid tier and free for ChatGPT Business through June 2. The honest small-business read on the 2026 Office AI fork.",
+    "image": "https://sayfeai.com/og-image-blog.png",
+    "datePublished": "2026-05-24T00:00:00Z",
+    "dateModified": "2026-05-24T00:00:00Z",
+    "author": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfeai.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sayfeai.com/logo.png"
+      }
+    },
+    "articleSection": "News & Trends",
+    "keywords": "ChatGPT in Office, ChatGPT vs Microsoft Copilot, ChatGPT PowerPoint, ChatGPT Excel, Microsoft Copilot paywall 2026, Copilot alternative, ChatGPT for small business, AI in Office apps",
+    "wordCount": "2050",
+    "timeRequired": "PT9M"
+  }
+  </script>
+
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is ChatGPT now inside Microsoft Office?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ChatGPT for Excel went generally available on May 5, 2026, and a ChatGPT add-in for PowerPoint launched in beta on May 22, 2026, both as sidebars that live inside the apps. ChatGPT also works inside Google Sheets, which Microsoft's Copilot does not. The integrations are powered by GPT-5.5 and reach every major paid ChatGPT tier, with a free preview for ChatGPT Business, Enterprise, and Edu plans through June 2, 2026."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Did Microsoft remove free Copilot from Word, Excel, and PowerPoint?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Largely yes. On April 15, 2026, Microsoft pulled the free Copilot Chat side panel from the Word, Excel, PowerPoint, and OneNote desktop apps. Organizations with roughly 2,000+ seats lose in-app access entirely unless they buy full Microsoft 365 Copilot; smaller businesses keep a downgraded standard access that is throttled at busy times. Copilot Chat remains in Outlook, and a separate free web version is unaffected, but the always-on AI helper inside the core Office apps is now effectively a paid feature at $21 to $30 per user per month."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ChatGPT vs Microsoft Copilot - which is better for a small business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the job. ChatGPT-in-Office is stronger and cheaper for creating and editing documents, decks, and spreadsheets: $20 per user per month standalone, no Microsoft 365 license required, and it works in both Excel and Google Sheets. Microsoft 365 Copilot ($21 to $30 per user per month on top of a paid M365 seat) is better when your main need is answering questions across all your company's data at once, because it is natively grounded in Microsoft Graph (email, files, Teams, calendar). Most small businesses should pick one based on their highest-value use case rather than paying for both."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When does the free ChatGPT preview in Excel and Sheets end?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "June 2, 2026, for ChatGPT Business, Enterprise, Edu, and K-12 plans. During the preview, the spreadsheet tools are free to use; after June 2, usage follows each plan's credit allowance and standard terms. The window makes the next two weeks a low-risk time to test ChatGPT against a real recurring workflow before committing budget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can ChatGPT replace Microsoft Copilot entirely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For many small businesses, yes, especially those whose AI use is mostly building and editing spreadsheets, slide decks, and documents, and those who don't want to pay for a full Microsoft 365 Copilot license. ChatGPT-in-Office covers that at a lower standalone price and works across Microsoft and Google apps. Copilot still has an edge for organizations that need AI grounded across all their internal data via Microsoft Graph. The honest move is to test ChatGPT during the free preview against your actual workflows and decide from evidence, not marketing."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Interactive FAQ Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
