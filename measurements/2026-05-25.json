@@ -1,0 +1,174 @@
+{
+  "date": "2026-05-25",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [
+    "elevaiq.com"
+  ],
+  "engines_used": [
+    "google_aio_websearch_proxy"
+  ],
+  "engines_unavailable": [
+    "chatgpt_openai_api (no OPENAI_API_KEY)",
+    "claude_anthropic_api (no ANTHROPIC_API_KEY)",
+    "perplexity (no PERPLEXITY_API_KEY)",
+    "serpapi (no SERPAPI_API_KEY)"
+  ],
+  "measurement_caveat": "WebSearch proxy is DIRECTIONAL ONLY; it cannot observe true ChatGPT/Claude/Perplexity citations. Domain is 7 days post-rebrand (sayfeai.com); near-zero indexation expected. 0/N is not a regression signal.",
+  "sample_note": "Reduced sample this run: 5 WebSearch-proxy searches -> 7 query_id records (the Colorado search covers colorado-ai-act-small-business + colorado-sb-26-189-admt; the assessment search covers ai-compliance-assessment + ai-risk-assessment-tool). Single-engine degraded mode + ~30s throttle + 8 prior days of identical directional results made a full 40-query sweep low-value on a still-unindexed domain. Priority-bucket coverage (compliance/assessment/partner) preserved.",
+  "searches_run": 5,
+  "sample_size": 7,
+  "cited_us_canonical": 0,
+  "cited_us_legacy": 0,
+  "buckets_sampled": {
+    "compliance": [
+      "colorado-ai-act-small-business",
+      "colorado-sb-26-189-admt",
+      "eu-ai-act-small-business"
+    ],
+    "assessment": [
+      "ai-compliance-assessment",
+      "ai-risk-assessment-tool"
+    ],
+    "partner_channel": [
+      "msp-ai-compliance-resell"
+    ],
+    "comparison": [
+      "chatgpt-business-vs-plus"
+    ]
+  },
+  "bucket_citation_rates": {
+    "compliance": "0/3",
+    "assessment": "0/2",
+    "partner_channel": "0/1",
+    "comparison": "0/1"
+  },
+  "pages_patched": [
+    "public/blog/openai-realtime-voice-multilingual-small-business-2026.html"
+  ],
+  "pillar_handoffs_reconfirmed": [
+    "/compliance-assessment",
+    "/compliance/colorado-ai-act",
+    "/compliance/eu-ai-act",
+    "/compliance/ai-policy-template"
+  ],
+  "new_competitors_auto_detected": [],
+  "results": [
+    {
+      "query_id": "colorado-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "leg.colorado.gov",
+        "consumerfinancemonitor.com",
+        "cyberadviserblog.com",
+        "reedsmith.com",
+        "buchalter.com",
+        "fisherphillips.com",
+        "nixonpeabody.com",
+        "littler.com"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "SB 26-189 (ADMT) repealed & replaced SB 24-205; signed 2026-05-14, effective 2027-01-01. Law-firm advisories own it. 40-or-fewer-employee deployer carve-out; AG rulemaking pending. This finding directly grounds today's realtime-voice SB-24-205 staleness fix."
+    },
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "leg.colorado.gov",
+        "consumerfinancemonitor.com",
+        "cyberadviserblog.com",
+        "ppc.land",
+        "reedsmith.com",
+        "buchalter.com",
+        "lexology.com"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "Official bill-number query; same legal-advisory set. Our Colorado blog carries SB 26-189/ADMT aliases (shipped 2026-05-22) but isn't indexed/cited yet on a 7-day-old domain."
+    },
+    {
+      "query_id": "eu-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "digital-strategy.ec.europa.eu",
+        "lw.com",
+        "secureprivacy.ai",
+        "truescreen.io",
+        "artificialintelligenceact.eu",
+        "hklaw.com",
+        "bakermckenzie.com"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "Article 50 transparency obligations fully enforceable Aug 2 2026; SME simplified pathways + sandboxes; applies by functional role (provider/deployer) regardless of company size. EU Digital Omnibus deadline-extension thread still live."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "prompts.ai",
+        "ispartnersllc.com",
+        "peoplemanagingpeople.com",
+        "impactmaker.co",
+        "centraleyes.com",
+        "drata.com",
+        "trycomp.ai"
+      ],
+      "answer_pattern": "list",
+      "notes": "No single branded 'free assessment' owns it; trycomplianceiq.com NOT surfaced again. ispartnersllc.com (results <60s) and impactmaker.co (~8min, no signup, no card) now own the fast/free/no-signup promise -> bake that exact promise into /compliance-assessment when built. Open lane."
+    },
+    {
+      "query_id": "ai-risk-assessment-tool",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "trustlayer.io",
+        "mymap.ai",
+        "logicballs.com",
+        "ispartnersllc.com"
+      ],
+      "answer_pattern": "list",
+      "notes": "'Free, no signup, results in minutes' promise owned by TrustLayer Risk Matrix + Logicballs + IS Partners. Build that into /compliance-assessment H1+FAQ (pillar handoff)."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "integrisit.com",
+        "managedservicesjournal.com",
+        "6clicks.com",
+        "channeldive.com",
+        "ardham.com",
+        "ciaops.com",
+        "securitybrief.asia"
+      ],
+      "answer_pattern": "paragraph",
+      "notes": "Engine 2. 'AI governance as high-margin MSP service' framing dominates; compliance MSP services projected +21% in 2026. Sayfeai has zero MSP-reseller content -> strategy proposal, NOT a fabricable page edit. Nugget: TRAIGA (Texas Responsible AI Governance Act, effective 2026-01-01) cited -> relevant to Sayfeai's TX HQ."
+    },
+    {
+      "query_id": "chatgpt-business-vs-plus",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": [
+        "tactiq.io",
+        "aibusinessweekly.net",
+        "intuitionlabs.ai",
+        "chatgpt.com",
+        "madewell.ai",
+        "datastudios.org",
+        "hungyichen.com"
+      ],
+      "answer_pattern": "table",
+      "notes": "Comparison-table pages win. Data privacy (Plus trains by default w/ only per-user opt-out; Business excludes training org-wide by contract, no toggle) is THE cited differentiator. Pricing consensus: Plus $20/mo; Business $25/mo or $20/mo annual, min 2 seats. Open-rec to add a data-privacy/admin-enforcement FAQ to /blog/chatgpt-business-vs-plus remains queued (not shipped this run to hold the 1-patch discipline)."
+    }
+  ]
+}
