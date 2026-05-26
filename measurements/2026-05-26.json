@@ -1,0 +1,96 @@
+{
+  "date": "2026-05-26",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["google_aio_websearch_proxy"],
+  "engines_unavailable": [
+    "chatgpt_openai_api (no OPENAI_API_KEY)",
+    "claude_anthropic_api (no ANTHROPIC_API_KEY)",
+    "perplexity (no PERPLEXITY_API_KEY)",
+    "serpapi (no SERPAPI_API_KEY)"
+  ],
+  "measurement_caveat": "WebSearch proxy is DIRECTIONAL ONLY; it cannot observe true ChatGPT/Claude/Perplexity citations. Domain is 8 days post-rebrand (sayfeai.com); near-zero indexation expected. 0/N is not a regression signal.",
+  "sample_note": "6 WebSearch-proxy searches across 6 priority-bucket query_ids. Sampled chatgpt-business-vs-plus first so today's diagnosis could directly verify the queued data-privacy/admin-enforcement open-rec from 2026-05-25. Compliance/assessment/partner buckets covered with 1-3 reps each.",
+  "searches_run": 6,
+  "sample_size": 6,
+  "cited_us_canonical": 0,
+  "cited_us_legacy": 0,
+  "buckets_sampled": {
+    "compliance": ["colorado-ai-act-small-business", "eu-ai-act-small-business"],
+    "assessment": ["ai-compliance-assessment"],
+    "partner_channel": ["msp-ai-compliance-resell"],
+    "comparison": ["chatgpt-business-vs-plus", "chatgpt-business-vs-enterprise"]
+  },
+  "bucket_citation_rates": {
+    "compliance": "0/2",
+    "assessment": "0/1",
+    "partner_channel": "0/1",
+    "comparison": "0/2"
+  },
+  "pages_patched": [
+    "public/blog/chatgpt-business-vs-plus.html"
+  ],
+  "pillar_handoffs_reconfirmed": [
+    "/compliance-assessment",
+    "/compliance/colorado-ai-act",
+    "/compliance/eu-ai-act",
+    "/compliance/ai-policy-template"
+  ],
+  "new_competitors_auto_detected": [],
+  "results": [
+    {
+      "query_id": "chatgpt-business-vs-plus",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["tactiq.io", "openai.com", "intuitionlabs.ai", "hungyichen.com", "aibusinessweekly.net", "aitoolsage.com", "gradually.ai", "madewell.ai", "datastudios.org", "help.openai.com"],
+      "answer_pattern": "table",
+      "notes": "Comparison-table pages own this query. CITED MECHANISM (consensus across tactiq.io + aibusinessweekly.net + intuitionlabs.ai + openai enterprise-privacy): 'On Plus, OpenAI may use conversations for model training by default; each user opts out individually via Settings -> Data Controls, but the opt-out only covers that one account and doesn't extend to the team. On Business, data exclusion is organizational and contractual -- not an opt-out toggle but a structural guarantee of the plan.' Our page had data-privacy ticked in the comparison table but did NOT articulate this per-user-opt-out-vs-contractual-org mechanism in either the visible FAQ or the FAQPage JSON-LD. Pricing consensus (April 2 2026 cut): Plus $20/mo, Business $25/mo monthly OR $20/mo annual, 2-seat min. Already on page. -> diagnosis directly clears yesterday's queued open-rec."
+    },
+    {
+      "query_id": "colorado-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["consumerfinancemonitor.com", "nixonpeabody.com", "cmitsolutions.com", "buchalter.com", "consumerfinancialserviceslawmonitor.com", "cyberadviserblog.com", "clarkhill.com", "nortonrosefulbright.com", "littler.com", "leg.colorado.gov"],
+      "answer_pattern": "paragraph",
+      "notes": "SB 26-189 (ADMT) signed by Polis 2026-05-12 (this run's date) per consumerfinancemonitor.com; effective 2027-01-01. Repeals & replaces SB 24-205. Small-business carve-out: 40-or-fewer-employee firms generally NOT 'deployers' (but hiring/compensation ADMT use can still pull them in). AG has stated no enforcement until rulemaking concludes. Sayfeai's Colorado/EU blog carries the alias (shipped 2026-05-22) but still 0% citation -- expected on an 8-day-old domain. Pillar handoff (/compliance/colorado-ai-act) remains outstanding for Claude Code. Note: prior ledger logged May 14 sign date based on different source set; today's consensus is May 12 sign / May 14 legislative passage announcement. Both within the same week."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["ispartnersllc.com", "getaicomply.com", "impactmaker.co", "trycomplianceiq.com", "prompts.ai", "ezel.ai", "template.net", "clearact.net"],
+      "answer_pattern": "list",
+      "notes": "ispartnersllc.com still owns the '60 seconds / no signup' promise. trycomplianceiq.com back at #4 (was off the list 2026-05-25). NEW competitor: clearact.net ('Find out your risk level in 2 minutes; 15 questions; instant EU AI Act risk classification; no signup'). AIComply also no-signup-required for 3 quick questions. Pillar handoff (/compliance-assessment) STILL the highest-leverage Engine-1 conversion page; build it with H1 + lead promising 5-minute / no signup / no card / instant risk classification."
+    },
+    {
+      "query_id": "eu-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["digital-strategy.ec.europa.eu", "lw.com", "secureprivacy.ai", "artificialintelligenceact.eu", "truescreen.io", "bakermckenzie.com", "legalnodes.com", "softwareimprovementgroup.com"],
+      "answer_pattern": "paragraph",
+      "notes": "Article 50 transparency obligations effective Aug 2 2026 (chatbot-disclosure + machine-readable AI-generated content marking). Latham & Watkins flag the EU Digital Omnibus deadline-extension thread (high-risk Annex III may slip to Dec 2 2027). SME simplified compliance pathways + R&D exemptions exist. Pillar handoff (/compliance/eu-ai-act) outstanding."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["integrisit.com", "worksent.com", "compassmsp.com", "guardz.com", "managedservicesjournal.com", "logmein.com", "omdia.tech.informa.com"],
+      "answer_pattern": "paragraph",
+      "notes": "Engine 2. AI governance still framed as 'high-margin frontier' for MSPs in 2026 (ManagedServicesJournal). Compass MSP + Guardz position to SMBs specifically. 94% of SMBs now use an MSP (LogMeIn). Sayfeai has zero MSP-reseller offering -> strategy proposal only, not a fabricable page edit. No new competitor crossed the 3+ threshold."
+    },
+    {
+      "query_id": "chatgpt-business-vs-enterprise",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["intuitionlabs.ai", "fritz.ai", "chatgpt.com", "gradually.ai", "cloudzero.com", "tldv.io", "hungyichen.com", "help.openai.com", "dancumberlandlabs.com", "aibusinessweekly.net"],
+      "answer_pattern": "table",
+      "notes": "Business: $20/user annual or $25 monthly, 2-seat min, post April-2-2026 cut. Enterprise: custom, typical $60-$100+/seat at 150+ seat floor. 'Genuine triggers for Enterprise over Business' cited consistently: 150+ users, regulated industries (HIPAA, EKM, data residency), unlimited usage, SCIM + advanced SSO. Our /blog/chatgpt-business-vs-enterprise-2026 page is not surfacing -- but no high-confidence non-churn patch this run (the Business pricing/seat math is already accurate on the page per 2026-05-23 work)."
+    }
+  ]
+}
