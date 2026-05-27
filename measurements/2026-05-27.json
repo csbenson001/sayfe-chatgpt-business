@@ -1,0 +1,109 @@
+{
+  "date": "2026-05-27",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["google_aio_websearch_proxy"],
+  "engines_unavailable": [
+    "chatgpt_openai_api (no OPENAI_API_KEY)",
+    "claude_anthropic_api (no ANTHROPIC_API_KEY)",
+    "perplexity (no PERPLEXITY_API_KEY)",
+    "serpapi (no SERPAPI_API_KEY)"
+  ],
+  "measurement_caveat": "WebSearch proxy is DIRECTIONAL ONLY; it cannot observe true ChatGPT/Claude/Perplexity citations. Domain is 9 days post-rebrand (sayfeai.com); near-zero indexation expected. 0/N is not a regression signal.",
+  "sample_note": "7 WebSearch-proxy searches across 7 priority-bucket query_ids. Compliance 2, assessment 1, partner_channel 1, comparison 1, industry 2 (industry pages doubled as candidates for the queued JSON-LD @id/url canonical sweep -- 1/16 done previously, opportunistic 2/16 this run).",
+  "searches_run": 7,
+  "sample_size": 7,
+  "cited_us_canonical": 0,
+  "cited_us_legacy": 0,
+  "buckets_sampled": {
+    "compliance": ["colorado-ai-act-small-business", "eu-ai-act-small-business"],
+    "assessment": ["ai-compliance-assessment"],
+    "partner_channel": ["msp-ai-compliance-resell"],
+    "comparison": ["chatgpt-business-vs-enterprise"],
+    "industry": ["chatgpt-for-legal", "chatgpt-for-finance"]
+  },
+  "bucket_citation_rates": {
+    "compliance": "0/2",
+    "assessment": "0/1",
+    "partner_channel": "0/1",
+    "comparison": "0/1",
+    "industry": "0/2"
+  },
+  "pages_patched": [
+    "public/blog/chatgpt-business-vs-enterprise-2026.html",
+    "public/industries/finance.html",
+    "public/sitemap.xml"
+  ],
+  "pillar_handoffs_reconfirmed": [
+    "/compliance-assessment",
+    "/compliance/colorado-ai-act",
+    "/compliance/eu-ai-act",
+    "/compliance/ai-policy-template"
+  ],
+  "new_competitors_auto_detected": [],
+  "results": [
+    {
+      "query_id": "colorado-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["consumerfinancemonitor.com", "workforcebulletin.com", "cmitsolutions.com", "nixonpeabody.com", "clarkhill.com", "cyberadviserblog.com", "leg.colorado.gov", "littler.com", "buchalter.com", "afslaw.com"],
+      "answer_pattern": "paragraph",
+      "notes": "SB 26-189 (ADMT) signed by Polis 2026-05-14, effective 2027-01-01. Small-business exemption: 40-or-fewer-employee carve-out, but ADMT in hiring/comp can still pull in. Sayfeai's Colorado/EU blog already carries the SB 26-189/ADMT alias (shipped 2026-05-22) but still 0% citation -- expected on a 9-day-old domain. Pillar handoff /compliance/colorado-ai-act outstanding."
+    },
+    {
+      "query_id": "eu-ai-act-small-business",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["digital-strategy.ec.europa.eu", "dataguard.com", "arnoldporter.com", "artificialintelligenceact.eu", "quantamixsolutions.com", "decodethefuture.org", "dlapiper.com"],
+      "answer_pattern": "paragraph",
+      "notes": "Article 50 transparency rules and GPAI obligations enforced from Aug 2 2026; full Commission enforcement powers from same date. GPAI providers placed before Aug 2 2025 have until Aug 2 2027 to comply. SMEs benefit from proportionate reduced fine caps. Pillar /compliance/eu-ai-act still outstanding."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["ispartnersllc.com", "prompts.ai", "techjacksolutions.com", "ironedgegroup.com", "growthcapitalcorp.com", "peachbytesolutions.com", "esudo.com", "impactmaker.co", "bridgeviewit.com", "pathopt.com"],
+      "answer_pattern": "list",
+      "notes": "PeachByte still owns '5-minute / no signup'. BridgeView at 10-minute / 5-pillar. ImpactMaker at 8 minutes. ispartnersllc at 60 seconds. /compliance-assessment pillar still 404 -- Engine 1 build remains highest-leverage handoff."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["connectwise.com", "customgpt.ai", "channelpronetwork.com", "integrisit.com", "lumenova.ai", "duocircle.com", "channelinsider.com", "msspalert.com"],
+      "answer_pattern": "paragraph",
+      "notes": "ConnectWise + ChannelPro + Integris own this. Compliance-as-a-Service (CaaS) framed as 'new MSP growth driver' (MSSP Alert). Sayfeai has no MSP-reseller offering -> strategy proposal only. No new competitor at 3+ threshold."
+    },
+    {
+      "query_id": "chatgpt-business-vs-enterprise",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["intuitionlabs.ai", "hungyichen.com", "aibusinessweekly.net", "gradually.ai", "aitoolsage.com", "dancumberlandlabs.com", "suprmind.ai", "help.openai.com", "northflank.com", "tldv.io"],
+      "answer_pattern": "table",
+      "notes": "Citation consensus across IntuitionLabs + HungYiChen + AIBusinessWeekly + OpenAI Help Center + Suprmind on the SPECIFIC Enterprise-only mechanism set: HIPAA BAA, EKM, SCIM, domain verification, custom retention, data residency in 10 regions, custom legal terms, RBAC. Our /blog/chatgpt-business-vs-enterprise-2026 page covered generic 'compliance' framing but did NOT articulate the cited mechanism set in either visible FAQ or FAQPage JSON-LD. PATCHED this run: added 2 visible FAQ items + matching FAQPage mainEntity entries (5 -> 7); dateModified 2026-03-18 -> 2026-05-27."
+    },
+    {
+      "query_id": "chatgpt-for-legal",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["clio.com", "spellbook.com", "gc.ai", "axios.com", "sirion.ai", "growlaw.co", "rankings.io", "decrypt.co"],
+      "answer_pattern": "paragraph",
+      "notes": "Clio + Spellbook own this. GC AI's 'What Heppner Changed' Feb 17 2026 Rakoff ruling -- our /industries/legal page already covers it (added 2026-05-20). Three new 1-citation mentions today (growlaw.co, rankings.io, decrypt.co) -- none at 3+ threshold. NO patch this run -- already aligned with cited consensus; would be churn."
+    },
+    {
+      "query_id": "chatgpt-for-finance",
+      "engine": "google_aio_websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["academy.openai.com", "engadget.com", "yahoo.com", "techcrunch.com", "vaneck.com", "chatgpt.com", "datacamp.com", "technology.org", "tipalti.com", "androidheadlines.com"],
+      "answer_pattern": "paragraph",
+      "notes": "OpenAI Personal Finance launch (May 15 2026) via Plaid 12k+ banks dominates -- consumer-side, our /blog/chatgpt-personal-finance-bank-accounts-business-owners-2026 owns it. NOT a fact gap on industry page. Real defect: Service JSON-LD url -> https://sayfeai.com/industries/finance (vercel.json 301-redirects). PATCHED this run: Service url -> https://sayfeai.com/finance (2/16 of queued JSON-LD canonical sweep; healthcare was 1/16 on 2026-05-23)."
+    }
+  ]
+}
