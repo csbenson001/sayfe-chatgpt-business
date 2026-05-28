@@ -1,0 +1,56 @@
+{
+  "date": "2026-05-28",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [
+    "elevaiq.com"
+  ],
+  "engines_used": [
+    "google_aio_websearch_proxy"
+  ],
+  "engines_unavailable": [
+    "chatgpt_openai_api (no OPENAI_API_KEY)",
+    "claude_anthropic_api (no ANTHROPIC_API_KEY)",
+    "perplexity (no PERPLEXITY_API_KEY)",
+    "serpapi (no SERPAPI_API_KEY)"
+  ],
+  "measurement_caveat": "WebSearch proxy is DIRECTIONAL ONLY; it cannot observe true ChatGPT/Claude/Perplexity citations. Domain is 10 days post-rebrand (sayfeai.com); near-zero indexation expected. 0/N is not a regression signal.",
+  "sample_note": "7 WebSearch-proxy searches across 7 priority-bucket query_ids. Compliance 2, assessment 1, partner_channel 1, comparison 1, industry 1 (insurance — JSON-LD canonical sweep candidate, 3/16), trust 1. Same volume cadence as 2026-05-27.",
+  "searches_run": 7,
+  "sample_size": 7,
+  "cited_us_canonical": 0,
+  "cited_us_legacy": 0,
+  "buckets_sampled": {
+    "compliance": ["ai-policy-template-smb", "ai-compliance-checklist"],
+    "assessment": ["ai-risk-assessment-tool"],
+    "partner_channel": ["chatgpt-business-cle-webinar"],
+    "comparison": ["chatgpt-vs-copilot"],
+    "industry": ["chatgpt-for-insurance"],
+    "trust": ["chatgpt-hipaa-compliant"]
+  },
+  "bucket_citation_rates": {
+    "compliance": "0/2",
+    "assessment": "0/1",
+    "partner_channel": "0/1",
+    "comparison": "0/1",
+    "industry": "0/1",
+    "trust": "0/1"
+  },
+  "pages_patched": [
+    "public/industries/insurance.html",
+    "public/sitemap.xml"
+  ],
+  "pillar_handoffs_reconfirmed": [
+    "/compliance/ai-policy-template",
+    "/compliance-assessment"
+  ],
+  "new_competitors_auto_detected": [],
+  "results": [
+    {"query_id":"ai-policy-template-smb","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["purplesec.us","thoropass.com","ifeeltech.com","hibob.com","lattice.com","aihr.com","responsible.ai","jasper.ai","certified-nets.com","polygraf.ai"],"answer_pattern":"list","notes":"Winners (PurpleSec, Thoropass, AIHR, HiBob, Lattice, Certified NETS, Polygraf, Jasper) all rank with frictionless free downloads — no signup or email-gate on the template itself. iFeeltech bundles AI inside a 7-document SMB IT policy pack. The /compliance/ai-policy-template pillar (Engine 1 handoff) must include a one-click download to compete. No actionable patch on existing pages this run — pillar handoff confirmed."},
+    {"query_id":"ai-compliance-checklist","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["pathopt.com","digitalapplied.com","myaifrontdesk.com","cyberunit.com","ost.agency","wipfli.com","omm.com","growthcapitalcorp.com","medium.com"],"answer_pattern":"list","notes":"Our /blog/ai-compliance-colorado-eu-small-business-2026 holds the SB 26-189/ADMT framing shipped 2026-05-22. Cited competitors range over EU Aug 2 2026 GPAI date, Colorado risk-based framework, FCC one-to-one consent (Jan 27 2026), TCPA penalties, NYC LL 144 bias audit. Path Opt still uses 'effective Feb 1 2026' for Colorado — stale relative to signed SB 26-189 (effective 2027-01-01), but we already corrected our own framing 2026-05-22 and would only churn by re-editing. No actionable patch this run."},
+    {"query_id":"ai-risk-assessment-tool","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["trustlayer.io","logicballs.com","mymap.ai","naitive.cloud","chatdiagram.com","peoplemanagingpeople.com","riskgenerator.com","flowforma.com"],"answer_pattern":"list","notes":"TrustLayer (15+ risk factors, in seconds, no signup) + Logicballs + MyMap (5x5 likelihood-impact matrix in seconds) all own the '5-minute / no signup / risk matrix' framing. The /compliance-assessment pillar (Engine 1 conversion mechanism) is still 404 — Engine 1 build remains highest-leverage handoff for Claude Code. No actionable patch this run (can't add a callout to a 404 page; can't patch a non-existent destination)."},
+    {"query_id":"chatgpt-business-cle-webinar","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["knowlearninghub.com","clio.com","mylawcle.com","trakkr.ai","jdsupra.com","ibl.ai","quarles.com","coursiv.io","gc.ai","adventuremedia.ai"],"answer_pattern":"paragraph","notes":"Knowledge Group + Clio + myLawCLE + Quarles + JDSupra/IR Global all own this. New citation theme: 'I didn't know the associate was using ChatGPT' is not a defense — firms must have a firm-wide AI policy and training. Sayfeai has no CLE webinar offering — strategy proposal (Engine 2) only. /industries/legal already covers Heppner-Rakoff + AI policy themes (added 2026-05-20) so no defensive patch needed. No new competitor at 3+ threshold."},
+    {"query_id":"chatgpt-vs-copilot","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["tech-insider.org","corsicatech.com","redriver.com","ramsac.com","microsoft.com","techjacksolutions.com","trustedtechteam.com","neuronad.com","aibusinessweekly.net","msn.com"],"answer_pattern":"table","notes":"Our /blog/microsoft-copilot-meltdown-why-chatgpt-business-winning page is current ($25/$20 pricing, GPT-5.4 / 440M DAU / Mar 17 2026 restructure / Andreou-Suleyman handoff / OpenAI $840B all match cited consensus). Page has 5 FAQs + full comparison table + accurate pricing. No fact gap — would be churn to re-edit. Microsoft Graph 1.8s-vs-3.4s mechanism is the one not in our FAQs but adding it risks anti-Copilot churn — that's the editorial choice. Defer."},
+    {"query_id":"chatgpt-for-insurance","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["saneprompts.com","linkedin.com","agencyheight.com","agentforthefuture.com","siaa.com","hawksoft.com","betteragency.io","businessinsurance.com"],"answer_pattern":"paragraph","notes":"Citations cluster on agency-marketing/social use cases + data-privacy warnings (Hawksoft: 'free ChatGPT may use input to train; never enter PII'). NEW factual fact: Business Insurance reports 'Travelers unit launches business insurance app in ChatGPT' — first carrier-published Apps SDK experience. PATCHED this run: (a) added 2 visible FAQ items + matching FAQPage mainEntity entries (Travelers/in-ChatGPT app + PII data-privacy with NAIC Model Bulletin reference); FAQPage 3 -> 5. (b) added the previously missing VISIBLE FAQ section (mirrors healthcare 5/23 fix — JSON-LD-only -> visible+JSON-LD parity). (c) Article JSON-LD: added @id, url, mainEntityOfPage, datePublished, dateModified=2026-05-28, publisher.logo. (d) Service JSON-LD url 'https://sayfeai.com/industries/insurance' (vercel.json 301-redirects) -> canonical 'https://sayfeai.com/insurance' (3/16 of queued JSON-LD canonical sweep; healthcare 1/16 on 2026-05-23, finance 2/16 on 2026-05-27). Sitemap lastmod 2026-05-21 -> 2026-05-28."},
+    {"query_id":"chatgpt-hipaa-compliant","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["openai.com","help.openai.com","hipaajournal.com","bastiongpt.com","hipaavault.com","chat-data.com","healthcarefinancenews.com","techaheadcorp.com","nightfall.ai","pmc.ncbi.nlm.nih.gov"],"answer_pattern":"paragraph","notes":"Cited consensus today: standard ChatGPT (free/Plus/Business) is NOT HIPAA compliant; ChatGPT for Healthcare (Jan 2026, OpenAI Help Center) supports BAA + data residency + CMK + audit logs; OpenAI API supports BAA for eligible customers; ChatGPT Health (consumer health-literacy product) does NOT get a BAA. Our /blog/chatgpt-healthcare-hipaa-2026 page already carries this exact framing after the 2026-05-24 accuracy correction. No actionable patch — already aligned, would be churn."}
+  ]
+}
