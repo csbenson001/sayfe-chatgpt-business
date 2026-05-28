@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Microsoft Just Slashed Copilot to $18/User to Beat ChatGPT — But the Math Doesn't Add Up for Small Business</title>
+  <meta name="description" content="Microsoft dropped Microsoft 365 Copilot Business to $18/user/month through June 30, 2026 — looks cheaper than ChatGPT Business at $20. Until you do the math. Here's the all-in 2-year cost comparison, the fine print Microsoft buried, and when each option actually wins.">
+  <meta name="keywords" content="Microsoft Copilot $18 pricing, Copilot Business promo 2026, ChatGPT Business vs Copilot, Microsoft 365 Copilot small business, Copilot vs ChatGPT pricing 2026, Microsoft Copilot June 30 2026, ChatGPT Business pricing 2026">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.com/blog/microsoft-copilot-18-dollar-promo-chatgpt-business-math-2026">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Microsoft Just Slashed Copilot to $18/User to Beat ChatGPT — But the Math Doesn't Add Up for Small Business">
+  <meta property="og:description" content="Microsoft dropped Copilot Business to $18/user through June 30, 2026. Looks cheaper than ChatGPT Business — until you read the fine print. The honest 2-year math for small business.">
+  <meta property="og:url" content="https://sayfeai.com/blog/microsoft-copilot-18-dollar-promo-chatgpt-business-math-2026">
+  <meta property="og:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Microsoft Slashed Copilot to $18 to Beat ChatGPT — The Math Doesn't Work">
+  <meta name="twitter:description" content="The Copilot $18 promo runs through June 30, 2026. Before you switch, run the honest 2-year math against ChatGPT Business at $20 annual.">
+  <meta name="twitter:image" content="https://sayfeai.com/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-05-28T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="News & Trends">
+  <meta property="article:tag" content="Microsoft Copilot">
+  <meta property="article:tag" content="ChatGPT Business">
+  <meta property="article:tag" content="AI Pricing">
+  <meta property="article:tag" content="Small Business AI">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--yale-blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover { background: var(--yale-mid); }
+
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; }
+
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.8rem;
+      color: var(--yale-blue);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.3rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.8;
+    }
+
+    .article-content li { margin-bottom: 0.5rem; }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    .article-content a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45, 140, 240, 0.3);
+      transition: border-color 0.3s;
+    }
+
+    .article-content a:hover { border-bottom-color: var(--accent); }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      background: var(--yale-light);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--yale-deep);
+      border-radius: 4px;
+    }
+
+    blockquote p:last-child { margin-bottom: 0; }
+
+    blockquote cite {
+      display: block;
+      margin-top: 0.75rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--yale-blue);
+      font-size: 0.95rem;
+    }
+
+    .comparison-table-wrapper {
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 1.25rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .comparison-table th:last-child { border-right: none; }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child { border-right: none; }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody tr:nth-child(odd) { background-color: var(--yale-light); }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+    }
+
+    .highlight-box {
+      background: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box strong { color: var(--yale-blue); }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background: var(--yale-light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-top: 4px solid var(--accent);
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      display: block;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      margin-top: 0.5rem;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .cta-section h3 { color: var(--white); margin-bottom: 1rem; }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: var(--white);
+      color: var(--yale-blue);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-section { margin-top: 3rem; }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--yale-light);
+      padding: 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--yale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover { background: #d5dff0; }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 1.25rem;
+      display: none;
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-toggle { transform: rotate(180deg); }
+
+    footer {
+      background: var(--yale-deep);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content { max-width: 1200px; margin: 0 auto; }
+
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    .reading-time {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 1.65rem; }
+      .nav-links { gap: 1rem; font-size: 0.9rem; }
+      .comparison-table { font-size: 0.85rem; }
+      .comparison-table th, .comparison-table td { padding: 0.75rem; }
+      .article-meta { gap: 1rem; }
+      .stat-number { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <h1>Microsoft Just Slashed Copilot to $18/User to Beat ChatGPT &mdash; But the Math Doesn't Add Up for Small Business</h1>
+    <div class="article-meta">
+      <div class="meta-item"><span>May 28, 2026</span></div>
+      <div class="meta-item"><span>&#128214; 10 min read</span></div>
+      <div class="meta-item"><span>&#9997;&#65039; Sayfe.ai</span></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <article class="article-container">
+    <span class="category-badge">News &amp; Trends</span>
+    <span class="reading-time">10 min read</span>
+
+    <div class="article-content">
+      <p>Microsoft has a Copilot problem. Three months ago Ramp's AI Index showed Anthropic's Claude overtaking ChatGPT in business adoption. <a href="/blog/openai-chatgpt-main-street-small-business-2026">OpenAI launched a national Main Street campaign</a> aimed directly at small business owners. <a href="/blog/openai-deployment-company-4-billion-mckinsey-small-business">OpenAI spun up a $4 billion deployment subsidiary</a> to embed engineers inside enterprises. And ChatGPT Business quietly cut its price to <strong>$20/user/month on annual billing</strong> — matching ChatGPT Plus.</p>
+
+      <p>Microsoft's answer, running through <strong>June 30, 2026</strong>: drop Microsoft 365 Copilot Business from its standard $21/user/month annual rate to <strong>$18/user/month</strong> for net-new customers — undercutting ChatGPT Business by $2/seat/month on the headline.</p>
+
+      <p>If you only read the press release, that's a 14% discount and the better deal. If you read the <em>contract</em>, it's a different story. The all-in cost for a 10-person small business over 24 months can land <strong>$3,000 to $7,000 higher</strong> than ChatGPT Business — before you count what the two products actually deliver to your team day to day.</p>
+
+      <div class="highlight-box">
+        <strong>TL;DR:</strong> Microsoft's $18 Copilot promo applies to first year only, requires an annual lock-in, requires a separate qualifying Microsoft 365 license that costs another $6&ndash;$12.50/user/month, and reverts to $21+/user/month in year 2. ChatGPT Business is $20/user/month annual, all-in, with no separate license required, no expiring promo, and admin controls + SSO + data privacy already in the seat price. Run the math <em>before</em> the headline.
+      </div>
+
+      <h2>What Microsoft Actually Announced</h2>
+
+      <p>The promotion landed inside Microsoft's "convenience SKUs" — bundles that pair Microsoft 365 Business Standard or Business Premium with Copilot Business. The legal text on the offer is more restrictive than the marketing suggests. The actual terms:</p>
+
+      <ul>
+        <li><strong>$18/user/month</strong> on annual billing, applied to the Copilot Business add-on.</li>
+        <li><strong>First year only.</strong> In year 2, the price reverts to the standard $21/user/month (and Microsoft has been quietly raising base SKU prices 5&ndash;33% — see our writeup on <a href="/blog/microsoft-365-price-increase-2026-chatgpt-business-alternative">the July 1 Microsoft 365 price increase</a>).</li>
+        <li><strong>New customers only.</strong> Available only to net-new Microsoft 365 commercial customers, purchased between December 1, 2025 and June 30, 2026.</li>
+        <li><strong>Up to 300 users.</strong> If you scale past 300 seats during the promo, the promo doesn't follow you.</li>
+        <li><strong>Annual commitment required.</strong> No monthly out. If your needs change mid-year, you eat the seats.</li>
+        <li><strong>A qualifying Microsoft 365 license is still required.</strong> Copilot is an add-on, not a standalone product. You must also pay for Microsoft 365 Business Basic ($6/user/month), Business Standard ($12.50/user/month), Business Premium ($22/user/month), or an enterprise SKU (E3 at ~$36, E5 at ~$57).</li>
+      </ul>
+
+      <p>That last point is the one most small business owners miss. The $18 figure is not the all-in price for AI. It's the price of <em>adding AI on top</em> of a Microsoft license you're separately paying for. And if you're not already a Microsoft shop, you're now signing two contracts — not one.</p>
+
+      <h2>Why Microsoft Is Doing This Now</h2>
+
+      <p>The competitive context behind a 14% price cut on a flagship product is almost always more interesting than the cut itself. Microsoft's Copilot business has been in defensive mode for months:</p>
+
+      <ul>
+        <li><strong>Adoption is undershooting expectations.</strong> Multiple industry analysts have flagged enterprise Copilot pilots stalling or being canceled due to unclear ROI and licensing complexity. Our own <a href="/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning">writeup on the Copilot meltdown</a> tracks the pattern.</li>
+        <li><strong>Anthropic crashed the party.</strong> <a href="/blog/chatgpt-vs-claude-small-business-2026">Anthropic launched Claude for Small Business</a> on May 13, 2026, with a 10-city free training tour and 15 native integrations (Quickbooks, PayPal, HubSpot, Canva, Docusign, Microsoft 365, Google Workspace). Anthropic's revenue run rate jumped from $9B to $30B+ in twelve months.</li>
+        <li><strong>OpenAI lowered the bar.</strong> By dropping ChatGPT Business to $20 annual to match ChatGPT Plus, OpenAI removed Microsoft's "we're cheaper bundled" pitch overnight.</li>
+        <li><strong>The Office moat is leaking.</strong> ChatGPT for Excel and Google Sheets — <a href="/blog/chatgpt-excel-google-sheets-small-business-2026">now available to every ChatGPT Business workspace</a> — punctured the last big "you need Microsoft to get AI inside Office" argument.</li>
+      </ul>
+
+      <p>A 14% discount on the first year of a flagship product is what happens when growth misses plan. It's not a generous gesture; it's a defensive maneuver. That's not a knock on Microsoft &mdash; it's just the read every buyer should make before signing the annual paperwork.</p>
+
+      <h2>The Honest 2-Year Math: $18 Copilot vs $20 ChatGPT Business</h2>
+
+      <p>Let's do the math the way a CFO would, not the way the landing page does. The scenario: <strong>10 users, 2 years, USD.</strong> All figures use the lowest-effort bundle for each side &mdash; the cheapest qualifying M365 license for Copilot, and standard ChatGPT Business annual for OpenAI.</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 40%;">Line item</th>
+              <th style="width: 30%;">Microsoft 365 Copilot Business ($18 promo)</th>
+              <th style="width: 30%;">ChatGPT Business ($20 annual)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">AI seat price (Year 1)</td>
+              <td>$18/user/month (promo)</td>
+              <td>$20/user/month</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Required base license</td>
+              <td>M365 Business Basic at $6/user/month minimum (Standard at $12.50 if you want Office desktop apps)</td>
+              <td>None &mdash; ChatGPT Business is the only seat</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Year-1 all-in per user/month</td>
+              <td>$24 (with Basic) or $30.50 (with Standard)</td>
+              <td>$20</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Year-1 all-in for 10 users</td>
+              <td>$2,880 (Basic) or $3,660 (Standard)</td>
+              <td>$2,400</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Year-2 AI seat (promo expired)</td>
+              <td>$21/user/month standard rate</td>
+              <td>$20/user/month (no expiring promo)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Year-2 all-in per user/month</td>
+              <td>$27 (Basic) or $33.50 (Standard)</td>
+              <td>$20</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Year-2 all-in for 10 users</td>
+              <td>$3,240 (Basic) or $4,020 (Standard)</td>
+              <td>$2,400</td>
+            </tr>
+            <tr>
+              <td class="feature-label"><strong>2-Year Total (10 users)</strong></td>
+              <td><strong>$6,120 (Basic) or $7,680 (Standard)</strong></td>
+              <td><strong>$4,800</strong></td>
+            </tr>
+            <tr>
+              <td class="feature-label"><strong>ChatGPT Business savings</strong></td>
+              <td colspan="2"><strong>$1,320 (vs Basic bundle) to $2,880 (vs Standard bundle) over 24 months</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The $18 sticker price is real. The bottom of the receipt is what counts.</p>
+
+      <div class="warning-box">
+        <strong>&#9888;&#65039; The trap most small businesses miss:</strong> The convenience SKU bundles Copilot with a base license, so the all-in number looks roughly comparable in year 1 &mdash; but the Copilot promo expires after 12 months while the M365 license keeps going (and usually goes <em>up</em>: see Microsoft's announced July 1 price increases). ChatGPT Business is a single, single-line invoice with no expiring discount and no separate license to keep alive.
+      </div>
+
+      <h2>The Fine Print That Doesn't Make the Press Release</h2>
+
+      <p>Beyond price, there are five contractual realities most small business owners discover only after they've signed. Worth knowing before:</p>
+
+      <ol>
+        <li><strong>Annual lock-in, no monthly out.</strong> The $18 rate is only available on annual billing. If your team shrinks in month 3, you keep paying for the empty seats through month 12. ChatGPT Business has both monthly ($25) and annual ($20) options &mdash; you choose your flexibility.</li>
+        <li><strong>Promo doesn't transfer at renewal.</strong> Year 2 renews at the standard $21/user/month, and Microsoft has been steadily raising base license prices 5&ndash;33% across the SKU lineup. The actual year-2 AI line is virtually never $18 again.</li>
+        <li><strong>You inherit the full Microsoft 365 admin surface.</strong> SharePoint permissions, Entra ID setup, Microsoft Graph configuration, and the licensing portal. If you're a 10-person plumbing company or 6-person law firm, you're now also a Microsoft 365 administrator. ChatGPT Business has a single admin console.</li>
+        <li><strong>Grounding context is locked to Microsoft Graph.</strong> Copilot's contextual answers come from your Microsoft 365 data. If your business runs on Google Workspace, Notion, HubSpot, Quickbooks, or anything outside Microsoft's walls, you're either migrating those systems or losing the grounding advantage Copilot is supposed to deliver. ChatGPT Business connects to all of those natively via <a href="/blog/openai-workspace-agents-chatgpt-business-replace-custom-gpts">workspace agents</a>.</li>
+        <li><strong>Model access is narrower than the headline implies.</strong> Copilot routes through Microsoft's grounding and prompt-rewriting layer. ChatGPT Business gives users direct access to GPT-5.5 (the same default model OpenAI shipped in May), GPT-5.5 Thinking, GPT-5.5 Pro, and the wider OpenAI tool stack &mdash; voice, image, Excel/Sheets integration, Codex, Goal Mode, and Custom GPTs. See our breakdown of <a href="/blog/chatgpt-office-apps-vs-microsoft-copilot-2026">ChatGPT Office Apps vs Microsoft Copilot</a> for the side-by-side.</li>
+      </ol>
+
+      <h2>When Copilot Actually Wins</h2>
+
+      <p>Honest take: there are real scenarios where Microsoft 365 Copilot Business is the right call. If <em>any</em> of these are true for your business, Copilot deserves a serious look:</p>
+
+      <ul>
+        <li><strong>You already pay for Microsoft 365 across the company.</strong> The incremental cost of adding Copilot is just the AI line, not the whole bundle. The math gets much closer.</li>
+        <li><strong>Your entire workflow lives in SharePoint and Outlook.</strong> Copilot's Microsoft Graph grounding is genuinely useful when most of your knowledge is already inside Microsoft's walls.</li>
+        <li><strong>You have a senior IT admin who already manages Entra ID.</strong> The administrative weight of M365 doesn't add to your load.</li>
+        <li><strong>You're a heavy Outlook+Teams shop.</strong> Native AI inside meetings and email is where Copilot is meaningfully ahead.</li>
+        <li><strong>You need very strict Microsoft compliance posture.</strong> Some regulated industries have made their entire compliance program Microsoft-native &mdash; switching to a non-Microsoft AI stack creates friction.</li>
+      </ul>
+
+      <p>For those buyers, the $18 promo is a real discount worth claiming before June 30. The rest of this post is for everyone else &mdash; the small businesses who would be paying full freight for Microsoft 365 just to get the Copilot add-on.</p>
+
+      <h2>When ChatGPT Business Is the Better Call</h2>
+
+      <p>If your business is more representative of US small business (10&ndash;50 people, mixed software stack, no dedicated IT admin, time-strapped owner), ChatGPT Business wins on multiple dimensions:</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">$20</span>
+          <div class="stat-label">All-in monthly cost per user (annual). No add-on license required.</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">$0</span>
+          <div class="stat-label">Expiring promos. Year 2 price = year 1 price.</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">1</span>
+          <div class="stat-label">Admin console. One invoice. One contract.</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">15+</span>
+          <div class="stat-label">Native connectors: Slack, Google Drive, Microsoft 365, Salesforce, Notion, HubSpot, Quickbooks, and more.</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5+</span>
+          <div class="stat-label">Models in the seat: GPT-5.5, GPT-5.5 Thinking, GPT-5.5 Pro, image gen, voice, Codex.</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2&ndash;5</span>
+          <div class="stat-label">Day setup with an authorized OpenAI SMB Channel Partner. No Entra ID required.</div>
+        </div>
+      </div>
+
+      <p>The most under-priced piece of that table is the connector list. The whole pitch of Copilot is "AI where your work already lives." Workspace agents in ChatGPT Business now achieve the same outcome &mdash; while letting you keep Google Drive, Notion, Quickbooks, and Salesforce instead of paying Microsoft to host them. The walled-garden advantage Microsoft had a year ago is the kind of moat that quietly drains overnight.</p>
+
+      <h2>The 7-Day Decision Framework</h2>
+
+      <p>If you're staring at the June 30 deadline and trying to decide what to do, here's the framework we walk small business owners through &mdash; in less than a week, with zero pressure:</p>
+
+      <h3>Day 1: Inventory your software stack</h3>
+      <p>List every tool your team uses every day. Email. Calendar. Docs. Spreadsheets. CRM. Accounting. Storage. Marketing. Project management. Count how many of those are Microsoft and how many are not. If it's a 70/30+ split toward Microsoft, Copilot is a real candidate. If it's 50/50 or tilted away, ChatGPT Business is the cleaner integration.</p>
+
+      <h3>Day 2: Run the 24-month math on your team size</h3>
+      <p>Use the table above. Plug in your seat count. Add your specific M365 SKU costs if you're already paying for them. Compare to ChatGPT Business at $20/user/month. The number that matters is the 24-month total, not the year-1 promo.</p>
+
+      <h3>Days 3&ndash;4: Pilot the actual product</h3>
+      <p>Both vendors offer trials. Pick the two workflows that consume the most team time &mdash; usually drafting and summarization &mdash; and run them in both products. Measure time saved, not vibes.</p>
+
+      <h3>Days 5&ndash;6: Check the admin surface</h3>
+      <p>Have whoever runs IT (or if that's you, set aside an hour) walk through the admin console of both. The one that takes 4 hours to configure correctly is going to cost you another 4 hours every quarter for the next two years.</p>
+
+      <h3>Day 7: Decide and commit</h3>
+      <p>If Copilot wins on integration depth and your team already lives in Microsoft Graph, lock in the $18 promo before June 30. If ChatGPT Business wins on flexibility, breadth, and total cost, sign the annual at $20/user/month and skip the lock-in trap.</p>
+
+      <p>The one option that loses every time? Defaulting to "we'll just go with Microsoft because we always have." That's not a decision &mdash; that's inertia, and it usually costs more than either of the two real options.</p>
+
+      <h2>The Bigger Pattern: Microsoft Is Discounting Because It's Losing</h2>
+
+      <p>Step back from the seat math for a moment. A $3/seat discount on a flagship product is the kind of move a market leader doesn't have to make. The fact that Microsoft made it &mdash; on a 6-month promotional window aimed specifically at new SMB customers &mdash; tells you something about where the AI-for-business market is actually heading.</p>
+
+      <p>OpenAI has cut prices, expanded models, shipped agents, launched a Main Street SMB campaign, and put GPT-5.5 inside every Business seat. Anthropic has matched the SMB push with a 10-city tour and 15 packaged workflows. Google is rebuilding its core product around AI. The buyer's market for AI is more competitive than it has been at any point in the past three years &mdash; which means the price of waiting is now lower than the price of locking yourself into the wrong stack.</p>
+
+      <p>Microsoft's $18 promo gives you a real choice. The point of this post is just that &mdash; <em>choose</em>. Run the math. Walk the admin surface. Pilot the product. Don't sign a 12-month annual on the headline number alone.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the Microsoft 365 Copilot Business $18/user/month price the full cost?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. The $18 promotional rate covers only the Copilot Business add-on. It requires a separate qualifying Microsoft 365 license &mdash; at minimum Microsoft 365 Business Basic at $6/user/month, or more typically Business Standard at $12.50/user/month if your team needs Word, Excel, and PowerPoint desktop apps. The all-in cost is therefore $24&ndash;$30.50/user/month in year 1, and rises in year 2 when the Copilot promo expires and reverts to the standard $21/user/month annual rate. The promo also requires annual commitment, applies only to net-new Microsoft 365 commercial customers, and is capped at 300 users.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>When does the Microsoft Copilot $18 promotion expire?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>The $18/user/month promotional rate is available for new purchases made through June 30, 2026. After June 30, the standard list price of $21/user/month annual (or $25.20/user/month monthly) applies. For customers who buy before June 30, the $18 rate only covers the first year &mdash; year 2 renews at the standard $21 rate, and Microsoft has separately announced 5&ndash;33% price increases on Microsoft 365 base SKUs taking effect July 1, 2026.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is ChatGPT Business cheaper than Microsoft 365 Copilot Business overall?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>For most small businesses that aren't already paying for Microsoft 365, yes &mdash; meaningfully cheaper. ChatGPT Business is $20/user/month on annual billing, all-in, with no separate license required. A 10-person business pays $4,800 over 24 months. The equivalent 10-person business on the Copilot $18 promo with Microsoft 365 Business Basic pays $6,120 over the same 24 months ($1,320 more), and with Business Standard pays $7,680 ($2,880 more). If you already pay for Microsoft 365 across the company, Copilot becomes more cost-competitive because the base license is sunk. The right comparison is always all-in 24-month total, not the headline year-1 promo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I switch from ChatGPT to Copilot to take advantage of the $18 promo?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Probably not, unless your business is already a heavy Microsoft 365 shop. The $18 rate is only the first-year price, requires an annual lock-in, requires a separate qualifying M365 license, and reverts to $21+/user/month in year 2. Most small businesses that switched away from Microsoft to ChatGPT in the past 12 months did so because of administrative complexity and integration breadth, not just pricing &mdash; and switching back for a 1-year promotional discount typically costs more in migration friction than the discount saves. If you do switch, run the 24-month all-in math first, plus a head-to-head pilot on two real workflows your team runs every week.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's the difference between Microsoft 365 Copilot Business and Copilot Enterprise?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Microsoft 365 Copilot Business is the SMB tier, capped at 300 users, with the convenience SKU bundling and the current $18 promotional pricing. Microsoft 365 Copilot Enterprise (formerly just "Microsoft 365 Copilot") is the unlimited-user tier at $30/user/month standard, sold to organizations on E3 or E5 Microsoft 365 plans. Enterprise adds richer admin controls, stronger compliance posture, and additional model and tool access. ChatGPT Business by comparison is one tier with no cap, scales from 2 seats to 5,000+, and includes SSO, admin console, and contractual data privacy at the $20/user/month annual price &mdash; bridging what Microsoft positions across two separate Copilot SKUs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I lock in current ChatGPT Business pricing before any changes?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>ChatGPT Business is currently $20/user/month on annual billing or $25/user/month on monthly billing, with no expiring promotional pricing. Annual billing pre-pays the year and locks the per-seat rate for the duration of the term. Working with an authorized OpenAI SMB Channel Partner like Sayfe.ai handles the setup, SSO, admin configuration, training, and ongoing optimization at no extra cost &mdash; you pay OpenAI directly at standard ChatGPT Business pricing. Most teams are live in 2&ndash;5 business days from contract signing.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Microsoft 365 Copilot Business is on a $18/user/month promo through June 30, 2026 &mdash; first year only, annual lock-in, new customers only, capped at 300 users.</li>
+        <li>The $18 rate does not include the required Microsoft 365 base license ($6&ndash;$22+/user/month). All-in year-1 cost is $24&ndash;$30.50/user/month.</li>
+        <li>ChatGPT Business is $20/user/month annual, all-in, with no separate license, no expiring promo, and no annual lock-in if you choose monthly billing at $25.</li>
+        <li>Over 24 months for a 10-person team, ChatGPT Business saves $1,320&ndash;$2,880 vs the Copilot $18 promo bundle &mdash; before counting the wider model and connector access.</li>
+        <li>Microsoft's discount is defensive: ChatGPT Business price-matched ChatGPT Plus, Anthropic launched Claude for Small Business, and Office AI features OpenAI shipped (Excel/Sheets) eroded Microsoft's bundling advantage.</li>
+        <li>Copilot still wins for businesses deeply embedded in Microsoft Graph with a dedicated IT admin. ChatGPT Business wins for most other SMBs.</li>
+        <li>The right decision is the 24-month total cost of ownership, not the year-1 promotional headline.</li>
+      </ul>
+
+      <div class="cta-section">
+        <h3>Don't Sign the Copilot Annual Without Running the Math</h3>
+        <p>Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small businesses compare AI options honestly, pilot ChatGPT Business on your real workflows, and roll out in 2&ndash;5 business days &mdash; with SSO, admin controls, training, and ongoing optimization included at no extra cost.</p>
+        <a href="/get-started" class="cta-button">Get Started Today</a>
+      </div>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and medium-sized businesses implement and optimize ChatGPT Business, ChatGPT Enterprise, and the OpenAI API across 15+ industries. We're here to make enterprise AI accessible &mdash; and the productivity gains real &mdash; for teams of any size.
+      </p>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Microsoft Just Slashed Copilot to $18/User to Beat ChatGPT — But the Math Doesn't Add Up for Small Business",
+    "description": "Microsoft dropped Microsoft 365 Copilot Business to $18/user/month through June 30, 2026 — looks cheaper than ChatGPT Business at $20. Until you do the math. Here's the all-in 2-year cost comparison, the fine print Microsoft buried, and when each option actually wins.",
+    "image": "https://sayfeai.com/og-image-blog.png",
+    "datePublished": "2026-05-28T00:00:00Z",
+    "dateModified": "2026-05-28T00:00:00Z",
+    "author": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfeai.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sayfeai.com/logo.png"
+      }
+    },
+    "articleSection": "News & Trends",
+    "keywords": "Microsoft Copilot $18 promo, Microsoft 365 Copilot Business pricing 2026, ChatGPT Business vs Copilot, Copilot vs ChatGPT 2026, Copilot promo June 30 2026, ChatGPT Business pricing, small business AI pricing",
+    "wordCount": "2350",
+    "timeRequired": "PT10M"
+  }
+  </script>
+
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is the Microsoft 365 Copilot Business $18/user/month price the full cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The $18 promotional rate covers only the Copilot Business add-on. It requires a separate qualifying Microsoft 365 license — at minimum Microsoft 365 Business Basic at $6/user/month, or more typically Business Standard at $12.50/user/month if your team needs Word, Excel, and PowerPoint desktop apps. The all-in cost is therefore $24 to $30.50/user/month in year 1, and rises in year 2 when the Copilot promo expires and reverts to the standard $21/user/month annual rate. The promo also requires annual commitment, applies only to net-new Microsoft 365 commercial customers, and is capped at 300 users."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When does the Microsoft Copilot $18 promotion expire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The $18/user/month promotional rate is available for new purchases made through June 30, 2026. After June 30, the standard list price of $21/user/month annual (or $25.20/user/month monthly) applies. For customers who buy before June 30, the $18 rate only covers the first year — year 2 renews at the standard $21 rate, and Microsoft has separately announced 5 to 33% price increases on Microsoft 365 base SKUs taking effect July 1, 2026."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is ChatGPT Business cheaper than Microsoft 365 Copilot Business overall?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most small businesses that aren't already paying for Microsoft 365, yes — meaningfully cheaper. ChatGPT Business is $20/user/month on annual billing, all-in, with no separate license required. A 10-person business pays $4,800 over 24 months. The equivalent 10-person business on the Copilot $18 promo with Microsoft 365 Business Basic pays $6,120 over the same 24 months ($1,320 more), and with Business Standard pays $7,680 ($2,880 more). If you already pay for Microsoft 365 across the company, Copilot becomes more cost-competitive because the base license is sunk. The right comparison is always all-in 24-month total, not the headline year-1 promo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I switch from ChatGPT to Copilot to take advantage of the $18 promo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Probably not, unless your business is already a heavy Microsoft 365 shop. The $18 rate is only the first-year price, requires an annual lock-in, requires a separate qualifying M365 license, and reverts to $21+/user/month in year 2. Most small businesses that switched away from Microsoft to ChatGPT in the past 12 months did so because of administrative complexity and integration breadth, not just pricing — and switching back for a 1-year promotional discount typically costs more in migration friction than the discount saves. If you do switch, run the 24-month all-in math first, plus a head-to-head pilot on two real workflows your team runs every week."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between Microsoft 365 Copilot Business and Copilot Enterprise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microsoft 365 Copilot Business is the SMB tier, capped at 300 users, with the convenience SKU bundling and the current $18 promotional pricing. Microsoft 365 Copilot Enterprise (formerly just 'Microsoft 365 Copilot') is the unlimited-user tier at $30/user/month standard, sold to organizations on E3 or E5 Microsoft 365 plans. Enterprise adds richer admin controls, stronger compliance posture, and additional model and tool access. ChatGPT Business by comparison is one tier with no cap, scales from 2 seats to 5,000+, and includes SSO, admin console, and contractual data privacy at the $20/user/month annual price — bridging what Microsoft positions across two separate Copilot SKUs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I lock in current ChatGPT Business pricing before any changes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ChatGPT Business is currently $20/user/month on annual billing or $25/user/month on monthly billing, with no expiring promotional pricing. Annual billing pre-pays the year and locks the per-seat rate for the duration of the term. Working with an authorized OpenAI SMB Channel Partner like Sayfe.ai handles the setup, SSO, admin configuration, training, and ongoing optimization at no extra cost — you pay OpenAI directly at standard ChatGPT Business pricing. Most teams are live in 2 to 5 business days from contract signing."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Interactive FAQ Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
