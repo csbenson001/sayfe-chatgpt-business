@@ -1,0 +1,56 @@
+{
+  "date": "2026-05-29",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["google_aio_websearch_proxy"],
+  "engines_unavailable": [
+    "chatgpt_openai_api (no OPENAI_API_KEY)",
+    "claude_anthropic_api (no ANTHROPIC_API_KEY)",
+    "perplexity (no PERPLEXITY_API_KEY)",
+    "serpapi (no SERPAPI_API_KEY)"
+  ],
+  "measurement_caveat": "WebSearch proxy is DIRECTIONAL ONLY; it cannot observe true ChatGPT/Claude/Perplexity citations. Domain is 11 days post-rebrand (sayfeai.com); near-zero indexation expected. 0/N is not a regression signal.",
+  "sample_note": "6 WebSearch-proxy searches across 6 priority-bucket query_ids (Friday cadence; pillar audit phase added). Compliance 1, assessment 1, partner_channel 1, comparison 1, industry 1 (real-estate — JSON-LD canonical sweep candidate, 4/16).",
+  "searches_run": 6,
+  "sample_size": 6,
+  "cited_us_canonical": 0,
+  "cited_us_legacy": 0,
+  "buckets_sampled": {
+    "compliance": ["colorado-sb-26-189-admt"],
+    "assessment": ["ai-compliance-assessment"],
+    "partner_channel": ["msp-ai-compliance-resell"],
+    "comparison": ["chatgpt-vs-claude"],
+    "industry": ["chatgpt-for-real-estate"]
+  },
+  "bucket_citation_rates": {
+    "compliance": "0/1",
+    "assessment": "0/1",
+    "partner_channel": "0/1",
+    "comparison": "0/1",
+    "industry": "0/1"
+  },
+  "pages_patched": [
+    "public/industries/real-estate.html",
+    "public/sitemap.xml",
+    "public/llms.txt"
+  ],
+  "pillar_handoffs_reconfirmed": [
+    "/compliance-assessment",
+    "/compliance/ai-policy-template",
+    "/compliance/colorado-ai-act",
+    "/compliance/eu-ai-act"
+  ],
+  "new_competitors_auto_detected": [],
+  "friday_pillar_audit": {
+    "performed": true,
+    "pillars_found_in_public_compliance_dir": 0,
+    "note": "No /compliance/* pillars exist yet — all 5 are open handoffs to Claude Code."
+  },
+  "results": [
+    {"query_id":"colorado-sb-26-189-admt","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["leg.colorado.gov","consumerfinancemonitor.com","workforcebulletin.com","littler.com","crowell.com","finnegan.com","clarkhill.com","consumerfinancialserviceslawmonitor.com","ogletree.com","cyberadviserblog.com"],"answer_pattern":"paragraph","notes":"Cited consensus fully aligned with our framing: SB 26-189 signed 2026-05-14 by Polis; effective 2027-01-01; repeals/reenacts SB 24-205; narrower ADMT framework; pre-use + post-adverse-outcome notice + consumer rights; 3-year retention; AG enforcement via Colorado Consumer Protection Act with 60-day cure. Our blog + llms.txt + llms-full.txt carry this framing post 2026-05-22 SB 26-189/ADMT rewrite. No actionable patch — would be churn. PILLAR HANDOFF reconfirmed: /compliance/colorado-ai-act."},
+    {"query_id":"ai-compliance-assessment","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["prompts.ai","ispartnersllc.com","peachbytesolutions.com","ironedgegroup.com","esudo.com","bridgeviewit.com","growthcapitalcorp.com","helloalice.com","fitgap.com","aicomplianceadvisor.eu"],"answer_pattern":"list","notes":"Citations converge on '5-minute / 60-second / no signup / instant score' framing. Winners (IS Partners 60s compliance checker, Compliance Advisor AI 60s EU AI Act/GDPR check, PeachByte 5-min, BridgeView 10-min quiz, IronEdge governance checklist, HelloAlice readiness, Growth Capital, FitGap directory) all rank with INSTANT no-email-gate assessment. /compliance-assessment pillar (Engine 1 conversion mechanism) still 404 — Claude Code build remains highest-leverage handoff. No actionable patch this run."},
+    {"query_id":"msp-ai-compliance-resell","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["telecomreseller.com","guardz.com","channelinsider.com","worksent.com","managedservicesjournal.com","channele2e.com","integrisit.com","customgpt.ai"],"answer_pattern":"paragraph","notes":"NEW themes this run: (1) Deep Fathom AI-powered CMMC Compliance Readiness Suite — 250K+ defense suppliers, multi-billion-dollar annual market for MSP/reseller; (2) Barracuda restructuring Partner Success Program into unified MSP+reseller model — 'line between reseller and MSP is fading'; (3) 'AI governance is the high-margin frontier for 2026 MSPs' (Managed Services Journal); (4) AI governance as competitive differentiator. Sayfeai has no MSP-channel pillar — Engine 2 strategy proposal only; no actionable patch. /openai-smb-partner already covers partner-status definition. PILLAR HANDOFF: /partners/msp (Engine 2)."},
+    {"query_id":"chatgpt-vs-claude","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["jamout.ai","zapier.com","lorphic.com","aismartventures.com","pocketctopartners.com","gurusup.com","mobikasa.com","sheriseadkins.com.au","gmelius.com"],"answer_pattern":"paragraph","notes":"Cited consensus 2026: Claude 200K context vs ChatGPT-4o 128K; Claude leads in coding (Anthropic 54% enterprise coding share; Claude Code doubled Jan-Feb 2026); ChatGPT wins on multimedia (DALL-E + Sora + Voice in $20 Plus); both $20/month standard; complementary not overlapping. Our /compare/chatgpt-business-vs-claude-for-business covers this — listed in llms.txt + sitemap at 0.9 priority. No fact gap measured; would be churn. The chatgpt-vs-claude query target_page=null in seed file — could route to /compare/* in future seed refresh. Defer."},
+    {"query_id":"chatgpt-for-real-estate","engine":"google_aio_websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["placester.com","housingwire.com","academy.techpresso.co","agentimage.com","nodalview.com","realty-ai.com","implo.ai","promptsera.com","milehightitleguy.com","smartagentalliance.com"],"answer_pattern":"list","notes":"Cited consensus aligns with our existing framing: ChatGPT = #1 AI tool among real estate agents (58% adoption vs 20% Gemini); use cases = listing descriptions (30min->5min), social, emails, case studies, neighborhood guides, CMAs; California AB 723 (effective Jan 1 2026) AI-image-disclosure; FTC penalties for AI fake reviews; 5-component prompt structure. Our /industries/real-estate already carries 58% stat + AB 723 + 6 FAQs in FAQPage JSON-LD. DEFECT FOUND (mirrors healthcare 2026-05-23 + insurance 2026-05-28): FAQPage JSON-LD with 6 Q/A but NO visible <details> disclosures. PATCHED this run: (a) added missing visible FAQ section using 6 <details> mirroring FAQPage JSON-LD verbatim. (b) Article JSON-LD upgraded: added @id, url, mainEntityOfPage flipped /industries/real-estate -> /real-estate, publisher.logo, dateModified 2026-05-18 -> 2026-05-29. (c) FAQPage JSON-LD: added @id (canonical/#faq). (d) Service JSON-LD url '/industries/real-estate' (vercel 301) -> '/real-estate' (4/16 of canonical sweep; healthcare 1/16 on 5/23, finance 2/16 on 5/27, insurance 3/16 on 5/28). Sitemap lastmod 2026-05-21 -> 2026-05-29. Bytes: 25878 -> 32255 (+24.64%); lines: 280 -> 317 (+13.21%; under 30% ceiling). 6 <details> asserted; 3 JSON-LD blocks parse; canonical preserved; no fresh elevaiq/sayfeai.chat/Vandelay introductions."}
+  ]
+}

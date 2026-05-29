@@ -53,7 +53,7 @@
   <!-- AI Content Maps -->
   <url>
     <loc>https://sayfeai.com/llms.txt</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -143,7 +143,7 @@
   </url>
   <url>
     <loc>https://sayfeai.com/real-estate</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
