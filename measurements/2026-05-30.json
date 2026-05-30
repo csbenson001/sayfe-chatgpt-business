@@ -1,0 +1,112 @@
+{
+  "date": "2026-05-30",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "engines_skipped": {
+    "chatgpt_responses_api": "OPENAI_API_KEY not present in scheduled-task environment",
+    "claude_messages_api": "ANTHROPIC_API_KEY not present in scheduled-task environment",
+    "google_aio_serpapi": "SERPAPI_API_KEY not present; claude-in-chrome MCP unavailable in scheduled environment",
+    "perplexity_sonar": "PERPLEXITY_API_KEY not present"
+  },
+  "sample_size": 7,
+  "sample_weighting": "v2 small rotating sample weighted to compliance + assessment + partner buckets; 1 industry (legal — canonical sweep candidate); 1 comparison; 1 local",
+  "results": [
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["workforcebulletin.com","leg.colorado.gov","jdsupra.com","finnegan.com","techjacksolutions.com","consumerfinancemonitor.com","reedsmith.com","fisherphillips.com","crowell.com"],
+      "answer_pattern": "list+explainer (BigLaw blog roundup dominates)",
+      "notes": "Day 14 — compliance bucket still 0%. Triggers v2 bucket-failure alert. Owners are BigLaw firms summarizing SB 26-189 (Polis signed 2026-05-14, effective 2027-01-01). We have alias coverage in /blog/ai-compliance-colorado-eu-small-business-2026 + llms.txt + llms-full.txt but no /compliance/colorado-ai-act pillar — Engine 1 handoff to Claude Code re-confirmed."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["prompts.ai","growthcapitalcorp.com","pathopt.com","fitgap.com","centraleyes.com","naitive.cloud","digital54.co","peoplemanagingpeople.com","sprinto.com","godofprompt.ai"],
+      "answer_pattern": "list of free/affordable tools, no 5-minute assessment leader emerging",
+      "notes": "Day 14 — assessment bucket still 0%. /compliance-assessment pillar does not exist. Conversion mechanism for Engine 1 remains unbuilt. trycomplianceiq.com and TrustLayer (5-minute promise) own the slot today — getting beat by paid SaaS, not by editorial."
+    },
+    {
+      "query_id": "ai-policy-template-smb",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["thoropass.com","polygraf.ai","responsible.ai","mescomputing.com","certified-nets.com","lattice.com","hibob.com","aihr.com","wordstream.com","legaltemplates.net"],
+      "answer_pattern": "list of downloadable templates — every winner has a one-click download",
+      "notes": "Pillar requires downloadable AI Policy template (PDF + DOCX) gated by email — that gate also feeds Engine 1. Re-confirmed handoff."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["guardz.com","integrisit.com","worksent.com","managedservicesjournal.com","thehackernews.com","meetgradient.com","tacticsmarketing.com","superops.com","channelinsider.com","blog.smallbizthoughts.com"],
+      "answer_pattern": "MSP trade-pub roundups; 'AI governance = high-margin frontier 2026' theme",
+      "notes": "Day 14 — partner_channel bucket still 0%. No MSP-channel content on sayfeai.com beyond /blog/best-chatgpt-business-partner-smb-2026. Need /partners/msp pillar (Engine 2 strategy proposal — not auto-builder scope). New theme this run: meetgradient.com 'compliance as MSP retainer opportunity' joins the dominant 'AI governance high-margin frontier' narrative."
+    },
+    {
+      "query_id": "chatgpt-for-legal",
+      "bucket": "industry",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["spellbook.com","clio.com","axios.com","growlaw.co","americanbar.org","rankings.io","lawrank.com"],
+      "answer_pattern": "explainer + use cases + risks (Mata v. Avianca hallucination warning is THE consensus cite)",
+      "notes": "Page exists at /legal (canonical) with FAQPage JSON-LD (8 Q/As) and Heppner/Rakoff coverage but had NO visible FAQ section + Service.url + Article @id/url/mainEntityOfPage still pointed to redirecting /industries/legal. Same defect class as healthcare 5/23, insurance 5/28, real-estate 5/29. Patched this run — 5/16 of JSON-LD canonical sweep."
+    },
+    {
+      "query_id": "ai-consultant-houston",
+      "bucket": "local",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["penncomp.com","ademero.com","opinosis-analytics.com","aiguyjosh.com","appmaisters.com","maventg.com","iaaic.org","builtin.com","chrisnwest.com","goodfirms.co"],
+      "answer_pattern": "list of local firms with capabilities + pricing notes",
+      "notes": "/about has LocalBusiness JSON-LD (added 2026-05-19) but doesn't surface in Houston AI consultant queries. Local SEO depth needed — citations from goodfirms.co or local directory submissions. Out of auto-builder scope; would need targeted local-pack acquisition work."
+    },
+    {
+      "query_id": "chatgpt-vs-claude-enterprise-share",
+      "bucket": "comparison",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["getpanto.ai","androidheadlines.com","venturebeat.com","gagadget.com","medium.com","tech-insider.org","technologychecker.io","ramp.com"],
+      "answer_pattern": "Ramp AI Index citation + revenue-share commentary (Anthropic 34.4% vs OpenAI 32.3% in April 2026; 30B vs 25B ARR)",
+      "notes": "Our /compare/chatgpt-business-vs-claude-for-business + llms.txt already mention the 34.4% vs 32.3% Ramp May 2026 datapoint. Page would benefit from a single citable stats block tying to Ramp + VentureBeat — but no measured churn justification today. Deferred — would be speculative."
+    }
+  ],
+  "summary": {
+    "total_queries": 7,
+    "cited_canonical": 0,
+    "cited_legacy_elevaiq": 0,
+    "cited_us_total": 0,
+    "citation_rate": "0/7 (0.0%)",
+    "buckets_sampled": {
+      "compliance": "0/2 (0%)",
+      "assessment": "0/1 (0%)",
+      "partner_channel": "0/1 (0%)",
+      "industry": "0/1 (0%)",
+      "comparison": "0/1 (0%)",
+      "local": "0/1 (0%)"
+    },
+    "new_competitors_3plus_threshold": [],
+    "pillar_handoffs_reconfirmed": [
+      "/compliance/colorado-ai-act",
+      "/compliance/eu-ai-act",
+      "/compliance/ai-policy-template",
+      "/compliance-assessment",
+      "/compliance/ai-risk-assessment-tool"
+    ],
+    "consecutive_flat_zero_days": 14,
+    "bucket_failure_alert_fired": true,
+    "bucket_failure_buckets": ["compliance", "assessment", "partner_channel"]
+  }
+}
