@@ -1,0 +1,129 @@
+{
+  "date": "2026-05-31",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "notes": "API keys (OPENAI_API_KEY, ANTHROPIC_API_KEY, SERPAPI_API_KEY, PERPLEXITY_API_KEY) still not in the scheduled-task environment — engine-attribution columns remain 'n/a' for ChatGPT/Claude. WebSearch proxy used as directional signal for Google AIO. Sample weighted to compliance/assessment/partner-channel buckets per v2 rule.",
+  "sample_strategy": "weighted-by-bucket: 2 compliance, 1 assessment, 1 partner-channel, 1 industry (consulting — aligned with today's canonical-sweep patch target), 1 comparison (mechanism re-verification), 1 trust (HIPAA re-verification)",
+  "results": [
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["leg.colorado.gov", "workforcebulletin.com", "jdsupra.com", "consumerfinancemonitor.com", "finnegan.com", "ogletree.com", "crowell.com", "techjacksolutions.com", "lawandtheworkplace.com", "cyberadviserblog.com"],
+      "answer_pattern": "paragraph-with-numbered-list",
+      "dominant_themes": ["SB 26-189 signed May 14 2026 by Gov Polis", "Effective January 1 2027", "Repeals and reenacts the Colorado AI Act", "Three deployer obligations: pre-use notice, post-adverse-outcome disclosure, consumer rights process", "3-year record retention for both developers and deployers", "No private right of action — AG enforcement only with 60-day cure period", "Small business exemptions narrowed (most SMBs now in scope)"],
+      "notes": "Same dominant narrative as 5/30. jdsupra.com now appears 3x across last 3 runs in Colorado bucket — crosses 3+ auto-detect threshold but already represented by existing target_competitor list; no new entry needed. techjacksolutions.com new for Colorado. sayfeai.com llms.txt content + blog content already aligned with this narrative."
+    },
+    {
+      "query_id": "ai-compliance-checklist",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["pathopt.com", "digitalapplied.com", "myaifrontdesk.com", "ost.agency", "cyberunit.com", "wipfli.com", "omm.com", "growthcapitalcorp.com", "medium.com"],
+      "answer_pattern": "numbered-list-with-state-breakdown",
+      "dominant_themes": ["AI tool inventory", "Written AI policy", "Data protection / retention rules", "Governance framework", "Bias audits ($5K-$50K, annual or post-change)", "Colorado, NYC, Illinois, Texas state requirements", "FCC one-to-one consent rule Jan 27 2026", "EU AI Act Aug 2 2026 transparency obligations"],
+      "notes": "digitalapplied.com cited 2x in same result set. Pattern: 5-7 step checklists with state-by-state breakdown. sayfeai blog ai-compliance-colorado-eu-small-business-2026 covers similar ground but doesn't lead with a numbered checklist format — could be expanded but already aligned 5/22; no churn."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["ispartnersllc.com", "prompts.ai", "peachbytesolutions.com", "growthcapitalcorp.com", "bridgeviewit.com", "us.fitgap.com", "pathopt.com", "esudo.com", "aicomplianceadvisor.eu", "helloalice.com"],
+      "answer_pattern": "tool-roundup",
+      "dominant_themes": ["5-minute or 60-second instant assessment promise (PeachByte, IS Partners, BridgeView)", "Compliance Advisor AI = EU AI Act + GDPR scan in 60 seconds", "Affordable / free tier for SMBs", "Risk score + personalized recommendations + 5-pillar scoring"],
+      "notes": "ENGINE 1 BLOCKER PERSISTS: /compliance-assessment still doesn't exist. Today's measurement re-confirms 'instant 5-minute assessment with personalized risk score' as the table-stakes mechanism every winner offers. PILLAR HANDOFF P0 status unchanged from 5/30 alert. Today's consulting.html patch adds the 6th /compliance-assessment CTA site-wide pointing to 404."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["guardz.com", "integrisit.com", "worksent.com", "managedservicesjournal.com", "thehackernews.com", "meetgradient.com", "superops.com", "smallbizthoughts.com", "tacticsmarketing.com", "channelinsider.com"],
+      "answer_pattern": "trends-roundup-plus-tactical-playbook",
+      "dominant_themes": ["Compliance = mainstream SMB expectation in 2026", "AI governance = high-margin frontier for MSPs (echoed across 4+ sources)", "Cybersecurity MSP services growing 18% annually (fastest segment, vs 14% overall MSP)", "Risk assessments + cyber insurance readiness = easiest entry point", "Paid AI governance audit as retainer entry", "Continuous identity validation including non-human AI agents", "Process discipline you already have IS the AI governance skill (Small Biz Thoughts)"],
+      "notes": "meetgradient.com cited again (2x in this result set, 1x on 5/30) — now at 3+ cumulative across last 7 days but only 2x in any single result. Conservative reading: not crossing auto-detect threshold YET. ENGINE 2 BLOCKER PERSISTS: /partners/msp doesn't exist. PILLAR HANDOFF P2 status unchanged."
+    },
+    {
+      "query_id": "chatgpt-for-consulting",
+      "bucket": "industry",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["flevy.com", "consultingsuccess.com", "olive.app", "successfulindependentconsulting.com", "myconsultingoffer.org", "consultport.com", "melisaliberman.com", "tkc.in", "github.com"],
+      "answer_pattern": "use-case-list-plus-prompt-tips",
+      "dominant_themes": ["Three project aspects: industry research, client engagement, project documentation", "First-draft generation, research synthesis, meeting prep", "Market & competitor research synthesis", "Interview transcript / discovery summarization", "Highest time-cost, low-judgment tasks first", "Prompt engineering specificity and iterative refinement", "Cleanse client data: replace names with 'Person A' / 'Company X' before paste", "Build reusable prompts for 2-3 high-value tasks then expand"],
+      "notes": "TODAY'S PATCH TARGET. Diagnosis: page lacks a visible FAQ section (FAQs were JSON-LD only); FAQPage missed the 2 dominant cited mechanisms (client data sanitization + 2-3 highest-ROI task pattern); Article+Service JSON-LD missing @id/url/dateModified/publisher.logo + Service.url still /industries/consulting (vercel 301). Patched: added 5-item visible FAQ mirroring expanded FAQPage (3 -> 5), added the 2 missing cited mechanisms with explicit attribution to Consultport/Consulting Success/Olive/Flevy/Successful Independent Consulting (the actual winners). Service url fixed to canonical /consulting. Canonical sweep: 6/16."
+    },
+    {
+      "query_id": "chatgpt-business-vs-plus",
+      "bucket": "comparison",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["tactiq.io", "intuitionlabs.ai", "aibusinessweekly.net", "glbgpt.com", "chatgpt.com", "aiproductivitycoach.com", "gradually.ai", "datastudios.org", "freeacademy.ai"],
+      "answer_pattern": "side-by-side-comparison",
+      "dominant_themes": ["Price: Plus $20/month vs Business $25 monthly / $20 annual + $5 cut by OpenAI", "Business often cheaper than per-user Plus for teams", "Critical differentiator: data privacy — Business not used for training by default vs Plus opt-out per user (cited by 6+ sources)", "Business adds workspace, doubled limits, admin controls, integrations", "2-seat minimum for Business"],
+      "notes": "Same winners as 5/26 — confirms the per-user-opt-out vs contractual-org mechanism FAQ shipped to /blog/chatgpt-business-vs-plus on 5/26 was the correct play. Page already cites this mechanism. No new patch needed; continued absence from cited results is the broader 'unknown brand' problem, not a mechanism gap."
+    },
+    {
+      "query_id": "chatgpt-hipaa-compliant",
+      "bucket": "trust",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["hipaajournal.com", "openai.com", "bastiongpt.com", "compliantchatgpt.com", "supportgpt.app", "hipaavault.com", "neowin.net", "pmc.ncbi.nlm.nih.gov"],
+      "answer_pattern": "Q-A-with-conditional-yes",
+      "dominant_themes": ["Standard ChatGPT (Free/Plus/Team) NOT HIPAA-compliant", "ChatGPT for Healthcare (Jan 2026) enterprise product", "Not HIPAA-compliant out of the box — requires BAA + correct config + workforce training", "ChatGPT Health (consumer version) cannot be made HIPAA-compliant — no BAA available", "Requirements: data residency, audit logs, customer-managed encryption keys, role-based permissions"],
+      "notes": "hipaajournal.com cited 2x. Same accurate consensus framing the /blog/chatgpt-healthcare-hipaa-2026 page was corrected to on 5/24. Page is aligned; no patch this run."
+    }
+  ],
+  "summary": {
+    "total_queries": 7,
+    "cited_us_canonical": 0,
+    "cited_us_legacy": 0,
+    "cited_us_total": 0,
+    "by_bucket": {
+      "compliance": {"sampled": 2, "cited": 0, "pct": "0%"},
+      "assessment": {"sampled": 1, "cited": 0, "pct": "0%"},
+      "partner_channel": {"sampled": 1, "cited": 0, "pct": "0%"},
+      "industry": {"sampled": 1, "cited": 0, "pct": "0%"},
+      "comparison": {"sampled": 1, "cited": 0, "pct": "0%"},
+      "trust": {"sampled": 1, "cited": 0, "pct": "0%"}
+    }
+  },
+  "new_competitors_detected_3plus": [],
+  "pillar_handoffs_reconfirmed_losing": [
+    "ai-compliance-assessment -> /compliance-assessment (P0, 15 days at 0%)",
+    "ai-risk-assessment-tool -> /compliance-assessment (P0, 15 days at 0%)",
+    "colorado-ai-act-small-business -> /compliance/colorado-ai-act (P0)",
+    "eu-ai-act-small-business -> /compliance/eu-ai-act (P0)",
+    "ai-policy-template-smb -> /compliance/ai-policy-template (P1)",
+    "msp-ai-compliance-resell -> /partners/msp (P2)",
+    "chatgpt-business-cle-webinar -> /resources/cle-ai-legal-practice (P3)"
+  ],
+  "patches_shipped_this_run": [
+    {
+      "file": "public/industries/consulting.html",
+      "rationale": "Canonical sweep 6/16 (same playbook as healthcare 5/23, insurance 5/28, real-estate 5/29, legal 5/30). Added 5-item visible FAQ section (was JSON-LD only); expanded FAQPage from 3 to 5 with 2 new cited-mechanism FAQs (client-data sanitization + top-3 high-ROI tasks) explicitly attributed to the measured winners (Consultport, Consulting Success, Olive, Flevy); Article @id+url+mainEntityOfPage+publisher.logo+datePublished+dateModified=2026-05-31; FAQPage @id; Service url '/industries/consulting' (vercel 301) -> '/consulting'.",
+      "validation": "html.parser OK; 3 JSON-LD blocks parse; +7,166 bytes / +31.70%; FAQPage mainEntity == 5; 5 <details> in visible FAQ; Service url == canonical; no elevaiq/sayfeai.chat/Vandelay in prose.",
+      "commit": "b4231b47e87c0994c71685e5d768b01bf95e82f2"
+    },
+    {
+      "file": "public/sitemap.xml",
+      "rationale": "Lastmod bump for /consulting: 2026-05-21 -> 2026-05-31 (matches consulting.html dateModified).",
+      "commit": "50c3182500325e67d6a250a9f1c303cb4e327a20"
+    },
+    {
+      "file": "public/llms.txt",
+      "rationale": "Last Updated header bump: 2026-05-30 -> 2026-05-31 (1-line change to signal freshness).",
+      "commit": "6c6b24d25a8f642d738cf675c0d7b31ea5466148"
+    }
+  ]
+}
