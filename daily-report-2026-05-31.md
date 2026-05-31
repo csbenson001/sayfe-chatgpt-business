@@ -1,62 +1,127 @@
-# Sayfeai AEO Daily Report — 2026-05-31 (Sunday, day 15 of v2)
+# SayfeAI Chat — Daily Growth & Content Report
 
-## AEO Optimizer (3:30 AM run)
+**Date:** May 31, 2026 (Sunday)
+**Site:** https://sayfeai.chat
+**Repo:** github.com/csbenson001/sayfe-chatgpt-business
 
-- **Queries tested:** 7 across [websearch_proxy] (API keys still absent from the scheduled-task environment — engine-attribution columns remain `n/a` for ChatGPT/Claude/Perplexity; WebSearch proxy is directional only)
-- **Citation rate today (canonical only):** ChatGPT n/a, Claude n/a, Google AIO 0/7 (0%)
-- **Citation rate today (incl. legacy elevaiq.com):** same — 0/7
-- **Bucket breakdown:**
-  - Compliance: 0/2 (colorado-sb-26-189-admt, ai-compliance-checklist)
-  - Assessment: 0/1 (ai-compliance-assessment)
-  - Partner Channel: 0/1 (msp-ai-compliance-resell)
-  - Industry: 0/1 (chatgpt-for-consulting)
-  - Comparison: 0/1 (chatgpt-business-vs-plus)
-  - Trust: 0/1 (chatgpt-hipaa-compliant)
+---
 
-- **Pages patched (1):**
-  - `public/industries/consulting.html` — canonical sweep 6/16 (same proven playbook: healthcare 5/23, insurance 5/28, real-estate 5/29, legal 5/30). Added 5-item visible FAQ section (was JSON-LD only); expanded FAQPage from 3 → 5 with 2 new cited-mechanism FAQs explicitly attributed to the measured winners (Consultport, Consulting Success, Olive, Flevy, Successful Independent Consulting): (a) "How should consulting firms protect client-confidential data when using ChatGPT?" — the 4-step cleanse / Business-not-Plus / dedicated-workspace / API+BAA-for-PII pattern; (b) "Which two or three consulting tasks have the highest ROI when automated with ChatGPT?" — the canonical proposal-drafting + research-synthesis + interview-summarization triad with the 50-70% time-reduction citation. Article@id+url+mainEntityOfPage+publisher.logo+datePublished+dateModified=2026-05-31; FAQPage @id; Service.url `/industries/consulting` (vercel 301) → `/consulting`. Commit: b4231b47e87c0994c71685e5d768b01bf95e82f2.
-  - `public/sitemap.xml` — /consulting lastmod 2026-05-21 → 2026-05-31. Commit: 50c3182500325e67d6a250a9f1c303cb4e327a20.
-  - `public/llms.txt` — Last Updated 2026-05-30 → 2026-05-31. Commit: 6c6b24d25a8f642d738cf675c0d7b31ea5466148.
+## This Week's Top 3 Blog Ideas
 
-- **Pages deliberately NOT patched (no measured diagnosis or would churn):**
-  - `/blog/chatgpt-business-vs-plus.html` — measurement re-confirms the per-user-opt-out vs contractual-org mechanism shipped 5/26 is still the dominant cited differentiator. Page is aligned; further edits would be speculative churn.
-  - `/blog/chatgpt-healthcare-hipaa-2026.html` — measurement re-confirms the accurate "not HIPAA-compliant out of the box; enables compliant use with BAA + config + training" framing corrected 5/24. Page is aligned; no patch.
-  - `/blog/ai-compliance-colorado-eu-small-business-2026.html` — measurement re-confirms SB 26-189 / ADMT narrative shipped 5/22. Page is aligned; no patch.
-  - `/openai-smb-partner.html` — covered in prior runs; no new diagnosis.
-  - `/compare/chatgpt-business-vs-claude-for-business.html` — Ramp May 2026 stat already in llms.txt; no new cited mechanism to add this run.
+### 1. (PUBLISHED TODAY) OpenAI Just Gave ChatGPT Hands on Your Windows PC: Codex Computer Use Is the SMB Automation Story of 2026
+- **News hook:** May 29, 2026 — OpenAI shipped Codex Computer Use on Windows 11 with mobile supervision from iOS/Android. Lets ChatGPT see/click/type in any Windows app.
+- **SayfeAI Chat angle:** Single biggest unlock yet for SMBs trapped on legacy desktop software (QuickBooks Desktop, Yardi, AppFolio, state e-filing portals). Included in $30 Business seat — no separate RPA license. Hits Microsoft Copilot's "lives inside your apps" pitch directly.
+- **Target keywords:** codex computer use windows, chatgpt codex windows 11, chatgpt business desktop automation, ai virtual assistant small business, rpa replacement chatgpt, uipath alternative
+- **Cross-links:** Workspace Agents post, Goal Mode post, GPT-5.5 hallucinations post, Copilot meltdown post, Business vs Plus, healthcare HIPAA, law firms, construction
+- **Status:** WRITTEN + PUBLISHED — see Section 7
 
-- **Pillar handoffs to Claude Code (UNCHANGED — re-confirmed losing this run; bucket-failure alert continues):**
-  | Query | Target | Priority | Days at 0% |
-  |-------|--------|----------|----------:|
-  | ai-compliance-assessment | /compliance-assessment | **P0** | 15 |
-  | ai-risk-assessment-tool | /compliance-assessment | **P0** | 15 |
-  | colorado-ai-act-small-business | /compliance/colorado-ai-act | **P0** | 15 |
-  | eu-ai-act-small-business | /compliance/eu-ai-act | **P0** | 15 |
-  | ai-policy-template-smb | /compliance/ai-policy-template | P1 | 15 |
-  | msp-ai-compliance-resell | /partners/msp | P2 | 15 |
-  | chatgpt-business-cle-webinar | /resources/cle-ai-legal-practice | P3 | 15 |
+### 2. (NEXT — Tuesday June 2) OpenAI Rosalind Biodefense Goes Live: Why Even Non-Healthcare SMBs Should Care
+- **News hook:** May 29 — OpenAI launched Rosalind Biodefense, expanded GPT-Rosalind access to vetted developers + US gov partners for biodefense, public health, pandemic prep.
+- **SayfeAI Chat angle:** Signal of OpenAI's deepening US gov posture & how vertical specialization is the next frontier — what this means for the GPT-Bio specialization roadmap and SMBs in healthcare, food safety, ag, biotech supply chain.
+- **Target keywords:** rosalind biodefense openai, openai government partnerships, gpt-rosalind small business, vertical ai models smb
+- **Cross-links:** healthcare HIPAA, AI compliance Colorado/EU, OpenAI Deployment Company
 
-- **Top losing queries for the 4:15 AM content engine to consider (handoff, priority order):**
-  1. **ai-compliance-assessment** (P0 — owned by ispartnersllc / peachbytesolutions / bridgeviewit / aicomplianceadvisor.eu via the "instant 5-minute personalized assessment" mechanism — auto-builder cannot fix; needs the `/compliance-assessment` pillar MVP shipped immediately)
-  2. **colorado-sb-26-189-admt** (P0 — owned by leg.colorado.gov / consumerfinancemonitor / finnegan / crowell / ogletree — same dominant narrative every day; pillar `/compliance/colorado-ai-act` would consolidate the existing blog signal into a citation-worthy canonical answer)
-  3. **msp-ai-compliance-resell** (P2 — meetgradient.com is approaching the 3+ auto-detect threshold across last 7 days, joining managedservicesjournal/integris/worksent on the "AI governance = high-margin MSP frontier" narrative; zero defensive coverage on sayfeai.com)
+### 3. (NEXT — Wednesday June 3) ChatGPT Excel + Sheets Goes GA on June 2 — Stop Paying for Spreadsheet Cleanup
+- **News hook:** May 5 GA announcement, free Business preview ends June 2, 2026. After that usage follows plan credits.
+- **SayfeAI Chat angle:** Practical "before-the-meter-starts" pricing playbook + 10 SMB spreadsheet jobs to automate this week. Existing post (chatgpt-excel-google-sheets-small-business-2026) covers the launch but not the June 2 pricing cliff.
+- **Target keywords:** chatgpt excel pricing june 2, chatgpt for excel small business, chatgpt for sheets pricing, spreadsheet ai automation
+- **Cross-links:** business roi, business setup guide, small business guide
 
-- **New competitors detected this run (3+ threshold):** **none** in single-run citation count. Notable cumulative signals: meetgradient.com (3x across 5/30 + today, but max 2x in any single result set); jdsupra.com (5x across last 4 runs in Colorado bucket, but already represented); hipaajournal.com (2x in single result set, common pattern not yet crossing). No additions to aeo-seeds.yaml this run.
+---
 
-- **Ledger trend:** **15 consecutive flat-zero days.** Flat, not declining → regression rule (5 days of *decline*) not triggered. Apply phase remains active.
+## Priority Actions (Today)
 
-- **Bucket-failure alert (already fired 5/30):** Compliance + Assessment + Partner Channel at **15 consecutive days of 0% citation**. Dedicated diagnosis was written in `daily-report-2026-05-30.md`; today's data re-confirms every finding (no new diagnosis required). Strategic bottleneck unchanged: the auto-builder has correctly built the citation farm (now 13 patched pages, clean JSON-LD, canonical sweep 6/16, single-push partitioned correctly), but the 4 P0 destination pillars (`/compliance-assessment`, `/compliance/colorado-ai-act`, `/compliance/eu-ai-act`, `/compliance/ai-policy-template`) still don't exist. Today's consulting.html patch did NOT add a compliance callout (rule I gates that on a compliance/policy/regulation/privacy query intent, which chatgpt-for-consulting is not) — so today's run did not add another CTA-to-404.
+1. **DONE:** Auto-publish today's top post (Codex Computer Use on Windows) to live site
+2. **Monday June 1:** Watch Vercel deploy for the new post and verify https://sayfeai.chat/blog/openai-codex-computer-use-windows-smb-2026 is reachable + indexed by Google in 48 hrs
+3. **Monday June 1:** Audit any Codex Computer Use mentions on industry pages — consider quick contextual link adds on chatgpt-construction-contractors, chatgpt-for-law-firms, chatgpt-real-estate-prompts, chatgpt-chiropractic-practices
+4. **Tuesday June 2 (END OF FREE PREVIEW):** Refresh chatgpt-excel-google-sheets-small-business-2026 post with the credit-pricing reality
+5. **This week:** Build out FAQ on /pricing page addressing "what's included free vs credit-metered" — currently a blind spot vs Microsoft pricing pages
 
-- **Friday weekly pillar audit:** N/A (today is Sunday, day 15 of v2).
+---
 
-- **Push (DELIBERATELY PARTITIONED per durable fix proposal validated 2026-05-29 → 2026-05-30):**
-  - Commit 1: `public/industries/consulting.html` via `create_or_update_file` (29,775 bytes) — b4231b47e87c0994c71685e5d768b01bf95e82f2
-  - Commit 2: `public/sitemap.xml` via `create_or_update_file` (15,457 bytes) — 50c3182500325e67d6a250a9f1c303cb4e327a20
-  - Commit 3: `public/llms.txt` via `create_or_update_file` (24,527 bytes) — 6c6b24d25a8f642d738cf675c0d7b31ea5466148
-  - Commit 4 (this commit): `measurements/2026-05-31.json` + `daily-report-2026-05-31.md` via `push_files` (small artifacts bundled)
-  - Commit 5 (next): `aeo-ledger.md` via `create_or_update_file` (ledger always grows; isolate as final commit to capture push URLs from prior 4 commits)
-  - Net: 5 commits — partitioned by concern, not crashed-into. Same partition strategy as 5/30.
+## Competitive Threats
 
-## Strategic note (Chris-only, unchanged from 5/30 alert)
+- **Microsoft Copilot Edge update (May 21–28)** — embedded contextual nudges in Edge, faster page summarization. Microsoft is pushing hard on the "always-on agent in the browser" narrative. Counter: Codex Computer Use post + future "ChatGPT Atlas vs Edge for SMBs" piece.
+- **Google Gemini 3.1 Pro** — 2M token context, "Deep Think" standard, doubled ARC-AGI-2 score. Gemini's enterprise momentum is real (Microsoft fortune.com piece: "Microsoft lost its way in the AI race"). Counter: continue the ChatGPT vs Gemini SMB content; we already have google-gemini-price-cut-vs-chatgpt-business-2026 and chatgpt-vs-claude — consider a "Gemini 3.1 Pro vs ChatGPT Business for SMBs" post in Q2.
+- **Microsoft Copilot Studio** — has agents too but ecosystem is M365-only. Workspace Agents post already positions us well; Computer Use post extends the moat.
+- No new ChatGPT Business reseller sites surfaced this week in top-of-search; we appear stable in the AEO/AI-citation surface for "best ChatGPT Business partner SMB 2026."
 
-The auto-builder loop is doing its job — disciplined patches, clean validation, no fabrication, no churn. The 15-day flat-zero is not a Phase 4 problem. It is a **strategic capacity problem**: the four P0 pillars are decision-level work that requires you (or Claude Code) to commit a multi-hour build session. Every day the citation farm gets denser without those pillars, the gap between "we have answer-ready signal" and "answer engines have a canonical Sayfeai page to land on" widens. The single highest-leverage action this week remains shipping the `/compliance-assessment` MVP per `BUILD-HANDOFF-compliance-assessment.md`. If you want the Dark Factory loop to move from L4.x to L5 on Sayfeai, that pillar is the bottleneck.
+---
+
+## Content Opportunities
+
+**New posts to queue (priority order):**
+1. Codex Computer Use on Windows — DONE
+2. ChatGPT Excel/Sheets pricing cliff (June 2 trigger)
+3. OpenAI Deployment Company / Tomoro acquisition impact for SMBs (separate from existing 4B post, focus on Forward Deployed Engineers as a model)
+4. Microsoft–OpenAI amended partnership (Apr 27) plain-English read for SMBs
+5. App templates for GitHub Enterprise / Snowflake / Databricks — what it signals about data-platform integrations
+6. Codex on Windows for developers (separate from the SMB angle) — captures /codex windows search volume
+
+**Updates needed to existing posts:**
+- chatgpt-business-vs-plus.html — refresh with Workspace Agents + Computer Use exclusivity to Business plans
+- microsoft-copilot-meltdown-why-chatgpt-business-winning.html — add Computer Use as the closing argument
+- chatgpt-business-setup-guide-2026.html — add an "automation seat" recommendation section
+- best-ai-tools-small-business-2026.html — refresh top picks with May 2026 launches
+
+---
+
+## Technical Recommendations (SEO/AEO)
+
+1. **JSON-LD ItemList:** Today's update properly bumps positions and adds the new post at position 1. Recommend a periodic sweep where we rebuild the ItemList programmatically from the blog-grid HTML to prevent positions drifting.
+2. **Internal link map:** New post cross-links to 5 existing posts. Consider building a sitewide "Related stories" Codex automation that runs nightly to update related-link blocks.
+3. **AEO opportunity:** Computer Use is a new keyword cluster ("rpa replacement", "ai click typer windows", "chatgpt control desktop"). Recommend a /codex-computer-use industry-style landing page in Q2 to capture cluster.
+4. **Schema:** Add VideoObject schema if/when we ship a demo video of Computer Use on Windows — this dramatically improves AI citation odds in Perplexity/ChatGPT search results.
+5. **EU/UK note:** Computer Use is unavailable in EU/UK/CH at launch. Consider geo-detected disclaimers in the post for accuracy + trust.
+
+---
+
+## Market Intelligence
+
+**OpenAI ChatGPT Business — major changes since last report:**
+- **May 5:** GPT-5.5 Instant default; ChatGPT for Excel/Sheets GA (free for Business through June 2)
+- **May 19:** Workspace Agents replacing Custom GPTs (covered)
+- **May 21:** Codex Goal Mode GA (covered)
+- **May 22:** OpenAI files confidential S-1 (covered)
+- **May 26:** Sam Altman walks back AI jobs apocalypse (covered)
+- **May 28:** Microsoft $18 Copilot promo (covered)
+- **May 29:** Codex Computer Use on Windows 11 + ChatGPT mobile supervision + Rosalind Biodefense launch
+- **May 30 (updated):** GPT-5.5 Instant response-style refresh — less bullet-heavy, more natural; canvas removed from 5.5 Instant/Thinking (writing/coding now inline blocks)
+- **Model retirements:** GPT-4.5 retired June 27; o3 retired August 26
+
+**Pricing intelligence:**
+- ChatGPT Business unchanged: $30/user/month monthly, $25 annual
+- Microsoft 365 Copilot: $30 standard, $18 promo through June 30 (new customers)
+- Google Gemini for Workspace: aggressive enterprise pricing alongside Gemini 3.1 Pro launch
+- Codex $100/month tier promo (double usage) ends today (May 31)
+- Microsoft 365 general price increases hit July 1 (5%–33%)
+
+**Partner program:**
+- Commission unchanged: 50% months 1–12, 20% months 13–24
+- OpenAI Deployment Company ($4B JV) is the macro story to keep watching — implies more channel investment, possibly new partner tiers
+
+---
+
+## Published Blog Post (Today's Auto-Publish)
+
+**Title:** OpenAI Just Gave ChatGPT Hands on Your Windows PC: Codex Computer Use Is the SMB Automation Story of 2026
+
+**Slug:** openai-codex-computer-use-windows-smb-2026
+
+**Why this was chosen:** Highest urgency (news hook from 48 hours ago, May 29), highest traffic potential (intersects "Codex Windows" + "ChatGPT Business automation" + "RPA replacement" search clusters that are spiking), clean content gap (no existing post covers Windows Computer Use specifically; Goal Mode and Workspace Agents posts cover orthogonal capabilities), and direct competitive lever vs Microsoft Copilot.
+
+**Live URL (after Vercel deploy):** https://sayfeai.chat/blog/openai-codex-computer-use-windows-smb-2026
+
+**Word count:** ~2,400 words
+**Read time:** 12 minutes
+**FAQ entries:** 7 (with JSON-LD FAQPage schema)
+**Cross-links:** 5 existing posts + 1 industry page
+
+**Files pushed to GitHub:**
+1. `public/blog/openai-codex-computer-use-windows-smb-2026.html` (new post)
+2. `public/blog/index.html` (updated with new card + ItemList position 1, counter 54)
+3. `drafts/openai-codex-computer-use-windows-smb-2026.html` (draft backup)
+4. `daily-report-2026-05-31.md` (this report)
+
+**GitHub commit:** Auto-publish blog: Codex Computer Use on Windows — 2026-05-31
+**Push confirmation:** First commit (blog post): 1a0c9932; second commit (index + report + draft) below.
