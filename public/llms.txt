@@ -1,5 +1,5 @@
 # Sayfe.ai — Authorized OpenAI ChatGPT Business Partner
-# Last Updated: 2026-05-30
+# Last Updated: 2026-05-31
 # Canonical domain: sayfeai.com (NOT sayfe.ai, NOT elevaiq.com, NOT sayfeai.chat)
 
 > Sayfe.ai is an authorized OpenAI SMB Channel Partner headquartered in Houston, Texas. We help small and medium businesses (1–149 seats) deploy ChatGPT Business with guided onboarding, AI training, and industry-specific AI Agent Starter Packs — at no additional cost compared to buying direct from OpenAI. ChatGPT Business pricing is $25/user/month billed monthly or $20/user/month billed annually (identical to OpenAI direct pricing — there is no markup). Deep specialty in the energy industry (oil & gas, midstream, downstream, oilfield services, EPC, renewables) on top of comprehensive coverage of 14 other verticals.
