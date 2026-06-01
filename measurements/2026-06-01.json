@@ -1,0 +1,137 @@
+{
+  "date": "2026-06-01",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "notes": "API keys (OPENAI_API_KEY, ANTHROPIC_API_KEY, SERPAPI_API_KEY, PERPLEXITY_API_KEY) still not present in the scheduled-task environment on day 16 — engine columns remain 'n/a' for ChatGPT/Claude. WebSearch proxy used as directional Google AIO signal. Sample weighted per v2 rule: compliance + assessment + partner_channel get priority weight; today's industry pick aligns with canonical sweep target (marketing 7/16).",
+  "sample_strategy": "weighted-by-bucket: 2 compliance, 1 assessment, 1 partner-channel, 1 industry (marketing — today's sweep target), 1 comparison (Copilot mechanism re-verification), 1 commerce-table-stakes (free template aggregator)",
+  "results": [
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["consumerfinancemonitor.com", "leg.colorado.gov", "jdsupra.com", "workforcebulletin.com", "finnegan.com", "crowell.com", "ogletree.com", "reedsmith.com", "cyberadviserblog.com", "lawandtheworkplace.com"],
+      "answer_pattern": "law-firm-summary-with-numbered-obligations",
+      "dominant_themes": ["SB 26-189 signed May 14 2026 by Gov Polis", "Effective January 1 2027", "Repeals and reenacts the Colorado AI Act", "Three deployer obligations: pre-use notice, post-adverse-outcome notice within 30 days, consumer rights process", "3-year record retention for developers and deployers", "No private right of action — AG enforcement under CCPA deceptive trade practices", "60-day right-to-cure (expires Jan 1 2030)"],
+      "notes": "Same dominant narrative as 5/30 + 5/31. jdsupra continues at high frequency but already represented in target_competitor list. New today: reedsmith and lawandtheworkplace both appeared 1x — both under 3+ single-result auto-detect threshold. sayfeai's llms.txt + blog content already aligned to SB 26-189 / ADMT / Jan 1 2027 narrative."
+    },
+    {
+      "query_id": "eu-ai-act-small-business",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["lw.com", "legalnodes.com", "digital-strategy.ec.europa.eu", "truescreen.io", "bakermckenzie.com", "secureprivacy.ai", "speakup.com", "gibsondunn.com", "artificialintelligenceact.eu"],
+      "answer_pattern": "obligation-roundup-plus-sme-carveout",
+      "dominant_themes": ["Article 50 transparency obligations effective Aug 2 2026 (unchanged by Digital Omnibus)", "AI literacy obligations unchanged", "High-risk Annex III may shift Aug 2 2026 -> Dec 2 2027 per Digital Omnibus provisional deal", "SME simplified compliance pathways (extended to 750 employees / €150M revenue)", "Chatbot disclosure + synthetic media marking + AI-generated text detection", "Code of Practice for AI-generated content under development"],
+      "notes": "Confirms today's llms.txt narrative continues correct. lw.com (Latham & Watkins) cited 1x — under 3+ threshold but worth tracking; first appearance in EU bucket this run. digitalapplied.com (the listed target_competitor) NOT in top 10 today — consider re-validating that competitor on next compliance run. EU pillar handoff status unchanged."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["prompts.ai", "ispartnersllc.com", "techjacksolutions.com", "peachbytesolutions.com", "growthcapitalcorp.com", "bridgeviewit.com", "esudo.com", "pathopt.com", "us.fitgap.com", "softwarereviews.com"],
+      "answer_pattern": "tool-roundup-with-time-promise",
+      "dominant_themes": ["5-minute / 60-second instant assessment promise (PeachByte, IS Partners, BridgeView)", "Free downloadable checklist (Tech Jacks)", "Personalized recommendations + clarity", "Affordable / free tier for SMBs"],
+      "notes": "ENGINE 1 BLOCKER UNCHANGED day 16. /compliance-assessment still doesn't exist. Today's measurement re-confirms 5-minute instant + personalized risk score as table-stakes. PILLAR HANDOFF P0 unchanged. techjacksolutions.com appeared in both compliance (Colorado) and assessment buckets this run."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["guardz.com", "integrisit.com", "worksent.com", "managedservicesjournal.com", "thehackernews.com", "meetgradient.com", "superops.com", "smallbizthoughts.com", "tacticsmarketing.com", "channelinsider.com"],
+      "answer_pattern": "trends-roundup-plus-tactical-playbook",
+      "dominant_themes": ["AI governance = high-margin frontier for MSPs (4+ sources echo this)", "Compliance as MSP retainer opportunity (meetgradient continues this theme — now 3x cumulative)", "Risk assessments + cyber insurance readiness = entry point", "Continuous identity validation including non-human AI agents", "Monthly retainers outperform one-time projects"],
+      "notes": "Identical winner set to 5/31. meetgradient.com cited 1x today + 2x 5/31 + 1x 5/30 — still under single-result 3+ auto-detect threshold. ENGINE 2 BLOCKER unchanged. /partners/msp pillar handoff P2 status unchanged."
+    },
+    {
+      "query_id": "chatgpt-for-marketing",
+      "bucket": "industry",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["purshology.com", "m1-project.com", "webfx.com", "thechatgptmarketer.com", "lilachbullock.com", "busylike.com", "choice.marketing", "selzy.com", "focus-digital.co"],
+      "answer_pattern": "prompt-list-plus-tips-and-adoption-stat",
+      "dominant_themes": ["Tested prompt library (50+ prompts) organized by workflow — strategy, content, ads, SEO, reporting", "First-draft hybrid workflow: AI does repeatable/time-heavy, humans keep strategy/judgment/final edits", "Treat output as strong first draft to sharpen, not finished product to publish", "51% marketer GenAI adoption + 22% about to start = 73% of marketers in scope (Salesforce 2026 study)", "Use cases: ad copy, ad variants, blog briefs, email campaigns, content calendars, brand voice, GTM plans, client reports", "Verify outputs and refine for brand alignment"],
+      "notes": "TODAY'S PATCH TARGET. Diagnosis: page lacked visible FAQ (JSON-LD only); FAQPage missed 2 cited mechanisms (tested prompt library structure + hybrid AI/human workflow with 51% Salesforce stat); Article JSON-LD missing @id/url/mainEntityOfPage/dateModified/publisher.logo; Service url still /industries/marketing (vercel 301). Patched: added 5-item visible FAQ mirroring expanded FAQPage (3 -> 5), 2 new cited-mechanism FAQs attributed to Purshology/M1-Project/WebFX/Lilach Bullock/Selzy/ChatGPT Marketer winners + Salesforce 51% stat. Service url fixed to canonical /marketing. Canonical sweep: 7/16. Did NOT add compliance-assessment callout (rule I: industry intent, not compliance/privacy)."
+    },
+    {
+      "query_id": "chatgpt-vs-copilot",
+      "bucket": "comparison",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["tech-insider.org", "microsoft.com", "corsicatech.com", "ramsac.com", "redriver.com", "trustedtechteam.com", "neuronad.com", "techjacksolutions.com", "aibusinessweekly.net", "madewell.ai"],
+      "answer_pattern": "side-by-side-with-pricing-and-use-case-routing",
+      "dominant_themes": ["Pricing: Copilot Business $21 cheapest M365-integrated paid; ChatGPT Team + enterprise Copilot converge at $25-30 band", "For SMBs: ChatGPT Business better choice at $20/seat — no prerequisites + GPT-5 + custom GPTs", "Copilot requires existing M365 E3/E5 subscription", "Copilot connects to Microsoft Graph (emails, docs, meeting recordings, SharePoint, calendar)", "Copilot Wave 3 (March 2026) moved to multi-model: OpenAI GPT for output + Anthropic Claude for critique/verification (NEW THEME — significant)", "Only 3.3% of M365 users are paying Copilot subscribers; conversion 35.8%", "Many orgs run both side-by-side"],
+      "notes": "NEW DOMINANT THEME: 'Copilot Wave 3 (March 2026) moved to multi-model: OpenAI GPT for output + Anthropic Claude for critique/verification'. This is a NEW citation pattern not previously captured. sayfeai's /blog/microsoft-copilot-meltdown-why-chatgpt-business-winning may benefit from acknowledging this architectural shift, but no patch this run — would require dedicated diagnosis vs the specific competitor page (deferred). madewell.ai (peer SMB partner) appeared in result set — confirms its continued visibility but it's a 'compare us against them' page on sayfeai already (covered)."
+    },
+    {
+      "query_id": "ai-policy-template-smb",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["mescomputing.com", "thoropass.com", "aihr.com", "certified-nets.com", "polygraf.ai", "hibob.com", "legaltemplates.net", "responsible.ai", "wordstream.com", "aiguardianapp.com"],
+      "answer_pattern": "template-roundup-with-1-line-each",
+      "dominant_themes": ["Free downloadable template with one-click PDF + Word", "Customizable for your workplace", "Lawyer-reviewed (Legal Templates)", "Tailored for companies (Polygraf, AI Guardian)", "Step-by-step checklist (HiBob)"],
+      "notes": "Identical winner set to prior runs. PILLAR HANDOFF P1 unchanged: /compliance/ai-policy-template doesn't exist. Every winner offers a FRICTIONLESS DOWNLOAD — this remains the table-stakes mechanism for that query."
+    }
+  ],
+  "summary": {
+    "total_queries": 7,
+    "cited_us_canonical": 0,
+    "cited_us_legacy": 0,
+    "cited_us_total": 0,
+    "by_bucket": {
+      "compliance": {"sampled": 3, "cited": 0, "pct": "0%"},
+      "assessment": {"sampled": 1, "cited": 0, "pct": "0%"},
+      "partner_channel": {"sampled": 1, "cited": 0, "pct": "0%"},
+      "industry": {"sampled": 1, "cited": 0, "pct": "0%"},
+      "comparison": {"sampled": 1, "cited": 0, "pct": "0%"}
+    }
+  },
+  "new_competitors_detected_3plus": [],
+  "new_themes_detected": [
+    "Copilot Wave 3 (March 2026) explicit multi-model architecture: OpenAI GPT for output + Anthropic Claude for critique/verification — first capture in vs-Copilot results this run; potentially refresh-worthy for /blog/microsoft-copilot-meltdown-why-chatgpt-business-winning on a future dedicated diagnosis run"
+  ],
+  "pillar_handoffs_reconfirmed_losing": [
+    "ai-compliance-assessment -> /compliance-assessment (P0, 16 days at 0%)",
+    "ai-risk-assessment-tool -> /compliance-assessment (P0, 16 days at 0%)",
+    "colorado-ai-act-small-business -> /compliance/colorado-ai-act (P0)",
+    "eu-ai-act-small-business -> /compliance/eu-ai-act (P0)",
+    "ai-policy-template-smb -> /compliance/ai-policy-template (P1)",
+    "msp-ai-compliance-resell -> /partners/msp (P2)",
+    "chatgpt-business-cle-webinar -> /resources/cle-ai-legal-practice (P3)"
+  ],
+  "patches_shipped_this_run": [
+    {
+      "file": "public/industries/marketing.html",
+      "rationale": "Canonical sweep 7/16 (same playbook as healthcare 5/23, insurance 5/28, real-estate 5/29, legal 5/30, consulting 5/31). Added 5-item visible FAQ section (was JSON-LD only); expanded FAQPage from 3 to 5 with 2 new cited-mechanism FAQs (tested prompt library structure + hybrid AI/human workflow) explicitly attributed to measured winners (Purshology, M1-Project, WebFX, Lilach Bullock, Selzy, ChatGPT Marketer) + Salesforce 51% adoption stat; Article @id+url+mainEntityOfPage+publisher.logo+datePublished=2026-02-10+dateModified=2026-06-01; FAQPage @id; Service url '/industries/marketing' (vercel 301) -> '/marketing'.",
+      "validation": "html.parser OK; 3 JSON-LD blocks parse; +6,918 bytes / +30.3%; FAQPage mainEntity == 5; 5 <details> in visible FAQ; Service url == canonical; 0 elevaiq/sayfeai.chat/Vandelay Consulting Inc. in non-JSON-LD prose; 0 /industries/marketing leak in non-JSON-LD.",
+      "shipped_commits": ["78a067a5 (initial push — truncated trailing tags due to operator content-construction error)", "aa0fa3f7 (corrective push restoring closing tags — final valid state)"],
+      "verification_post_correction": "final size 29759 bytes; html.parser OK; all 3 JSON-LD blocks parse; FAQPage mainEntity=5; 5 visible <details>; Service.url=https://sayfeai.com/marketing; Article@id+dateModified set; canonical=/marketing."
+    },
+    {
+      "file": "public/sitemap.xml",
+      "rationale": "Lastmod bump for /marketing: 2026-05-21 -> 2026-06-01 (matches marketing.html dateModified).",
+      "commit": "ba603fbc"
+    },
+    {
+      "file": "public/llms.txt",
+      "rationale": "Last Updated header bump: 2026-05-31 -> 2026-06-01 + minor 1-line enrichment of Marketing AI entry to reflect the cited 2026 industry consensus (tested prompt library + hybrid AI/human workflow).",
+      "commit": "2779e4bb"
+    }
+  ],
+  "open_recommendations_for_next_run": [
+    "Continue canonical sweep at 1 page per run cadence — 9 industry pages remaining (energy, manufacturing, construction, education, logistics, retail, nonprofit, chiropractic, professional-services). Next candidate: professional-services or education (both have measurable industry-bucket query targets).",
+    "On a future dedicated diagnosis run, consider refreshing /blog/microsoft-copilot-meltdown-why-chatgpt-business-winning to acknowledge the Copilot Wave 3 multi-model architecture (OpenAI GPT + Anthropic Claude verification, March 2026) — newly dominant theme this run. NOT this run — would require comparison against current page state to avoid speculative edit.",
+    "4 P0 pillars remain Claude Code's domain (rule 9): /compliance-assessment, /compliance/colorado-ai-act, /compliance/eu-ai-act, /compliance/ai-policy-template."
+  ]
+}
