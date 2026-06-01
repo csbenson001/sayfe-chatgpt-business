@@ -53,7 +53,7 @@
   <!-- AI Content Maps -->
   <url>
     <loc>https://sayfeai.com/llms.txt</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -161,7 +161,7 @@
   </url>
   <url>
     <loc>https://sayfeai.com/marketing</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
