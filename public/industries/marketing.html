@@ -308,20 +308,11 @@ footer{padding:48px 40px;background:var(--offwhite);border-top:1px solid var(--b
 <script>
   function handleIndustryCTA(industry) {
     const email = document.getElementById('ctaEmail').value.trim();
-
-    if (!email) {
-      alert('Please enter your email address');
-      return;
-    }
-
-    // Submit to Supabase if available
-    if (window.Sayfe) {
-      window.Sayfe.submitIndustryCTA(email, industry);
-    }
-
-    // Redirect to get-started
+    if (!email) { alert('Please enter your email address'); return; }
+    if (window.Sayfe) { window.Sayfe.submitIndustryCTA(email, industry); }
     window.location.href = 'https://sayfeai.com/#get-started';
   }
 </script>
-
-<script src="/js/supabase-leads.js"
+<script src="/js/supabase-leads.js"></script>
+</body>
+</html>
