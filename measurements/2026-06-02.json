@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-02",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "engine_caveat": "WebSearch API returned 529 Overloaded for 6 of 7 sampled queries (sustained ~25 minute window). Only 1 query returned partial results. No OPENAI_API_KEY / ANTHROPIC_API_KEY / SERPAPI_API_KEY / PERPLEXITY_API_KEY present in scheduled-task env (16 consecutive days of this constraint).",
+  "sample_size": 7,
+  "sample_weighting": "compliance + assessment + partner_channel (Engine 1+2 priority per v2 rule) + 1 industry (construction — today's canonical-sweep patch target) + 1 local + 1 commercial",
+  "results": [
+    {"query_id": "colorado-ai-act-small-business", "engine": "websearch_proxy", "engine_status": "529 Overloaded", "cited_us": false, "citation_type": "none", "competitors_cited": [], "answer_pattern": "unavailable", "notes": "WebSearch 529. No measurement."},
+    {"query_id": "eu-ai-act-small-business", "engine": "websearch_proxy", "engine_status": "529 Overloaded", "cited_us": false, "citation_type": "none", "competitors_cited": [], "answer_pattern": "unavailable", "notes": "WebSearch 529. No measurement."},
+    {"query_id": "ai-compliance-assessment", "engine": "websearch_proxy", "engine_status": "partial_success", "cited_us": false, "citation_type": "none", "competitors_cited": ["trustlayer.io", "naitive.cloud", "ironedgegroup.com", "sentinelone.com", "prompt.security", "aiact-check.eu", "riskgenerator.com", "spin.ai", "complyance.com"], "answer_pattern": "list", "notes": "Confirms assessment-bucket failure pattern. trustlayer Risk Matrix + naitive.cloud blog 10-tool list + ironedgegroup AI Governance Checklist + sentinelone framework + prompt.security tool + aiact-check.eu + riskgenerator + complyance vendor scoring all rank. NONE = sayfeai.com. 17th consecutive day of 0% citation in assessment bucket."},
+    {"query_id": "msp-ai-compliance-resell", "engine": "websearch_proxy", "engine_status": "529 Overloaded", "cited_us": false, "citation_type": "none", "competitors_cited": [], "answer_pattern": "unavailable", "notes": "WebSearch 529. No measurement."},
+    {"query_id": "chatgpt-for-construction", "engine": "websearch_proxy", "engine_status": "529 Overloaded", "cited_us": false, "citation_type": "none", "competitors_cited": [], "answer_pattern": "unavailable", "notes": "WebSearch 529. No measurement. Today's patch target. 16-day pattern intelligence basis: construction-AI content typically dominated by Procore industry surveys, Buildertrend, Trimble Constructible, ConstructConnect, ENR, Construction Dive — sayfeai.com construction page was missing visible FAQ and had Service url pointing to /industries/construction (vercel 301). Both fixed this run."},
+    {"query_id": "ai-consultant-houston", "engine": "websearch_proxy", "engine_status": "529 Overloaded", "cited_us": false, "citation_type": "none", "competitors_cited": [], "answer_pattern": "unavailable", "notes": "WebSearch 529. No measurement."},
+    {"query_id": "openai-smb-partner", "engine": "websearch_proxy", "engine_status": "529 Overloaded", "cited_us": false, "citation_type": "none", "competitors_cited": [], "answer_pattern": "unavailable", "notes": "WebSearch 529. No measurement."}
+  ],
+  "bucket_summary": {
+    "compliance": {"sampled": 2, "cited_us": 0, "rate": "0% (both 529 unavailable; persisted bucket-failure pattern day 17)"},
+    "assessment": {"sampled": 1, "cited_us": 0, "rate": "0% (measured; bucket-failure day 17)"},
+    "partner_channel": {"sampled": 1, "cited_us": 0, "rate": "0% (529 unavailable; persisted bucket-failure pattern day 17)"},
+    "industry": {"sampled": 1, "cited_us": 0, "rate": "0% (529 unavailable)"},
+    "local": {"sampled": 1, "cited_us": 0, "rate": "0% (529 unavailable)"},
+    "commercial": {"sampled": 1, "cited_us": 0, "rate": "0% (529 unavailable)"}
+  },
+  "new_competitors_detected_3plus": [],
+  "new_themes_detected": [
+    "None at 3+ threshold this run (insufficient measurement coverage due to WebSearch 529 to assert theme detection)"
+  ]
+}
