@@ -1,0 +1,94 @@
+{
+  "date": "2026-06-03",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "note": "WebSearch operational today (recovered from 2026-06-02 529 Overloaded incidents). Sampled 3 priority queries weighted toward industry (manufacturing — directly relevant to today's canonical-sweep target) + assessment + compliance. Continued bucket-failure pattern: Compliance + Assessment + Partner Channel at 18 consecutive days of 0%.",
+  "results": [
+    {
+      "query_id": "chatgpt-for-manufacturing",
+      "query": "how to use ChatGPT for manufacturing SOPs operator training small business",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "target_page": "/industries/manufacturing",
+      "competitors_cited": [
+        "hustlerslibrary.com",
+        "mainms.org",
+        "tools.eq4c.com",
+        "leadsie.com",
+        "scribe.com",
+        "aiforwork.co",
+        "perfectwikiforteams.com",
+        "journalofaccountancy.com",
+        "thomasmorales.com"
+      ],
+      "answer_pattern": "list+how-to",
+      "notes": "Convergent winning patterns across measured competitors: (1) pre-built ChatGPT prompt library structured by role/process (Mississippi AI Network 100 prompts for manufacturing professionals — beginner-tier, role-segmented); (2) step-by-step SOP-generation prompts that capture goal/owner/tools/steps (EQ4C, scribe SOP Generator, Journal of Accountancy walkthrough, Hustler's Library); (3) Custom GPT trained on company SOPs/quality-manuals for tribal-knowledge capture (Perfect Wiki for Teams + Leadsie). Sayfeai.com not cited in this measurement set. Diagnosis -> apply: add visible FAQ + 2 cited-mechanism FAQs to /industries/manufacturing.html mirroring this exact pattern."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "query": "free ai compliance assessment small business 2026",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "target_page": "/compliance-assessment",
+      "competitors_cited": [
+        "ost.agency",
+        "infotech.com",
+        "udemy.com",
+        "trustcloud.ai",
+        "growthcapitalcorp.com",
+        "marketplace.relevanceai.com",
+        "medium.com/@vicki-larson",
+        "pathopt.com",
+        "peoplemanagingpeople.com",
+        "ten4tg.com"
+      ],
+      "answer_pattern": "list+free-tools",
+      "notes": "Assessment bucket day 18 of 0%. New competitors not previously seen at scale: OST (30-min free readiness call), trustcloud.ai (automated audit), ten4tg (May 31 2026 ROI piece), peoplemanagingpeople 18-tool roundup. PILLAR HANDOFF — /compliance-assessment is a P0 pillar that does not exist; cannot patch. Continue flagging for Claude Code."
+    },
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "query": "colorado SB 26-189 ADMT small business compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "target_page": "/blog/ai-compliance-colorado-eu-small-business-2026",
+      "competitors_cited": [
+        "workforcebulletin.com (Epstein Becker Green)",
+        "leg.colorado.gov",
+        "finnegan.com",
+        "techjacksolutions.com",
+        "consumerfinancemonitor.com",
+        "reedsmith.com",
+        "lathropgpm.com",
+        "fisherphillips.com",
+        "crowell.com",
+        "ppc.land"
+      ],
+      "answer_pattern": "law-firm-explainer",
+      "notes": "Compliance bucket day 18 of 0%. NEW DETAIL surfaced this measurement: 'Smaller businesses that were exempt under the original law are likely inside the new one' (Epstein Becker Green) — SB 24-205 had a 50-FTE carve-out; SB 26-189 does NOT. Already on Colorado blog; enriched llms.txt this run to articulate this delta in the SB 26-189 Q&A and the Legal/regulatory facts block."
+    }
+  ],
+  "new_competitors_detected_3plus_threshold": [],
+  "new_competitors_cumulative_tracked": {
+    "mainms.org": "1x today (first appearance) — Mississippi AI Network 100 prompts for manufacturing professionals",
+    "eq4c.com": "1x today (first appearance) — ChatGPT Prompt for SOP generation",
+    "perfectwikiforteams.com": "1x today (first appearance) — train ChatGPT on company SOPs in Teams",
+    "ost.agency": "1x today (first appearance in assessment bucket)",
+    "trustcloud.ai": "1x today (first appearance in assessment bucket)",
+    "ten4tg.com": "1x today (first appearance in assessment bucket; May 31 2026 piece)"
+  },
+  "pillar_proposals": [],
+  "pillar_handoffs_open": [
+    "ai-compliance-assessment -> /compliance-assessment (P0, day 18)",
+    "ai-risk-assessment-tool -> /compliance-assessment (P0)",
+    "colorado-ai-act-small-business -> /compliance/colorado-ai-act (P0)",
+    "eu-ai-act-small-business -> /compliance/eu-ai-act (P0)",
+    "ai-policy-template-smb -> /compliance/ai-policy-template (P1)",
+    "msp-ai-compliance-resell -> /partners/msp (P2)",
+    "chatgpt-business-cle-webinar -> /resources/cle-ai-legal-practice (P3)"
+  ],
+  "ledger_trend": "flat-zero (18th consecutive day; bucket-failure alert active day 18 — Compliance + Assessment + Partner Channel)"
+}
