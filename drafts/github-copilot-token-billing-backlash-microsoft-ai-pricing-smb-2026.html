@@ -1,1 +1,860 @@
-__FILE_1__
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>GitHub Copilot Just Switched to Token Billing and Devs Are Furious: What Microsoft's $29-to-$750 Pricing Shock Says About AI for Small Business</title>
+  <meta name="description" content="On June 1, 2026 GitHub Copilot dropped flat-rate billing for AI Credits — and developers are reporting monthly bills jumping from $29 to $750 and $50 to $3,000. Here's what Microsoft's pricing posture tells small business owners about Copilot, Office, and the case for ChatGPT Business clarity.">
+  <meta name="keywords" content="GitHub Copilot token billing, GitHub Copilot AI Credits, Copilot pricing change 2026, Microsoft AI pricing small business, ChatGPT Business vs Copilot pricing, GitHub Copilot backlash, Microsoft 365 Copilot future, predictable AI pricing SMB, OpenAI vs Microsoft pricing 2026">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.com/blog/github-copilot-token-billing-backlash-microsoft-ai-pricing-smb-2026">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="GitHub Copilot Just Switched to Token Billing and Devs Are Furious: What It Says About Microsoft's AI Pricing Future">
+  <meta property="og:description" content="June 1, 2026: GitHub Copilot moved to AI Credits token billing. Developers report $29 → $750/month and $50 → $3,000/month spikes. Here's the small business read on Microsoft's pricing direction.">
+  <meta property="og:url" content="https://sayfeai.com/blog/github-copilot-token-billing-backlash-microsoft-ai-pricing-smb-2026">
+  <meta property="og:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GitHub Copilot $29 → $750: What Microsoft's Token Billing Tells SMBs">
+  <meta name="twitter:description" content="GitHub Copilot's June 1 token-billing flip is a preview of where Microsoft 365 Copilot pricing is heading. The honest read for small business AI buyers.">
+  <meta name="twitter:image" content="https://sayfeai.com/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-06-03T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="News & Trends">
+  <meta property="article:tag" content="GitHub Copilot">
+  <meta property="article:tag" content="Microsoft AI Pricing">
+  <meta property="article:tag" content="ChatGPT Business">
+  <meta property="article:tag" content="Small Business AI">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--yale-blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover { background: var(--yale-mid); }
+
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; }
+
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.8rem;
+      color: var(--yale-blue);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.3rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.8;
+    }
+
+    .article-content li { margin-bottom: 0.5rem; }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    .article-content a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45, 140, 240, 0.3);
+      transition: border-color 0.3s;
+    }
+
+    .article-content a:hover { border-bottom-color: var(--accent); }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      background: var(--yale-light);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--yale-deep);
+      border-radius: 4px;
+    }
+
+    blockquote p:last-child { margin-bottom: 0; }
+
+    blockquote cite {
+      display: block;
+      margin-top: 0.75rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--yale-blue);
+      font-size: 0.95rem;
+    }
+
+    .comparison-table-wrapper {
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 1.25rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .comparison-table th:last-child { border-right: none; }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child { border-right: none; }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody tr:nth-child(odd) { background-color: var(--yale-light); }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+    }
+
+    .highlight-box {
+      background: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box strong { color: var(--yale-blue); }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background: var(--yale-light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-top: 4px solid var(--accent);
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      display: block;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      margin-top: 0.5rem;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .cta-section h3 { color: var(--white); margin-bottom: 1rem; }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: var(--white);
+      color: var(--yale-blue);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-section { margin-top: 3rem; }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--yale-light);
+      padding: 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--yale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover { background: #d5dff0; }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 1.25rem;
+      display: none;
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-toggle { transform: rotate(180deg); }
+
+    footer {
+      background: var(--yale-deep);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content { max-width: 1200px; margin: 0 auto; }
+
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    .reading-time {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 1.65rem; }
+      .nav-links { gap: 1rem; font-size: 0.9rem; }
+      .comparison-table { font-size: 0.85rem; }
+      .comparison-table th, .comparison-table td { padding: 0.75rem; }
+      .article-meta { gap: 1rem; }
+      .stat-number { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <h1>GitHub Copilot Just Switched to Token Billing and Devs Are Furious: What Microsoft's $29-to-$750 Pricing Shock Says About AI for Small Business</h1>
+    <div class="article-meta">
+      <div class="meta-item"><span>June 3, 2026</span></div>
+      <div class="meta-item"><span>&#128214; 11 min read</span></div>
+      <div class="meta-item"><span>&#9997;&#65039; Sayfe.ai</span></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <article class="article-container">
+    <span class="category-badge">News &amp; Trends</span>
+    <span class="reading-time">11 min read</span>
+
+    <div class="article-content">
+      <p>On Monday morning, June 1, 2026, GitHub Copilot stopped being a flat-rate subscription and became a meter. By Monday afternoon, Reddit and X were full of developers comparing screenshots of their projected bills. One Redditor: <em>"$29 last month, $750 next month if I keep working the same way."</em> Another: <em>"$50 to $3,000."</em> TechCrunch's headline literally quoted a developer's two-word review: <em>"What a joke."</em></p>
+
+      <p>If you don't write code for a living, you might wonder why this matters to your small business. Here's why: <strong>GitHub Copilot is the closest sister product to Microsoft 365 Copilot.</strong> Same parent company. Same OpenAI-and-Azure plumbing under the hood. Same "AI Credits" billing concept Microsoft started rolling into M365 admin tools in May. And the same pricing philosophy — replace a low predictable subscription with a meter that can spike 10&times; or 50&times; without warning.</p>
+
+      <p>That philosophy is now landing on every small business that uses AI inside Office. The GitHub Copilot meltdown of June 1 is the cleanest signal yet of where <a href="/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning">Microsoft 365 Copilot pricing is heading</a> &mdash; and why ChatGPT Business's flat, predictable seat price has quietly become a competitive moat.</p>
+
+      <div class="highlight-box">
+        <strong>TL;DR:</strong> GitHub Copilot moved from flat-rate to AI Credits token billing on June 1, 2026. Power users are reporting 10&ndash;50&times; cost spikes ($29 &rarr; $750, $50 &rarr; $3,000). The same "AI Credits" metering is appearing in Microsoft 365 Copilot, ChatGPT for Excel/Sheets, and most agent products. The one mainstream AI-for-SMB product still sold at a flat, predictable per-seat price with no consumption meter? <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business</a> at $20/user/month annual. Pricing predictability is now a feature.
+      </div>
+
+      <h2>What Actually Changed on June 1</h2>
+
+      <p>Before June 1, GitHub Copilot was sold like Netflix: pick a tier, pay a flat monthly fee, use it as much or as little as you wanted. Copilot Pro was $10/month, Pro+ was $39/month, Business was $19/user/month, Enterprise was $39/user/month. Inside those tiers there was a soft "premium request" allowance that almost nobody hit.</p>
+
+      <p>On June 1, the request meter quietly disappeared. In its place: <strong>AI Credits</strong>. Each plan now includes a monthly allotment of credits (Copilot Pro gets $10 worth, equal to roughly 1,000 credits at $0.01 each). Every interaction with the agent &mdash; chat message, code completion, edit, test run &mdash; draws from that bucket based on how many tokens (input + output + cached) the model touched, at the published per-million-token API rate of whatever model you used.</p>
+
+      <p>The base subscription numbers didn't change. The number of credits the base subscription includes did. And the gap between what users <em>perceive</em> as a single action and what the system <em>counts</em> as a token-consuming operation is the whole problem.</p>
+
+      <blockquote>
+        <p>"The new meter exposed a truth vendors had been trying to smooth over: AI coding is priced like compute, not software. For developers who built daily habits around Copilot's old economics, the change felt less like a pricing update than a bait-and-switch on the workflow itself."</p>
+        <cite>&mdash; Synthesis of TechCrunch, gHacks, and Dataconomy reporting, June 1&ndash;2, 2026</cite>
+      </blockquote>
+
+      <h2>The $29-to-$750 Math Explained</h2>
+
+      <p>Where do the eye-watering numbers come from? Modern AI coding workflows don't look like 2023 Copilot, which mostly autocompleted a line at a time. A 2026 agentic coding session looks like this:</p>
+
+      <ul>
+        <li>Read 40 files into context to understand the change you want.</li>
+        <li>Plan a multi-step edit.</li>
+        <li>Generate the edit. Run the test suite. Read the test output.</li>
+        <li>Re-plan based on failures. Re-read the relevant files.</li>
+        <li>Iterate 3&ndash;6 times until tests pass.</li>
+      </ul>
+
+      <p>From the developer's seat, that's <em>one</em> request: "fix this bug." From the meter's seat, that's 6&ndash;15 model calls, each carrying tens of thousands of input tokens (those 40 files), plus output tokens for each plan and patch, plus cached-context charges on every re-read. The "I just asked a question" mental model and the "I just consumed 35,000 tokens times five iterations" billing model live on different planets.</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 50%;">Plan / Workflow</th>
+              <th style="width: 25%;">Pre-June 1 (flat)</th>
+              <th style="width: 25%;">Post-June 1 (AI Credits)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">Copilot Pro &mdash; casual completions, 1&ndash;2 hr/day</td>
+              <td>$10/month</td>
+              <td>$10/month (within base credits)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Copilot Pro+ &mdash; mixed chat + agent, 4&ndash;5 hr/day</td>
+              <td>$39/month</td>
+              <td>$80&ndash;$150/month (mid-overage range)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Copilot Pro+ &mdash; heavy agentic coding, 8 hr/day</td>
+              <td>$39/month</td>
+              <td>$400&ndash;$900/month (reported)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Copilot Business &mdash; team of 10, mixed use</td>
+              <td>$190/month total</td>
+              <td>$400&ndash;$1,200/month (variable)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Copilot Enterprise &mdash; agentic team of 20</td>
+              <td>$780/month total</td>
+              <td>$2,500&ndash;$8,000/month (extreme cases)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Two important caveats. First, light users are mostly unaffected &mdash; if you barely touch Copilot, your $10 base credit covers you. Second, the high-end numbers come from agentic workflows that mostly didn't exist in late 2024. Power users built habits assuming the meter wasn't moving; now the meter is moving, fast.</p>
+
+      <p>Some defenders of the change argue that anyone burning hundreds of dollars in tokens is wasting them. That's partly fair. But it doesn't change the operating problem: <strong>a small business owner cannot forecast next month's AI bill anymore.</strong> "It depends how the team uses it" is not a number a CFO can put in a budget.</p>
+
+      <h2>Why This Matters for Microsoft 365 Copilot &mdash; and Your Office Subscription</h2>
+
+      <p>GitHub Copilot is the canary. <a href="/blog/microsoft-365-price-increase-2026-chatgpt-business-alternative">Microsoft 365 Copilot</a> is the mine. Three patterns from the June 1 launch tell you where Microsoft's flagship office AI product is heading:</p>
+
+      <ol>
+        <li><strong>Microsoft AI Credits became a real product unit in May.</strong> The same "AI Credits" wallet system now powering GitHub Copilot was previewed inside the M365 admin center six weeks ago. The plumbing is in place to flip M365 Copilot Business and Enterprise to consumption metering whenever Microsoft decides.</li>
+        <li><strong>The $18 Copilot promo ends June 30.</strong> We've written extensively about <a href="/blog/microsoft-copilot-18-dollar-promo-chatgpt-business-math-2026">the $18/user M365 Copilot promo math</a>. That promo is a flat-rate gesture. The standard $21 rate that takes over on July 1 lives next to the same AI Credits infrastructure that just imploded for GitHub Copilot. The natural next move for Microsoft is to keep the $21 base seat and start metering "premium" agent activity on top.</li>
+        <li><strong>Agent products are inherently consumption-shaped.</strong> Microsoft's Autopilot agent (rumored in the <a href="/blog/openai-chatgpt-codex-aws-bedrock-small-business-2026">internal Microsoft "super app" project</a> reported by Fortune on May 29) is a long-running, multi-step product. Long-running multi-step products do not survive on flat-rate pricing &mdash; the unit economics break. Expect Microsoft 365 Copilot to follow GitHub Copilot to a metered model within 6&ndash;12 months.</li>
+      </ol>
+
+      <p>For a 12-person small business that adopted M365 Copilot last year to "save money on AI," this is the worst kind of surprise &mdash; the one you can see coming but already signed the annual contract for.</p>
+
+      <div class="warning-box">
+        <strong>&#9888;&#65039; If you're about to sign an annual M365 Copilot contract before June 30 to lock the $18 promo:</strong> Read the section in your Enterprise Agreement on "metered services" and "AI Credits" carefully. Most current EAs already include language reserving Microsoft's right to introduce consumption-based metering on Copilot premium features mid-term. Promotional flat pricing is not contractually frozen the way you might assume.
+      </div>
+
+      <h2>The Three Pricing Models Small Businesses Are Now Choosing Between</h2>
+
+      <p>The AI-for-business market has consolidated into three pricing shapes. Each one has tradeoffs, and the right answer depends on your team's usage pattern more than on which model is "smartest."</p>
+
+      <h3>Model 1: Flat per-seat, all-you-can-use</h3>
+      <p>This is <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business</a> at $20/user/month annual ($25 monthly). One number. One invoice. No meter. Power users and casual users pay the same. The seat includes GPT-5.5, GPT-5.5 Thinking, GPT-5.5 Pro, image generation, voice, Custom GPTs, workspace agents, and the new ChatGPT for Excel/Sheets sidebar. Forecasting next quarter's AI bill is trivial: count seats, multiply.</p>
+
+      <h3>Model 2: Flat base + metered consumption</h3>
+      <p>This is where GitHub Copilot landed on June 1, and where Microsoft 365 Copilot is almost certainly going next. The base subscription is small. The unpredictable line item is the credit pool, which can spike 5&ndash;50&times; depending on how aggressively your team uses agents. Forecasting next quarter's AI bill is &hellip; hard. You'll know after the fact.</p>
+
+      <h3>Model 3: Pure pay-as-you-go API</h3>
+      <p>This is OpenAI's first-party API, Anthropic's API, and now <a href="/blog/openai-chatgpt-codex-aws-bedrock-small-business-2026">OpenAI on Amazon Bedrock</a>. Pay only for what you use, at published per-million-token rates. Best fit when AI is embedded inside your own product or workflow and engineering can instrument and optimize. Worst fit for a non-technical SMB owner trying to give 12 employees AI tools.</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Dimension</th>
+              <th style="width: 25%;">ChatGPT Business (Flat seat)</th>
+              <th style="width: 25%;">GitHub / M365 Copilot post-June 1 (Flat + meter)</th>
+              <th style="width: 25%;">API / Bedrock (Pure metered)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">Monthly bill predictability</td>
+              <td>Perfect (seats &times; rate)</td>
+              <td>Poor (depends on usage shape)</td>
+              <td>None (true variable cost)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Worst-case bill shock</td>
+              <td>None &mdash; capped at seat count</td>
+              <td>10&times;&ndash;50&times; reported</td>
+              <td>Hard cap requires engineering</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Who it favors</td>
+              <td>Mixed-skill SMB teams</td>
+              <td>Microsoft Graph-native shops</td>
+              <td>Dev teams embedding AI</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Admin overhead</td>
+              <td>Low (single console)</td>
+              <td>Medium (credit pools to monitor)</td>
+              <td>High (cost ops required)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Right-fit org size</td>
+              <td>2&ndash;5,000 seats</td>
+              <td>50+ users with IT admin</td>
+              <td>Product / engineering teams</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Read across the rows and the small business answer almost picks itself. The only line where "Flat + meter" beats "Flat seat" is when you're already committed to Microsoft Graph and need that grounding. For everyone else, the predictability premium is the entire point.</p>
+
+      <h2>Five Moves Small Business Owners Should Make This Week</h2>
+
+      <p>This is not an emergency &mdash; nothing on your current AI invoice changed on June 1. It is a window. The right response is to use the GitHub Copilot news to renegotiate your AI posture before the same pricing pattern lands on M365 Copilot.</p>
+
+      <h3>1. Audit your team's actual AI usage shape</h3>
+      <p>Are you mostly using AI for writing, summarization, and Q&amp;A (low token cost)? Or are you running long agentic workflows, document analysis over hundreds of files, or computer-use sessions (high token cost)? If you don't know, you don't know what your future M365 Copilot bill will look like. Spend an hour interviewing three power users.</p>
+
+      <h3>2. If you're a heavy-agent shop, lock a flat-rate seat now</h3>
+      <p>The single biggest insurance policy against the Copilot-style meter is a flat per-seat product. ChatGPT Business at $20/user/month annual covers GPT-5.5, GPT-5.5 Thinking, GPT-5.5 Pro, image, voice, <a href="/blog/chatgpt-goal-mode-autonomous-ai-agents-small-business-2026">Goal Mode autonomous agents</a>, Custom GPTs, and workspace agents &mdash; no credit pool to drain. Lock the annual.</p>
+
+      <h3>3. Don't sign an annual M365 Copilot contract on the $18 promo without reading the metering clause</h3>
+      <p>Pull your latest Enterprise Agreement (or the convenience SKU terms if you're a small business). Search for "metered," "AI Credits," "consumption," and "premium services." If those terms reserve Microsoft's right to introduce metering on Copilot mid-term, the $18 number is not your lock. Most current EA language reserves that right.</p>
+
+      <h3>4. Pilot ChatGPT for Excel and Google Sheets on a flat seat</h3>
+      <p>This is the simplest A/B test you can run. Have one team member spend a week doing their Excel and Sheets work inside <a href="/blog/chatgpt-excel-credit-pricing-june-2-2026-cost-calculator">the new ChatGPT sidebar</a>. Have a second team member do the same work in Microsoft 365 Copilot. Compare the work done and the friction. The Sayfe.ai pilot is free.</p>
+
+      <h3>5. Build a 90-day AI cost-control playbook before the meter lands</h3>
+      <p>Define which AI workflows are "free" (covered by flat seats), which are "metered" (paid by credit pools), and which are off-limits to most employees without budget approval. Document this <em>before</em> Microsoft flips the switch, so you're not retrofitting policy mid-billing-cycle.</p>
+
+      <h2>The Bigger Lesson: Predictability Is Now a Feature</h2>
+
+      <p>For two years, the AI-for-business buying conversation centered on capability: which model is smartest, which connectors are tightest, which integrations are deepest. Quietly, in the background, a second axis has emerged: <strong>predictability</strong>. As agents do more autonomous work in the background, the gap between "what the user thinks they asked for" and "what the bill counted" has stretched. The GitHub Copilot blowup is the loudest example yet of what happens when those two things diverge.</p>
+
+      <p>The vendors that are winning the 2026 small business AI mandate are the ones treating predictable pricing as a product feature, not a defensive crouch. OpenAI's quiet decision in April to price-match ChatGPT Business with ChatGPT Plus at $20 annual &mdash; and to ship every model, agent, and tool inside that flat seat &mdash; looks more strategic with every Microsoft pricing announcement that doesn't.</p>
+
+      <p>You can still buy metered AI. You can still buy bundled AI. You can still buy flat-seat AI. But for the first time in this market, the "boring" option &mdash; flat-seat, no surprises, one invoice &mdash; is the one that lets you actually run a business while you adopt the tools.</p>
+
+      <h2>How Sayfe.ai Helps Small Businesses Stay Out of the Meter Trap</h2>
+
+      <p>Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and mid-sized businesses pick the right AI stack, pilot it on real workflows, and stand it up cleanly in 2&ndash;5 business days. For most SMB customers, the right starting point in mid-2026 is a flat ChatGPT Business seat at $20/user/month annual, with optional Bedrock or API consumption added later only where the math justifies it.</p>
+
+      <p>What that buys you, beyond the obvious:</p>
+      <ul>
+        <li>One invoice, one console, one number to budget.</li>
+        <li>All current OpenAI models inside the seat &mdash; no premium-tier upsells.</li>
+        <li>Native integration with Excel, Google Sheets, Slack, Google Drive, Microsoft 365, Salesforce, Notion, HubSpot, and Quickbooks.</li>
+        <li>Workspace agents that run in the background without burning a credit pool you didn't budget.</li>
+        <li>SSO, admin console, training, and ongoing optimization at no extra charge.</li>
+      </ul>
+
+      <p>You pay OpenAI directly at standard ChatGPT Business pricing. We handle setup, configuration, and rollout at no markup. The only "consumption-based pricing" in the model is the half of net new ARR Sayfe.ai earns from OpenAI &mdash; on referrals, not on your bill.</p>
+
+      <div class="cta-section">
+        <h3>Stay Ahead of the AI Pricing Meter</h3>
+        <p>Sayfe.ai is an authorized OpenAI SMB Channel Partner. Lock in ChatGPT Business at $20/user/month annual &mdash; one number, no credit pool, all current OpenAI models in the seat &mdash; before Microsoft 365 Copilot follows GitHub Copilot to a token meter.</p>
+        <a href="/get-started" class="cta-button">Get Started Today</a>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Did GitHub Copilot get more expensive on June 1, 2026?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>For light users, no &mdash; the base subscription prices stayed the same ($10 Pro, $39 Pro+, $19/user Business, $39/user Enterprise) and the included AI Credit allotments cover typical casual use. For heavy users and agentic-coding workflows, yes &mdash; significantly. Developers have publicly reported monthly bills jumping from $29 to $750, $50 to $3,000, and in extreme cases higher, when their work consumes large amounts of tokens through multi-step agent runs. The headline pricing didn't change. What changed is what's included under the headline, and how much overage you can rack up above it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will Microsoft 365 Copilot move to the same AI Credits model?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Microsoft has not announced a flip date for M365 Copilot consumption metering, but the underlying AI Credits wallet system is already live inside the Microsoft 365 admin center, was used to bill GitHub Copilot starting June 1, and is contractually anticipated in most current Enterprise Agreement and convenience-SKU terms. The most likely path: the $18 promo seat survives through June 30 as a flat rate, the standard $21 seat stays flat for now, and Microsoft layers metered "premium agent" or "Autopilot" features on top in late 2026 or early 2027. If you're signing an annual M365 Copilot contract before June 30 to lock the $18 promo, read the metered-services and AI Credits language carefully.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does ChatGPT Business have a consumption meter or credit pool?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. ChatGPT Business is a flat per-seat product: $20/user/month on annual billing or $25/user/month on monthly billing, with a 2-seat minimum and no upper cap on usage at the seat level. The seat includes GPT-5.5 (current default), GPT-5.5 Thinking, GPT-5.5 Pro, image generation, voice, Custom GPTs, workspace agents, and the ChatGPT for Excel/Sheets sidebar. There is one exception: ChatGPT for Excel and Google Sheets entered credit-metered pricing on June 2, 2026 at 5&ndash;30 credits per task at GPT-5.5, drawing from the plan's monthly credit pool. For most small business teams, normal Excel/Sheets usage stays inside the included pool. See our <a href="/blog/chatgpt-excel-credit-pricing-june-2-2026-cost-calculator">credit pricing calculator</a> for the math.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the GitHub Copilot backlash a sign that AI pricing is broken?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>It's a sign that the gap between user-perceived effort and system-counted compute has grown faster than billing models adapted. From a vendor economics perspective, agent products are inherently consumption-shaped: long-running, multi-step, model-heavy. Flat pricing on those workflows loses money for the vendor at any meaningful scale. The honest read is that token-based billing is closer to "true cost" than flat subscriptions, but most users built habits assuming flat pricing was permanent, and the rate at which AI workflows are getting more agentic is outrunning the rate at which buyers can recalibrate. The fix is on both sides: vendors need better forecasting and cost-control tools inside the products, and buyers need to understand which workflows are cheap and which are expensive before adopting them at scale.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's the safest AI plan for a small business that doesn't want bill surprises?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>ChatGPT Business at $20/user/month annual is the most predictable mainstream option as of June 2026. One per-seat number, no credit pools (with the narrow exception of the Excel/Sheets sidebar), no tier upsells for premium models, and no expiring promotional pricing. The closest direct competitor with comparable predictability is Claude for Small Business at a similar per-seat rate, though Claude's integration breadth is currently narrower than ChatGPT's. Microsoft 365 Copilot is still flat-rate today but is the most likely mainstream product to introduce metered AI Credits before year-end. GitHub Copilot already moved. The pure-API path (OpenAI direct or via AWS Bedrock) gives the lowest unit cost but requires engineering to instrument cost controls and is a poor fit for non-technical SMBs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I cancel my GitHub Copilot subscription and move to something else?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not reflexively. The base subscription tiers still exist at the same prices, and for non-agentic, completion-style coding the included AI Credits cover most use. Only switch if (a) your team is doing heavy agentic coding and the projected overage actually exceeds the alternatives, or (b) you're already invested in a different AI stack and Copilot was peripheral. The most commonly cited alternatives in the post-June-1 conversation are Claude Code, OpenAI's Codex inside ChatGPT Business or Plus, and self-host paths via OpenRouter, RooCode, or LM Studio. For a small business buying AI for non-engineering work, this question doesn't really apply &mdash; GitHub Copilot is a developer tool, and the relevant comparison is between ChatGPT Business and Microsoft 365 Copilot.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>GitHub Copilot switched from flat-rate to AI Credits token billing on June 1, 2026. Light users are unaffected; heavy agentic users are reporting 10&ndash;50&times; bill spikes.</li>
+        <li>The same AI Credits infrastructure is already live in the Microsoft 365 admin center. Most analysts expect Microsoft 365 Copilot to follow GitHub Copilot to a metered model within 6&ndash;12 months.</li>
+        <li>Three pricing shapes are now visible in the SMB market: flat per-seat (ChatGPT Business), flat-plus-meter (GitHub Copilot, likely M365 Copilot next), and pure-metered API (OpenAI direct, Bedrock).</li>
+        <li>Flat per-seat is the only model that gives a small business owner forecastable AI costs without engineering instrumentation.</li>
+        <li>If you're about to sign an annual Microsoft 365 Copilot contract for the $18 promo before June 30, read the metered-services and AI Credits language in the contract carefully.</li>
+        <li>The strategic response is not "panic" but "audit usage shape, lock flat-rate seats for mixed-skill teams, pilot side-by-side, and build a 90-day cost-control playbook before the meter lands."</li>
+        <li>Predictability is now a competitive feature of AI products, not a courtesy. The vendors treating it that way are winning the 2026 SMB mandate.</li>
+      </ul>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and medium-sized businesses implement and optimize ChatGPT Business, ChatGPT Enterprise, and the OpenAI API across 15+ industries. We're here to make enterprise AI accessible &mdash; and the productivity gains real &mdash; for teams of any size.
+      </p>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "GitHub Copilot Just Switched to Token Billing and Devs Are Furious: What Microsoft's $29-to-$750 Pricing Shock Says About AI for Small Business",
+    "description": "On June 1, 2026 GitHub Copilot dropped flat-rate billing for AI Credits — and developers are reporting monthly bills jumping from $29 to $750 and $50 to $3,000. Here's what Microsoft's pricing posture tells small business owners about Copilot, Office, and the case for ChatGPT Business clarity.",
+    "image": "https://sayfeai.com/og-image-blog.png",
+    "datePublished": "2026-06-03T00:00:00Z",
+    "dateModified": "2026-06-03T00:00:00Z",
+    "author": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfeai.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sayfeai.com/logo.png"
+      }
+    },
+    "articleSection": "News & Trends",
+    "keywords": "GitHub Copilot token billing, GitHub Copilot AI Credits, Copilot pricing change 2026, Microsoft AI pricing small business, ChatGPT Business vs Copilot pricing, GitHub Copilot backlash, predictable AI pricing SMB",
+    "wordCount": "2400",
+    "timeRequired": "PT11M"
+  }
+  </script>
+
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Did GitHub Copilot get more expensive on June 1, 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For light users, no — the base subscription prices stayed the same ($10 Pro, $39 Pro+, $19/user Business, $39/user Enterprise) and the included AI Credit allotments cover typical casual use. For heavy users and agentic-coding workflows, yes — significantly. Developers have publicly reported monthly bills jumping from $29 to $750, $50 to $3,000, and in extreme cases higher, when their work consumes large amounts of tokens through multi-step agent runs. The headline pricing didn't change. What changed is what's included under the headline, and how much overage you can rack up above it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will Microsoft 365 Copilot move to the same AI Credits model?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microsoft has not announced a flip date for M365 Copilot consumption metering, but the underlying AI Credits wallet system is already live inside the Microsoft 365 admin center, was used to bill GitHub Copilot starting June 1, and is contractually anticipated in most current Enterprise Agreement and convenience-SKU terms. The most likely path: the $18 promo seat survives through June 30 as a flat rate, the standard $21 seat stays flat for now, and Microsoft layers metered premium agent or Autopilot features on top in late 2026 or early 2027. If you're signing an annual M365 Copilot contract before June 30 to lock the $18 promo, read the metered-services and AI Credits language carefully."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does ChatGPT Business have a consumption meter or credit pool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. ChatGPT Business is a flat per-seat product: $20/user/month on annual billing or $25/user/month on monthly billing, with a 2-seat minimum and no upper cap on usage at the seat level. The seat includes GPT-5.5 (current default), GPT-5.5 Thinking, GPT-5.5 Pro, image generation, voice, Custom GPTs, workspace agents, and the ChatGPT for Excel/Sheets sidebar. There is one exception: ChatGPT for Excel and Google Sheets entered credit-metered pricing on June 2, 2026 at 5–30 credits per task at GPT-5.5, drawing from the plan's monthly credit pool. For most small business teams, normal Excel/Sheets usage stays inside the included pool."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the GitHub Copilot backlash a sign that AI pricing is broken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It's a sign that the gap between user-perceived effort and system-counted compute has grown faster than billing models adapted. From a vendor economics perspective, agent products are inherently consumption-shaped: long-running, multi-step, model-heavy. Flat pricing on those workflows loses money for the vendor at any meaningful scale. The honest read is that token-based billing is closer to true cost than flat subscriptions, but most users built habits assuming flat pricing was permanent, and the rate at which AI workflows are getting more agentic is outrunning the rate at which buyers can recalibrate. The fix is on both sides: vendors need better forecasting and cost-control tools inside the products, and buyers need to understand which workflows are cheap and which are expensive before adopting them at scale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the safest AI plan for a small business that doesn't want bill surprises?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ChatGPT Business at $20/user/month annual is the most predictable mainstream option as of June 2026. One per-seat number, no credit pools (with the narrow exception of the Excel/Sheets sidebar), no tier upsells for premium models, and no expiring promotional pricing. The closest direct competitor with comparable predictability is Claude for Small Business at a similar per-seat rate, though Claude's integration breadth is currently narrower than ChatGPT's. Microsoft 365 Copilot is still flat-rate today but is the most likely mainstream product to introduce metered AI Credits before year-end. GitHub Copilot already moved. The pure-API path (OpenAI direct or via AWS Bedrock) gives the lowest unit cost but requires engineering to instrument cost controls and is a poor fit for non-technical SMBs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I cancel my GitHub Copilot subscription and move to something else?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not reflexively. The base subscription tiers still exist at the same prices, and for non-agentic, completion-style coding the included AI Credits cover most use. Only switch if (a) your team is doing heavy agentic coding and the projected overage actually exceeds the alternatives, or (b) you're already invested in a different AI stack and Copilot was peripheral. The most commonly cited alternatives in the post-June-1 conversation are Claude Code, OpenAI's Codex inside ChatGPT Business or Plus, and self-host paths via OpenRouter, RooCode, or LM Studio. For a small business buying AI for non-engineering work, this question doesn't really apply — GitHub Copilot is a developer tool, and the relevant comparison is between ChatGPT Business and Microsoft 365 Copilot."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Interactive FAQ Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
