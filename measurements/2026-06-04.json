@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-04",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "engine_note": "No OPENAI/ANTHROPIC/SERPAPI/PERPLEXITY API keys present in scheduled-task env. WebSearch used as Google AI Overviews proxy (directional only). Engine columns ChatGPT/Claude/GoogleAIO not independently measurable. Stable today (no 529 incidents).",
+  "sample_strategy": "Weighted toward the 3 alert buckets (compliance, assessment, partner_channel) plus today's apply target (industry/education). 4 queries sampled.",
+  "results": [
+    {"query_id":"chatgpt-for-education","bucket":"industry","engine":"websearch_proxy","cited_us":false,"citation_type":null,"target_page":"/education","competitors_cited":["commonsense.org","chatgpt.com/business/education","gse.upenn.edu","niu.edu","edweek.org","openai.com/index/chatgpt-study-mode","help.openai.com (ChatGPT for Teachers)","pce.sandiego.edu","medium.com"],"answer_pattern":"list","notes":"Convergent themes: lesson planning, re-leveling existing texts to multiple reading levels (differentiation), AI-literacy/responsible-use guardrails, ChatGPT for Teachers (free for verified US K-12 educators through June 2027; education-grade protections + admin controls), study mode. sayfeai.com absent."},
+    {"query_id":"ai-compliance-assessment","bucket":"assessment","engine":"websearch_proxy","cited_us":false,"citation_type":null,"target_page":"/compliance-assessment","competitors_cited":["prompts.ai","growthcapitalcorp.com","centraleyes.com","marketplace.relevanceai.com","pathopt.com","digital54.co","us.fitgap.com","trustcloud.ai","peoplemanagingpeople.com","blog.naitive.cloud"],"answer_pattern":"list","notes":"Assessment bucket 0% continues (day 19). Listicles + free-template/free-trial promises dominate. /compliance-assessment still 404 — 9 site-wide CTAs now point to a 404."},
+    {"query_id":"colorado-sb-26-189-admt","bucket":"compliance","engine":"websearch_proxy","cited_us":false,"citation_type":null,"target_page":"/blog/ai-compliance-colorado-eu-small-business-2026","competitors_cited":["workforcebulletin.com (Epstein Becker)","leg.colorado.gov","techjacksolutions.com","finnegan.com","consumerfinancemonitor.com","reedsmith.com","lathropgpm.com","fisherphillips.com","ppc.land","crowell.com"],"answer_pattern":"paragraph","notes":"Compliance bucket 0% continues. BigLaw client-alerts own SB 26-189/ADMT. Re-confirmed: signed May 14 2026, effective Jan 1 2027; no <50-FTE small-business carve-out (SB 24-205 had one); pre-decision notice + post-adverse-outcome disclosure + 3-yr retention; AG enforcement w/ 60-day cure, no private right of action. Already in llms.txt + blog."},
+    {"query_id":"msp-ai-compliance-resell","bucket":"partner_channel","engine":"websearch_proxy","cited_us":false,"citation_type":null,"target_page":"/blog/best-chatgpt-business-partner-smb-2026","competitors_cited":["worksent.com","guardz.com","connectwise.com","integrisit.com","lumenova.ai","managedservicesjournal.com","meetgradient.com","proofpoint.com (GlobeNewswire)","channelpronetwork.com"],"answer_pattern":"list","notes":"Partner bucket 0% continues. meetgradient reappears. NEW: Proofpoint MSP Platform 'AI Governance Playbook for MSPs serving SMBs' launched June 2 2026 (GlobeNewswire). Zero MSP-channel content on sayfeai.com."}
+  ],
+  "summary": {
+    "total_sampled": 4,
+    "cited_us_canonical": 0,
+    "cited_us_incl_legacy": 0,
+    "by_bucket": {"compliance":"0/1","assessment":"0/1","partner_channel":"0/1","industry":"0/1"},
+    "consecutive_flat_zero_days": 19,
+    "bucket_failure_alert": "active (Compliance + Assessment + Partner Channel) — day 19",
+    "new_competitors_3plus_threshold": "none (single-result-per-query sample; no domain hit 3+ across this run's queries). First-1x noted: finnegan.com, lathropgpm.com, fisherphillips.com, crowell.com (compliance); guardz.com, connectwise.com, lumenova.ai, proofpoint.com (partner)."
+  }
+}
