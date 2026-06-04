@@ -1,1 +1,514 @@
-PLACEHOLDER_POST
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>OpenAI Just Made ChatGPT Build and Host Your Business Software for Free: Inside Sites, the June 2 Update That Ends the "I Need a Developer" Excuse</title>
+  <meta name="description" content="On June 2, 2026, OpenAI launched Sites — ChatGPT can now build AND host a working dashboard, internal tool, or website from a plain-English prompt and hand you a shareable URL. It's on by default in ChatGPT Business (not Plus). The honest small-business read: 8 things to build this week, the real cost story, the Microsoft Power Apps comparison, and the limits to know first.">
+  <meta name="keywords" content="ChatGPT Sites, OpenAI Sites Codex, build internal app ChatGPT, ChatGPT host website, ChatGPT Business Sites, no code AI app builder 2026, OpenAI June 2 2026, Codex Sites small business, build dashboard from prompt, ChatGPT internal tools SMB">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.com/blog/chatgpt-sites-build-host-business-apps-free-2026">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="OpenAI Just Made ChatGPT Build and Host Your Business Software for Free: Inside Sites, the June 2 Update">
+  <meta property="og:description" content="On June 2, 2026 OpenAI launched Sites. ChatGPT can now build and host a working internal tool or website from plain English and hand you a shareable URL — on by default in ChatGPT Business. The honest small-business read.">
+  <meta property="og:url" content="https://sayfeai.com/blog/chatgpt-sites-build-host-business-apps-free-2026">
+  <meta property="og:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OpenAI Just Made ChatGPT Build and Host Your Business Software for Free: Inside Sites">
+  <meta name="twitter:description" content="ChatGPT can now build and host a working dashboard or internal tool from a plain-English prompt. The honest small-business read on Sites, the June 2 launch, and what it means for your stack.">
+  <meta name="twitter:image" content="https://sayfeai.com/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-06-04T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="News & Trends">
+  <meta property="article:tag" content="Sites">
+  <meta property="article:tag" content="Codex">
+  <meta property="article:tag" content="ChatGPT Business">
+  <meta property="article:tag" content="No-Code">
+  <meta property="article:tag" content="OpenAI">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body { font-family: 'Figtree', sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--white); }
+
+    nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+    .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-size: 1.5rem; font-weight: 700; color: var(--yale-blue); text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--text-dark); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta { background: var(--yale-blue); color: var(--white); padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: background 0.3s; }
+    .nav-cta:hover { background: var(--yale-mid); }
+
+    .article-header { background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%); color: var(--white); padding: 4rem 2rem; text-align: center; }
+    .article-header h1 { font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.2; }
+    .article-meta { display: flex; justify-content: center; gap: 1.5rem; font-size: 0.95rem; opacity: 0.95; flex-wrap: wrap; }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; }
+
+    .article-container { max-width: 720px; margin: 0 auto; padding: 3rem 2rem; }
+
+    .article-content h2 { font-size: 1.8rem; color: var(--yale-blue); margin-top: 2rem; margin-bottom: 1rem; }
+    .article-content h3 { font-size: 1.3rem; color: var(--yale-mid); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+    .article-content p { margin-bottom: 1rem; color: var(--text-dark); line-height: 1.8; }
+    .article-content ul, .article-content ol { margin: 1rem 0 1rem 2rem; line-height: 1.8; }
+    .article-content li { margin-bottom: 0.5rem; }
+    .article-content strong { color: var(--yale-blue); font-weight: 600; }
+
+    .comparison-table-wrapper { margin: 2rem 0; overflow-x: auto; }
+    .comparison-table { width: 100%; border-collapse: collapse; background: var(--white); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+    .comparison-table thead { background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%); color: var(--white); }
+    .comparison-table th { padding: 1.25rem; text-align: left; font-weight: 600; border-right: 1px solid rgba(255, 255, 255, 0.1); }
+    .comparison-table th:last-child { border-right: none; }
+    .comparison-table td { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); }
+    .comparison-table td:last-child { border-right: none; }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody tr:nth-child(odd) { background-color: var(--yale-light); }
+
+    .feature-label { font-weight: 600; color: var(--yale-blue); width: 200px; }
+    .checkmark { color: var(--success); font-weight: bold; font-size: 1.25rem; }
+    .xmark { color: #ef4444; font-weight: bold; font-size: 1.25rem; }
+
+    .highlight-box { background: var(--yale-light); border-left: 4px solid var(--accent); padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .highlight-box strong { color: var(--yale-blue); }
+
+    .warning-box { background: #fff3cd; border-left: 4px solid #ff9800; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+
+    .cta-section { background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%); color: var(--white); padding: 2.5rem; border-radius: 8px; text-align: center; margin: 3rem 0 2rem 0; }
+    .cta-section h3 { color: var(--white); margin-bottom: 1rem; }
+    .cta-section p { color: rgba(255, 255, 255, 0.95); margin-bottom: 1.5rem; }
+    .cta-button { background: var(--white); color: var(--yale-blue); padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: transform 0.3s, box-shadow 0.3s; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+
+    .faq-section { margin-top: 3rem; }
+    .faq-item { margin-bottom: 1.5rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .faq-question { background: var(--yale-light); padding: 1.25rem; cursor: pointer; font-weight: 600; color: var(--yale-blue); display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
+    .faq-question:hover { background: #d5dff0; }
+    .faq-toggle { font-size: 1.5rem; transition: transform 0.3s; }
+    .faq-answer { padding: 1.25rem; display: none; background: var(--white); line-height: 1.8; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-toggle { transform: rotate(180deg); }
+
+    footer { background: var(--yale-deep); color: var(--white); padding: 2rem; text-align: center; border-top: 1px solid var(--border); }
+    .footer-content { max-width: 1200px; margin: 0 auto; }
+    .footer-links { margin: 1rem 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+    .footer-links a { color: var(--white); text-decoration: none; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    .reading-time { display: inline-block; background: var(--accent); color: var(--white); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem; }
+    .category-badge { display: inline-block; background: var(--yale-light); color: var(--yale-blue); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 1.75rem; }
+      .nav-links { gap: 1rem; font-size: 0.9rem; }
+      .comparison-table { font-size: 0.85rem; }
+      .comparison-table th, .comparison-table td { padding: 0.75rem; }
+      .feature-label { width: auto; }
+      .article-meta { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <h1>OpenAI Just Made ChatGPT Build and Host Your Business Software for Free: Inside Sites, the June 2 Update That Ends the "I Need a Developer" Excuse</h1>
+    <div class="article-meta">
+      <div class="meta-item"><span>June 4, 2026</span></div>
+      <div class="meta-item"><span>&#128214; 11 min read</span></div>
+      <div class="meta-item"><span>&#9997;&#65039; Sayfe.ai</span></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <article class="article-container">
+    <div class="category-badge">News &amp; Trends</div>
+    <div class="reading-time">11 min read</div>
+
+    <div class="article-content">
+      <p>On June 2, 2026, OpenAI ran a livestream it called <em>"Intelligence at Work"</em> and shipped a stack of updates aimed squarely at the people who run businesses rather than write code. Most of the headlines went to the six new role-specific Codex plugins. But the feature that should make every small-business owner sit up is the quiet one in the middle of the announcement: <strong>Sites</strong>.</p>
+
+      <p>Here is what Sites does, in one sentence. You describe an internal tool, a dashboard, or a small web app in plain English &mdash; "build me a job-tracker where my crew can see today's installs and mark them done" &mdash; and ChatGPT builds it, <strong>hosts it on OpenAI's own infrastructure</strong>, and hands you a live URL you can share with your team in the next five minutes. No hosting account. No deploy pipeline. No DevOps ticket. No developer.</p>
+
+      <p>For two years the honest answer to "can AI build the little tool my business actually needs?" was "sort of, but then someone has to deploy and host it, and that's where it dies." As of June 2, that sentence no longer ends in death. And because Sites is turned on <strong>by default in ChatGPT Business</strong> &mdash; and is <em>not</em> part of ChatGPT Plus &mdash; it just became one of the clearest reasons for a small business to be on the Business plan at all. Here is the honest read: what shipped, what you can actually build this week, the real cost story, how it stacks up against Microsoft Power Apps and the no-code crowd, and the limits to know before you ship anything that matters.</p>
+
+      <div class="highlight-box">
+        <strong>The 60-second version:</strong> Sites is a new Codex feature (launched June 2, 2026) that turns a plain-English prompt into a working, hosted website or internal app &mdash; dashboards, planners, review workspaces, project boards, galleries, lightweight tools &mdash; and gives you a shareable URL with no separate hosting account. It's in preview, <strong>enabled by default in ChatGPT Business</strong> and available as an Early Access toggle in Enterprise. It is not in ChatGPT Plus. OpenAI also shipped Annotations (point at any part of a document, slide, or app and tell Codex what to change) and six role-specific Codex plugins bundling 62 business apps and 110 skills. Codex now has 5M+ weekly active users, and the fastest-growing slice is knowledge workers, not developers.
+      </div>
+
+      <h2>What Actually Shipped on June 2</h2>
+
+      <p>The "Intelligence at Work" event bundled four things. They land hardest as a system, so it's worth seeing them together before we zoom in on Sites.</p>
+
+      <p><strong>One &mdash; Sites.</strong> Codex can now take your ideas, analyses, and plans and turn them into an interactive website or app that your team can open, use, and share by URL. Crucially, OpenAI hosts it. The pitch is deliberately blunt: describe the tool in plain English, get a live, shareable thing back, skip the entire deploy-and-host problem.</p>
+
+      <p><strong>Two &mdash; Annotations.</strong> The point-and-refine workflow developers already use to tweak Codex's code now extends to the content <em>you</em> create &mdash; documents, spreadsheets, slides, and Sites. You highlight the exact part you want changed and tell Codex what's wrong, instead of re-prompting from scratch. This is what makes Sites usable for non-engineers: you don't need to know what to type, you just point at the broken button and say "make this go to the invoices page instead."</p>
+
+      <p><strong>Three &mdash; six role-specific plugins.</strong> OpenAI shipped Codex plugins for sales, data analytics, creative production, product design, public-equity investing, and investment banking. Collectively they aggregate 62 popular business apps (Snowflake, Figma, Salesforce, and more) and 110 automated skills out of the box &mdash; so the agent shows up already knowing the tools a given role lives in.</p>
+
+      <p><strong>Four &mdash; Codex everywhere in ChatGPT.</strong> OpenAI confirmed it's moving Codex into the ChatGPT app "in the next few weeks," so the same agent that powers Sites and the plugins will be reachable from wherever your team already works. This is the same consolidation story we covered in <a href="/blog/openai-superapp-chatgpt-codex-atlas-what-businesses-need-to-know">the ChatGPT super-app breakdown</a> &mdash; one surface, many agents.</p>
+
+      <p>The through-line: OpenAI is explicitly chasing the knowledge worker now, not just the developer. With 5M+ weekly Codex users and the non-developer segment growing roughly 3&times; faster than the developer one, Sites is the feature built for the office manager, the agency owner, and the operations lead &mdash; not the engineer.</p>
+
+      <h2>Why Sites Is a Bigger Deal for SMBs Than It Looks</h2>
+
+      <p>Every small business is quietly running on a graveyard of spreadsheets, group texts, and one heroic person's memory. You don't need a $40,000 custom app. You need a <em>small</em> tool: a shared status board so the field crew stops calling the office, a clean intake form that drops into one place, a dashboard the owner can glance at on Sunday night, a simple gallery to send a client their proofs. The blocker was never the idea. It was that building and hosting even a tiny tool meant hiring a developer, learning a no-code platform, <em>and</em> paying a separate monthly hosting bill.</p>
+
+      <p>Sites removes all three frictions at once. The build is a conversation. The hosting is included. The output is a URL you can paste into a text message. That collapses the distance between "I wish we had a thing that..." and "here's the link, everyone use this" from weeks-and-a-budget to an afternoon-and-no-new-bill.</p>
+
+      <p>This is the same economic shift we wrote about with <a href="/blog/openai-codex-computer-use-windows-smb-2026">Codex Computer Use</a>, viewed from the other end. Computer Use lets ChatGPT operate the software you already have. Sites lets ChatGPT <em>create</em> the small software you never had the budget to build. Between the two, the "we can't afford custom tooling" objection that defined small-business IT for thirty years is mostly gone.</p>
+
+      <h2>8 Things Your Business Can Build With Sites This Week</h2>
+
+      <p>None of these are hypothetical app-store fantasies. Each is a small, bounded tool a non-technical owner or manager can describe in a paragraph and stand up the same day.</p>
+
+      <h3>1. A live job/install status board</h3>
+      <p>For contractors, HVAC, landscaping, and field-service teams: a board showing today's jobs, who's assigned, and a "mark complete" button. The crew updates it from their phones; the office stops fielding "where are you?" calls. Pairs naturally with our <a href="/blog/chatgpt-construction-contractors">construction and contractor playbook</a>.</p>
+
+      <h3>2. A client-facing project dashboard</h3>
+      <p>Agencies and consultancies can spin up a per-client page showing milestones, deliverables, and what's waiting on the client &mdash; the kind of "are we on track?" view that otherwise eats a weekly status email. See our <a href="/blog/chatgpt-consulting-firms">guide for consulting firms</a> for how to frame the client narrative.</p>
+
+      <h3>3. A clean intake or quote-request form</h3>
+      <p>Replace the messy "email us your details" flow with a structured form that lands every lead in one consistent place. Useful for insurance, real estate, professional services, and home services &mdash; anyone whose leads currently arrive in five different formats.</p>
+
+      <h3>4. An internal SOP and onboarding hub</h3>
+      <p>Turn the tribal knowledge living in one person's head into a searchable internal site new hires can actually use on day one. Combine with the prompt patterns in our <a href="/blog/chatgpt-business-prompts-library">ChatGPT Business prompt library</a>.</p>
+
+      <h3>5. A simple inventory or asset tracker</h3>
+      <p>For retail, e-commerce, and shops with tools and equipment: a lightweight tracker that shows what's in stock, what's out, and what needs reordering &mdash; without buying a dedicated inventory SaaS for a 40-item catalog.</p>
+
+      <h3>6. A property or listing gallery</h3>
+      <p>Real estate teams can generate a shareable, branded gallery for a listing or a client's shortlist in minutes. See our <a href="/blog/chatgpt-real-estate-prompts">real estate prompt guide</a> for listing-copy patterns to drop in.</p>
+
+      <h3>7. A KPI / cash-flow snapshot dashboard</h3>
+      <p>Feed Codex your weekly numbers and let it build the at-a-glance owner dashboard you keep meaning to make in a spreadsheet but never finish. Annotations make it easy to tweak which metrics show without rebuilding.</p>
+
+      <h3>8. An event, class, or appointment sign-up page</h3>
+      <p>For studios, clinics, nonprofits, and schools: a clean page where people pick a slot or RSVP, with no third-party booking subscription for a one-off event. Our <a href="/blog/chatgpt-nonprofit-organizations">nonprofit guide</a> has more on stretching tooling budgets.</p>
+
+      <p>The pattern across all eight: each replaces a spreadsheet-plus-group-text workflow with a single shared link, and each is small enough to throw away and rebuild if you don't like it. That disposability is the point &mdash; when building is a five-minute conversation, you stop treating internal tools as precious.</p>
+
+      <h2>Sites vs. The Alternatives: An Honest Comparison</h2>
+
+      <p>Sites is not the first tool that builds apps from prompts. Lovable, Glide, and a dozen others do "vibe coding." Microsoft has Power Apps. The relevant question for a small business is not "which is most powerful" &mdash; it's "which gets a working, hosted tool in front of my team with the fewest accounts, bills, and learning curves." Here's the straight comparison.</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 22%;">What matters</th>
+              <th style="width: 26%;">ChatGPT Sites</th>
+              <th style="width: 26%;">No-code builders (Lovable, Glide)</th>
+              <th style="width: 26%;">Microsoft Power Apps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">How you build</td>
+              <td>Plain-English chat + point-and-fix annotations</td>
+              <td>Prompt + drag-and-drop editor</td>
+              <td>Drag-and-drop + formula language</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Hosting</td>
+              <td><span class="checkmark">&#10003;</span> Included, OpenAI-hosted URL</td>
+              <td>Included on builder's platform</td>
+              <td>Within Microsoft 365 / Power Platform</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Separate subscription?</td>
+              <td><span class="checkmark">&#10003;</span> No &mdash; in ChatGPT Business</td>
+              <td><span class="xmark">&#10007;</span> Yes, own monthly plan</td>
+              <td><span class="xmark">&#10007;</span> Premium per-user/per-app license</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Learning curve</td>
+              <td>You already know how (you can chat)</td>
+              <td>Moderate &mdash; learn the editor</td>
+              <td>Steep &mdash; closer to dev work</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Best for</td>
+              <td>Fast internal tools, dashboards, share-by-link</td>
+              <td>Polished customer-facing apps</td>
+              <td>Deep M365 data + governance</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Lives where your team works?</td>
+              <td><span class="checkmark">&#10003;</span> Same app as your AI assistant</td>
+              <td><span class="xmark">&#10007;</span> Separate tool</td>
+              <td>Only if you're all-in on Microsoft</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The honest read: dedicated builders like Lovable still produce more polished, customer-facing products, and Power Apps wins when you need deep governance over Microsoft 365 data. But for the specific job most small businesses actually have &mdash; <em>"I need a small internal tool, now, without adding another subscription or learning another platform"</em> &mdash; Sites wins on friction, because it lives inside the AI tool your team is already paying for and already using. We made a similar "universal vs. integrated" argument about <a href="/blog/chatgpt-office-apps-vs-microsoft-copilot-2026">ChatGPT's office apps vs. Microsoft Copilot</a>; Sites extends it from documents to software itself.</p>
+
+      <h2>The Cost Story &mdash; and Why This Is a Business-Plan Feature</h2>
+
+      <p>This is the part that matters for deciding what to pay for. Sites is included in <strong>ChatGPT Business</strong> &mdash; on by default, no separate "app platform" license &mdash; at <strong>$30/user/month monthly</strong> or <strong>$25/user/month annual</strong>. In Enterprise it's an Early Access toggle. It is <em>not</em> available in ChatGPT Plus. So if you've been running your team on a pile of individual Plus seats to save a few dollars, Sites is one more capability that simply isn't on your plan.</p>
+
+      <p>Compare that to the realistic alternatives for getting a hosted internal tool: a dedicated no-code platform runs roughly $20&ndash;$50+/user/month on top of whatever AI tool you already pay for; Microsoft Power Apps premium licensing is around $20/user/app per month or $40/user/month for unlimited apps, and that's <em>before</em> the M365 base plan; and hiring a freelance developer for even a tiny internal tool starts in the low four figures and comes with no hosting. With Sites, the marginal cost of your next internal tool, if you're already on ChatGPT Business, is effectively zero.</p>
+
+      <p>If you're weighing Plus against Business, this is exactly the kind of capability gap our <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business vs. Plus breakdown</a> exists to surface &mdash; and Sites just widened it.</p>
+
+      <div class="warning-box">
+        <strong>&#9888;&#65039; It's a preview &mdash; treat it like one.</strong> Sites launched June 2 in preview. Don't put your customer payment flow, your only copy of critical data, or a mission-critical production workflow on a preview feature in week one. Start with internal, low-stakes tools where a glitch is an inconvenience, not a crisis. Keep the source data somewhere you control. And before you share any Site externally, check exactly who can see it &mdash; a "shareable URL" is only as private as its access controls.
+      </div>
+
+      <h2>Honest Limitations Before You Build Anything That Matters</h2>
+
+      <p>To keep this useful and not breathless, four real cautions.</p>
+
+      <p><strong>It's preview-grade, and OpenAI-hosted.</strong> Your tool lives on OpenAI's infrastructure, on a feature that's days old. That's wonderful for speed and terrible for anything you can't afford to have wobble during a rollout. Match the stakes to the maturity: internal dashboards yes, your e-commerce checkout no.</p>
+
+      <p><strong>Data residency and compliance need a human check.</strong> If you're in healthcare, legal, finance, or any regulated vertical, "ChatGPT built and hosts our intake tool" is a sentence your compliance posture has to actually support. Review where the data flows before you point real client information at a Site. Our <a href="/blog/chatgpt-data-privacy-security-guide">data privacy and security guide</a> is the right starting point.</p>
+
+      <p><strong>Sharing is a setting, not an afterthought.</strong> The headline feature is the shareable URL. The risk in the headline feature is the shareable URL. Confirm whether a given Site is private to your workspace, link-shareable, or public before you send it, especially if it shows customer or financial data.</p>
+
+      <p><strong>It's not a full app platform &mdash; yet.</strong> Sites is brilliant for bounded, lightweight tools. It is not a replacement for a real product with complex auth, payments, integrations, and SLAs. Know the ceiling so you build at the right altitude and don't try to run the whole business on it.</p>
+
+      <h2>Ship Your First Site This Week: A 5-Step Plan</h2>
+
+      <p>This is the exact sequence we're putting in front of ChatGPT Business customers this week. Total time: about two hours.</p>
+
+      <p><strong>Step 1 &mdash; Pick one annoying spreadsheet.</strong> Find a single internal workflow currently held together by a shared spreadsheet plus a group text. The job board, the intake list, the simple tracker. Low stakes, clear inputs and outputs, used at least weekly. Do not start with anything customer-facing or money-touching.</p>
+
+      <p><strong>Step 2 &mdash; Describe the tool in one paragraph.</strong> In ChatGPT Business, write a plain-English description of what the tool should show, who uses it, and what actions they take. Be concrete: "a page listing this week's jobs with columns for address, crew, status, and a button to mark done." Let Codex build the first version of the Site.</p>
+
+      <p><strong>Step 3 &mdash; Refine with annotations, not re-prompts.</strong> When something's off, point at it and say what's wrong &mdash; "this button should be green," "move status to the first column," "add a notes field." This is faster than re-describing the whole app and it's the workflow Annotations was built for.</p>
+
+      <p><strong>Step 4 &mdash; Check sharing before you share.</strong> Confirm exactly who can open the URL. Decide if it's workspace-only or link-shareable. Never skip this step on anything with customer or financial data on it.</p>
+
+      <p><strong>Step 5 &mdash; Roll it out to one team, then measure.</strong> Send the link to the smallest group who needs it. Watch for one week. Count the calls, emails, or spreadsheet edits it eliminated. If it sticks, build the next one &mdash; and now you have an internal-tools habit instead of a backlog.</p>
+
+      <p>This is the same demonstrate-refine-measure loop our team uses with every new Sayfe.ai customer, and it fits inside a normal business week.</p>
+
+      <h2>The Honest Bottom Line for SMBs</h2>
+
+      <p>Sites is the update that finally makes "AI builds the software my business needs" a true sentence instead of a demo. For the small businesses that have been running on spreadsheets and goodwill because custom tooling was always too expensive, the math just changed: the next internal tool is a five-minute conversation and a shareable link, included in a plan you may already pay for.</p>
+
+      <p>It's a preview, so the right move is to start internal and low-stakes, keep your real data where you control it, and check sharing settings every time. But the businesses that build the habit now &mdash; one disposable little tool a week &mdash; are going to look up in a quarter and realize they've quietly replaced half their spreadsheet-and-group-text chaos with shared tools, for zero marginal cost. That compounding is the whole game. OpenAI's 2026 cadence has been roughly one platform-shifting feature every couple of weeks; the operators who treat each one as a habit to build, not a headline to skim, are the ones who pull ahead.</p>
+
+      <!-- FAQ Section -->
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is ChatGPT Sites and what can it build?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sites is a Codex feature OpenAI launched on June 2, 2026 that turns a plain-English prompt into a working, hosted website or internal app. It's designed for dashboards, planners, review workspaces, project boards, galleries, and other lightweight tools. You describe what you want, Codex builds it, OpenAI hosts it, and you get a shareable URL &mdash; no separate hosting account, deploy pipeline, or developer required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Sites available in ChatGPT Plus, or only Business?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sites is enabled by default in ChatGPT Business and available as an Early Access toggle in ChatGPT Enterprise. It is not part of ChatGPT Plus. ChatGPT Business is $30/user/month on monthly billing or $25/user/month annual. If your team is on individual Plus seats, Sites is one of several capabilities you'd gain by moving to Business.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How is Sites different from Lovable, Glide, or Microsoft Power Apps?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>The main difference is friction. Dedicated no-code builders and Power Apps are powerful but require their own subscription and their own learning curve on top of whatever AI tool you already use. Sites lives inside ChatGPT Business itself, is built entirely through chat plus point-and-fix annotations, and includes hosting at no extra license. Lovable still produces more polished customer-facing products and Power Apps wins for deep Microsoft 365 governance, but for fast internal tools with the fewest accounts and bills, Sites wins on friction.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is it safe to put business data on a Site?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sites is a preview feature, so match the stakes to the maturity. It's well suited to internal, low-risk tools where a glitch is an inconvenience. Keep authoritative copies of any data somewhere you control, and always verify a Site's sharing settings &mdash; workspace-only versus link-shareable versus public &mdash; before sending the URL, especially for anything with customer or financial information. Regulated businesses (healthcare, legal, finance) should review data flow against their compliance requirements before pointing real client data at a Site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What else did OpenAI announce on June 2, 2026?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Alongside Sites, OpenAI's "Intelligence at Work" event introduced Annotations (point at any part of a document, slide, or app and tell Codex what to change, instead of re-prompting), six role-specific Codex plugins for sales, data analytics, creative production, product design, public-equity investing, and investment banking &mdash; bundling 62 business apps and 110 skills &mdash; and confirmed Codex is moving into the ChatGPT app everywhere in the coming weeks. OpenAI noted Codex now has more than 5 million weekly active users, with non-developer knowledge workers the fastest-growing segment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="cta-section">
+        <h3>Build Your First Internal Tool With Sites &mdash; in a Single Business Week</h3>
+        <p>Sayfe.ai is an authorized OpenAI SMB Channel Partner. We get you on the right ChatGPT Business plan, pick the highest-friction spreadsheet in your business, and turn it into a shared, hosted tool with Sites &mdash; so you spend the week measuring time saved instead of building plumbing.</p>
+        <a href="/get-started" class="cta-button">Get Started Today</a>
+      </div>
+
+      <p style="margin-top: 2rem;"><strong>Related reading:</strong></p>
+      <ul>
+        <li><a href="/blog/openai-codex-computer-use-windows-smb-2026">OpenAI Just Gave ChatGPT Hands on Your Windows PC: Codex Computer Use</a></li>
+        <li><a href="/blog/openai-superapp-chatgpt-codex-atlas-what-businesses-need-to-know">The ChatGPT Super-App: Codex, Atlas, and What Businesses Need to Know</a></li>
+        <li><a href="/blog/openai-workspace-agents-chatgpt-business-replace-custom-gpts">OpenAI Workspace Agents Killed Custom GPTs</a></li>
+        <li><a href="/blog/chatgpt-office-apps-vs-microsoft-copilot-2026">ChatGPT Office Apps vs. Microsoft Copilot</a></li>
+        <li><a href="/blog/chatgpt-business-vs-plus">ChatGPT Business vs ChatGPT Plus: Which Plan Does Your Team Need?</a></li>
+      </ul>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and medium-sized businesses implement and optimize ChatGPT Business, ChatGPT Enterprise, and the OpenAI API. We make enterprise AI accessible to teams of any size.
+      </p>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "OpenAI Just Made ChatGPT Build and Host Your Business Software for Free: Inside Sites, the June 2 Update That Ends the I Need a Developer Excuse",
+    "description": "On June 2, 2026, OpenAI launched Sites — ChatGPT can now build and host a working dashboard, internal tool, or website from a plain-English prompt and hand you a shareable URL. It's on by default in ChatGPT Business. The honest small-business read: 8 things to build this week, the cost story, the Power Apps comparison, and the limits to know first.",
+    "image": "https://sayfeai.com/og-image-blog.png",
+    "datePublished": "2026-06-04T00:00:00Z",
+    "dateModified": "2026-06-04T00:00:00Z",
+    "author": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfeai.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sayfeai.com/logo.png"
+      }
+    },
+    "articleSection": "News & Trends",
+    "keywords": "ChatGPT Sites, OpenAI Sites Codex, build internal app ChatGPT, ChatGPT host website, ChatGPT Business Sites, no code AI app builder 2026, OpenAI June 2 2026",
+    "wordCount": "2000",
+    "timeRequired": "PT11M"
+  }
+  </script>
+
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is ChatGPT Sites and what can it build?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sites is a Codex feature OpenAI launched on June 2, 2026 that turns a plain-English prompt into a working, hosted website or internal app. It is designed for dashboards, planners, review workspaces, project boards, galleries, and other lightweight tools. You describe what you want, Codex builds it, OpenAI hosts it, and you get a shareable URL — with no separate hosting account, deploy pipeline, or developer required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Sites available in ChatGPT Plus, or only Business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sites is enabled by default in ChatGPT Business and available as an Early Access toggle in ChatGPT Enterprise. It is not part of ChatGPT Plus. ChatGPT Business is $30/user/month monthly or $25/user/month annual. If your team is on individual Plus seats, Sites is one of several capabilities you would gain by moving to Business."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Sites different from Lovable, Glide, or Microsoft Power Apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The main difference is friction. Dedicated no-code builders and Power Apps are powerful but require their own subscription and their own learning curve on top of whatever AI tool you already use. Sites lives inside ChatGPT Business itself, is built entirely through chat plus point-and-fix annotations, and includes hosting at no extra license. Lovable still produces more polished customer-facing products and Power Apps wins for deep Microsoft 365 governance, but for fast internal tools with the fewest accounts and bills, Sites wins on friction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to put business data on a Site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sites is a preview feature, so match the stakes to the maturity. It is well suited to internal, low-risk tools where a glitch is an inconvenience. Keep authoritative copies of any data somewhere you control, and always verify a Site's sharing settings — workspace-only versus link-shareable versus public — before sending the URL, especially for anything with customer or financial information. Regulated businesses in healthcare, legal, or finance should review data flow against their compliance requirements before pointing real client data at a Site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What else did OpenAI announce on June 2, 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Alongside Sites, OpenAI's Intelligence at Work event introduced Annotations (point at any part of a document, slide, or app and tell Codex what to change instead of re-prompting), six role-specific Codex plugins for sales, data analytics, creative production, product design, public-equity investing, and investment banking — bundling 62 business apps and 110 skills — and confirmed Codex is moving into the ChatGPT app everywhere in the coming weeks. OpenAI noted Codex now has more than 5 million weekly active users, with non-developer knowledge workers the fastest-growing segment."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Interactive FAQ Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
