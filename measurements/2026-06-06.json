@@ -1,0 +1,68 @@
+{
+  "date": "2026-06-06",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "engine_note": "No OPENAI_API_KEY / ANTHROPIC_API_KEY / SERPAPI_API_KEY / PERPLEXITY_API_KEY present in scheduled-task environment. WebSearch used as a directional proxy for organic/citation presence only — engine-specific (ChatGPT / Claude / Google AIO / Perplexity) columns cannot be filled accurately. Day 21 of this limitation.",
+  "sampling": "Focused sample of 4 = 1 apply target (retail, next canonical-sweep vertical) + 3 alert-bucket trackers (compliance, assessment, partner_channel) per v2 bucket-failure monitoring.",
+  "results": [
+    {
+      "query_id": "chatgpt-for-retail",
+      "engine": "websearch_proxy",
+      "bucket": "industry",
+      "cited_us": false,
+      "citation_type": null,
+      "target_page": "/retail",
+      "competitors_cited": ["blog.contactpigeon.com", "bigcommerce.com", "sellerapp.com", "bloomreach.com", "jotform.com", "elfsight.com", "rubyroidlabs.com", "reveation.io", "goinflow.com"],
+      "answer_pattern": "list",
+      "notes": "Top results are e-commerce-platform and agency guides leading with product descriptions at scale (~10x productivity), customer service automation, and personalized recommendations. sayfeai.com not present. This is the apply target for today's canonical sweep (12/16)."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "engine": "websearch_proxy",
+      "bucket": "assessment",
+      "cited_us": false,
+      "citation_type": null,
+      "target_page": "/compliance-assessment",
+      "competitors_cited": ["ispartnersllc.com", "prompts.ai", "peachbytesolutions.com", "infotech.com", "bridgeviewit.com", "growthcapitalcorp.com", "esudo.com", "pathopt.com", "us.fitgap.com", "helloalice.com"],
+      "answer_pattern": "list",
+      "notes": "PILLAR HANDOFF — /compliance-assessment still 404. Competitors own the '60-second / 5-minute / instant-result / free' promise (IS Partners 60-sec, PeachByte/BridgeView 5-min). Engine 1 core conversion page. ~11 site-wide CTAs now point to a 404."
+    },
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "engine": "websearch_proxy",
+      "bucket": "compliance",
+      "cited_us": false,
+      "citation_type": null,
+      "target_page": "/blog/ai-compliance-colorado-eu-small-business-2026",
+      "competitors_cited": ["workforcebulletin.com (Epstein Becker)", "leg.colorado.gov", "techjacksolutions.com", "finnegan.com", "consumerfinancemonitor.com", "lathropgpm.com", "reedsmith.com", "crowell.com", "fisherphillips.com", "buchalter.com"],
+      "answer_pattern": "list",
+      "notes": "BigLaw alerts (Epstein Becker, Finnegan, Crowell, Reed Smith, Fisher Phillips, Buchalter, Lathrop GPM) fully own the SB 26-189 / ADMT query. Our blog is accurate and current (SB 26-189, ADMT, Jan 1 2027, no <50-FTE carve-out) but not cited — the durable win requires the /compliance/colorado-ai-act pillar (P0)."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "engine": "websearch_proxy",
+      "bucket": "partner_channel",
+      "cited_us": false,
+      "citation_type": null,
+      "target_page": "/blog/best-chatgpt-business-partner-smb-2026",
+      "competitors_cited": ["worksent.com", "integrisit.com", "connectwise.com", "guardz.com", "lumenova.ai", "managedservicesjournal.com", "meetgradient.com", "tacticsmarketing.com", "channelpronetwork.com"],
+      "answer_pattern": "list",
+      "notes": "Engine 2 (MSP channel). 'Compliance as a recurring MSP retainer' theme (meetgradient, managedservicesjournal 'high-margin frontier', ConnectWise+Microsoft SMB playbook) continues to dominate. Zero MSP-channel content on sayfeai.com — needs the /partners/msp pillar (P2). No new competitor crossed the 3+ auto-detect threshold this run."
+    }
+  ],
+  "summary": {
+    "total_sampled": 4,
+    "cited_us_canonical": 0,
+    "cited_us_including_legacy": 0,
+    "bucket_breakdown": {
+      "industry": "0/1",
+      "assessment": "0/1",
+      "compliance": "0/1",
+      "partner_channel": "0/1"
+    },
+    "consecutive_flat_zero_days": 21,
+    "bucket_failure_alert_days": 21,
+    "new_competitors_auto_detected": []
+  }
+}
