@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-07",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "transition_cutoff": "2026-06-18",
+  "engines_used": ["websearch_proxy"],
+  "engine_note": "No OPENAI/ANTHROPIC/SERPAPI/PERPLEXITY API keys present. WebSearch proxy is directional only — engine columns (cited CGPT/Claude/GAIO) cannot be filled. 22nd consecutive proxy-only run.",
+  "sample_size": 5,
+  "sample_strategy": "Weighted toward Engine 1 + Engine 2 priority buckets (compliance, assessment, partner_channel) plus the sweep-candidate industry query and one high-intent comparison query.",
+  "results": [
+    {"query_id": "colorado-sb-26-189-admt", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["workforcebulletin.com (Epstein Becker)", "leg.colorado.gov", "finnegan.com", "consumerfinancemonitor.com", "reedsmith.com", "lathropgpm.com", "crowell.com", "fisherphillips.com", "buchalter.com"], "answer_pattern": "paragraph+list", "notes": "Law-firm alerts dominate. SB 26-189 signed 2026-05-14, effective 2027-01-01; no <50-FTE carve-out. sayfeai.com absent. target_page /compliance/colorado-ai-act still does not exist (pillar handoff)."},
+    {"query_id": "ai-compliance-assessment", "bucket": "assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["prompts.ai", "growthcapitalcorp.com", "centraleyes.com", "pathopt.com", "relevanceai.com", "fitgap.com", "trustcloud.ai"], "answer_pattern": "list", "notes": "Free/instant-assessment promise owned by tool vendors. target_page /compliance-assessment still 404 — ~11 site-wide CTAs point to a non-existent page. P0 pillar handoff."},
+    {"query_id": "msp-ai-compliance-resell", "bucket": "partner_channel", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["worksent.com", "integrisit.com", "connectwise.com", "guardz.com", "lumenova.ai", "managedservicesjournal.com", "meetgradient.com", "channelpronetwork.com", "tacticsmarketing.com"], "answer_pattern": "paragraph", "notes": "MSP 'compliance as high-margin retainer' frame owned by channel media + ConnectWise/Microsoft playbook. Zero MSP content on sayfeai.com. Engine 2 gap — /partners/msp pillar handoff."},
+    {"query_id": "chatgpt-for-nonprofit", "bucket": "industry", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["help.openai.com", "donorbox.org", "goharness.com", "slammedialab.com", "vynta.ai", "openai.com", "blog.techsoup.org", "lughstudio.com", "engagingnetworks.net", "betterworld.org"], "answer_pattern": "list+guide", "notes": "DIAGNOSED + PATCHED this run. Grant writing is the dominant cited use case; OpenAI nonprofit discount (up to 75%, as of Feb 2026) is a citation-worthy fact competitors lead with. /industries/nonprofit lacked visible FAQ, cited-mechanism FAQs, and canonical JSON-LD @id/url."},
+    {"query_id": "chatgpt-business-vs-enterprise", "bucket": "comparison", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["intuitionlabs.ai", "hungyichen.com", "aibusinessweekly.net", "help.openai.com", "chatgpt.com", "openai.com", "aitoolsage.com", "gosearch.ai"], "answer_pattern": "table+paragraph", "notes": "Business $20-25 vs Enterprise ~$60/150-seat min. Our /blog/chatgpt-business-vs-enterprise-2026 already cited-mechanism patched (5/27); not re-patched this run."}
+  ],
+  "summary": {
+    "total_tested": 5,
+    "cited_us_canonical": 0,
+    "cited_us_legacy": 0,
+    "cited_us_total": 0,
+    "by_bucket": {"compliance": "0/1", "assessment": "0/1", "partner_channel": "0/1", "industry": "0/1", "comparison": "0/1"},
+    "consecutive_flat_zero_days": 22
+  },
+  "pages_patched": ["public/industries/nonprofit.html", "public/sitemap.xml", "public/llms.txt"],
+  "pillar_handoffs_reconfirmed": ["ai-compliance-assessment (/compliance-assessment)", "ai-risk-assessment-tool (/compliance-assessment)", "colorado-ai-act-small-business (/compliance/colorado-ai-act)", "eu-ai-act-small-business (/compliance/eu-ai-act)", "ai-policy-template-smb (/compliance/ai-policy-template)", "msp-ai-compliance-resell (/partners/msp)", "chatgpt-business-cle-webinar (/resources/cle-ai-legal-practice)"],
+  "new_competitors_at_threshold": [],
+  "seed_file_changed": false,
+  "friday_pillar_audit": false
+}
