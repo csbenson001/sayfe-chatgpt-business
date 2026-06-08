@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-08",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "engines_used": ["websearch_proxy"],
+  "engine_note": "No OPENAI/ANTHROPIC/SERPAPI/PERPLEXITY API keys present in run environment (verified at runtime). Citation measurement is WebSearch-proxy only and directional — engine-specific cited_us columns cannot be filled. This is the #1 operational gap, unchanged for 23 days.",
+  "sample_size": 5,
+  "sampling_note": "Seed file has 47 queries (>40) so weighted sample applies. Weighted toward failing priority buckets (compliance/assessment/partner_channel per v2 rule 8) plus this run's industry-sweep target (chiropractic) and the remaining sweep candidate (professional-services).",
+  "results": [
+    {
+      "query_id": "chatgpt-for-chiropractic",
+      "query": "how to use ChatGPT for chiropractic practices",
+      "bucket": "industry",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["chirobasix.com", "chirosecure.com", "aiforwork.co", "dcrank.com", "coactionsoft.com", "duforest.ai"],
+      "answer_pattern": "list",
+      "target_page": "/industries/chiropractic",
+      "notes": "sayfeai.com / elevaiq.com absent from top-10. Patched this run (14/16 canonical sweep)."
+    },
+    {
+      "query_id": "colorado-sb-26-189-admt",
+      "query": "colorado SB 26-189 ADMT small business compliance",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["workforcebulletin.com", "techjacksolutions.com", "leg.colorado.gov", "finnegan.com", "consumerfinancemonitor.com", "lathropgpm.com", "crowell.com", "buchalter.com", "reedsmith.com"],
+      "answer_pattern": "paragraph",
+      "target_page": "/blog/ai-compliance-colorado-eu-small-business-2026",
+      "notes": "Law-firm alerts + leg.colorado.gov dominate. SB 26-189 facts on our blog + llms.txt are accurate and current (signed 2026-05-14, effective 2027-01-01, 40-or-fewer-employee deployer exclusion). Pillar /compliance/colorado-ai-act still does not exist (P0 handoff)."
+    },
+    {
+      "query_id": "ai-compliance-assessment",
+      "query": "free ai compliance assessment small business",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["prompts.ai", "growthcapitalcorp.com", "centraleyes.com", "pathopt.com", "relevanceai.com", "fitgap.com", "sprinto.com"],
+      "answer_pattern": "list",
+      "target_page": "/compliance-assessment",
+      "notes": "Target page still 404 (P0). ~11 site-wide CTAs point to it. Highest-leverage strategic gap — needs Claude Code MVP build."
+    },
+    {
+      "query_id": "msp-ai-compliance-resell",
+      "query": "MSP AI compliance services small business clients",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["worksent.com", "integrisit.com", "connectwise.com", "guardz.com", "lumenova.ai", "managedservicesjournal.com", "meetgradient.com", "channelpronetwork.com", "tacticsmarketing.com"],
+      "answer_pattern": "list",
+      "target_page": "/blog/best-chatgpt-business-partner-smb-2026",
+      "notes": "Engine 2. 'Compliance-as-MSP-retainer' framing owned by meetgradient + managedservicesjournal. No /partners/msp pillar exists (P2 handoff). Zero MSP content on-site."
+    },
+    {
+      "query_id": "chatgpt-for-professional-services",
+      "query": "how to use ChatGPT for professional services",
+      "bucket": "industry",
+      "engine": "websearch_proxy",
+      "cited_us": false,
+      "citation_type": null,
+      "competitors_cited": ["bdladder.com", "rattleback.com", "midrocket.com", "hp.com", "plusai.com", "techtarget.com", "hubspot.com"],
+      "answer_pattern": "list",
+      "target_page": "/industries/professional-services",
+      "notes": "Remaining canonical-sweep candidate (15/16 next eligible run when otherwise patched). Not patched this run — one page per run."
+    }
+  ],
+  "summary": {
+    "total_measured": 5,
+    "cited_us_canonical": 0,
+    "cited_us_legacy": 0,
+    "bucket_breakdown": {
+      "compliance": "0/1",
+      "assessment": "0/1",
+      "partner_channel": "0/1",
+      "industry": "0/2"
+    },
+    "flat_zero_day": 23,
+    "regression_rule_triggered": false,
+    "new_competitors_3plus_this_run": [],
+    "pages_patched": ["/industries/chiropractic (-> canonical /chiropractic)", "public/sitemap.xml", "public/llms.txt"]
+  }
+}
