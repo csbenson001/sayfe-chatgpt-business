@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-09",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "transition_cutoff": "2026-06-18",
+  "engines_used": ["google_aio_websearch_proxy"],
+  "engines_unavailable": ["chatgpt", "claude", "perplexity", "serpapi"],
+  "engines_unavailable_reason": "No OPENAI_API_KEY / ANTHROPIC_API_KEY / PERPLEXITY_API_KEY / SERPAPI_API_KEY present in sandbox. Graceful-degrade to WebSearch proxy for Google AI Overviews (directional only).",
+  "sample_size": 15,
+  "sample_weighting": "Weighted to priority buckets: compliance + assessment + partner_channel, plus rotating comparison/trust/local/industry. Professional-services added to tie Rule-4 diagnosis for the sweep patch.",
+  "results": [
+    {"query_id": "colorado-ai-act-small-business", "bucket": "compliance", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["stackcyber.com", "iapp.org", "skadden.com", "consumerfinancemonitor.com", "leg.colorado.gov"], "answer_pattern": "list", "notes": "SB 26-189 now dominates SERP; SB 24-205 framing obsolete."},
+    {"query_id": "eu-ai-act-small-business", "bucket": "compliance", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["artificialintelligenceact.eu", "hklaw.com", "colombani.ai", "digitalapplied.com"], "answer_pattern": "paragraph", "notes": "Aug 2 2026 transparency vs Dec 2 2027 high-risk split."},
+    {"query_id": "ai-policy-template-smb", "bucket": "compliance", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["aihr.com", "hibob.com", "thoropass.com", "polygraf.ai"], "answer_pattern": "list", "notes": "Winners all offer one-click downloadable template."},
+    {"query_id": "ai-compliance-checklist", "bucket": "compliance", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["pathopt.com", "digitalapplied.com", "myaifrontdesk.com", "wipfli.com"], "answer_pattern": "paragraph", "notes": "pathopt + digitalapplied recurring."},
+    {"query_id": "colorado-sb-26-189-admt", "bucket": "compliance", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["workforcebulletin.com", "leg.colorado.gov", "finnegan.com", "consumerfinancemonitor.com", "crowell.com"], "answer_pattern": "list", "notes": "Law-firm explainers own this; our blog page exists and is current but not cited."},
+    {"query_id": "ai-compliance-assessment", "bucket": "assessment", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["prompts.ai", "growthcapitalcorp.com", "ai-180.solutions", "centraleyes.com"], "answer_pattern": "list", "notes": "ai-180.solutions is a strong direct 'free AI assessment' competitor - WATCH. Target page /compliance-assessment does NOT exist (pillar handoff)."},
+    {"query_id": "ai-risk-assessment-tool", "bucket": "assessment", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["trustlayer.io", "flowforma.com", "peoplemanagingpeople.com", "riskgenerator.com"], "answer_pattern": "list", "notes": "5-minute/no-signup promise owned by TrustLayer + RiskGenerator. Target /compliance-assessment does NOT exist."},
+    {"query_id": "msp-ai-compliance-resell", "bucket": "partner_channel", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["worksent.com", "connectwise.com", "guardz.com", "meetgradient.com", "managedservicesjournal.com"], "answer_pattern": "list", "notes": "'compliance as MSP retainer' theme strong. Zero MSP content on-site (pillar handoff /partners/msp)."},
+    {"query_id": "openai-partner-for-consultants", "bucket": "partner_channel", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["think-technologies.com", "openai.com/form/partnerintake", "constellationr.com"], "answer_pattern": "paragraph", "notes": "Target /openai-smb-partner exists and is strong but uncited."},
+    {"query_id": "chatgpt-business-cle-webinar", "bucket": "partner_channel", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["knowlearninghub.com", "mylawcle.com", "clio.com"], "answer_pattern": "list", "notes": "Engine 2 legal. Zero defensive CLE asset (pillar handoff /resources/cle-ai-legal-practice)."},
+    {"query_id": "openai-smb-partner", "bucket": "commercial", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["think-technologies.com", "openai.com", "prnewswire.com"], "answer_pattern": "paragraph", "notes": "SearchKings named as OpenAI SMB services partner; Think Technologies leads."},
+    {"query_id": "chatgpt-business-vs-enterprise", "bucket": "comparison", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["intuitionlabs.ai", "hungyichen.com", "aibusinessweekly.net", "chatgpt.com"], "answer_pattern": "table", "notes": "Target /blog/chatgpt-business-vs-enterprise-2026 exists; not cited."},
+    {"query_id": "chatgpt-hipaa-compliant", "bucket": "trust", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["hipaajournal.com", "help.openai.com", "compliantchatgpt.com", "hipaavault.com"], "answer_pattern": "paragraph", "notes": "hipaajournal owns this; our /blog/chatgpt-healthcare-hipaa-2026 exists, uncited."},
+    {"query_id": "ai-consultant-houston", "bucket": "local", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["penncomp.com", "ademero.com", "appmaisters.com", "goodfirms.co"], "answer_pattern": "list", "notes": "Local directories + Houston firms dominate; /about not cited."},
+    {"query_id": "chatgpt-for-professional-services", "bucket": "industry", "engine": "google_aio_websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["bdladder.com", "helencoxmarketing.co.uk", "rattleback.com", "consultingsuccess.com"], "answer_pattern": "list", "notes": "Diagnosis tied -> patched /industries/professional-services this run (sweep 15/16)."}
+  ],
+  "summary": {
+    "total": 15,
+    "cited_us": 0,
+    "by_bucket": {"compliance": "0/5", "assessment": "0/2", "partner_channel": "0/3", "industry": "0/1", "comparison": "0/1", "trust": "0/1", "commercial": "0/1", "local": "0/1"},
+    "new_competitors_3plus": [],
+    "watch_competitors": ["ai-180.solutions (free AI assessment - direct threat to unbuilt /compliance-assessment)"],
+    "consecutive_flat_zero_days": 24,
+    "bucket_failure_alert_active_days": 24,
+    "regression_rule_triggered": false,
+    "pages_patched": ["/industries/professional-services"]
+  }
+}
