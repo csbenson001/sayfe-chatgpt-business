@@ -13,6 +13,9 @@ version: 2
 # - Added bucket aggregation for daily reporting by category
 # - During the 30-day transition window (through 2026-06-18), the optimizer should
 #   ALSO count elevaiq.com citations toward sayfeai.com (until elevaiq.com 301s fully propagate).
+# 2026-06-11 maintenance:
+# - NO optimizer run occurred 2026-06-10 (gap day; content engine only). Flat-zero day count therefore has a 1-day measurement hole.
+# - Added chatgpt-superapp-aria (content-engine handoff: Aria blog published 2026-06-10).
 # 2026-05-19 maintenance:
 # - openai-partner-for-consultants: auto-detected target_competitor as openai.com partner intake (in 3+ result sets across two runs)
 # - colorado-ai-act-* notes: SB 24-205 effectively replaced by SB 189 signed by Gov Polis 2026-05-14, effective 2027-01-01
@@ -280,6 +283,14 @@ queries:
     target_page: /about
     target_competitor: null
 
+  # --- Added 2026-06-11 — content-engine handoff (Aria superapp blog published 2026-06-10) ---
+  - id: chatgpt-superapp-aria
+    query: "ChatGPT superapp Aria redesign business users"
+    intent: news
+    target_page: /blog/chatgpt-superapp-aria-redesign-business-2026
+    target_competitor: https://www.techtimes.com/articles/318025/20260608/openais-chatgpt-superapp-bid-own-agentic-commerce-apps-run-mcp-checkout-stripe.htm
+    # 2026-06-11: measured at creation — 0% cited; techtimes/decrypt/windowsnews/gagadget dominate. Aria rollout reported targeting ~June 9 2026; freshness window open.
+
 # --- Bucket aggregation rules for daily reporting ---
 buckets:
   compliance:
@@ -336,6 +347,7 @@ buckets:
     - ai-adoption-checklist
     - chatgpt-excel-sheets
     - chatgpt-personal-finance-business
+    - chatgpt-superapp-aria
   local:
     - ai-consultant-houston
     - ai-consultant-texas-smb
