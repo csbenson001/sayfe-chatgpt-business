@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-12",
+  "run": "AEO optimizer v2 (3:30 AM slot)",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "transition_window_days_remaining": 6,
+  "engines_used": ["websearch_proxy"],
+  "engine_note": "No OPENAI_API_KEY / ANTHROPIC_API_KEY / SERPAPI_API_KEY / PERPLEXITY_API_KEY present. WebSearch used as directional proxy only (1 engine). cited_us=true requires sayfeai.com (or active transition domain) to appear in proxy results.",
+  "sample_size": 9,
+  "sample_weighting": "Weighted to priority buckets (compliance/assessment/partner) + fresh chatgpt-superapp-aria seed + rotating comparison/local.",
+  "results": [
+    {"query_id": "ai-compliance-assessment", "bucket": "assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["techno-pm.com (ComplySense)", "prompts.ai", "ispartnersllc.com", "ai-180.solutions", "bridgeviewit.com", "growthcapitalcorp.com", "peachbytesolutions.com"], "answer_pattern": "list", "notes": "Target /compliance-assessment still 404 -> PILLAR HANDOFF (P0). ComplySense (techno-pm) new entrant owning the free/<5-min promise. ai-180.solutions appears again (still <3 in-run, watch)."},
+    {"query_id": "colorado-sb-26-189-admt", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": true, "citation_type": "canonical", "competitors_cited": ["consumerfinancemonitor.com", "finnegan.com", "preferreddata.com", "epsteinbecker (workforcebulletin.com)", "cyberadviserblog.com", "stackcyber.com", "lawfuel.com", "availablelaw.com", "techjacksolutions.com"], "answer_pattern": "list", "notes": "FIRST measured canonical citation in priority buckets. sayfeai.com/blog/ai-compliance-colorado-eu-small-business-2026 surfaced ~position 9. On-page query-match win (blog title literally contains 'SB 26-189 / SB 189'). Breaks the compliance-bucket 0% streak."},
+    {"query_id": "ai-policy-template-smb", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["certified-nets.com", "hibob.com", "thoropass.com", "mescomputing.com", "ifeeltech.com", "polygraf.ai", "lattice.com", "aihr.com", "responsible.ai", "purplesec.us"], "answer_pattern": "list", "notes": "Target /compliance/ai-policy-template 404 -> PILLAR HANDOFF (P1). All winners offer a one-click downloadable (PDF+DOCX) template."},
+    {"query_id": "msp-ai-compliance-resell", "bucket": "partner_channel", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["customgpt.ai", "channelpronetwork.com", "worksent.com", "lumenova.ai", "connectwise.com", "compassmsp.com", "guardz.com", "integrisit.com"], "answer_pattern": "list", "notes": "Target /partners/msp 404 -> PILLAR HANDOFF (P2). Zero MSP content on-site. 76.4% of MSPs expect AI services to be 11-50% of revenue (channel demand confirmed)."},
+    {"query_id": "eu-ai-act-small-business", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["digital-strategy.ec.europa.eu", "lw.com", "artificialintelligenceact.eu", "bakermckenzie.com", "secureprivacy.ai", "truescreen.io", "legalnodes.com"], "answer_pattern": "paragraph", "notes": "Target /compliance/eu-ai-act 404 -> PILLAR HANDOFF (P0). Article 50 transparency obligations confirmed live Aug 2 2026; SME simplified pathways exist (citation-worthy framing for the pillar)."},
+    {"query_id": "chatgpt-superapp-aria", "bucket": "resource", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["windowsnews.ai", "techtimes.com", "gagadget.com", "windowsforum.com", "androidheadlines.com", "decrypt.co", "pymnts.com", "gncrypto.news", "resultsense.com"], "answer_pattern": "news_list", "notes": "Page EXISTS (/blog/chatgpt-superapp-aria-redesign-business-2026) and is the one fresh measured loss on an existing page. DIAGNOSIS: page self-canonicalized to sayfeai.chat (non-canonical) in <link rel=canonical>, og:url, og:image, twitter:image, and JSON-LD author/publisher/image. PATCHED this run -> all corrected to sayfeai.com; dateModified bumped 2026-06-10 -> 2026-06-12. Hard news domains dominate; freshness window open through ~late June."},
+    {"query_id": "ai-risk-assessment-tool", "bucket": "assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["trustlayer.io", "mymap.ai", "logicballs.com", "riskhelper.ai", "riskgenerator.com", "arogai.net"], "answer_pattern": "list", "notes": "Target /compliance-assessment 404 -> PILLAR HANDOFF (P0). TrustLayer Risk Matrix + RiskHelper.ai + Logicballs own the '5-minute / no-signup' promise."},
+    {"query_id": "chatgpt-business-vs-enterprise", "bucket": "comparison", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["intuitionlabs.ai", "hungyichen.com", "aibusinessweekly.net", "dancumberlandlabs.com", "help.openai.com", "openai.com", "aitoolsage.com", "tactiq.io", "madewell.ai"], "answer_pattern": "paragraph", "notes": "madewell.ai appears again (direct-competitor flagged by content engine 6/11; still <3 in-run threshold). Pricing in proxy answers shows $25 monthly / $20 annual for Business -- consistent with the unverified April-2 cut a competitor claims; site canon is $25 annual/$30 monthly. PRICING DISCREPANCY -> flag to content engine, do not mass-update under rule 4."},
+    {"query_id": "ai-consultant-houston", "bucket": "local", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["penncomp.com", "goodfirms.co", "opinosis-analytics.com", "designrush.com", "goddigitalmarketing.com", "appmaisters.com", "arcitech.ai", "zfort.com", "plego.com"], "answer_pattern": "list", "notes": "Local directories (goodfirms, designrush, plego) + Microsoft-aligned shops dominate. /about exists but doesn't surface; no measured patchable on-page gap tied to a fresh diagnosis this run."}
+  ],
+  "summary": {
+    "cited_us_canonical": 1,
+    "cited_us_legacy": 0,
+    "cited_us_total": 1,
+    "citation_rate_proxy": "1/9 (11%)",
+    "bucket_breakdown": {
+      "compliance": "1/3 (33%) -- colorado-sb-26-189-admt canonical hit; eu + policy-template lost (pillar handoffs)",
+      "assessment": "0/2 (0%) -- both pillar handoffs (P0)",
+      "partner_channel": "0/1 (0%) -- pillar handoff (P2)",
+      "comparison": "0/1 (0%)",
+      "resource": "0/1 (0%) -- aria; patched canonical this run",
+      "local": "0/1 (0%)"
+    },
+    "friday_pillar_audit": "public/compliance/ does not exist -- 0 pillars. Unchanged from prior Friday audits (5/29, 6/05).",
+    "pages_patched": ["public/blog/chatgpt-superapp-aria-redesign-business-2026.html (canonical/domain correction sayfeai.chat -> sayfeai.com; dateModified bump)"],
+    "new_competitors_at_3plus_threshold": [],
+    "watch_competitors": ["ai-180.solutions (free AI assessment -- recurring single appearances)", "madewell.ai (direct ChatGPT Business partner-content competitor)", "techno-pm.com / ComplySense (new free <5-min compliance checker)"]
+  }
+}
