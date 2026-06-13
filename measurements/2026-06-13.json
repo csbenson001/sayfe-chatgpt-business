@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-13",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "transition_window_days_remaining": 5,
+  "engines_used": ["google_aio_websearch_proxy"],
+  "engines_skipped": {
+    "chatgpt": "no OPENAI_API_KEY in run env",
+    "claude": "no ANTHROPIC_API_KEY in run env",
+    "perplexity": "no PERPLEXITY_API_KEY in run env",
+    "serpapi": "no SERPAPI_API_KEY; used WebSearch proxy for Google AIO"
+  },
+  "sample": {"size": 13, "weighting": "priority buckets (compliance/assessment/partner) + yesterday's surfacing query + rotating comparison/news/local"},
+  "totals": {"cited_us": 1, "cited_rate_pct": 7.7, "citation_type_breakdown": {"canonical": 1, "legacy": 0}},
+  "buckets": {
+    "compliance": {"tested": 5, "cited": 1, "pct": 20.0},
+    "assessment": {"tested": 2, "cited": 0, "pct": 0.0},
+    "partner_channel": {"tested": 3, "cited": 0, "pct": 0.0},
+    "comparison": {"tested": 1, "cited": 0, "pct": 0.0},
+    "resource": {"tested": 1, "cited": 0, "pct": 0.0},
+    "local": {"tested": 1, "cited": 0, "pct": 0.0}
+  },
+  "results": [
+    {"query_id":"colorado-sb-26-189-admt","engine":"google_aio_proxy","cited_us":true,"citation_type":"canonical","cited_url":"https://www.sayfeai.com/blog/ai-compliance-colorado-eu-small-business-2026","approx_position":4,"competitors_cited":["lawfuel.com","glacis.io","buchalter.com","consumerfinancemonitor.com","techjacksolutions.com","preferreddata.com"],"answer_pattern":"list","notes":"Improving: ~pos 4 today vs ~pos 9 on 2026-06-12. Title bill-number match + accrued freshness."},
+    {"query_id":"colorado-ai-act-small-business","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["lawfuel.com","iapp.org","jbakerlawgroup.com","bridgepointconsulting.com","stackcyber.com","preferreddata.com","availablelaw.com"],"answer_pattern":"list","notes":"target /compliance/colorado-ai-act 404 — PILLAR HANDOFF P0."},
+    {"query_id":"eu-ai-act-small-business","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["hklaw.com","bakermckenzie.com","legalnodes.com","ec.europa.eu","colombani.ai","digitalapplied.com","aicomplibot.eu"],"answer_pattern":"list","notes":"target /compliance/eu-ai-act 404 — PILLAR HANDOFF P0."},
+    {"query_id":"ai-policy-template-smb","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["aihr.com","thoropass.com","polygraf.ai","hdtech.com","hibob.com","ifeeltech.com","aiguardianapp.com"],"answer_pattern":"list","notes":"target /compliance/ai-policy-template 404 — PILLAR HANDOFF P1. Winners offer downloadable template."},
+    {"query_id":"ai-compliance-checklist","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["ost.agency","medium.com","myaifrontdesk.com","digitalapplied.com","pathopt.com"],"answer_pattern":"list","notes":"target EXISTS (/blog/ai-compliance-colorado-eu-small-business-2026) but loses generic checklist query. PATCHED this run: added checklist-phrased FAQ + freshness bump."},
+    {"query_id":"ai-compliance-assessment","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["prompts.ai","arogai.net","fitgap.com","growthcapitalcorp.com","ai-180.solutions","pathopt.com"],"answer_pattern":"list","notes":"target /compliance-assessment 404 — PILLAR HANDOFF P0. Assessment bucket still 0%."},
+    {"query_id":"ai-risk-assessment-tool","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["riskhelper.ai","mymap.ai","trustlayer.io","ised-isde.canada.ca","devopsschool.com","riskgenerator.com"],"answer_pattern":"list","notes":"target /compliance-assessment 404 — PILLAR HANDOFF P0. Winners own 'free / no-signup / 5-minute' framing."},
+    {"query_id":"msp-ai-compliance-resell","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["lumenova.ai","channelpronetwork.com","customgpt.ai","tacticsmarketing.com","integrisit.com","connectwise.com","managedservicesjournal.com"],"answer_pattern":"list","notes":"Engine 2. /partners/msp pillar absent — PILLAR HANDOFF P2."},
+    {"query_id":"openai-partner-for-consultants","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["jobright.ai","ashbyhq.com","constellationr.com","deepsense.ai","think-technologies.com","codestone.com"],"answer_pattern":"list","notes":"target /openai-smb-partner EXISTS (patched 6/11) but not surfaced; openai.com job/program listings + Think Technologies dominate."},
+    {"query_id":"chatgpt-business-cle-webinar","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["clio.com","americanbar.org","knowlearninghub.com","acba.org","legalfuel.com","mylawcle.com"],"answer_pattern":"list","notes":"Engine 2 legal. /resources/cle-ai-legal-practice absent — PILLAR HANDOFF P3."},
+    {"query_id":"chatgpt-superapp-aria","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["techtimes.com","androidheadlines.com","finance.biggo.com","windowsforum.com","windowsnews.ai","gagadget.com","decrypt.co"],"answer_pattern":"list","notes":"target EXISTS (canonical fixed 6/12) but news SERP dominated by tech press; freshness window narrowing."},
+    {"query_id":"chatgpt-business-vs-plus","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["intuitionlabs.ai","tactiq.io","freeacademy.ai","aibusinessweekly.net","blog.laozhang.ai"],"answer_pattern":"list","notes":"target /blog/chatgpt-business-vs-plus EXISTS; comparison aggregators dominate. Pricing in proxy answer ($20 annual/$25 monthly) matches site canon."},
+    {"query_id":"ai-consultant-houston","engine":"google_aio_proxy","cited_us":false,"competitors_cited":["goodfirms.co","ademero.com","designrush.com","iaaic.org","plego.com","opinosis-analytics.com","aiguyjosh.com","maventg.com"],"answer_pattern":"list","notes":"target /about EXISTS but local directories + Houston AI firms dominate; no LocalBusiness surfacing."}
+  ]
+}
