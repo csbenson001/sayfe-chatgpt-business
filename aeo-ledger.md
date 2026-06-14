@@ -38,50 +38,57 @@ Each row is one daily AEO optimizer run. Trend interpretation lives at the botto
 | 2026-06-09 | websearch_proxy stable | 15 | n/a | n/a | 0/15 (proxy) | 0/5 (0%) | 0/2 (0%) | 0/3 (0%) | 0/1 (0%) | 1 | **24th flat-zero day.** Shipped /industries/professional-services (15/16 — sweep functionally complete). |
 | 2026-06-11 | websearch_proxy only | 12 | n/a | n/a | 0/12 (proxy) | 0/3 (0%) | 0/2 (0%) | 0/3 (0%) | 0/0 | 1 | **25th flat-zero measurement day (6/10 gap day).** Shipped /openai-smb-partner visible FAQ + MSP channel FAQ (FAQPage 9->10) + partner-landscape update. Added chatgpt-superapp-aria seed. Patch queue EMPTY. |
 | 2026-06-12 | websearch_proxy only | 9 | n/a | n/a | **1/9 (11%) proxy** | **1/3 (33%)** | 0/2 (0%) | 0/1 (0%) | 0/0 | 1 | **STREAK BROKEN (proxy).** FIRST measured canonical citation: sayfeai.com Colorado SB 26-189 blog surfaced ~pos 9 for colorado-sb-26-189-admt (compliance hit). **Friday Pillar Audit: still 0 pillars.** Fixed canonical-domain BUG on fresh Aria blog: canonical+og+twitter+JSON-LD pointed to non-canonical **sayfeai.chat** -> corrected to **sayfeai.com** + dateModified bump. **SYSTEMIC: content engine appears to publish blogs with sayfeai.chat canonicals — likely root-cause of fresh-content flat-zero; flagged for template/infra fix.** |
-| 2026-06-13 | websearch_proxy only | 13 | n/a | n/a | **1/13 (7.7%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/3 (0%) | 0/0 | 1 | **2nd consecutive day with a compliance citation.** SB 26-189 blog climbed ~pos 9 → ~pos 4 for colorado-sb-26-189-admt. Patched that same page to also win generic "ai compliance checklist 2026": added checklist-phrased FAQ (FAQPage 8→9) + freshness bump (dateModified 5/22→6/13). Assessment + Partner still 0% (pillar-gated). No new competitors ≥3. |
+| 2026-06-13 | websearch_proxy only | 13 | n/a | n/a | **1/13 (7.7%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/3 (0%) | 0/0 | 1 | **2nd consecutive day with a compliance citation.** SB 26-189 blog climbed ~pos 9 -> ~pos 4 for colorado-sb-26-189-admt. Patched that same page to also win generic "ai compliance checklist 2026": added checklist-phrased FAQ (FAQPage 8->9) + freshness bump (dateModified 5/22->6/13). Assessment + Partner still 0% (pillar-gated). No new competitors >=3. |
+| 2026-06-14 | websearch_proxy only | 12 | n/a | n/a | **1/12 (8.3%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/1 (0%) | 0/1 (0%) | **0 (disciplined hold)** | **3rd consecutive compliance-citation day.** SB 26-189 blog HELD ~pos 4 (did not climb; lawfuel/glacis.io/buchalter ahead). **NO PATCH — rule-4 hold:** industry sweep complete (15/16), winning page held steady (4th rapid dateModified bump = churn, not value), all other losses pillar-gated or already-optimal (healthcare current; vs-plus/pricing mirrored in llms.txt). Flagged **P0 accuracy conflict** (SB 26-189 40-employee exemption: proxy sources vs our 'no carve-out' claim) for human verification, NOT auto-rewritten. Flagged rising competitor **glacis.io** (1x, sub-threshold) on our one winning query. |
 
-## Pillar handoffs to Claude Code (open queue as of 2026-06-13)
+## Pillar handoffs to Claude Code (open queue as of 2026-06-14)
 
-These queries have no target page yet — they need a pillar built by Claude Code. **Re-confirmed losing this run, except the Colorado SB 26-189 *blog* (not pillar) now surfaces (~pos 4).** Transition window: elevaiq.com legacy counting ends 2026-06-18 (5 days remaining).
+These queries have no target page yet — they need a pillar built by Claude Code. **Re-confirmed losing this run.** The Colorado SB 26-189 *blog* (not pillar) still surfaces (~pos 4, held). Transition window: elevaiq.com legacy counting ends 2026-06-18 (4 days remaining).
 
 | Query ID | Target page needed | Citation demand | Priority | Notes |
 |----------|--------------------|----------------:|----------|-------|
-| ai-compliance-assessment | /compliance-assessment | very high | **P0** | Prompts.ai + ai-180.solutions + growthcapitalcorp + fitgap rank on free/<5-min. ~11 site-wide CTAs still 404. Build it. |
-| ai-risk-assessment-tool | /compliance-assessment | high | P0 | RiskHelper.ai + TrustLayer + MyMap own '5-minute / no-signup'. |
-| colorado-ai-act-small-business | /compliance/colorado-ai-act | high | P0 | Blog surfaces for SB 26-189 (~pos 4), but dedicated pillar still 404s; generic query lost to lawfuel/iapp/jbakerlaw. SB 26-189 / ADMT framing (signed 5/14, effective 1/1/2027). |
-| eu-ai-act-small-business | /compliance/eu-ai-act | high | P0 | Article 50 transparency live Aug 2 2026; hklaw/bakermckenzie/ec.europa.eu/digitalapplied rank. |
+| ai-compliance-assessment | /compliance-assessment | very high | **P0** | ai-180.solutions + prompts.ai + fitgap + growthcapitalcorp rank on free/no-consultant. ~11 site-wide CTAs still 404. THE Engine-1 conversion mechanism. Build it. |
+| ai-risk-assessment-tool | /compliance-assessment | high | P0 | riskhelper.ai owns "simple 5-minute triage, free, no account"; TrustLayer + MyMap also. Exact positioning the MVP must claim. |
+| colorado-ai-act-small-business | /compliance/colorado-ai-act | high | **P0** | Blog wins SB 26-189 phrasing (~pos 4) but dedicated pillar 404s; generic query lost to lawfuel/iapp/jbakerlaw. SB 26-189 / ADMT framing (signed 5/14, effective 1/1/2027). **NOTE accuracy flag below on the 40-employee exemption.** |
+| eu-ai-act-small-business | /compliance/eu-ai-act | high | P0 | Article 50 transparency live Aug 2 2026; high-risk possibly delayed to Dec 2 2027 (Digital Omnibus / Council pending). hklaw/bakermckenzie/iapp/digitalapplied rank. |
 | ai-policy-template-smb | /compliance/ai-policy-template | high | P1 | Winners rank with one-click PDF+DOCX; email-gate = Engine 1 conversion. |
 | msp-ai-compliance-resell | /partners/msp | medium-high | P2 | Engine 2. lumenova/channelpro/connectwise/integris rank. Zero MSP content on-site. |
 | chatgpt-business-cle-webinar | /resources/cle-ai-legal-practice | medium | P3 | Engine 2 (legal). CLE-eligible asset. clio/knowlearninghub/mylawcle rank. |
 
+## Competitor & accuracy watch (opened 2026-06-14)
+
+- **glacis.io (NEW watch):** "Colorado ADMT Law (SB 26-189): Complete Compliance Guide 2026" ranks ~pos 2 for `colorado-sb-26-189-admt` — the single biggest threat to our ONLY winning citation. Appeared 1x this run (below the 3+ auto-add threshold). If it recurs 3+ next run, auto-add as `target_competitor` for that query and diagnose.
+- **P0 ACCURACY CONFLICT — Colorado SB 26-189 small-business exemption:** proxy sources (lawfuel.com, glacis.io) assert SB 26-189 keeps an **employer-specific exemption at 40-or-fewer employees** (down from 50). Our llms.txt + Colorado/EU blog state firmly there is **no** small-business carve-out. These appear to conflict; sources hedge ("verify against the enrolled bill text"). **Not auto-rewritten** (would risk introducing inaccuracy onto our one winning page). Verify against the enrolled SB 26-189 text, then reconcile llms.txt, llms-full.txt, and /blog/ai-compliance-colorado-eu-small-business-2026.
+
 ## Deferred / queued patches — STATUS
 
-| File | Patch type | Status as of 2026-06-13 |
+| File | Patch type | Status as of 2026-06-14 |
 |------|-----------|-------------------------|
-| public/blog/ai-compliance-colorado-eu-small-business-2026.html | Checklist-phrased FAQ (FAQPage 8->9) + freshness bump (dateModified 5/22->6/13) to win generic 'ai compliance checklist 2026' | **SHIPPED 2026-06-13** (2 commits: patch, then a fidelity-fix restoring 1 JSON-LD FAQ entry briefly dropped in the first push). Validation: live file byte-identical to validated source; html.parser OK; Article + FAQPage==9 parse; elevaiq/sayfeai.chat/Vandelay==0; canonical==sayfeai.com; ends </html>. |
-| public/blog/chatgpt-superapp-aria-redesign-business-2026.html | Canonical-domain correction (sayfeai.chat -> sayfeai.com) + dateModified bump | **SHIPPED 2026-06-12.** No touch this run. |
+| public/blog/ai-compliance-colorado-eu-small-business-2026.html | Checklist-phrased FAQ + freshness | **SHIPPED 2026-06-13.** No touch this run (held ~pos 4; no churn justified). **Pending P0 accuracy reconciliation** on 40-employee exemption. |
 | public/industries/*.html (x16) | JSON-LD canonical + visible FAQ + cited-mechanism FAQs | **FUNCTIONALLY COMPLETE — 15/16.** Only `energy` remains (no seed query; cannot tie to a measured diagnosis under rule 4). |
+| public/industries/healthcare.html | ChatGPT-for-Healthcare currency | **VERIFIED CURRENT this run** — already covers Jan 2026 product, BAA, comparison table. No patch needed. |
 | public/openai-smb-partner.html | Visible FAQ accordion + MSP/consultant channel FAQ | **SHIPPED 2026-06-11.** |
+| public/llms.txt / llms-full.txt | SB 26-189 + ADMT + EU Digital Omnibus enrichment | **VERIFIED CURRENT this run** (SB 26-189, EU Dec-2027 high-risk delay, ChatGPT for Healthcare, Heppner all present and accurate). No patch needed. **Pending P0 accuracy reconciliation** on 40-employee exemption. |
 | public/sitemap.xml | industry locs canonical + lastmod | **SHIPPED 2026-05-21.** No touch this run. |
-| public/llms.txt / llms-full.txt | SB 26-189 + ADMT aliases; enrichment | **SHIPPED 2026-05-21/22.** No touch this run. |
-| ALL public/blog/*.html (~55 files) | **SYSTEMIC: canonical domain audit (sayfeai.chat -> sayfeai.com)** | **FLAGGED — NOT swept.** Site-wide sweep beyond a single measured diagnosis (rule 4); fix at content-engine template/infra level. |
+| ALL public/blog/*.html (~55 files) | **SYSTEMIC: canonical domain audit (sayfeai.chat -> sayfeai.com)** | **FLAGGED — NOT swept.** Content-engine template/infra fix. |
 
 ## Open recommendations (queued for next run)
 
-- **ROOT-CAUSE CANDIDATE (2026-06-12, still open):** Fresh blog content self-canonicalizing to **sayfeai.chat** instead of canonical **sayfeai.com**. Correct the blog publishing template (canonical/og/JSON-LD url -> sayfeai.com), then one-time sweep existing blog files. Human/infra action.
-- **BUCKET-FAILURE ALERT — partial relief holds:** Compliance posted a citation 2 consecutive days (1/9 then 1/13). **Assessment (0/2) and Partner (0/3) remain at 0%** — alert continues for those pending the P0 assessment pillar and P2 MSP asset.
-- **PRICING DISCREPANCY (from content engine 6/11):** proxy answers state ChatGPT Business $25 monthly / $20 annual, matching a competitor's claimed April-2 cut; site canon $25 annual / $30 monthly. Verify against OpenAI partner portal before any batch update (out of optimizer scope under rule 4).
-- **Patchable queue after this run:** effectively EMPTY again. Remaining measured losses are pillar-gated (4 P0 pillars + 2 Engine-2 assets).
-- **API-key operational lever (UNCHANGED):** OPENAI / ANTHROPIC / SERPAPI / PERPLEXITY keys remain the #1 lever for real (non-proxy) measurement.
-- **Watch competitors:** digitalapplied.com (eu + checklist) and pathopt.com (checklist + assessment) recurred but already tracked. None NEW at the 3+ in-run threshold (single-engine proxy).
+- **#1 LEVER — BUILD /compliance-assessment (P0):** Re-confirmed losing today; ai-180.solutions and riskhelper.ai own the exact "free 5-minute, no-signup" positioning. ~11 CTAs still 404. Single highest-ROI build on the board and the Engine-1 conversion mechanism. Claude Code.
+- **#2 LEVER — ADD API KEYS:** OPENAI / ANTHROPIC / SERPAPI / PERPLEXITY. Every number in this ledger is a directional proxy until then. Cheapest unlock for real per-engine measurement.
+- **PILLAR QUEUE:** 4 P0 compliance pillars + 2 Engine-2 assets (see handoff table). Surgical HTML patching has hit its ceiling — the remaining gains are pillars, not patches.
+- **P0 ACCURACY:** reconcile SB 26-189 40-employee exemption against enrolled bill text (see watch section).
+- **PRICING DISCREPANCY (still open):** proxy says Business $20 annual / $25-30 monthly post-April-2; site canon $25 monthly / $20 annual. Verify vs OpenAI partner portal (out of optimizer scope, rule 4).
+- **ROOT CAUSE (still open):** fresh blogs historically self-canonicalize to sayfeai.chat. Fix blog publishing template, then one-time sweep. Human/infra.
+- **Patchable queue after this run:** EMPTY. All remaining measured losses are pillar-gated or already-optimal.
 
 ## Trend notes
-- **2026-05-17 -> 2026-06-09:** Flat-zero baseline held; industry canonical sweep advanced 1/16 -> 15/16 (functionally complete); bucket-failure alert fired 2026-05-30 and remained active.
-- **2026-06-11 (day 26; 25th measured flat-zero):** 0/12. 6/10 gap day. Shipped last queued patchable item. Patch supply exhausted; remaining losses traced to non-existent pillars.
-- **2026-06-12 (Friday):** **Proxy flat-zero streak BROKEN.** 1/9 canonical — sayfeai.com Colorado SB 26-189 blog surfaced (~pos 9). Compliance 1/3; Assessment 0/2 + Partner 0/1 still zero. **Friday Pillar Audit:** public/compliance/ still absent — 0 pillars. Fresh Aria blog self-canonicalized to sayfeai.chat; corrected. Regression rule NOT triggered. Transition window: 6 days remaining.
-- **2026-06-13 (Saturday):** 1/13 (7.7%) proxy — positive blip holds for a 2nd day. colorado-sb-26-189-admt climbed ~pos 9 -> ~pos 4 (same page: /blog/ai-compliance-colorado-eu-small-business-2026). Compliance 1/5 (rate down only because the sample widened to 5 compliance queries; absolute citation held). Assessment 0/2 + Partner 0/3 remain pillar-gated (bucket-failure alert continues for those two). Patched the winning page to also target the generic 'ai compliance checklist 2026' query (checklist FAQ + freshness). No Friday audit (Saturday). Transition window: 5 days remaining (elevaiq.com legacy counting ends 2026-06-18). Regression rule NOT triggered.
-- **Regression rule (v1):** down 5 consecutive days -> pause Phase 4 + alert. (Not triggered.)
-- **Stretch rule (v2):** compliance up 7 consecutive days -> emit 2 pillar proposals. (Compliance posted a citation 2 consecutive days — 2 of 7 — watch.)
-- **Bucket-failure rule (v2):** fired 2026-05-30 for Compliance + Assessment + Partner. **Compliance has now posted a citation 2 days running; Assessment + Partner remain in alert.**
-- **Single-push rule (v2.1):** single push per run, partitioned by concern if needed. This run: 2 commits (HTML patch + 1 fidelity-fix; then measurements + ledger + report).
-- **Measurement caveat:** Until API keys are added, engine columns can't be filled; WebSearch is directional only. Highest-leverage strategic improvement pending remains the `/compliance-assessment` MVP (~11 CTAs still 404).
+- **2026-05-17 -> 2026-06-09:** Flat-zero baseline; industry canonical sweep advanced 1/16 -> 15/16 (functionally complete); bucket-failure alert fired 2026-05-30.
+- **2026-06-12 (Friday):** Proxy flat-zero streak BROKEN. 1/9 canonical — Colorado SB 26-189 blog surfaced (~pos 9). Fresh Aria blog self-canonicalized to sayfeai.chat; corrected.
+- **2026-06-13 (Saturday):** 1/13 (7.7%). colorado-sb-26-189-admt climbed ~pos 9 -> ~pos 4. Patched winning page for generic 'ai compliance checklist 2026'.
+- **2026-06-14 (Sunday):** 1/12 (8.3%). **Compliance citation holds a 3rd consecutive day**; SB 26-189 blog HELD ~pos 4 (did not climb — lawfuel/glacis.io/buchalter ahead). **NO PATCH (rule-4 disciplined hold):** patch supply genuinely exhausted — industry sweep complete, winning page steady, all else pillar-gated or already-optimal. Flagged P0 accuracy conflict (40-employee exemption) for human verification + rising competitor glacis.io (sub-threshold). No Friday audit (Sunday). Transition window: 4 days remaining. Regression rule NOT triggered.
+- **Regression rule (v1):** down 5 consecutive days -> pause Phase 4 + alert. (Not triggered — citation rate flat-positive.)
+- **Stretch rule (v2):** compliance up 7 consecutive days -> emit 2 pillar proposals. **Compliance posted a citation 3 consecutive days (6/12, 6/13, 6/14) — 3 of 7. Watch; if it reaches 7 (~2026-06-18), emit 2 pillar proposals next.**
+- **Bucket-failure rule (v2):** fired 2026-05-30. **Compliance has now posted a citation 3 days running (relief holds); Assessment (0/2) + Partner (0/1) remain in alert — both pillar-gated.**
+- **Single-push rule (v2.1):** this run = 2 commits (measurements; then ledger + report). No HTML.
+- **Measurement caveat:** Until API keys are added, engine columns can't be filled; WebSearch is directional only. Highest-leverage strategic improvement pending remains the /compliance-assessment MVP (~11 CTAs still 404).
