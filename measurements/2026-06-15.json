@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-15",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "transition_window_closes": "2026-06-18",
+  "engines_used": ["websearch_proxy"],
+  "engine_notes": "OPENAI_API_KEY, ANTHROPIC_API_KEY, SERPAPI_API_KEY, PERPLEXITY_API_KEY all absent in runtime — graceful degrade to WebSearch proxy only, consistent with prior 25 runs. Per-engine columns cannot be filled until keys are added.",
+  "sample_strategy": "weighted priority sample: assessment bucket (now patchable — page shipped), compliance, partner, plus winning query tracking",
+  "results": [
+    {"query_id": "colorado-sb-26-189-admt", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": true, "citation_type": "canonical", "position_approx": 4, "url_cited": "https://www.sayfeai.com/blog/ai-compliance-colorado-eu-small-business-2026", "competitors_cited": ["lawfuel.com", "glacis.io", "buchalter.com", "consumerfinancemonitor.com"], "answer_pattern": "list+paragraph", "notes": "4th consecutive compliance-citation day. Held ~pos 4. glacis.io ~pos 2 (recurring threat, 1x this run, sub-threshold)."},
+    {"query_id": "ai-compliance-checklist", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["ost.agency", "medium.com", "myaifrontdesk.com", "digitalapplied.com", "pathopt.com"], "answer_pattern": "list", "notes": "target = Colorado/EU blog (winning page). Lost generic checklist phrasing."},
+    {"query_id": "eu-ai-act-small-business", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["hklaw.com", "bakermckenzie.com", "iapp.org", "digitalapplied.com", "colombani.ai"], "answer_pattern": "paragraph", "notes": "PILLAR-GATED: /compliance/eu-ai-act does not exist (404)."},
+    {"query_id": "ai-policy-template-smb", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["aihr.com", "thoropass.com", "polygraf.ai", "hdtech.com", "hibob.com"], "answer_pattern": "list", "notes": "PILLAR-GATED: /compliance/ai-policy-template does not exist (404). Winners offer one-click PDF+DOCX download."},
+    {"query_id": "ai-compliance-assessment", "bucket": "assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["prompts.ai", "arogai.net", "growthcapitalcorp.com", "fitgap.com", "ai-180.solutions", "pathopt.com"], "answer_pattern": "list", "notes": "NO LONGER PILLAR-GATED — /compliance-assessment shipped by Claude Code since last run. Page is on-page-optimal; loses on DISCOVERY (absent from sitemap.xml, described as 'shipping' in llms.txt). Patched discovery layer this run."},
+    {"query_id": "ai-risk-assessment-tool", "bucket": "assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["riskhelper.ai", "mymap.ai", "trustlayer.io", "ised-isde.canada.ca", "riskgenerator.com"], "answer_pattern": "list", "notes": "riskhelper.ai owns 'simple 5-minute triage, free, no account' — exact positioning /compliance-assessment already claims on-page. Discovery-layer patch applied."},
+    {"query_id": "msp-ai-compliance-resell", "bucket": "partner_channel", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["lumenova.ai", "customgpt.ai", "tacticsmarketing.com", "connectwise.com", "integrisit.com", "managedservicesjournal.com"], "answer_pattern": "list", "notes": "PILLAR-GATED: no /partners/msp. Zero MSP content on-site."},
+    {"query_id": "openai-partner-for-consultants", "bucket": "partner_channel", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["openai.com", "think-technologies.com", "constellationr.com", "startuphub.ai"], "answer_pattern": "paragraph", "notes": "FRESH NEWS: OpenAI launched formal 'OpenAI Partner Network' + 'Frontier Alliances' ($150M, 3 tiers Select/Advanced/Elite, 300k certified consultants by EOY 2026). Content-engine handoff."}
+  ],
+  "summary": {
+    "total_measured": 8,
+    "cited_us_total": 1,
+    "cited_us_canonical": 1,
+    "cited_us_legacy": 0,
+    "by_bucket": {
+      "compliance": {"tested": 4, "cited": 1, "pct": "25%"},
+      "assessment": {"tested": 2, "cited": 0, "pct": "0%"},
+      "partner_channel": {"tested": 2, "cited": 0, "pct": "0%"}
+    }
+  },
+  "pages_patched": [
+    "public/sitemap.xml — added /compliance-assessment (priority 1.0, weekly) — fixes the Engine-1 conversion-page discovery gap",
+    "public/llms.txt — surfaced /compliance-assessment as a LIVE Core Page (query-targeted) + present-tense framing; reconciled Colorado SB 26-189 40-employee employer exemption accuracy (2 spots); Last Updated 2026-06-15"
+  ],
+  "pillar_handoffs": ["eu-ai-act-small-business -> /compliance/eu-ai-act", "ai-policy-template-smb -> /compliance/ai-policy-template", "colorado-ai-act-small-business -> /compliance/colorado-ai-act", "msp-ai-compliance-resell -> /partners/msp"],
+  "competitors_watch": {"glacis.io": "ranks ~pos 2 for colorado-sb-26-189-admt; 1x this run (sub-threshold); biggest threat to our single winning citation"},
+  "new_seeds_added": [],
+  "ledger_trend": "flat-positive (compliance citation holds 4 consecutive days)"
+}
