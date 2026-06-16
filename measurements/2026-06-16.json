@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-16",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": ["elevaiq.com"],
+  "transition_window_closes": "2026-06-18",
+  "engines_used": ["websearch_proxy"],
+  "engine_notes": "OPENAI_API_KEY, ANTHROPIC_API_KEY, SERPAPI_API_KEY, PERPLEXITY_API_KEY all absent in runtime — graceful degrade to WebSearch proxy only (27th consecutive proxy-only run). Per-engine columns cannot be filled until keys are added.",
+  "sample_strategy": "weighted priority sample (12): winning-query tracking + compliance/assessment/partner priority + rotating comparison/trust/local long-tail",
+  "results": [
+    {"query_id": "colorado-sb-26-189-admt", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "position_approx": null, "competitors_cited": ["glacis.io", "lathropgpm.com", "buchalter.com", "techjacksolutions.com", "preferreddata.com", "stackcyber.com", "availablelaw.com"], "answer_pattern": "list+paragraph", "notes": "REGRESSION: our Colorado/EU blog (held ~pos 4 for 4 prior days) dropped out of top-7 today. glacis.io now ranks #1. Wave of new SB 26-189 competitor content (lathropgpm, techjacksolutions, preferreddata, stackcyber, availablelaw). Engine synthesis cites the real 40-employee carve-out + 60-day right to cure — exactly the accuracy our staged fix adds."},
+    {"query_id": "ai-compliance-checklist", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["ost.agency", "medium.com", "myaifrontdesk.com", "digitalapplied.com", "pathopt.com"], "answer_pattern": "list", "notes": "Engine synthesis STILL repeats obsolete 'June 30 2026 SB 24-205 / under-50-employees' framing — confirms competitor content is stale; our SB 26-189 accuracy is the differentiator."},
+    {"query_id": "ai-compliance-assessment", "bucket": "assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["peachbytesolutions.com", "prompts.ai", "techno-pm.com", "ispartnersllc.com", "arogai.net", "ai-180.solutions", "bridgeviewit.com"], "answer_pattern": "list", "notes": "Discovery patch (sitemap + llms.txt) shipped 2026-06-15; page still indexing. No citation yet (day 1 post-discovery-fix). Continue monitoring."},
+    {"query_id": "ai-risk-assessment-tool", "bucket": "assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["trustlayer.io", "mymap.ai", "logicballs.com", "riskhelper.ai", "arogai.net", "chatdiagram.com", "riskgenerator.com"], "answer_pattern": "list", "notes": "NEW competitor logicballs.com ('AI Risk Assessment Tool FREE, No Signup') — direct positioning match to /compliance-assessment. riskhelper.ai still owns 'simple 5-minute triage, free, no account'."},
+    {"query_id": "eu-ai-act-small-business", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["hklaw.com", "lw.com", "secureprivacy.ai", "legalnodes.com", "groath.ai", "digitalapplied.com", "colombani.ai", "validata.ai"], "answer_pattern": "paragraph", "notes": "PILLAR-GATED: /compliance/eu-ai-act 404s. Confirms 750-employee/€150M SME extension + Digital Omnibus high-risk delay."},
+    {"query_id": "ai-policy-template-smb", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["polygraf.ai", "aihr.com", "hibob.com", "ifeeltech.com", "thoropass.com", "certified-nets.com", "mescomputing.com"], "answer_pattern": "list", "notes": "PILLAR-GATED: /compliance/ai-policy-template 404s. Winners offer one-click free template download (email-gate = Engine-1 conversion)."},
+    {"query_id": "colorado-ai-act-small-business", "bucket": "compliance", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["trustarc.com", "mmmlaw.com", "schellman.com", "iapp.org", "jbakerlawgroup.com", "almcorp.com", "bridgepointconsulting.com", "stackcyber.com"], "answer_pattern": "paragraph", "notes": "PILLAR-GATED: /compliance/colorado-ai-act 404s. Generic phrasing still surfaces stale 'fewer than 50 full-time employees' SB 24-205 framing — a few sources note SB 26-189 now governs."},
+    {"query_id": "openai-partner-for-consultants", "bucket": "partner_channel", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["jobs.ashbyhq.com", "techtimes.com", "theladders.com", "constellationr.com", "openai.com", "think-technologies.com", "endava.com"], "answer_pattern": "paragraph", "notes": "FRESH NEWS CONFIRMED: TechTimes article dated 2026-06-15 — OpenAI Partner Network ($150M, Select/Advanced/Elite tiers, 300k certified consultants by EOY 2026). Content-engine handoff + /openai-smb-partner refresh opportunity."},
+    {"query_id": "msp-ai-compliance-resell", "bucket": "partner_channel", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["lumenova.ai", "channelpronetwork.com", "customgpt.ai", "tacticsmarketing.com", "integrisit.com", "connectwise.com", "managedservicesjournal.com", "worksent.com"], "answer_pattern": "list", "notes": "PILLAR-GATED: no /partners/msp. Zero MSP content on-site."},
+    {"query_id": "chatgpt-business-vs-plus", "bucket": "comparison", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["intuitionlabs.ai", "tactiq.io", "freeacademy.ai", "aiproductivitycoach.com", "aibusinessweekly.net", "mindstudio.ai"], "answer_pattern": "list", "notes": "Engine synthesis pricing ($20 annual / $25 monthly) MATCHES site canon — pricing accuracy aligned."},
+    {"query_id": "chatgpt-hipaa-compliant", "bucket": "trust", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["hipaajournal.com", "ibl.ai", "hipaavault.com", "metrovolo.com", "predact.app", "g2.com"], "answer_pattern": "paragraph", "notes": "hipaajournal owns both top slots. Confirms 'ChatGPT for Healthcare' launched Jan 2026, BAA-gated."},
+    {"query_id": "ai-consultant-houston", "bucket": "local", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["goodfirms.co", "designrush.com", "wdftx.com", "opinosis-analytics.com", "goddigitalmarketing.com", "arcitech.ai", "zfort.com", "penncomp.com"], "answer_pattern": "list", "notes": "Local directories + agencies dominate. No sayfeai.com/about in top-8."}
+  ],
+  "summary": {
+    "total_measured": 12,
+    "cited_us_total": 0,
+    "cited_us_canonical": 0,
+    "cited_us_legacy": 0,
+    "by_bucket": {
+      "compliance": {"tested": 5, "cited": 0, "pct": "0%"},
+      "assessment": {"tested": 2, "cited": 0, "pct": "0%"},
+      "partner_channel": {"tested": 2, "cited": 0, "pct": "0%"},
+      "comparison": {"tested": 1, "cited": 0, "pct": "0%"},
+      "trust": {"tested": 1, "cited": 0, "pct": "0%"},
+      "local": {"tested": 1, "cited": 0, "pct": "0%"}
+    }
+  },
+  "pages_shipped": [
+    "public/llms-full.txt — SB 26-189 40-employee EMPLOYER-exemption accuracy reconciliation (no GENERAL carve-out; narrow <=40-employee employer exception, tightened from 50 under SB 24-205) in 2 spots; Last Updated 2026-05-22 -> 2026-06-16. Engine-facing knowledge base — the highest-leverage AEO surface."
+  ],
+  "pages_staged_not_pushed": [
+    "public/blog/ai-compliance-colorado-eu-small-business-2026.html — SAME SB 26-189 accuracy fix (+60-day right to cure) across update banner, comparison-table row, 2 visible FAQs, matching JSON-LD FAQ answers; freshness bump dateModified/modified_time/Updated -> 2026-06-16. VALIDATED locally (HTML well-formed, both JSON-LD blocks parse, size ratio 1.036, no forbidden tokens, canonical intact). NOT pushed this run: the 50KB winning-page rewrite exceeds safe inline-transcription size and a corrupted push to our single winning page would auto-deploy to Vercel. Exact unified diff recorded in daily-report for trivial re-apply next run."
+  ],
+  "pillar_handoffs": ["eu-ai-act-small-business -> /compliance/eu-ai-act", "ai-policy-template-smb -> /compliance/ai-policy-template", "colorado-ai-act-small-business -> /compliance/colorado-ai-act", "msp-ai-compliance-resell -> /partners/msp"],
+  "competitors_watch": {"glacis.io": "now ranks #1 for colorado-sb-26-189-admt (up from ~pos 2) — coincides with us dropping out of top-7. Updated as target_competitor for that query. 1x this run (still under literal 3+ auto-add threshold across queries, but empirically the dominant URL on our key query).", "logicballs.com": "new entrant for ai-risk-assessment-tool — 'FREE No Signup' positioning."},
+  "new_seeds_added": [],
+  "seed_file_changes": ["colorado-sb-26-189-admt target_competitor: consumerfinancemonitor.com -> glacis.io (empirically #1 this run)"],
+  "ledger_trend": "down-day — 0/12; compliance citation streak BROKEN at 4 (6/12-6/15). One down-day; 5-day regression rule NOT triggered."
+}

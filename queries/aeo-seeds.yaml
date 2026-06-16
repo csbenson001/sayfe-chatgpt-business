@@ -251,7 +251,8 @@ queries:
     query: "colorado SB 26-189 ADMT small business compliance"
     intent: compliance
     target_page: /blog/ai-compliance-colorado-eu-small-business-2026
-    target_competitor: https://www.consumerfinancemonitor.com/2026/05/12/colorado-rewrites-its-landmark-ai-law-unpacking-sb-26-189-and-what-it-means-for-businesses/
+    target_competitor: https://www.glacis.io/guide-colorado-ai-act
+    # 2026-06-16: target_competitor updated consumerfinancemonitor.com -> glacis.io (empirically ranks #1 this run; coincides with our blog dropping out of top-7). glacis.io is the dominant URL to displace on our single winning query.
 
   # --- Added 2026-05-18 — Engine 2 (partner channel) alignment ---
   - id: msp-ai-compliance-resell
