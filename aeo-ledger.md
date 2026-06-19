@@ -1,6 +1,7 @@
 # Sayfeai AEO Ledger
 
-Daily tracking of how often answer engines cite **sayfeai.com** (canonical) and **elevaiq.com** (legacy / transition domain through 2026-06-18) for our seed queries.
+Daily tracking of how often answer engines cite **sayfeai.com** (canonical) for our seed queries.
+**elevaiq.com (legacy / transition domain) was RETIRED 2026-06-19** — the legacy-citation counting window closed 2026-06-18. Legacy citations now count as cited_us:false.
 Each row is one daily AEO optimizer run. Trend interpretation lives at the bottom of the file.
 
 ## Pre-v2 ledger (legacy)
@@ -42,62 +43,64 @@ Each row is one daily AEO optimizer run. Trend interpretation lives at the botto
 | 2026-06-14 | websearch_proxy only | 12 | n/a | n/a | **1/12 (8.3%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/1 (0%) | 0/1 (0%) | **0 (disciplined hold)** | **3rd consecutive compliance-citation day.** SB 26-189 blog HELD ~pos 4. NO PATCH (rule-4 hold). Flagged P0 accuracy conflict (40-employee exemption) + rising competitor glacis.io (sub-threshold). |
 | 2026-06-15 | websearch_proxy only | 8 | n/a | n/a | **1/8 (12.5%) proxy** | **1/4 (25%)** | 0/2 (0%) | 0/2 (0%) | 0/0 | 2 | **4th consecutive compliance-citation day** (SB 26-189 blog HELD ~pos 4). **MAJOR: /compliance-assessment is LIVE** (Claude Code shipped the #1 P0 Engine-1 mechanism). Assessment bucket UNBLOCKED. Root-caused assessment losses to a **discovery gap** — patched sitemap (priority 1.0) + llms.txt LIVE Core Page. **RESOLVED P0 accuracy flag**: SB 26-189 retains a narrow <=40-employee EMPLOYER exemption (no general carve-out) — reconciled in llms.txt. |
 | 2026-06-16 | websearch_proxy only | 12 | n/a | n/a | 0/12 (proxy) | 0/5 (0%) | 0/2 (0%) | 0/2 (0%) | 0/0 | 1 shipped (+1 staged) | **STREAK BROKEN at 4.** Winning Colorado/EU blog dropped OUT of top-7 for colorado-sb-26-189-admt (glacis.io now #1). Shipped 40-employee accuracy fix to **llms-full.txt** (+60-day cure). SAME fix applied+validated on the blog but STAGED (not pushed: 50KB inline-transcription risk). Updated target_competitor -> glacis.io. NOTE: 3-commit file-array violation. |
-| 2026-06-17 | websearch_proxy only | 12 | n/a | n/a | **1/12 (8.3%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/2 (0%) | 0/0 | 1 | **REBOUND — streak resumes at 1.** colorado-sb-26-189-admt RECLAIMED ~pos 3 (glacis.io absent from result set); engine synthesis now states the real 40-employee carve-out + 60-day cure. **CLEARED THE STANDING #0:** shipped the staged SB 26-189 accuracy fix to the winning blog (banner + table cell + 2 visible FAQs + 2 JSON-LD answers): no GENERAL carve-out but a narrow <=40-employee EMPLOYER exemption (down from 50) + 60-day cure; freshness 6/13->6/17. Used safe sandbox-validate + post-push round-trip diff (byte-identical). All 3 surfaces (llms.txt/llms-full.txt/blog) now accuracy-consistent. Patch queue EMPTY. (Run shipped in 2 commits — blog, then companion files; file-array discipline still to fix.) |
+| 2026-06-17 | websearch_proxy only | 12 | n/a | n/a | **1/12 (8.3%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/2 (0%) | 0/0 | 1 | **REBOUND — streak resumes at 1.** colorado-sb-26-189-admt RECLAIMED ~pos 3 (glacis.io absent from result set); engine synthesis now states the real 40-employee carve-out + 60-day cure. **CLEARED THE STANDING #0:** shipped the staged SB 26-189 accuracy fix to the winning blog (banner + table cell + 2 visible FAQs + 2 JSON-LD answers). All 3 surfaces (llms.txt/llms-full.txt/blog) now accuracy-consistent. Patch queue EMPTY. (Run shipped in 2 commits — file-array discipline still to fix.) |
+| 2026-06-19 | websearch_proxy only | 13 | n/a | n/a | **1/13 (7.7%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/3 (0%) | 0/0 | **0 shipped (1 validated patch STAGED)** | **Friday.** colorado-sb-26-189-admt HELD ~pos 3 (glacis.io ~pos 2). **TRANSITION WINDOW CLOSED: dropped elevaiq.com from transition_domains (now []).** Added openai-partner-network-tiers seed; updated 3 target_competitors to #1 domains (ademero.com, riskhelper.ai, intuitionlabs.ai). Built+validated vs-enterprise 40-agent-msg-cap FAQ (sha ce1e00a0) but STAGED (44KB fragile-inline, low-ROI comparison bucket). Friday pillar audit: 0 pillars exist. 2-commit run (single-push violation, logged). |
 
-## Pillar handoffs to Claude Code (open queue as of 2026-06-17)
+## Pillar handoffs to Claude Code (open queue as of 2026-06-19)
 
-**UPDATE 2026-06-17:** The staged blog accuracy patch is now **SHIPPED** — the patch queue is EMPTY. Surgical patching on owned compliance content has hit its ceiling; the remaining gains are net-new pillar pages (Claude Code's domain). `/compliance-assessment` is LIVE (since 6/15); discovery patched. Transition window: elevaiq.com legacy counting ends 2026-06-18 (1 day remaining — drop from transition_domains after tomorrow's run).
+**UPDATE 2026-06-19:** Transition window closed — elevaiq.com retired from transition_domains. `public/compliance/` still 404s (confirmed this run). Surgical patching on owned compliance content remains at its ceiling; the remaining gains are net-new pillar pages (Claude Code's domain) + the 2 Engine-2 assets. `/compliance-assessment` is LIVE (since 6/15) and still indexing (day 4: 0 citations). The vs-enterprise comparison patch is validated + STAGED (see deferred table).
 
 | Query ID | Target page needed | Citation demand | Priority | Notes |
 |----------|--------------------|----------------:|----------|-------|
-| ai-compliance-assessment | /compliance-assessment | — | **DONE 2026-06-15** | Page LIVE; discovery patched. Day 2 post-fix (6/17): still indexing, 0 citations. Monitor. |
-| ai-risk-assessment-tool | /compliance-assessment | — | **DONE 2026-06-15** | Same page; riskhelper.ai / logicballs.com own the framing. Monitor. |
-| colorado-ai-act-small-business | /compliance/colorado-ai-act | high | **P0** | Blog wins SB 26-189 phrasing (~pos 3, 6/17) but dedicated pillar 404s; generic query lost to trustarc/mmmlaw/schellman/iapp/skadden. Carry reconciled <=40-employee + 60-day-cure accuracy into the pillar. |
-| eu-ai-act-small-business | /compliance/eu-ai-act | high | P0 | Article 50 transparency live Aug 2 2026; high-risk possibly delayed to Dec 2 2027 (Digital Omnibus, pending Council). hklaw/lw/legalnodes/secureprivacy/digitalapplied/colombani/ijonis rank. |
-| ai-policy-template-smb | /compliance/ai-policy-template | high | P1 | Winners rank with one-click PDF+DOCX; email-gate = Engine 1 conversion. polygraf/aihr/hibob/legaltemplates/certified-nets rank. |
-| msp-ai-compliance-resell | /partners/msp | medium-high | P2 | Engine 2. lumenova/channelpro/connectwise/integris/customgpt/worksent rank. Zero MSP content on-site. Compliance Scorecard x Pax8 is the integration model. |
-| chatgpt-business-cle-webinar | /resources/cle-ai-legal-practice | medium | P3 | Engine 2 (legal). CLE-eligible asset. clio/knowlearninghub/mylawcle rank. |
+| ai-compliance-assessment | /compliance-assessment | — | **DONE 2026-06-15** | Page LIVE; discovery patched. Still indexing (0 citations 6/19). Monitor. |
+| ai-risk-assessment-tool | /compliance-assessment | — | **DONE 2026-06-15** | Same page; riskhelper.ai owns "5-minute, no-account" framing (now target_competitor). Mirror that copy. Monitor. |
+| colorado-ai-act-small-business | /compliance/colorado-ai-act | high | **P0** | Blog wins SB 26-189 phrasing (~pos 3, 6/19) but dedicated pillar 404s; generic query lost to almcorp/jbakerlawgroup/bridgepoint/iapp/stackcyber/availablelaw. Carry reconciled <=40-employee + 60-day-cure accuracy into the pillar. |
+| eu-ai-act-small-business | /compliance/eu-ai-act | high | P0 | Article 50 transparency live Aug 2 2026; high-risk possibly delayed to Dec 2 2027 (Digital Omnibus). hklaw/legalnodes/bakermckenzie/digitalapplied/colombani/aicomplibot rank. |
+| ai-policy-template-smb | /compliance/ai-policy-template | high | P1 | Winners rank with one-click PDF+DOCX; email-gate = Engine 1 conversion. wordstream/aihr/thoropass/polygraf/hibob/certified-nets rank. **Fastest Engine-1 conversion pillar — recommend building first.** |
+| msp-ai-compliance-resell | /partners/msp | medium-high | P2 | Engine 2. lumenova/channelpro/connectwise/integris/customgpt/worksent rank. Zero MSP content on-site. |
+| chatgpt-business-cle-webinar | /resources/cle-ai-legal-practice | medium | P3 | Engine 2 (legal). CLE-eligible asset. clio/knowlearninghub/mylawcle/smokeball rank. |
 
-## Competitor & accuracy watch (updated 2026-06-17)
+## Competitor & accuracy watch (updated 2026-06-19)
 
-- **glacis.io (de-escalated this run):** did NOT appear in the `colorado-sb-26-189-admt` result set on 6/17 (it took #1 on 6/16 when we fell out of the top-7). We reclaimed ~pos 3 today. Retained as `target_competitor` for that query and monitored; the shipped blog accuracy+freshness patch is the standing counter-move.
-- **aiguyjosh.com (new, watch):** "AI Consultant for Small Businesses in Texas" — direct local-intent match to /about (`ai-consultant-houston`). 1x (sub-threshold).
-- **ademero.com (new, watch):** ranked #1 for `ai-consultant-houston` on 6/17.
-- **legaltemplates.net (new, watch):** "lawyer-reviewed AI policy template, PDF & Word" for `ai-policy-template-smb` — reinforces that the pillar needs a one-click PDF+DOCX download.
-- **logicballs.com / riskhelper.ai (watch):** own "AI Risk Assessment Tool FREE, No Signup / 5-minute triage" — direct positioning match to /compliance-assessment.
-- **P0 ACCURACY — Colorado SB 26-189 small-business exemption: RESOLVED + FULLY SHIPPED 2026-06-17.** Verified (Buchalter, Consumer Finance Monitor, LawFuel; corroborated by today's engine synthesis): SB 26-189 has **no general** small-business carve-out from its core consumer notice-and-transparency duties, **but retains one narrow employer-specific exception** — employers with **40 or fewer employees** are exempt from certain employee-facing ADMT obligations (down from 50 under SB 24-205). The replacement also adds a **60-day right to cure**. **Reconciled across all three surfaces:** llms.txt (6/15), llms-full.txt (6/16), and the blog (6/17). No open accuracy items.
+- **glacis.io (steady):** present ~pos 2 on `colorado-sb-26-189-admt` 6/19; we held ~pos 3. Retained as target_competitor; the shipped blog accuracy+freshness patch (6/17) is the standing counter-move.
+- **ademero.com (escalated to target_competitor):** ranked #1 for `ai-consultant-houston` on both 6/17 and 6/19. Set as target_competitor for that query. /about not ranking for local intent — structural local-page gap (candidate for a Houston/Texas local page or /about LocalBusiness reinforcement).
+- **riskhelper.ai (escalated to target_competitor):** #1 for `ai-risk-assessment-tool`; owns "5-minute triage, no account required" — exact positioning match to /compliance-assessment. Mirror the framing in assessment copy.
+- **intuitionlabs.ai (escalated to target_competitor):** #1 for `chatgpt-business-vs-enterprise`; cites the precise 40 agent-msg/user/month Business cap. Our staged FAQ patch answers this.
+- **availablelaw.com (new, watch):** "Colorado Just Rewrote Its AI Law — What It Means for Your Small Business" — direct SMB-rewrite framing on `colorado-ai-act-small-business`.
+- **digitalapplied.com (persistent, watch):** appeared in 3 queries this run (eu-ai-act, ai-compliance-checklist, openai-partner) but already tracked; no auto-add.
+- **P0 ACCURACY — Colorado SB 26-189 small-business exemption: RESOLVED + FULLY SHIPPED 2026-06-17.** No general small-business carve-out; narrow employer-specific exception for employers with **40 or fewer employees** (down from 50 under SB 24-205); replacement adds a **60-day right to cure**. Reconciled across llms.txt (6/15), llms-full.txt (6/16), and the blog (6/17). No open accuracy items.
 
 ## Deferred / queued patches — STATUS
 
-| File | Patch type | Status as of 2026-06-17 |
+| File | Patch type | Status as of 2026-06-19 |
 |------|-----------|-------------------------|
-| public/blog/ai-compliance-colorado-eu-small-business-2026.html | SB 26-189 40-employee employer-exemption accuracy (visible + JSON-LD) + 60-day cure + freshness | **SHIPPED 2026-06-17.** Applied via sandbox assert-once Python replacements; validated (HTML well-formed, both JSON-LD parse, ratio 1.033, no forbidden tokens, canonical intact, stale phrasing removed, 40-employee + 60-day-cure present); pushed and round-trip diff verified byte-identical. Was STAGED 2026-06-16. |
+| public/blog/chatgpt-business-vs-enterprise-2026.html | Cited-mechanism FAQ: ~40 agent-msg/user/month Business cap as #1 Enterprise-upgrade trigger + Enterprise ~$60/user/150-seat min (FAQPage 7->8, schema+visible) + freshness 5/27->6/19 | **STAGED 2026-06-19.** Built + sandbox-validated (HTML well-formed, both JSON-LD parse, ratio 1.054, no forbidden tokens, canonical intact, agent-cap present x2). **sha256 ce1e00a0d66438b6d6834177764eb760f5b081c68cee70c12323c375fcddc46a.** Not pushed: 44KB fragile-inline + low-ROI comparison bucket (never cited in 29 runs). Ship standalone next run with post-push round-trip diff. |
+| public/blog/ai-compliance-colorado-eu-small-business-2026.html | SB 26-189 40-employee employer-exemption accuracy + 60-day cure + freshness | **SHIPPED 2026-06-17** (round-trip byte-identical). |
 | public/sitemap.xml | Add /compliance-assessment (priority 1.0) | **SHIPPED 2026-06-15.** |
 | public/llms.txt | Surface /compliance-assessment LIVE + SB 26-189 40-employee accuracy | **SHIPPED 2026-06-15.** |
 | public/llms-full.txt | SB 26-189 40-employee employer-exemption accuracy + freshness | **SHIPPED 2026-06-16.** |
 | public/industries/*.html (x16) | JSON-LD canonical + visible FAQ + cited-mechanism FAQs | **FUNCTIONALLY COMPLETE — 15/16.** Only `energy` remains (no seed query). |
-| public/openai-smb-partner.html | OpenAI Partner Network refresh ($150M, Select/Advanced/Elite, 300k by EOY 2026) | **OPEN — content-engine handoff.** Fresh news LIVE (openai.com/index/introducing-openai-partner-network/). |
+| public/openai-smb-partner.html | OpenAI Partner Network refresh ($150M, Select/Advanced/Elite, 300k by EOY 2026, Forward Deployed Experts) | **OPEN — content-engine handoff.** Network fully LIVE & dominant (openai.com/index/introducing-openai-partner-network/). New seed openai-partner-network-tiers tracks it. |
 | ALL public/blog/*.html (~55 files) | **SYSTEMIC: canonical domain audit (sayfeai.chat -> sayfeai.com)** | **FLAGGED — NOT swept.** Content-engine template/infra fix. |
 
 ## Open recommendations (queued for next run)
 
-- **#1 LEVER = PILLARS, NOT PATCHES.** With the staged blog patch shipped, the surgical-patch queue on owned compliance content is EMPTY. The 3 P0/P1 compliance pillars (/compliance/colorado-ai-act, /compliance/eu-ai-act, /compliance/ai-policy-template) + 2 Engine-2 assets (/partners/msp, /resources/cle-ai-legal-practice) are the remaining gains — Claude Code's domain. Carry the reconciled <=40-employee + 60-day-cure accuracy into the Colorado pillar.
-- **CONTENT ENGINE HANDOFF (fresh news, LIVE 6/17):** OpenAI Partner Network page is published (openai.com/index/introducing-openai-partner-network/) — $150M, Select/Advanced/Elite tiers, Codex/cybersecurity/agents specializations, 300k certified consultants by EOY 2026. Competitors (Codestone, First Focus, Think Technologies) publish 'Official OpenAI SMB Channel Partner' announcement pages. First-mover blog + /openai-smb-partner refresh strengthens `openai-partner-for-consultants`.
-- **TRANSITION WINDOW:** drop `elevaiq.com` from `transition_domains` in queries/aeo-seeds.yaml after the 2026-06-18 run (legacy counting ends).
-- **#2 LEVER — ADD API KEYS:** OPENAI / ANTHROPIC / SERPAPI / PERPLEXITY. Every number in this ledger remains a directional WebSearch proxy until then (28 proxy-only runs).
-- **SINGLE-PUSH DISCIPLINE:** this run shipped in 2 commits (blog, then companion files) due to a file-array omission on the first push_files call — same class of error as 6/16. Next run: assemble the FULL file array (all 4-5 files) before the first push_files call.
+- **#1 LEVER = PILLARS, NOT PATCHES.** `public/compliance/` still does not exist. The 3 P0/P1 compliance pillars (/compliance/ai-policy-template [build first — fastest Engine-1 conversion], /compliance/colorado-ai-act, /compliance/eu-ai-act) + 2 Engine-2 assets (/partners/msp, /resources/cle-ai-legal-practice) are the remaining gains — Claude Code's domain. Carry the reconciled <=40-employee + 60-day-cure accuracy into the Colorado pillar.
+- **SHIP THE STAGED vs-enterprise PATCH next run** (sha ce1e00a0) standalone, with post-push round-trip diff — same method that succeeded 6/17.
+- **CONTENT ENGINE HANDOFF (fresh, LIVE):** OpenAI Partner Network ($150M / 300k certified consultants by EOY 2026 / Select-Advanced-Elite tiers / Codex-cybersecurity-agents specializations / Forward Deployed Experts pilot). First-mover blog + /openai-smb-partner refresh positioning Sayfeai *inside* the Partner Network strengthens openai-partner-for-consultants + the new openai-partner-network-tiers seed.
+- **#2 LEVER — ADD API KEYS:** OPENAI / ANTHROPIC / SERPAPI / PERPLEXITY. Every number in this ledger remains a directional WebSearch proxy until then (29 proxy-only runs).
+- **SINGLE-PUSH DISCIPLINE: VIOLATED AGAIN 2026-06-19** — measurements/2026-06-19.json was pushed in commit 1 (file-array omission), then seeds + ledger + daily-report in commit 2. Same class of error as 6/16 + 6/17. **HARD FIX for next run: construct the COMPLETE files[] array (all paths) and pass it on the FIRST push_files call — never call push_files until the full array is assembled.**
 - **ROOT CAUSE (still open):** fresh blogs historically self-canonicalize to sayfeai.chat. Fix blog publishing template, then one-time sweep. Human/infra.
 
 ## Trend notes
 - **2026-05-17 -> 2026-06-09:** Flat-zero baseline; industry canonical sweep advanced 1/16 -> 15/16; bucket-failure alert fired 2026-05-30.
 - **2026-06-12 (Friday):** Proxy flat-zero streak BROKEN. 1/9 canonical — Colorado SB 26-189 blog surfaced (~pos 9).
-- **2026-06-13 (Saturday):** 1/13 (7.7%). colorado-sb-26-189-admt climbed ~pos 9 -> ~pos 4.
-- **2026-06-14 (Sunday):** 1/12 (8.3%). 3rd consecutive compliance-citation day. NO PATCH (rule-4 hold).
-- **2026-06-15 (Monday):** 1/8 (12.5%). 4th consecutive compliance-citation day (~pos 4). /compliance-assessment LIVE; assessment discovery patched; P0 accuracy reconciled in llms.txt.
-- **2026-06-16 (Tuesday):** 0/12 (proxy). Compliance streak BROKEN at 4 — blog fell out of top-7; glacis.io took #1. Shipped 40-employee accuracy to llms-full.txt; blog STAGED.
-- **2026-06-17 (Wednesday):** 1/12 (8.3%). **REBOUND** — colorado-sb-26-189-admt RECLAIMED ~pos 3 (glacis.io absent from set). **Shipped the staged blog accuracy patch** (the standing #0) via safe sandbox-validate + post-push round-trip diff — all three surfaces now accuracy-consistent; patch queue EMPTY. Compliance citation streak resets to 1.
-- **Regression rule (v1):** down 5 consecutive days -> pause Phase 4 + alert. **NOT triggered** (6/16 was a single down-day, broken 6/17).
-- **Stretch rule (v2):** compliance up 7 consecutive days -> emit 2 pillar proposals. **NOT triggered** (streak reset to 1 on 6/17).
-- **Bucket-failure rule (v2):** fired 2026-05-30. Compliance back to 20% (1/5). Assessment (0/2) UNBLOCKED (page live; discovery patched 6/15) — still indexing. Partner (0/2) remains pillar-gated.
-- **Single-push rule (v2.1):** VIOLATED again this run (2 commits) — file-array omission. Fix next run.
+- **2026-06-13 -> 06-15:** 1/13, 1/12, 1/8. SB 26-189 blog climbed to ~pos 4 and held; /compliance-assessment LIVE 6/15.
+- **2026-06-16 (Tuesday):** 0/12. Compliance streak BROKEN at 4 — blog fell out of top-7; glacis.io took #1.
+- **2026-06-17 (Wednesday):** 1/12. REBOUND — reclaimed ~pos 3; shipped staged blog accuracy patch; patch queue EMPTY.
+- **2026-06-19 (Friday):** 1/13 (7.7%). colorado-sb-26-189-admt HELD ~pos 3 (glacis.io ~pos 2). Transition window closed (elevaiq.com retired). 0 pages shipped (vs-enterprise patch validated + STAGED). Friday pillar audit: 0 pillars exist. *(No 2026-06-18 run row — treated as gap day; compliance citation continuity is ≥1, not a clean 7-day streak.)*
+- **Regression rule (v1):** down 5 consecutive days -> pause Phase 4 + alert. **NOT triggered.**
+- **Stretch rule (v2):** compliance up 7 consecutive days -> emit 2 pillar proposals. **NOT triggered** (streak short; 6/18 gap). Pillar proposals above stand on standing demand evidence regardless.
+- **Bucket-failure rule (v2):** fired 2026-05-30; cleared. Compliance 20% (1/5); Assessment unblocked (page live, indexing); Partner pillar/asset-gated.
+- **Single-push rule (v2.1):** VIOLATED this run (2 commits — measurements first, then seeds+ledger+report) due to a file-array omission. Recurring failure; hard fix noted in Open recommendations.
 - **Measurement caveat:** Until API keys are added, engine columns can't be filled; WebSearch is directional only.
