@@ -1,0 +1,134 @@
+{
+  "run_date": "2026-06-22",
+  "schema_version": "v2",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains": [],
+  "measurement_method": "websearch_proxy",
+  "api_keys_present": {
+    "openai": false,
+    "anthropic": false,
+    "perplexity": false,
+    "serpapi": false
+  },
+  "queries_tested": 12,
+  "queries_cited": 1,
+  "citation_rate": 0.083,
+  "buckets_sampled": ["compliance", "comparison", "assessment", "partner_channel"],
+  "results": [
+    {
+      "query": "chatgpt business vs enterprise 2026",
+      "bucket": "comparison",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["intuitionlabs.ai", "techtarget.com"],
+      "notes": "intuitionlabs.ai dominates with agent-message-cap content. Staged patch (sha ce1e00a0) ships this run with ~40 agent-msg/user/month Business cap FAQ + dateModified 2026-06-22.",
+      "patch_applied": "chatgpt-business-vs-enterprise-2026.html — 8th FAQ (agent-msg-cap), Enterprise card update, compliance callout, dateModified 2026-06-22"
+    },
+    {
+      "query": "colorado ai act small business 2026",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited": true,
+      "position": 2,
+      "top_competitors": [],
+      "notes": "Winning position ~2. Generic SMB query, high volume. Do not dilute SMB-accessible content.",
+      "patch_applied": "freshness update dateModified 2026-06-22, new ADMT FAQ #10 targeting admt-definition regression"
+    },
+    {
+      "query": "colorado sb 26-189 admt compliance",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["workforcebulletin.com", "finnegan.com", "crowell.com"],
+      "notes": "Regression vs prior pos ~3. Competition from law firm employer-focused content. New ADMT definition FAQ targets this query directly.",
+      "patch_applied": "new 10th FAQ 'What is ADMT under Colorado SB 26-189?' in visible HTML + FAQPage JSON-LD"
+    },
+    {
+      "query": "chatgpt business compliance 2026",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["techtarget.com", "techrepublic.com"],
+      "notes": "No citation. Assessment callout on vs-enterprise page (Engine 1) ships this run."
+    },
+    {
+      "query": "ai compliance checklist small business",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["techrepublic.com", "shrm.org"],
+      "notes": "Colorado blog already has 7-item checklist FAQ targeting this. No new patch needed."
+    },
+    {
+      "query": "eu ai act small business august 2026",
+      "bucket": "compliance",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["iapp.org", "linklaters.com"],
+      "notes": "Colorado blog covers EU AI Act + Digital Omnibus. Freshness update (2026-06-22) may help."
+    },
+    {
+      "query": "ai compliance assessment free",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["nist.gov", "iso.org"],
+      "notes": "/compliance-assessment live since 6/15, day 7 of indexing. Still 0 citations. Needs more indexing time.",
+      "patch_applied": null
+    },
+    {
+      "query": "chatgpt business for small business compliance",
+      "bucket": "assessment",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["techrepublic.com", "zdnet.com"],
+      "notes": "Assessment indexing gap persists."
+    },
+    {
+      "query": "openai smb partner program",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["openai.com", "techtimes.com", "digitalapplied.com"],
+      "notes": "/openai-smb-partner not surfacing. Content-engine handoff: refresh page with Select/Advanced/Elite tier details, $150M fund, 300k consultants."
+    },
+    {
+      "query": "openai partner network tiers 2026",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["openai.com", "digitalapplied.com"],
+      "notes": "New seed (added 6/19), first measurement. 0%. Content-engine handoff same as above."
+    },
+    {
+      "query": "chatgpt msp reseller program 2026",
+      "bucket": "partner_channel",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["openai.com", "ingram.com"],
+      "notes": "/partners/msp page doesn't exist. Pillar handoff to Claude Code."
+    },
+    {
+      "query": "chatgpt business hipaa compliant 2026",
+      "bucket": "industry",
+      "engine": "websearch_proxy",
+      "cited": false,
+      "position": null,
+      "top_competitors": ["healthcareitnews.com", "hipaajournal.com"],
+      "notes": "Existing /blog/chatgpt-healthcare-hipaa-2026 page. May need freshness update in future run."
+    }
+  ],
+  "pages_shipped": 2,
+  "pages_staged": 0,
+  "deferred_patches": []
+}
