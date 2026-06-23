@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Show It Once, Automate It Forever: OpenAI's Record &amp; Replay Turns Your Daily Tasks Into AI Skills</title>
+  <meta name="description" content="OpenAI's new Record &amp; Replay for Codex lets you demonstrate a task once and turn it into a reusable AI skill — no prompts, no scripts. Available now to ChatGPT Business users on macOS. Here's how small businesses can use it to automate the work that eats their week.">
+  <meta name="keywords" content="ChatGPT Record and Replay, OpenAI Codex Record Replay, ChatGPT business automation, record a workflow ChatGPT, reusable AI skill, no-code automation small business, ChatGPT Computer Use, automate tasks with ChatGPT 2026">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.chat/blog/chatgpt-codex-record-replay-automate-workflows-small-business-2026">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Show It Once, Automate It Forever: OpenAI's Record &amp; Replay Turns Your Daily Tasks Into AI Skills">
+  <meta property="og:description" content="Record &amp; Replay lets you demonstrate a task once and turn it into a reusable AI skill — no prompts, no scripts. Available now for ChatGPT Business users on macOS.">
+  <meta property="og:url" content="https://sayfeai.chat/blog/chatgpt-codex-record-replay-automate-workflows-small-business-2026">
+  <meta property="og:image" content="https://sayfeai.chat/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Show It Once, Automate It Forever: OpenAI's Record &amp; Replay">
+  <meta name="twitter:description" content="Demonstrate a task once, and ChatGPT turns it into a reusable skill. No prompts. No scripts. Here's what it means for small business.">
+  <meta name="twitter:image" content="https://sayfeai.chat/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-06-23T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="News & Trends">
+  <meta property="article:tag" content="ChatGPT">
+  <meta property="article:tag" content="Record and Replay">
+  <meta property="article:tag" content="Automation">
+  <meta property="article:tag" content="Codex">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      background: var(--yale-blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--yale-mid);
+    }
+
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.8rem;
+      color: var(--yale-blue);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.3rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.8;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    .comparison-table-wrapper {
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 1.25rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .comparison-table th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child {
+      border-right: none;
+    }
+
+    .comparison-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-table tbody tr:nth-child(odd) {
+      background-color: var(--yale-light);
+    }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+    }
+
+    .checkmark {
+      color: var(--success);
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    .xmark {
+      color: #ef4444;
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    .highlight-box {
+      background: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box strong {
+      color: var(--yale-blue);
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .deadline-box {
+      background: #fee2e2;
+      border-left: 4px solid #ef4444;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .deadline-box strong {
+      color: #b91c1c;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .cta-section h3 {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: var(--white);
+      color: var(--yale-blue);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .faq-section {
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--yale-light);
+      padding: 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--yale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover {
+      background: #d5dff0;
+    }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 1.25rem;
+      display: none;
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    footer {
+      background: var(--yale-deep);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .reading-time {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .use-case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .use-case-card {
+      background: var(--yale-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      border-top: 4px solid var(--accent);
+    }
+
+    .use-case-card h4 {
+      color: var(--yale-blue);
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .use-case-card p {
+      font-size: 0.95rem;
+      color: var(--text-gray);
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 {
+        font-size: 1.75rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .article-meta {
+        gap: 1rem;
+      }
+
+      .use-case-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <h1>Show It Once, Automate It Forever: OpenAI's New Record &amp; Replay Turns Your Daily Tasks Into AI Skills</h1>
+    <div class="article-meta">
+      <div class="meta-item">
+        <span>June 23, 2026</span>
+      </div>
+      <div class="meta-item">
+        <span>📖 9 min read</span>
+      </div>
+      <div class="meta-item">
+        <span>✍️ Sayfe.ai</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <article class="article-container">
+    <div class="category-badge">News &amp; Trends</div>
+    <div class="reading-time">9 min read</div>
+
+    <div class="article-content">
+
+      <p>For three years, the unspoken catch with AI automation was this: to get a computer to do your job, you first had to learn how to <em>describe</em> your job to a computer. That meant writing detailed prompts, stitching together no-code tools, or paying someone who could. The work of automating the work often cost more time than the work itself.</p>
+
+      <p>On June 18, 2026, OpenAI quietly removed that catch. A new feature called <strong>Record &amp; Replay</strong>, shipped in version 26.616 of the Codex app for macOS, lets you do something deceptively simple: perform a task on your computer once, while ChatGPT watches, and it turns what you did into a reusable AI skill you can run again anytime — with no script, no prompt engineering, and no code.</p>
+
+      <p>The tagline from the launch coverage said it best: <strong>"Show it once, skip the script."</strong> For small businesses drowning in repetitive admin work, this is one of the most quietly important things OpenAI has shipped all year. Here's what it does, what it can't do yet, and how to put it to work.</p>
+
+      <div class="highlight-box">
+        <strong>The one-sentence version:</strong> Record &amp; Replay watches you complete a task — filing an expense, downloading a weekly report, configuring a ticket — and writes the steps into an editable skill file that ChatGPT can re-run later, swapping in new dates, files, or inputs each time.
+      </div>
+
+      <h2>What Record &amp; Replay Actually Does</h2>
+
+      <p>Most automation tools ask you to <em>tell</em> the machine what to do. Record &amp; Replay asks you to <em>show</em> it. The difference is the whole story.</p>
+
+      <p>When you start a recording, Codex observes your screen as you click through a real task: which windows you open, which buttons you press, what you type, and in what order. When you finish, the AI analyzes that sequence and converts it into a reusable, editable skill. Under the hood, those steps are saved as a plain-text <strong>SKILL.md</strong> file — a human-readable recipe of the workflow that you can open, read, and edit like a document.</p>
+
+      <p>The clever part is that the skill is not a brittle, pixel-for-pixel macro. It accepts <strong>variable inputs</strong>. Record yourself downloading "May's sales report" today, and next month you can run the same skill for June — the AI understands that the date is a variable, not a fixed value. The recorded skill can then be executed through Codex, Computer Use, browser actions, plugins, or a combination of all of them.</p>
+
+      <h3>An analogy: a recipe, not a player piano</h3>
+
+      <p>Older screen-recording macros were like a player piano roll — they replayed the exact keystrokes you punched, and the moment anything moved on screen, the whole thing fell apart. Record &amp; Replay is more like writing down a recipe. A recipe says "add two eggs," not "move your hand 14 inches to the left and grasp." Because the skill captures intent and structure — not just coordinates — it can adapt when the layout shifts or the input changes. That adaptability is exactly what made earlier macro tools useless for real business work, and it's why this release matters.</p>
+
+      <h2>Record &amp; Replay vs. the Old Way of Automating</h2>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width:34%;">What it takes</th>
+              <th style="width:33%;">Traditional Automation (Zapier, scripts, macros)</th>
+              <th style="width:33%;">Record &amp; Replay</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">Technical skill required</td>
+              <td>Medium to high</td>
+              <td><span class="checkmark">✓ None — just do the task</span></td>
+            </tr>
+            <tr>
+              <td class="feature-label">Setup time per workflow</td>
+              <td>Hours to days</td>
+              <td><span class="checkmark">✓ Minutes</span></td>
+            </tr>
+            <tr>
+              <td class="feature-label">Works with apps that have no API</td>
+              <td><span class="xmark">✗ Usually not</span></td>
+              <td><span class="checkmark">✓ Yes (it uses the screen)</span></td>
+            </tr>
+            <tr>
+              <td class="feature-label">Adapts to new inputs (dates, files)</td>
+              <td>Only if pre-programmed</td>
+              <td><span class="checkmark">✓ Built in</span></td>
+            </tr>
+            <tr>
+              <td class="feature-label">You can read &amp; edit the logic</td>
+              <td>Sometimes (code)</td>
+              <td><span class="checkmark">✓ Plain-text SKILL.md</span></td>
+            </tr>
+            <tr>
+              <td class="feature-label">Breaks when the UI changes</td>
+              <td>Frequently (macros)</td>
+              <td>Less often (captures intent)</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Cost to experiment</td>
+              <td>Developer time</td>
+              <td>One recording session</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The headline isn't that Record &amp; Replay is more powerful than every automation tool on the market — it isn't, and we'll get to the limits below. The headline is that it collapses the <em>cost of getting started</em> to nearly zero. The biggest reason small businesses never automate isn't that the tools don't exist; it's that nobody on the team has the time or the skill to build the automation. Record &amp; Replay removes that barrier entirely.</p>
+
+      <h2>5 Tasks Small Business Teams Should Record First</h2>
+
+      <p>OpenAI's own launch examples — filing an expense, booking a parking space, creating a correctly configured issue, publishing a video, downloading a recurring report — are a hint at the sweet spot: <strong>repetitive, multi-step, low-judgment tasks that follow the same path every time.</strong> Here are five worth recording in your first week:</p>
+
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <h4>1. The Recurring Report Pull</h4>
+          <p>Every Monday someone logs into your analytics, ad, or POS dashboard, sets the date range, exports a CSV, and drops it in a folder. Record it once. Re-run it weekly with the date as a variable.</p>
+        </div>
+        <div class="use-case-card">
+          <h4>2. Expense &amp; Invoice Filing</h4>
+          <p>Uploading receipts, tagging categories, and submitting in your accounting tool is pure repetition. Record the path once and replay it for each new receipt batch.</p>
+        </div>
+        <div class="use-case-card">
+          <h4>3. New-Client Onboarding Setup</h4>
+          <p>Creating the folder structure, the project board, and the welcome doc for every new client follows the same checklist. Turn that checklist into a skill new hires can run on day one.</p>
+        </div>
+        <div class="use-case-card">
+          <h4>4. Configured Ticket / Issue Creation</h4>
+          <p>Filing a bug or support ticket with the right labels, priority, and assignee — done correctly every time — is exactly the "correctly configured issue" example OpenAI highlighted.</p>
+        </div>
+        <div class="use-case-card">
+          <h4>5. Content Publishing Checklist</h4>
+          <p>Uploading a video, setting the thumbnail, tags, and description across platforms is a fixed sequence. Record once, then replay for every new piece of content.</p>
+        </div>
+      </div>
+
+      <p>Notice the pattern: none of these require <em>judgment</em>. They require <em>consistency</em> — doing the same eight steps the same way, reliably, without forgetting one. That's precisely the kind of work humans are worst at and machines are best at. If you want a structured way to find these tasks across your business, our <a href="/blog/ai-adoption-checklist-small-business">AI adoption checklist for small business</a> walks through how to audit your week for automatable work.</p>
+
+      <h2>How to Record Your First Skill</h2>
+
+      <p>If you're on a supported plan and using a Mac, getting started takes minutes:</p>
+
+      <ol>
+        <li><strong>Update the Codex app.</strong> Record &amp; Replay shipped in Codex app version 26.616 for macOS. Make sure you're on that build or later.</li>
+        <li><strong>Enable Computer Use.</strong> The feature requires Computer Use to be turned on, since the skill needs permission to observe and later act on your screen.</li>
+        <li><strong>Pick a clean, repeatable task.</strong> Start with something low-stakes and consistent — a report download or a folder setup — not a high-risk action like sending money.</li>
+        <li><strong>Record once, deliberately.</strong> Move through the task at a normal pace. Avoid detours and dead-ends; a clean recording produces a cleaner skill.</li>
+        <li><strong>Review the SKILL.md file.</strong> Open the generated skill and read it. Confirm the steps are right and mark which values (dates, filenames, client names) should be variables.</li>
+        <li><strong>Replay with a test input.</strong> Run the skill once with safe test data and watch it execute before you trust it with the real thing.</li>
+        <li><strong>Refine and reuse.</strong> Edit the SKILL.md to fix any rough edges, then run it whenever the task comes up.</li>
+      </ol>
+
+      <div class="warning-box">
+        <strong>⚠️ Start with read-and-retrieve tasks, not money-movement tasks.</strong> Because a recorded skill can take real actions on your screen, the safest first projects are ones that gather or organize information (downloading reports, filing documents) rather than ones that spend money, send external messages, or change production data. Build trust with low-stakes skills first, then expand.
+      </div>
+
+      <h2>The Honest Limitations (Read This Before You Get Excited)</h2>
+
+      <p>We're an OpenAI partner, and we'd rather you go in clear-eyed than disappointed. Record &amp; Replay is genuinely useful, but it's early, and it has real constraints today:</p>
+
+      <ul>
+        <li><strong>macOS only.</strong> At launch, the feature runs only on Mac. Windows and Linux users are out for now, which matters because most small business fleets are Windows-heavy.</li>
+        <li><strong>Geographic limits.</strong> At launch it is unavailable in the European Economic Area, the United Kingdom, and Switzerland — likely tied to regulatory review around Computer Use.</li>
+        <li><strong>Requires Computer Use.</strong> Granting an AI permission to watch and act on your screen is a meaningful trust decision. It belongs only on managed devices with a clear understanding of what the skill can touch.</li>
+        <li><strong>Best for stable, repetitive flows.</strong> OpenAI is explicit that this shines on tasks that are "easier to show than describe" and that stay consistent. Workflows that change constantly or require human judgment at each step are a poor fit.</li>
+        <li><strong>Plan-gated.</strong> It's available to ChatGPT Plus, Pro, Business, Enterprise, and Edu subscribers — not the free tier — and credit-based usage applies under your plan's terms.</li>
+      </ul>
+
+      <p>None of these are dealbreakers; they're the normal shape of a v1 feature. But if your team runs Windows or sits in the EU, this is one to watch rather than adopt today.</p>
+
+      <h2>Where This Fits in OpenAI's Bigger Automation Play</h2>
+
+      <p>Record &amp; Replay doesn't stand alone — it's one piece of a clear strategy OpenAI has been assembling all year. <a href="/blog/chatgpt-workspace-agents-replace-custom-gpts-small-business-2026">Workspace Agents</a> gave businesses always-on automation that connects to Slack, Salesforce, and 60+ apps. <a href="/blog/chatgpt-goal-mode-autonomous-ai-agents-small-business-2026">Goal Mode</a> let ChatGPT pursue multi-step objectives autonomously. <a href="/blog/chatgpt-codex-business-plugins-small-business-2026">Codex and its plugin ecosystem</a> turned ChatGPT into a platform that takes real actions, not just generates text.</p>
+
+      <p>Record &amp; Replay supplies the missing on-ramp. The hard part of all those agentic features was always teaching the AI <em>your specific way</em> of doing things. Now you can teach it by simply doing the task in front of it. It's the difference between writing an instruction manual for a new hire and just letting them shadow you for an afternoon — the second one is faster, and it captures the tacit details you'd forget to write down.</p>
+
+      <p>This is the same pattern we keep telling clients to watch: AI is steadily moving from "a thing you prompt" to "a thing you delegate to." The businesses pulling ahead aren't the ones writing the cleverest prompts — they're the ones building a growing library of reliable, reusable skills that execute work without supervision. Record &amp; Replay makes building that library something anyone on your team can do, not just the technical people.</p>
+
+      <h2>The Sayfe.ai Take: A Quiet Release With Loud Implications</h2>
+
+      <p>It's tempting to dismiss Record &amp; Replay as a niche macOS feature for power users. That would be a mistake. The reason small businesses underuse AI isn't a shortage of capability — it's a shortage of <em>time and expertise to set it up</em>. Every feature that shrinks the setup cost expands who can actually benefit. This one shrinks it dramatically.</p>
+
+      <p>As an authorized OpenAI SMB Channel Partner, Sayfe.ai helps teams find the right first tasks to record, build a governed skill library with sensible permissions, and connect those skills to the broader Workspace Agents and Codex automation layer. The platform is the same price whether you set it up alone or with us — our value is helping you skip the trial-and-error and get to working automations faster, and safely.</p>
+
+      <p>Not yet on a Business plan? Start with our <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business vs. Plus comparison</a> to see whether the upgrade fits your team, and explore how we tailor AI rollouts for <a href="/chatgpt-professional-services">professional services firms</a> and <a href="/chatgpt-marketing-agencies">marketing agencies</a> — two industries where repetitive, recordable workflows are everywhere.</p>
+
+      <!-- FAQ Section -->
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is OpenAI's Record &amp; Replay feature?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Record &amp; Replay is a Codex app feature for macOS, launched June 18, 2026 in version 26.616. It lets you demonstrate a task on your computer once while the AI watches, then turns those steps into a reusable, editable skill (saved as a SKILL.md file) that ChatGPT can run again later. The skill accepts variable inputs like new dates or files, so the same recording works for recurring tasks. It's available to ChatGPT Plus, Pro, Business, Enterprise, and Edu subscribers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to write code or prompts to use Record &amp; Replay?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. That's the entire point of the feature. Instead of writing prompts, scripts, or workflow rules, you simply perform the task once and the AI builds the skill for you. You can optionally open and edit the generated SKILL.md file in plain text to refine the steps or mark which values should be variables, but no programming is required to create or run a skill.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Record &amp; Replay available on Windows?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not at launch. As of June 2026, Record &amp; Replay is available on macOS only, and it requires the Computer Use feature to be enabled. It is also currently unavailable in the European Economic Area, the United Kingdom, and Switzerland. OpenAI frequently expands platform and regional support after an initial release, so Windows availability may follow — but for now, Mac is required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What kinds of tasks work best with Record &amp; Replay?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Repetitive, multi-step tasks that follow the same path every time and require little human judgment. OpenAI's own examples include filing an expense, booking a parking space, creating a correctly configured issue, publishing a video, and downloading a recurring report. For small businesses, strong candidates include weekly report pulls, invoice and receipt filing, new-client onboarding setup, configured ticket creation, and content publishing checklists. Tasks that change constantly or need judgment at each step are a poor fit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is it safe to let ChatGPT watch and act on my screen?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Record &amp; Replay relies on Computer Use, which grants the AI permission to observe and act on your screen — so it's a meaningful trust decision that belongs on managed devices. The safest approach is to start with low-stakes tasks that retrieve or organize information (downloading reports, filing documents) rather than ones that move money, send external messages, or change production data. Review the generated SKILL.md so you understand exactly what each skill does, test with safe data first, and expand to higher-stakes workflows only once you trust the output. ChatGPT Business and Enterprise plans also add admin controls and organizational data privacy on top of this.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-section">
+        <h3>Turn Your Team's Busywork Into Reusable AI Skills</h3>
+        <p>Sayfe.ai helps ChatGPT Business teams find the right tasks to automate, build a governed skill library, and connect it to Workspace Agents and Codex. Authorized OpenAI SMB Channel Partner — same pricing, expert setup.</p>
+        <a href="/get-started" class="cta-button">Get Started Today &rarr;</a>
+      </div>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and medium-sized businesses implement and optimize ChatGPT Business, ChatGPT Enterprise, and the OpenAI API. We're here to make enterprise AI accessible to teams of any size.
+      </p>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Show It Once, Automate It Forever: OpenAI's New Record & Replay Turns Your Daily Tasks Into AI Skills",
+    "description": "OpenAI's new Record & Replay for Codex lets you demonstrate a task once and turn it into a reusable AI skill — no prompts, no scripts. Available now to ChatGPT Business users on macOS.",
+    "image": "https://sayfeai.chat/og-image-blog.png",
+    "datePublished": "2026-06-23T00:00:00Z",
+    "dateModified": "2026-06-23T00:00:00Z",
+    "author": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "url": "https://sayfeai.chat"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sayfe.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sayfeai.chat/logo.png"
+      }
+    },
+    "articleSection": "News & Trends",
+    "keywords": "ChatGPT Record and Replay, OpenAI Codex Record Replay, ChatGPT business automation, reusable AI skill, no-code automation small business, ChatGPT Computer Use",
+    "wordCount": "2050",
+    "timeRequired": "PT9M"
+  }
+  </script>
+
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is OpenAI's Record & Replay feature?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Record & Replay is a Codex app feature for macOS, launched June 18, 2026 in version 26.616. It lets you demonstrate a task on your computer once while the AI watches, then turns those steps into a reusable, editable skill (saved as a SKILL.md file) that ChatGPT can run again later. The skill accepts variable inputs like new dates or files, so the same recording works for recurring tasks. It is available to ChatGPT Plus, Pro, Business, Enterprise, and Edu subscribers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to write code or prompts to use Record & Replay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Instead of writing prompts, scripts, or workflow rules, you simply perform the task once and the AI builds the skill for you. You can optionally open and edit the generated SKILL.md file in plain text to refine steps or mark which values should be variables, but no programming is required to create or run a skill."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Record & Replay available on Windows?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not at launch. As of June 2026, Record & Replay is available on macOS only and requires the Computer Use feature to be enabled. It is also currently unavailable in the European Economic Area, the United Kingdom, and Switzerland. Windows and broader regional support may follow in future updates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kinds of tasks work best with Record & Replay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Repetitive, multi-step tasks that follow the same path every time and require little human judgment. OpenAI's examples include filing an expense, booking a parking space, creating a correctly configured issue, publishing a video, and downloading a recurring report. For small businesses, strong candidates include weekly report pulls, invoice filing, new-client onboarding setup, configured ticket creation, and content publishing checklists."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to let ChatGPT watch and act on my screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Record & Replay relies on Computer Use, which grants the AI permission to observe and act on your screen, so it is a meaningful trust decision best made on managed devices. Start with low-stakes tasks that retrieve or organize information rather than ones that move money or change production data, review the generated SKILL.md to understand what each skill does, and test with safe data first. ChatGPT Business and Enterprise plans add admin controls and organizational data privacy."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Interactive FAQ Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
