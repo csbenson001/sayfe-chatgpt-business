@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-23",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [],
+  "engines_used": ["google_aio_websearch_proxy"],
+  "engines_degraded": ["chatgpt", "claude", "perplexity"],
+  "engines_degraded_reason": "No OPENAI_API_KEY / ANTHROPIC_API_KEY / PERPLEXITY_API_KEY in run environment. WebSearch used as Google AI Overviews proxy only. All numbers directional.",
+  "sample_size": 12,
+  "sample_method": "weighted: yesterday-winner preserve + compliance/assessment/partner priority buckets + regressed ADMT query + just-patched comparison verify",
+  "results": [
+    {"query_id":"colorado-ai-act-small-business","bucket":"compliance","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["availablelaw.com","bridgepointconsulting.com","jbakerlawgroup.com","stackcyber.com","iapp.org","skadden.com","nortonrosefulbright.com"],"answer_pattern":"paragraph","notes":"Out of top-10 today. Reversed from 6/22 (held ~pos 2). availablelaw.com owns SMB-rewrite framing. Proxy volatility — blog unchanged since 6/22 ADMT FAQ ship."},
+    {"query_id":"colorado-sb-26-189-admt","bucket":"compliance","engine":"google_aio_proxy","cited_us":true,"citation_type":"canonical","position":4,"competitors_cited":["workforcebulletin.com","preferreddata.com","techjacksolutions.com","finnegan.com","lathropgpm.com","leg.colorado.gov","consumerfinancemonitor.com","warden-ai.com","glacis.io"],"answer_pattern":"list","notes":"WIN. sayfeai.com blog cited ~pos 4, ahead of finnegan.com and glacis.io (glacis fell to ~pos 10). The ADMT-definition FAQ #10 shipped 6/22 appears to have worked — reclaimed from the 6/22 law-firm regression. Validates yesterday's patch."},
+    {"query_id":"eu-ai-act-small-business","bucket":"compliance","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["hklaw.com","digitalapplied.com","legalnodes.com","aicomplibot.eu","colombani.ai","bakermckenzie.com","stibbe.com"],"answer_pattern":"list","notes":"Target /compliance/eu-ai-act is a 404 — PILLAR HANDOFF. Cannot patch."},
+    {"query_id":"ai-policy-template-smb","bucket":"compliance","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["aihr.com","legaltemplates.net","thoropass.com","polygraf.ai","wordstream.com","certified-nets.com","hibob.com"],"answer_pattern":"list","notes":"Target /compliance/ai-policy-template is a 404 — PILLAR HANDOFF (P1, fastest Engine-1 conversion pillar). Cannot patch."},
+    {"query_id":"ai-compliance-checklist","bucket":"compliance","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["pathopt.com","myaifrontdesk.com","digitalapplied.com","ost.agency","gcstechnologies.com","wipfli.com"],"answer_pattern":"list","notes":"Blog ranks for admt but not the generic checklist query. pathopt.com (target_competitor) holds #1."},
+    {"query_id":"ai-compliance-assessment","bucket":"assessment","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["prompts.ai","arogai.net","gcstechnologies.com","growthcapitalcorp.com","iccwbo.org","pathopt.com"],"answer_pattern":"list","notes":"Day 9 indexing. Page fully optimized (WebApplication+FAQPage+Breadcrumb schema, owns free-5min-no-signup framing). Indexing-latency gap, NOT content gap. No patch warranted."},
+    {"query_id":"ai-risk-assessment-tool","bucket":"assessment","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["trustlayer.io","riskhelper.ai","flowforma.com","riskgenerator.com"],"answer_pattern":"list","notes":"riskhelper.ai (target_competitor) ~pos 2, owns 5-minute triage no account required. Same page as above; indexing-latency."},
+    {"query_id":"msp-ai-compliance-resell","bucket":"partner_channel","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["worksent.com","guardz.com","connectwise.com","integrisit.com","managedservicesjournal.com","lumenova.ai","channelpronetwork.com","customgpt.ai"],"answer_pattern":"list","notes":"Zero MSP-specific content on-site. /partners/msp pillar (P2) does not exist — PILLAR HANDOFF."},
+    {"query_id":"openai-partner-network-tiers","bucket":"partner_channel","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["openai.com","techtimes.com","edtechinnovationhub.com","channellife.com.au","techgenyz.com","startuphub.ai","digitalapplied.com","beri.net"],"answer_pattern":"list","notes":"DIAGNOSED GAP: /openai-smb-partner + llms.txt never name the OpenAI Partner Network or Select/Advanced/Elite tiers, $150M, 300k consultants, Forward Deployed Experts. Winners cite exactly those facts. PATCH STAGED (see daily report)."},
+    {"query_id":"openai-partner-for-consultants","bucket":"partner_channel","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["openai.com","think-technologies.com","saasrise.com","digitalapplied.com","explainx.ai","startuphub.ai"],"answer_pattern":"list","notes":"think-technologies.com runs an Official OpenAI Partner for SMB page (direct competitor, our positioning). Same Partner-Network terminology gap. PATCH STAGED."},
+    {"query_id":"ai-consultant-houston","bucket":"local","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["penncomp.com","ademero.com","wdftx.com","opinosis-analytics.com","builtin.com","maventg.com","goodfirms.co","plego.com"],"answer_pattern":"list","notes":"penncomp.com #1, ademero.com (target_competitor) #2. /about lacks local-page structure for local intent. Structural local-page gap stands."},
+    {"query_id":"chatgpt-business-vs-enterprise","bucket":"comparison","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["intuitionlabs.ai","help.openai.com","hungyichen.com","aibusinessweekly.net","chatgpt.com","gosearch.ai"],"answer_pattern":"paragraph","notes":"intuitionlabs.ai (target_competitor) #1; engine synthesis cites the exact 40 message/user/month agent limit = #1 Enterprise-escalation trigger — the mechanism our FAQ #8 (shipped 6/22) now carries. Content correct; indexing-latency. Disciplined hold."}
+  ],
+  "summary": {
+    "total": 12,
+    "cited_us_canonical": 1,
+    "cited_us_legacy": 0,
+    "citation_rate_proxy": "1/12 (8.3%)",
+    "by_bucket": {
+      "compliance": "1/5 (20%)",
+      "assessment": "0/2 (0%)",
+      "partner_channel": "0/3 (0%)",
+      "comparison": "0/1 (0%)",
+      "local": "0/1 (0%)"
+    }
+  },
+  "pillar_proposals": [
+    {"query_id":"ai-policy-template-smb","target_page":"/compliance/ai-policy-template","priority":"P1","evidence":"Fastest Engine-1 conversion pillar; winners (aihr, legaltemplates, thoropass, polygraf, wordstream) all rank with one-click PDF/DOCX + email gate."},
+    {"query_id":"eu-ai-act-small-business","target_page":"/compliance/eu-ai-act","priority":"P0","evidence":"Article 50 transparency live Aug 2 2026; hklaw, digitalapplied, legalnodes, aicomplibot, colombani all rank; we have no dedicated pillar."},
+    {"query_id":"colorado-ai-act-small-business","target_page":"/compliance/colorado-ai-act","priority":"P0","evidence":"Broad SMB query swings in/out of top-10 on blog alone; dedicated pillar 404s. Carry reconciled <=40-employee employer exemption + 60-day cure accuracy."},
+    {"query_id":"msp-ai-compliance-resell","target_page":"/partners/msp","priority":"P2","evidence":"Engine 2; zero MSP content on-site; worksent/guardz/connectwise/lumenova/integris rank."}
+  ],
+  "new_competitors_detected": [],
+  "staged_patches": [
+    {"file":"public/llms.txt","type":"Partner Network citation Q&A + fact bullet + freshness","reason":"Two measured partner-query losses; clean whitelist-H text patch. Held this run to preserve single-push discipline. Ready-to-apply text in daily report."},
+    {"file":"public/openai-smb-partner.html","type":"Partner Network FAQ (tiers/$150M/300k/Forward Deployed Experts) + Article dateModified bump","reason":"Large HTML w/ embedded JSON-LD; staged to avoid inline-transcription risk. Ready-to-apply spec in daily report."}
+  ]
+}
