@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-25",
+  "weekday": "Thursday",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [],
+  "engines_used": ["google_aio_websearch_proxy"],
+  "engines_degraded": ["chatgpt", "claude", "perplexity"],
+  "degraded_reason": "No OPENAI_API_KEY / ANTHROPIC_API_KEY / PERPLEXITY_API_KEY / SERPAPI_API_KEY in run environment; Claude-in-Chrome not available in unattended 3:30 AM run. WebSearch proxy only. All numbers directional.",
+  "sample_size": 12,
+  "sampling": "weighted toward partner_channel (staged-patch targets), compliance, assessment, plus standing winner",
+  "totals": {
+    "cited_canonical": 1,
+    "cited_rate": "1/12 (8.3%)",
+    "by_bucket": {
+      "compliance": "1/5 (20%)",
+      "assessment": "0/2 (0%)",
+      "partner_channel": "0/3 (0%)",
+      "comparison": "0/1 (0%)",
+      "local": "0/1 (0%)"
+    }
+  },
+  "results": [
+    {"query_id":"openai-partner-network-tiers","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["openai.com","techtimes.com","digitalapplied.com","techgenyz.com","startuphub.ai","edtechinnovationhub.com","beri.net"],"answer_pattern":"list","notes":"Partner Network terminology dominates. Our pages lacked it -> staged patch shipped this run."},
+    {"query_id":"openai-partner-for-consultants","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["openai.com","think-technologies.com","openai.com/form/partnerintake","saasrise.com","digitalapplied.com","explainx.ai","techgenyz.com"],"answer_pattern":"list","notes":"think-technologies runs an Official OpenAI Partner for SMB page. Staged patch shipped."},
+    {"query_id":"colorado-sb-26-189-admt","engine":"google_aio_proxy","cited_us":true,"citation_type":"canonical","competitors_cited":["workforcebulletin.com","preferreddata.com","consumerfinancemonitor.com","techjacksolutions.com","finnegan.com","glacis.io"],"answer_pattern":"list","notes":"sayfeai.com blog cited ~pos 5. Standing single win holds. ADMT FAQ #10 (shipped 6/22) continues to carry."},
+    {"query_id":"colorado-ai-act-small-business","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["iapp.org","almcorp.com","skadden.com","bridgepointconsulting.com","availablelaw.com","nortonrosefulbright.com"],"answer_pattern":"list","notes":"Out of top-10 (proxy volatility; blog unchanged). availablelaw.com owns SMB-rewrite framing."},
+    {"query_id":"ai-compliance-assessment","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["prompts.ai","gcstechnologies.com","arogai.net","pathopt.com","iccwbo.org","centraleyes.com"],"answer_pattern":"list","notes":"Page LIVE since 6/15; still indexing (~day 10). Content-complete; indexing latency."},
+    {"query_id":"ai-policy-template-smb","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["aihr.com","legaltemplates.net","hibob.com","thoropass.com","polygraf.ai","wordstream.com"],"answer_pattern":"list","notes":"No /compliance/ai-policy-template pillar exists. Pillar handoff (P1, fastest Engine-1 conversion)."},
+    {"query_id":"msp-ai-compliance-resell","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["worksent.com","guardz.com","connectwise.com","integrisit.com","managedservicesjournal.com","lumenova.ai","channelpronetwork.com"],"answer_pattern":"list","notes":"Zero MSP content on-site. Pillar/asset handoff (/partners/msp, P2)."},
+    {"query_id":"eu-ai-act-small-business","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["hklaw.com","colombani.ai","artificialintelligenceact.eu","aicomplibot.eu","legalnodes.com","digitalapplied.com","bakermckenzie.com"],"answer_pattern":"list","notes":"No /compliance/eu-ai-act pillar. Aug 2 2026 transparency deadline live."},
+    {"query_id":"ai-risk-assessment-tool","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["trustlayer.io","riskhelper.ai","peoplemanagingpeople.com","flowforma.com","riskgenerator.com"],"answer_pattern":"list","notes":"riskhelper.ai owns 5-minute no-account framing (target_competitor). Our page indexing."},
+    {"query_id":"ai-compliance-checklist","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["pathopt.com","digitalapplied.com","myaifrontdesk.com","gcstechnologies.com","ost.agency","wipfli.com"],"answer_pattern":"list","notes":"Blog not surfacing for generic checklist query."},
+    {"query_id":"chatgpt-business-vs-enterprise","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["intuitionlabs.ai","help.openai.com","hungyichen.com","aibusinessweekly.net","gosearch.ai"],"answer_pattern":"list","notes":"intuitionlabs.ai #1; engine cites the 40 agent-msg/user/month cap our FAQ #8 (shipped 6/22) carries -> content correct, indexing latency."},
+    {"query_id":"ai-consultant-houston","engine":"google_aio_proxy","cited_us":false,"citation_type":null,"competitors_cited":["penncomp.com","ademero.com","wdftx.com","opinosis-analytics.com","designrush.com","goodfirms.co"],"answer_pattern":"list","notes":"penncomp.com #1, ademero.com #2 (target_competitor). /about lacks local-page structure -> structural handoff."}
+  ],
+  "competitor_autodetect": {
+    "digitalapplied.com": {"appeared_on":["openai-partner-network-tiers","openai-partner-for-consultants","eu-ai-act-small-business","ai-compliance-checklist"],"count":4,"crossed_threshold":true,"seed_write":false,"reason":"Crossed 3+ threshold but every query where it appears already has a target_competitor set (preserve rule). Already captured as eu-ai-act-small-business target_competitor. No seed-file change."}
+  }
+}
