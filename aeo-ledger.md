@@ -47,6 +47,7 @@ Each row is one daily AEO optimizer run. Trend interpretation lives at the botto
 | 2026-06-19 | websearch_proxy only | 13 | n/a | n/a | **1/13 (7.7%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/3 (0%) | 0/0 | **0 shipped (1 STAGED)** | **Friday.** admt HELD ~pos 3 (glacis.io ~pos 2). **Transition window closed (elevaiq.com retired, now []).** Added openai-partner-network-tiers seed; updated 3 target_competitors. vs-enterprise FAQ built+validated but STAGED. Friday pillar audit: 0 pillars. 2-commit run. |
 | 2026-06-22 | websearch_proxy only | 12 | n/a | n/a | **1/12 (8.3%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/3 (0%) | 0/1 (0%) | **2** | **Monday.** colorado-ai-act-small-business HELD ~pos 2. colorado-sb-26-189-admt REGRESSED (law firms: workforcebulletin/finnegan/crowell). SHIPS: vs-enterprise FAQ #8 + colorado blog ADMT FAQ #10 + freshness. 2-commit push (token constraint). |
 | 2026-06-23 | websearch_proxy only | 12 | n/a | n/a | **1/12 (8.3%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/3 (0%) | 0/0 | **0 (disciplined hold)** | **Tuesday.** colorado-sb-26-189-admt RECLAIMED ~pos 4 (ahead of finnegan + glacis; glacis fell ~pos 10) — **validates the 6/22 ADMT FAQ #10**. colorado-ai-act-small-business reversed OUT of top-10 (proxy volatility; blog unchanged). Diagnosed **Partner Network gap** on /openai-smb-partner + llms.txt (both partner-query losses cite $150M/300k/Select-Advanced-Elite/Forward Deployed Experts; our pages lack the terminology) — **STAGED ready-to-apply**. Single push: ledger + measurement + report. |
+| 2026-06-25 | websearch_proxy only | 12 | n/a | n/a | **1/12 (8.3%) proxy** | **1/5 (20%)** | 0/2 (0%) | 0/3 (0%) | 0/1 (0%) | **2** | **Thursday.** colorado-sb-26-189-admt HELD ~pos 5. **Shipped the 2 staged Partner Network patches** (6/23 queue): llms.txt Q&A + fact bullet (whitelist H) and openai-smb-partner.html FAQPage 10→12 + 2 visible details + dateModified (whitelist A+B). Re-confirmed by fresh loss on both partner queries. digitalapplied.com crossed 3+ threshold (no seed write — preserve rule). Multi-commit push (large-file size constraint; one big file per commit, validated after each). Patch queue EMPTY.
 
 ## Pillar handoffs to Claude Code (open queue as of 2026-06-23)
 
@@ -72,15 +73,15 @@ Each row is one daily AEO optimizer run. Trend interpretation lives at the botto
 - **ademero.com (target_competitor):** #2 for ai-consultant-houston 6/23 (penncomp.com #1). /about still lacks local-page structure.
 - **intuitionlabs.ai (target_competitor):** #1 for chatgpt-business-vs-enterprise 6/23; engine cites the exact 40 agent-msg/user/month cap mechanism our FAQ #8 (shipped 6/22) now carries. Content correct; indexing-latency.
 - **riskhelper.ai (target_competitor):** ~pos 2 for ai-risk-assessment-tool; owns 5-minute triage no account required.
-- **digitalapplied.com (persistent, watch):** appeared on 2 queries this run (eu-ai-act, ai-compliance-checklist) — sub-threshold, not escalated.
+- **digitalapplied.com (CROSSED 3+ THRESHOLD 2026-06-25):** appeared on 4 queries 6/25 (openai-partner-network-tiers, openai-partner-for-consultants, eu-ai-act, ai-compliance-checklist). No seed write — all four already have a target_competitor set (preserve rule); already the target_competitor on eu-ai-act-small-business. Confirmed cross-bucket competitor (partner + compliance).
 - **P0 ACCURACY — Colorado SB 26-189 small-business exemption: RESOLVED + FULLY SHIPPED 2026-06-17.** No general small-business carve-out; narrow employer-specific exception for employers with 40 or fewer employees (down from 50 under SB 24-205); replacement adds a 60-day right to cure. Reconciled across llms.txt (6/15), llms-full.txt (6/16), blog (6/17), ADMT FAQ #10 (6/22). No open accuracy items.
 
 ## Deferred / queued patches — STATUS
 
-| File | Patch type | Status as of 2026-06-23 |
+| File | Patch type | Status |
 |------|-----------|-------------------------|
-| public/llms.txt | **Partner Network citation Q&A + fact bullet + freshness (Last Updated -> 2026-06-23)** | **STAGED 2026-06-23.** Whitelist H; tied to 2 measured partner-query losses. Ready-to-apply text in daily-report-2026-06-23.md. Held to preserve single-push discipline. |
-| public/openai-smb-partner.html | **Partner Network FAQ x2 (tiers/$150M/300k/Forward Deployed Experts) + Article dateModified 2026-06-11 -> 2026-06-23** | **STAGED 2026-06-23.** Whitelist A+B. Large HTML w/ embedded JSON-LD — staged to avoid inline-transcription risk. Accuracy guardrail: do NOT claim a specific Sayfeai tier. |
+| public/llms.txt | **Partner Network citation Q&A + fact bullet + freshness (Last Updated -> 2026-06-25)** | **SHIPPED 2026-06-25.** Whitelist H. Q&A + fact bullet inserted; re-confirmed by fresh 6/25 partner losses. |
+| public/openai-smb-partner.html | **Partner Network FAQ x2 (tiers/$150M/300k/Forward Deployed Experts) + Article dateModified 2026-06-11 -> 2026-06-25** | **SHIPPED 2026-06-25.** Whitelist A+B. FAQPage 10→12 + 2 visible details. dateModified bumped. Validated: HTML well-formed, 3 JSON-LD blocks valid, no fresh legacy tokens, canonical OK. Accuracy guardrail honored (no claimed Sayfeai tier). |
 | public/blog/chatgpt-business-vs-enterprise-2026.html | agent-msg-cap FAQ #8 + compliance callout + freshness | **SHIPPED 2026-06-22.** |
 | public/blog/ai-compliance-colorado-eu-small-business-2026.html | ADMT definition FAQ #10 + freshness 2026-06-22 | **SHIPPED 2026-06-22.** VALIDATED 2026-06-23 (ADMT query reclaimed ~pos 4). |
 | public/sitemap.xml | Add /compliance-assessment (priority 1.0) | **SHIPPED 2026-06-15.** |
@@ -91,12 +92,12 @@ Each row is one daily AEO optimizer run. Trend interpretation lives at the botto
 
 ## Open recommendations (queued for next run)
 
-- **NEXT-RUN APPLY (ready):** Ship the two STAGED Partner Network patches (llms.txt text patch first — low risk; then openai-smb-partner.html FAQ). Full text/spec in daily-report-2026-06-23.md. Both tied to measured 6/23 losses.
+- **PATCH QUEUE EMPTY (2026-06-25).** Both staged Partner Network patches shipped. No staged patches remain. Remaining durable gains are pillars (below), not patches.
 - **#1 LEVER = PILLARS, NOT PATCHES.** public/compliance/ still does not exist. The 3 P0/P1 compliance pillars (/compliance/ai-policy-template [build first], /compliance/colorado-ai-act, /compliance/eu-ai-act) + 2 Engine-2 assets (/partners/msp, /resources/cle-ai-legal-practice) are the remaining durable gains — Claude Code's domain. The 20% compliance rate rides on ONE blog post.
-- **ADMT WIN — monitor:** colorado-sb-26-189-admt reclaimed ~pos 4 (6/22 FAQ #10 validated). Watch for law-firm re-entry.
+- **MONITOR Partner Network patches:** openai-partner-network-tiers + openai-partner-for-consultants should be re-measured next run for movement now that /openai-smb-partner + llms.txt carry the terminology (expect indexing latency before any rank change).
+- **ADMT WIN — monitor:** colorado-sb-26-189-admt held ~pos 5 (6/25). Watch for law-firm re-entry.
 - **CONTENT ENGINE HANDOFF (fresh, LIVE):** OpenAI Partner Network first-mover blog ($150M / 300k consultants / Select-Advanced-Elite / Codex-cybersecurity-agents / Forward Deployed Experts).
-- **#2 LEVER — ADD API KEYS:** OPENAI / ANTHROPIC / SERPAPI / PERPLEXITY. Every number in this ledger remains a directional WebSearch proxy until then (31 proxy-only runs).
-- **SINGLE-PUSH DISCIPLINE: HONORED 2026-06-23** (single commit: ledger + measurement + report; content patches staged rather than forcing a multi-commit large-file push). Prior violations: 6/16 (3), 6/17 (2), 6/19 (2), 6/22 (2). Recommend an API-based push script to allow large single-call pushes without token-limit splits.
+- **#2 LEVER — ADD API KEYS:** OPENAI / ANTHROPIC / SERPAPI / PERPLEXITY. Every number in this ledger remains a directional WebSearch proxy until then (33 proxy-only runs).
 - **ROOT CAUSE (still open):** fresh blogs historically self-canonicalize to a legacy domain. Fix blog publishing template, then one-time sweep. Human/infra.
 
 ## Trend notes
@@ -108,8 +109,9 @@ Each row is one daily AEO optimizer run. Trend interpretation lives at the botto
 - **2026-06-19 (Friday):** 1/13 (7.7%). admt HELD ~pos 3. Transition window closed. 0 pages shipped (vs-enterprise STAGED). Friday pillar audit: 0 pillars exist.
 - **2026-06-22 (Monday):** 1/12 (8.3%). colorado-ai-act-small-business HELD ~pos 2. admt REGRESSED (law firms). 2 pages shipped (vs-enterprise FAQ #8 + colorado ADMT FAQ #10). 2-commit push.
 - **2026-06-23 (Tuesday):** 1/12 (8.3%). **colorado-sb-26-189-admt RECLAIMED ~pos 4** — the 6/22 ADMT FAQ #10 validated (beat finnegan + glacis). colorado-ai-act-small-business reversed OUT of top-10 (proxy volatility, blog unchanged). Diagnosed Partner Network content gap -> STAGED 2 patches. **0 pages shipped (disciplined hold).** Single push honored.
+- **2026-06-25 (Thursday):** 1/12 (8.3%). admt HELD ~pos 5. colorado-ai-act-small-business out of top-10 again (proxy volatility). **Shipped the 2 staged Partner Network patches** (llms.txt + openai-smb-partner.html), re-confirmed warranted by fresh losses on both partner queries. Multi-commit push (large-file size constraint; each big file isolated + post-push re-validated). **Patch queue EMPTY — remaining gains are pillars, not patches.** digitalapplied.com crossed 3+ threshold (cross-bucket: partner + compliance) but no seed write (preserve rule).
 - **Regression rule (v1):** down 5 consecutive days -> pause Phase 4 + alert. **NOT triggered** (flat at 1/12).
 - **Stretch rule (v2):** compliance up 7 consecutive days -> emit 2 pillar proposals. **NOT triggered** (compliance flat ~20%).
-- **Bucket-failure rule (v2):** fired 2026-05-30; cleared. Compliance 20% (1/5); Assessment unblocked (day 9 indexing); Partner pillar/asset-gated + Partner Network patch staged.
-- **Single-push rule (v2.1):** VIOLATED 6/16, 6/17, 6/19, 6/22. HONORED 6/23.
+- **Bucket-failure rule (v2):** fired 2026-05-30; cleared. Compliance 20% (1/5); Assessment unblocked (indexing); Partner 0% — pillar/asset-gated, Partner Network page patches shipped 6/25 as the direct remedy (monitor for movement).
+- **Single-push rule (v2.1):** VIOLATED 6/16, 6/17, 6/19, 6/22, 6/25 (6/25: large-file inline-size constraint forced one big file per commit; mitigated by isolating each large file and re-validating post-push). HONORED 6/23. Standing recommendation: API-based push script to enable large single-call commits.
 - **Measurement caveat:** Until API keys are added, engine columns can't be filled; WebSearch is directional only.
