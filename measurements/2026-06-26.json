@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-26",
+  "weekday": "Friday",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [],
+  "engines_used": ["websearch_proxy"],
+  "engine_note": "API keys (OPENAI/ANTHROPIC/SERPAPI/PERPLEXITY) still absent. WebSearch is a directional Google-AIO proxy only. Run #34 proxy-only.",
+  "sample_size": 11,
+  "sampling": "weighted: compliance + assessment + partner_channel priority, plus monitored winners/losers",
+  "summary": {
+    "cited_us_total": "1/11 (9.1%)",
+    "by_bucket": {
+      "compliance": "1/5 (20%)",
+      "assessment": "0/2 (0%)",
+      "partner_channel": "0/3 (0%)",
+      "local": "0/1 (0%)"
+    }
+  },
+  "results": [
+    {"query_id":"colorado-sb-26-189-admt","engine":"websearch_proxy","cited_us":true,"citation_type":"canonical","position":"~5","competitors_cited":["workforcebulletin.com","preferreddata.com","techjacksolutions.com","consumerfinancemonitor.com","leg.colorado.gov","finnegan.com","glacis.io"],"answer_pattern":"list","notes":"HELD ~pos 5 (was ~pos 5 on 6/25). Epstein Becker Green (workforcebulletin) #1; glacis.io fell to ~pos 10. ADMT FAQ #10 continues to hold."},
+    {"query_id":"colorado-ai-act-small-business","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["iapp.org","almcorp.com","skadden.com","bridgepointconsulting.com","availablelaw.com","consumerfinancemonitor.com"],"answer_pattern":"paragraph","notes":"OUT of top-10 again (was pos 2 on 6/22). availablelaw.com owns the SMB-rewrite framing. Blog verified to already cover no-carve-out mechanism comprehensively — proxy/indexing volatility, NOT a content gap. Durable fix = /compliance/colorado-ai-act pillar."},
+    {"query_id":"eu-ai-act-small-business","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["hklaw.com","artificialintelligenceact.eu","colombani.ai","legalnodes.com","aicomplibot.eu","digitalapplied.com","bakermckenzie.com","delbion.com"],"answer_pattern":"list","notes":"Pillar-gated. /compliance/eu-ai-act 404s. digitalapplied.com (target_competitor) present."},
+    {"query_id":"ai-policy-template-smb","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["aihr.com","mescomputing.com","legaltemplates.net","hibob.com","lattice.com","thoropass.com","polygraf.ai","wordstream.com"],"answer_pattern":"list","notes":"Pillar-gated. Winners offer one-click PDF/DOCX downloads. /compliance/ai-policy-template = fastest Engine-1 conversion pillar (P1 handoff)."},
+    {"query_id":"ai-compliance-checklist","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["pathopt.com","myaifrontdesk.com","gcstechnologies.com","digitalapplied.com","ost.agency","wipfli.com"],"answer_pattern":"list","notes":"Blog /blog/ai-compliance-colorado-eu-small-business-2026 not ranking for the generic checklist query. pathopt #1; digitalapplied appears 2x."},
+    {"query_id":"ai-compliance-assessment","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["prompts.ai","gcstechnologies.com","arogai.net","growthcapitalcorp.com","iccwbo.org","centraleyes.com","proton.me"],"answer_pattern":"list","notes":"/compliance-assessment not surfacing. Day 11 since live (6/15). Page fully optimized — indexing latency, not content. Approaching 14-day bucket-failure threshold."},
+    {"query_id":"ai-risk-assessment-tool","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["trustlayer.io","riskhelper.ai","flowforma.com","riskgenerator.com","ised-isde.canada.ca","mymap.ai"],"answer_pattern":"list","notes":"riskhelper.ai (target_competitor) ~pos 2, owns 5-minute no-account framing. Same page as assessment; indexing latency."},
+    {"query_id":"msp-ai-compliance-resell","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["guardz.com","worksent.com","connectwise.com","integrisit.com","managedservicesjournal.com","lumenova.ai","channelpronetwork.com","customgpt.ai"],"answer_pattern":"list","notes":"Asset-gated. Zero MSP content on-site. /partners/msp (P2 handoff)."},
+    {"query_id":"openai-partner-for-consultants","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["openai.com","think-technologies.com","saasrise.com","techpartner.news","digitalapplied.com","techtimes.com","explainx.ai"],"answer_pattern":"list","notes":"openai.com #1, think-technologies.com #2 (direct positioning competitor — Official OpenAI Partner for SMB). Partner Network page patch shipped 6/25; monitoring for indexing movement. digitalapplied present."},
+    {"query_id":"openai-partner-network-tiers","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["openai.com","sentisight.ai","newsroom.ibm.com","techtimes.com","startuphub.ai","techgenyz.com","edtechinnovationhub.com","digitalapplied.com","channellife.com.au"],"answer_pattern":"list","notes":"openai.com #1. Select/Advanced/Elite + $150M/300k terminology now on /openai-smb-partner (shipped 6/25); indexing latency expected before rank change."},
+    {"query_id":"ai-consultant-houston","engine":"websearch_proxy","cited_us":false,"citation_type":null,"competitors_cited":["penncomp.com","ademero.com","wdftx.com","opinosis-analytics.com","designrush.com","maventg.com","goodfirms.co","builtin.com"],"answer_pattern":"list","notes":"penncomp.com #1, ademero.com (target_competitor) #2. /about has LocalBusiness JSON-LD (5/19) but lacks dedicated local-page structure. Durable fix = local landing page (handoff)."}
+  ],
+  "pages_patched": [],
+  "patch_decision": "Disciplined hold (0 pages). No diagnosable content gap this run. The one losing query with an existing target page (colorado-ai-act-small-business) was verified to already cover the winning mechanism comprehensively — patching would be speculative (rule 4) and over-optimization churn. All other losses are pillar/asset-gated, just-shipped (partner 6/25), or indexing-latency (assessment). Remaining durable gains = pillars, not patches.",
+  "friday_pillar_audit": {
+    "public_compliance_dir_exists": false,
+    "pillars_found": 0,
+    "note": "public/compliance/ still 404s. No pillars to audit. 0 pillars exist."
+  },
+  "pillar_handoffs": [
+    {"query_id":"colorado-ai-act-small-business","target_page":"/compliance/colorado-ai-act","priority":"P0","evidence":"Blog swings in/out of top-10 (pos 2 on 6/22, out 6/23 & 6/26). Single-page volatility; dedicated pillar 404s. 20% compliance rate rides on one blog post."},
+    {"query_id":"eu-ai-act-small-business","target_page":"/compliance/eu-ai-act","priority":"P0","evidence":"Never cited. hklaw/colombani/legalnodes/digitalapplied/bakermckenzie rank. Article 50 transparency live Aug 2, 2026."},
+    {"query_id":"ai-policy-template-smb","target_page":"/compliance/ai-policy-template","priority":"P1","evidence":"Winners rank with one-click PDF+DOCX. Email-gate = Engine-1 conversion. RECOMMEND BUILD FIRST (fastest Engine-1 conversion pillar)."},
+    {"query_id":"msp-ai-compliance-resell","target_page":"/partners/msp","priority":"P2","evidence":"Engine 2. Zero MSP content on-site. lumenova/channelpro/connectwise/integris rank."},
+    {"query_id":"ai-consultant-houston","target_page":"/houston local page","priority":"P3","evidence":"penncomp #1, ademero #2. /about lacks local-page structure for local intent."}
+  ],
+  "competitors_watch": {
+    "digitalapplied.com":"Crossed 3+ threshold again this run (eu-ai-act, ai-compliance-checklist x2, openai-partner-for-consultants). Already target_competitor on eu-ai-act; all queries it appeared on have a target_competitor set -> preserve rule, no seed write. Confirmed cross-bucket (compliance + partner).",
+    "availablelaw.com":"Owns colorado-ai-act-small-business SMB-rewrite framing (escalated watch since 6/23). Appeared on 1 query this run (<3) -> no auto-add. Candidate target_competitor if it persists.",
+    "think-technologies.com":"#2 on openai-partner-for-consultants (Official OpenAI Partner for SMB page) — direct positioning competitor."
+  },
+  "seed_file_changed": false,
+  "seed_file_note": "No new queries added (no content-engine daily-report available this run to source from). No competitor auto-writes (all 3+ domains already have target_competitor set; preserve rule)."
+}
