@@ -1,0 +1,25 @@
+{
+  "date": "2026-06-30",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [],
+  "engines_used": ["websearch_proxy"],
+  "note": "WebSearch proxy only — no OPENAI/ANTHROPIC/SERPAPI/PERPLEXITY API keys present. Citations are directional SERP-position proxies, not true answer-engine citations. cited_us=true means sayfeai.com appeared in the proxy result set for the query.",
+  "sample": {"size": 12, "weighting": "priority: compliance + assessment + partner buckets + winning query (admt) + monitored shipped (vs-enterprise)"},
+  "totals": {"cited_us": 2, "tested": 12, "rate_pct": 16.7},
+  "bucket_breakdown": {"compliance": {"cited": 2, "tested": 6, "rate_pct": 33.3}, "assessment": {"cited": 0, "tested": 2, "rate_pct": 0.0}, "partner_channel": {"cited": 0, "tested": 3, "rate_pct": 0.0}, "comparison": {"cited": 0, "tested": 1, "rate_pct": 0.0}},
+  "results": [
+    {"query_id": "colorado-sb-26-189-admt", "cited_us": true, "citation_type": "canonical", "approx_position": 5, "competitors_cited": ["workforcebulletin.com", "consumerfinancemonitor.com", "preferreddata.com", "techjacksolutions.com", "glacis.io"], "notes": "HELD ~pos 5, 5th straight. workforcebulletin/EBG #1; glacis.io ~pos 10 below us. Validates 6/22 ADMT FAQ #10."},
+    {"query_id": "colorado-ai-act-small-business", "cited_us": true, "citation_type": "canonical", "approx_position": 2, "competitors_cited": ["iapp.org", "almcorp.com", "bridgepointconsulting.com", "leg.colorado.gov"], "notes": "SWUNG BACK IN ~pos 2 (out 6/23,6/26,6/27,6/28). availablelaw.com absent today = proxy volatility. Blog unchanged; durable fix is the pillar."},
+    {"query_id": "ai-compliance-assessment", "cited_us": false, "competitors_cited": ["prompts.ai", "arogai.net", "pathopt.com", "centraleyes.com"], "notes": "Page DONE (live 6/15), comprehensive (re-verified 6/27). Indexing latency. ASSESSMENT BUCKET DAY 14 — threshold reached."},
+    {"query_id": "ai-policy-template-smb", "cited_us": false, "competitors_cited": ["aihr.com", "legaltemplates.net", "lattice.com", "thoropass.com"], "notes": "PILLAR HANDOFF — /compliance/ai-policy-template 404s. P1 BUILD FIRST. We own 3 templates gated behind /compliance-assessment."},
+    {"query_id": "eu-ai-act-small-business", "cited_us": false, "competitors_cited": ["hklaw.com", "colombani.ai", "legalnodes.com", "digitalapplied.com", "bakermckenzie.com"], "notes": "PILLAR HANDOFF — /compliance/eu-ai-act 404s. P0. digitalapplied.com (target_competitor) present."},
+    {"query_id": "ai-compliance-checklist", "cited_us": false, "competitors_cited": ["pathopt.com", "digitalapplied.com", "wipfli.com", "omm.com"], "notes": "Target blog exists, verified comprehensive 6/26. Indexing volatility, not content gap. digitalapplied.com 2x in this set."},
+    {"query_id": "ai-risk-assessment-tool", "cited_us": false, "competitors_cited": ["trustlayer.io", "flowforma.com", "riskgenerator.com", "mymap.ai"], "notes": "Page DONE (/compliance-assessment). trustlayer owns no-signup/minutes framing our page matches. riskhelper.ai (target_competitor) absent — preserve. Indexing latency."},
+    {"query_id": "openai-partner-for-consultants", "cited_us": false, "competitors_cited": ["openai.com", "think-technologies.com", "saasrise.com", "digitalapplied.com"], "notes": "/openai-smb-partner patched 6/25 (indexing). openai.com #1, think-technologies #2 (watch, 1 set). digitalapplied present."},
+    {"query_id": "chatgpt-business-vs-enterprise", "cited_us": false, "competitors_cited": ["intuitionlabs.ai", "help.openai.com", "gosearch.ai", "aibusinessweekly.net"], "notes": "FAQ #8 (40-msg cap) shipped 6/22. Set leads with pricing today, not the cap mechanism. Indexing latency; no new gap."},
+    {"query_id": "msp-ai-compliance-resell", "cited_us": false, "competitors_cited": ["worksent.com", "guardz.com", "connectwise.com", "integrisit.com", "lumenova.ai"], "notes": "PILLAR HANDOFF — /partners/msp 404s. P2. 'AI governance audit' wedge across winners. Zero MSP content on-site."},
+    {"query_id": "openai-partner-network-tiers", "cited_us": false, "competitors_cited": ["openai.com", "techtimes.com", "digitalapplied.com", "techgenyz.com"], "notes": "/openai-smb-partner Partner Network patches shipped 6/25 (indexing). openai.com #1. digitalapplied present."},
+    {"query_id": "colorado-ai-act-deadline", "cited_us": false, "competitors_cited": ["hunton.com", "leg.colorado.gov", "seyfarth.com", "clarkhill.com", "techtimes.com"], "notes": "Query phrasing STALE — June 30 2026 deadline obsolete per SB 189 (effective Jan 1 2027). Today IS June 30. Blog covers SB 189. Recommend seed refresh (held to preserve trend)."}
+  ],
+  "competitor_watch": {"digitalapplied.com": "Crossed 3+ threshold AGAIN (4 sets). All have target_competitor set -> preserve, no write. Durable cross-bucket (partner+compliance).", "think-technologies.com": "#2 on partner-consultants. 1 set. Watch.", "availablelaw.com": "target_competitor on colorado-ai-act-small-business — absent today (we swung to ~pos 2). Proxy volatility. Preserve."}
+}
