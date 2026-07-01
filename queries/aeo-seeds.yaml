@@ -13,6 +13,13 @@ version: 2
 # - Added bucket aggregation for daily reporting by category
 # - During the 30-day transition window (through 2026-06-18), the optimizer ALSO
 #   counted elevaiq.com citations toward sayfeai.com (until 301s fully propagated).
+# 2026-07-01 maintenance:
+# - colorado-ai-act-deadline: query text refreshed from "colorado ai act june 30 2026 deadline"
+#   -> "colorado SB 189 small business effective date 2027". The June 30 2026 date has now
+#   PASSED (SB 24-205 repealed; SB 26-189 effective Jan 1 2027). Held through 6/30 to preserve
+#   trend continuity while the date was still current/that day; safe to refresh now that it is
+#   in the past. New text tracks the live SB 189 / Jan 1 2027 effective-date query. id unchanged
+#   so bucket membership and ledger trend line are preserved.
 # 2026-06-27 maintenance:
 # - colorado-ai-act-small-business: target_competitor updated leg.colorado.gov/bills/sb24-205
 #   (REPEALED bill page — replaced by SB 26-189 on 2026-05-14) -> availablelaw.com, which has
@@ -124,6 +131,7 @@ queries:
     target_competitor: https://intuitionlabs.ai/articles/chatgpt-plans-comparison
     # 2026-06-19: target_competitor updated aibusinessweekly.net -> intuitionlabs.ai (ranks #1 this run). Winning answers cite the ~40 agent-msg/user/month Business cap as the #1 Enterprise-upgrade trigger; added that cited-mechanism FAQ to our page (STAGED 2026-06-19, see ledger).
     # 2026-06-27: intuitionlabs.ai still #1; our FAQ #8 (40-msg cap, shipped 6/22) covers the winning mechanism — indexing latency, no new gap.
+    # 2026-07-01: intuitionlabs.ai still #1 (leads with pricing table); FAQ #8 covers the 40-msg cap the winning answer cites verbatim. Indexing latency, no new gap.
   - id: chatgpt-vs-copilot
     query: "ChatGPT Business vs Microsoft Copilot for business"
     intent: comparison
@@ -227,12 +235,14 @@ queries:
     target_competitor: https://availablelaw.com/blog/colorado-ai-act-rewrite-2026-smb-impact
     # 2026-05-19 note: SB 24-205 replaced by SB 189 signed by Gov Polis 2026-05-14, effective 2027-01-01. Update pillar accordingly when Claude Code builds it.
     # 2026-06-27: target_competitor updated leg.colorado.gov/bills/sb24-205 (REPEALED bill page) -> availablelaw.com — owns SMB-rewrite framing across 3 measured runs (6/23, 6/26, 6/27). Durable fix is the /compliance/colorado-ai-act pillar (P0 handoff); blog verified comprehensive 6/26.
+    # 2026-07-01: availablelaw.com ABSENT again; blog swung to ~pos 2 (behind IAPP). Proxy volatility confirmed (in/out pattern). Preserve target_competitor.
   - id: colorado-ai-act-deadline
-    query: "colorado ai act june 30 2026 deadline"
+    query: "colorado SB 189 small business effective date 2027"
     intent: compliance
     target_page: /blog/ai-compliance-colorado-eu-small-business-2026
     target_competitor: https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/colorado-postpones-implementation-of-colorado-ai-act-sb-24-205
-    # 2026-05-19 note: June 30 deadline OBSOLETE per SB 189 — the query phrasing itself is now stale. Consider replacing with "colorado SB 189 small business" in a future seed-file refresh.
+    # 2026-05-19 note: original "June 30 2026 deadline" phrasing OBSOLETE per SB 189.
+    # 2026-07-01: query text REFRESHED (old "colorado ai act june 30 2026 deadline" — that date has now passed). Tracks live SB 189 / Jan 1 2027 effective-date intent. Not measured on the refresh run; re-enters sampling next run.
   - id: eu-ai-act-small-business
     query: "eu ai act small business august 2 2026"
     intent: compliance
@@ -255,6 +265,7 @@ queries:
     target_page: /compliance-assessment
     target_competitor: https://riskhelper.ai/
     # 2026-06-19: target_competitor updated trustlayer.io -> riskhelper.ai (ranks #1; owns the "5-minute, no-account" framing that exactly matches /compliance-assessment positioning)
+    # 2026-07-01: trustlayer.io #1 again (owns free/no-signup/minutes framing our page matches); riskhelper.ai absent. Volatility — preserve.
   - id: ai-compliance-checklist
     query: "ai compliance checklist small business 2026"
     intent: compliance
@@ -270,6 +281,7 @@ queries:
     # 2026-06-16: target_competitor updated consumerfinancemonitor.com -> glacis.io (empirically ranks #1 this run; coincides with our blog dropping out of top-7). glacis.io is the dominant URL to displace on our single winning query.
     # 2026-06-19: we HELD ~pos 3 (glacis.io present ~pos 2). Retained as target_competitor.
     # 2026-06-27: HELD ~pos 5 for 3rd straight run (6/25, 6/26, 6/27); glacis.io fell ~pos 10 below us. workforcebulletin.com (Epstein Becker Green) is the real #1 to displace.
+    # 2026-07-01: HELD ~pos 5, 6th straight. workforcebulletin.com #1; glacis.io not in top-10. Consider swapping target_competitor -> workforcebulletin.com if it persists (2 of last 3 runs #1).
 
   # --- Added 2026-05-18 — Engine 2 (partner channel) alignment ---
   - id: msp-ai-compliance-resell
