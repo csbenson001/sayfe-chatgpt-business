@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-01",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [],
+  "engines_used": ["websearch_proxy"],
+  "throttle_note": "No OPENAI/ANTHROPIC/SERPAPI/PERPLEXITY keys present; WebSearch used as directional proxy. 38th proxy-only run. All rates are directional, not verified answer-engine citations.",
+  "sample_size": 12,
+  "sampling": "weighted toward compliance + assessment + partner buckets and prior-day wins (preserve). colorado-ai-act-deadline excluded from measurement this run (query text refreshed as obsolete).",
+  "results": [
+    {"query_id": "colorado-sb-26-189-admt", "engine": "websearch_proxy", "cited_us": true, "citation_type": "canonical", "position": "~5", "competitors_cited": ["workforcebulletin.com", "consumerfinancemonitor.com", "preferreddata.com", "techjacksolutions.com"], "answer_pattern": "list", "notes": "HELD ~pos 5, 6th straight. workforcebulletin (Epstein Becker Green) #1. glacis.io not in top-10 this set."},
+    {"query_id": "colorado-ai-act-small-business", "engine": "websearch_proxy", "cited_us": true, "citation_type": "canonical", "position": "~2", "competitors_cited": ["iapp.org", "almcorp.com", "jbakerlawgroup.com", "bridgepointconsulting.com"], "answer_pattern": "list", "notes": "SWUNG IN ~pos 2 (behind IAPP). availablelaw.com (target_competitor) ABSENT again - proxy volatility confirmed. Same single Colorado blog as admt."},
+    {"query_id": "ai-compliance-assessment", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["prompts.ai", "gcstechnologies.com", "arogai.net", "pathopt.com"], "answer_pattern": "list", "notes": "NOT cited. /compliance-assessment absent. Assessment bucket 0% continues (bucket-failure fired 6/30, now day 15). Indexing latency + no inbound pillar links, not content."},
+    {"query_id": "ai-risk-assessment-tool", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["trustlayer.io", "flowforma.com", "riskgenerator.com", "peoplemanagingpeople.com"], "answer_pattern": "list", "notes": "NOT cited. trustlayer.io #1 owns 'free/no-signup/minutes' framing our page matches verbatim. riskhelper.ai (target_competitor) absent."},
+    {"query_id": "eu-ai-act-small-business", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["hklaw.com", "legalnodes.com", "lw.com", "colombani.ai", "digitalapplied.com"], "answer_pattern": "list", "notes": "NOT cited. target_page /compliance/eu-ai-act 404s (pillar handoff, P0). digitalapplied.com present (target_competitor, preserve)."},
+    {"query_id": "ai-policy-template-smb", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["aihr.com", "legaltemplates.net", "lattice.com", "thoropass.com"], "answer_pattern": "list", "notes": "NOT cited. target_page /compliance/ai-policy-template 404s (pillar handoff, P1 BUILD FIRST). Winners rank on free one-click editable templates."},
+    {"query_id": "ai-compliance-checklist", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["pathopt.com", "digitalapplied.com", "gcstechnologies.com", "ost.agency"], "answer_pattern": "list", "notes": "NOT cited. Colorado blog (target_page) is CO-specific; winners are generic multi-jurisdiction checklists (NYC LL144, bias audits $5k-50k). No generic-checklist pillar exists on-site."},
+    {"query_id": "openai-partner-for-consultants", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["openai.com", "think-technologies.com", "digitalapplied.com", "explainx.ai"], "answer_pattern": "list", "notes": "NOT cited. openai.com #1. /openai-smb-partner patches shipped 6/25, indexing. think-technologies #2 (has 'Official OpenAI Partner for SMB' page)."},
+    {"query_id": "openai-partner-network-tiers", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["openai.com", "techtimes.com", "startuphub.ai", "digitalapplied.com"], "answer_pattern": "list", "notes": "NOT cited. openai.com #1. Select/Advanced/Elite terminology on /openai-smb-partner + llms.txt (shipped 6/25) still indexing."},
+    {"query_id": "msp-ai-compliance-resell", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["guardz.com", "worksent.com", "connectwise.com", "integrisit.com"], "answer_pattern": "list", "notes": "NOT cited. No MSP content on-site. /partners/msp handoff (P2). 'AI governance audit / high-margin frontier' wedge reconfirmed (managedservicesjournal.com, lumenova.ai)."},
+    {"query_id": "chatgpt-business-vs-enterprise", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["intuitionlabs.ai", "help.openai.com", "gosearch.ai", "aibusinessweekly.net"], "answer_pattern": "list", "notes": "NOT cited. intuitionlabs #1 (leads with pricing). Winning answer cites 40-msg/user/mo agent cap = exactly our FAQ #8 (shipped 6/22). Indexing latency, no new gap."},
+    {"query_id": "chatgpt-for-healthcare", "engine": "websearch_proxy", "cited_us": false, "citation_type": null, "competitors_cited": ["hipaajournal.com", "bastiongpt.com", "openai.com", "reframepractice.com"], "answer_pattern": "list", "notes": "NOT cited. hipaajournal owns query. /industries/healthcare canonical+FAQ complete (15/16 sweep). Highly authoritative incumbents; no patchable gap."}
+  ],
+  "summary": {
+    "total_sampled": 12,
+    "cited_us": 2,
+    "cited_rate": "16.7%",
+    "buckets": {
+      "compliance": {"tested": 5, "cited": 2, "rate": "40%", "note": "colorado-ai-act-deadline (6th compliance query) refreshed, not measured this run"},
+      "assessment": {"tested": 2, "cited": 0, "rate": "0%", "note": "bucket-failure alert fired 6/30 (day 14); continues day 15"},
+      "partner_channel": {"tested": 3, "cited": 0, "rate": "0%", "note": "structural/asset-gated; patches shipped 6/25 indexing"},
+      "industry": {"tested": 1, "cited": 0, "rate": "0%"},
+      "comparison": {"tested": 1, "cited": 0, "rate": "0%"}
+    },
+    "pages_patched": 0,
+    "hold_reason": "Patch surface exhausted 7th straight run. No new on-page diagnosis. Rule 4 (every edit tied to a measured diagnosis) + rule 10 favor a disciplined hold over speculative edits. Remaining levers are pillars + API keys, both outside optimizer whitelist.",
+    "seed_changes": ["colorado-ai-act-deadline query text refreshed (obsolete June-30-2026 date)"],
+    "competitors_3plus": ["digitalapplied.com (4 sets: eu-ai-act, ai-compliance-checklist, openai-partner-for-consultants, openai-partner-network-tiers) - already target_competitor on eu-ai-act, preserve"]
+  }
+}
