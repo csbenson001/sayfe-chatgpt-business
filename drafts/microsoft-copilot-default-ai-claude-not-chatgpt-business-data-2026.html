@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>The AI Reading Your Business Data in Copilot Might Not Be ChatGPT Anymore — Microsoft Changed the Default in 2026</title>
+  <meta name="description" content="Microsoft quietly made Anthropic's Claude the default model in Microsoft 365 Copilot for most commercial tenants, and GitHub Copilot switches to Microsoft's own Project Polaris in August 2026. If you bought Copilot for 'GPT,' here's what actually reads your data now — and why ChatGPT Business is the transparent alternative.">
+  <meta name="keywords" content="Microsoft Copilot default model 2026, is Copilot ChatGPT, Copilot Claude default, Microsoft 365 Copilot Anthropic subprocessor, which AI model does Copilot use, ChatGPT Business vs Copilot, Copilot data privacy 2026, Project Polaris GitHub Copilot">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.com/blog/microsoft-copilot-default-ai-claude-not-chatgpt-business-data-2026">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The AI Reading Your Business Data in Copilot Might Not Be ChatGPT Anymore">
+  <meta property="og:description" content="Microsoft made Claude the default in Microsoft 365 Copilot, and its own Project Polaris takes over GitHub Copilot in August 2026. What actually reads your data now — and why ChatGPT Business is the transparent choice.">
+  <meta property="og:url" content="https://sayfeai.com/blog/microsoft-copilot-default-ai-claude-not-chatgpt-business-data-2026">
+  <meta property="og:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Copilot's Default AI Is No Longer ChatGPT — It's Claude">
+  <meta name="twitter:description" content="Microsoft switched the default model in Microsoft 365 Copilot to Anthropic's Claude and moves GitHub Copilot to its own model in August 2026. Do you know which AI is reading your business data?">
+  <meta name="twitter:image" content="https://sayfeai.com/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-07-01T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="News & Trends">
+  <meta property="article:tag" content="Microsoft Copilot">
+  <meta property="article:tag" content="ChatGPT Business">
+  <meta property="article:tag" content="Data Privacy">
+  <meta property="article:tag" content="AI Models">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--yale-blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover { background: var(--yale-mid); }
+
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; }
+
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.8rem;
+      color: var(--yale-blue);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.3rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.8;
+    }
+
+    .article-content li { margin-bottom: 0.5rem; }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    .article-content a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45, 140, 240, 0.3);
+      transition: border-color 0.3s;
+    }
+
+    .article-content a:hover { border-bottom-color: var(--accent); }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      background: var(--yale-light);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--yale-deep);
+      border-radius: 4px;
+    }
+
+    blockquote p:last-child { margin-bottom: 0; }
+
+    blockquote cite {
+      display: block;
+      margin-top: 0.75rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--yale-blue);
+      font-size: 0.95rem;
+    }
+
+    .comparison-table-wrapper {
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 1.25rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .comparison-table th:last-child { border-right: none; }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child { border-right: none; }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody tr:nth-child(odd) { background-color: var(--yale-light); }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+    }
+
+    .highlight-box {
+      background: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box strong { color: var(--yale-blue); }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background: var(--yale-light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-top: 4px solid var(--accent);
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      display: block;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      margin-top: 0.5rem;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .cta-section h3 { color: var(--white); margin-bottom: 1rem; }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: var(--white);
+      color: var(--yale-blue);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-section { margin-top: 3rem; }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--yale-light);
+      padding: 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--yale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover { background: #d5dff0; }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 1.25rem;
+      display: none;
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-toggle { transform: rotate(180deg); }
+
+    footer {
+      background: var(--yale-deep);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content { max-width: 1200px; margin: 0 auto; }
+
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    .reading-time {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 1.65rem; }
+      .nav-links { gap: 1rem; font-size: 0.9rem; }
+      .comparison-table { font-size: 0.85rem; }
+      .comparison-table th, .comparison-table td { padding: 0.75rem; }
+      .article-meta { gap: 1rem; }
+      .stat-number { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <h1>The AI Reading Your Business Data in Copilot Might Not Be ChatGPT Anymore</h1>
+    <div class="article-meta">
+      <div class="meta-item"><span>July 1, 2026</span></div>
+      <div class="meta-item"><span>&#128214; 10 min read</span></div>
+      <div class="meta-item"><span>&#9997;&#65039; Sayfe.ai</span></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <article class="article-container">
+    <span class="category-badge">News &amp; Trends</span>
+    <span class="reading-time">10 min read</span>
+
+    <div class="article-content">
+      <p>Ask most small business owners why they added Microsoft Copilot and you'll hear some version of the same answer: <em>"It's the GPT thing, built into Office."</em> That mental model &mdash; Copilot equals ChatGPT inside Word and Excel &mdash; was accurate in 2024. In the middle of 2026, it quietly stopped being true, and almost nobody got the memo.</p>
+
+      <p>On <strong>January 7, 2026</strong>, Microsoft enabled <strong>Anthropic's Claude models by default</strong> for most commercial Microsoft 365 Copilot tenants in the public cloud. Not as an option you turn on &mdash; as the default. And starting <strong>August 2026</strong>, GitHub Copilot's default engine switches from OpenAI's GPT-4 Turbo to <strong>Project Polaris</strong>, Microsoft's own in-house coding model. The word on the box still says "Copilot." What's actually behind the curtain, reading your documents and your data, increasingly is not OpenAI at all.</p>
+
+      <p>This is not a hit piece on Claude, which is an excellent model, or on multi-model choice, which is genuinely a good thing. It's about a simpler question that every business signed a contract without asking: <strong>do you know which AI company is processing your data when you type a prompt into Copilot &mdash; and did you agree to that?</strong></p>
+
+      <div class="highlight-box">
+        <strong>TL;DR:</strong> Microsoft 365 Copilot now defaults to Anthropic's Claude for most commercial tenants (since Jan 7, 2026), with OpenAI still available as an option. GitHub Copilot's default becomes Microsoft's own Project Polaris in August 2026. "Copilot" is now a brand wrapper over a rotating cast of models &mdash; which means the AI vendor touching your business data can change without you choosing it, and a new AI subprocessor (Anthropic) was added to your data chain. ChatGPT Business takes the opposite approach: you always know it's OpenAI, one named provider, one data agreement, no silent swaps. If model transparency and data governance matter to you, that difference is the whole story.
+      </div>
+
+      <h2>What Actually Changed &mdash; and When</h2>
+
+      <p>Microsoft spent 2025 turning Copilot from an OpenAI reseller into a multi-model platform. That strategy came to a head this year with three concrete shifts most SMBs never saw:</p>
+
+      <ul>
+        <li><strong>Microsoft 365 Copilot (Jan 7, 2026):</strong> Anthropic was onboarded as an official Microsoft <em>subprocessor</em>, and Claude models were enabled by default for most commercial tenants in the public cloud. The default was left <em>off</em> in the EU, EFTA, and the UK &mdash; a regional split that itself tells you Microsoft's lawyers saw a data-governance question here.</li>
+        <li><strong>Copilot Studio:</strong> OpenAI remains the default for newly built agents, but Claude Sonnet 4 and Opus 4.1 sit right next to it in the model picker. Which model your custom agent uses now depends on who configured it and what they clicked.</li>
+        <li><strong>GitHub Copilot (August 2026):</strong> Project Polaris, Microsoft's own mixture-of-experts model, replaces GPT-4 Turbo as the default engine. If your developers use Copilot, their default assistant is about to become Microsoft's model, not OpenAI's.</li>
+      </ul>
+
+      <p>Put those together and the picture is clear. "Copilot" is no longer a product with a single brain. It's a brand layer sitting on top of OpenAI, Anthropic, and Microsoft's own models &mdash; with the default varying by product, by region, and by month. That is a legitimate engineering strategy. It is also a transparency problem for the business paying the bill.</p>
+
+      <h2>Why "Which Model" Isn't a Nerd Detail</h2>
+
+      <p>It's tempting to file this under "who cares, they're all good AI." For a hobbyist, fair enough. For a business that runs contracts, patient notes, financials, or client files through the tool, three things make the model identity matter a great deal.</p>
+
+      <h3>1. Every model provider is a company that touches your data</h3>
+      <p>When Claude became a default in Copilot, Anthropic became a <strong>subprocessor</strong> in your data supply chain &mdash; a new third-party company your prompts and the business content around them can flow to. Compliance teams exist to know exactly who those subprocessors are, because your own customer contracts, your DPA, and regulations like HIPAA and GDPR often require you to disclose and control them. A default that adds a vendor you didn't evaluate is precisely the kind of change a governance review is supposed to catch &mdash; and a default is designed to slip past that review.</p>
+
+      <h3>2. Different models behave differently &mdash; on the same task</h3>
+      <p>Think of it like swapping the engine in your delivery van without telling the driver. The van still drives, but the acceleration, the fuel economy, and the quirks all change. Models differ in tone, refusal behavior, formatting habits, and how they handle edge cases. If your team built prompts, templates, and expectations around one model and the default silently becomes another, your outputs drift &mdash; and you'll spend time debugging "why does Copilot write differently this week?" without realizing the engine was replaced underneath you.</p>
+
+      <h3>3. "I'm buying OpenAI" may no longer be what you're buying</h3>
+      <p>Plenty of businesses specifically chose Copilot because they wanted GPT-grade AI with Office integration. If the default has moved to Claude or Microsoft's own model, the original reason for the purchase may not hold anymore &mdash; and nobody sent a renewal notice explaining that. You can still <em>select</em> OpenAI in many places, but a default most users never change is, functionally, the product.</p>
+
+      <div class="warning-box">
+        <strong>&#9888;&#65039; The governance gap in one sentence:</strong> If a staff member can't answer "which AI company processed the document I just summarized in Copilot, and is that company on our approved-subprocessor list?" &mdash; that's not a Microsoft problem or an Anthropic problem, it's an <em>exposure</em> in your business, and defaults are engineered so that question never gets asked. Read our <a href="/blog/chatgpt-data-privacy-security-guide">ChatGPT data privacy and security guide</a> for how to think about AI data flows.
+      </div>
+
+      <h2>Give Microsoft Credit: Multi-Model Is Genuinely Smart</h2>
+
+      <p>Balance matters here, so let's be fair. Microsoft's multi-model strategy is, on the merits, a good idea. Different models are better at different jobs &mdash; Claude is strong at long-document reasoning, OpenAI's newest models excel at agentic and coding tasks, and Microsoft's own models can be cheaper and faster for high-volume work. Routing each task to the best-fit model is exactly what a mature AI platform should do, and giving customers a choice beats locking them to one vendor.</p>
+
+      <p>Google is doing its own version of this, and even OpenAI offers different model tiers. The direction of travel across the whole industry is <strong>more models, more routing, more optionality</strong>. That's a win for capability.</p>
+
+      <p>The problem isn't choice. The problem is <strong>choice without visibility</strong>. Optionality is a benefit when <em>you</em> make the choice and can see the consequence. It becomes a risk when the platform makes the choice for you, changes it by default, region, and update, and the person whose data is being processed has no idea a switch even happened. Microsoft added the choice; what it didn't add was a clear, in-your-face answer to "who is reading this right now, and did we approve them?"</p>
+
+      <h2>How ChatGPT Business Handles This Differently</h2>
+
+      <p>This is where the architecture of ChatGPT Business is worth understanding, because it's the mirror image of the Copilot approach. It's not "better AI" in the abstract &mdash; it's a <strong>different, more transparent supply chain</strong>.</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Question</th>
+              <th style="width: 35%;">Microsoft Copilot (2026)</th>
+              <th style="width: 35%;">ChatGPT Business</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-label">Who makes the AI?</td>
+              <td>OpenAI, Anthropic, or Microsoft &mdash; depending on product, region, and default</td>
+              <td>OpenAI. One named provider, always.</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Can the default change under you?</td>
+              <td>Yes &mdash; it already has, by region and by product update</td>
+              <td>No silent provider swap. You're on OpenAI models by design.</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Subprocessors touching your data</td>
+              <td>Now includes Anthropic as a default in most regions</td>
+              <td>OpenAI's published subprocessor list &mdash; one AI vendor to review</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Is your data used to train models?</td>
+              <td>Governed by Microsoft + each model vendor's terms</td>
+              <td>No. Business data is not used to train OpenAI's models by default.</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Do you know which model answered?</td>
+              <td>Often not, unless someone checked the picker</td>
+              <td>Yes &mdash; you select the OpenAI model and see it</td>
+            </tr>
+            <tr>
+              <td class="feature-label">Newest OpenAI models</td>
+              <td>On Microsoft's integration schedule, behind a grounding layer</td>
+              <td>Day one, direct from OpenAI</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The point isn't that Anthropic or Microsoft models are unsafe &mdash; they aren't. The point is <strong>knowability</strong>. With ChatGPT Business, "which AI company is processing our data?" has one answer, it doesn't change without you knowing, and your compliance review has exactly one AI vendor to evaluate instead of a rotating panel. For a regulated business &mdash; a <a href="/blog/chatgpt-for-law-firms">law firm</a>, a <a href="/blog/chatgpt-healthcare-hipaa-2026">healthcare practice</a>, or a <a href="/blog/ai-financial-advisors-compliance">financial advisory</a> &mdash; that single-answer clarity is not a nice-to-have. It's the difference between a defensible AI policy and a shrug.</p>
+
+      <h2>What To Actually Do This Week</h2>
+
+      <p>You don't need to rip anything out. You need to <em>know what you have</em>. Fifteen minutes gets you most of the way:</p>
+
+      <h3>1. Find out your Copilot default</h3>
+      <p>If you run Microsoft 365 Copilot, have whoever manages your tenant check whether Anthropic models are enabled by default and which model your users actually hit. If you're on GitHub Copilot, note that the default moves to Project Polaris in August. You can't govern what you haven't looked at.</p>
+
+      <h3>2. Update your subprocessor list</h3>
+      <p>If Claude is now a default in your Copilot, Anthropic belongs on your approved-AI-vendor list &mdash; and possibly in the disclosures you owe your own customers. Ask your compliance lead or attorney whether your existing contracts and DPAs cover it. This is the step almost everyone skips.</p>
+
+      <h3>3. Decide on purpose, per workload</h3>
+      <p>For general Office productivity where the model brand doesn't much matter, the Copilot default may be perfectly fine &mdash; take it knowingly. For workflows where you need a <em>known, single, day-one-OpenAI</em> stack &mdash; client-facing work, sensitive data, anything you'd have to defend in an audit &mdash; that's exactly where <a href="/blog/chatgpt-office-apps-vs-microsoft-copilot-2026">ChatGPT Business earns its place</a> alongside or instead of Copilot.</p>
+
+      <h3>4. Tell your team which tool to use for what</h3>
+      <p>The worst outcome is silent, unmanaged AI use across three different model vendors nobody chose. A one-page "use this tool for this kind of work" policy beats a 40-page one nobody reads. Our <a href="/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning">breakdown of why ChatGPT Business is winning the SMB race</a> is a good starting frame.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">Jan 7</span>
+          <div class="stat-label">2026: Claude enabled by default in M365 Copilot for most commercial tenants</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Aug</span>
+          <div class="stat-label">2026: GitHub Copilot default shifts to Microsoft's own Project Polaris</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3</span>
+          <div class="stat-label">AI vendors now possible behind one "Copilot" brand: OpenAI, Anthropic, Microsoft</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">1</span>
+          <div class="stat-label">AI vendor behind ChatGPT Business: OpenAI, always &mdash; no silent swaps</div>
+        </div>
+      </div>
+
+      <h2>The Bigger Pattern: The Brand Is Not the Model</h2>
+
+      <p>Zoom out and this is the real lesson of mid-2026: <strong>the name on the AI product no longer tells you which AI is inside it.</strong> "Copilot" is a wrapper. So is "Gemini for Workspace," increasingly. As every platform becomes a multi-model router, the questions that matter shift from "does it have AI?" to "<em>which</em> AI, chosen by whom, touching my data under what agreement?"</p>
+
+      <p>Businesses that treat AI as a checkbox &mdash; "yes, we have Copilot" &mdash; are going to get surprised by which vendor ends up in their data chain. Businesses that treat it as a supply-chain decision &mdash; naming the provider, controlling the subprocessors, deciding on purpose &mdash; are the ones who'll pass the audit and sleep at night. That's not an argument for one tool over another in every case. It's an argument for <em>knowing</em>. And when knowing is the goal, a single-provider, no-silent-swap tool like ChatGPT Business is the easiest thing in your stack to defend.</p>
+
+      <p>Microsoft's multi-model move is clever engineering. Just make sure you're the one deciding which engine is under your hood &mdash; not finding out during an incident.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Microsoft Copilot still powered by ChatGPT / OpenAI in 2026?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Partly. OpenAI models are still available in Copilot, but they are no longer the only &mdash; or, in many cases, the default &mdash; engine. As of January 7, 2026, Microsoft enabled Anthropic's Claude models by default in Microsoft 365 Copilot for most commercial tenants in the public cloud (the default is off in the EU, EFTA, and UK). Copilot Studio still defaults to OpenAI for new agents but offers Claude as an option, and GitHub Copilot's default engine switches to Microsoft's own Project Polaris model in August 2026. In short, "Copilot" is now a multi-model brand, and which AI actually answers depends on the product, your region, and the default in effect.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why does it matter which AI model Copilot uses?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Three reasons. First, each model provider is a separate company that processes your data &mdash; when Claude became a default, Anthropic became a new subprocessor in your data chain, which may need to be disclosed or approved under your own contracts, DPA, HIPAA, or GDPR obligations. Second, different models behave differently on the same task, so a silent default change can shift the tone and quality of your outputs. Third, if you originally chose Copilot specifically to get OpenAI's models, a default that has moved to Claude or Microsoft's own model means you may no longer be buying what you thought. It's less about model quality and more about knowing and controlling who touches your data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does ChatGPT Business always use OpenAI models?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. ChatGPT Business runs on OpenAI's models &mdash; one named provider, with no silent swap to a different AI company's model behind a brand layer. You select the OpenAI model you want and can see which one is answering. Business data is not used to train OpenAI's models by default, and OpenAI publishes its subprocessor list, so your compliance review has a single, stable AI vendor to evaluate rather than a rotating set of defaults. For businesses that need a defensible, knowable AI supply chain, that transparency is the core advantage.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Anthropic's Claude unsafe or a bad model?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>No &mdash; Claude is a high-quality, widely trusted model, and this isn't a warning against using it. The issue is transparency and governance, not safety. The concern is that a capable model was made a <em>default</em> in a product many businesses bought for a different vendor's AI, which quietly added a new company to their data supply chain without an explicit decision. If you choose Claude deliberately and account for it in your compliance program, that's a perfectly sound choice. The risk is only when the choice is made for you and never surfaced.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I find out which AI model my Copilot is using?</span>
+            <span class="faq-toggle">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Have whoever administers your Microsoft 365 tenant check the Copilot admin settings for whether Anthropic models are enabled by default, and look at the model picker inside the Copilot apps and Copilot Studio to see the active default. For GitHub Copilot, note the default engine moves to Microsoft's Project Polaris in August 2026. Then add any new AI vendors (like Anthropic) to your approved-subprocessor list and confirm with your compliance lead or attorney that your existing contracts cover them. If you'd rather not manage a moving target, an authorized OpenAI SMB Channel Partner like Sayfe.ai can help you stand up a single-provider ChatGPT Business workspace where the model is always known.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Microsoft 365 Copilot has defaulted to Anthropic's Claude for most commercial tenants since January 7, 2026 &mdash; with OpenAI still available but no longer automatically in front.</li>
+        <li>GitHub Copilot's default engine switches to Microsoft's own Project Polaris model in August 2026.</li>
+        <li>"Copilot" is now a multi-model brand: the AI vendor processing your data can vary by product, region, and update &mdash; often without the user knowing.</li>
+        <li>A default model change quietly adds new subprocessors (like Anthropic) to your data chain, which your contracts, DPA, HIPAA, or GDPR obligations may require you to disclose or approve.</li>
+        <li>Multi-model choice is genuinely good &mdash; the problem is choice without visibility, where the platform decides and you can't see it.</li>
+        <li>ChatGPT Business takes the opposite approach: one named provider (OpenAI), no silent swaps, data not used for training by default, and a single AI vendor for compliance to review.</li>
+        <li>This week: check your Copilot default, update your subprocessor list, and decide per workload &mdash; on purpose, not by default.</li>
+      </ul>
+
+      <div class="cta-section">
+        <h3>Know Exactly Which AI Is Reading Your Business Data</h3>
+        <p>Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small businesses stand up ChatGPT Business with a single, known model provider, SSO, admin controls, and a clean data agreement &mdash; live in 2&ndash;5 business days, with setup, training, and ongoing optimization included at no extra cost.</p>
+        <a href="/get-started" class="cta-button">Get Started Today</a>
+      </div>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and medium-sized businesses implement and optimize ChatGPT Business, ChatGPT Enterprise, and the OpenAI API across 15+ industries. We're here to make enterprise AI accessible &mdash; and the data governance behind it clear &mdash; for teams of any size.
+      </p>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The AI Reading Your Business Data in Copilot Might Not Be ChatGPT Anymore — Microsoft Changed the Default in 2026",
+    "description": "Microsoft made Anthropic's Claude the default model in Microsoft 365 Copilot for most commercial tenants, and GitHub Copilot switches to Microsoft's own Project Polaris in August 2026. What actually reads your data now — and why ChatGPT Business is the transparent alternative.",
+    "image": "https://sayfeai.com/og-image-blog.png",
+    "datePublished": "2026-07-01T00:00:00Z",
+    "dateModified": "2026-07-01T00:00:00Z",
+    "author": { "@type": "Organization", "name": "Sayfe.ai", "url": "https://sayfeai.com" },
+    "publisher": { "@type": "Organization", "name": "Sayfe.ai", "logo": { "@type": "ImageObject", "url": "https://sayfeai.com/logo.png" } },
+    "articleSection": "News & Trends",
+    "keywords": "Microsoft Copilot default model 2026, is Copilot ChatGPT, Copilot Claude default, Microsoft 365 Copilot Anthropic subprocessor, which AI model does Copilot use, ChatGPT Business vs Copilot, Copilot data privacy 2026, Project Polaris GitHub Copilot",
+    "wordCount": "2050",
+    "timeRequired": "PT10M"
+  }
+  </script>
+
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is Microsoft Copilot still powered by ChatGPT / OpenAI in 2026?", "acceptedAnswer": { "@type": "Answer", "text": "Partly. OpenAI models are still available in Copilot, but they are no longer the only — or, in many cases, the default — engine. As of January 7, 2026, Microsoft enabled Anthropic's Claude models by default in Microsoft 365 Copilot for most commercial tenants in the public cloud (the default is off in the EU, EFTA, and UK). Copilot Studio still defaults to OpenAI for new agents but offers Claude as an option, and GitHub Copilot's default engine switches to Microsoft's own Project Polaris model in August 2026. In short, 'Copilot' is now a multi-model brand, and which AI actually answers depends on the product, your region, and the default in effect." } },
+      { "@type": "Question", "name": "Why does it matter which AI model Copilot uses?", "acceptedAnswer": { "@type": "Answer", "text": "Three reasons. First, each model provider is a separate company that processes your data — when Claude became a default, Anthropic became a new subprocessor in your data chain, which may need to be disclosed or approved under your own contracts, DPA, HIPAA, or GDPR obligations. Second, different models behave differently on the same task, so a silent default change can shift the tone and quality of your outputs. Third, if you originally chose Copilot specifically to get OpenAI's models, a default that has moved to Claude or Microsoft's own model means you may no longer be buying what you thought. It's less about model quality and more about knowing and controlling who touches your data." } },
+      { "@type": "Question", "name": "Does ChatGPT Business always use OpenAI models?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. ChatGPT Business runs on OpenAI's models — one named provider, with no silent swap to a different AI company's model behind a brand layer. You select the OpenAI model you want and can see which one is answering. Business data is not used to train OpenAI's models by default, and OpenAI publishes its subprocessor list, so your compliance review has a single, stable AI vendor to evaluate rather than a rotating set of defaults." } },
+      { "@type": "Question", "name": "Is Anthropic's Claude unsafe or a bad model?", "acceptedAnswer": { "@type": "Answer", "text": "No — Claude is a high-quality, widely trusted model, and this isn't a warning against using it. The issue is transparency and governance, not safety. The concern is that a capable model was made a default in a product many businesses bought for a different vendor's AI, which quietly added a new company to their data supply chain without an explicit decision. If you choose Claude deliberately and account for it in your compliance program, that's a perfectly sound choice. The risk is only when the choice is made for you and never surfaced." } },
+      { "@type": "Question", "name": "How do I find out which AI model my Copilot is using?", "acceptedAnswer": { "@type": "Answer", "text": "Have whoever administers your Microsoft 365 tenant check the Copilot admin settings for whether Anthropic models are enabled by default, and look at the model picker inside the Copilot apps and Copilot Studio to see the active default. For GitHub Copilot, note the default engine moves to Microsoft's Project Polaris in August 2026. Then add any new AI vendors like Anthropic to your approved-subprocessor list and confirm with your compliance lead or attorney that your existing contracts cover them. If you'd rather not manage a moving target, an authorized OpenAI SMB Channel Partner like Sayfe.ai can help you stand up a single-provider ChatGPT Business workspace where the model is always known." } }
+    ]
+  }
+  </script>
+
+  <!-- Interactive FAQ Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
