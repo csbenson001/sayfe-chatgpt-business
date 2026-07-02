@@ -13,6 +13,12 @@ version: 2
 # - Added bucket aggregation for daily reporting by category
 # - During the 30-day transition window (through 2026-06-18), the optimizer ALSO
 #   counted elevaiq.com citations toward sayfeai.com (until 301s fully propagated).
+# 2026-07-02 maintenance:
+# - colorado-sb-26-189-admt: target_competitor SWAPPED glacis.io -> workforcebulletin.com
+#   (Epstein Becker Green). EBG held #1 a 3rd straight measured run (6/28, 7/1, 7/2);
+#   glacis.io fell out of top-10 (below sayfeai ~pos 5). Satisfies the swap rule noted 7/1.
+# - colorado-ai-act-deadline (refreshed 7/1) re-entered sampling and WON ~pos 1 on our
+#   Colorado blog — validates the refresh.
 # 2026-07-01 maintenance:
 # - colorado-ai-act-deadline: query text refreshed from "colorado ai act june 30 2026 deadline"
 #   -> "colorado SB 189 small business effective date 2027". The June 30 2026 date has now
@@ -236,6 +242,7 @@ queries:
     # 2026-05-19 note: SB 24-205 replaced by SB 189 signed by Gov Polis 2026-05-14, effective 2027-01-01. Update pillar accordingly when Claude Code builds it.
     # 2026-06-27: target_competitor updated leg.colorado.gov/bills/sb24-205 (REPEALED bill page) -> availablelaw.com — owns SMB-rewrite framing across 3 measured runs (6/23, 6/26, 6/27). Durable fix is the /compliance/colorado-ai-act pillar (P0 handoff); blog verified comprehensive 6/26.
     # 2026-07-01: availablelaw.com ABSENT again; blog swung to ~pos 2 (behind IAPP). Proxy volatility confirmed (in/out pattern). Preserve target_competitor.
+    # 2026-07-02: availablelaw.com ABSENT a 3rd straight run (6/30, 7/1, 7/2); blog HELD ~pos 2 (behind IAPP). Volatility pattern durable. Preserve.
   - id: colorado-ai-act-deadline
     query: "colorado SB 189 small business effective date 2027"
     intent: compliance
@@ -243,6 +250,7 @@ queries:
     target_competitor: https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/colorado-postpones-implementation-of-colorado-ai-act-sb-24-205
     # 2026-05-19 note: original "June 30 2026 deadline" phrasing OBSOLETE per SB 189.
     # 2026-07-01: query text REFRESHED (old "colorado ai act june 30 2026 deadline" — that date has now passed). Tracks live SB 189 / Jan 1 2027 effective-date intent. Not measured on the refresh run; re-enters sampling next run.
+    # 2026-07-02: RE-ENTERED sampling and WON ~pos 1 on our Colorado blog (wsgr/troutman/seyfarth/iapp below). Refresh validated. NOTE: same underlying blog as colorado-small-biz + admt — single-asset dependency.
   - id: eu-ai-act-small-business
     query: "eu ai act small business august 2 2026"
     intent: compliance
@@ -266,6 +274,7 @@ queries:
     target_competitor: https://riskhelper.ai/
     # 2026-06-19: target_competitor updated trustlayer.io -> riskhelper.ai (ranks #1; owns the "5-minute, no-account" framing that exactly matches /compliance-assessment positioning)
     # 2026-07-01: trustlayer.io #1 again (owns free/no-signup/minutes framing our page matches); riskhelper.ai absent. Volatility — preserve.
+    # 2026-07-02: trustlayer.io #1 a 3rd run; riskhelper.ai absent again. Volatility — preserve.
   - id: ai-compliance-checklist
     query: "ai compliance checklist small business 2026"
     intent: compliance
@@ -277,11 +286,12 @@ queries:
     query: "colorado SB 26-189 ADMT small business compliance"
     intent: compliance
     target_page: /blog/ai-compliance-colorado-eu-small-business-2026
-    target_competitor: https://www.glacis.io/guide-colorado-ai-act
+    target_competitor: https://www.workforcebulletin.com/inside-colorados-senate-bill-26-189-impacts-and-implications-for-employers
     # 2026-06-16: target_competitor updated consumerfinancemonitor.com -> glacis.io (empirically ranks #1 this run; coincides with our blog dropping out of top-7). glacis.io is the dominant URL to displace on our single winning query.
     # 2026-06-19: we HELD ~pos 3 (glacis.io present ~pos 2). Retained as target_competitor.
     # 2026-06-27: HELD ~pos 5 for 3rd straight run (6/25, 6/26, 6/27); glacis.io fell ~pos 10 below us. workforcebulletin.com (Epstein Becker Green) is the real #1 to displace.
     # 2026-07-01: HELD ~pos 5, 6th straight. workforcebulletin.com #1; glacis.io not in top-10. Consider swapping target_competitor -> workforcebulletin.com if it persists (2 of last 3 runs #1).
+    # 2026-07-02: SWAP EXECUTED — target_competitor glacis.io -> workforcebulletin.com (Epstein Becker Green). EBG held #1 a 3rd straight measured run (6/28, 7/1, 7/2); glacis.io out of top-10 (below sayfeai ~pos 5). "#1 a 3rd run" swap rule satisfied. We HELD ~pos 5 (3rd straight).
 
   # --- Added 2026-05-18 — Engine 2 (partner channel) alignment ---
   - id: msp-ai-compliance-resell
