@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-03",
+  "canonical_domain": "sayfeai.com",
+  "transition_domains_active": [],
+  "engines_used": ["websearch_proxy"],
+  "measurement_caveat": "No answer-engine API keys present (OPENAI/ANTHROPIC/SERPAPI/PERPLEXITY all absent). Positions are directional WebSearch-proxy rankings, NOT true answer-engine citations. 40th proxy-only run.",
+  "sample_size": 12,
+  "sampling_note": "Weighted per v2 rules: preserved the 3 compliance wins (admt, colorado-small-biz, deadline), full compliance+assessment+partner priority buckets, plus one rotating comparison (chatgpt-business-vs-enterprise). Friday run — pillar audit also performed (see daily report).",
+  "results": [
+    {"query_id":"colorado-sb-26-189-admt","engine":"websearch_proxy","cited_us":true,"citation_type":"canonical","position":4,"competitors_cited":["workforcebulletin.com","preferreddata.com","techjacksolutions.com","consumerfinancemonitor.com","leg.colorado.gov","warden-ai.com","lathropgpm.com","buchalter.com"],"answer_pattern":"list","notes":"HELD (~pos 4). workforcebulletin.com (Epstein Becker Green, target_competitor) #1 for the 4th measured run (6/28,7/1,7/2,7/3). glacis.io still OUT of top-10. NEW: preferreddata.com surfaced ~pos 2 mimicking our small-business AI compliance reset framing (1 set only -> watch, not 3+)."},
+    {"query_id":"colorado-ai-act-small-business","engine":"websearch_proxy","cited_us":true,"citation_type":"canonical","position":2,"competitors_cited":["iapp.org","almcorp.com","jbakerlawgroup.com","bridgepointconsulting.com","stackcyber.com"],"answer_pattern":"list","notes":"HELD ~pos 2 behind IAPP. availablelaw.com (target_competitor) ABSENT for the 4th straight run (6/30,7/1,7/2,7/3) — proxy volatility confirmed durable."},
+    {"query_id":"colorado-ai-act-deadline","engine":"websearch_proxy","cited_us":true,"citation_type":"canonical","position":1,"competitors_cited":["wsgr.com","iapp.org","troutmanprivacy.com","seyfarth.com","truyo.com","modulos.ai","hklaw.com"],"answer_pattern":"paragraph","notes":"HELD ~pos 1 on our Colorado blog (2nd straight since the 7/1 refresh). akingump.com (target_competitor) absent. NOTE: same underlying blog as the other two wins."},
+    {"query_id":"eu-ai-act-small-business","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["hklaw.com","colombani.ai","bayootec.com","stibbe.com","legalnodes.com","digitalapplied.com","bakermckenzie.com","artificialintelligenceact.eu"],"answer_pattern":"list","notes":"LOST. Pillar /compliance/eu-ai-act still 404s (P0 handoff). digitalapplied.com present (cross-bucket, set 1 of 3). Dual-timeline nuance (Art.50 transparency Aug 2 2026 vs high-risk delayed to ~late 2027/2028 via Digital Omnibus) is the winning angle."},
+    {"query_id":"ai-policy-template-smb","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["aihr.com","mescomputing.com","lattice.com","legaltemplates.net","hibob.com","thoropass.com","polygraf.ai","wordstream.com"],"answer_pattern":"list","notes":"LOST. Pillar /compliance/ai-policy-template still 404s (P1 -- BUILD FIRST). Winners are one-click free-template pages; zero sayfeai presence. We own 3 editable templates gated behind /compliance-assessment. Building this pillar surfaces them AND funnels the failing assessment bucket."},
+    {"query_id":"ai-compliance-checklist","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["pathopt.com","myaifrontdesk.com","gcstechnologies.com","digitalapplied.com","ost.agency","cyberunit.com","wipfli.com"],"answer_pattern":"list","notes":"LOST. Winners are general plain-English/monthly checklists; our target_page (Colorado+EU blog) is scope-mismatched. Durable fix = dedicated checklist resource asset, NOT a patch to the blog. digitalapplied.com present (cross-bucket, set 2 of 3). pathopt.com (target_competitor) #1."},
+    {"query_id":"ai-compliance-assessment","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["trycomplianceiq.com","prompts.ai","gcstechnologies.com","pathopt.com","arogai.net","growthcapitalcorp.com","centraleyes.com"],"answer_pattern":"list","notes":"LOST. /compliance-assessment live since 6/15, 0 citations -> day 17. Bucket-failure alert fired 6/30. trycomplianceiq.com (target_competitor) #1 (free 15-question risk score). Indexing latency + no inbound pillar links, not content."},
+    {"query_id":"ai-risk-assessment-tool","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["trustlayer.io","flowforma.com","peoplemanagingpeople.com","riskgenerator.com","ardion.io"],"answer_pattern":"list","notes":"LOST. trustlayer.io #1 again (owns free/no-signup/minutes framing our page matches verbatim). riskhelper.ai (target_competitor) absent 4th run -- preserve."},
+    {"query_id":"msp-ai-compliance-resell","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["worksent.com","guardz.com","connectwise.com","integrisit.com","managedservicesjournal.com","lumenova.ai","tacticsmarketing.com"],"answer_pattern":"list","notes":"LOST. Zero MSP content on-site. Pillar /partners/msp (P2). AI governance = high-margin frontier + AI auditing services a must-offer (managedservicesjournal, lumenova) is the recurring Engine-2 wedge."},
+    {"query_id":"openai-partner-for-consultants","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["openai.com","think-technologies.com","techjacksolutions.com","edtechinnovationhub.com","digitalapplied.com","saasrise.com"],"answer_pattern":"list","notes":"LOST. openai.com owns #1. think-technologies.com #2 (Official OpenAI Partner for SMB page). digitalapplied.com present (cross-bucket, set 3 of 3). /openai-smb-partner patches shipped 6/25 -- indexing, no rank movement."},
+    {"query_id":"openai-partner-network-tiers","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["openai.com","techjacksolutions.com","edtechinnovationhub.com","techtimes.com","startuphub.ai","beri.net","techgenyz.com"],"answer_pattern":"list","notes":"LOST. openai.com owns #1 (own announcement). News/aggregator surface. Facts current & reconciled on-site (Select/Advanced/Elite; $150M; 300k consultants by EOY 2026; Codex/cybersecurity/agents specializations; Forward Deployed Experts pilot). Patches shipped 6/25 -- indexing."},
+    {"query_id":"chatgpt-business-vs-enterprise","engine":"websearch_proxy","cited_us":false,"citation_type":null,"position":null,"competitors_cited":["intuitionlabs.ai","help.openai.com","hungyichen.com","aibusinessweekly.net","gosearch.ai","techjacksolutions.com"],"answer_pattern":"list","notes":"LOST. intuitionlabs.ai (target_competitor) #1 (leads with pricing table). Winning answer cites the 40 agent-msg/user/month Business cap verbatim -- our FAQ #8 (shipped 6/22) covers exactly this. Indexing latency, no new gap."}
+  ],
+  "summary": {
+    "cited_total": "3/12 (25.0%)",
+    "prior_run": "3/12 (25.0%) on 2026-07-02",
+    "buckets": {
+      "compliance": "3/6 (50%) — admt, colorado-small-biz, deadline (ALL same single blog)",
+      "assessment": "0/2 (0%)",
+      "partner_channel": "0/3 (0%)",
+      "comparison": "0/1 (0%)"
+    },
+    "single_asset_dependency": "100% of wins ride on ONE blog: /blog/ai-compliance-colorado-eu-small-business-2026. Three distinct Colorado queries resolve to it. Structurally identical to 7/2 — flat, not momentum.",
+    "pages_patched": 0,
+    "hold_reason": "Patch surface exhausted 9th consecutive run (rule 4 disciplined hold). All losses are 404 pillar handoffs (eu-ai-act, ai-policy-template, msp), indexing latency on already-comprehensive pages (assessment, risk-tool, partner x2, vs-enterprise), or a scope-mismatch requiring a NEW asset not a patch (ai-compliance-checklist). Adding to the single Colorado blog would worsen the single-point-of-failure.",
+    "seed_changes": [],
+    "friday_pillar_audit": "public/compliance/ still 404s — zero pillars exist to audit (9th consecutive run confirming). Audit finding: the entire pillar layer remains unbuilt, blocking all structural growth. All 5 handoffs open.",
+    "competitor_watch": {
+      "workforcebulletin.com": "#1 on admt 4th measured run — target_competitor (swapped in 7/2), preserve",
+      "availablelaw.com": "absent 4th straight run on colorado-small-biz — target_competitor, preserve (volatility)",
+      "digitalapplied.com": "3 sets (eu-ai-act, ai-compliance-checklist, openai-partner-for-consultants) — 6th consecutive 3+ run; all crossing queries already have target_competitor set, preserve",
+      "preferreddata.com": "NEW — ~pos 2 on admt mimicking our SMB-reset framing; 1 set only, watch (needs 3+ to auto-write)"
+    },
+    "regression_rule": "NOT triggered (3/12 = 3/12, not down 5 consecutive)",
+    "stretch_rule": "NOT triggered (compliance 33->40->50->50 over 6/30-7/3; today FLAT at 50%, not a clean 7-day climb — and all on one asset)"
+  }
+}
