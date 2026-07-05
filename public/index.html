@@ -57,13 +57,12 @@
   },
   "parentOrganization": {
     "@type": "Organization",
-    "name": "Sayfe.ai",
-    "url": "https://sayfe.ai"
+    "name": "Vandelay Consulting Inc."
   },
   "sameAs": [
-    "https://sayfe.ai",
     "https://www.linkedin.com/in/chris-benson-308083313/"
   ],
+  "disambiguatingDescription": "Sayfe.ai (sayfeai.com) is an authorized OpenAI service partner deploying ChatGPT Business for small and medium businesses (1-149 seats). It is a separate, independently operated company from SayfeAI (sayfe.ai), the self-hosted agentic AI platform for mid-market SAP companies, founded by the same team.",
   "serviceType": ["AI Consulting", "ChatGPT Business Deployment", "AI Training", "Change Management", "AI Adoption Services", "Custom GPT Development", "Prompt Engineering Training"],
   "knowsAbout": ["ChatGPT Business", "ChatGPT Enterprise", "OpenAI", "GPT-5.5", "Custom GPTs", "AI Adoption", "Prompt Engineering", "AI for Healthcare", "AI for Legal", "AI for Manufacturing", "AI for Construction", "AI for Financial Services", "AI for Insurance", "AI for Real Estate", "AI for Consulting", "AI for Education", "AI for Marketing", "AI for Logistics", "AI for Retail", "AI for Nonprofit"],
   "hasOfferCatalog": {
@@ -233,7 +232,6 @@
     "url": "https://sayfeai.com",
     "logo": "https://sayfeai.com/logo.png",
     "sameAs": [
-      "https://sayfe.ai",
       "https://www.linkedin.com/in/chris-benson-308083313/",
       "https://github.com/csbenson001/sayfe-chatgpt-business"
     ]
@@ -261,7 +259,7 @@
     },
     {
       "@type": "Organization",
-      "name": "Sayfe.ai",
+      "name": "SayfeAI",
       "url": "https://sayfe.ai"
     },
     {
@@ -282,9 +280,23 @@
   ],
   "url": "https://sayfeai.com/about",
   "sameAs": [
-    "https://www.linkedin.com/in/chris-benson-308083313/",
-    "https://sayfe.ai"
+    "https://www.linkedin.com/in/chris-benson-308083313/"
   ]
+}
+</script>
+
+<!-- JSON-LD: SayfeAI (sayfe.ai) — a SEPARATE company from the same founding team.
+     Distinct @id + mutual disambiguatingDescription keeps answer engines from
+     conflating the two similarly-named entities. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://sayfe.ai/#organization",
+  "name": "SayfeAI",
+  "url": "https://sayfe.ai",
+  "description": "SayfeAI is a self-hosted agentic AI platform for mid-market companies running SAP ECC or S/4HANA. It deploys inside the customer's own network, runs on Amazon Bedrock, and ships production modules such as easyOrder for 95% touchless SAP order automation.",
+  "disambiguatingDescription": "SayfeAI (sayfe.ai) and Sayfe.ai (sayfeai.com) are separate, independently operated companies founded by the same team. SayfeAI is the self-hosted enterprise agentic AI platform for mid-market SAP companies; it is not a ChatGPT reseller and is not affiliated with OpenAI. Sayfe.ai (sayfeai.com, this site) is the authorized OpenAI partner for SMB ChatGPT Business deployment."
 }
 </script>
 
@@ -2752,11 +2764,11 @@ footer {
     <div class="grid-3 reveal" style="gap:24px;">
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:28px;">
         <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:white;margin-bottom:8px;">Sales Hunter</h3>
-        <p style="color:rgba(255,255,255,.55);font-size:.88rem;line-height:1.5;">Deep prospect analysis with AI-generated engagement strategies, churn prediction, and cross-sell intelligence. One client found $2.4M in hidden opportunities.</p>
+        <p style="color:rgba(255,255,255,.55);font-size:.88rem;line-height:1.5;">Deep account intelligence that mines EPA, regulatory, and facility data competitors can't access — briefs, alerts, signals, playbooks, and outreach across 10 sub-modules.</p>
       </div>
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:28px;">
         <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:white;margin-bottom:8px;">easyOrder</h3>
-        <p style="color:rgba(255,255,255,.55);font-size:.88rem;line-height:1.5;">AI that reads emails, PDFs, and EDI — then creates SAP orders automatically. 90%+ touchless processing, 99% accuracy.</p>
+        <p style="color:rgba(255,255,255,.55);font-size:.88rem;line-height:1.5;">AI that reads emails, PDFs, EDI, and fax — then posts SAP orders automatically with simulate-before-create governance. 95% touchless, 99.2% accuracy, 98,989+ orders in production.</p>
       </div>
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:28px;">
         <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:white;margin-bottom:8px;">SafeAI Chat</h3>
@@ -2772,13 +2784,13 @@ footer {
       </div>
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:28px;">
         <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:white;margin-bottom:8px;">Private &amp; Secure</h3>
-        <p style="color:rgba(255,255,255,.55);font-size:.88rem;line-height:1.5;">Runs in your Azure, AWS, or on-premise. Role-based access, full audit trail, model-agnostic. Your data stays yours — that's the "Sayfe" in our name.</p>
+        <p style="color:rgba(255,255,255,.55);font-size:.88rem;line-height:1.5;">Self-hosted inside your AWS VPC, Azure tenant, or on-premise. Runs on Amazon Bedrock with multi-model routing, RBAC, SSO/AD, and a full audit trail. Your data never leaves your network — that's the "Sayfe" in the name.</p>
       </div>
     </div>
 
     <div class="reveal" style="display:flex;gap:16px;justify-content:center;margin-top:40px;flex-wrap:wrap;">
-      <a href="https://sayfe.ai" target="_blank" rel="noopener" class="btn btn-accent" style="display:inline-flex;">Visit Sayfe.ai →</a>
-      <a href="#get-started" class="btn btn-outline" style="display:inline-flex;color:white;border-color:rgba(255,255,255,.3);">Start with Sayfe.ai</a>
+      <a href="https://sayfe.ai" target="_blank" rel="noopener" class="btn btn-accent" style="display:inline-flex;">Explore SayfeAI — self-hosted agentic AI for SAP mid-market (sayfe.ai) →</a>
+      <a href="#get-started" class="btn btn-outline" style="display:inline-flex;color:white;border-color:rgba(255,255,255,.3);">Start with ChatGPT Business here</a>
     </div>
   </div>
 </section>
