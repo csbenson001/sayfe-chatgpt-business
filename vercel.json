@@ -86,259 +86,259 @@
   "rewrites": [
     {
       "source": "/healthcare",
-      "destination": "/industries/healthcare.html"
+      "destination": "/industries/healthcare"
     },
     {
       "source": "/chiropractic",
-      "destination": "/industries/chiropractic.html"
+      "destination": "/industries/chiropractic"
     },
     {
       "source": "/manufacturing",
-      "destination": "/industries/manufacturing.html"
+      "destination": "/industries/manufacturing"
     },
     {
       "source": "/legal",
-      "destination": "/industries/legal.html"
+      "destination": "/industries/legal"
     },
     {
       "source": "/consulting",
-      "destination": "/industries/consulting.html"
+      "destination": "/industries/consulting"
     },
     {
       "source": "/construction",
-      "destination": "/industries/construction.html"
+      "destination": "/industries/construction"
     },
     {
       "source": "/real-estate",
-      "destination": "/industries/real-estate.html"
+      "destination": "/industries/real-estate"
     },
     {
       "source": "/finance",
-      "destination": "/industries/finance.html"
+      "destination": "/industries/finance"
     },
     {
       "source": "/insurance",
-      "destination": "/industries/insurance.html"
+      "destination": "/industries/insurance"
     },
     {
       "source": "/logistics",
-      "destination": "/industries/logistics.html"
+      "destination": "/industries/logistics"
     },
     {
       "source": "/retail",
-      "destination": "/industries/retail.html"
+      "destination": "/industries/retail"
     },
     {
       "source": "/marketing",
-      "destination": "/industries/marketing.html"
+      "destination": "/industries/marketing"
     },
     {
       "source": "/education",
-      "destination": "/industries/education.html"
+      "destination": "/industries/education"
     },
     {
       "source": "/professional-services",
-      "destination": "/industries/professional-services.html"
+      "destination": "/industries/professional-services"
     },
     {
       "source": "/nonprofit",
-      "destination": "/industries/nonprofit.html"
+      "destination": "/industries/nonprofit"
     },
     {
       "source": "/energy",
-      "destination": "/industries/energy.html"
+      "destination": "/industries/energy"
     },
     {
       "source": "/openai-smb",
-      "destination": "/openai-smb.html"
+      "destination": "/openai-smb"
     },
     {
       "source": "/openai-smb-partner",
-      "destination": "/openai-smb-partner.html"
+      "destination": "/openai-smb-partner"
     },
     {
       "source": "/openai-workspace-agents",
-      "destination": "/openai-workspace-agents.html"
+      "destination": "/openai-workspace-agents"
     },
     {
       "source": "/ai-agent-library",
-      "destination": "/ai-agent-library.html"
+      "destination": "/ai-agent-library"
     },
     {
       "source": "/pricing",
-      "destination": "/pricing.html"
+      "destination": "/pricing"
     },
     {
       "source": "/about",
-      "destination": "/about.html"
+      "destination": "/about"
     },
     {
       "source": "/contact",
-      "destination": "/contact.html"
+      "destination": "/contact"
     },
     {
       "source": "/industries",
-      "destination": "/industries/index.html"
+      "destination": "/industries/"
     },
     {
       "source": "/free-guide",
-      "destination": "/free-guide.html"
+      "destination": "/free-guide"
     },
     {
       "source": "/blog",
-      "destination": "/blog/index.html"
+      "destination": "/blog/"
     },
     {
       "source": "/blog/chatgpt-small-business-guide",
-      "destination": "/blog/chatgpt-small-business-guide.html"
+      "destination": "/blog/chatgpt-small-business-guide"
     },
     {
       "source": "/blog/chatgpt-business-vs-plus",
-      "destination": "/blog/chatgpt-business-vs-plus.html"
+      "destination": "/blog/chatgpt-business-vs-plus"
     },
     {
       "source": "/blog/ai-healthcare-practices",
-      "destination": "/blog/ai-healthcare-practices.html"
+      "destination": "/blog/ai-healthcare-practices"
     },
     {
       "source": "/blog/chatgpt-for-law-firms",
-      "destination": "/blog/chatgpt-for-law-firms.html"
+      "destination": "/blog/chatgpt-for-law-firms"
     },
     {
       "source": "/blog/ai-manufacturing-guide",
-      "destination": "/blog/ai-manufacturing-guide.html"
+      "destination": "/blog/ai-manufacturing-guide"
     },
     {
       "source": "/blog/chatgpt-business-roi",
-      "destination": "/blog/chatgpt-business-roi.html"
+      "destination": "/blog/chatgpt-business-roi"
     },
     {
       "source": "/blog/chatgpt-real-estate-prompts",
-      "destination": "/blog/chatgpt-real-estate-prompts.html"
+      "destination": "/blog/chatgpt-real-estate-prompts"
     },
     {
       "source": "/blog/ai-financial-advisors-compliance",
-      "destination": "/blog/ai-financial-advisors-compliance.html"
+      "destination": "/blog/ai-financial-advisors-compliance"
     },
     {
       "source": "/blog/chatgpt-insurance-agencies",
-      "destination": "/blog/chatgpt-insurance-agencies.html"
+      "destination": "/blog/chatgpt-insurance-agencies"
     },
     {
       "source": "/blog/chatgpt-education-schools",
-      "destination": "/blog/chatgpt-education-schools.html"
+      "destination": "/blog/chatgpt-education-schools"
     },
     {
       "source": "/blog/chatgpt-retail-ecommerce",
-      "destination": "/blog/chatgpt-retail-ecommerce.html"
+      "destination": "/blog/chatgpt-retail-ecommerce"
     },
     {
       "source": "/blog/chatgpt-construction-contractors",
-      "destination": "/blog/chatgpt-construction-contractors.html"
+      "destination": "/blog/chatgpt-construction-contractors"
     },
     {
       "source": "/blog/chatgpt-consulting-firms",
-      "destination": "/blog/chatgpt-consulting-firms.html"
+      "destination": "/blog/chatgpt-consulting-firms"
     },
     {
       "source": "/blog/chatgpt-logistics-supply-chain",
-      "destination": "/blog/chatgpt-logistics-supply-chain.html"
+      "destination": "/blog/chatgpt-logistics-supply-chain"
     },
     {
       "source": "/blog/chatgpt-marketing-agencies",
-      "destination": "/blog/chatgpt-marketing-agencies.html"
+      "destination": "/blog/chatgpt-marketing-agencies"
     },
     {
       "source": "/blog/chatgpt-nonprofit-organizations",
-      "destination": "/blog/chatgpt-nonprofit-organizations.html"
+      "destination": "/blog/chatgpt-nonprofit-organizations"
     },
     {
       "source": "/blog/chatgpt-chiropractic-practices",
-      "destination": "/blog/chatgpt-chiropractic-practices.html"
+      "destination": "/blog/chatgpt-chiropractic-practices"
     },
     {
       "source": "/blog/chatgpt-business-prompts-library",
-      "destination": "/blog/chatgpt-business-prompts-library.html"
+      "destination": "/blog/chatgpt-business-prompts-library"
     },
     {
       "source": "/blog/ai-adoption-checklist-small-business",
-      "destination": "/blog/ai-adoption-checklist-small-business.html"
+      "destination": "/blog/ai-adoption-checklist-small-business"
     },
     {
       "source": "/blog/chatgpt-professional-services",
-      "destination": "/blog/chatgpt-professional-services.html"
+      "destination": "/blog/chatgpt-professional-services"
     },
     {
       "source": "/blog/openai-ipo-what-it-means-for-business",
-      "destination": "/blog/openai-ipo-what-it-means-for-business.html"
+      "destination": "/blog/openai-ipo-what-it-means-for-business"
     },
     {
       "source": "/blog/chatgpt-healthcare-hipaa-2026",
-      "destination": "/blog/chatgpt-healthcare-hipaa-2026.html"
+      "destination": "/blog/chatgpt-healthcare-hipaa-2026"
     },
     {
       "source": "/blog/1-million-businesses-using-chatgpt",
-      "destination": "/blog/1-million-businesses-using-chatgpt.html"
+      "destination": "/blog/1-million-businesses-using-chatgpt"
     },
     {
       "source": "/blog/ai-replacing-jobs-myth",
-      "destination": "/blog/ai-replacing-jobs-myth.html"
+      "destination": "/blog/ai-replacing-jobs-myth"
     },
     {
       "source": "/blog/ai-environmental-impact-honest-look",
-      "destination": "/blog/ai-environmental-impact-honest-look.html"
+      "destination": "/blog/ai-environmental-impact-honest-look"
     },
     {
       "source": "/blog/chatgpt-data-privacy-security-guide",
-      "destination": "/blog/chatgpt-data-privacy-security-guide.html"
+      "destination": "/blog/chatgpt-data-privacy-security-guide"
     },
     {
       "source": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning",
-      "destination": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning.html"
+      "destination": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning"
     },
     {
       "source": "/blog/best-ai-tools-small-business-2026",
-      "destination": "/blog/best-ai-tools-small-business-2026.html"
+      "destination": "/blog/best-ai-tools-small-business-2026"
     },
     {
       "source": "/blog/chatgpt-business-setup-guide-2026",
-      "destination": "/blog/chatgpt-business-setup-guide-2026.html"
+      "destination": "/blog/chatgpt-business-setup-guide-2026"
     },
     {
       "source": "/blog/chatgpt-business-vs-enterprise-2026",
-      "destination": "/blog/chatgpt-business-vs-enterprise-2026.html"
+      "destination": "/blog/chatgpt-business-vs-enterprise-2026"
     },
     {
       "source": "/blog/:slug",
-      "destination": "/blog/:slug.html"
+      "destination": "/blog/:slug"
     },
     {
       "source": "/compare/:slug",
-      "destination": "/compare/:slug.html"
+      "destination": "/compare/:slug"
     },
     {
       "source": "/case-studies",
-      "destination": "/case-studies.html"
+      "destination": "/case-studies"
     },
     {
       "source": "/get-started",
-      "destination": "/get-started.html"
+      "destination": "/get-started"
     },
     {
       "source": "/faq",
-      "destination": "/faq.html"
+      "destination": "/faq"
     },
     {
       "source": "/privacy",
-      "destination": "/privacy.html"
+      "destination": "/privacy"
     },
     {
       "source": "/terms",
-      "destination": "/terms.html"
+      "destination": "/terms"
     },
     {
       "source": "/compliance-assessment",
-      "destination": "/compliance-assessment.html"
+      "destination": "/compliance-assessment"
     }
   ],
   "headers": [
