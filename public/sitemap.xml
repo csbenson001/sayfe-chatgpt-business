@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sayfeai.com/</loc><lastmod>2026-07-05</lastmod><priority>1.0</priority></url>
+  <url><loc>https://sayfeai.com/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority></url>
   <url><loc>https://sayfeai.com/about</loc><lastmod>2026-07-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/ai-agent-library</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/blog</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
@@ -95,17 +95,17 @@
   <url><loc>https://sayfeai.com/compare/chatgpt-business-vs-copilot</loc><lastmod>2026-05-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://sayfeai.com/compare/chatgpt-business-vs-gemini</loc><lastmod>2026-05-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://sayfeai.com/compare/sayfeai-vs-direct</loc><lastmod>2026-05-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://sayfeai.com/compare/sayfeai-vs-madewell</loc><lastmod>2026-05-18</lastmod><priority>0.6</priority></url>
+  <url><loc>https://sayfeai.com/compare/sayfeai-vs-madewell</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://sayfeai.com/compliance-assessment</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/construction</loc><lastmod>2026-06-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/consulting</loc><lastmod>2026-05-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/contact</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/education</loc><lastmod>2026-06-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/energy</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://sayfeai.com/faq</loc><lastmod>2026-07-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sayfeai.com/faq</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/finance</loc><lastmod>2026-05-27</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/free-guide</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://sayfeai.com/get-started</loc><lastmod>2026-05-18</lastmod><priority>0.9</priority></url>
+  <url><loc>https://sayfeai.com/get-started</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
   <url><loc>https://sayfeai.com/healthcare</loc><lastmod>2026-05-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/industries</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/insurance</loc><lastmod>2026-05-28</lastmod><priority>0.8</priority></url>
@@ -115,13 +115,14 @@
   <url><loc>https://sayfeai.com/marketing</loc><lastmod>2026-06-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/nonprofit</loc><lastmod>2026-06-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/openai-smb</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://sayfeai.com/openai-smb-partner</loc><lastmod>2026-07-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sayfeai.com/openai-smb-partner</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/openai-workspace-agents</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://sayfeai.com/pricing</loc><lastmod>2026-05-18</lastmod><priority>0.9</priority></url>
+  <url><loc>https://sayfeai.com/pricing</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
   <url><loc>https://sayfeai.com/privacy</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/professional-services</loc><lastmod>2026-06-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/real-estate</loc><lastmod>2026-05-29</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/retail</loc><lastmod>2026-06-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/terms</loc><lastmod>2026-05-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://sayfeai.com/blog/chatgpt-business-shared-usage-limit-codex-december-2026</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sayfeai.com/blog/chatgpt-business-20-percent-off-partner-promotion-2026</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
 </urlset>
