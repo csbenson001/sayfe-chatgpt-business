@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>ChatGPT Business Usage Limits Change in December: The Shared ChatGPT + Codex Allowance, Explained</title>
+  <meta name="description" content="From December 2026, ChatGPT Business, Plus and Pro draw ChatGPT and Codex usage from one shared, token-based allowance. Who on a small team will feel it, how Premium seats and workspace credits help, and a 4-step plan.">
+  <meta name="keywords" content="chatgpt business usage limits, chatgpt codex shared usage limit, chatgpt usage limit december 2026, chatgpt business premium seats, chatgpt business vs plus, chatgpt workspace credits">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.com/blog/chatgpt-business-shared-usage-limit-codex-december-2026">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ChatGPT Business Usage Limits Change in December: The Shared ChatGPT + Codex Allowance, Explained">
+  <meta property="og:description" content="From December 2026, ChatGPT Business, Plus and Pro draw ChatGPT and Codex usage from one shared, token-based allowance. Who on a small team will feel it, how Premium seats and workspace credits help, and a 4-step plan.">
+  <meta property="og:url" content="https://sayfeai.com/blog/chatgpt-business-shared-usage-limit-codex-december-2026">
+  <meta property="og:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ChatGPT Business Usage Limits Change in December: The Shared ChatGPT + Codex Allowance, Explained">
+  <meta name="twitter:description" content="From December, ChatGPT and Codex share one usage allowance on Business, Plus and Pro. Here&#x27;s who feels it and what to do.">
+  <meta name="twitter:image" content="https://sayfeai.com/og-image-blog.png">
+
+  <!-- Article Metadata -->
+  <meta property="article:published_time" content="2026-11-02T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="News &amp; Trends">
+  <meta property="article:tag" content="ChatGPT Business">
+  <meta property="article:tag" content="Usage Limits">
+  <meta property="article:tag" content="Codex">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    /* Navigation */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      background: var(--yale-blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--yale-mid);
+    }
+
+    /* Article Header */
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Article Content */
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.8rem;
+      color: var(--yale-blue);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.3rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.8;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    .article-content a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .article-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Comparison Table */
+    .comparison-table-wrapper {
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 1.25rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .comparison-table th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child {
+      border-right: none;
+    }
+
+    .comparison-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-table tbody tr:nth-child(odd) {
+      background-color: var(--yale-light);
+    }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+      width: 200px;
+    }
+
+    .checkmark {
+      color: var(--success);
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    .xmark {
+      color: #ef4444;
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+      background: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box strong {
+      color: var(--yale-blue);
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .cta-section h3 {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: var(--white);
+      color: var(--yale-blue);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* FAQs */
+    .faq-section {
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--yale-light);
+      padding: 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--yale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover {
+      background: #d5dff0;
+    }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 1.25rem;
+      display: none;
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--yale-deep);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Reading Time Badge */
+    .reading-time {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Category Badge */
+    .category-badge {
+      display: inline-block;
+      background: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 {
+        font-size: 1.75rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .comparison-table {
+        font-size: 0.85rem;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 0.75rem;
+      }
+
+      .feature-label {
+        width: auto;
+      }
+
+      .article-meta {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <h1>ChatGPT Business Usage Limits Change in December: What the Shared ChatGPT + Codex Allowance Means for Your Team</h1>
+    <div class="article-meta">
+      <div class="meta-item">
+        <span>November 2, 2026</span>
+      </div>
+      <div class="meta-item">
+        <span>📖 9 min read</span>
+      </div>
+      <div class="meta-item">
+        <span>✍️ Sayfe.ai</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-container">
+    <div class="category-badge">News &amp; Trends</div>
+    <div class="reading-time">9 min read</div>
+
+    <div class="article-content">
+      <p class="disclosure" style="font-size:0.9rem;color:var(--text-gray);border-left:3px solid var(--accent);padding-left:0.75rem;"><strong>Disclosure:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. OpenAI may pay Sayfe.ai a referral commission for qualifying ChatGPT Business signups. That commission does not change your price.</p>
+
+      <p><strong>Short answer:</strong> starting in December 2026, ChatGPT Business (along with Plus and Pro) will draw ChatGPT and Codex usage from <em>one shared, token-based allowance</em> instead of separate buckets. Chats with Instant models won't count against it. Heavier models and longer agent-style tasks will burn it faster. When someone runs out, they can wait for the reset, move to a bigger seat, or use extra credits. If your team mostly uses ChatGPT for quick everyday chat, you'll barely notice. If you have one or two people living in Codex or long multi-step tasks, you need a plan before December.</p>
+
+      <p>The change was reported on November 1, 2026 by <a href="https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/" target="_blank" rel="noopener">The Decoder</a>, citing an updated OpenAI support page on ChatGPT and Codex usage limits. It lands two days after OpenAI's Codex lead, Thibault Sottiaux, said limits on Business <em>Premium</em> seats were being doubled effective October 29 (<a href="https://www.datastudios.org/post/openai-doubles-chatgpt-pro-business-premium-usage-limits-cancels-pro-200-cut" target="_blank" rel="noopener">Data Studios, Oct 30</a>). Put together, the direction is clear: OpenAI is moving away from "all-you-can-prompt" and toward a metered allowance, with bigger seats for the people who need more.</p>
+
+      <p>Here's what that means in practice for a 5-to-50 person company, who on your team will actually feel it, and a four-step plan to get ahead of it.</p>
+
+      <div class="highlight-box">
+        <strong>The 30-second version:</strong> From December, one token budget covers both ChatGPT and Codex on Business, Plus and Pro. Instant-model chats are excluded. You can check your balance and reset time in Settings. At the limit you can wait, upgrade, or buy credits. On Business, the levers are <strong>Premium seats</strong> (OpenAI says 5x the usage of Standard, no five-hour limit, weekly resets) and <strong>shared workspace credits</strong> controlled by the workspace owner. OpenAI has not published the size of the allowance or an exact start date, so plan around behavior, not numbers.
+      </div>
+
+      <h2>What Exactly Is Changing in December</h2>
+
+      <p>Until now, most people thought about ChatGPT and Codex as two separate meters. You had chat limits, and if you used Codex you had separate Codex limits (often expressed as a five-hour window plus a weekly cap). Per The Decoder's reading of OpenAI's updated help article, that split goes away in December for Plus, Pro and Business:</p>
+
+      <ul>
+        <li><strong>One budget, two products.</strong> ChatGPT and Codex usage come out of the same token-based allowance.</li>
+        <li><strong>Cost depends on the work.</strong> "More complex models and tasks eat through the budget faster." A quick reply costs very little. A long reasoning task or a big Codex job costs a lot more.</li>
+        <li><strong>Instant is free of the meter.</strong> Chats with Instant models don't count toward the budget. For a typical office team, that's the most important line in the whole change.</li>
+        <li><strong>You can see it.</strong> Balance and reset times show up in Settings.</li>
+        <li><strong>Three options at the limit:</strong> wait for the reset, upgrade, or buy extra credits.</li>
+      </ul>
+
+      <p>The Decoder's article doesn't name Free, Go or Enterprise as part of the shared budget, and it doesn't give an allowance size. We couldn't load OpenAI's help article directly for this post, so treat any specific number you see elsewhere with suspicion until OpenAI publishes it. We'll update this post when it does.</p>
+
+      <div class="warning-box">
+        <strong>Why it matters more than it sounds:</strong> a shared budget means one heavy activity can crowd out another. A teammate who spends the morning running a long Codex job may find their regular ChatGPT reasoning work slowed or capped that afternoon, even though they never "used up" chat in the old sense.
+      </div>
+
+      <h2>Before vs. After: How the Meter Works</h2>
+
+      <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+        <thead>
+          <tr style="background:var(--yale-blue);color:#fff;">
+            <th style="padding:0.75rem;text-align:left;">Question</th>
+            <th style="padding:0.75rem;text-align:left;">Before December</th>
+            <th style="padding:0.75rem;text-align:left;">From December (as reported)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:0.75rem;"><strong>How many meters?</strong></td>
+            <td style="padding:0.75rem;">ChatGPT and Codex tracked separately</td>
+            <td style="padding:0.75rem;">One shared, token-based allowance</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:0.75rem;"><strong>Quick everyday chat</strong></td>
+            <td style="padding:0.75rem;">Counted against chat limits</td>
+            <td style="padding:0.75rem;">Instant-model chats don't count</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:0.75rem;"><strong>Heavy reasoning / agent tasks</strong></td>
+            <td style="padding:0.75rem;">Counted against model-specific limits</td>
+            <td style="padding:0.75rem;">Draws down the shared budget faster</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:0.75rem;"><strong>Codex</strong></td>
+            <td style="padding:0.75rem;">Its own windows and caps</td>
+            <td style="padding:0.75rem;">Same budget as ChatGPT</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:0.75rem;"><strong>Where to check</strong></td>
+            <td style="padding:0.75rem;">Varied by product</td>
+            <td style="padding:0.75rem;">Balance and reset times in Settings</td>
+          </tr>
+          <tr>
+            <td style="padding:0.75rem;"><strong>At the limit</strong></td>
+            <td style="padding:0.75rem;">Wait, or switch models</td>
+            <td style="padding:0.75rem;">Wait for reset, upgrade, or buy credits</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Who on Your Team Will Actually Feel It</h2>
+
+      <p>Most small businesses don't have a uniform user base. They have a few power users and a lot of light ones. The shared budget hits those groups very differently.</p>
+
+      <p><strong>The light user (most of your team).</strong> Drafting emails, summarizing a PDF, rewriting a proposal paragraph, answering a quick question. If most of this runs on Instant models, it doesn't touch the budget at all. For an office manager, a sales rep or a front-desk lead, December is probably a non-event.</p>
+
+      <p><strong>The analyst or "deep work" user.</strong> The person who uploads a spreadsheet and asks for a full breakdown, runs long research questions, or chains multi-step tasks. These are the "more complex models and tasks" that burn through faster. This person may start seeing the limit for the first time.</p>
+
+      <p><strong>The builder.</strong> Anyone using Codex: your one developer, the ops person who built automations, the marketer who generates landing pages. Their Codex work and their ChatGPT work now compete for the same pool. This is who is most likely to hit the wall mid-task.</p>
+
+      <p>If you run a <a href="/consulting">consulting</a> or <a href="/marketing">marketing</a> shop, you probably have more "deep work" and "builder" users per head than a typical company, so the change matters more to you. A <a href="/legal">law firm</a> using ChatGPT mainly for drafting and summarizing will likely feel it less, unless someone is running long document-review sessions on reasoning models.</p>
+
+      <h2>Your Levers on ChatGPT Business</h2>
+
+      <p>This is where Business pulls ahead of a stack of individual Plus accounts. On Plus, each person is on their own; when they hit the limit, they wait or pay individually. On Business, the company has three tools.</p>
+
+      <h3>1. Mix Standard and Premium seats</h3>
+
+      <p>OpenAI <a href="https://openai.com/index/premium-seats-chatgpt-business/" target="_blank" rel="noopener">introduced Premium seats for ChatGPT Business</a> on August 10, 2026 and made them available on August 25. According to OpenAI, Premium seats give <strong>5x more usage than Standard</strong>, have <strong>no five-hour usage limit</strong>, and come with <strong>predictable weekly resets</strong>. You can mix Standard and Premium seats in the same workspace. And per Data Studios' account of Sottiaux's October 29 post, Business Premium limits were doubled that day.</p>
+
+      <p>The practical move: keep most people on Standard and give Premium only to the builders and heavy analysts. Check OpenAI's <a href="https://chatgpt.com/pricing" target="_blank" rel="noopener">current pricing page</a> for seat costs before you decide; we haven't quoted prices here because we couldn't verify them on that page for this post.</p>
+
+      <h3>2. Shared workspace credits</h3>
+
+      <p>OpenAI's Premium-seats announcement also says that when users hit a limit, "businesses can add shared workspace credits, managed by your workspace owner." That's the overflow valve: instead of a team member being stuck until next week, the owner can cover a spike with credits and decide who gets to use them.</p>
+
+      <h3>3. Steer routine work to Instant</h3>
+
+      <p>Because Instant-model chats don't count, the cheapest thing you can do is teach people to use Instant for routine work and save heavier models for tasks that need them. A one-page internal guide ("Instant for drafts and quick questions, reasoning models for analysis, Codex for builds") will stretch the allowance further than any seat change.</p>
+
+      <div class="highlight-box">
+        <strong>Plus vs. Business, through this lens:</strong> the shared budget arrives on both. The difference is control. Business gives you a workspace owner who can mix seat types, manage shared credits, and see who needs what, on top of the data-privacy and admin features that made Business the right call for most teams anyway. See our <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business vs. Plus</a> breakdown for the full comparison.
+      </div>
+
+      <h2>A Four-Step Plan Before December</h2>
+
+      <ol>
+        <li><strong>Find your heavy users this week.</strong> Ask who uses Codex, who runs long analysis or research tasks, and who has hit a limit before. In most 10-to-25 person teams it's two to four people.</li>
+        <li><strong>Write the "which model when" rule.</strong> One paragraph in your team chat or wiki. Instant for everyday work, reasoning models for analysis, Codex for builds. This protects the shared budget for the work that needs it.</li>
+        <li><strong>Decide on Premium for the few, not the many.</strong> If a builder is already hitting limits, they're the candidate. Don't upgrade everyone on spec; watch December usage in Settings first.</li>
+        <li><strong>Set a credit policy.</strong> Decide in advance who can request extra credits and roughly how much you're willing to spend in a month. If you've already set spend guardrails for agents (see our <a href="/blog/workspace-agents-july-6-credit-cost-survival-guide-2026">workspace agents credit guide</a>), extend the same rules here.</li>
+      </ol>
+
+      <h2>How This Compares to What Competitors Are Doing</h2>
+
+      <p>OpenAI isn't alone in moving toward metered AI. Microsoft's October 2026 Partner Center announcements say that, beginning December 1, 2026, new Microsoft 365 Copilot Business purchases move to offers that don't require a qualifying base subscription, and that promotional pricing (25% off when bundled with Business Basic, 15% off standalone for 1–300 seats on annual terms) runs through December 31, 2026 for eligible customers (<a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-october" target="_blank" rel="noopener">Microsoft Learn</a>). That makes Copilot easier to buy on its own just as ChatGPT's limits get more structured, so expect Microsoft resellers to push hard in December.</p>
+
+      <p>Anthropic, meanwhile, is courting young companies: on October 6 it expanded Claude for Startups with a free year of Claude Team (up to five premium seats) plus $1,000 in API credits for companies founded in the last five years or funded in the last two (<a href="https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/" target="_blank" rel="noopener">TechCrunch</a>).</p>
+
+      <p>Our honest take: the shared budget is a real change, but it's not a reason to switch tools. Every major vendor is converging on "a base allowance plus paid overflow." What matters is whether the tool fits your workflow and whether you can control spend. ChatGPT Business still gives you both, as long as you set it up deliberately.</p>
+
+      <h2>The Sayfe.ai Take</h2>
+
+      <p>The teams that get burned by changes like this are the ones who find out mid-deadline. The ones that do fine spend 30 minutes before the change sorting their users into light and heavy, writing a model rule, and deciding who gets Premium. It's not complicated, but it's easy to skip.</p>
+
+      <p>As an authorized OpenAI SMB Channel Partner, <strong>Sayfe.ai</strong> helps small teams set up ChatGPT Business the right way: the right seat mix, admin roles, a credit policy, and a simple usage guide your team will actually follow. For the bigger plan picture, see our <a href="/blog/chatgpt-business-pricing-2026">ChatGPT Business pricing guide</a> and our earlier look at <a href="/blog/chatgpt-business-codex-seats-cutoff-june-2026">Codex on ChatGPT Business</a>.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>When does the shared ChatGPT and Codex usage limit start?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>OpenAI&#x27;s updated help article says the change starts in December 2026 for Plus, Pro and Business, as reported by The Decoder on November 1, 2026. OpenAI has not published an exact start date or the size of the allowance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do Instant model chats count toward the new ChatGPT Business limit?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. As reported, chats with Instant models do not count toward the shared budget. Heavier models, long reasoning tasks and Codex work draw it down, and more complex tasks use it faster.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens when someone on ChatGPT Business hits the limit?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>They can wait for the reset, move to a bigger seat, or use extra credits. On Business, the workspace owner can add shared workspace credits and can mix Standard and Premium seats, which OpenAI says give 5x the usage of Standard with no five-hour limit and weekly resets.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does this change affect ChatGPT Enterprise?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>The reporting on the December change names Plus, Pro and Business. It does not name Free, Go or Enterprise. Enterprise workspaces have their own admin usage-limit controls, so check with OpenAI or your partner for Enterprise specifics.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should my whole team upgrade to Premium seats before December?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Usually not. Most small-business users do everyday work that Instant models handle, and that doesn&#x27;t count against the budget. Give Premium to the two to four people who use Codex or run long analysis tasks, then review usage in Settings after December before upgrading anyone else.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cta-section">
+        <h3>Get Your Team Ready Before December</h3>
+        <p>Sayfe.ai, an authorized OpenAI SMB Channel Partner, helps you set up ChatGPT Business with the right seat mix, a credit policy and a simple model-use guide, at no markup over OpenAI's pricing.</p>
+        <a href="/get-started" class="cta-button">Get Started Today</a>
+      </div>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an authorized OpenAI SMB Channel Partner. We help small and medium-sized businesses implement and optimize ChatGPT Business, ChatGPT Enterprise, and the OpenAI API. We're here to make enterprise AI accessible to teams of any size.
+      </p>
+    </div>
+  </article>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an authorized OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ChatGPT Business Usage Limits Change in December: The Shared ChatGPT + Codex Allowance, Explained",
+  "description": "From December 2026, ChatGPT Business, Plus and Pro draw ChatGPT and Codex usage from one shared, token-based allowance. Who on a small team will feel it, how Premium seats and workspace credits help, and a 4-step plan.",
+  "image": "https://sayfeai.com/og-image-blog.png",
+  "datePublished": "2026-11-02T00:00:00Z",
+  "dateModified": "2026-11-02T00:00:00Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Sayfe.ai",
+    "url": "https://sayfeai.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sayfe.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sayfeai.com/logo.png"
+    }
+  },
+  "articleSection": "News & Trends",
+  "keywords": "chatgpt business usage limits, chatgpt codex shared usage limit, chatgpt usage limit december 2026, chatgpt business premium seats, chatgpt business vs plus, chatgpt workspace credits",
+  "wordCount": "2101",
+  "timeRequired": "PT9M",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sayfeai.com/blog/chatgpt-business-shared-usage-limit-codex-december-2026"
+  },
+  "url": "https://sayfeai.com/blog/chatgpt-business-shared-usage-limit-codex-december-2026"
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When does the shared ChatGPT and Codex usage limit start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenAI's updated help article says the change starts in December 2026 for Plus, Pro and Business, as reported by The Decoder on November 1, 2026. OpenAI has not published an exact start date or the size of the allowance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Instant model chats count toward the new ChatGPT Business limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. As reported, chats with Instant models do not count toward the shared budget. Heavier models, long reasoning tasks and Codex work draw it down, and more complex tasks use it faster."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when someone on ChatGPT Business hits the limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They can wait for the reset, move to a bigger seat, or use extra credits. On Business, the workspace owner can add shared workspace credits and can mix Standard and Premium seats, which OpenAI says give 5x the usage of Standard with no five-hour limit and weekly resets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this change affect ChatGPT Enterprise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The reporting on the December change names Plus, Pro and Business. It does not name Free, Go or Enterprise. Enterprise workspaces have their own admin usage-limit controls, so check with OpenAI or your partner for Enterprise specifics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should my whole team upgrade to Premium seats before December?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually not. Most small-business users do everyday work that Instant models handle, and that doesn't count against the budget. Give Premium to the two to four people who use Codex or run long analysis tasks, then review usage in Settings after December before upgrading anyone else."
+      }
+    }
+  ]
+}
+  </script>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
