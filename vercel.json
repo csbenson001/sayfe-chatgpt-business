@@ -2,129 +2,431 @@
   "buildCommand": "",
   "outputDirectory": "public",
   "redirects": [
-    { "source": "/industries/healthcare", "destination": "/healthcare", "permanent": true },
-    { "source": "/industries/chiropractic", "destination": "/chiropractic", "permanent": true },
-    { "source": "/industries/manufacturing", "destination": "/manufacturing", "permanent": true },
-    { "source": "/industries/legal", "destination": "/legal", "permanent": true },
-    { "source": "/industries/consulting", "destination": "/consulting", "permanent": true },
-    { "source": "/industries/construction", "destination": "/construction", "permanent": true },
-    { "source": "/industries/real-estate", "destination": "/real-estate", "permanent": true },
-    { "source": "/industries/finance", "destination": "/finance", "permanent": true },
-    { "source": "/industries/insurance", "destination": "/insurance", "permanent": true },
-    { "source": "/industries/logistics", "destination": "/logistics", "permanent": true },
-    { "source": "/industries/retail", "destination": "/retail", "permanent": true },
-    { "source": "/industries/marketing", "destination": "/marketing", "permanent": true },
-    { "source": "/industries/education", "destination": "/education", "permanent": true },
-    { "source": "/industries/professional-services", "destination": "/professional-services", "permanent": true },
-    { "source": "/industries/nonprofit", "destination": "/nonprofit", "permanent": true },
-    { "source": "/industries/energy", "destination": "/energy", "permanent": true }
+    {
+      "source": "/industries/healthcare",
+      "destination": "/healthcare",
+      "permanent": true
+    },
+    {
+      "source": "/industries/chiropractic",
+      "destination": "/chiropractic",
+      "permanent": true
+    },
+    {
+      "source": "/industries/manufacturing",
+      "destination": "/manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/industries/legal",
+      "destination": "/legal",
+      "permanent": true
+    },
+    {
+      "source": "/industries/consulting",
+      "destination": "/consulting",
+      "permanent": true
+    },
+    {
+      "source": "/industries/construction",
+      "destination": "/construction",
+      "permanent": true
+    },
+    {
+      "source": "/industries/real-estate",
+      "destination": "/real-estate",
+      "permanent": true
+    },
+    {
+      "source": "/industries/finance",
+      "destination": "/finance",
+      "permanent": true
+    },
+    {
+      "source": "/industries/insurance",
+      "destination": "/insurance",
+      "permanent": true
+    },
+    {
+      "source": "/industries/logistics",
+      "destination": "/logistics",
+      "permanent": true
+    },
+    {
+      "source": "/industries/retail",
+      "destination": "/retail",
+      "permanent": true
+    },
+    {
+      "source": "/industries/marketing",
+      "destination": "/marketing",
+      "permanent": true
+    },
+    {
+      "source": "/industries/education",
+      "destination": "/education",
+      "permanent": true
+    },
+    {
+      "source": "/industries/professional-services",
+      "destination": "/professional-services",
+      "permanent": true
+    },
+    {
+      "source": "/industries/nonprofit",
+      "destination": "/nonprofit",
+      "permanent": true
+    },
+    {
+      "source": "/industries/energy",
+      "destination": "/energy",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/healthcare", "destination": "/industries/healthcare.html" },
-    { "source": "/chiropractic", "destination": "/industries/chiropractic.html" },
-    { "source": "/manufacturing", "destination": "/industries/manufacturing.html" },
-    { "source": "/legal", "destination": "/industries/legal.html" },
-    { "source": "/consulting", "destination": "/industries/consulting.html" },
-    { "source": "/construction", "destination": "/industries/construction.html" },
-    { "source": "/real-estate", "destination": "/industries/real-estate.html" },
-    { "source": "/finance", "destination": "/industries/finance.html" },
-    { "source": "/insurance", "destination": "/industries/insurance.html" },
-    { "source": "/logistics", "destination": "/industries/logistics.html" },
-    { "source": "/retail", "destination": "/industries/retail.html" },
-    { "source": "/marketing", "destination": "/industries/marketing.html" },
-    { "source": "/education", "destination": "/industries/education.html" },
-    { "source": "/professional-services", "destination": "/industries/professional-services.html" },
-    { "source": "/nonprofit", "destination": "/industries/nonprofit.html" },
-    { "source": "/energy", "destination": "/industries/energy.html" },
-    { "source": "/openai-smb", "destination": "/openai-smb.html" },
-    { "source": "/openai-smb-partner", "destination": "/openai-smb-partner.html" },
-    { "source": "/openai-workspace-agents", "destination": "/openai-workspace-agents.html" },
-    { "source": "/ai-agent-library", "destination": "/ai-agent-library.html" },
-    { "source": "/pricing", "destination": "/pricing.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/industries", "destination": "/industries/index.html" },
-    { "source": "/free-guide", "destination": "/free-guide.html" },
-    { "source": "/blog", "destination": "/blog/index.html" },
-    { "source": "/blog/chatgpt-small-business-guide", "destination": "/blog/chatgpt-small-business-guide.html" },
-    { "source": "/blog/chatgpt-business-vs-plus", "destination": "/blog/chatgpt-business-vs-plus.html" },
-    { "source": "/blog/ai-healthcare-practices", "destination": "/blog/ai-healthcare-practices.html" },
-    { "source": "/blog/chatgpt-for-law-firms", "destination": "/blog/chatgpt-for-law-firms.html" },
-    { "source": "/blog/ai-manufacturing-guide", "destination": "/blog/ai-manufacturing-guide.html" },
-    { "source": "/blog/chatgpt-business-roi", "destination": "/blog/chatgpt-business-roi.html" },
-    { "source": "/blog/chatgpt-real-estate-prompts", "destination": "/blog/chatgpt-real-estate-prompts.html" },
-    { "source": "/blog/ai-financial-advisors-compliance", "destination": "/blog/ai-financial-advisors-compliance.html" },
-    { "source": "/blog/chatgpt-insurance-agencies", "destination": "/blog/chatgpt-insurance-agencies.html" },
-    { "source": "/blog/chatgpt-education-schools", "destination": "/blog/chatgpt-education-schools.html" },
-    { "source": "/blog/chatgpt-retail-ecommerce", "destination": "/blog/chatgpt-retail-ecommerce.html" },
-    { "source": "/blog/chatgpt-construction-contractors", "destination": "/blog/chatgpt-construction-contractors.html" },
-    { "source": "/blog/chatgpt-consulting-firms", "destination": "/blog/chatgpt-consulting-firms.html" },
-    { "source": "/blog/chatgpt-logistics-supply-chain", "destination": "/blog/chatgpt-logistics-supply-chain.html" },
-    { "source": "/blog/chatgpt-marketing-agencies", "destination": "/blog/chatgpt-marketing-agencies.html" },
-    { "source": "/blog/chatgpt-nonprofit-organizations", "destination": "/blog/chatgpt-nonprofit-organizations.html" },
-    { "source": "/blog/chatgpt-chiropractic-practices", "destination": "/blog/chatgpt-chiropractic-practices.html" },
-    { "source": "/blog/chatgpt-business-prompts-library", "destination": "/blog/chatgpt-business-prompts-library.html" },
-    { "source": "/blog/ai-adoption-checklist-small-business", "destination": "/blog/ai-adoption-checklist-small-business.html" },
-    { "source": "/blog/chatgpt-professional-services", "destination": "/blog/chatgpt-professional-services.html" },
-    { "source": "/blog/openai-ipo-what-it-means-for-business", "destination": "/blog/openai-ipo-what-it-means-for-business.html" },
-    { "source": "/blog/chatgpt-healthcare-hipaa-2026", "destination": "/blog/chatgpt-healthcare-hipaa-2026.html" },
-    { "source": "/blog/1-million-businesses-using-chatgpt", "destination": "/blog/1-million-businesses-using-chatgpt.html" },
-    { "source": "/blog/ai-replacing-jobs-myth", "destination": "/blog/ai-replacing-jobs-myth.html" },
-    { "source": "/blog/ai-environmental-impact-honest-look", "destination": "/blog/ai-environmental-impact-honest-look.html" },
-    { "source": "/blog/chatgpt-data-privacy-security-guide", "destination": "/blog/chatgpt-data-privacy-security-guide.html" },
-    { "source": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning", "destination": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning.html" },
-    { "source": "/blog/best-ai-tools-small-business-2026", "destination": "/blog/best-ai-tools-small-business-2026.html" },
-    { "source": "/blog/chatgpt-business-setup-guide-2026", "destination": "/blog/chatgpt-business-setup-guide-2026.html" },
-    { "source": "/blog/chatgpt-business-vs-enterprise-2026", "destination": "/blog/chatgpt-business-vs-enterprise-2026.html" },
-    { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
-    { "source": "/compare/:slug", "destination": "/compare/:slug.html" },
-    { "source": "/case-studies", "destination": "/case-studies.html" },
-    { "source": "/get-started", "destination": "/get-started.html" },
-    { "source": "/faq", "destination": "/faq.html" },
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/compliance-assessment", "destination": "/compliance-assessment.html" }
+    {
+      "source": "/healthcare",
+      "destination": "/industries/healthcare.html"
+    },
+    {
+      "source": "/chiropractic",
+      "destination": "/industries/chiropractic.html"
+    },
+    {
+      "source": "/manufacturing",
+      "destination": "/industries/manufacturing.html"
+    },
+    {
+      "source": "/legal",
+      "destination": "/industries/legal.html"
+    },
+    {
+      "source": "/consulting",
+      "destination": "/industries/consulting.html"
+    },
+    {
+      "source": "/construction",
+      "destination": "/industries/construction.html"
+    },
+    {
+      "source": "/real-estate",
+      "destination": "/industries/real-estate.html"
+    },
+    {
+      "source": "/finance",
+      "destination": "/industries/finance.html"
+    },
+    {
+      "source": "/insurance",
+      "destination": "/industries/insurance.html"
+    },
+    {
+      "source": "/logistics",
+      "destination": "/industries/logistics.html"
+    },
+    {
+      "source": "/retail",
+      "destination": "/industries/retail.html"
+    },
+    {
+      "source": "/marketing",
+      "destination": "/industries/marketing.html"
+    },
+    {
+      "source": "/education",
+      "destination": "/industries/education.html"
+    },
+    {
+      "source": "/professional-services",
+      "destination": "/industries/professional-services.html"
+    },
+    {
+      "source": "/nonprofit",
+      "destination": "/industries/nonprofit.html"
+    },
+    {
+      "source": "/energy",
+      "destination": "/industries/energy.html"
+    },
+    {
+      "source": "/openai-smb",
+      "destination": "/openai-smb.html"
+    },
+    {
+      "source": "/openai-smb-partner",
+      "destination": "/openai-smb-partner.html"
+    },
+    {
+      "source": "/openai-workspace-agents",
+      "destination": "/openai-workspace-agents.html"
+    },
+    {
+      "source": "/ai-agent-library",
+      "destination": "/ai-agent-library.html"
+    },
+    {
+      "source": "/pricing",
+      "destination": "/pricing.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/industries",
+      "destination": "/industries/index.html"
+    },
+    {
+      "source": "/free-guide",
+      "destination": "/free-guide.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/chatgpt-small-business-guide",
+      "destination": "/blog/chatgpt-small-business-guide.html"
+    },
+    {
+      "source": "/blog/chatgpt-business-vs-plus",
+      "destination": "/blog/chatgpt-business-vs-plus.html"
+    },
+    {
+      "source": "/blog/ai-healthcare-practices",
+      "destination": "/blog/ai-healthcare-practices.html"
+    },
+    {
+      "source": "/blog/chatgpt-for-law-firms",
+      "destination": "/blog/chatgpt-for-law-firms.html"
+    },
+    {
+      "source": "/blog/ai-manufacturing-guide",
+      "destination": "/blog/ai-manufacturing-guide.html"
+    },
+    {
+      "source": "/blog/chatgpt-business-roi",
+      "destination": "/blog/chatgpt-business-roi.html"
+    },
+    {
+      "source": "/blog/chatgpt-real-estate-prompts",
+      "destination": "/blog/chatgpt-real-estate-prompts.html"
+    },
+    {
+      "source": "/blog/ai-financial-advisors-compliance",
+      "destination": "/blog/ai-financial-advisors-compliance.html"
+    },
+    {
+      "source": "/blog/chatgpt-insurance-agencies",
+      "destination": "/blog/chatgpt-insurance-agencies.html"
+    },
+    {
+      "source": "/blog/chatgpt-education-schools",
+      "destination": "/blog/chatgpt-education-schools.html"
+    },
+    {
+      "source": "/blog/chatgpt-retail-ecommerce",
+      "destination": "/blog/chatgpt-retail-ecommerce.html"
+    },
+    {
+      "source": "/blog/chatgpt-construction-contractors",
+      "destination": "/blog/chatgpt-construction-contractors.html"
+    },
+    {
+      "source": "/blog/chatgpt-consulting-firms",
+      "destination": "/blog/chatgpt-consulting-firms.html"
+    },
+    {
+      "source": "/blog/chatgpt-logistics-supply-chain",
+      "destination": "/blog/chatgpt-logistics-supply-chain.html"
+    },
+    {
+      "source": "/blog/chatgpt-marketing-agencies",
+      "destination": "/blog/chatgpt-marketing-agencies.html"
+    },
+    {
+      "source": "/blog/chatgpt-nonprofit-organizations",
+      "destination": "/blog/chatgpt-nonprofit-organizations.html"
+    },
+    {
+      "source": "/blog/chatgpt-chiropractic-practices",
+      "destination": "/blog/chatgpt-chiropractic-practices.html"
+    },
+    {
+      "source": "/blog/chatgpt-business-prompts-library",
+      "destination": "/blog/chatgpt-business-prompts-library.html"
+    },
+    {
+      "source": "/blog/ai-adoption-checklist-small-business",
+      "destination": "/blog/ai-adoption-checklist-small-business.html"
+    },
+    {
+      "source": "/blog/chatgpt-professional-services",
+      "destination": "/blog/chatgpt-professional-services.html"
+    },
+    {
+      "source": "/blog/openai-ipo-what-it-means-for-business",
+      "destination": "/blog/openai-ipo-what-it-means-for-business.html"
+    },
+    {
+      "source": "/blog/chatgpt-healthcare-hipaa-2026",
+      "destination": "/blog/chatgpt-healthcare-hipaa-2026.html"
+    },
+    {
+      "source": "/blog/1-million-businesses-using-chatgpt",
+      "destination": "/blog/1-million-businesses-using-chatgpt.html"
+    },
+    {
+      "source": "/blog/ai-replacing-jobs-myth",
+      "destination": "/blog/ai-replacing-jobs-myth.html"
+    },
+    {
+      "source": "/blog/ai-environmental-impact-honest-look",
+      "destination": "/blog/ai-environmental-impact-honest-look.html"
+    },
+    {
+      "source": "/blog/chatgpt-data-privacy-security-guide",
+      "destination": "/blog/chatgpt-data-privacy-security-guide.html"
+    },
+    {
+      "source": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning",
+      "destination": "/blog/microsoft-copilot-meltdown-why-chatgpt-business-winning.html"
+    },
+    {
+      "source": "/blog/best-ai-tools-small-business-2026",
+      "destination": "/blog/best-ai-tools-small-business-2026.html"
+    },
+    {
+      "source": "/blog/chatgpt-business-setup-guide-2026",
+      "destination": "/blog/chatgpt-business-setup-guide-2026.html"
+    },
+    {
+      "source": "/blog/chatgpt-business-vs-enterprise-2026",
+      "destination": "/blog/chatgpt-business-vs-enterprise-2026.html"
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/blog/:slug.html"
+    },
+    {
+      "source": "/compare/:slug",
+      "destination": "/compare/:slug.html"
+    },
+    {
+      "source": "/case-studies",
+      "destination": "/case-studies.html"
+    },
+    {
+      "source": "/get-started",
+      "destination": "/get-started.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/compliance-assessment",
+      "destination": "/compliance-assessment.html"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)\\.html",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
       ]
     },
     {
       "source": "/downloads/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     },
     {
       "source": "/llms.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
       ]
     },
     {
       "source": "/llms-full.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
-  ]
+  ],
+  "cleanUrls": true
 }
