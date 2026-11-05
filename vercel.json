@@ -428,5 +428,11 @@
       ]
     }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "crons": [
+    {
+      "path": "/api/followup",
+      "schedule": "0 15 * * *"
+    }
+  ]
 }

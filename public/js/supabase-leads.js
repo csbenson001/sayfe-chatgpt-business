@@ -2,11 +2,10 @@
  * Sayfe.ai Lead Capture Module
  * Connects all site forms to Supabase
  *
- * SETUP: Replace SUPABASE_URL and SUPABASE_ANON_KEY with your actual values
+ * All submissions go through /api/lead (server-side validation, bot checks, scoring).
+ * No database credentials live in this file.
  */
 
-const SUPABASE_URL = 'https://pivhfcdvimwerxluxjnd.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdmhmY2R2aW13ZXJ4bHV4am5kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5MTU5ODIsImV4cCI6MjA4OTQ5MTk4Mn0.skzOowU4Tshy9PRN62ELaxGUxmmSpr-zQ5sPiiazsmI';
 
 /**
  * Submit a lead to Supabase
@@ -23,56 +22,61 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
  * @returns {Promise<{success: boolean, error?: string}>}
  */
 async function submitLead(leadData) {
-  // Don't submit if Supabase isn't configured yet
-  if (SUPABASE_URL === 'YOUR_SUPABASE_URL') {
-    console.log('[Sayfe.ai] Supabase not configured yet. Lead data:', leadData);
-    return { success: true, message: 'Demo mode - Supabase not configured' };
-  }
-
   try {
-    const response = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
+    const hp = document.querySelector('input[name="hp_url"]');
+    const payload = {
+      email: leadData.email,
+      name: leadData.name || null,
+      company: leadData.company || null,
+      industry: leadData.industry || null,
+      team_size: leadData.team_size || null,
+      phone: leadData.phone || null,
+      message: leadData.message || null,
+      source: leadData.source || window.location.pathname,
+      form_type: leadData.form_type || 'unknown',
+      referrer: document.referrer || null,
+      page_url: window.location.href,
+      hp_url: hp ? hp.value : '',
+      turnstile_token: (window.__sayfeTurnstileToken || null)
+    };
+    const response = await fetch('/api/lead', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'apikey': SUPABASE_ANON_KEY,
-        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        'Prefer': 'return=minimal'
-      },
-      body: JSON.stringify({
-        email: leadData.email,
-        name: leadData.name || null,
-        company: leadData.company || null,
-        industry: leadData.industry || null,
-        team_size: leadData.team_size || null,
-        phone: leadData.phone || null,
-        message: leadData.message || null,
-        source: leadData.source || window.location.pathname,
-        form_type: leadData.form_type || 'unknown',
-        referrer: document.referrer || null,
-        page_url: window.location.href,
-        user_agent: navigator.userAgent,
-        created_at: new Date().toISOString()
-      })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
     });
-
-    if (response.ok || response.status === 201) {
-      // Send email notification (fire and forget — don't block the UI)
-      fetch('/api/notify', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(leadData)
-      }).catch(() => {}); // Silently fail if notification fails
+    if (response.ok) {
       return { success: true };
-    } else {
-      const errorText = await response.text();
-      console.error('[Sayfe.ai] Supabase error:', response.status, errorText);
-      return { success: false, error: `Server error: ${response.status}` };
     }
+    if (response.status === 429) return { success: false, error: 'Too many requests. Please try again later.' };
+    const errorText = await response.text();
+    console.error('[Sayfe.ai] Lead API error:', response.status, errorText);
+    return { success: false, error: 'Please check your email address and try again.' };
   } catch (err) {
     console.error('[Sayfe.ai] Network error:', err);
     return { success: false, error: 'Network error. Please try again.' };
   }
 }
+
+// Honeypot: an off-screen field humans never see. Bots that fill every input reveal themselves.
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('form').forEach(function (f) {
+    if (f.querySelector('input[name="hp_url"]')) return;
+    const i = document.createElement('input');
+    i.type = 'text'; i.name = 'hp_url'; i.tabIndex = -1; i.autocomplete = 'off'; i.setAttribute('aria-hidden', 'true');
+    i.style.cssText = 'position:absolute;left:-9999px;top:-9999px;height:0;width:0;opacity:0';
+    f.appendChild(i);
+  });
+  // Cloudflare Turnstile (optional): set window.SAYFE_TURNSTILE_SITE_KEY before this script to enable.
+  if (window.SAYFE_TURNSTILE_SITE_KEY) {
+    const s = document.createElement('script');
+    s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; s.async = true;
+    s.onload = function () {
+      const d = document.createElement('div'); d.style.display = 'none'; document.body.appendChild(d);
+      window.turnstile.render(d, { sitekey: window.SAYFE_TURNSTILE_SITE_KEY, size: 'invisible', callback: function (t) { window.__sayfeTurnstileToken = t; } });
+    };
+    document.head.appendChild(s);
+  }
+});
 
 /**
  * Subscribe to newsletter (email only)

@@ -77,9 +77,9 @@ module.exports = async function handler(req, res) {
       </head>
       <body>
         <div class="card">
-          <h1>Your 20%-off setup link is on the way</h1>
-          <p>OpenAI is issuing updated partner links the week of November 6, 2026 with its new promotion: 20% off up to five ChatGPT Business Standard seats for 48 months. Leave your details and we'll send your link, with the promotion attached, the moment it's active. Creating a workspace direct at chatgpt.com in the meantime would mean paying full price.</p>
-          <a href="https://sayfeai.com/#get-started">Submit Interest Form</a>
+          <h1>Get your 20%-off setup link</h1>
+          <p>OpenAI's partner promotion, 20% off up to five ChatGPT Business Standard seats for 48 months, is issued as a personal, single-use setup link. Request yours below: confirm your email, we review it within one business day, and your link arrives by email. Creating a workspace direct at chatgpt.com means paying full price.</p>
+          <a href="https://sayfeai.com/get-started">Request my setup link</a>
         </div>
       </body>
       </html>
