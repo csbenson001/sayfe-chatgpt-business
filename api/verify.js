@@ -10,7 +10,10 @@ module.exports = async function handler(req, res) {
     if (!rows.length) return res.status(404).send(G.page('Not found', '<h1>We couldn\'t find that request</h1><p>Please request again from the site.</p><a class="btn" href="/get-started">Back to Get Started</a>'));
     const lead = rows[0];
     if (lead.status === 'new') {
-      await G.sbJson(`leads?id=eq.${lead.id}`, { method: 'PATCH', headers: { 'Prefer': 'return=minimal' }, body: JSON.stringify({ status: 'verified', verified_at: new Date().toISOString() }) });
+      const hour = new Date(Date.now() - 3600e3).toISOString();
+      const recent = await G.sbCount(`leads?verified_at=gte.${hour}`);
+      const newStatus = recent >= 20 ? 'suspect' : 'verified'; // circuit breaker: mass verification = catch-all mailbox automation
+      await G.sbJson(`leads?id=eq.${lead.id}`, { method: 'PATCH', headers: { 'Prefer': 'return=minimal' }, body: JSON.stringify({ status: newStatus, verified_at: new Date().toISOString() }) });
       await G.sbJson('code_events', { method: 'POST', headers: { 'Prefer': 'return=minimal' }, body: JSON.stringify({ lead_id: lead.id, event: 'verified', actor: 'customer' }) });
     }
     const msg = lead.status === 'issued' ? 'Your setup link has already been sent. Check your inbox (and spam folder).' : 'We review requests within one business day and email your setup link with OpenAI\'s partner promotion applied: 20% off up to five ChatGPT Business Standard seats for 48 months.';

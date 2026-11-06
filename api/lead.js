@@ -25,7 +25,10 @@ module.exports = async function handler(req, res) {
   // 1. Honeypot: bots fill every field. Pretend success, store nothing.
   if (b.hp_url || b.website_url_confirm) return res.status(200).json({ ok: true });
   // 2. Browser required.
-  if (!ua || ua.length < 20) return res.status(400).json({ error: 'bad request' });
+  if (!ua || ua.length < 20 || !G.BROWSER_UA.test(ua)) return res.status(400).json({ error: 'bad request' });
+  const origin = req.headers['origin'] || '';
+  if (origin && origin !== G.SITE) return res.status(403).json({ error: 'forbidden' });
+  if (!origin && !(req.headers['referer'] || '').startsWith(G.SITE)) return res.status(403).json({ error: 'forbidden' });
   // 3. Email.
   const email = String(b.email || '').trim().toLowerCase();
   if (!EMAIL_RE.test(email) || email.length > 254) return res.status(400).json({ error: 'valid email required' });
@@ -40,6 +43,11 @@ module.exports = async function handler(req, res) {
     const day = new Date(Date.now() - 86400e3).toISOString();
     const emailCount = await G.sbCount(`leads?email=eq.${encodeURIComponent(email)}&created_at=gte.${day}&status=neq.rejected`);
     if (emailCount >= 1) return res.status(200).json({ ok: true, duplicate: true });
+    if (domClass === 'business') {
+      const week = new Date(Date.now() - 7 * 86400e3).toISOString();
+      const domCount = await G.sbCount(`leads?email=like.${encodeURIComponent('*@' + dom)}&created_at=gte.${week}`);
+      if (domCount >= 3) { b.__domain_cap = domCount; }
+    }
   } catch (e) { console.error('ratelimit lookup failed', e.message); }
 
   // 5. Turnstile (only enforced when configured).
@@ -66,7 +74,8 @@ module.exports = async function handler(req, res) {
   if (message.length >= 40 && message.length <= 600) {
     try { const dup = await G.sbCount(`leads?message=eq.${encodeURIComponent(message)}`); flags.message_dup = dup; if (dup === 0) score += 10; else score -= 20; } catch (_) {}
   }
-  if (country === 'US' || country === 'CA') score += 10; else if (country) flags.non_us = true;
+  if (country === 'US' || country === 'CA') score += 10; else if (country) { flags.non_us = true; score -= 15; }
+  if (b.__domain_cap) { flags.domain_cap = b.__domain_cap; score -= 100; }
   if (!flags.referrer_fb) score += 10; else score -= 10;
   if (turnstile === 'passed') score += 10; else if (turnstile === 'failed') score -= 40;
   const status = score < 0 ? 'rejected' : 'new';

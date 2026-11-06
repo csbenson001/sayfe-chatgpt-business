@@ -11,8 +11,9 @@ const FROM = 'Sayfe.ai <onboarding@onboarding.sayfe.ai>';
 const REPLY_TO = process.env.NOTIFY_EMAIL || 'csbenson001@gmail.com';
 
 const WEBMAIL = new Set(['gmail.com','yahoo.com','hotmail.com','outlook.com','live.com','aol.com','icloud.com','me.com','msn.com','proton.me','protonmail.com','zohomail.com','zoho.com','qq.com','163.com','126.com','yandex.com','mail.com','gmx.com','ymail.com']);
-const BLOCKLIST = ['joinnepi.org','amazo.de5.net','nidi.cc.cd','nvdi.us.ci','bookskidssucceed.org','aefde.org','pkppkq.bond','gihb.cc.cd','aemzon.cc.cd','dpdns.org'];
-const BLOCK_TLD = /\.(cd|ci|bond|xyz|top|icu|cfd|sbs|buzz|click|rest)$/i;
+const BLOCKLIST = ['joinnepi.org','amazo.de5.net','nidi.cc.cd','nvdi.us.ci','bookskidssucceed.org','aefde.org','pkppkq.bond','gihb.cc.cd','aemzon.cc.cd','dpdns.org','it.com','sub2api.it.com','eiben.it.com','mysuperlee.me','querynara.com','metriforgeworks.com','firmaxonapp.com','prismavellabs.com','sensinya.com','cogniferraai.com','deaptos.com','novusu.uk','lk1950.online'];
+const BLOCK_TLD = /\.(cd|ci|bond|xyz|top|icu|cfd|sbs|buzz|click|rest|online|site|shop|store|me)$/i;
+const BROWSER_UA = /Mozilla\/5\.0 .*(Chrome|Safari|Firefox|Edg|OPR|CriOS|FxiOS)\//;
 const DISPOSABLE = /(mailinator|guerrillamail|10minutemail|tempmail|temp-mail|yopmail|trashmail|sharklasers|getnada|dispostable|fakeinbox|maildrop|throwaway)/i;
 
 function sb(path, opts = {}) {
@@ -57,4 +58,4 @@ function page(title, body) {
 <body><div class="card">${body}</div></body></html>`;
 }
 
-module.exports = { sb, sbJson, sbCount, sendEmail, esc, adminOk, clientIp, domainOf, classifyDomain, page, SITE, WEBMAIL };
+module.exports = { BROWSER_UA, sb, sbJson, sbCount, sendEmail, esc, adminOk, clientIp, domainOf, classifyDomain, page, SITE, WEBMAIL };
