@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT for Solo Attorneys: Intake, Engagement Letters and Conflict Checks Without Putting Client Data at Risk | Sayfe.ai</title>
+  <meta name="description" content="Can a solo attorney use ChatGPT Business? What ABA, Florida and NYC bar guidance says about AI intake, engagement letters and conflicts, a no-client-data workflow, and the 20% partner-promotion math for 2–5 seats.">
+  <meta name="keywords" content="chatgpt for solo attorney, chatgpt business for solo attorney, chatgpt for law firms, chatgpt client intake lawyer, ai engagement letter, ai conflict check, is chatgpt confidential for lawyers">
+  <meta name="author" content="Sayfe.ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayfeai.com/blog/chatgpt-for-solo-attorneys-intake-engagement-letters-conflict-checks-2026">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ChatGPT for Solo Attorneys: Intake, Engagement Letters and Conflict Checks Without Putting Client Data at Risk">
+  <meta property="og:description" content="Can a solo attorney use ChatGPT Business? What ABA, Florida and NYC bar guidance says about AI intake, engagement letters and conflicts, a no-client-data workflow, and the 20% partner-promotion math for 2–5 seats.">
+  <meta property="og:url" content="https://sayfeai.com/blog/chatgpt-for-solo-attorneys-intake-engagement-letters-conflict-checks-2026">
+  <meta property="og:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="og:site_name" content="Sayfe.ai">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ChatGPT for Solo Attorneys: Intake, Engagement Letters and Conflict Checks Without Putting Client Data at Risk">
+  <meta name="twitter:description" content="Can a solo attorney use ChatGPT Business? What ABA, Florida and NYC bar guidance says about AI intake, engagement letters and conflicts, a no-client-data workflow, and the 20% partner-promotion math for 2–5 seats.">
+  <meta name="twitter:image" content="https://sayfeai.com/og-image-blog.png">
+  <meta property="article:published_time" content="2026-11-08T00:00:00Z">
+  <meta property="article:author" content="Sayfe.ai">
+  <meta property="article:section" content="Legal">
+  <meta property="article:tag" content="ChatGPT Business">
+  <meta property="article:tag" content="Law Firms">
+  <meta property="article:tag" content="Solo Attorneys">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --yale-blue: #0f3460;
+      --yale-deep: #0a2240;
+      --yale-mid: #1a4a7a;
+      --yale-light: #e8eef6;
+      --accent: #2d8cf0;
+      --text-dark: #1a1a1a;
+      --text-gray: #666;
+      --border: #ddd;
+      --success: #10b981;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    /* Navigation */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--yale-blue);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      background: var(--yale-blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--yale-mid);
+    }
+
+    /* Article Header */
+    .article-header {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .article-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Article Content */
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.8rem;
+      color: var(--yale-blue);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.3rem;
+      color: var(--yale-mid);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.8;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content strong {
+      color: var(--yale-blue);
+      font-weight: 600;
+    }
+
+    .article-content a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .article-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Comparison Table */
+    .comparison-table-wrapper {
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 1.25rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .comparison-table th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child {
+      border-right: none;
+    }
+
+    .comparison-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-table tbody tr:nth-child(odd) {
+      background-color: var(--yale-light);
+    }
+
+    .feature-label {
+      font-weight: 600;
+      color: var(--yale-blue);
+      width: 200px;
+    }
+
+    .checkmark {
+      color: var(--success);
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    .xmark {
+      color: #ef4444;
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+      background: var(--yale-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box strong {
+      color: var(--yale-blue);
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--yale-blue) 0%, var(--yale-mid) 100%);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .cta-section h3 {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: var(--white);
+      color: var(--yale-blue);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* FAQs */
+    .faq-section {
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: var(--yale-light);
+      padding: 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--yale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover {
+      background: #d5dff0;
+    }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 1.25rem;
+      display: none;
+      background: var(--white);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--yale-deep);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Reading Time Badge */
+    .reading-time {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Category Badge */
+    .category-badge {
+      display: inline-block;
+      background: var(--yale-light);
+      color: var(--yale-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 {
+        font-size: 1.75rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .comparison-table {
+        font-size: 0.85rem;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 0.75rem;
+      }
+
+      .feature-label {
+        width: auto;
+      }
+
+      .article-meta {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Sayfe.ai</a>
+      <ul class="nav-links">
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/get-started" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header class="article-header">
+    <h1>ChatGPT for Solo Attorneys: Intake, Engagement Letters and Conflict Checks Without Putting Client Data at Risk</h1>
+    <div class="article-meta">
+      <div class="meta-item">
+        <span>November 8, 2026</span>
+      </div>
+      <div class="meta-item">
+        <span>📖 9 min read</span>
+      </div>
+      <div class="meta-item">
+        <span>✍️ Sayfe.ai</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-container">
+    <div class="category-badge">Legal</div>
+    <div class="reading-time">9 min read</div>
+
+    <div class="article-content">
+      <p class="disclosure" style="font-size:0.9rem;color:var(--text-gray);border-left:3px solid var(--accent);padding-left:0.75rem;"><strong>Disclosure:</strong> Sayfe.ai is an OpenAI SMB Channel Partner. OpenAI may pay Sayfe.ai a referral commission for qualifying ChatGPT Business signups. The promotion described here is set by OpenAI; it is not a Sayfe.ai discount, and it does not change what Sayfe.ai earns. This article is general information, not legal or ethics advice. Check your own jurisdiction's rules and opinions.</p>
+
+      <p><strong>Short answer:</strong> yes, a solo attorney can use ChatGPT Business for intake, engagement letters and the paperwork around conflict checks, and for most solos it is the right tier. The trick is to use it on the <em>process</em>, not the client file. Draft your intake questionnaire, your engagement letter templates and your conflict-check workflow in ChatGPT. Run the actual client names, adverse parties and facts through the systems you already use for that. The bar opinions written so far line up behind that split. The New York City Bar's Formal Opinion 2024-5 says plainly: "Consent is not needed if no confidential client information is shared."</p>
+
+      <p>Solos ask us this more than any other group of lawyers, because they have no IT department and no general counsel's office to lean on. You are the managing partner, the ethics officer and the person who answers the intake line. This guide covers what the published opinions say about each of those three jobs, a workflow you can set up in an afternoon, what to keep out of ChatGPT, and what a workspace costs a solo with a paralegal or assistant.</p>
+
+      <h2>What the Bar Opinions Say About Intake, Engagement Letters and Conflicts</h2>
+
+      <p>Most state guidance applies existing rules rather than creating new ones. Three sources, all read on November 8, 2026, speak most directly to a solo's daily work:</p>
+
+      <ul>
+        <li><strong>ABA Formal Opinion 512 (July 2024).</strong> The <a href="https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/" target="_blank" rel="noopener">ABA's announcement</a> says a lawyer using generative AI must keep client information confidential "unless the client gives informed consent," that other rules "extend similar protections to former and prospective clients' information," and that "in most circumstances, the lawyer cannot charge a client for learning how to work a GAI tool."</li>
+        <li><strong>Florida Bar Ethics Opinion 24-1 (January 19, 2024).</strong> The <a href="https://www.floridabar.org/etopinions/opinion-24-1/" target="_blank" rel="noopener">opinion</a> says that if using a generative AI program "does not involve the disclosure of confidential information to a third-party, a lawyer is not required to obtain a client's informed consent." Where it does, the opinion says "it is recommended" that the lawyer get informed consent first. It also covers website intake chatbots and fees, discussed below.</li>
+        <li><strong>New York City Bar Formal Opinion 2024-5 (August 2024).</strong> The <a href="https://www.nycbar.org/wp-content/uploads/2024/08/20221329_GenerativeAILawPractice.pdf" target="_blank" rel="noopener">opinion</a> says a lawyer must not put confidential information into any generative AI system "that lacks adequate confidentiality and security protections" unless the client has given informed consent, and that a lawyer should "avoid entering details that can be used to identify the client." On conflicts, it says a firm "must ensure that the system implements any ethical screens required under the Rules."</li>
+      </ul>
+
+      <p>California's 2026 guidance goes further on consent. We covered it, along with Alabama's Formal Opinion 2026-01, in <a href="/blog/is-chatgpt-confidential-for-lawyers-chatgpt-business-2026">Is ChatGPT Confidential for Lawyers?</a> If you practice in California, read that post first.</p>
+
+      <div class="highlight-box">
+        <strong>The practical line for a solo:</strong> the opinions above care about one thing more than any other, which is whether confidential client information goes into the tool. Templates, checklists, questionnaires and workflows contain none. Build those in ChatGPT Business and keep client facts in your practice-management and conflict systems, and most of the consent question never comes up.
+      </div>
+
+      <h2>Client Intake: Use ChatGPT to Build the Form, Not to Run the Interview</h2>
+
+      <p>Intake is where solos lose the most unbilled time, and it is also where the opinions are most specific. Florida's opinion notes that "law firms increasingly utilize website chatbots for client intake," and warns that a prospective-client relationship, "or even a lawyer-client relationship," can be created without the lawyer's knowledge. It says a lawyer "must inform prospective clients that they are communicating with an AI program," and that chatbots "must include a disclaimer indicating that the chatbot is an AI program and not a lawyer or employee of the law firm." The NYC opinion adds that a lawyer using a generative AI chatbot for intake "must adequately supervise the chatbot."</p>
+
+      <p>Putting ChatGPT itself on your website is not what ChatGPT Business is for, and for most solos the supervision burden is not worth it. Use it behind the scenes instead:</p>
+
+      <ul>
+        <li><strong>Intake questionnaires by practice area.</strong> Ask for a first-call questionnaire for an uncontested divorce, a landlord-tenant defense matter or a small-business formation, then edit it into your standard. Ask for a Spanish version and a plain-language version.</li>
+        <li><strong>Screening scripts for your assistant.</strong> A short phone script that collects the names needed for a conflict check before any facts, tells callers the firm has not agreed to represent them, and avoids giving legal advice. That order matters, because the ABA notes that protections extend to prospective clients' information.</li>
+        <li><strong>Non-engagement and declination letters.</strong> Templates that make clear no attorney-client relationship was formed and flag that deadlines may apply. You fill in names and dates in your own system.</li>
+        <li><strong>Follow-up email sequences.</strong> Document request lists, appointment confirmations and "what to bring to your consultation" emails, written once and reused.</li>
+      </ul>
+
+      <p>What does not go into ChatGPT: the caller's name, the other side's name, and the story they just told you. If you want help analyzing a new matter, describe it without identifiers (Florida and NYC both treat that as the line), or wait until you have the client's informed consent.</p>
+
+      <h2>Engagement Letters: Draft the Template, Then Add an AI Paragraph</h2>
+
+      <p>Engagement letters are the best use of ChatGPT in a solo practice because the work is drafting, and the drafts contain no client information until you fill them in. A workable approach:</p>
+
+      <ol>
+        <li><strong>Build a master template per matter type.</strong> Scope of representation, what is excluded, fee structure, retainer and replenishment terms, file retention, termination and communication expectations. Ask ChatGPT to compare your current letter against a checklist of those items and point out gaps, using a copy with client details removed.</li>
+        <li><strong>Add a short AI-use paragraph.</strong> The NYC opinion says a lawyer "should consider disclosing to the client the intent to use Generative AI," particularly when explaining fees. A sentence or two saying the firm uses AI tools under business terms that exclude training on firm data, that a lawyer reviews all work product, and that the client can ask the firm not to use AI on their matter is a reasonable start.</li>
+        <li><strong>Do not treat that paragraph as consent for everything.</strong> None of the three opinions says a general clause is enough to put confidential information into an AI tool. NYC says consent must be "knowing" and the client must understand the consequences. If a matter calls for putting identifiable client facts into ChatGPT, have that conversation separately and document it.</li>
+        <li><strong>Get the fee language right.</strong> Florida's opinion says a lawyer must inform a client, "preferably in writing," before charging the actual cost of using generative AI, and that a lawyer "may not ethically prorate the periodic charges" of a subscription and should treat them as overhead. NYC says a lawyer "must not charge hourly fees for the time that would otherwise have been spent" without AI. For a solo on a $40-a-month workspace, the simple answer is overhead.</li>
+      </ol>
+
+      <h2>Conflict Checks: ChatGPT Is Not Your Conflicts Database</h2>
+
+      <p>A conflict check is a search of names against your own records. ChatGPT Business does not hold your client list, and you should not paste one into it. The NYC opinion's requirement that AI systems implement "any ethical screens required under the Rules" is aimed at firms that build tools on top of their own data. For a solo, the safer reading is to keep conflicts in your practice-management software or your existing spreadsheet, and use ChatGPT to improve the process around it:</p>
+
+      <ul>
+        <li><strong>A written conflict-check procedure.</strong> When it runs (before the consultation, not after), which names you search (client, spouse, opposing party, opposing counsel, related entities, key witnesses), how you record the result, and who signs off.</li>
+        <li><strong>A related-parties checklist by matter type.</strong> For a business dispute: owners, officers, parent and subsidiary companies, former names. For an estate: heirs, beneficiaries and fiduciaries. ChatGPT is good at listing who you might forget to search.</li>
+        <li><strong>Spreadsheet help.</strong> If your conflicts list lives in Excel, ask for formulas that flag near-matches or alternate spellings, using made-up sample names to build them. See our guide to <a href="/blog/chatgpt-excel-google-sheets-small-business-2026">ChatGPT in Excel and Google Sheets</a>.</li>
+        <li><strong>Waiver and disclosure letter templates.</strong> Drafts for the situations you see repeatedly, which you then adapt and send from your own system.</li>
+      </ul>
+
+      <h2>Why a Business Workspace, and What It Does Not Do</h2>
+
+      <p>The confidentiality questions in the opinions are about the tool's terms, so the plan matters. OpenAI's <a href="https://openai.com/business-data/" target="_blank" rel="noopener">business data page</a>, read November 8, 2026, says: "By default, we do not use data from ChatGPT Enterprise, ChatGPT Business, ChatGPT Edu" and other business products for training, and that data is encrypted using "AES-256 encryption at rest and TLS 1.2 or higher in transit." It also says the organization's data remains "entirely owned by you." Consumer accounts work differently, which is why a solo's paralegal should never use a personal account for firm work.</p>
+
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+      <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+        <thead>
+          <tr style="background:var(--yale-blue);color:#fff;">
+            <th style="padding:0.75rem;text-align:left;">Task</th>
+            <th style="padding:0.75rem;text-align:left;">Fine in ChatGPT Business</th>
+            <th style="padding:0.75rem;text-align:left;">Keep in your own systems</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:0.75rem;">Intake</td><td style="padding:0.75rem;">Questionnaires, phone scripts, declination templates</td><td style="padding:0.75rem;">Caller names, adverse parties, the facts they shared</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:0.75rem;">Engagement letters</td><td style="padding:0.75rem;">Master templates, gap checks on a scrubbed copy, AI-use paragraph</td><td style="padding:0.75rem;">Signed letters, fee terms for a named client</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:0.75rem;">Conflict checks</td><td style="padding:0.75rem;">Procedure, related-party checklists, formulas built on fake names</td><td style="padding:0.75rem;">Your client and adverse-party list, search results</td></tr>
+          <tr><td style="padding:0.75rem;">Matter work</td><td style="padding:0.75rem;">Fact patterns described without identifiers</td><td style="padding:0.75rem;">Identifiable client facts, unless the client has given informed consent</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p>Be honest about the limits. OpenAI's help article <a href="https://help.openai.com/en/articles/8792828" target="_blank" rel="noopener">"What is ChatGPT Business?"</a> says that if you need "Zero Data Retention, BAAs, or other sales-led options," you should "use a contracted offering instead of self-serve ChatGPT Business." If a client's outside counsel guidelines require zero retention, or you handle health records as a business associate, Business is not enough for that matter. And ChatGPT is not a citator: read every case before you cite it. For the full list of workflows, see <a href="/blog/chatgpt-for-law-firms">how law firms use ChatGPT</a>.</p>
+
+      <h2>What ChatGPT Business Costs a Solo Practice</h2>
+
+      <p>OpenAI's help article, read November 8, 2026, says that "for most countries, pricing (USD) is $25 per user per month if billed monthly and $20 per user per month if billed annually," with a minimum of two standard seats. For a solo, that usually means one seat for you and one for a paralegal or assistant. Since November 2, 2026, OpenAI's partner promotion takes 20% off up to five ChatGPT Business Standard seats for 48 months. It is applied only through an OpenAI SMB Channel Partner's referral link, such as Sayfe.ai's, and is not available buying direct at chatgpt.com. OpenAI's examples use monthly Standard seats:</p>
+
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+      <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
+        <thead>
+          <tr style="background:var(--yale-blue);color:#fff;">
+            <th style="padding:0.75rem;text-align:left;">Practice size</th>
+            <th style="padding:0.75rem;text-align:left;">List price / month</th>
+            <th style="padding:0.75rem;text-align:left;">Through Sayfe.ai's partner link</th>
+            <th style="padding:0.75rem;text-align:left;">Saved over 48 months</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:0.75rem;">Solo + paralegal (2 seats)</td><td style="padding:0.75rem;">$50</td><td style="padding:0.75rem;"><strong>$40</strong></td><td style="padding:0.75rem;">$480</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:0.75rem;">Solo + paralegal + receptionist (3 seats)</td><td style="padding:0.75rem;">$75</td><td style="padding:0.75rem;"><strong>$60</strong></td><td style="padding:0.75rem;">$720</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:0.75rem;">4 seats</td><td style="padding:0.75rem;">$100</td><td style="padding:0.75rem;"><strong>$80</strong></td><td style="padding:0.75rem;">$960</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:0.75rem;">5 seats</td><td style="padding:0.75rem;">$125</td><td style="padding:0.75rem;"><strong>$100</strong></td><td style="padding:0.75rem;">$1,200</td></tr>
+          <tr><td style="padding:0.75rem;">6 seats (5 discounted + 1 at list)</td><td style="padding:0.75rem;">$150</td><td style="padding:0.75rem;"><strong>$125</strong></td><td style="padding:0.75rem;">$1,200</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p>The promotion math covers monthly Standard seats, which is what OpenAI's examples show. If you are weighing annual billing, ask us to confirm the figure at checkout before you commit, because we will not quote numbers OpenAI has not published. Sayfe.ai adds no markup. Full details are in our <a href="/blog/chatgpt-business-20-percent-off-partner-promotion-2026">guide to the 20% partner promotion</a>, and our <a href="/blog/chatgpt-business-vs-plus">ChatGPT Business vs. Plus comparison</a> explains why a Plus account is the wrong tool for client work. Our <a href="/legal">legal practice page</a> shows how we set up workspaces for law firms.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can a solo attorney use ChatGPT for client intake?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, to build the intake process: questionnaires, phone scripts and declination letters contain no client information. Be careful with AI chatbots that talk to prospective clients directly. Florida Bar Ethics Opinion 24-1 says prospective clients must be told they are communicating with an AI program, and NYC Bar Formal Opinion 2024-5 says a lawyer using a chatbot for intake must adequately supervise it.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need client consent to use ChatGPT on a matter?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not if no confidential information goes in. The NYC Bar's Formal Opinion 2024-5 says consent is not needed if no confidential client information is shared, and Florida's Opinion 24-1 says the same when nothing confidential is disclosed to a third party. If you want to enter identifiable client facts, get informed consent first and check your own jurisdiction; California's 2026 guidance is stricter.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is an AI paragraph in my engagement letter enough?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>It is a good disclosure, but none of the ABA, Florida or NYC guidance says a general clause is enough consent to put confidential information into an AI tool. NYC says advance consent must be knowing and the client must understand the consequences. Use the paragraph to explain how the firm uses AI, and have a separate conversation if a matter calls for entering client details.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can ChatGPT run my conflict checks?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. A conflict check searches names against your own client records, and those should stay in your practice-management software or conflicts list. Use ChatGPT to write the conflict-check procedure, related-party checklists by matter type, spreadsheet formulas built on sample names, and waiver letter templates.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How much does ChatGPT Business cost for a solo attorney?</span>
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>OpenAI lists $25 per user per month billed monthly or $20 billed annually in most countries, with a two-seat minimum, so most solos buy two seats. Through an OpenAI SMB Channel Partner's referral link, OpenAI's partner promotion takes 20% off up to five Standard seats for 48 months, so two monthly seats cost $40 instead of $50. Buying direct at chatgpt.com does not include the promotion.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h3>Set Up Your Practice's Workspace for 20% Less</h3>
+        <p>Through Sayfe.ai's partner link, OpenAI's partner promotion takes 20% off up to five ChatGPT Business Standard seats for 48 months. You also get admin setup, an onboarding call and a starter AI-use policy for your practice at no charge.</p>
+        <a href="/get-started" class="cta-button">Get Started Today</a>
+      </div>
+
+      <p style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-gray);">
+        <strong>About Sayfe.ai:</strong> Sayfe.ai is an OpenAI SMB Channel Partner. We help small and medium-sized businesses, including solo and small law practices, implement and get value from ChatGPT Business. Sources for this article were read on November 8, 2026.
+      </p>
+    </div>
+  </article>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sayfe.ai. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">Sayfe.ai is an OpenAI SMB Channel Partner.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ChatGPT for Solo Attorneys: Intake, Engagement Letters and Conflict Checks Without Putting Client Data at Risk",
+  "description": "Can a solo attorney use ChatGPT Business? What ABA, Florida and NYC bar guidance says about AI intake, engagement letters and conflicts, a no-client-data workflow, and the 20% partner-promotion math for 2–5 seats.",
+  "image": "https://sayfeai.com/og-image-blog.png",
+  "datePublished": "2026-11-08T00:00:00Z",
+  "dateModified": "2026-11-08T00:00:00Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Sayfe.ai",
+    "url": "https://sayfeai.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sayfe.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sayfeai.com/logo.png"
+    }
+  },
+  "articleSection": "Legal",
+  "keywords": "chatgpt for solo attorney, chatgpt business for solo attorney, chatgpt for law firms, chatgpt client intake lawyer, ai engagement letter, ai conflict check, is chatgpt confidential for lawyers",
+  "wordCount": "2392",
+  "timeRequired": "PT9M",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sayfeai.com/blog/chatgpt-for-solo-attorneys-intake-engagement-letters-conflict-checks-2026"
+  },
+  "url": "https://sayfeai.com/blog/chatgpt-for-solo-attorneys-intake-engagement-letters-conflict-checks-2026"
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a solo attorney use ChatGPT for client intake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, to build the intake process: questionnaires, phone scripts and declination letters contain no client information. Be careful with AI chatbots that talk to prospective clients directly. Florida Bar Ethics Opinion 24-1 says prospective clients must be told they are communicating with an AI program, and NYC Bar Formal Opinion 2024-5 says a lawyer using a chatbot for intake must adequately supervise it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need client consent to use ChatGPT on a matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not if no confidential information goes in. The NYC Bar's Formal Opinion 2024-5 says consent is not needed if no confidential client information is shared, and Florida's Opinion 24-1 says the same when nothing confidential is disclosed to a third party. If you want to enter identifiable client facts, get informed consent first and check your own jurisdiction; California's 2026 guidance is stricter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is an AI paragraph in my engagement letter enough?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a good disclosure, but none of the ABA, Florida or NYC guidance says a general clause is enough consent to put confidential information into an AI tool. NYC says advance consent must be knowing and the client must understand the consequences. Use the paragraph to explain how the firm uses AI, and have a separate conversation if a matter calls for entering client details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can ChatGPT run my conflict checks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A conflict check searches names against your own client records, and those should stay in your practice-management software or conflicts list. Use ChatGPT to write the conflict-check procedure, related-party checklists by matter type, spreadsheet formulas built on sample names, and waiver letter templates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does ChatGPT Business cost for a solo attorney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenAI lists $25 per user per month billed monthly or $20 billed annually in most countries, with a two-seat minimum, so most solos buy two seats. Through an OpenAI SMB Channel Partner's referral link, OpenAI's partner promotion takes 20% off up to five Standard seats for 48 months, so two monthly seats cost $40 instead of $50. Buying direct at chatgpt.com does not include the promotion."
+      }
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sayfeai.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://sayfeai.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ChatGPT for Solo Attorneys: Intake, Engagement Letters and Conflict Checks Without Putting Client Data at Risk",
+      "item": "https://sayfeai.com/blog/chatgpt-for-solo-attorneys-intake-engagement-letters-conflict-checks-2026"
+    }
+  ]
+}
+  </script>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
