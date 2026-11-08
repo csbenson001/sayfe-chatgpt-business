@@ -44,7 +44,7 @@
       "description": "Discover how law firms use ChatGPT for legal research, contract drafting, discovery analysis, and more—while maintaining data privacy and ethical standards.",
       "image": "https://sayfeai.com/images/blog/chatgpt-for-law-firms-og.jpg",
       "datePublished": "2026-03-18T00:00:00Z",
-      "dateModified": "2026-03-18T00:00:00Z",
+      "dateModified": "2026-11-03T00:00:00Z",
       "author": {
         "@type": "Organization",
         "name": "Sayfe.ai",
@@ -85,7 +85,7 @@
           "name": "Is it safe for law firms to use ChatGPT with confidential client data?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "When using enterprise-grade solutions like ChatGPT API or specialized legal AI platforms, your data is not used for training models. Sayfe.ai ensures compliance with attorney-client privilege by never training on firm data, maintaining end-to-end encryption, and adhering to HIPAA and relevant legal standards. Always review your AI provider's data handling policies and consider using private deployment options for highly sensitive matters."
+            "text": "Use a business plan, not a personal account. OpenAI says it does not train on ChatGPT Business, Enterprise or API data by default, encrypts data at rest (AES-256) and in transit (TLS 1.2+), and lists SOC 2 Type 2 for Business. OpenAI's BAA covers ChatGPT for Healthcare and API healthcare customers, not ChatGPT Business, and data residency is an Enterprise feature. Vendor terms do not replace your ethics duties: check your bar's guidance on client consent, supervision and verifying output."
           }
         },
         {
@@ -537,6 +537,10 @@
 
     <!-- Article Content -->
     <article class="article-content">
+        <div class="highlight-box">
+            <strong>Updated (2026-11-03):</strong> We corrected the data-privacy section. It now reflects OpenAI's current published commitments for ChatGPT Business (no training by default, AES-256 at rest, TLS 1.2+ in transit, SOC 2 Type 2) and removes earlier wording about "end-to-end" encryption and HIPAA that OpenAI does not state for this plan. For confidentiality and 2026 bar guidance, see <a href="/blog/is-chatgpt-confidential-for-lawyers-chatgpt-business-2026">Is ChatGPT Confidential for Lawyers?</a> Through Sayfe.ai's partner link, OpenAI's partner promotion takes 20% off up to five ChatGPT Business Standard seats for 48 months; see <a href="/blog/chatgpt-business-20-percent-off-partner-promotion-2026">how the 20% promotion works</a>.
+        </div>
+
         <p>The legal profession has historically resisted technological disruption. Yet something remarkable is happening in law firms across the country: attorneys are quietly integrating ChatGPT into their daily workflows—and the results are undeniable.</p>
 
         <p>From boutique practices to BigLaw, firms are discovering that AI isn't here to replace lawyers. Instead, it's liberating them from tedious, repetitive tasks so they can focus on what they do best: strategic thinking, client relationships, and winning cases.</p>
@@ -684,26 +688,27 @@
             <a href="/#get-started" class="cta-button">Schedule Your Strategy Session</a>
         </div>
 
-        <h2>Data Privacy: The Critical Concern (Solved)</h2>
+        <h2>Data Privacy: The Critical Concern</h2>
 
         <p>The elephant in every conversation about AI in law firms: <em>Will ChatGPT train on my confidential client data?</em></p>
 
         <p>The answer depends entirely on how you use it.</p>
 
         <h3>Standard ChatGPT</h3>
-        <p>If you're using the free or paid consumer versions of ChatGPT (chat.openai.com), your conversations may be used to train and improve models. <strong>Never paste confidential client information into consumer ChatGPT.</strong></p>
+        <p>If you're using the free or paid consumer versions of ChatGPT (Free, Go, Plus or Pro), OpenAI's pricing page says your content can be used to train its models unless you opt out. <strong>Never paste confidential client information into consumer ChatGPT.</strong></p>
 
-        <h3>ChatGPT API and Enterprise Solutions</h3>
-        <p>OpenAI's <a href="https://openai.com/enterprise/" target="_blank" rel="noopener">ChatGPT Enterprise</a> and API offerings provide strict data privacy guarantees:</p>
+        <h3>ChatGPT Business, Enterprise and the API</h3>
+        <p>According to OpenAI's <a href="https://openai.com/business-data/" target="_blank" rel="noopener">business data page</a> (read November 3, 2026), ChatGPT Business, Enterprise and the API come with these commitments:</p>
         <ul>
-            <li><strong>No training on user data:</strong> Your inputs and outputs are never used to train models.</li>
-            <li><strong>Data isolation:</strong> Information stays within your organization's instance.</li>
-            <li><strong>SOC 2 compliance:</strong> Third-party audited security standards.</li>
-            <li><strong>Enterprise-grade encryption:</strong> End-to-end data protection in transit and at rest.</li>
+            <li><strong>No training by default:</strong> OpenAI does not train its models on your organization's data, including inputs and outputs, by default.</li>
+            <li><strong>Ownership:</strong> OpenAI says your organization's data is owned by you.</li>
+            <li><strong>SOC 2 Type 2:</strong> listed for ChatGPT Business on OpenAI's plan comparison.</li>
+            <li><strong>Encryption:</strong> AES-256 at rest and TLS 1.2 or higher in transit.</li>
+            <li><strong>Limits to know:</strong> data residency and Enterprise Key Management are Enterprise-only, and OpenAI's BAA covers ChatGPT for Healthcare and API healthcare customers, not ChatGPT Business.</li>
         </ul>
 
         <div class="highlight-box">
-            <strong>Sayfe.ai Advantage:</strong> As an authorized OpenAI SMB Channel Partner, Sayfe.ai builds legal AI solutions on top of secure, enterprise-grade infrastructure. We never train on your firm data, maintain full audit trails, and architect solutions that comply with state bar ethics opinions and attorney-client privilege requirements.
+            <strong>Sayfe.ai Advantage:</strong> As an OpenAI SMB Channel Partner, Sayfe.ai sets up your firm's ChatGPT Business workspace so client work stays out of personal accounts, and helps you write a firm AI-use policy that reflects your state bar's guidance. The no-training commitment comes from OpenAI's business terms; the ethics duties stay with the firm.
         </div>
 
         <h2>Ethics and Responsible AI Use in Legal Practice</h2>
@@ -816,7 +821,7 @@
         <div class="container">
             <div>
                 <h4>Sayfe.ai</h4>
-                <p>Authorized OpenAI SMB Channel Partner • Enterprise AI for Business</p>
+                <p>OpenAI SMB Channel Partner • Enterprise AI for Business</p>
             </div>
             <div>
                 <h4>Product</h4>
@@ -847,7 +852,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Sayfe.ai. All rights reserved. | Authorized OpenAI SMB Channel Partner</p>
+            <p>&copy; 2026 Sayfe.ai. All rights reserved. | OpenAI SMB Channel Partner</p>
         </div>
     </footer>
 </body>
